@@ -1,0 +1,49 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 14907--14953 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+No caso geral de um esquema $X$ de tipo finito sobre $e$ munido de um $\Omega$-feixe construtível $F$, define-se
+\[
+L_F=\prod_{x\in X^0}L_{F_x},
+\]
+onde $X^0$ designa o conjunto dos pontos fechados de $X$; veremos que este produto é multiplicável em $\Omega[[t]]$. Com efeito, explicitemo-lo introduzindo, para cada $x\in X^0$, um ponto geométrico $\bar x$ de $X$ localizado em $x$, definido por uma imersão do corpo residual $k(x)$ em $\bar{\mathbb F}_p$, e pondo
+\[
+d(x)=[k(x):\mathbb F_p]
+\]
+(grau de $x$). Com estas notações,
+\[
+L_{F_x}(t)=1/\det(1-f_{F_{\bar x}}^{-d(x)}t^{d(x)})
+ =1+\Tr(f_{F_{\bar x}}^{-d(x)})t^{d(x)}+\cdots .
+\]
+Como, para todo inteiro $n$, o conjunto dos pontos $x\in X^0$ tais que $d(x)\le n$ é finito, conclui-se que a família $(L_{F_x})_{x\in X^0}$ é multiplicável em $\Omega[[t]]$. Assim, a função $L$ de $(X,F)$ é
+\[
+L_F(t)=\prod_{x\in X^0}1/\det(1-f_{F_{\bar x}}^{-d(x)}t^{d(x)}).
+\]
+
+As primeiras propriedades formais da função $L$ reúnem-se no enunciado seguinte:
+
+\begin{statement}{Proposição 1}
+\begin{enumerate}[label=\alph*)]
+\item Multiplicatividade em relação a $F$. Seja
+\[
+0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow0
+\]
+uma sequência exata de $\Omega$-feixes construtíveis sobre $X$; então temos
+\[
+L_F=L_{F'}L_{F''}.
+\]
+\item Sejam $Y$ um subesquema fechado de $X$ e $U=X-Y$ o aberto complementar. Então, temos
+\[
+L_F=L_{F|U}\,L_{F|Y}
+\]
+para todo $\Omega$-feixe construtível $F$.
+\item Seja $X\to S$ um morfismo de esquemas de tipo finito sobre $\mathbb F_p$, e seja $F$ um $\Omega$-feixe construtível sobre $X$; então
+\[
+L_F=\prod_{s\in S^0}L_{F|X_s}.
+\]
+\end{enumerate}
+\end{statement}
+
+A afirmação a) é clara; b) segue-se de $X^0=U^0\cup Y^0$ (união disjunta), e a afirmação c), de
+\[
+X^0=\coprod_{s\in S^0}X_s^0
+\]
+utilizando a propriedade de associatividade dos produtos infinitos multiplicáveis; estas fórmulas sobre os pontos fechados são verdadeiras porque a imagem de um ponto fechado por um morfismo de pré-esquemas de tipo finito sobre $\mathbb F_p$ continua a ser um ponto fechado.

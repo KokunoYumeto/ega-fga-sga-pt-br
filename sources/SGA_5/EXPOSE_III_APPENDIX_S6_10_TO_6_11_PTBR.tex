@@ -1,0 +1,30 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4014--4042 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Teorema 6.10}
+Sob as hipóteses do primeiro parágrafo de 6.9, sejam $u\in\Hom(a_1^*L,a_2^*M)$ e $v\in\Hom(b_2^*M,b_1^*L)$, e consideremos a correspondência cohomológica $u^!$ (resp. $v^!$) de $L$ a $M$ (resp. de $M$ a $L$) com suporte em $A$ (resp. $B$), deduzida de $u$ (resp. $v$) compondo com o traço $a_{2*}a_2^*M\to M$ (resp. $b_{1*}b_1^*L\to L$) (6.8.7), e o homomorfismo $(u^!)_*:f_*L\to g_*M$ (resp. $(v^!)_*:g_*M\to f_*L$) deduzido de $u^!$ (resp. $v^!$) por imagem direta (6.5.5) (onde $f:X\to S$ e $g:Y\to S$ designam as projeções). Então, com as notações de 6.8 e 6.9.3, tem-se
+\begin{equation}
+\tag{6.10.1}
+\langle (u^!)_*,(v^!)_*\rangle=\operatorname{Res}_{C/S}(\langle u,v\rangle\cl_{Z/Y}(A)\cl_{Z/X}(B)).
+\end{equation}
+\end{statement}
+
+\begin{statement}{Observaciones 6.11}
+a) Verifica-se, como em 3.6, através da descrição 3.5 b) da imagem direta de uma correspondência, que, se $h:Z\to S$ é a projeção, $(u^!)_*$ (resp. $(v^!)_*$) é a composição das flechas
+\[
+f_*L\xrightarrow{(1)}(ha)_*a_1^*L\xrightarrow{(ha)_*u}(ha)_*a_2^*M=g_*a_{2*}a_2^*M\xrightarrow{(2)}g_*M,
+\]
+\[
+\text{(resp. }g_*M\xrightarrow{(1)}(hb)_*b_2^*M\xrightarrow{(hb)_*v}(hb)_*b_1^*L=f_*b_{1*}b_1^*L\xrightarrow{(2)}f_*L\text{)},
+\]
+onde (1) é a flecha de funtorialidade usual (definida pela flecha de adjunção $1\to a_{1*}a_1^*$ (resp. $1\to b_{2*}b_2^*$)) e (2) é dada pelo traço $a_{2*}a_2^*M\to M$ (resp. $b_{1*}b_1^*L\to L$) (6.8.7).
+
+b) Suponhamos que $S$ seja o espectro de um corpo. A interseção $C=A\times_{(X\times_S Y)}B$ é, portanto, formada por pontos isolados. Em cada ponto $z$ de $C$, escolhamos, perto das imagens de $z$, sucessões regulares $(s_1,\ldots,s_m)$ e $(t_1,\ldots,t_n)$ de equações de $A,B$, respectivamente. Então 6.10.1 se escreve, com a notação dos símbolos residuais de ([8] III 9),
+\begin{equation}
+\tag{6.11.1}
+\langle (u^!)_*,(v^!)_*\rangle=
+\sum_{z\in C}\operatorname{Res}_z\left(\langle u,v\rangle
+\prod_{1\le i\le m}\frac{d_{Z/Y}s_i}{s_i}
+\prod_{1\le j\le n}\frac{d_{Z/X}t_j}{t_j}\right),
+\end{equation}
+onde $d_{Z/Y}s_i$ (resp. $d_{Z/X}t_j$) designa a componente de tipo $(1,0)$ (resp. $(0,1)$) de $d_{Z/S}s_i$ (resp. $d_{Z/S}t_j$) na decomposição 6.9.0.
+\end{statement}

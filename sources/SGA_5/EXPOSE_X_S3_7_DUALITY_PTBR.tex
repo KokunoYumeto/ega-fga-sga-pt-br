@@ -1,0 +1,41 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 12434--12472 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{3.7}
+
+Seja $P$ um $\Lambda[G]$-módulo. É, em particular, um $\Lambda$-módulo. Pode-se dotar o $\Lambda$-módulo $\check P=\Hom_\Lambda(P,\Lambda)$ de uma estrutura de $\Lambda[G]$-módulo pela esquerda pondo, para cada $u\in\Hom_\Lambda(P,\Lambda)$ e $g\in G$, $(gu)(x)=u(g^{-1}x)$, isto é,
+\[
+g_{\check P}={}^{t}(g^{-1})_P.
+\tag{3.7.1}
+\]
+O módulo $\check P$ sobre $\Lambda[G]$ assim obtido será chamado de dual de $P$.
+
+Pode, portanto, ser definido o dual $\check P^\bullet=\Hom_\Lambda^\bullet(P^\bullet,\Lambda)$ de um complexo $P^\bullet$ de $\Lambda[G]$-módulos como um complexo de $\Lambda[G]$-módulos.
+
+Se $\chi_P$ é o caráter de $P$, o caráter $\chi_{\check P}$ de seu dual é dado pela fórmula:
+\[
+\chi_{\check P}(g)=\chi_P(g^{-1}),
+\tag{3.7.2}
+\]
+que deduz-se imediatamente de (4.3.1) usando a fórmula:
+\[
+\Tr_\Lambda^*(v)=\Tr_\Lambda^*({}^{t}v).
+\]
+Se $P$ é um $\Lambda[G]$-módulo projetivo de tipo finito, é claro que $\check P$ é também um $\Lambda[G]$-módulo projetivo de tipo finito. Além disso, neste caso, o homomorfismo canônico de $\Lambda$-módulos
+\[
+P\longrightarrow\check{\check P}
+\]
+é, de facto, um isomorfismo de $\Lambda[G]$-módulos. Assim define-se sobre $K^{\bullet}(\Lambda[G])$ uma involução
+\[
+x\longmapsto \check x,
+\]
+que associa a classe de $P$ à classe de $\check P$. É imediato que, se $\mu:\Lambda\to\Gamma$ é um homomorfismo de anéis comutativos e $u:\Lambda[G]\to\Gamma[G]$ o homomorfismo associado, o homomorfismo
+\[
+u^*:K^{\bullet}(\Lambda[G])\longrightarrow K^{\bullet}(\Gamma[G])
+\]
+comuta com as involuções $x\longmapsto \check x$ sobre $K^{\bullet}(\Lambda[G])$ e $K^{\bullet}(\Gamma[G])$.
+
+Seja $A$ uma álgebra sobre $\Lambda$, e seja
+\[
+A[G]=\Lambda[G]\otimes_\Lambda A.
+\]
+Dado um complexo $X^\bullet$ de $A[G]$-módulos, denota-se por $X^{\bullet G}$ o complexo de $A$-módulos imagem de $X^\bullet$ pelo funtor que associa a cada $A[G]$-módulo $X$ o $A$-módulo formado pelos elementos de $X$ invariantes sob $G$.

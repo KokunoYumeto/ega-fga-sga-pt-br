@@ -1,0 +1,15 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 15288--15300 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Suponhamos, então, que $u:T(L)\to M$ é um quasi-isomorfismo sobrejetivo, e seja $R_0$ seu núcleo. O complexo $R_0$ é acíclico porque $u$ é um quasi-isomorfismo, e é projetivo em cada grau, pois a sequência exata
+\[
+0\longrightarrow R_0\longrightarrow T(L)\longrightarrow M\longrightarrow0
+\]
+cinde-se porque $M$ é projetivo em cada grau. Portanto, graças ao corolário do lema 3, pode-se levantar $R_0$ a um complexo de $A$-módulos $R$, limitado à direita, acíclico e projetivo em cada grau. Demonstremos agora que o morfismo $f_0:R_0\to T(L)$ se levanta a um morfismo de complexos $f:R\to L$. Para isso, observa-se que $R_0$ é homotopicamente trivial, de modo que $f_0$ é homotópico a $0$ e pode-se escrever
+\[
+f_0=h_0d_{R_0}+d_{T(L)}h_0,
+\]
+onde $h_0=(h_0^i)_i$, com $h_0^i:R_0^i\to T(L)^{i-1}$. O lema 3(i) permite levantar $h_0$ a $h=(h^i)_i$, com $h^i:R^i\to L^{i-1}$, e vê-se que
+\[
+f=hd_R+d_Lh
+\]
+é um morfismo de complexos que levanta $f_0$. Um lema padrão (compare-se SGA 60/61, IV 5.7) implica então que $f$ é injetivo e que $\coker f=L'$ é plano em cada grau. Como $T(L')\simeq\coker T(f)=\coker f_0\simeq M$ é projetivo em cada grau, resulta (lema 3(ii)) que o mesmo vale para $L'$. Por outro lado, o homomorfismo canônico $L\to L'$ é um quase-isomorfismo (por ser sobrejetivo e ter núcleo acíclico $R$), e vê-se assim que $L'$ satisfaz a conclusão pretendida no lema 1, como se queria demonstrar.

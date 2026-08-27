@@ -1,0 +1,58 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5837--5892 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{6.7}
+Sejam $X$ e $c$ como em 6.5, e seja $A\to B$ um morfismo de $\Lambda$-álgebras planas. Em relação à extensão e à restrição de escalares, as flechas $\Tr_A$ (6.5.3, 6.5.8, 6.5.9) comportam-se como as flechas $\Tr_A$ de 5.6.1 e 5.6.2. O ponto é que, se $f$ é um $S$-morfismo, os funtores $(f^*,f_*,f_!,f^!)$ comutam com a extensão e a restrição de escalares e que, consequentemente, o estudo do comportamento de $\Tr_A$ (6.5.3) em relação à extensão e à restrição de escalares se reduz ao do comportamento da flecha ``produto tensorial''
+\[
+\uRHom_A(p_1^*L,p_1^*KA_X)\lten_Ap_2^*L
+\longrightarrow
+\uRHom_A(p_1^*L,p_1^*KA_X\lten_Ap_2^*L)
+\]
+e da flecha ``de avaliação''
+\[
+\uRHom_A(L,KA_X)\lten_A L\longrightarrow KA_{X,L_{\natural}}.
+\]
+Assim, a comutatividade dos quadrados 5.9.1 e 5.9.2 implica a do quadrado
+\begin{equation}
+\begin{tikzcd}[column sep=huge,row sep=large]
+\delta^*c_*\uRHom_A(c_1^*L,c_2^!L) \arrow[r,"\Tr_A"] \arrow[d]
+& i_*^cKA_{X^c,L_{\natural}} \arrow[d]\\
+\delta^*c_*\uRHom_B(c_1^*(B\lten_A L),c_2^!(B\lten_A L)) \arrow[r,"\Tr_B"']
+& i_*^cKB_{X^c,L_{\natural}},
+\end{tikzcd}
+\tag{6.7.1}
+\end{equation}
+onde a flecha vertical da esquerda é a extensão de escalares e a da direita é definida pela flecha canônica
+\[
+A\lten_{A^e}A\longrightarrow B\lten_{B^e}B.
+\]
+Assim, para $u\in\uHom_A(c_1^*L,c_2^!L)$, tem-se
+\begin{equation}
+\Tr_B(B\lten_Au)=\varphi\Tr_A(u),
+\tag{6.7.2}
+\end{equation}
+onde
+\[
+\varphi:H^0(X^c,KA_{X^c,L_{\natural}})\longrightarrow H^0(X^c,KB_{X^c,L_{\natural}})
+\]
+é a aplicação canônica.
+
+Suponhamos que $A$ é de tipo finito e plano como $\Lambda$-módulo, que $B$ é de tipo finito e plano como $A$-módulo à esquerda, e que $A_{\natural}$ e $B_{\natural}$ são planos sobre $\Lambda$. Dispõe-se de $\Tr_{B/A}:B_{\natural}\to A_{\natural}$; continuaremos denotando por
+\begin{equation}
+\Tr_{B/A}:KB_{X,\natural}\longrightarrow KA_{X,\natural}
+\tag{6.7.3}
+\end{equation}
+a flecha que dela se deduz aplicando $K_X\lten -$ (6.5.2). De 5.10.6 e 5.10.9 deduz-se que, para $L\in\Ob D_{\mathrm{ctf}}({}_BX)$, tem-se um quadrado comutativo
+\begin{equation}
+\begin{tikzcd}[column sep=huge,row sep=large]
+\delta^*c_*\uRHom_B(c_1^*L,c_2^!L) \arrow[r,"\Tr_B"] \arrow[d]
+& i_*^cKB_{X^c,\natural} \arrow[d,"\Tr_{B/A}"]\\
+\delta^*c_*\uRHom_A(c_1^*L,c_2^!L) \arrow[r,"\Tr_A"']
+& i_*^cKA_{X^c,\natural},
+\end{tikzcd}
+\tag{6.7.4}
+\end{equation}
+onde a flecha vertical à esquerda é a restrição de escalares. Por conseguinte, para $u\in\uHom_B(c_1^*L,c_2^!L)$, tem-se, em $H^0(X^c,KA_{X^c,\natural})$,
+\begin{equation}
+\Tr_A(u)=\Tr_{B/A}(\Tr_B(u)).
+\tag{6.7.5}
+\end{equation}

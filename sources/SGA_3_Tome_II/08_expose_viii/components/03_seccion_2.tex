@@ -1,0 +1,96 @@
+% Tradução brasileira revista a partir do workpass espanhol congelado;
+% a fonte permanece em source_es.
+% SGA 3, Exposé VIII, tradução brasileira: §2.
+% Autoridade: Polo--Gille Exp8-8nov09.pdf, pp. locais 7--8,
+% leitor completo pp. 623--624.
+
+\setcounter{footnote}{10}
+
+\SGARefTarget{sga3:viii:section:2}\section*{2. Propriedades esquemáticas dos grupos diagonalizáveis}
+\addcontentsline{toc}{section}{2. Propriedades esquemáticas dos grupos diagonalizáveis}
+
+Essas propriedades estão resumidas na
+\SGARefLink{sga3:viii:proposition:2:1}{proposição seguinte}.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:proposition:2:1}\textbf{Proposição 2.1.}
+\textit{Seja \(S\) um pré-esquema não vazio, seja \(M\) um grupo comutativo
+ordinário e seja \(G=D(M_S)\) o \(S\)-grupo diagonalizável definido por
+\(M\). Então:}
+\begin{enumerate}
+  \item[(a)]\SGARefTarget{sga3:viii:proposition:2:1:item:a:01}
+  \textit{\(G\) é fielmente plano sobre \(S\) e afim sobre \(S\) (a
+  fortiori, quase compacto sobre \(S\));}
+
+  \item[(b)]\SGARefTarget{sga3:viii:proposition:2:1:item:b:01}
+  \textit{\(M\) é de tipo finito se, e somente se, \(G\) é de tipo finito
+  sobre \(S\), se, e somente se, \(G\) é de apresentação finita sobre \(S\);}
+
+  \item[(c)]\SGARefTarget{sga3:viii:proposition:2:1:item:c:01}
+  \textit{\(M\) é finito se, e somente se, \(G\) é finito sobre \(S\), se, e
+  somente se, \(G\) é de tipo finito sobre \(S\) e é anulado por um inteiro
+  \(n>0\). Nesse caso,}
+  \[
+    \deg(G/S)=\operatorname{Card}(M);
+  \]
+
+  \item[\((c')\)]\SGARefTarget{sga3:viii:proposition:2:1:item:cprime:01}
+  \textit{\(M\) é um grupo de torção se, e somente se, \(G\) é inteiro
+  sobre \(S\);}
+
+  \item[(d)]\SGARefTarget{sga3:viii:proposition:2:1:item:d:01}
+  \textit{\(M=0\) se, e somente se, \(G\) é o \(S\)-grupo unidade;}
+
+  \item[(e)]\SGARefTarget{sga3:viii:proposition:2:1:item:e:01}
+  \textit{\(M\) é de tipo finito e a ordem de seu subgrupo de torção é
+  prima às características residuais de \(S\) se, e somente se, \(G\) é
+  liso sobre \(S\).}
+\end{enumerate}
+
+A verificação de \SGARefLink{sga3:viii:proposition:2:1:item:a:01}{(a)} a
+\SGARefLink{sga3:viii:proposition:2:1:item:d:01}{(d)} é imediata e fica a cargo
+do leitor. Demonstremos \SGARefLink{sga3:viii:proposition:2:1:item:e:01}{(e)}.
+Se \(G\) é liso sobre \(S\), é localmente de apresentação finita sobre
+\(S\), e portanto de apresentação finita sobre \(S\), pois é afim
+sobre \(S\); assim, \(M\) é de tipo finito. Podemos supor desde o
+início que \(M\) seja de tipo finito e, por conseguinte, que \(G\) seja de
+apresentação finita sobre \(S\). Então\footnote{Nota do editor: aqui se
+usa que \(G\) é plano sobre \(S\), por
+\SGARefLink{sga3:viii:proposition:2:1:item:a:01}{(a)}.} \(G\) é liso sobre
+\(S\) se, e somente se, suas fibras geométricas são lisas, o que nos reduz ao
+caso em que \(S\) é o espectro de um corpo algebricamente fechado
+\(k\).
+
+Escrevamos \(M=T\times L\), onde \(T\) é o subgrupo de torção e \(L\)
+é livre, com \(L\simeq\mathbb Z^r\). Então
+\[
+  D(M)=D(T)\times D(L),
+  \qquad
+  D(L)\simeq\mathbb G_m^r,
+\]
+e \(D(L)\) é liso sobre \(k\). Portanto, \(G=D(M)\) é liso sobre \(k\)
+se, e somente se, \(D(T)\) é liso. Como \(D(T)\) é finito sobre \(k\)
+de grau igual à ordem \(n\) de \(T\), isso significa que \(D(T)(k)\)
+tem \(n\) elementos. Ora, \(T\) é isomorfo a uma soma de grupos
+\(\mathbb Z/n_i\mathbb Z\), onde \(n=\prod_i n_i\); por conseguinte,
+\[
+  D(T)=\prod_iD(\mathbb Z/n_i\mathbb Z)
+      =\prod_i\mu_{n_i},
+\]
+onde \(\mu_{n_i}\) é o esquema em grupos das raízes \(n_i\)-ésimas
+da unidade. Tem-se
+\[
+  \operatorname{card}\bigl(D(T)(k)\bigr)
+  =\prod_i\operatorname{card}\bigl(\sisi{\mu_i(k)}{\mu_{n_i}(k)}\bigr).
+\]
+Aqui \(\operatorname{card}(\sisi{\mu_i(k)}{\mu_{n_i}(k)})\), o número de raízes
+\(n_i\)-ésimas da unidade em \(k\), é no máximo \(n_i\), e há igualdade
+se, e somente se, \(n_i\) é primo à característica \(p\) de \(k\).
+% SGA-SRC-000078, ACEITO: original \mu_i(k), atual \mu_{n_i}(k).
+Segue-se que
+\[
+  \operatorname{card}\bigl(D(T)(k)\bigr)=n,
+  \qquad n=\prod_i n_i,
+\]
+se, e somente se, cada \(n_i\) é primo a \(p\), isto é, se, e somente se, \(n\)
+é primo a \(p\). \hfill\(\square\)

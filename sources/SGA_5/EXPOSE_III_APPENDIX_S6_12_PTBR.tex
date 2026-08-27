@@ -1,0 +1,51 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4043--4091 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Corolário 6.12}
+(fórmula de Woods Hole [1]). Supõe-se que $S$ seja o espectro de um corpo. Sejam $X$ um $S$-esquema próprio e suave, $F$ um $S$-endomorfismo de $X$, $L$ um objeto de $D(X)_{\parf}$ (isto é, um complexo perfeito sobre $X$) e $u\in\Hom(F^*L,L)$. Supõe-se que o esquema de pontos fixos $X^F$ seja finito e formado por pontos transversais (isto é, nos quais o gráfico de $F$ corta transversalmente a diagonal). Então, tem-se
+\[
+\sum_i(-1)^i\operatorname{Tr}((F,u),H^i(X,L))=
+\sum_{x\in X^F}\frac{\operatorname{Tr}(u_x)}{\det(1-dF_x)},
+\]
+onde $(F,u)$ é o endomorfismo de $H^i(X,L)$ composto por $H^i(X,L)\to H^i(X,F^*L)$ (imagem inversa) e por $H^i(X,u)$, $\operatorname{Tr}(u_x)$ designa o valor em $x$ do endomorfismo induzido por $u$ sobre a fibra de $L$ em $x$, e $\det(1-dF_x)$ o valor em $x$ do determinante da aplicação $(1-\text{aplicação induzida por }F\text{ sobre }\Omega^1_{X,x})$.
+
+\emph{Demonstração.} Aplica-se 6.10 levando em conta 6.11 a), b). Ponhamos $Z=X\times_S X$. Seja $x\in X^F$. Perto de $x$, escolhamos um sistema de coordenadas locais $(x_1,\ldots,x_n)$ (que define um morfismo étale para $\mathbb A_S^n$), ponhamos $F_i=x_iF$ e denotemos por $(x_1,\ldots,x_n,y_1,\ldots,y_n)$ as coordenadas locais correspondentes sobre $Z$ perto de $z=(x,x)$ ($x_i=x_i\otimes1$, $y_i=1\otimes x_i$). Então, perto de $z$, $(x_1-y_1,\ldots,x_n-y_n)$ (resp. $(y_1-F_1,\ldots,y_n-F_n)$) é um sistema regular de equações da diagonal $A$ (resp. do gráfico $B$ de $F$). A contribuição do segundo membro de 6.11.1 em $z$ é
+\[
+\langle u,1\rangle_z=
+\operatorname{Res}_z\left(\operatorname{Tr}(u)\frac{dx_1\cdots dx_n\,dy_1\cdots dy_n}{(x_1-y_1)\cdots(x_n-y_n)(y_1-F_1)\cdots(y_n-F_n)}\right).
+\]
+Observemos que, no numerador, pode-se substituir $dy_i$ por
+\[
+dy_i-dF_i=dy_i-\sum_{1\le j\le n}(dF_i/dx_j)dx_j.
+\]
+Aplicando então a fórmula ([8] III 9 R3) à situação $(B\hookrightarrow Z\to S)$, $(s_1,\ldots,s_p)=(y_1-F_1,\ldots,y_n-F_n)$, $(t_1,\ldots,t_n)=(x_1-y_1,\ldots,x_n-y_n)$, $\omega=(\operatorname{Tr}(u)dx_1\cdots dx_n)$, obtém-se
+\begin{equation}
+\tag{*}
+\langle u,1\rangle_z=
+\operatorname{Res}_x\left(\operatorname{Tr}(u)\frac{dx_1\cdots dx_n}{(x_1-F_1)\cdots(x_n-F_n)}\right).
+\end{equation}
+Como $x$ é transversal, os $x_i-F_i$ formam um sistema regular de parâmetros de $\OO_{X,x}$; portanto, pode-se escrever, perto de $x$,
+\[
+x_i=\sum_j(x_j-F_j)c_{ij},
+\]
+onde $(c_{ij})$ é uma matriz de seções de $\OO_X$ invertível em $x$, cujo determinante tem por valor em $x$ $\det(1-dF_x)^{-1}$. Graças a ([8] III 9 R1), de (*) deduz-se, portanto,
+\[
+\langle u,1\rangle_z=\operatorname{Res}_x\left(\operatorname{Tr}(u)\det(c_{ij})\frac{dx_1\cdots dx_n}{x_1\cdots x_n}\right),
+\]
+de onde, por ([8] III 9 R6),
+\[
+\langle u,1\rangle_z=\operatorname{Tr}(u(x))\det(c_{ij}(x))=\operatorname{Tr}(u(x))\det(1-dF_x)^{-1}.
+\]
+O corolário resulta então de 6.11.1.
+\end{statement}
+
+\begin{statement}{Observação 6.12.1}
+Se se supõe apenas que $X^F$ seja finito, o cálculo anterior mostra que se tem
+\[
+\sum_i(-1)^i\operatorname{Tr}((F,u),H^i(X,L))=
+\sum_{x\in X^F}\operatorname{Res}_x\left(\operatorname{Tr}(u)\frac{dx_1\cdots dx_n}{(x_1-F_1)\cdots(x_n-F_n)}\right),
+\]
+onde $(x_i)$ é um sistema de coordenadas locais em $x$, e os $F_i$ são as coordenadas de $F$ (cerca de $x$) neste sistema.
+
+Por outro lado, o leitor verificará que a fórmula anterior continua válida se $X$ for próprio e se o supusermos suave apenas nos pontos de $X^F$.
+\end{statement}
+ 

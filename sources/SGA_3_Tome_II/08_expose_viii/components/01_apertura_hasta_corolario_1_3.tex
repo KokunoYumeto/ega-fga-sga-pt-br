@@ -1,0 +1,261 @@
+% Tradução brasileira revista a partir do workpass espanhol congelado;
+% a fonte permanece em source_es.
+% SGA 3, Exposé VIII, tradução brasileira.
+% Escopo: abertura e §1 até a demonstração do Corolário 1.3.
+% Autoridade: Polo--Gille Exp8-8nov09.pdf, pp. locais 1--4 (parcial),
+% leitor completo pp. 617--620 (parcial). O TeX inglês é usado somente para
+% alinhamento estrutural; o PDF francês controla texto, fórmulas e notas.
+
+\setcounter{footnote}{-1}
+\SGARefTarget{sga3:viii:chapter:viii}\chapter*{Exposé VIII\\Grupos diagonalizáveis}
+\addcontentsline{toc}{chapter}{Exposé VIII. Grupos diagonalizáveis}
+\markboth{EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS}%
+  {EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS}
+
+\begin{center}
+  \textit{A. Grothendieck}\footnote{Nota do editor: versão
+  \SGARefLink{sga3:viii:definition:1:1}{1.1} de 8 de novembro de 2009.
+  Foram feitas adições em \SGARefLink{sga3:viii:theorem:1:2}{1.2},
+  \SGARefLink{sga3:viii:corollary:1:4}{1.4},
+  \SGARefLink{sga3:viii:paragraph:1-7}{1.7},
+  \SGARefLink{sga3:viii:theorem:3:1}{3.1},
+  \SGARefLink{sga3:viii:corollary:3:4}{3.4},
+  \SGARefLink{sga3:viii:remark:4:5:1}{4.5.1},
+  \SGARefLink{sga3:viii:theorem:6:4}{6.4} e
+  \SGARefLink{sga3:viii:remark:6:8}{6.8}; restam por revisar 1.5.1 e a
+  \SGARefLink{sga3:viii:section:7}{seção~7}.}
+\end{center}
+
+\SGARefTarget{sga3:viii:section:1}\section*{1. Bidualidade}
+\addcontentsline{toc}{section}{1. Bidualidade}
+
+% Página-fonte: Exp8 p. local 1; leitor completo p. 617.
+Seja \(\mathscr C\) uma categoria, que identificamos, como de costume, com uma
+subcategoria plena de
+\[
+  \widehat{\mathscr C}
+  =\operatorname{Hom}(\mathscr C^{\circ},\mathbf{Set})
+\]
+(cf. Exposé~I). Seja \(I\) um funtor-grupo comutativo, isto é, um objeto de
+\(\widehat{\mathscr C}\) munido de uma estrutura de grupo comutativo
+(cf. I, \SGARefLink{sga3:i:subsection:2-1}{2.1}).\footnote{Nota do editor:
+o original foi desenvolvido no que segue.} Para todo
+\(X\in\operatorname{Ob}(\widehat{\mathscr C})\), o objeto
+\(\operatorname{Hom}(X,I)\) é munido da estrutura de grupo
+comutativo induzida pela de \(I\). Para todo grupo \(G\) em
+\(\widehat{\mathscr C}\), ponhamos
+\[
+  D(G)=\operatorname{Hom}_{\mathrm{gr}}(G,I),
+\]
+o subobjeto de \(\operatorname{Hom}(G,I)\) definido, para todo
+\(S\in\operatorname{Ob}(\mathscr C)\), por
+\SGARefTarget{sga3:viii:eq:1:x}
+\begin{equation}
+  \tag{x}
+  D(G)(S)=\operatorname{Hom}_{S\text{-}\mathrm{gr}}(G_S,I_S),
+\end{equation}
+onde \(G_S=G\times S\) e \(I_S=I\times S\) são considerados como
+\(S\)-grupos, isto é, como grupos em \(\widehat{\mathscr C}_{/S}\). Assim,
+\(D(G)\) é um subgrupo em \(\widehat{\mathscr C}\) de
+\(\operatorname{Hom}(G,I)\). Desse modo se obtém um funtor
+contravariante \(D\) da categoria de grupos em
+\(\widehat{\mathscr C}\) para a categoria de grupos comutativos em
+\(\widehat{\mathscr C}\).
+
+O segundo membro de \(\SGARefLink{sga3:viii:eq:1:x}{(x)}\) também pode ser
+interpretado como o subconjunto de \(\operatorname{Hom}(G\times S,I)\)
+formado pelos morfismos \(G\times S\to I\) que são «multiplicativos em
+relação ao primeiro argumento \(G\)». Por outro lado, as fórmulas anteriores
+continuam válidas quando \(S\) é um objeto qualquer de
+\(\widehat{\mathscr C}\), não necessariamente proveniente de \(\mathscr C\).
+
+Tomemos agora como \(S\) um grupo em \(\widehat{\mathscr C}\), que
+denotaremos por \(G'\). No primeiro membro
+\(\operatorname{Hom}(G',D(G))\) de
+\(\SGARefLink{sga3:viii:eq:1:x}{(x)}\), tomemos o subconjunto
+\(\operatorname{Hom}_{\mathrm{gr}}(G',D(G))\) formado pelos morfismos que
+respeitam as estruturas de grupo de \(G'\) e \(D(G)\).
+
+% Página-fonte: Exp8 p. local 2; leitor completo p. 618.
+Este corresponde ao subconjunto de \(\operatorname{Hom}(G\times G',I)\)
+formado pelos morfismos que são multiplicativos em relação a cada um dos
+dois argumentos, que podemos chamar de \emph{morfismos bilineares de
+\(G\times G'\) em \(I\)}, ou \emph{acoplamentos de \(G\) e \(G'\) com
+valores em \(I\)}. Tem-se, portanto,
+\SGARefTarget{sga3:viii:eq:1:xx}
+\begin{equation}
+  \tag{xx}
+  \operatorname{Hom}_{\mathrm{gr}}(G',D(G))
+  \xrightarrow{\ \sim\ }
+  \operatorname{Hom}_{\mathrm{bil}}(G\times G',I),
+\end{equation}
+funtorialmente no par \((G,G')\). Como o segundo membro é simétrico em
+\(G\) e \(G'\), deduz-se uma bijeção funtorial
+\SGARefTarget{sga3:viii:eq:1:xxx}
+\begin{equation}
+  \tag{xxx}
+  \operatorname{Hom}_{\mathrm{gr}}(G',D(G))
+  \xrightarrow{\ \sim\ }
+  \operatorname{Hom}_{\mathrm{gr}}(G,D(G')).
+\end{equation}
+Em outras palavras, dar um homomorfismo de grupos
+\(G'\to D(G)\) é o mesmo que dar um homomorfismo de grupos \(G\to D(G')\):
+ambos equivalem a dar um acoplamento \(G\times G'\to I\).
+
+Apliquemos isso ao caso \(G'=D(G)\) e ao homomorfismo identidade
+\(G'\to D(G)\). Obtém-se então um homomorfismo canônico
+\SGARefTarget{sga3:viii:eq:1:xxxx}
+\begin{equation}
+  \tag{xxxx}
+  G\longrightarrow D(D(G)).
+\end{equation}
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:definition:1:0}\textbf{Definição 1.0.}
+\footnote{Nota do editor: foi acrescentada a numeração
+\SGARefLink{sga3:viii:definition:1:0}{1.0},
+\SGARefLink{sga3:viii:proposition:1:0:1}{1.0.1}, etc., para tornar explícitas
+as definições e os enunciados aqui contidos.}
+\textit{Diz-se que o grupo \(G\) é \emph{reflexivo} (em relação a \(I\))
+se \SGARefLink{sga3:viii:eq:1:xxxx}{o homomorfismo anterior} é um
+isomorfismo. Em particular, isso implica que \(G\) é comutativo.}
+
+Obtém-se então:
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:proposition:1:0:1}\textbf{Proposição 1.0.1.}
+\textit{O funtor \(D\) induz uma antiequivalência da categoria dos grupos
+reflexivos em \(\widehat{\mathscr C}\) consigo mesma.}
+
+Em particular, se \(G\) e \(H\) são grupos reflexivos, \(D\) induz um
+isomorfismo
+\[
+  \operatorname{Hom}_{\mathrm{gr}}(G,H)
+  \xrightarrow{\ \sim\ }
+  \operatorname{Hom}_{\mathrm{gr}}(D(H),D(G)).
+\]
+De fato, basta que \(H\) seja reflexivo, como decorre de
+\(\SGARefLink{sga3:viii:eq:1:xxx}{(xxx)}\).
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:definition:1:0:2}\textbf{Definição 1.0.2.}
+\textit{Como de costume, diz-se que um \(\mathscr C\)-grupo \(G\) é
+\emph{reflexivo} se é reflexivo como grupo em
+\(\widehat{\mathscr C}\), independentemente de \(D(G)\) ser ou não
+representável.}
+
+Assim, \(D\) fornece uma antiequivalência da categoria dos
+\(\mathscr C\)-grupos reflexivos \(G\) para os quais \(D(G)\) é
+representável consigo mesma.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:remark:1:0:3}\textbf{Observação 1.0.3.}
+Para concluir estas generalidades, observemos que a formação do dual
+\(D(G)\) comuta com a extensão da base, a qual transforma, portanto,
+grupos reflexivos em grupos reflexivos.
+
+No que segue, interessar-nos-á o caso em que
+\(\mathscr C=(\mathbf{Sch})_{/S}\) é a categoria dos pré-esquemas sobre
+\(S\), e \(I=\mathbf G_{m,S}\) é o «grupo multiplicativo sobre \(S\)»
+(cf. Exposé~I). Para todo grupo ordinário \(M\), tomemos o
+\(S\)-grupo constante \(M_S\). Para todo pré-esquema em grupos \(J\) sobre
+\(S\), tem-se um isomorfismo canônico, funtorial em \(M\) e \(J\) e
+compatível com a extensão da base,
+\[
+  \operatorname{Hom}_{S\text{-}\mathrm{gr}}(M_S,J)
+  =\operatorname{Hom}_{\mathrm{gr}}(M,J(S)).
+\]
+
+% Página-fonte: Exp8 p. local 3; leitor completo p. 619.
+Aplicando-o a \(J=I=\mathbf G_{m,S}\) e a um \(S'\) variável sobre \(S\),
+obtém-se um isomorfismo funtorial
+\SGARefTarget{sga3:viii:eq:1:0:4}
+\begin{equation}
+  \tag{1.0.4}
+  D(M_S)(S')
+  \xrightarrow{\ \sim\ }
+  \operatorname{Hom}_{\mathrm{gr}}(M,\mathbf G_m(S')).
+\end{equation}
+Recupera-se assim o funtor já considerado em I,
+\SGARefLink{sga3:i:subsection:4-4}{4.4}, denotado também por \(D_S(M)\),
+que é representável quando \(M\) é comutativo, pois
+\[
+  D_S(M)=D(M_S)=\operatorname{Spec}\mathscr O_S(M),
+\]
+onde \(\mathscr O_S(M)\) denota a álgebra do grupo \(M\) com
+coeficientes em \(\mathscr O_S\). Observe-se ainda que, em geral,
+\(D(M)\) não se altera se \(M\) for substituído por sua abelianização, de modo
+que nada se perde ao supor que \(M\) é comutativo.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:definition:1:1}\textbf{Definição 1.1.}
+\textit{Um pré-esquema em grupos \(G\) sobre \(S\) é dito
+\emph{diagonalizável} se é isomorfo a um esquema da forma}
+\[
+  D_S(M)=D(M_S)
+  =\operatorname{Hom}_{S\text{-}\mathrm{gr}}(M_S,\mathbf G_m)
+\]
+\textit{para algum grupo comutativo \(M\). Diz-se que \(G\) é
+\emph{localmente diagonalizável} se todo ponto de \(S\) admite uma vizinhança
+aberta \(U\) tal que \(G|_U\) seja diagonalizável.}
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:theorem:1:2}\textbf{Teorema 1.2.}
+\textit{Seja \(\Gamma\) um esquema em grupos comutativos constante sobre
+\(S\), isto é, suponhamos que seja isomorfo a um esquema em grupos da
+forma \(M_S\), onde \(M\) é um grupo comutativo ordinário. Então
+\(\Gamma\) é reflexivo: o homomorfismo canônico}
+\[
+  \Gamma\longrightarrow D(D(\Gamma))
+\]
+\textit{é um isomorfismo.\footnote{Nota do editor: foi acrescentada a frase
+seguinte.} Por conseguinte, o grupo diagonalizável \(D(M_S)\) também é
+reflexivo.}
+
+Levando em conta as definições, isso decorre do
+\SGARefLink{sga3:viii:corollary:1:3}{enunciado seguinte}, aplicado a um
+pré-esquema \(S'\) sobre \(S\).
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:1:3}\textbf{Corolário 1.3.}
+\textit{Seja \(G=D(M_S)\). Todo homomorfismo de \(S\)-grupos}
+\[
+  u:G\longrightarrow\mathbf G_{m,S}
+\]
+\textit{é definido por uma única seção de \(M_S\) sobre \(S\), ou,
+equivalentemente, por uma única aplicação localmente constante de \(S\) em
+\(M\).}
+
+\emph{Demonstração.}
+Por definição,
+\[
+  \mathbf G_{m,S}
+  =\operatorname{GL}(1)_S
+  =\operatorname{Aut}_{\mathscr O_S\text{-}\mathrm{mod}}(\mathscr O_S).
+\]
+Portanto, dar um homomorfismo de grupos \(G\to\mathbf G_{m,S}\)
+equivale a munir \(\mathscr O_S\) de uma estrutura de
+\(G\)-\(\mathscr O_S\)-módulo compatível com sua estrutura natural de
+\(\mathscr O_S\)-módulo (cf. I,
+\SGARefLink{sga3:i:subsection:4-7}{4.7}). Por I,
+\SGARefLink{sga3:i:proposition:4-7-3}{4.7.3}, isso também equivale a dar
+uma graduação de tipo \(M\) em \(\mathscr O_S\), isto é, uma
+decomposição em soma direta
+\[
+  \mathscr O_S=\bigoplus_{m\in M}\mathscr L_m.
+\]
+É bem sabido que um somando direto de um módulo localmente livre de tipo
+finito é localmente livre de tipo finito. Por conseguinte, perto de cada
+ponto de \(S\), cada \(\mathscr L_m\) é ou nulo, ou livre de posto
+um; neste último caso identifica-se com \(\mathscr O_S\) nessa
+vizinhança. Seja \(S_m\) o aberto de \(S\) em que ocorre essa segunda
+alternativa. A decomposição em soma direta mostra que os \(S_m\)
+cobrem \(S\) e são dois a dois disjuntos.
+
+% Página-fonte: Exp8 p. local 4 (início); leitor completo p. 620.
+Consequentemente, dar um homomorfismo de grupos
+\(G\to\mathbf G_{m,S}\) equivale a dar uma decomposição de \(S\) como
+união de abertos \(S_m\), \(m\in M\), dois a dois disjuntos e, portanto,
+a dar uma aplicação localmente constante de \(S\) em \(M\). Isso prova
+o \SGARefLink{sga3:viii:corollary:1:3}{Corolário~1.3} e, consequentemente,
+o \SGARefLink{sga3:viii:theorem:1:2}{Teorema~1.2}. \qed

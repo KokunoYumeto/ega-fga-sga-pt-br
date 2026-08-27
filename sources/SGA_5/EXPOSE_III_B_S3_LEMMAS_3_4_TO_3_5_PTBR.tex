@@ -1,0 +1,58 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4668--4723 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+A demonstração de 3.3 será dada depois de alguns preliminares.
+
+\begin{statement}{Lema 3.4}
+Sejam $X\xleftarrow{s_1}W\xrightarrow{s_2}Y$ morfismos finitos de esquemas de valoração discreta sobre $S$, seja $s=(s_1,s_2):W\to X\times_SY$, e sejam $u,v,w$ uniformizadores de $X,Y,W$, respectivamente, de modo que
+\[
+s_1^*u=aw^m\pmod {w^{m+1}},\qquad
+s_2^*v=bw^n\pmod {w^{n+1}},
+\]
+com $a,b\in k^*$. Então: (i) se $m<n$, $s(W)$ é tangente a $X$ em $z=(x,y)$; (ii) se $m=n$, $s(W)$ é tangente ao subesquema de $X\times_SY$ da equação
+\[
+ap_2^*(v)-bp_1^*(u)=0.
+\]
+\end{statement}
+
+Sejam $Z=X\times_SY$ e $W'$ o subesquema fechado reduzido imagem de $s$. No espaço tangente em $z$ ao esquema $Z$, a inclinação, com respeito à tangente a $X$, da tangente a $W'$ é o valor na origem da função induzida sobre $W'$ por $p_2^*(v)/p_1^*(u)$; é também o valor na origem da função induzida por $p_2^*(v)/p_1^*(u)$ sobre $W$, e é, portanto, $0$ (resp. $b/a$) no caso (i) (resp. (ii)).
+
+Na situação de 3.4, definimos a inclinação de $W$ em relação a $((X,u),(Y,v))$ como o elemento de $k\cup\{\infty\}$ igual a $0$ se $m<n$, a $\infty$ se $m>n$ e a $b/a$ se $m=n$. O elemento não depende da escolha de $w$.
+
+\begin{statement}{Lema 3.5}
+Sejam $f:X'\to X$ e $g:Y'\to Y$ morfismos finitos de esquemas de valoração discreta sobre $S$, com o mesmo índice de ramificação $d$, e sejam $u,v,u',v'$ uniformizadores de $X,Y,X',Y'$, respectivamente. Existe então $C\in k^*$ tal que, para todo diagrama comutativo de morfismos finitos de esquemas de valoração discreta sobre $S$
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X' \arrow[d,"f"'] & W' \arrow[l,"s'_1"'] \arrow[r,"s'_2"] \arrow[d,"h"] & Y' \arrow[d,"g"]\\
+X & W \arrow[l,"s_1"] \arrow[r,"s_2"'] & Y ,
+\end{tikzcd}
+\]
+tem-se $\lambda=C{\lambda'}^d$, onde $\lambda$ (resp. $\lambda'$) é a inclinação de $W$ (resp. $W'$) em relação a $((X,u),(Y,v))$ (resp. $((X',u'),(Y',v'))$).
+\end{statement}
+
+Por hipótese, tem-se
+\[
+f^*u=\alpha u'{}^d\pmod {u'{}^{d+1}},\qquad
+g^*v=\beta v'{}^d\pmod {v'{}^{d+1}},
+\]
+com $\alpha,\beta\in k^*$. Demonstremos que $C=\beta/\alpha$ tem as propriedades requeridas. Seja $w$ (resp. $w'$) um uniformizador de $W$ (resp. $W'$). Tem-se
+\[
+s_1^*u=aw^m\pmod {w^{m+1}},\qquad
+s_2^*v=bw^n\pmod {w^{n+1}},
+\]
+\[
+s'_1{}^*u'=a'w'{}^{m'}\pmod {w'{}^{m'+1}},\qquad
+s'_2{}^*v'=b'w'{}^{n'}\pmod {w'{}^{n'+1}},
+\]
+\[
+h^*w=\gamma w'{}^r\pmod {w'{}^{r+1}},
+\]
+com $a,b,a',b',\gamma\in k^*$. A comutabilidade dos quadrados do diagrama implica
+\[
+m'd=rm,\qquad n'd=rn,
+\]
+de onde $m'/n'=m/n$. Suponhamos primeiro que $m=n$. Tem-se $\lambda=b/a$ e $\lambda'=b'/a'$. Se pusermos $N=m'd=rm=n'd=rn$, as congruências anteriores fornecem
+\[
+(fs'_1)^*u=\alpha a'{}^d w'{}^N\pmod {w'{}^{N+1}},\qquad
+(s_1h)^*u=a\gamma^m w'{}^N\pmod {w'{}^{N+1}},
+\]
+de onde $\alpha a'{}^d=a\gamma^m$. Do mesmo modo obtém-se $\beta b'{}^d=b\gamma^m$, de onde $\lambda=C{\lambda'}^d$, para $\lambda\ne 0,\infty$. Mas, como $m'/n'=m/n$, $\lambda=0$ (resp. $\infty$) equivale a $\lambda'=0$ (resp. $\infty$), o que conclui a demonstração.

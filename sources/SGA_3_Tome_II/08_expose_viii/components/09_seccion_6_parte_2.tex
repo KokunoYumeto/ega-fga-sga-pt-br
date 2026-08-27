@@ -1,0 +1,307 @@
+% Tradução brasileira revista a partir do workpass espanhol congelado;
+% a fonte permanece em source_es.
+% SGA 3, Exposé VIII, tradução brasileira: §6, parte 2.
+% Autoridade: Polo--Gille Exp8-8nov09.pdf, pp. locais 20--22,
+% leitor completo pp. 636--638.
+
+\smallskip
+\noindent\SGARefTarget{sga3:viii:examples:6:5:item:c:01}\textit{(c)}
+Suponhamos dado um morfismo
+\SGARefTarget{sga3:viii:examples:6:5:item:c:display:q:01}\[
+  q:X\longrightarrow\underline{\operatorname{Hom}}_S(Y,Y);
+\]
+isto é, «\(X\) atua sobre \(Y\)». Seja \(X'\) o «núcleo» de
+\SGARefLink{sga3:viii:examples:6:5:item:c:display:q:01}{esse morfismo}, a
+saber, o subfuntor de \(X\) para o qual \(X'(T)\) é o conjunto dos
+\(x\in X(T)\) tais que \(q(x):Y_T\to Y_T\) é a identidade. Esse funtor
+enquadra-se em \SGARefLink{sga3:viii:examples:6:5:item:b:01}{(b)}, como se
+vê introduzindo um segundo morfismo
+\[
+  q':X\longrightarrow\underline{\operatorname{Hom}}_S(Y,Y)
+\]
+que «faz \(X\) atuar trivialmente sobre \(Y\)». Portanto, \textit{se
+\(Y\) é essencialmente livre e separado sobre \(S\), então o subfuntor
+núcleo de \(q\) é representável por um subpré-esquema fechado de \(X\).}
+
+\smallskip
+\noindent\SGARefTarget{sga3:viii:examples:6:5:item:d:01}\textit{(d)}
+Sob as hipóteses de \SGARefLink{sga3:viii:examples:6:5:item:c:01}{(c)},
+tomemos o subfuntor \(Y'\) de \(Y\) dos «invariantes sob \(X\)».
+Assim, \(Y'(T)\) é o conjunto dos \(y\in Y(T)\) tais que o morfismo
+correspondente \(\bar q(y):X_T\to Y_T\) seja o «morfismo constante sobre
+\(T\) de valor \(y\)». Introduzindo \(q'\) como em
+\SGARefLink{sga3:viii:examples:6:5:item:c:01}{(c)}, e denotando por
+\(\bar q\) e \(\bar q'\) os morfismos correspondentes,
+\[
+  \bar q,\bar q':Y\rightrightarrows
+  \underline{\operatorname{Hom}}_S(X,Y),
+\]
+vê-se que \(Y'=\operatorname{Ker}(\bar q,\bar q')\). Enquadra-se, portanto,
+novamente em \SGARefLink{sga3:viii:examples:6:5:item:b:01}{(b)},
+trocando os papéis de \(X\) e \(Y\) e tomando \(Z=Y\). Consequentemente,
+\textit{se \(X\) é essencialmente livre sobre \(S\) e \(Y\)
+é separado sobre \(S\), então o subfuntor \(Y'\) de \(Y\) dos
+invariantes sob \(X\) é representável por um subpré-esquema fechado de
+\(Y\).}
+
+\smallskip
+\noindent\SGARefTarget{sga3:viii:examples:6:5:item:e:01}\textit{(e)}
+As construções do tipo descrito nos
+\SGARefLink{sga3:viii:examples:6:5}{exemplos anteriores} aparecem com
+particular frequência na teoria dos grupos. Se um pré-esquema em
+grupos \(G\) sobre \(S\) atua sobre o \(S\)-pré-esquema \(X\),
+\[
+  q:G\longrightarrow\underline{\operatorname{Aut}}_S(X),
+\]
+o núcleo de \(q\), o «subgrupo de \(G\) que atua trivialmente», é um
+subpré-esquema fechado de \(G\), desde que \(X\) seja essencialmente livre
+e separado sobre \(S\), por
+\SGARefLink{sga3:viii:examples:6:5:item:c:01}{(c)}. O subobjeto \(X^G\) dos
+invariantes é um subpré-esquema fechado de \(X\), desde que \(G\) seja
+essencialmente livre sobre \(S\) e \(X\) seja separado sobre
+\(S\),\footnote{Nota do editor: corrigimos \(S_X\) para \(S\).} por
+\SGARefLink{sga3:viii:examples:6:5:item:d:01}{(d)}.
+
+Sejam \(Y,Z\) subpré-esquemas de \(X\), e tomemos o subfuntor
+\(\underline{\operatorname{Transp}}_G(Y,Z)\) de \(G\), o «transportador
+de \(Y\) para \(Z\)». Seus pontos com valores em um \(S\)-pré-esquema \(T\)
+são os \(g\in G(T)\) tais que o automorfismo correspondente de \(X_T\)
+satisfaz \(g(Y_T)\subseteq Z_T\), isto é, induz um morfismo
+\(Y_T\to X_T\) que se fatora por \(Z_T\). Portanto, \textit{se \(Y\)
+é essencialmente livre sobre \(S\), e \(Z\) é fechado em \(X\), então
+\(\underline{\operatorname{Transp}}_G(Y,Z)\) é um subpré-esquema fechado de
+\(G\)}, por \SGARefLink{sga3:viii:examples:6:5:item:a:01}{(a)}.
+
+Pode-se também considerar o \emph{transportador estrito} de \(Y\) para
+\(Z\),\footnote{Nota do editor: ele é denotado por
+\(\underline{\operatorname{Transp}}^{\mathrm{str}}_G(Y,Z)\).} cujos pontos
+com valores em \(T\) são os \(g\in G(T)\) tais que \(g(Y_T)=Z_T\). É
+precisamente
+\[
+  \underline{\operatorname{Transp}}_G(Y,Z)
+  \cap
+  \sigma\bigl(\underline{\operatorname{Transp}}_G(Z,Y)\bigr),
+\]
+onde \(\sigma\) é a simetria de \(G\). Consequentemente, se \(Y\) e
+\(Z\) são essencialmente livres sobre \(S\) e fechados em \(X\), então
+o transportador estrito de \(Y\) para \(Z\) é um subpré-esquema fechado de
+\(G\).
+
+Um caso importante é \(X=G\), com \(G\) atuando sobre si mesmo por
+automorfismos interiores. Se \(H\) é um subpré-esquema de \(G\), o
+transportador estrito de \(H\) para si mesmo chama-se também
+\emph{normalizador de \(H\) em \(G\)}, e é denotado por
+\(\underline{\operatorname{Norm}}_G H\). Portanto, \textit{se \(H\) é um
+subpré-esquema em grupos fechado de \(G\), essencialmente livre sobre \(S\),
+então \(\underline{\operatorname{Norm}}_G H\) é representável por um
+subpré-esquema em grupos fechado de \(G\).}
+
+Por fim, seja \(Z\) um subpré-esquema de \(G\). Seu
+\emph{centralizador} \(\underline{\operatorname{Centr}}_G(Z)\) em \(G\)
+é o subfuntor em grupos de \(G\) definido pelo procedimento de
+\SGARefLink{sga3:viii:examples:6:5:item:d:01}{(d)}, considerando que «\(Z\)
+atua sobre \(G\)» mediante a ação induzida pela de \(G\). Assim,
+\textit{se \(Z\) é essencialmente livre sobre \(S\) e \(G\) é separado
+sobre \(S\), então \(\underline{\operatorname{Centr}}_G(Z)\) é um
+subpré-esquema em grupos fechado de \(G\).} Em particular, \textit{se \(G\)
+é essencialmente livre e separado sobre \(S\), então o centro \(C\) de
+\(G\), que não é outro senão \(\underline{\operatorname{Centr}}_G(G)\), é um
+subpré-esquema em grupos fechado de \(G\).}
+
+Quando \(S\) é o espectro de um corpo,
+\SGARefLink{sga3:viii:proposition:6:2:item:b:01}{6.2(b)} \emph{[a fonte
+imprime 6.3(b)]} mostra que, nos exemplos
+\SGARefLink{sga3:viii:examples:6:5:item:a:01}{(a)}--\SGARefLink{sga3:viii:examples:6:5:item:e:01}{(e)}
+todas as hipóteses de liberdade essencial são automaticamente satisfeitas;
+restam apenas as hipóteses de separação. Como todo pré-esquema em
+grupos sobre um corpo é necessariamente separado, obtém-se, por exemplo:
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:6:7}\textbf{Corolário 6.7.}
+\footnote{Nota do editor: conservamos a numeração do original; não
+há 6.6.}
+\textit{Seja \(G\) um pré-esquema em grupos sobre um corpo \(k\). Então:}
+\begin{list}{--}{\setlength{\leftmargin}{1.8em}\setlength{\itemsep}{0.35em}}
+  \item\SGARefTarget{sga3:viii:corollary:6:7:item:1:01}
+  \textit{Para todo subpré-esquema \(Z\) de \(G\), o centralizador de
+  \(Z\) em \(G\) é um subpré-esquema em grupos fechado de \(G\). Em
+  particular, isso vale para o centro
+  \(\underline{\operatorname{Centr}}_G(G)\) de \(G\).}
+
+  \item\SGARefTarget{sga3:viii:corollary:6:7:item:2:01}
+  \textit{Mais geralmente, se \(u,v:X\to G\) são morfismos de
+  pré-esquemas, então \(\underline{\operatorname{Transp}}_G(u,v)\) é
+  representável por um subpré-esquema fechado de \(G\).}
+
+  \item\SGARefTarget{sga3:viii:corollary:6:7:item:3:01}
+  \textit{Para dois subpré-esquemas \(Y,Z\) de \(G\), com \(Z\) fechado,
+  \(\underline{\operatorname{Transp}}_G(Y,Z)\) é um subpré-esquema fechado
+  de \(G\). Se \(Y\) também é fechado,
+  \SGARefLink{sga3:viii:corollary:6:7:item:3:01}{a mesma conclusão} vale
+  para \(\underline{\operatorname{Transp}}^{\mathrm{str}}_G(Y,Z)\).}
+
+  \item\SGARefTarget{sga3:viii:corollary:6:7:item:4:01}
+  \textit{Para todo subpré-esquema em grupos}\footnote{Nota do editor: de
+  fato, sobre um corpo \(k\), todo subpré-esquema em grupos de \(G\) é
+  fechado; cf. Exposé VI\textsubscript{A}, 0.6.1.}
+  \textit{\(H\) de \(G\), o normalizador
+  \(\underline{\operatorname{Norm}}_G(H)\) é um subpré-esquema em grupos
+  fechado de \(G\).}
+\end{list}
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:remark:6:8}\textbf{Observação 6.8.}
+\footnote{Nota do editor: desenvolvemos o original no que segue;
+Em particular, acrescentamos o
+\SGARefLink{sga3:viii:lemma:6:8:1}{Lema 6.8.1}.}
+Seja \(A\) um anel comutativo, seja \(M\) um \(A\)-módulo, e ponhamos
+\[
+  M^\vee=\operatorname{Hom}_A(M,A).
+\]
+Munamos o \(A\)-módulo \(\operatorname{End}_A(M)\) da topologia da
+convergência simples. Assim, uma base de vizinhanças de zero é
+formada pelos \(A\)-submódulos seguintes, onde \(n\in\mathbb N\) e
+\(m_1,\ldots,m_n\in M\):
+\SGARefTarget{sga3:viii:remark:6:8:display:neighborhood:01}
+\[
+  K(m_1,\ldots,m_n)
+  =
+  \{u\in\operatorname{End}_A(M)\mid
+  u(m_i)=0\ \text{para \(i=1,\ldots,n\)}\}.
+\]
+Diz-se que \(M\) é um \emph{\(A\)-módulo quase livre} se a imagem do
+morfismo canônico
+\[
+  \Theta:M\otimes_AM^\vee\longrightarrow\operatorname{End}_A(M)
+\]
+contém \(\operatorname{id}_M\) em seu fecho; isto é, se é satisfeita
+\SGARefLink{sga3:viii:remark:6:8:eq:star:01}{a condição seguinte}:
+\[
+  \left\{
+  \begin{aligned}
+    &\text{para todos \(m_1,\ldots,m_n\in M\), existem
+      \(x_1,\ldots,x_r\in M\) e \(f_1,\ldots,f_r\in M^\vee\)}\\
+    &\text{tais que }\quad
+    m_i
+    =
+    \Theta\!\left(\sum_{s=1}^r x_s\otimes f_s\right)(m_i)
+    =
+    \sum_{s=1}^r f_s(m_i)x_s
+    \quad\text{para \(i=1,\ldots,n\).}
+  \end{aligned}
+  \right.
+  \tag{*}\label{sga3:viii:remark:6:8:eq:star:01}
+\]
+\noindent(Nesse caso, \(\operatorname{Im}\Theta\) é densa em
+\(\operatorname{End}_A(M)\), pois para todo
+\(u\in\operatorname{End}_A(M)\) tem-se
+\(
+u(m_i)
+  =
+  \sum_{s=1}^r f_s(m_i)u(x_s)
+  =
+  \Theta\!\left(\sum_{s=1}^r u(x_s)\otimes f_s\right)(m_i).
+\))
+
+Observe-se primeiro que
+\SGARefLink{sga3:viii:remark:6:8:eq:star:01}{essa propriedade} é estável por
+mudança de base. De fato, seja \(\phi:A\to A'\) um homomorfismo de anéis,
+ponhamos \(M'=M\otimes_AA'\), e sejam \(m_1',\ldots,m_n'\in M'\).
+Escrevamos
+\[
+  m_i'=\sum_jm_{ij}\otimes b_{ij},
+  \qquad m_{ij}\in M,\quad b_{ij}\in A'.
+\]
+Por hipótese, existem \(x_1,\ldots,x_r\in M\) e
+\(f_1,\ldots,f_r\in\operatorname{Hom}_A(M,A)\) tais que
+\[
+  m_{ij}=\sum_sx_sf_s(m_{ij})
+  \qquad\text{para todos \(i,j\).}
+\]
+Denotemos por \(\phi\circ f_s\) a imagem de \(f_s\) em
+\[
+  \operatorname{Hom}_A(M,A')
+  =
+  \operatorname{Hom}_{A'}(M',A').
+\]
+Então, para \(i=1,\ldots,n\),
+\SGARefTarget{sga3:viii:remark:6:8:display:base-change:01}
+\[
+  \begin{aligned}
+  \left(\sum_sx_s\otimes\phi\circ f_s\right)(m_i')
+    &=
+    \sum_{s,j}x_s\otimes\phi(f_s(m_{ij}))\,b_{ij}\\
+    &=
+    \sum_j\left(\sum_sx_sf_s(m_{ij})\right)\otimes b_{ij}\\
+    &=m_i'.
+  \end{aligned}
+\]
+Isso prova que \(M'\) é quase livre sobre \(A'\).
+
+Além disso, todo \(A\)-módulo projetivo \(P\) é quase livre. De fato, há
+\(A\)-morfismos
+\[
+  A^{(I)}\xrightarrow{\ \pi\ }P
+  \xrightarrow{\ \tau\ }A^{(I)}
+\qquad\text{tais que}\qquad
+  \pi\circ\tau=\operatorname{id}_P.
+\]
+Seja \((e_i)\) a base canônica de \(A^{(I)}\), e ponhamos
+\(f_i=e_i^*\circ\tau\), uma forma linear sobre \(P\). Dados
+\(m_1,\ldots,m_n\in P\), existe um subconjunto finito \(J\) de \(I\) tal
+que
+\[
+  m_k=\sum_{i\in J}f_i(m_k)\pi(e_i)
+  \qquad\text{para \(k=1,\ldots,n\).}
+\]
+
+O Teorema \SGARefLink{sga3:viii:theorem:6:4}{6.4} continua válido se,
+no enunciado da \SGARefLink{sga3:viii:definition:6:1}{Definição 6.1},
+livre for substituído por projetivo ou, mais geralmente, por quase livre.
+Procedendo como na demonstração de
+\SGARefLink{sga3:viii:theorem:6:4}{6.4}, reduzimo-nos ao
+\SGARefLink{sga3:viii:lemma:6:8:1}{lema seguinte}.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:lemma:6:8:1}\textbf{Lema 6.8.1.}
+\textit{Seja \(M\) um \(A\)-módulo quase livre, \(N\) um submódulo, e \(F\)
+o funtor covariante}
+\[
+  F:(\text{\(A\)-álgebras})\longrightarrow\mathbf{Set}
+\]
+\textit{tal que \(F(B)=\{\mathrm{pt}\}\) se \(M_B=(M/N)_B\), e
+\(F(B)=\varnothing\) caso contrário. Então existe um ideal \(K\) de
+\(A\) tal que \(F(B)=\{\mathrm{pt}\}\) se, e somente se, o morfismo \(A\to B\)
+se fatora por \(A/K\); isto é, há um isomorfismo, funtorial em \(B\),}
+\SGARefTarget{sga3:viii:lemma:6:8:1:display:representing:01}
+\[
+  F(B)\simeq\operatorname{Hom}_{A\text{-alg.}}(A/K,B).
+\]
+
+\smallskip
+\noindent\textit{Demonstração.}
+Seja \((n_j)\) um sistema de geradores de \(N\), e seja \(F_j\) o
+subfuntor do funtor terminal \(e\), onde \(e(B)=\{\mathrm{pt}\}\) para
+todo \(B\), correspondente ao submódulo \(An_j\). Tem-se
+\(F(B)=\{\mathrm{pt}\}\) se, e somente se, a imagem de cada \(n_j\) em \(M_B\)
+é nula. Portanto, \(F\) é a interseção dos funtores \(F_j\), o
+que nos reduz ao caso em que \(N\) é gerado por um elemento \(n\).
+
+Seja \(B\) uma \(A\)-álgebra, com morfismo estrutural \(\phi:A\to B\). Se
+a imagem \(n\otimes1\) de \(n\) em \(M_B\) é nula, então, para todo
+\(f\in M^\vee=\operatorname{Hom}_A(M,A)\),
+\[
+  0=f(n)\otimes1=\phi(f(n)).
+\]
+Reciprocamente, como \(M\) é quase livre, existem \(x_1,\ldots,x_r\in M\)
+e \(f_1,\ldots,f_r\in M^\vee\) tais que
+\[
+  n=\sum_sf_s(n)x_s,
+\]
+de onde
+\[
+  n\otimes1=\sum_sx_s\otimes\phi(f_s(n)).
+\]
+Segue-se que \(n\otimes1=0\) se, e somente se, \(\phi\) se fatora por
+\(A/K\), onde \(K\) é o ideal gerado pelos \(f_s(n)\), para
+\(s=1,\ldots,r\). Isso prova o lema.

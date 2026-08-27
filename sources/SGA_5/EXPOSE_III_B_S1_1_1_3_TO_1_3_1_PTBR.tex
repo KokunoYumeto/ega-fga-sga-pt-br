@@ -1,0 +1,45 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4258--4300 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{1.1.3}
+Sejam $X'$ (resp. $Y'$) uma $S$-curva lisa, e $A'$ (resp. $B'$) uma $S$-curva separada, e sejam
+\[
+a':A'\longrightarrow X'\times_S Y',
+\qquad
+b':B'\longrightarrow X'\times_S Y'
+\]
+$S$-morfismos finitos; sejam $x'$ (resp. $y'$) um ponto fechado de $X'$ (resp. $Y'$) e $z'$ um ponto fechado isolado de $A'\times_{(X'\times_S Y')}B'$, de imagem $s'$ (resp. $t'$) em $A'$ (resp. $B'$), e tal que $a'_2(=p_2a')$ (resp. $b'_1(=p_1b')$) seja quase finito em $s'$ (resp. $t'$), e sejam
+\[
+L'\in\ob D_{\ctf}(X'),\quad M'\in\ob D_{\ctf}(Y'),\quad
+u'\in\Hom(a_1'^*L',a_2'^!M'),\quad v'\in\Hom(b_2'^*M',b_1'^!L').
+\]
+Pode-se então considerar o termo local (III~4.2.7) $\langle u',v'\rangle_{z'}\in\Lambda$. Por outro lado, se $X,Y,A,B$ são as localizações estritas de $X',Y',A',B'$ em $x',y',s',t'$, se $a:A\to X\times_S Y$ e $b:B\to X\times_SY$ são os morfismos deduzidos de $a'$ e $b'$, se $L=L'|X$, $M=M'|Y$, e se $u\in\Hom(a_1^*L,a_2^!M)$ e $v\in\Hom(b_2^*M,b_1^!L)$ são as flechas deduzidas de $u'$ e $v'$, os dados $(X,Y,a,b,u,v)$ satisfazem as hipóteses do início de 1.1, de modo que fica definido um produto cup 1.1.2 $\langle u,v\rangle\in\Lambda$. Da compatibilidade da formação dos termos locais (III~4.2.7) com a localização (III~4.2.6) deduz-se que $\langle u',v'\rangle_{z'}=\langle u,v\rangle$. Por outro lado, é fácil ver que todo dado $(X,Y,a,b,u,v)$ que satisfaz as hipóteses do início de 1.1 é induzido por um dado $(X',Y',a',b',x',y',z',s',t',u',v')$ como o anterior, no qual se pode ainda supor, se desejado, que $A'\times_{(X'\times_S Y')}B'$ se reduza a $z'$.
+
+Em geral, os produtos cup 1.1.1 e 1.1.2 são distintos. Tem-se, contudo, o teorema seguinte, que é o resultado principal desta primeira parte:
+
+\begin{statement}{Teorema 1.2}
+Sob as hipóteses do início de 1.1, supõe-se ainda que $A$ e $B$ estejam em posição geral, isto é, que a interseção dos cones tangentes em $(x,y)$ às imagens de $A$ e $B$ em $X\times_S Y$ se reduza a $(x,y)$, e que também $A$ e $X\times\{y\}$ estejam em posição geral, assim como $\{x\}\times Y$ e $B$. Então, tem-se
+\begin{equation}\tag{1.2.1}
+\langle u_z,v_z\rangle=\langle u,v\rangle.
+\end{equation}
+\end{statement}
+
+Da fórmula de Lefschetz-Verdier (III~4.7), tendo em conta 1.1.3, deduz-se:
+
+\begin{statement}{Corolário 1.3}
+Seja $F$ um endomorfismo de uma curva própria e lisa $X/S$, tal que o esquema de pontos fixos $X^F$ seja finito e formado por pontos nos quais o gráfico de $F$ é transversal à diagonal. Sejam $L\in\ob D_{\ctf}(X)$ e $u\in\Hom(F^*L,L)$. Então, tem-se
+\[
+\Tr((F,u),\R\Gamma(X,L))=\sum_{x\in X^F}\Tr(u_x,L_x),
+\]
+onde o traço, em ambos os membros, é tomado no sentido de (SGA~6~I~8).
+\end{statement}
+
+Para $L$ concentrado em grau $0$, 1.3 é o resultado de Artin-Verdier ([6]~4.1). Mediante um passo para o limite explicado em XV, deduz-se de 1.3 um resultado análogo em cohomologia $\ell$-ádica ([6]~1.1), (XV~\S2 n\textsuperscript{o}~3 prop.~2):
+
+\begin{statement}{Corolário 1.3.1}
+Com $X$ e $F$ como em 1.3, sejam $L$ um feixe construtível de $\mathbb Q_\ell$-módulos sobre $X$ ($\ell$ primo, $\ne p$) e $u\in\Hom(F^*L,L)$. Então, tem-se:
+\[
+\sum_i(-1)^i\Tr((F,u),H^i(X,L))=\sum_{x\in X^F}\Tr(u_x,L_x).
+\]
+\end{statement}
+
+As hipóteses de 1.3 e 1.3.1 aplicam-se, em particular, ao caso em que $(F,u)$ é uma correspondência de Frobenius (XV~2), de onde resulta a fórmula dos traços de Grothendieck ([2]~5.1), (SGA~$4^{1/2}$ Rapport~3.2).

@@ -1,0 +1,282 @@
+% Tradução brasileira revista a partir do workpass espanhol congelado;
+% a fonte permanece em source_es.
+% SGA 3, Exposé VIII, tradução brasileira: §7 até o Corolário 7.4.
+% Autoridade: Polo--Gille Exp8-8nov09.pdf, pp. locais 23--26,
+% leitor completo pp. 639--642.
+
+\setcounter{footnote}{31}
+\SGARefTarget{sga3:viii:section:7}\section*{7. Apêndice: sobre os monomorfismos de pré-esquemas em grupos}
+\addcontentsline{toc}{section}{7. Apêndice: sobre os monomorfismos de pré-esquemas em grupos}
+
+O resultado demonstrado nesta \SGARefLink{sga3:viii:section:7}{seção}
+não é necessário no restante do seminário, salvo em X,
+\SGARefLink{sga3:x:theorem:8-8}{8.8}, e nos Exposés XV e XVI. Depende de
+maneira essencial do teorema de existência de grupos quocientes do Exposé
+VI\(_A\).\footnote{Nota do editor: cf. Exposé VI\(_A\),
+\SGARefLink{sga3:viii:corollary:3:2}{Teoremas 3.2} e
+\SGARefLink{thm:sga3-VIA-3.3.2}{3.3.2}.}
+
+O \SGARefLink{sga3:viii:corollary:5:7}{Corolário 5.7} suscita a questão
+de quando se pode afirmar que um monomorfismo \(u:G\to H\) de
+\(S\)-grupos é uma imersão, ou mesmo uma imersão fechada.
+
+Vimos em VI\(_B\), \SGARefLink{cor:sga3-VIB-1.4.2}{1.4.2}, que isso ocorre
+quando \(S\) é o espectro de um corpo \(k\), desde que \(G\) seja de
+tipo finito sobre \(k\) e \(H\) seja localmente de tipo finito sobre \(k\).
+Deduz-se facilmente que o mesmo resultado continua válido quando se
+supõe simplesmente que \(S\) seja artiniano.\footnote{Nota do editor: devem
+ser levadas em conta as adições feitas no Exposé VI\(_B\).}
+
+Por outro lado, é fácil dar exemplos de monomorfismos bijetivos que não são
+imersões, por exemplo, sobre a reta afim sobre um corpo ou sobre o
+espectro de um anel de valorização discreta. Tomemos
+\[
+  H=(\mathbf Z/2\mathbf Z)_S,\qquad G=G_1\times_SG_2,
+\]
+onde \(G_1\) é o subgrupo aberto de \(H\) complementar ao ponto
+fechado \(x\ne0\) na fibra \(H_s\simeq\mathbf Z/2\mathbf Z\), sendo
+\(s\) um ponto fechado fixo de \(S\), e \(G_2\) é o subesquema fechado
+de \(H\), união do subesquema dado pela seção identidade e do
+subesquema fechado reduzido definido por \(x\). Verifica-se imediatamente
+que \(G_2\) é estável pela multiplicação em \(H\) e, portanto, é um
+esquema em grupos. As imersões \(G_i\to H\), \(i=1,2\), definem
+então um homomorfismo de \(S\)-grupos
+\[
+  G=G_1\times_SG_2\longrightarrow H
+\]
+que é manifestamente um monomorfismo bijetivo, e até mesmo uma imersão
+local, mas não é uma imersão. De fato, \(G\) e \(H\) são reduzidos;
+\(G\) tem três componentes irredutíveis disjuntas, enquanto \(H\)
+tem apenas duas.
+
+Observe-se também que \(G_1\to H\) é um exemplo de subgrupo aberto de
+\(H\) que não é fechado, em contraste com a situação dos grupos
+algébricos sobre um corpo. A teoria das degenerações de curvas
+elípticas fornece outros exemplos desse fenômeno nos quais \(H\) é liso sobre
+\(S\), de dimensão relativa um, e \(G\) tem fibras conexas.
+
+Poder-se-ia esperar\begingroup
+\renewcommand{\thefootnote}{(\(\ast\))}%
+\footnote[1]{De fato, M. Raynaud construiu um contraexemplo com \(G\) liso
+e de fibras conexas; cf. XVI,
+\SGARefLink{sga3:xvi:subsection:1:1:item:c}{1.1(c)}. Sem a hipótese de
+fibras conexas, pode-se tomar \(S=\operatorname{Spec}(\mathbf Z_2)\),
+\(G=(\mathbf Z/2\mathbf Z)_S\) privado de seu ponto fechado não identidade, e
+\(H=(\mu_2)_S\).}%
+\endgroup
+que, supondo \(G\) plano sobre \(S\), e, por exemplo, \(G\) e \(H\) de
+apresentação finita sobre \(S\), todo monomorfismo \(u:G\to H\) de
+\(S\)-grupos fosse automaticamente uma imersão. Provaremos um resultado
+desse tipo sob hipóteses adicionais.
+
+Primeiro, podemos supor que \(S\) seja afim e, pela hipótese de
+apresentação finita sobre \(G\) e \(H\), que \(S\) seja noetheriano: reduzimo-nos
+ao espectro de um anel de tipo finito sobre
+\(\mathbf Z\).\footnote{Nota do editor: cf. EGA~IV\(_3\), §8 e Exposé
+VI\(_B\), §10.} Então \(G\) e \(H\) são noetherianos. Dizer que
+\(u:G\to H\) é uma imersão fechada (respectivamente, uma imersão)
+equivale então a dizer que \(u\) é um monomorfismo, o que se verifica
+por hipótese, e é próprio (respectivamente, próprio em todo ponto de
+\(u(G)\)).\footnote{Nota do editor: cf. EGA~IV\(_3\), 8.11.5 e 15.7.1.}
+
+O critério valuativo da propriedade de ser próprio mostra que basta verificar, após
+toda mudança de base \(S'\to S\) em que \(S'\) seja o espectro de um
+anel de valorização discreta, completo se desejado, que o morfismo
+\(u':G'\to H'\) possui a correspondente propriedade de ser próprio. O caso da
+propriedade local foi omitido em EGA~II, 7.3, e deveria aparecer como errata em
+EGA~IV.\begingroup
+\renewcommand{\thefootnote}{(\(\ast\))}%
+\footnote[0]{Cf. EGA~IV\(_3\), 15.7.}%
+\endgroup
+Ficamos reduzidos, portanto, ao caso em que o próprio \(S\) é o espectro de
+um anel de valorização discreta completo, com a ressalva de que toda
+hipótese adicional imposta a \(G,H,u\) seja estável por mudança de base.
+
+Sejam \(s\) e \(s'\), respectivamente, o ponto fechado e o ponto genérico
+de \(S\). Os homomorfismos induzidos nas fibras,
+\[
+  u_s:G_s\longrightarrow H_s,
+  \qquad
+  u_{s'}:G_{s'}\longrightarrow H_{s'},
+\]
+são imersões fechadas porque são monomorfismos de esquemas em grupos de
+tipo finito sobre corpos (VI\(_B\),
+\SGARefLink{cor:sga3-VIB-1.4.2}{1.4.2}). Podemos, portanto, identificar
+\(G_{s'}\) com um subesquema fechado de \(H_{s'}\). Utilizaremos o
+\SGARefLink{sga3:viii:lemma:7:1}{resultado seguinte}.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:lemma:7:1}\textbf{Lema 7.1.}
+\textit{Seja \(S\) o espectro de um anel de valorização discreta, com
+ponto genérico \(s'\). Seja \(H\) um \(S\)-pré-esquema e seja \(L'\) um
+subpré-esquema fechado da fibra genérica \(H_{s'}\), e portanto também
+um subpré-esquema de \(H\). Existe seu fecho esquemático \(L\) em
+\(H\), o menor subpré-esquema fechado de \(H\) que contém \(L'\), cf.
+EGA~I, 9.5. É também o único subpré-esquema fechado de \(H\), plano sobre
+\(S\), cuja fibra genérica é \(L'\). A formação de \(L\) é funtorial
+no par \((H,L')\) e comuta com os produtos fibrados sobre \(S\). Em
+particular, se \(H\) é um \(S\)-grupo e \(L'\) é um subgrupo de
+\(H_{s'}\), então \(L\) é um subgrupo de \(H\).}
+
+A demonstração é imediata e fica a cargo do leitor.\begingroup
+\renewcommand{\thefootnote}{(\(\ast\ast\))}%
+\footnote[0]{Cf. EGA~IV\(_2\), 2.8.}%
+\endgroup
+Apliquemos isso ao par \((H,G_{s'})\). O monomorfismo \(u:G\to H\) fatora-se como
+\[
+  G\xrightarrow{\,u'\,}L\longrightarrow H,
+\]
+onde \(L\) é um subgrupo de \(H\), um subpré-esquema fechado plano sobre
+\(S\), e \(u':G\to L\) induz um isomorfismo nas fibras genéricas. Assim,
+\(u:G\to H\) é uma imersão (respectivamente, uma imersão fechada) se,
+e somente se, \(u':G\to L\) o é. Ficamos reduzidos ao caso em que \(H\) é
+plano sobre \(S\) e \(u_{s'}:G_{s'}\to H_{s'}\) é um isomorfismo, novamente
+com a exigência de que toda hipótese adicional continue válida
+ao substituir \(H\) por um subpré-esquema em grupos fechado.
+
+Como \(H\) é então o fecho esquemático de \(H_{s'}\), se \(u\)
+é uma imersão, sua imagem \(u(G)\) é um subpré-esquema\footnote{Nota do
+editor: suprimiu-se a palavra «fechado».} de \(H\) que contém
+\(H_{s'}\). Seu fecho esquemático é, portanto, \(H\), de modo que
+\(u(G)\) é um subpré-esquema aberto de \(H\). Consequentemente, devemos
+provar que \(u\) é uma imersão aberta, ou um isomorfismo se a conclusão
+desejada é que seja uma imersão fechada.
+
+Como \(G\) e \(H\) são planos sobre \(S\), isso equivale a que os
+morfismos induzidos nas fibras sejam imersões abertas,
+respectivamente isomorfismos (cf. SGA~1, I,
+\SGARefLink{sga3:viii:corollary:5:7}{5.7}). Isso já se verifica para \(u_{s'}\),
+de modo que resta provar que \(u_s\) é uma imersão aberta,
+respectivamente um isomorfismo.
+
+Como \(G\) e \(H\) são planos sobre \(S\), as dimensões de suas fibras
+são constantes (VI\(_B\),
+\SGARefLink{sga3:viii:corollary:4:3}{4.3}). Suas fibras genéricas coincidem,
+logo essas dimensões são iguais para \(G\) e \(H\). Assim,
+\(u_s:G_s\to H_s\) é um monomorfismo de grupos algébricos da mesma
+dimensão. Segue-se que \(G_s\) é aberto em \(H_s\), e é, como conjunto,
+uma união de componentes conexas de \(H_s\). De fato, após passar a um
+corpo-base algebricamente fechado e reduzir \(G\) e \(H\), ambos são
+lisos sobre o corpo e a afirmação é imediata.
+
+O complemento \(H_s-G_s\) é fechado em \(H_s\), e portanto em \(H\).
+Seu complemento \(H'\) em \(H\) é aberto e estável pela lei de grupo.
+Substituindo \(H\) por \(H'\), podemos reduzir-nos, com a ressalva habitual,
+ao caso em que \(u\) é bijetivo, isto é, \(u_s:G_s\to H_s\) é
+bijetivo. Em todos os casos ficamos reduzidos a provar que \(u\), ou,
+equivalentemente, \(u_s\), é um isomorfismo, eventualmente sob essa
+hipótese de bijetividade.
+
+Suponhamos primeiro que \(u\) seja bijetivo. Se \(H_s\) é reduzido,
+então \(u_s\) é um isomorfismo, porque \(G_s\) se identifica com um
+subesquema fechado de \(H_s\) que tem o mesmo conjunto subjacente. Em
+particular, se \(k=\kappa(s)\) é de característica zero, todo grupo
+algébrico sobre \(k\) é reduzido pelo teorema de Cartier (cf.
+VI\(_B\), 1.6.1; VII\(_B\), 3.3.1; ou EGA~IV\(_4\), 16.12.2 e 17.12.5).
+Provamos:
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:proposition:7:2}\textbf{Proposição 7.2.}
+\textit{Seja \(u:G\to H\) um homomorfismo de pré-esquemas em grupos de
+apresentação finita sobre \(S\). Se \(u\) é um monomorfismo, \(G\) é
+plano sobre \(S\), e todo corpo residual de \(S\) tem característica
+zero, então \(u\) é uma imersão.}
+
+Suponhamos agora que \(\kappa(s)\) tenha característica \(p>0\), e
+restrinjamo-nos ao caso em que \(G\) é comutativo. Sob as reduções
+anteriores, \(H\) também é comutativo, porque é o fecho
+esquemático de \(H_{s'}\simeq G_{s'}\). Para \(n\geq0\), ponhamos
+\[
+  S_n=\operatorname{Spec}(V/\mathfrak m^{n+1}),\qquad
+  G_n=G\times_SS_n,\qquad H_n=H\times_SS_n,
+\]
+onde \(V\) é o anel de valorização que define \(S\) e \(\mathfrak m\)
+seu ideal maximal. Para \(m>0\), denotemos por \({}_mG\) e \({}_mH\) os
+núcleos da multiplicação por \(m\) em \(G\) e \(H\). Definamos de modo
+análogo
+\[
+  {}_m(G_n)=({}_mG)_n,
+\]
+que abreviamos por \({}_mG_n\), e do mesmo modo para \(H\).
+
+Por VI\(_A\), \SGARefLink{sga3:viii:corollary:3:2}{3.2}, existem os
+quocientes
+\[
+  Q_n=H_n/G_n.
+\]
+Cada \(Q_n\) é um esquema em grupos comutativo sobre \(S_n\), plano sobre
+\(S_n\), e \(H_n\to Q_n\) é fielmente plano com núcleo \(G_n\). A
+formação do quociente comuta com a extensão da base,\footnote{Nota
+do editor: isso deveria ser explicitado nos Exposés V e VI\(_A\).} de
+modo que
+\[
+  Q_n\simeq Q_m\times_{S_m}S_n\qquad(m\geq n).
+\]
+Em particular, \(Q_n\times_{S_n}S_0=Q_0=H_0/G_0\). Como \(G_0\) e
+\(H_0\) têm o mesmo conjunto subjacente, \(Q_0\) é, como conjunto, um
+único ponto: é um grupo puramente infinitesimal.
+
+Segue-se que cada \(Q_n\) é finito e plano sobre \(S_n\). Seja definido por
+uma álgebra \(C_n\) sobre \(V_n=V/\mathfrak m^{n+1}\), livre finita como
+\(V_n\)-módulo. Para \(m\geq n\),
+\[
+  C_n=C_m\otimes_{V_m}V_n,
+\]
+de maneira compatível também com os morfismos de comultiplicação. Portanto,
+\[
+  C=\varprojlim C_n
+  \quad\text{é um módulo livre finito sobre}\quad
+  V=\varprojlim V_n,
+\]
+e as comultiplicações dos \(C_n\) induzem uma sobre \(C\). Assim,
+\(Q=\operatorname{Spec}(C)\) é um esquema em grupos finito e plano sobre
+\(S\) que satisfaz
+\[
+  Q\times_SS_n=Q_n
+\]
+para todo \(n\).
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:lemma:7:3}\textbf{Lema 7.3.}
+\footnote{Nota do editor: eliminou-se aqui a hipótese de que \(Q\)
+seja comutativo, e modificou-se em conformidade
+\SGARefLink{sga3:viii:remark:7:3:1}{7.3.1}. Se \(Q\) não é comutativo, o
+morfismo potência \(n\)-ésima não precisa ser um homomorfismo de
+grupos.}
+\textit{Seja \(K\) um corpo e seja \(Q\) um esquema em grupos finito sobre
+\(K\), de grau \(n\). Então o morfismo potência \(n\)-ésima sobre
+\(Q\) é nulo.}
+
+Veja-se VII\(_A\), \SGARefLink{sga3:VIIA:8.5}{8.5}.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:remark:7:3:1}\textbf{Observação 7.3.1.}
+O enunciado do Lema~\SGARefLink{sga3:viii:lemma:7:3}{7.3} continua tendo
+sentido para um esquema em grupos finito localmente livre \(Q/S\) sobre um
+pré-esquema de base arbitrário \(S\). Seria interessante encontrar uma demonstração
+nessa generalidade.
+
+O Lema~\SGARefLink{sga3:viii:lemma:7:3}{7.3} (isto é, VII\(_A\), 8.5)
+mostra que o enunciado proposto é válido sempre que \(S\) seja
+reduzido: basta aplicá-lo às fibras de \(Q\) nos pontos maximais de
+\(S\), equivalentemente, nos pontos genéricos de suas componentes
+irredutíveis.\footnote{Nota do editor: isso deveria ser acrescentado ao Exposé
+VII\(_A\). Por outro lado, o enunciado é verdadeiro para todo \(S\) quando
+\(Q\) é comutativo; cf. o teorema de Deligne em
+\SGARefLink{sga3:viii:bib:to70}{[TO70]}, p.~4.}
+
+Na situação anterior, em que \(S\) é o espectro de um anel de
+valorização discreta e \(Q\) é comutativo, segue-se que
+\(n\operatorname{id}_Q=0\). Aqui \(n\) é uma potência
+\(p^{\nu_0}\) da característica residual. Portanto:
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:7:4}\textbf{Corolário 7.4.}
+\textit{Com \(Q\) e os \(Q_n\) como antes, suponhamos que seu grau comum
+seja \(p^{\nu_0}\). Então}
+\[
+  p^{\nu_0}\operatorname{id}_Q=0,
+  \qquad
+  p^{\nu_0}\operatorname{id}_{Q_n}=0
+  \quad\textit{para todo \(n\)}.
+\]

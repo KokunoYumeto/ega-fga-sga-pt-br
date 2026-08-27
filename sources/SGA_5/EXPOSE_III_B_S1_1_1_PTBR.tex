@@ -1,0 +1,69 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4190--4257 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{1.1}
+Sejam $X$ (resp. $Y$) um $S$-esquema que é a localização estrita, em um ponto fechado, de uma $S$-curva lisa e separada, e $A$ (resp. $B$) um $S$-esquema estritamente local, e sejam
+\[
+a:A\longrightarrow X\times_S Y,
+\qquad
+b:B\longrightarrow X\times_S Y
+\]
+$S$-morfismos. Denotemos por $p_1:X\times_S Y\to X$ e $p_2:X\times_S Y\to Y$ as projeções, ponhamos $a_i=p_i a$ e $b_i=p_i b$, e denotemos por $x$ (resp. $y$) o ponto fechado de $X$ (resp. $Y$). Supõe-se que $a_2$ e $b_1$ sejam finitos e sobrejetivos, e que $A\times_{(X\times_S Y)}B$ se reduza ao ponto fechado $z$, de imagem $(x,y)$ em $X\times_S Y$.
+
+Sejam $L\in \ob D_{\ctf}(X)$, $M\in \ob D_{\ctf}(Y)$, $u\in\Hom(a_1^*L,a_2^!M)$ e $v\in\Hom(b_2^*M,b_1^!L)$. Denotemos por
+\[
+u_z\in\Hom(L_x,M_y)\qquad (\text{resp. }v_z\in\Hom(M_y,L_x))
+\]
+o homomorfismo composto
+\[
+L_x=\R\Gamma(X,L)\xrightarrow{a_1^*}\R\Gamma(A,a_1^*L)
+\xrightarrow{\R\Gamma(A,u)}\R\Gamma(A,a_2^!M)
+\xrightarrow{a_{2*}}\R\Gamma(Y,M)=M_y,
+\]
+onde $a_{2*}$ é definido pela flecha de adjunção $a_{2*}a_2^!M\to M$ (resp. o homomorfismo composto análogo definido mediante $(b,v)$). Como $L_x$ e $M_y$ são complexos perfeitos de $\Lambda$-módulos, pode-se formar o produto cup (SGA~6~I~8.3)
+\begin{equation}\tag{1.1.1}
+\langle u_z,v_z\rangle=\Tr(u_zv_z)=\Tr(v_zu_z)\in\Lambda.
+\end{equation}
+Ponhamos $\Lambda_X(1)[2]=K_X$ e $\Lambda_Y(1)[2]=K_Y$. Segundo (I~5) (ou (SGA~$4^{1/2}$ Dualité~1, ou Finitude~4.1)), o funtor $D_X=\uRHom(-,K_X)$ (resp. $D_Y=\uRHom(-,K_Y)$) sobre $D_{\ctf}(X)$ (resp. $D_{\ctf}(Y)$) é dualizante, isto é, para todo $E\in\ob D_{\ctf}(X)$ (resp. $E\in\ob D_{\ctf}(Y)$), tem-se $E\xrightarrow{\sim}D_XD_XE$ (resp. $E\xrightarrow{\sim}D_YD_YE$). Às vezes escreveremos $D$ em lugar de $D_X$ ou $D_Y$.
+
+Denotemos, por outro lado, por $p_i^!$ o funtor $p_i^*(-)(1)[2]$. Tem-se trivialmente
+\[
+K_X\otimes_S^{\LL}M\xrightarrow{\sim}p_2^!M,
+\qquad
+L\otimes_S^{\LL}K_Y\xrightarrow{\sim}p_1^!L,
+\]
+e de (III~2.3), passando ao limite, deduz-se que as flechas de Künneth análogas a (III~3.1.1)
+\[
+DL\otimes_S^{\LL}M\longrightarrow \uRHom(p_1^*L,p_2^!M),
+\qquad
+L\otimes_S^{\LL}DM\longrightarrow \uRHom(p_2^*M,p_1^!L)
+\]
+são isomorfismos. Como $a_2$ é finito, $a$ é finito, de modo que o funtor $a^!$ está definido, e verifica-se facilmente que se tem o isomorfismo de transitividade $a^!p_2^!=a_2^!$. Graças à fórmula de indução para $a$ (SGA~4~XVIII~3.1.12.2), tem-se, portanto, um isomorfismo canônico análogo a (III~3.2.1)
+\[
+a^!\uRHom(p_1^*L,p_2^!M)\xrightarrow{\sim}\uRHom(a_1^*L,a_2^!M),
+\]
+de onde se obtém um isomorfismo
+\begin{equation}\tag{*}
+\Hom(a_1^*L,a_2^!M)\xrightarrow{\sim}H^0(X\times_S Y,a_*a^!(DL\otimes_S^{\LL}M)).
+\end{equation}
+Tem-se igualmente um isomorfismo
+\begin{equation}\tag{**}
+\Hom(b_2^*M,b_1^!L)\xrightarrow{\sim}H^0(X\times_S Y,b_*b^!(L\otimes_S^{\LL}DM)).
+\end{equation}
+Define-se, como em (III~4.1.2), um emparelhamento natural
+\[
+(DL\otimes_S^{\LL}M)\otimes^{\LL}(L\otimes_S^{\LL}DM)
+\longrightarrow K_X\otimes_S^{\LL}K_Y=\Lambda_{X\times_S Y}(2)[4]\stackrel{\mathrm{dfn}}{=}K_{X\times_S Y}.
+\]
+Compondo com o emparelhamento análogo a (III~4.2.3)
+\[
+a_*a^!P\otimes^{\LL} b_*b^!Q\longrightarrow c_*c^!(P\otimes^{\LL}Q),
+\]
+onde $P=DL\otimes_S^{\LL}M$, $Q=L\otimes_S^{\LL}DM$ e $c:z=A\times_{(X\times_S Y)}B\to X\times_S Y$ é a projeção canônica, e levando em conta os isomorfismos (*) e (**), deduz-se daí um emparelhamento análogo a (III~4.2.5)
+\[
+\langle\ ,\ \rangle:\Hom(a_1^*L,a_2^!M)\otimes\Hom(b_2^*M,b_1^!L)
+\longrightarrow H^0(X\times_S Y,c_*c^!K_{X\times_S Y}).
+\]
+Verifica-se facilmente, passando ao limite, que $c^!K_{X\times_S Y}=\Lambda_z$, de modo que $H^0(X\times_S Y,c_*c^!K_{X\times_S Y})=\Lambda$. Dispõe-se, portanto, de um ``produto cup''
+\begin{equation}\tag{1.1.2}
+\langle u,v\rangle\in\Lambda.
+\end{equation}

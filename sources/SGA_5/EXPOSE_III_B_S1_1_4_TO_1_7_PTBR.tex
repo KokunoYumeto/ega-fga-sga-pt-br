@@ -1,0 +1,41 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4302--4341 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{1.4}
+Com as notações de 1.1, suponhamos que $b_2$ e $a_1$ são finitos e sobrejetivos (em vez de $a_2$ e $b_1$), e consideremos as correspondências duais (III~5.1)
+\[
+Du\in\Hom(a_2^*DM,a_1^!DL),\qquad Dv\in\Hom(b_1^*DL,b_2^!DM),
+\]
+e os homomorfismos $(Du)_z\in\Hom((DM)_y,(DL)_x)$, $(Dv)_z\in\Hom((DL)_x,(DM)_y)$. Suponhamos que $(A,\{x\}\times Y)$ esteja em posição geral, assim como $(X\times\{y\},B)$ e $(A,B)$. Aplicando 1.2 a $Du,Dv$, obtém-se:
+\[
+\langle Du,Dv\rangle=\langle (Du)_z,(Dv)_z\rangle,
+\]
+de onde, por (III~5.1.6) e (III~4.2.6),
+\begin{equation}\tag{1.4.1}
+\langle u,v\rangle=\langle (Du)_z,(Dv)_z\rangle.
+\end{equation}
+
+De esta observação e de 1.2 deduz-se, por meio da fórmula de Lefschetz-Verdier (III~4.7):
+
+\begin{statement}{Corolário 1.5}
+Sejam $X,Y$ curvas próprias e lisas sobre $S$,
+\[
+a:A\longrightarrow X\times_S Y,
+\qquad
+b:B\longrightarrow X\times_S Y
+\]
+correspondências nas quais $A$ e $B$ são curvas próprias sobre $S$, $L\in\ob D_{\ctf}(X)$, $M\in\ob D_{\ctf}(Y)$, $u\in\Hom(a_1^*L,a_2^!M)$ e $v\in\Hom(b_2^*M,b_1^!L)$. Supõe-se que $C=A\times_{(X\times_S Y)}B$ seja finito sobre $S$ e da forma $C=C_1\amalg C_2$, com as propriedades seguintes: para $z\in C_1$, os morfismos deduzidos de $a_2,b_1$ por localização estrita nas imagens de $z$ são finitos e, se $(x,y)$ designa a imagem de $z$ em $X\times_S Y$, cada um dos pares $(A,B)$, $(A,X\times\{y\})$ e $(\{y\}\times Y,B)$ está em posição geral em $(x,y)$; para $z\in C_2$, os morfismos deduzidos de $a_1,b_2$ por localização estrita nas imagens de $z$ são finitos, e cada um dos pares $(A,B)$, $(A,\{x\}\times Y)$ e $(B,X\times\{y\})$ está em posição geral em $(x,y)$ (por ``posição geral'' entende-se que a interseção dos cones tangentes em $(x,y)$ às imagens das curvas do par considerado se reduz a $(x,y)$). Então, se $u_*\in\Hom(\R\Gamma(X,L),\R\Gamma(Y,M))$, $v_*\in\Hom(\R\Gamma(Y,M),\R\Gamma(X,L))$ são os morfismos definidos por $u,v$ (III~3.7.6), tem-se, com as notações de 1.1.1, (III~5.1.5),
+\begin{equation}\tag{1.5.1}
+\langle u_*,v_*\rangle=\sum_{z\in C_1}\langle u_z,v_z\rangle+\sum_{z\in C_2}\langle (Du)_z,(Dv)_z\rangle.
+\end{equation}
+\end{statement}
+
+\subsubsection*{1.6}
+Admitindo o formalismo da cohomologia $\ell$-ádica, deduz-se de 1.5, mediante a técnica de passagem ao limite de XIV, que, sob as hipóteses de 1.5 sobre $X,Y,a,b$, tem-se, para $L\in\ob D^b(X,\mathbb Q_\ell)$ ($\ell$ primo, $\ne p$), $M\in\ob D^b(Y,\mathbb Q_\ell)$, $u\in\Hom(a_1^*L,a_2^!M)$, $v\in\Hom(b_2^*M,b_1^!L)$, a igualdade análoga a 1.5.1 em $\mathbb Q_\ell$. Essa fórmula contém como caso particular a proposição 7.12 de Langlands [4]: aplique-se a fórmula com $X=Y$, $M$ o feixe $F$ considerado por Langlands; $L=\alpha M$ ($\alpha\in\mathbb Q_\ell^*$), $A$ a diagonal de $X\times X$, $b$ a correspondência $\phi$ de (loc. cit.), $u$ a correspondência com suporte em $A$ dada por $\alpha^{-1}:L\to M$, $v$ a correspondência $\Phi$ de (loc. cit.); com as notações de (loc. cit.), $C_1$ (resp. $C_2$) é o conjunto de pontos fixos nos quais $a<d$ (resp. $a>d$).
+
+\subsubsection*{1.7}
+Sob as hipóteses de 1.2, tomemos como $u$ (resp. $v$) a correspondência $\cl(A)$ (resp. $\cl(B)$) definida por $\Tr_{a_2}:a_{2*}\Lambda\to\Lambda$ (resp. $\Tr_{b_1}:b_{1*}\Lambda\to\Lambda$). A fórmula 1.2.1 se escreve
+\begin{equation}\tag{1.7.1}
+\deg(a_2)\deg(b_1)=\langle \cl(A),\cl(B)\rangle,
+\end{equation}
+onde $\deg(a_2)$ (resp. $\deg(b_1)$) designa o grau genérico de $a_2$ (resp. $b_1$). Considerando as hipóteses de posição geral, o primeiro membro de 1.7.1 é apenas a multiplicidade de intersecção em $(x,y)$ dos ciclos $a_*A$, $b_*B$, imagens diretas de $A$ e $B$. Não é difícil deduzir diretamente 1.7.1 da compatibilidade da formação da classe de cohomologia associada a um ciclo com as interseções (SGA~$4^{1/2}$ Cycle~2.3.8).
+

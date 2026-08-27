@@ -1,0 +1,39 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5631--5667 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{6.4}
+Seja $A$ uma $\Lambda$-álgebra plana, e sejam, para $i=1,2$, $X_i$ um $S$-esquema, $X=X_1\times_SX_2$, $p_i:X\to X_i$ as projeções e $L_i\in\Ob D_{\mathrm{ctf}}({}_AX_i)$. Por 6.2.3 aplicado a $A_1=A_2=A$, $E_1=L_1$, $F_2=L_2$, $E_2=KA_{X_1}$, tem-se um isomorfismo
+\[
+D_A L_1\lten_{S,A}L_2
+\xrightarrow{\sim}
+\uRHom_A(p_1^*L_1,KA_{X_1}\lten_{S,A}L_2),
+\]
+de onde, compondo com o isomorfismo de Künneth 6.2.2
+\[
+KA_{X_1}\lten_{S,A}L_2\xrightarrow{\sim}p_2^!L_2,
+\]
+obtém-se um isomorfismo
+\begin{equation}
+D_AL_1\lten_{S,A}L_2
+\xrightarrow{\sim}
+\uRHom_A(p_1^*L_1,p_2^!L_2),
+\tag{6.4.1}
+\end{equation}
+que generaliza (III 3.1.1).
+
+Seja $c:C\to X$ um $S$-morfismo, e ponhamos $c_i=p_ic$. Pela fórmula de indução (SGA 4 XVIII 3.1.12.2), tem-se um isomorfismo canônico, análogo a (III 3.2.1),
+\begin{equation}
+c^!\uRHom_A(p_1^*L_1,p_2^!L_2)
+\xrightarrow{\sim}
+\uRHom_A(c_1^*L_1,c_2^!L_2),
+\tag{6.4.2}
+\end{equation}
+de onde, compondo com 6.4.1, obtém-se um isomorfismo
+\begin{equation}
+H^0(X,c_*c^!(D_AL_1\lten_{S,A}L_2))
+\xrightarrow{\sim}
+\uHom_A(c_1^*L_1,c_2^!L_2).
+\tag{6.4.3}
+\end{equation}
+Os elementos de $\uHom_A(c_1^*L_1,c_2^!L_2)$ serão chamados de correspondências cohomológicas de $L_1$ a $L_2$ com suporte em $c$. A terminologia difere ligeiramente da de (loc. cit.); ambas as terminologias coincidem quando $c$ é próprio, o que ocorre na prática.
+
+Dados $S$-morfismos $f_i:X_i\to Y_i$ $(i=1,2)$ e um quadrado comutativo (III 3.7.1) com $c$ próprio, definem-se, como em (loc. cit.), flechas de ``imagem direta"' análogas a (III 3.7.5), (III 3.7.6), para $L_i\in\Ob D_{\mathrm{ctf}}({}_AX_i)$.

@@ -1,0 +1,26 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5180--5203 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{5.9. Traços e extensão de escalares}
+
+Seja $A\to B$ um morfismo de $K$-álgebras planas. Dele se deduz um morfismo de $K$-álgebras $A^e\to B^e$ e, portanto, um funtor de extensão de escalares $-\lten_{A^e}B^e:D(A^e)\to D(B^e)$. Para $E,F$ como em 5.3.5, se $F\lten_{A^e}B^e\in\ob D^b(B^e)$ e $\uRHom_B(B\lten_AE,F\lten_{A^e}B^e)\in\ob D^b(B^\circ)$, tem-se um quadrado comutativo em $D(K)$
+\begin{equation}\tag{5.9.1}
+\begin{tikzcd}[column sep=large,row sep=large]
+\uRHom_A(E,F)\lten_AE \arrow[r,"(1)"] \arrow[d,"(3)"'] & F\lten_{A^e}A \arrow[d,"(4)"]\\
+\uRHom_B(B\lten_AE,F\lten_{A^e}B^e)\lten_B(B\lten_AE) \arrow[r,"(2)"'] & (F\lten_{A^e}B^e)\lten_{B^e}B,
+\end{tikzcd}
+\end{equation}
+onde as flechas (1) e (2) são definidas por 5.3.6, a (4) por $A\to B$, e a (3) pela flecha canônica $F\to F\lten_{A^e}B^e$. A verificação é trivial. Do mesmo modo, para $E,F,G$ como em 5.4.2, se $F\lten_{A^e}B^e\in\ob D^+(B^e)$ e $(F\lten_{A^e}B^e)\lten_AG\in\ob D^+(B)$, tem-se um quadrado comutativo
+\begin{equation}\tag{5.9.2}
+\begin{tikzcd}[column sep=normal,row sep=large]
+\uRHom_A(E,F)\lten_AG \arrow[r,"(1)"] \arrow[d,"(3)"'] & \uRHom_A(E,F\lten_AG) \arrow[d,"(4)"]\\
+\uRHom_B(B\lten_AE,F\lten_{A^e}B^e)\lten_B(B\lten_AG) \arrow[r,"(2)"'] & \uRHom_B(B\lten_AE,(F\lten_{A^e}B^e)\lten_B(B\lten_AG)),
+\end{tikzcd}
+\end{equation}
+onde (1) e (2) são definidas por 5.4.2, e (3) e (4) por $F\to F\lten_{A^e}B^e$. Disso se deduz, para $E,F$ como em 5.6.1, com $F\lten_{A^e}B^e\in\ob D^b(B^e)$, um quadrado comutativo em $D(K)$, análogo aos anteriores, no qual as flechas verticais são definidas por 5.6.1:
+\begin{equation}\tag{5.9.3}
+\begin{tikzcd}[column sep=large,row sep=large]
+\uRHom_A(E,F\lten_AE) \arrow[r,"\Tr_A"] \arrow[d] & F\lten_{A^e}A \arrow[d]\\
+\uRHom_B(B\lten_AE,(F\lten_{A^e}B^e)\lten_B(B\lten_AE)) \arrow[r,"\Tr_B"'] & (F\lten_{A^e}B^e)\lten_{B^e}B.
+\end{tikzcd}
+\end{equation}
+Finalmente, se for dado $F'\in\ob D^b(B^e)$ tal que $\uRHom_A(E,F')\in\ob D^b(B^\circ)$, e $f:F\lten_{A^e}B^e\to F'$, tem-se uma compatibilidade ligeiramente mais geral que 5.9.1, expressa por um quadrado comutativo análogo, com $F'$ em lugar de $F\lten_{A^e}B^e$ na linha inferior e com as flechas verticais definidas por $f$. Do mesmo modo, têm-se quadrados comutativos análogos a 5.9.2 e 5.9.3 com $F'$ em lugar de $F\lten_{A^e}B^e$. Tomando, em particular, $F=A$ e tomando como $f:A\lten_{A^e}B^e\to B$ a flecha definida por $A\to B$, obtém-se um quadrado comutativo

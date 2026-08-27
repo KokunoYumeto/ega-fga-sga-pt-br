@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "release": "2026-08-27-preview.1",
+  "status": "PASS_AS_INCOMPLETE_VALIDATED_PREVIEW",
+  "language": "pt-BR",
+  "lead_pdf": {
+    "filename": "EGA_III_1_PTBR_FIRST_PUBLIC_CHECKPOINT.pdf",
+    "bytes": 1376037,
+    "pages": 149,
+    "sha256": "7A2379DC50827758F49C5F87D467BCDF13B984973E9F6EE713C698CB530C7C5B",
+    "deterministic_build_receipt_sha256": "57A8119A22E7C5A6B32D5688E360DDD3D815F4224AC4E9D83E45973D26EC6EA6",
+    "visual_qa_receipt_sha256": "2B4D55AA3501289C4FDD841FE767C6A3A694F5D8CB79ACFA644BB477DC1244B4",
+    "independent_control_receipt_sha256": "663374D977099B928DD3450B5AF9E90212648A4F630F750C9982163DF6F2E14C",
+    "deterministic_replays_byte_identical": true,
+    "all_pages_visually_inspected": true
+  },
+  "validated_source_preview": {
+    "tex_files": 209,
+    "bytes": 1610902,
+    "sets": [
+      {
+        "name": "EGA III-1",
+        "files": 13,
+        "bytes": 604467,
+        "projection_sha256": "4CE5E734C1DB8B70B29D23CD56D101540BF12DDE517ED422449AFB2E823FC720"
+      },
+      {
+        "name": "FGA tranche A strict subset",
+        "files": 5,
+        "bytes": 279832,
+        "projection_sha256": "D84739E8B27BA39E5A37926E880333647DB59B90C56496CE118908128C407BA0"
+      },
+      {
+        "name": "SGA 3 Tome II completed units",
+        "files": 26,
+        "bytes": 281524,
+        "projection_sha256": "E96CCA833BA34D8BCE8AF8229A7E8679022759163103E131215BD1777CD4579C"
+      },
+      {
+        "name": "SGA 4half front matter 00-04",
+        "files": 5,
+        "bytes": 15742,
+        "projection_sha256": "44B831F3BA3B1F7C2E28C1B78EEB628E6ED5FA104A2AF10CABA3B3AC3C3B9DEE"
+      },
+      {
+        "name": "SGA 5 manually reviewed tranches",
+        "files": 160,
+        "bytes": 429337,
+        "projection_sha256": "7A48955A851E964CB6FEB3EB34BC7A2AA770B6A8AEF3EC39222A1C3B16C0919B"
+      }
+    ]
+  },
+  "publication_claim": "Incomplete validated working preview; no claim of corpus completion.",
+  "credential_material_present": false,
+  "local_absolute_paths_present": false
+}

@@ -1,0 +1,237 @@
+% Tradução brasileira revista a partir do workpass espanhol congelado;
+% a fonte permanece em source_es.
+% SGA 3, Exposé VIII, tradução brasileira: §6, parte 1.
+% Autoridade: Polo--Gille Exp8-8nov09.pdf, pp. locais 17--20,
+% leitor completo pp. 633--636.
+
+\SGARefTarget{sga3:viii:section:6}\section*{6. Morfismos essencialmente livres e representabilidade de certos funtores da forma \(\prod_{Y/S}Z/Y\)\textsuperscript{(*)}}
+\addcontentsline{toc}{section}{6. Morfismos essencialmente livres e representabilidade de certos funtores}
+
+\begingroup
+\renewcommand{\thefootnote}{(*)}
+\footnotetext[0]{\SGARefLink{sga3:viii:section:6}{Esta seção} é
+independentemente da teoria de grupos diagonalizáveis; seu local natural
+estaria no Exposé VI\textsubscript{B}.}
+\endgroup
+
+\noindent\SGARefTarget{sga3:viii:definition:6:1}\textbf{Definição 6.1.}
+Seja \(f:X\to S\) um morfismo de pré-esquemas. Diz-se que \(f\) é
+\emph{essencialmente livre}, ou que \(X\) é \emph{essencialmente livre sobre
+\(S\)}, se existem um recobrimento aberto afim \((S_i)\) de \(S\), para
+cada \(i\) um \(S_i\)-pré-esquema \(S_i'\) que é afim e fielmente plano
+sobre \(S_i\), e um recobrimento \((X'_{ij})_j\) de
+\(X_i'=X\times_SS_i'\) por abertos afins \(X'_{ij}\), tais que, para
+cada \((i,j)\), o anel de \(X'_{ij}\) é um módulo livre sobre o anel
+de \(S_i'\).\footnote{Nota do editor: «livre» pode ser substituído por
+«projetivo»; cf. \SGARefLink{sga3:viii:remark:6:8}{6.8} abaixo. Essa
+noção também deve ser comparada à de \(S\)-pré-esquema plano e puro,
+introduzida e desenvolvida em \SGARefLink{sga3:viii:bib:rg71}{[RG71]};
+veja-se, em particular, \emph{loc. cit.}, Parte I, 3.3.12, e Parte II, 3.1.4.1.}
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:proposition:6:2}\textbf{Proposição 6.2.}
+\begin{enumerate}
+  \item[(a)]\SGARefTarget{sga3:viii:proposition:6:2:item:a:01}
+  \textit{Se \(X\) é essencialmente livre sobre \(S\), então é plano
+  sobre \(S\). A recíproca é verdadeira se \(S\) é artiniano.}
+
+  \item[(b)]\SGARefTarget{sga3:viii:proposition:6:2:item:b:01}
+  \textit{Se \(S\) é o espectro de um corpo, todo \(S\)-pré-esquema é
+  essencialmente livre sobre \(S\).}
+
+  \item[(c)]\SGARefTarget{sga3:viii:proposition:6:2:item:c:01}
+  \textit{Se \(X\) é essencialmente livre sobre \(S\), e se \(S'\to S\)
+  é um morfismo de mudança de base, então \(X'=X\times_SS'\) é
+  essencialmente livre sobre \(S'\). A recíproca é verdadeira se \(S'\to S\)
+  é fielmente plano e quase compacto.}
+\end{enumerate}
+
+A demonstração é imediata, utilizando para a recíproca de
+\SGARefLink{sga3:viii:proposition:6:2:item:a:01}{(a)} o fato de que um
+módulo plano sobre um anel local artiniano é livre.\footnote{Nota do
+editor: de fato, seja \((A,\mathfrak m)\) um anel local artiniano, \(k\)
+seu corpo residual, \(M\) um \(A\)-módulo qualquer e \((x_i)_{i\in I}\)
+elementos de \(M\) cujas imagens formam uma base de
+\(M/\mathfrak mM\) sobre \(k\). Seja \(F\) o \(A\)-módulo livre de base
+\((e_i)_{i\in I}\), e seja \(\phi:F\to M\) o \(A\)-morfismo definido por
+\(\phi(e_i)=x_i\). Então \(Q=\operatorname{Coker}\phi\) satisfaz
+\(Q=\mathfrak mQ\), logo \(Q=0\), pois \(\mathfrak m\) é
+nilpotente. Suponhamos ainda que \(M\) seja plano sobre \(A\). Então
+\(K=\operatorname{Ker}\phi\) satisfaz \(K\otimes_Ak=0\), isto é,
+\(K=\mathfrak mK\), logo \(K=0\).}
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:proposition:6:3}\textbf{Proposição 6.3.}
+\textit{Seja \(H\) um pré-esquema em grupos diagonalizável sobre \(S\) (mais
+geralmente, um que se torna diagonalizável após uma extensão
+fielmente plana e quase compacta conveniente de cada aberto afim de \(S\),
+isto é, \(H\) é «de tipo multiplicativo», cf. IX,
+\SGARefLink{sga3:ix:definition:1:1}{1.1}). Então \(H\) é essencialmente
+livre sobre \(S\).}
+
+De fato, se \(H\) é diagonalizável, é afim sobre \(S\) e é definido
+por uma álgebra que é um \(\mathcal O_S\)-módulo livre.
+
+A introdução da \SGARefLink{sga3:viii:definition:6:1}{Definição 6.1}
+justifica-se pelo \SGARefLink{sga3:viii:theorem:6:4}{teorema seguinte}.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:theorem:6:4}\textbf{Teorema 6.4.}
+\textit{Seja \(S\) um pré-esquema, \(Z\) um \(S\)-pré-esquema essencialmente
+livre sobre \(S\), e \(Y\) um subpré-esquema fechado de \(Z\). Tomemos
+o funtor}\footnote{Nota do editor: cf. II.1, onde
+\SGARefLink{sga3:viii:theorem:6:4:display:functor:01}{esse funtor} é denotado
+por \(\prod_{Z/S}Y\).}
+\SGARefTarget{sga3:viii:theorem:6:4:display:functor:01}
+\[
+  \begin{aligned}
+  F=\prod_{Z/S}Y/Z:\;(\mathbf{Sch}/S)^\circ
+    &\longrightarrow\mathbf{Set},\\
+  F(S')=\Gamma(Y_{S'}/Z_{S'})
+    &=
+    \begin{cases}
+      \varnothing,& Z_{S'}\ne Y_{S'},\\
+      \{\operatorname{id}_{Z_{S'}}\},& Z_{S'}=Y_{S'}.
+    \end{cases}
+  \end{aligned}
+\]
+\textit{\SGARefLink{sga3:viii:theorem:6:4:display:functor:01}{Esse funtor}
+é representável por um subpré-esquema fechado de \(S\).}\footnote{Nota do
+editor: corrigimos \(Z\) para \(S\).}
+
+\smallskip
+\noindent\footnote{Nota do editor: desenvolvemos o original no que
+segue; veja-se também
+\SGARefLink{sga3:viii:corollary:1:7:3}{1.7.3}.}
+Observe-se primeiro que \(F\) é um feixe para a topologia
+\((\mathrm{fpqc})\). Como \(F(S')\) é ou \(\varnothing\), ou
+\(\{\mathrm{pt}\}\), para todo \(S'\), basta verificar a afirmação
+seguinte: se \((S_i)\) é um recobrimento aberto de \(S\)
+(respectivamente, se \(S'\to S\) é fielmente plano e quase compacto), e
+cada \(Y_{S_i}\to Z_{S_i}\) é um isomorfismo (respectivamente,
+\(Y_{S'}\to Z_{S'}\) é um isomorfismo), então \(Y\to Z\) é um
+isomorfismo. Isso é claro no primeiro caso e se deduz de SGA 1, VIII,
+5.4, ou de EGA IV\textsubscript{2}, 2.7.1, no segundo.
+
+Além disso, por SGA 1, VIII, 2.1 e 5.5, os morfismos fielmente planos e
+quase compactos são morfismos de descida efetivos para a categoria
+fibrada das setas que são imersões fechadas. Em virtude da
+\SGARefLink{sga3:viii:definition:6:1}{6.1}, podemos reduzir-nos ao caso
+\(S=S_i'\).
+
+Seja \((Z_j)\) um recobrimento de \(Z\) por abertos afins tais que
+\(\mathcal O(Z_j)\) seja um módulo livre sobre \(A=\mathcal O(S)\),
+ponhamos \(Y_j=Y\cap Z_j\), e seja
+\[
+  F_j:(\mathbf{Sch}/S)^\circ\longrightarrow\mathbf{Set}
+\]
+o funtor definido a partir de \((Z_j,Y_j)\) como \(F\) é definido a partir
+de \((Z,Y)\). É um subfuntor do funtor terminal, e claramente
+\[
+  F=\bigcap_jF_j.
+\]
+
+Basta, portanto, provar que cada \(F_j\) é representável por um subesquema
+fechado \(T_j\) de \(S\), pois então \(F\) é representado pelo
+subesquema fechado \(T=\bigcap_jT_j\). Podemos supor, consequentemente,
+que \(Z\) também seja afim, digamos \(Z=\operatorname{Spec}(B)\), onde
+\(B\) é um \(A\)-módulo livre. Seja \(J\) um subconjunto de \(B\) que
+define o subpré-esquema fechado \(Y\) de \(Z\), e seja \(K\) o ideal de
+\(A\) gerado pelos \(u_i(J)\subseteq A\), onde os \(u_i:B\to A\) são
+as formas coordenadas para a base escolhida. Então
+\[
+  T=\mathcal V(K)=\operatorname{Spec}(A/K)
+\]
+possui a propriedade requerida.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:examples:6:5}\textbf{Exemplos 6.5.}
+Daremos alguns exemplos importantes de funtores que se reduzem a funtores
+\(\prod_{Z/S}Y/Z\) do tipo considerado em
+\SGARefLink{sga3:viii:theorem:6:4}{6.4}, e para os quais serão úteis os
+critérios de representabilidade. Aqui \(S\) denota um pré-esquema, e
+\(X,Y,Z,\ldots\) denotam pré-esquemas sobre \(S\).
+
+\smallskip
+\noindent\SGARefTarget{sga3:viii:examples:6:5:item:a:01}\textit{(a)}
+Suponhamos dado um \(S\)-morfismo
+\[
+  q:X\longrightarrow\underline{\operatorname{Hom}}_S(Y,Z),
+  \tag{x}\label{sga3:viii:examples:6:5:eq:x:01}
+\]
+(«\(X\) atua sobre \(Y\) com valores em \(Z\)»), isto é, um morfismo
+\[
+  r:X\times_SY\longrightarrow Z.
+  \tag{xx}\label{sga3:viii:examples:6:5:eq:xx:01}
+\]
+Seja \(Z'\) um subpré-esquema de \(Z\). Ele fornece um monomorfismo
+\[
+  \underline{\operatorname{Hom}}_S(Y,Z')
+  \longrightarrow
+  \underline{\operatorname{Hom}}_S(Y,Z),
+\]
+que torna o primeiro funtor um subfuntor do segundo. Seja \(X'\) a
+imagem inversa desse subfuntor por
+\SGARefLink{sga3:viii:examples:6:5:eq:x:01}{(x)}. Assim, \(X'\) é o
+subfuntor de \(X\) para o qual \(X'(T)\) é o conjunto dos
+\(x\in X(T)\) tais que
+\[
+  q(x):Y_T\longrightarrow Z_T
+\]
+fatora-se por \(Z_T'\). Esse funtor admite a descrição seguinte.
+Ponha-se \(P=X\times_SY\), e seja \(P'\) a imagem inversa de \(Z'\) por
+\(r:P\to Z\). Há então um isomorfismo evidente
+\[
+  X'\simeq\prod_{P/X}P'/P.
+  \tag{xxx}\label{sga3:viii:examples:6:5:eq:xxx:01}
+\]
+Segue-se que \textit{se \(Y\) é essencialmente livre sobre \(S\) e \(Z'\)
+é fechado em \(Z\), então o subfuntor \(X'\) de \(X\) é representável
+por um subpré-esquema fechado de \(X\).}
+
+\smallskip
+\noindent\SGARefTarget{sga3:viii:examples:6:5:item:b:01}\textit{(b)}
+Suponhamos dadas duas ações de \(X\) sobre \(Y\) com valores em \(Z\),
+isto é, dois morfismos
+\[
+  q_1,q_2:X\rightrightarrows
+  \underline{\operatorname{Hom}}_S(Y,Z),
+\]
+e ponhamos \(X'=\operatorname{Ker}(q_1,q_2)\). Esse é o subfuntor de
+\(X\) para o qual \(X'(T)\) é o conjunto dos \(x\in X(T)\) tais
+que os dois morfismos
+\[
+  q_1(x),q_2(x):Y_T\rightrightarrows Z_T
+\]
+são iguais. Dar \(q_1,q_2\) equivale a dar um morfismo
+\[
+  q:X\longrightarrow
+  \underline{\operatorname{Hom}}_S(Y,Z\times_SZ),
+\]
+ou, equivalentemente, um morfismo
+\[
+  r:X\times_SY\longrightarrow Z\times_SZ.
+\]
+Ponha-se \(U=Z\times_SZ\), e seja \(U'\) o subpré-esquema diagonal de
+\(Z\times_SZ\). Então \(X'\) é a imagem inversa por \(q\) do
+subfuntor
+\[
+  \underline{\operatorname{Hom}}_S(Y,U')
+  \longrightarrow
+  \underline{\operatorname{Hom}}_S(Y,U).
+\]
+Pode-se, portanto, escrevê-lo na forma
+\SGARefLink{sga3:viii:examples:6:5:eq:xxx:01}{(xxx)}, com
+\(P=X\times_SY\) e \(P'\) a imagem inversa da diagonal por \(r\), isto
+é, o núcleo de
+\[
+  X\times_SY
+  \mathop{\rightrightarrows}^{r_1}_{r_2}
+  Z.
+\]
+Pode-se então aplicar
+\SGARefLink{sga3:viii:examples:6:5:item:a:01}{(a)}.
+
+Consequentemente, \textit{se \(Y\) é essencialmente livre sobre \(S\) e
+\(Z\) é separado sobre \(S\), então o subfuntor \(X'\) de \(X\) é
+representável por um subpré-esquema fechado de \(X\).}

@@ -1,0 +1,49 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5975--6021 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{6.10}
+Sejam $X$ e $c$ como em 6.5, e seja $L\in\Ob D_{\mathrm{ctf}}({}_{\Lambda[G]}X)$. Para
+\[
+u\in\Hom_{\Lambda[G]}(c_1^*L,c_2^!L),
+\]
+dispõe-se, por 6.5.9, de um traço local
+\begin{equation}
+\Tr_{\Lambda[G]}(u)\in
+H^0(X^c,K\Lambda[G]_{X^c,\natural})
+=H^0(X^c,K_{X^c}\otimes\Lambda[G_{\natural}]),
+\tag{6.10.1}
+\end{equation}
+onde $G_{\natural}$ é o conjunto das classes de conjugação de $G$ e, para todo $x\in G_{\natural}$, pode-se considerar o ``valor de $\Tr_{\Lambda[G]}(u)$ em $x$'',
+\[
+\Tr_{\Lambda[G]}(u)(x)\in H^0(X^c,K_{X^c}),
+\]
+imagem de $\Tr_{\Lambda[G]}(u)$ por meio da projeção
+\[
+H^0(X^c,K_{X^c}\otimes\Lambda[G_{\natural}])
+\longrightarrow H^0(X^c,K_{X^c})
+\]
+definida por $x$. De 6.7.5 e 5.11.2 resulta que se tem
+\begin{equation}
+\Tr_{\Lambda}(u)=|G|\,\Tr_{\Lambda[G]}(u)(e),
+\tag{6.10.2}
+\end{equation}
+onde $e$ designa o elemento neutro de $G$.
+
+Mais geralmente, seja $g\in G$, denotemos por $Z_g$ o centralizador de $g$, e seja
+\[
+gu\in\Hom_{\Lambda[Z_g]}(c_1^*L,c_2^!L)
+\]
+a correspondência composta de $u$ com a multiplicação à esquerda por $g:c_1^*L\to c_1^*L$. Tem-se $L\in\Ob D_{\mathrm{ctf}}({}_{\Lambda[Z_g]}X)$ e, portanto, 6.10.2 implica
+\begin{equation}
+\Tr_{\Lambda}(gu)=|Z_g|\,\Tr_{\Lambda[Z_g]}(gu)(e).
+\tag{6.10.3}
+\end{equation}
+Pelo mesmo raciocínio que em 5.11.3, de 6.7.4 deduz-se a fórmula
+\begin{equation}
+\Tr_{\Lambda[Z_g]}(gu)(e)=\Tr_{\Lambda[G]}(u)(g^{-1}),
+\tag{6.10.4}
+\end{equation}
+que permite, se se desejar, reescrever 6.10.3 na forma
+\begin{equation}
+\Tr_{\Lambda}(gu)=|Z_g|\,\Tr_{\Lambda[G]}(u)(g^{-1}).
+\tag{6.10.5}
+\end{equation}

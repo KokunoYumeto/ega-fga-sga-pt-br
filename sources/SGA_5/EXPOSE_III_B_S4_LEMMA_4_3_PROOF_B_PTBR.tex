@@ -1,0 +1,38 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4872--4907 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Fica, portanto, demonstrada a). Demonstremos b). Seja $\bar\eta$ um ponto genérico geométrico de $Y$. Escolhamos flechas de especialização
+\[
+a:\bar\eta\to Y(\bar z),\qquad b:\bar\eta\to Y(\bar s),
+\]
+onde $Y(\bar z)$ (resp. $Y(\bar s)$) é a localização estrita de $Y$ em $\bar z$ (resp. $\bar s$). Ponhamos
+\[
+M=m^*\R j_*(i'_!L).
+\]
+O quadrado comutativo
+\[
+\begin{tikzcd}
+Y & Y(\bar s)\arrow[l]\\
+Y(\bar z)\arrow[u] & \bar\eta \arrow[l,"a"']\arrow[u,"b"']
+\end{tikzcd}
+\]
+induz um quadrado comutativo
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+\R\Gamma(Y,M) \arrow[r,"4.3.1"] \arrow[d] & M_{\bar s} \arrow[d,"b^*"]\\
+M_{\bar z} \arrow[r,"a^*"'] & M_{\bar\eta}.
+\end{tikzcd}
+\]
+Como $M|Y-z$ tem cohomologia localmente constante, $b^*$ é um isomorfismo. Por outro lado, como $M=i_{1!}i_1^*M$, tem-se $M_{\bar z}=0$, portanto a flecha 4.3.1 é nula. Resta demonstrar c). Tem-se $\widetilde C=C\times_Z\widetilde Z$, onde $\widetilde Z$ designa, como antes, a localização estrita de $Z$ em $\bar z$. Ponhamos $\widetilde Y=Y\times_Z\widetilde Z$. Tem-se então um diagrama comutativo de flechas de restrição
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+\R\Gamma(Z-Y,i'_!L)=\R\Gamma(Z,\R j_*(i'_!L))
+ \arrow[r,"4.3.2"] \arrow[d]
+&
+\R\Gamma(\widetilde C-\bar s,i'_!(L)|\widetilde C-\bar s)\\
+\R\Gamma(Y,m^*\R j_*(i'_!L)) \arrow[r,"4.3.1"']
+&
+(\R j_*(i'_!L))_{\bar s}
+  =\R\Gamma(\widetilde Z-\widetilde Y,(i'_!L)|\widetilde Z-\widetilde Y) \arrow[u]
+\end{tikzcd}
+\]
+A nulidade de 4.3.2 deduz-se, portanto, de b), o que conclui a demonstração de 4.3.

@@ -1,0 +1,33 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5013--5043 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{5.3}
+
+Seja $A$ uma $K$-álgebra. Na situação $(E_A,{}_AF)$, temos um isomorfismo canônico
+\begin{equation}\tag{5.3.1}
+E\otimes_AF\xrightarrow{\sim}(E\otimes_KF)\otimes_{A^e}A,
+\qquad x\otimes y\longmapsto (x\otimes y)\otimes 1.
+\end{equation}
+Por outro lado, na situação $({}_AE,{}_AF_A)$, a flecha de avaliação
+\begin{equation}\tag{5.3.2}
+\uHom_A(E,F)\otimes_KE\longrightarrow F,
+\qquad f\otimes x\longmapsto f(x)
+\end{equation}
+é $A^e$-linear e, portanto, induz, mediante 5.3.1 e aplicando $-\otimes_{A^e}A$, uma flecha
+\begin{equation}\tag{5.3.3}
+\uHom_A(E,F)\otimes_AE\longrightarrow F\otimes_{A^e}A\;(=F_\natural).
+\end{equation}
+Em outros termos, a flecha composta de 5.3.2 e da flecha canônica $F\to F_\natural$, $x\mapsto x\otimes 1$, fatora-se de modo único através de 5.3.3.
+
+Suponhamos que $A$ seja plano sobre $K$. Então 5.3.1 se deriva em um isomorfismo
+\begin{equation}\tag{5.3.4}
+E\lten_AF\xrightarrow{\sim}(E\lten_KF)\lten_{A^e}A
+\end{equation}
+para $E\in\ob D^-(A^\circ)$, $F\in\ob D^-(A)$ (resolvem-se $E$ e $F$ por módulos planos). Por outro lado, 5.3.3 se deriva em uma flecha de $D(K)$, denominada flecha de avaliação,
+\begin{equation}\tag{5.3.5}
+\uRHom_A(E,F)\lten_AE\longrightarrow F\lten_{A^e}A,
+\end{equation}
+para $E\in\ob D^-(A)$, $F\in\ob D^b(A^e)$ tal que $\uRHom_A(E,F)\in\ob D^b(A^\circ)$. Primeiro deriva-se 5.3.2 em uma flecha de $D^-((A^e)^\circ)$,
+\begin{equation}\tag{5.3.6}
+\uRHom_A(E,F)\lten_KE\longrightarrow F,
+\end{equation}
+resolvendo $E$ por módulos planos e $F$ por $A^e$-módulos injetivos; depois aplica-se o funtor $-\lten_{A^e}A$ a 5.3.6, levando em conta 5.3.4.

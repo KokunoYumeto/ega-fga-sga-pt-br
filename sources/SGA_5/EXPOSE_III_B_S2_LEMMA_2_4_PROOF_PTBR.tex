@@ -1,0 +1,44 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4496--4537 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Lema 2.4}
+Para demonstrar 1.2, pode-se supor que $a$ e $b$ sejam imersões fechadas, e basta demonstrar que, se $L_x=0$ e $M_y=0$, a flecha de restrição
+\begin{equation}
+H_A^0(X\times_SY,DL\lten_SM)
+ \longrightarrow H_z^0(B,b^*(DL\lten_SM))
+\tag{2.4.1}
+\end{equation}
+é nula.
+\end{statement}
+
+Ponhamos $X\times_SY=Z$. Os subesquemas fechados $a':A'\to Z$ e $b':B'\to Z$, imagens de $a$ e $b$, satisfazem as mesmas hipóteses que $a$ e $b$. Seja $u'$ (resp. $v'$) a correspondência com suporte em $A'$ (resp. $B'$) que é imagem direta de $u$ (resp. $v$) (pela flecha deduzida da flecha de adjunção $f_*f^!\to 1$ (resp. $g_*g^!\to 1$), onde $f:A\to A'$ (resp. $g:B\to B'$) é a projeção). É imediato que $u_z=u'_z$ e $v_z=v'_z$. Por outro lado, da definição do produto cup 1.1.2 deduz-se facilmente
+\[
+\langle u,v\rangle=\langle u',v'\rangle,
+\]
+de onde resulta a primeira afirmação.
+
+Segundo 2.2 e 2.3, pode-se supor que $L_x=0$ e $M_y=0$, e então a conclusão de 1.2 se escreve $\langle u,v\rangle=0$. Sejam $P,Q\in\Ob D_{\mathrm{ctf}}(Z)$. O produto cup
+\[
+H_A^0(Z,P)\otimes H_B^0(Z,Q)\longrightarrow H_z^0(Z,P\lten Q)
+\]
+se decompõe como
+\[
+H_A^0(Z,P)\otimes H_B^0(Z,Q)
+ \xrightarrow{\,b^*\otimes 1\,}
+H_z^0(B,b^*P)\otimes H_B^0(Z,Q)
+ \longrightarrow H_z^0(Z,P\lten Q),
+\]
+onde $b^*$ é a restrição, e a segunda flecha, variante do produto considerado em (SGA $4^{1/2}$ Cycle 1.2.1), deriva do produto evidente no nível das seções de feixes (essa afirmação se verifica facilmente, por exemplo, mediante as resoluções flácidas de (SGA 4 XVII 4.2); se $a':\{z\}\to B$, $b':\{z\}\to A$ e $c:\{z\}\to Z$ são as inclusões, pode-se invocar também a decomposição padrão da flecha de Künneth (III 4.2.1)
+\[
+a'{}^!P\lten_Z b'{}^!Q\longrightarrow c^!(P\lten Q)
+\]
+em uma ``flecha de mudança de base''
+\[
+a'{}^!P\lten_Z b'{}^!Q\longrightarrow a'{}^!b^*P\lten a^*b'{}^!Q,
+\]
+seguida de ``flechas de projeção''
+\[
+a'{}^!b^*P\lten a^*b'{}^!Q
+ \longrightarrow a'{}^!(b^*P\lten b'{}^!Q)
+ \longrightarrow a'{}^!b'{}^!(P\lten Q)).
+\]
+Tomando $P=DL\lten_SM$ e $Q=L\lten_SDM$, e voltando à definição de $\langle u,v\rangle$ (III 4.2.5), vê-se que basta demonstrar que $b^*u=0$, de onde resulta a conclusão.

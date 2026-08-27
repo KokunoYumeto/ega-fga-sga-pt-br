@@ -1,0 +1,29 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 15076--15102 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{n\textsuperscript{o} 3. Demonstração do teorema}
+
+No final dessas reduções, só resta estabelecer o teorema quando $X$ é a reta projetiva. Primeiro, transformaremos a fórmula (1) do enunciado em uma fórmula de tipo Lefschetz relativa a traços; esta última fórmula será demonstrada no caso particular em que $X$ seja uma curva projetiva e lisa.
+
+Vamos retomar a fórmula (1):
+\[
+L_F=\prod_i\bigl(L_{\R^i_!g(F)}\bigr)^{(-1)^i}
+=\frac{P_F^1\cdots P_F^{2n-1}}{P_F^0\cdots P_F^{2n}},
+\quad\text{com}\quad
+P_F^i(t)=\det(1-f^{-1}_{H^i_!(\bar X,\bar F)}t).
+\]
+O logaritmo do primeiro membro escreve-se:
+\[
+\sum_{x\in X^0}\sum_{n=1}^{\infty}\Tr(f_{F_{\bar x}}^{-n d(x)})\,t^{n d(x)}/n
+=\sum_{n=1}^{\infty}\left(\sum_{d(x)|n} d(x)\Tr(f_{F_{\bar x}}^{-n})\right)t^n/n,
+\]
+enquanto o do segundo membro é
+\[
+\sum_{n\ge1}\left(\sum_i(-1)^i\Tr(f^{-n}_{H^i_!(\bar X,\bar F)})\right)t^n/n.
+\]
+Comparando os coeficientes de $t^n/n$, vê-se que é preciso estabelecer:
+\[
+\sum_{d(x)|n}d(x)\Tr(f_{F_{\bar x}}^{-n})
+=\sum_i(-1)^i\Tr(f^{-n}_{H^i_!(\bar X,\bar F)})
+\tag{2}
+\]
+para todo $n\ge1$; estes cálculos são legítimos porque o corpo $\Omega$ tem característica zero.

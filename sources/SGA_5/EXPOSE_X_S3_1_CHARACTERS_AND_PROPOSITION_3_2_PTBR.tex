@@ -1,0 +1,41 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 12327--12365 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{3. Lembretes sobre as representações lineares dos grupos finitos}
+
+Neste número, $\Lambda$ denota um anel comutativo, e $G$ um grupo.
+
+\subsubsection*{3.1. Caracteres}
+
+Consideremos a subcategoria plena $\mathcal E$ de $\Mod(\Lambda[G])$ dos $\Lambda[G]$-módulos $M$ cujo $\Lambda$-módulo subjacente é projetivo de tipo finito. Para um módulo $M$ deste tipo e para $g\in G$, considera-se o endomorfismo, para a estrutura de $\Lambda$-módulo,
+\[
+g_M:M\longrightarrow M,
+\qquad g_M(x)=gx.
+\]
+Obtém-se uma função
+\[
+\chi_M:G\longrightarrow \Lambda,
+\qquad \chi_M(g)=\Tr^*_\Lambda(g),
+\]
+que é uma função central sobre $G$ e chama-se o carácter do $\Lambda[G]$-módulo $M$.
+
+Associando a cada $M\in\Ob(\mathcal E)$ seu caráter $\chi_M$, obtém-se uma função aditiva (VIII 1). Utilizando o sorites dos traços para os endomorfismos de complexos perfeitos, obtém-se até mesmo uma função aditiva $\Tr$ sobre a categoria dos complexos de $\Lambda[G]$-módulos que são perfeitos como complexos de $\Lambda$-módulos. Daí resulta um homomorfismo
+\[
+\Tr:R^{\bullet}(G)\longrightarrow \mathcal F(G,\Lambda),
+\]
+onde $R^{\bullet}_{\Lambda}(G)$ é o anel das representações de $G$ sobre $\Lambda$ (VIII 10), e $\mathcal F(G,\Lambda)$ o módulo das funções centrais $G\to\Lambda$.
+
+Quando $G$ é finito, o composto do homomorfismo canônico
+\[
+K^{\bullet}(\Lambda[G])\longrightarrow R^{\bullet}_{\Lambda}(G)
+\]
+com $\Tr$ denotar-se-á por $\tr$.
+
+Recorde-se o seguinte resultado (IX th. 1, cor. 3):
+
+\begin{statement}{Proposição 3.2}
+Sejam $\mathbb Z_\ell$ o anel dos inteiros $\ell$-ádicos e $G$ um grupo finito. Então o homomorfismo
+\[
+\tr:K^{\bullet}(\mathbb Z_\ell[G])\longrightarrow \mathcal F(G,\mathbb Z_\ell)
+\]
+É um monomorfismo. Dois $\mathbb Z_\ell[G]$-módulos projetivos que têm a mesma função traço em $\mathcal F(G,\mathbb Z_\ell)$ são isomorfos.
+\end{statement}

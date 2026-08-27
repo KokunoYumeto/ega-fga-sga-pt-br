@@ -1,0 +1,277 @@
+% SGA 3, Exposé IX, tradução brasileira.
+% Escopo: §3 integral.
+% Autoridade: Polo--Gille Exp9-8nov09.pdf, pp. locais 7--10,
+% leitor completo pp. 653--656, pp. impressas 46--50.
+
+\SGARefTarget{sga3:ix:section:3}\section*{3. Propriedades infinitesimais:
+teoremas de levantamento e de conjugação}
+\addcontentsline{toc}{section}{3. Propriedades infinitesimais: teoremas de
+levantamento e de conjugação}
+
+As propriedades infinitesimais fundamentais dos grupos de tipo
+multiplicativo deduzem-se do
+\SGARefLink{sga3:ix:theorem:3:1}{teorema seguinte}.
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:theorem:3:1}\textbf{Teorema 3.1.}
+\textit{Seja \(S\) um esquema afim, seja \(H\) um \(S\)-grupo de tipo
+multiplicativo e seja \(\mathscr F\) um feixe quase-coerente sobre \(S\)
+sobre o qual \(H\) atua
+(\SGARefLink{sga3:i:subsection:4-7}{I~4.7}). Então}
+\[
+  \mathrm H^i(H,\mathscr F)=0\qquad\text{para }i>0,
+\]
+\textit{onde \(\mathrm H^i\) denota a cohomologia de Hochschild estudada
+na Exposição~I, \S5.}
+
+% Página-fonte: Exp9 p. local 8; leitor completo p. 654; pp. impressas 47--48.
+Com efeito, por loc.\ cit., \SGARefLink{sga3:ix:corollary:5:3}{5.3}, a
+cohomologia de Hochschild exprime-se, em termos dos anéis afins
+\(A\) e \(B\) de \(S\) e \(G\), e do \(A\)-módulo \(M\) que define
+\(\mathscr F\), como a cohomologia de um complexo de \(A\)-módulos
+\(C^\bullet(H,M)\), cuja formação comuta com toda mudança de base
+\(A\to A'\). Por conseguinte, para uma mudança de base \(A\to A'\) com
+\(A'\) plano sobre \(A\), tem-se
+\[
+  \mathrm H^i(H',\mathscr F')
+  =\mathrm H^i(H,\mathscr F)\otimes_AA'.
+\]
+Se, além disso, \(A'\) é fielmente plano sobre \(A\), para provar que
+\(\mathrm H^i(H,\mathscr F)\) se anula basta provar que
+\(\mathrm H^i(H',\mathscr F')\) se anula. Essa observação reduz-nos a
+verificar \SGARefLink{sga3:ix:theorem:3:1}{3.1} no caso em que \(G\)
+é diagonalizável; nesse caso, isso foi provado em
+\SGARefLink{sga3:i:theorem:5-3-3}{I~5.3.3}.
+% Candidato a erro de fonte: o teorema utiliza H; aqui o PDF diz G.
+
+Utilizando os resultados da Exposição~III, deduziremos de
+\SGARefLink{sga3:ix:theorem:3:1}{3.1} várias consequências de natureza
+geométrica.
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:theorem:3:2}\textbf{Teorema 3.2.}
+\textit{Seja \(S\) um esquema afim, seja \(S_0\) um subesquema afim definido
+por um ideal \(J\), seja \(H\) um grupo de tipo multiplicativo sobre \(S\)
+e seja \(G\) um pré-esquema em grupos qualquer sobre \(S\). Sejam
+\(u,v:H\to G\) dois homomorfismos de grupos, e sejam
+\(u_0,v_0:H_0\to G_0\) os homomorfismos obtidos de \(u,v\) pela
+mudança de base \(S_0\to S\). Se \(J^2=0\) e \(u_0=v_0\), existe
+\(g\in G(S)\) tal que}
+\[
+  v=\operatorname{int}(g)\circ u
+  \qquad\textit{y}\qquad
+  g_0=e.
+\]
+
+Isso se deduz de
+\SGARefLink{sga3:iii:theorem:2-1:item:ii}{III~2.1(ii)} e de
+\SGARefLink{sga3:ix:theorem:3:1}{3.1} (a anulação de
+\(\mathrm H^1\)).
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:3:3}\textbf{Corolário 3.3.}
+\textit{Sob as hipóteses preliminares de
+\SGARefLink{sga3:ix:theorem:3:2}{3.2}, suponhamos ainda que \(G\) seja liso
+sobre \(S\), mas suponhamos somente que \(J\) seja nilpotente (não
+necessariamente de quadrado zero). Se existe \(g_0\in G_0(S_0)\) tal que
+\(v_0=\operatorname{int}(g_0)\circ u_0\), então \(g_0\) se levanta a
+um elemento \(g\in G(S)\) tal que
+\(v=\operatorname{int}(g)\circ u\).}
+
+Por indução sobre um inteiro \(n\) tal que \(J^n=0\), reduz-se ao caso
+em que \(J\) é de quadrado zero. Como \(G\) é liso sobre \(S\),
+pode-se levantar \(g_0\) a um elemento \(g'\) de \(G(S)\). Substituindo
+\(v\) por \(v'=\operatorname{int}(g')\circ u\), reduz-se então à
+situação de \SGARefLink{sga3:ix:theorem:3:2}{3.2}.
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:3:4}\textbf{Corolário 3.4.}
+\textit{Sob as hipóteses preliminares de
+\SGARefLink{sga3:ix:theorem:3:2}{3.2}, com \(J\) nilpotente, suponhamos
+também que \(u\) seja central (por exemplo, que \(G\) seja comutativo).
+Então \(u_0=v_0\) implica \(u=v\).}
+
+Com efeito, a redução ao caso em que \(J\) é de quadrado zero é de
+novo imediata, e basta então aplicar
+\SGARefLink{sga3:ix:theorem:3:2}{3.2}. Em particular:
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:3:5}\textbf{Corolário 3.5.}
+\textit{Sejam \(S,S_0,H,G\) como em
+\SGARefLink{sga3:ix:theorem:3:2}{3.2}, com \(J\) nilpotente. Seja
+\(u:H\to G\) um homomorfismo de \(S\)-grupos tal que
+\(u_0:H_0\to G_0\) seja o homomorfismo unidade. Então \(u\) é o
+homomorfismo unidade.}
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:theorem:3:6}\textbf{Teorema 3.6.}
+\textit{Seja \(S\) um esquema afim, seja \(S_0\) um subesquema definido por
+um ideal nilpotente \(J\), seja \(H\) um grupo de tipo multiplicativo
+sobre \(S\), seja \(G\) um pré-esquema em grupos liso sobre \(S\), e seja
+\(u_0:H_0\to G_0\) um homomorfismo dos \(S_0\)-grupos obtidos pela
+mudança de base \(S_0\to S\). Existe então um homomorfismo
+\(u:H\to G\) de \(S\)-grupos que levanta \(u_0\). Além disso, por
+\SGARefLink{sga3:ix:corollary:3:3}{3.3}, quaisquer dois levantamentos
+\(u,u'\) são conjugados por um elemento de \(G(S)\) cuja redução em
+\(G(S_0)\) é o elemento identidade.}
+
+% Página-fonte: Exp9 p. local 9; leitor completo p. 655; p. impressa 49.
+Isso se deduz de \SGARefLink{sga3:iii:theorem:2-1}{III~2.1}, de
+\SGARefLink{sga3:ix:proposition:2:3}{2.3} e de
+\SGARefLink{sga3:ix:theorem:3:1}{3.1}: a anulação de \(\mathrm H^2\)
+dá a existência do levantamento de \(u_0\), e a anulação de
+\(\mathrm H^1\) dá a unicidade a menos de conjugação.
+
+Do mesmo modo, podem-se provar as variantes seguintes de
+\SGARefLink{sga3:ix:theorem:3:2}{3.2}--%
+\SGARefLink{sga3:ix:theorem:3:6}{3.6}. De fato, essas variantes implicam
+os enunciados precedentes quando aplicadas aos subgrupos gráficos dos
+homomorfismos ali considerados.
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:theorem:3:2:bis}\textbf{Teorema 3.2 bis.}
+\textit{Seja \(S\) um esquema afim, seja \(S_0\) um subesquema definido por
+um ideal \(J\), seja \(G\) um pré-esquema em \(S\)-grupos e sejam \(H,H'\)
+dois subpré-esquemas em grupos de tipo multiplicativo. Sejam \(G_0,H_0,H'_0\)
+os grupos sobre \(S_0\) obtidos pela mudança de base \(S_0\to S\). Se
+\(J^2=0\) e \(H_0=H'_0\), existe \(g\in G(S)\) tal que}
+\[
+  H'=\operatorname{int}(g)(H)
+  \qquad\textit{y}\qquad
+  g_0=e.
+\]
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:3:3:bis}\textbf{Corolário 3.3 bis.}
+\textit{Sob as hipóteses preliminares de
+\SGARefLink{sga3:ix:theorem:3:2:bis}{3.2 bis}, suponhamos ainda que \(G\)
+seja liso sobre \(S\) e que \(J\) seja nilpotente (não necessariamente de
+quadrado zero). Se \(g_0\in G_0(S_0)\) satisfaz
+\(H'_0=\operatorname{int}(g_0)(H_0)\), então \(g_0\) se levanta a um
+elemento \(g\in G(S)\) tal que \(H'=\operatorname{int}(g)(H)\).}
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:3:4:bis}\textbf{Corolário 3.4 bis.}
+\textit{Sob as hipóteses preliminares de
+\SGARefLink{sga3:ix:theorem:3:2:bis}{3.2 bis}, suponhamos que \(J\) seja
+nilpotente e que \(H\) seja central (por exemplo, que \(G\) seja
+comutativo). Então \(H_0=H'_0\) implica \(H=H'\).}
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:theorem:3:6:bis}\textbf{Teorema 3.6 bis.}
+\textit{Seja \(S\) um esquema afim, seja \(S_0\) um subesquema definido por
+um ideal nilpotente \(J\), seja \(G\) um pré-esquema em \(S\)-grupos liso
+sobre \(S\), e seja \(H_0\) um subpré-esquema em grupos de
+\(G_0=G\times_SS_0\), de tipo multiplicativo. Então:}
+\begin{enumerate}
+  \item[(a)]\SGARefTarget{sga3:ix:theorem:3:6:bis:item:a:01}
+  \textit{existe um subpré-esquema em grupos \(H\) de \(G\), plano sobre
+  \(S\), tal que \(H\times_SS_0=H_0\);}
+
+  \item[\SGAInlineRefTarget{sga3:ix:theorem:3:2:item:b}(b)]%
+  \SGARefTarget{sga3:ix:theorem:3:6:bis:item:b:01}
+  \textit{tal \(H\) é necessariamente de tipo multiplicativo;}
+
+  \item[(c)]\SGARefTarget{sga3:ix:theorem:3:6:bis:item:c:01}
+  \textit{por fim, segundo
+  \SGARefLink{sga3:ix:theorem:3:2:bis}{3.2 bis}, quaisquer dois levantamentos
+  \(H,H'\) de \(H_0\) são conjugados por um elemento
+  \(g\in G(S)\) cuja redução em \(G(S_0)\) é o elemento identidade.}
+\end{enumerate}
+
+Indiquemos como se podem provar
+\SGARefLink{sga3:ix:theorem:3:2:bis}{3.2 bis} (do qual
+\SGARefLink{sga3:ix:corollary:3:3:bis}{3.3 bis} e
+\SGARefLink{sga3:ix:corollary:3:4:bis}{3.4 bis} são consequências
+imediatas) e a afirmação
+\SGARefLink{sga3:ix:theorem:3:6:bis:item:a:01}{(a)} de
+\SGARefLink{sga3:ix:theorem:3:6:bis}{3.6 bis}. Esta última deduz-se de
+\SGARefLink{sga3:ix:theorem:3:1}{3.1} (a anulação de
+\(\mathrm H^2\)) e de
+\SGARefLink{sga3:iii:corollary:4-37:item:ii}{III~4.37(ii)}. Do mesmo modo,
+\SGARefLink{sga3:ix:theorem:3:2:bis}{3.2 bis} deduz-se de
+\SGARefLink{sga3:ix:theorem:3:1}{3.1} (a anulação de
+\(\mathrm H^1\)) e de
+\SGARefLink{sga3:iii:corollary:4-37:item:i}{III~4.37(i)}, ao menos quando
+\(G\) e \(H\) são lisos sobre \(S\).
+
+Utilizando os resultados da Exposição seguinte, pode-se, contudo, deduzir
+de maneira muito simples
+\SGARefLink{sga3:ix:theorem:3:2:bis}{3.2 bis} e
+\SGARefLink{sga3:ix:theorem:3:6:bis}{3.6 bis}, na forma geral aqui
+enunciada, de \SGARefLink{sga3:ix:theorem:3:2}{3.2} e
+\SGARefLink{sga3:ix:theorem:3:6}{3.6}, respectivamente. Para
+\SGARefLink{sga3:ix:theorem:3:2:bis}{3.2 bis}, basta observar que, por
+\SGARefLink{sga3:x:proposition:2:1}{X~2.1}, \(H\) e \(H'\) são isomorfos,
+o que nos reduz a \SGARefLink{sga3:ix:theorem:3:2}{3.2}.
+
+Para \SGARefLink{sga3:ix:theorem:3:6:bis}{3.6 bis}, observe-se que \(H_0\)
+é necessariamente de tipo finito sobre \(S_0\):\footnote{Nota do editor:
+o original dizia «por
+\SGARefLink{sga3:ix:proposition:2:1:item:b:01}{2.1(b)}, pois suas fibras o
+são». Os editores não compreenderam esse argumento e o substituíram pelo
+seguinte.} com efeito, como subpré-esquema em grupos de \(G_0\), que é liso
+sobre \(S_0\), o grupo \(H_0\) é localmente de tipo finito sobre \(S_0\).
+Mas \(H_0\) é afim sobre \(S_0\) por
+\SGARefLink{sga3:ix:proposition:2:1:item:a:01}{2.1(a)} e, portanto, é de
+tipo finito sobre \(S_0\). Por
+\SGARefLink{sga3:x:corollary:4-5}{X~4.5}, \(H_0\) é, por conseguinte,
+quase-isotrivial e, por
+\SGARefLink{sga3:x:proposition:2:1}{X~2.1}, provém de um grupo \(H\) de
+tipo multiplicativo sobre \(S\).\footnote{Nota do editor: desenvolveu-se
+a frase seguinte.} Por \SGARefLink{sga3:ix:theorem:3:6}{3.6}, existe um
+homomorfismo de \(S\)-grupos \(u:H\to G\) que levanta a imersão
+\(H_0\hookrightarrow G_0\). Como \(H\) e \(H_0\)
+(respectivamente, \(G\) e \(G_0\)) têm o mesmo espaço topológico
+subjacente e, para todo \(h\in H\), o morfismo
+
+% Página-fonte: Exp9 p. local 10; leitor completo p. 656; p. impressa 50.
+\[
+  \mathscr O_{G,u(h)}\longrightarrow\mathscr O_{H,h}
+\]
+é sobrejetivo (pois o é após redução módulo o ideal nilpotente \(J\)),
+o morfismo \(u\) também é uma imersão (cf. EGA~I, 4.2.2).
+
+Por fim, todo levantamento \(H\) de \(H_0\) a um subgrupo plano de
+\(G\) é necessariamente de tipo multiplicativo por
+\SGARefLink{sga3:x:corollary:2:3}{X~2.3},\footnote{Nota do editor:
+\SGARefLink{sga3:x:corollary:2:3}{X~2.3} depende essencialmente do
+\SGARefLink{sga3:ix:theorem:3:6}{Teorema~3.6} da presente Exposição.}
+o que prova também a afirmação
+\SGARefLink{sga3:ix:theorem:3:6:bis:item:b:01}{(b)} de
+\SGARefLink{sga3:ix:theorem:3:6:bis}{3.6 bis}. O leitor pode verificar
+que os resultados \SGARefLink{sga3:ix:theorem:3:2:bis}{3.2 bis}--%
+\SGARefLink{sga3:ix:theorem:3:6:bis}{3.6 bis} não são utilizados na
+Exposição~X, de modo que não há círculo vicioso.
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:proposition:3:8}\textbf{Proposição 3.8.}
+\footnote{Nota do editor: conservou-se a numeração do original; não há
+3.7.}
+\textit{Seja \(S\) um pré-esquema, seja \(S_0\) um subesquema fechado
+definido por um ideal localmente nilpotente \(J\), seja \(G\) um
+\(S\)-grupo de tipo multiplicativo e seja \(X\) um \(S\)-pré-esquema
+localmente de apresentação finita. Suponhamos que \(G\) atue sobre \(X\)
+de modo que \(G_0=G\times_SS_0\) atue trivialmente sobre
+\(X_0=X\times_SS_0\). Então \(G\) atua trivialmente sobre \(X\).}
+
+A demonstração é a de
+\SGARefLink{sga3:iii:corollary:2-4:item:b}{III~2.4(b)}. Também se pode
+reduzir a loc.\ cit. observando que
+\SGARefLink{sga3:ix:proposition:3:8}{3.8} se reduz imediatamente ao caso
+em que \(G\) é diagonalizável, que é o caso ali tratado.
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:3:9}\textbf{Corolário 3.9.}
+\textit{Sejam \(S,S_0\) como acima, e seja \(u:G\to H\) um homomorfismo de
+\(S\)-grupos, com \(G\) de tipo multiplicativo e \(H\) localmente de
+apresentação finita sobre \(S\). Suponhamos que o homomorfismo
+\(u_0:G_0\to H_0\), obtido pela mudança de base \(S_0\to S\), seja
+central. Então \(u\) é central.}
+
+Com efeito, basta aplicar \SGARefLink{sga3:ix:proposition:3:8}{3.8} com
+\(X=H\), fazendo \(G\) atuar sobre \(H\) por
+\[
+  (g,h)\longmapsto\operatorname{int}(u(g))\cdot h
+  =u(g)h\,u(g)^{-1}.
+\]

@@ -1,0 +1,476 @@
+% SGA 3, Exposé IX, tradução brasileira-portuguesa.
+% Escopo: segunda metade do Lema 4.4 até o final do §4.
+% Autoridade: Polo--Gille Exp9-8nov09.pdf, pp. locais 14--18.
+
+Para \(i\) fixo, inteiros \(m\geq n\) e qualquer \(S_n\)-pré-esquema
+\(P\),
+\[
+  (Y_n^i)_P
+  =Y_i\times_SS_n\times_{S_n}P
+  =Y_i\times_SP
+  =(Y_m^i)_P,
+\]
+e, do mesmo modo, \((Z_n^i)_P=(Z_m^i)_P\). Segue-se que \(F_n^i\) é a
+restrição \(F_m^i\times_{S_m}S_n\) de \(F_m^i\) a
+\((\mathbf{Sch})_{/S_n}\), e, portanto,
+\[
+  T_n^i=T_m^i\times_{S_m}S_n.
+\]
+Tem-se, assim, um diagrama comutativo de linhas exatas:
+\SGARefTarget{sga3:ix:lemma:4:4:diagram:02}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+  0 \arrow[r] & K_m^i \arrow[r]\arrow[d,two heads]
+    & A_m \arrow[r]\arrow[d,two heads]
+    & \mathscr O(T_m^i) \arrow[r]\arrow[d,two heads] & 0\\
+  0 \arrow[r] & K_n^i \arrow[r]
+    & A_n \arrow[r]
+    & \mathscr O(T_n^i) \arrow[r] & 0
+\end{tikzcd}
+\]
+Todas as flechas verticais são sobrejetivas. Segue-se, em primeiro lugar,
+que o sistema projetivo \((K_n^i)_{n\in\mathbb N}\) satisfaz a
+condição de Mittag--Leffler, de modo que
+\[
+  \varprojlim_n\mathscr O(T_n^i)
+  \simeq\widehat A/K^i
+\]
+como anéis topológicos (cf. EGA \(0_{\mathrm{III}}\), \S13.2). Em
+segundo lugar, a aplicação \(K^i\to K_n^i\) é sobrejetiva
+(cf. \SGARefLink{sga3:ix:bib:bens}{[BEns]}, III, \S7.4, Proposição~5).
+Portanto,
+\[
+  K_n^i\simeq
+  \frac{K^i+\mathfrak m^{n+1}\widehat A}
+       {\mathfrak m^{n+1}\widehat A},
+  \qquad
+  \mathscr O(T_n^i)\simeq
+  (\widehat A/K^i)\otimes_A(A/\mathfrak m^{n+1}).
+\]
+
+Dito de outro modo, \((T_n^i)_n\) é um sistema indutivo de esquemas
+afins artinianos, e seu limite indutivo
+\[
+  T^i=\varinjlim_nT_n^i
+\]
+é um subesquema formal fechado de
+\[
+  \widehat S=\operatorname{Spf}(\widehat A)
+\]
+(cf. EGA I, \S10), cuja redução módulo \(\mathfrak m^{n+1}\) é
+\(T_n^i\).
+
+Seja \(T\) o subesquema formal fechado de \(\widehat S\) dado pela
+interseção dos \(T^i\), isto é, definido por
+\[
+  K=\sum_iK^i.
+\]
+Como \(\widehat A\) é noetheriano, existe um subconjunto finito \(J\) de
+\(I\) tal que
+\[
+  K=\sum_{i\in J}K^i,
+  \qquad\text{equivalentemente}\qquad
+  T=\bigcap_{i\in J}T^i.
+\]
+Para todo \(n\), portanto,
+\[
+  K_n=\sum_{i\in J}K_n^i,
+\]
+onde \(K_n\) é a imagem de \(K\) em \(A_n\).
+
+Recordemos que \(f_i\) é a imagem de
+\(f\in B=\mathscr O(X)\) em \(\mathscr O(Z_i)\), e que \(f_i'\) é sua
+imagem em
+\[
+  \mathscr O(Z_i')
+  =\mathscr O(Z_i)\otimes_AA'.
+\]
+A relação \(Y_i'=Z_i'\) equivale a \(f_i'=0\). Ora,
+\(\mathscr O(Z_i)\otimes_AA'\) é o limite direto das subálgebras
+\(\mathscr O(Z_i)\otimes_AA''\), para os \(A''\) anteriores. Por
+conseguinte, existe um \(A''\) para o qual \(Y_i''=Z_i''\). A priori,
+\(A''\) depende de \(i\), mas, como \(J\) é finito, pode-se escolher um
+único \(A''\) que sirva para todo \(i\in J\). Ponhamos
+\[
+  S''=\operatorname{Spec}(A''),
+  \qquad
+  S''_{(n)}=S''\times_SS_n.
+\]
+\footnote{Nota do editor: o original foi desenvolvido e corrigido,
+distinguindo-se \(S''_{(n)}\) do subesquema
+\(S_n''=S_n''(s'')\) introduzido mais abaixo.}
+
+% Página-fonte: Exp9 p. local 15; leitor completo p. 661.
+Para todo \(i\in J\), a igualdade
+\[
+  Y_i''\times_{S''}S''_{(n)}
+  =(Y_n^i)_{S''_{(n)}}
+  =Z_i''\times_{S''}S''_{(n)}
+  =(Z_n^i)_{S''_{(n)}}
+\]
+mostra, pela definição de \(T_n^i\), que \(S''_{(n)}\to S_n\) se
+fatora por \(T_n^i\). Fatora-se, pois, por
+\[
+  T_n=\bigcap_{i\in J}T_n^i,
+\]
+e, por conseguinte, por \(T_n^i\) para todo \(i\in I\). Seja \(f''\) a
+imagem de \(f\) em \(B''=B\otimes_AA''\), e seja \(f''_{(n)}\) sua imagem
+em
+\[
+  B''_{(n)}=B''/\mathfrak m^{n+1}B''.
+\]
+A fatoração precedente significa que, para todo \(n\), a seção
+\(f''_{(n)}\) se anula sobre todos os \(Z_i\times_SS''_{(n)}\).
+
+Como \(A\to A''\to A'\) são homomorfismos locais, a imagem \(s''\) de
+\(s'\) em \(S''\) é o ponto fechado de \(S''\), correspondente ao
+ideal maximal \(\mathfrak m''\) de \(A''\), e sua imagem em \(S\) é
+\(s\). \emph{[A fonte imprime aqui \(B''\); visto que
+\(s''\in S''=\operatorname{Spec}(A'')\), o anel pretendido é
+\(A''\).]} Fixemos \(n\), e denotemos agora por \(S_n''\) a \(n\)-ésima
+vizinhança infinitesimal de \(s''\) em \(S''\):
+\[
+  S_n''=\operatorname{Spec}(A''/\mathfrak m''^{\,n+1}).
+\]
+Ponhamos
+\[
+  B_n''=B''/\mathfrak m''^{\,n+1}B'',
+  \qquad
+  Z_{n}^{i''}=Z_i\times_SS_n''.
+\]
+\emph{[A fonte acrescenta
+\(Z_n^{i''}=\operatorname{Spec}(B_n'')\); essa igualdade identificaria cada
+\(Z_n^{i''}\) com \(X_n''\), razão pela qual se conserva aqui a definição por
+mudança de base.]}
+Então, a imagem \(f_n''\) de \(f''_{(n)}\) em \(B_n''\) se anula sobre
+cada \(Z_n^{i''}\). Pelo
+\SGARefLink{sga3:ix:lemma:4:5}{Lema~4.5 mais abaixo}, a família de fibras
+\[
+  Z_0^{i'''}
+  =Z_n^{i''}\times_{S_n''}\kappa(s'')
+  =Z_{is}\times_{\kappa(s)}\kappa(s'')
+\]
+é esquematicamente densa em
+\[
+  X_0'''
+  =X_n''\times_{S_n''}\kappa(s'')
+  =X_s\times_{\kappa(s)}\kappa(s'').
+\]
+Assim, \(S_n'',X_n'',(Z_n^{i''})_{i\in I}\) e
+\[
+  S_0'''=\operatorname{Spec}\kappa(s'')
+\]
+satisfazem as hipóteses do \SGARefLink{sga3:ix:lemma:4:2}{Lema~4.2}.
+Segue-se que \(f_n''=0\), isto é,
+\[
+  f''\in\mathfrak m''^{\,n+1}B''
+  \qquad\text{para todo }n.
+\]
+
+Como \(B\) é noetheriano e \(B''=B\otimes_AA''\) é uma localização de
+uma \(B\)-álgebra de tipo finito, \(B''\) é noetheriano. Seus anéis
+locais são, portanto, separados para sua topologia usual. Por conseguinte,
+\(f''\) é nulo em todo ponto \(x''\) de \(X''\) para o qual
+\(\mathfrak m''B''\) está contido no ideal maximal de
+\(\mathscr O_{X'',x''}\), isto é, em todo ponto de \(X''\) situado sobre
+\(s''\). A fortiori, \(f'\) é nulo em todo ponto de \(X'\) situado
+sobre \(s'\). \qed
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:lemma:4:5:0}\textbf{Lema 4.5.0.}%
+\footnote{Nota do editor: este lema foi inserido aqui porque é utilizado nas
+demonstrações de \SGARefLink{sga3:ix:lemma:4:5}{4.5} e
+\SGARefLink{sga3:ix:theorem:4:7}{4.7}.}
+\textit{Seja \(X\) um \(S\)-pré-esquema, seja \((Z_i)_{i\in I}\) uma
+família de subpré-esquemas de \(X\), e seja \(S'\to S\) fielmente plano.
+Se \((Z_i')_{i\in I}\) é esquematicamente densa em \(X'\), então
+\((Z_i)_{i\in I}\) é esquematicamente densa em \(X\).}
+
+Isso se deduz de EGA IV\(_3\), 11.10.5(i) e 11.9.10(i). Resta dar a
+demonstração do \SGARefLink{sga3:ix:lemma:4:5}{lema seguinte}.
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:lemma:4:5}\textbf{Lema 4.5.}
+\textit{Seja \(X\) um pré-esquema localmente noetheriano}%
+\footnote{Nota do editor: essa hipótese é, de fato, supérflua; cf. EGA
+IV\(_3\), 11.10.6 e 11.9.13.}
+\textit{ sobre um corpo \(k\), seja \((Z_i)_{i\in I}\) uma família de
+subpré-esquemas de \(X\), seja \(k'/k\) uma extensão de corpos e sejam
+\(X',Z_i'\) os obtidos de \(X,Z_i\) por mudança de base. Então,
+\((Z_i)_{i\in I}\) é esquematicamente densa em \(X\) se, e somente se,
+\((Z_i')_{i\in I}\) é esquematicamente densa em \(X'\).}
+
+\emph{Demonstração.}
+A implicação «se» se deduz do
+\SGARefLink{sga3:ix:lemma:4:5:0}{Lema~4.5.0}; provemos a recíproca.%
+\footnote{Nota do editor: o original foi desenvolvido no que segue.}
+Em primeiro lugar, podemos supor \(X=\operatorname{Spec}(B)\) afim. Para
+todo \(i\), seja \((Z_{ij})_{j\in J_i}\) um recobrimento aberto afim de
+\(Z_i\). Substituindo \((Z_i)_{i\in I}\) por
+\((Z_{ij})_{(i,j)\in J}\), onde
+\[
+  J=\coprod_{i\in I}J_i,
+\]
+podemos supor também que cada \(Z_i\) é afim.
+
+Sejam
+\[
+  g\in B'=B\otimes_kk',
+  \qquad
+  t'\in B_g'
+\]
+uma seção de \(\mathscr O_{X'}\) sobre o aberto afim \(U'=X_g'\)
+cuja restrição a cada \(Z_i'\cap U'\) é nula. Assim, sua imagem em cada
+\[
+  \bigl(\mathscr O(Z_i)\otimes_kk'\bigr)_g
+\]
+é nula. Existe uma \(k\)-subálgebra \(A\) de tipo finito de \(k'\) tal
+que
+\[
+  g\in B_A=B\otimes_kA,
+  \qquad
+  t'\in(B_A)_g.
+\]
+A aplicação
+\[
+  \mathscr O(Z_i)\otimes_kA
+  \longrightarrow
+  \mathscr O(Z_i)\otimes_kk'
+\]
+é injetiva e, portanto, também o é
+\[
+  \bigl(\mathscr O(Z_i)\otimes_kA\bigr)_g
+  \longrightarrow
+  \bigl(\mathscr O(Z_i)\otimes_kk'\bigr)_g.
+\]
+A hipótese implica, por conseguinte, que a imagem de \(t'\) em cada
+\(\bigl(\mathscr O(Z_i)\otimes_kA\bigr)_g\) é nula. Resta mostrar
+que \((Z_{iA})_{i\in I}\) é esquematicamente densa em \(X_A\), o que
+se deduz de EGA IV\(_3\), 11.9.10(b).%
+\footnote{Nota do editor: o original prosseguia: «Utilizando
+\SGARefLink{sga3:ix:corollary:4:3}{4.3} para os \(X_{A'}\), onde
+\(A'\) é um quociente de \(A\) por uma potência de um ideal maximal, e o
+teorema dos zeros de Hilbert, reduz-se ao caso em que \(k'\) é uma
+extensão finita de \(k\)». Essa redução poderia ser desenvolvida e esse
+argumento prosseguido, pois o caso de uma extensão finita \(k'/k\) é
+um pouco mais simples do que o caso geral tratado em EGA IV\(_3\),
+11.9.10(b).}
+\qed
+
+Registremos de passagem o
+\SGARefLink{sga3:ix:corollary:4:6}{resultado seguinte}, que será utilizado
+em uma exposição posterior.%
+\footnote{Nota do editor: resta precisar essa referência.}
+
+% Página-fonte: Exp9 p. local 16; leitor completo p. 662.
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:4:6}\textbf{Corolário 4.6.}
+\textit{Seja \(X\) um \(S\)-pré-esquema plano e seja \(U\) um aberto de
+\(X\). Suponhamos que \(U_s\) seja esquematicamente denso em \(X_s\) para
+todo \(s\in S\), e que, ou \(X\) seja localmente noetheriano, ou \(X\)
+seja localmente de apresentação finita sobre \(S\). Então, \(U\)
+é esquematicamente denso em \(X\).}
+
+\emph{Demonstração.}
+Para simplificar, suponhamos que \(U\) seja retrocompacto em \(X\)
+(cf. EGA IV\(_3\), 11.10.10 e 11.9.17 para o caso geral). O caso
+localmente noetheriano só se inclui como referência; está contido em
+\SGARefLink{sga3:ix:corollary:4:3}{4.3}.
+
+No segundo caso, podemos supor manifestamente que \(S\) e \(X\) são
+afins. Então, \(X\) e \(U\) são de apresentação finita sobre
+\(S=\operatorname{Spec}(A)\). O anel \(A\) é o limite direto de suas
+\(\mathbb Z\)-subálgebras \(A_i\) de tipo finito. O «procedimento
+patenteado» já utilizado (cf. EGA IV\(_3\), 8.8.2 e 8.10.5(iii)) mostra
+que existem um índice \(i\), um esquema afim \(X_i\) sobre
+\[
+  S_i=\operatorname{Spec}(A_i),
+\]
+e um aberto \(U_i\) de \(X_i\), dos quais \(X,U\) são obtidos pela
+mudança de base \(S\to S_i\). Seja \(E_i\) o subconjunto de \(S_i\)
+formado pelos \(s\in S_i\) para os quais \((U_i)_s\) é
+esquematicamente denso em \((X_i)_s\).
+
+Por EGA IV\(_2\), 5.9.9 e 5.10.2, \(E_i\) é o conjunto de pontos
+\(s\in S_i\) para os quais \((U_i)_s\) contém o conjunto
+\[
+  \operatorname{Ass}\mathscr O_{(X_i)_s}
+\]
+de pontos associados ao feixe estrutural de \((X_i)_s\). Por EGA
+IV\(_3\), 11.9.17.1, essa condição é construtível; portanto, \(E_i\)
+é construtível.%
+\footnote{Nota do editor: o original foi desenvolvido neste parágrafo e no
+seguinte.}
+
+Por \SGARefLink{sga3:ix:lemma:4:5}{4.5}, a imagem inversa de \(E_i\) por
+\(S_j\to S_i\) é \(E_j\), e sua imagem inversa por \(S\to S_i\) é o
+conjunto \(E\) dos \(s\in S\) para os quais \(U_s\) é
+esquematicamente denso em \(X_s\).%
+\footnotemark[24]
+Por hipótese, \(E=S\), que é também a imagem inversa de \(S_i\) por
+todo \(S\to S_i\). EGA IV\(_3\), 8.3.11 implica, então, que existe
+\(j\geq i\) tal que \(E_j=S_j\); isto é, \((U_j)_s\) é
+esquematicamente denso em \((X_j)_s\) para todo \(s\in S_j\).
+
+Apliquemos \SGARefLink{sga3:ix:lemma:4:4}{4.4} a
+\((S_j,X_j,U_j)\) e à mudança de base \(S\to S_j\). Segue-se que \(U\)
+é esquematicamente denso em \(X\). Observe-se que aqui
+\SGARefLink{sga3:ix:lemma:4:4}{4.4} só é utilizado para uma família cujo
+conjunto de índices é finito (de fato, um conjunto unitário); nesse caso, sua
+demonstração se simplifica consideravelmente. \qed
+
+% Página-fonte: Exp9 p. local 17; leitor completo p. 663.
+\medskip
+\noindent\SGARefTarget{sga3:ix:theorem:4:7}\textbf{Teorema 4.7.}
+\textit{Seja \(S\) um pré-esquema e seja \(G\) um grupo de tipo
+multiplicativo e de tipo finito sobre \(S\). Para todo inteiro \(n>0\),
+seja \({}_nG\) o núcleo de \(n\cdot\operatorname{id}_G\). Então, a
+família de subpré-esquemas \(({}_nG)_{n>0}\) é esquematicamente densa em
+\(G\) no sentido da
+\SGARefLink{sga3:ix:definition:4:1}{Definição~4.1}.}
+
+\emph{Demonstração.}
+Distinguimos dois casos.
+
+\smallskip
+\SGARefTarget{sga3:ix:theorem:4:7:proof:item:a}\noindent\textit{(a) \(S\)
+localmente noetheriano.}
+Por \SGARefLink{sga3:ix:corollary:4:3}{4.3}, reduzimo-nos ao caso em que
+\(S\) é o espectro de um corpo \(k\). Pelo
+\SGARefLink{sga3:ix:lemma:4:5:0}{4.5.0}, podemos supor que \(k\) é
+algebricamente fechado e que \(G\) é diagonalizável, digamos
+\[
+  G=D_k(M),
+\]
+onde \(M\) é um grupo comutativo de tipo finito. Então,
+\[
+  M\simeq\Gamma\times\mathbb Z^r
+\]
+com \(\Gamma\) finito, e, por conseguinte,
+\[
+  G\simeq G_1\times G_2,
+  \qquad
+  G_1=D(\Gamma),
+  \qquad
+  G_2=\mathbf G_m^r.
+\]
+Para \(n\) suficientemente divisível ---a saber, para \(n\) múltiplo da
+ordem de \(\Gamma\)---, tem-se
+\[
+  {}_nG=G_1\times{}_nG_2,
+  \qquad\text{pois}\qquad
+  {}_nG_1=G_1.
+\]
+Aplicando novamente \SGARefLink{sga3:ix:corollary:4:3}{4.3} à
+projeção \(G\to G_1\), reduzimo-nos a \(G_2\), e, portanto, ao caso
+\(G=\mathbf G_m^r\). Como \(G\) é, então, reduzido, a densidade
+esquemática de \(({}_nG)_{n>0}\) equivale à densidade de
+\(\bigcup_n{}_nG\) na topologia ordinária. Como
+\[
+  {}_nG=({}_n\mathbf G_m)^r,
+\]
+reduzimo-nos a \(G=\mathbf G_m\), grupo irredutível de dimensão um. A
+afirmação segue agora do fato de que \(\bigcup_n{}_nG\), o conjunto das
+raízes da unidade em \(k\), é infinito.
+
+\smallskip
+\SGARefTarget{sga3:ix:theorem:4:7:proof:item:b}\noindent\textit{(b) Caso
+geral.}
+Para todo \(s\in S\), existem uma vizinhança aberta \(U\) de \(s\) e um
+morfismo fielmente plano quase compacto \(S'\to U\) tal que
+\(G'=G_{S'}\) é diagonalizável, digamos \(G'=D_{S'}(M)\). Por
+\SGARefLink{sga3:ix:lemma:4:5:0}{4.5.0}, podemos reduzir-nos a \(G'\) e,
+portanto, supor que o próprio \(G\) é diagonalizável. Ele é obtido por mudança
+de base
+\[
+  S\longrightarrow\operatorname{Spec}(\mathbb Z)
+\]
+a partir do grupo absoluto \(H=D_{\mathbb Z}(M)\). A parte
+\SGARefLink{sga3:ix:theorem:4:7:proof:item:a}{(a)} mostra que, para todo
+\(s\in\operatorname{Spec}(\mathbb Z)\), a família
+\(({}_nH_s)_{n>0}\) é esquematicamente densa em \(H_s\). Resta apenas
+aplicar \SGARefLink{sga3:ix:lemma:4:4}{4.4}.%
+\footnote{Nota do editor: este resultado será necessário em X,
+\SGARefLink{sga3:x:lemma:4-3}{4.3}, para uma base não localmente
+noetheriana, a saber,
+\(S=\operatorname{Spec}(\widehat A\otimes_A\widehat A)\), onde
+\(\widehat A\) é o completamento do anel local noetheriano \(A\).}
+\qed
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:4:8}\textbf{Corolário 4.8.}
+\begin{enumerate}
+  \item[(a)]\SGARefTarget{sga3:ix:corollary:4:8:item:a}
+  \textit{Sejam \(u,v:H\to G\) dois homomorfismos de \(S\)-pré-esquemas em
+  grupos, com \(H\) de tipo multiplicativo}%
+  \footnote{Nota do editor: «diagonalizável» foi substituído por «de tipo
+  multiplicativo».}
+  \textit{ e de tipo finito. Suponhamos que, para todo inteiro \(n>0\),
+  as restrições de \(u\) e \(v\) a \({}_nH\) sejam iguais. Então,
+  \(u=v\).}
+
+  \item[(b)]\SGARefTarget{sga3:ix:corollary:4:8:item:b}
+  \textit{Sejam \(H_1,H_2\) dois subgrupos de tipo multiplicativo e de tipo
+  finito de um pré-esquema em grupos \(G\). Se
+  \({}_nH_1={}_nH_2\) para todo inteiro \(n>0\), então \(H_1=H_2\).}
+\end{enumerate}
+
+\emph{Demonstração.}
+A parte \SGARefLink{sga3:ix:corollary:4:8:item:a}{(a)} se deduz da
+parte \SGARefLink{sga3:ix:corollary:4:8:item:b}{(b)} considerando os
+subgrupos \(H_1,H_2\) de \(H\times G\) que são os gráficos de \(u,v\).
+Para a parte \SGARefLink{sga3:ix:corollary:4:8:item:b}{(b)}, ponhamos
+\[
+  H=H_1\cap H_2.
+\]
+Este é um subpré-esquema em grupos de \(H_i\), para \(i=1,2\), e devemos
+mostrar que é igual a \(H_i\). A hipótese diz precisamente que \(H\)
+contém todos os \({}_nH_i\). Reduzimo-nos, portanto, ao
+\SGARefLink{sga3:ix:corollary:4:9}{corolário seguinte}. \qed
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:4:9}\textbf{Corolário 4.9.}
+\textit{Seja \(G\) um \(S\)-grupo de tipo multiplicativo e de tipo finito,
+e seja \(H\) um subpré-esquema em grupos que contenha \({}_nG\) para todo
+\(n>0\). Então, \(H=G\).}
+
+\emph{Demonstração.}
+Por \SGARefLink{sga3:ix:theorem:4:7}{4.7}, basta provar que \(H\) é
+fechado, ou, de modo equivalente, que é igual a \(G\) como conjunto.
+Isso nos reduz ao caso em que \(S\) é o espectro de um corpo. Todo
+subpré-esquema em grupos de \(G\) é, então, fechado, por VI\(_B\),
+\SGARefLink{cor:sga3-VIB-1.4.2}{1.4.2}. \qed
+
+% Página-fonte: Exp9 p. local 18; leitor completo p. 664.
+\medskip
+\noindent\SGARefTarget{sga3:ix:remark:4:10}\textbf{Observação 4.10.}
+Sob as hipóteses de \SGARefLink{sga3:ix:theorem:4:7}{4.7}, seja \(m>0\)
+um inteiro com as seguintes propriedades: para todo \(s\in S\), \(m\) não
+é uma potência da característica de \(\kappa(s)\); e, se \(G_s\) é de
+tipo \(M\), todo divisor primo do subgrupo de torção de \(M\) divide
+\(m\). A segunda condição é satisfeita automaticamente se \(G\) é um
+toro. A demonstração mostra que, no
+\SGARefLink{sga3:ix:theorem:4:7}{Teorema~4.7} e nos Corolários
+\SGARefLink{sga3:ix:corollary:4:8}{4.8} e
+\SGARefLink{sga3:ix:corollary:4:9}{4.9}, pode-se limitar aos
+subgrupos
+\[
+  {}_{m^r}G,\qquad r>0.
+\]
+
+Além disso, se \(G\) é liso sobre \(S\), para todo \(s\in S\) existem uma
+vizinhança aberta \(U\) de \(s\) e um inteiro \(m>0\), primo com toda
+característica residual em \(U\), que satisfazem as condições
+precedentes para \(G_U\). Por exemplo, tome-se como \(m\) a ordem do
+subgrupo de torção do tipo de \(G\) em \(s\) (cf.
+\SGARefLink{sga3:ix:remark:1:4:1:item:a}{1.4.1(a)} e
+\SGARefLink{sga3:ix:proposition:2:1:item:e:01}{2.1(e)}). Depois de se
+restringir a \(U\), os grupos \({}_{m^r}G\) são, então, finitos e étale
+sobre \(S\), e sua família é esquematicamente densa. Em certas
+aplicações ---em particular, as que utilizam os Teoremas
+\SGARefLink{sga3:ix:theorem:3:2}{3.2} e
+\SGARefLink{sga3:ix:theorem:3:2:bis}{3.2 bis} (cf. XI, 6), mas não as que
+utilizam os Teoremas \SGARefLink{sga3:ix:theorem:3:6}{3.6} e
+\SGARefLink{sga3:ix:theorem:3:6:bis}{3.6 bis}---, esta observação permite
+evitar \SGARefLink{sga3:ix:theorem:3:1}{o Teorema~3.1} e o uso que faz
+da cohomologia de Hochschild.

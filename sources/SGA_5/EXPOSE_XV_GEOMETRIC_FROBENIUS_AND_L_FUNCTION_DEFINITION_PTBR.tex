@@ -1,0 +1,47 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 14861--14905 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+O corolário da proposição 3 mostra que o endomorfismo de $\RGamma_{\overline X}(\overline F)$ definido pelo par $(\overline{\fr}_X,\overline{\Fr}^*_{F/X})$ é o automorfismo inverso daquele definido por $f_X$. Diremos que $(\overline{\fr}_X,\overline{\Fr}^*_{F/X})$ é a correspondência geométrica de Frobenius (é a imagem inversa por $\overline X\to X$ da correspondência de Frobenius sobre $(X,F)$) e denotaremos por
+\[
+\fr_{\RGamma_{\overline X}(\overline F)}
+\]
+o automorfismo de $\RGamma_{\overline X}(\overline F)$ que ela define; a operação aritmética de Frobenius, obtida por transporte de estrutura a partir de $f\in\pi_e$, é sua inversa.
+
+\subsection*{§ 3. A função $L$}
+
+\subsubsection*{n\textsuperscript{o} 1. Definição}
+
+Seja $p$ um número primo; consideremos um número primo $\ell\ne p$ e uma extensão finita $\Omega$ de $\mathbb Q_\ell$. A cada par $(X,F)$ formado por um esquema $X$ de tipo finito sobre $e=\Spec(\mathbb F_p)$ e um $\Omega$-feixe construtível $F$ sobre $X$, associaremos uma série formal
+\[
+L_F\in\Omega[[t]],
+\]
+de termo constante $1$.
+
+
+Consideremos primeiro o caso particular em que $X=e$; seja $\bar{\mathbb F}_p$ um fecho algébrico de $\mathbb F_p$ e seja $\bar e=\Spec(\bar{\mathbb F}_p)$. O feixe $F$ é inteiramente determinado por sua fibra $F_{\bar e}$, considerada como um espaço vetorial de dimensão finita sobre $\Omega$ no qual o grupo de Galois
+\[
+\pi_e=\Gal(\bar{\mathbb F}_p/\mathbb F_p)
+\]
+atua continuamente. Como $\pi_e$ é gerado topologicamente pelo elemento de Frobenius
+\[
+f: \lambda\longmapsto \lambda^p\qquad(\lambda\in\bar{\mathbb F}_p),
+\]
+dar o feixe $F$ equivale a dar o espaço vetorial $F_{\bar e}$ munido de um automorfismo $f_{F_{\bar e}}$ «topologicamente unipotente», isto é, cuja $k$-ésima potência tende à identidade no grupo analítico $\Aut(F_{\bar e})$ quando $k$ tende «multiplicativamente» ao infinito. Poremos
+\[
+L_F(t)=1/\det(1-f_{F_{\bar e}}^{-1}t)\in\Omega[[t]].
+\]
+Suponhamos agora que $X=\Spec(\mathbb F_q)$, com $q=p^d$ ($d$ inteiro $\ge1$). Seja $\bar x$ um ponto geométrico de $X$, definido por uma imersão de $\mathbb F_q$ em $\bar{\mathbb F}_p$; o grupo de Galois
+\[
+\pi_x=\Gal(\bar{\mathbb F}_p/\mathbb F_q)
+\]
+identifica-se com o subgrupo de $\pi_e$ gerado topologicamente por $f^d$. Assim, dar o feixe $F$ equivale a dar sua fibra $F_{\bar x}$ (espaço vetorial de dimensão finita sobre $\Omega$) munida de um automorfismo $(f^d)_{F_{\bar x}}$ topologicamente unipotente, que denotaremos $f^d_{F_{\bar x}}$ para simplificar. Seja $g$ o único morfismo de $X$ a $e$; a imagem direta $g_*(F)$ é igualmente definida por sua fibra $(g_*F)_{\bar e}$, munida da ação de $\pi_e$; esta fibra calcula-se como um «módulo induzido»
+\[
+(g_*F)_{\bar e}\simeq F_{\bar x}\otimes_{\pi_x}\pi_e.
+\]
+Poremos
+\[
+L_F(t)=L_{g_*F}(t)=1/\det(1-f^{-1}_{(g_*F)_{\bar e}}t);
+\]
+um cálculo elementar de determinantes mostra que esta expressão é igual a
+\[
+L_F(t)=1/\det(1-f^{-d}_{F_{\bar x}}t^d).
+\]

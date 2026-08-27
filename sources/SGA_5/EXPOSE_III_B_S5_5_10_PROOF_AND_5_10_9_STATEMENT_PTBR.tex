@@ -1,0 +1,38 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5274--5309 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Trata-se de verificar que se tem um quadrado comutativo
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+E\lten_K\uRHom_B(E,B\lten_KM)\lten_BF \arrow[r] \arrow[d,"E\lten_K5.10.5"'] & M\lten_KF \arrow[d,"\text{restrição de escalares}"]\\
+E\lten_K\uRHom_A(E,A\lten_KM)\lten_AF \arrow[r] & M\lten_KF,
+\end{tikzcd}
+\]
+onde as flechas horizontais são dadas pelas avaliações (5.3.6). Esse quadrado se deduz aplicando $-\lten_BF$ ao quadrado análogo com $F=B$, de modo que se pode supor $F=B$. A comutatividade de 5.10.7 nesse caso equivale à do triângulo
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+|[alias=star]| {(*)} & \uRHom_B(E,B\lten_KM) \arrow[d,"(1)"'] \arrow[dr,"(2)"] & \\
+& \uRHom_B(E,\uHom_A(B,B\lten_KM)) \arrow[r,"(3)"'] & \uRHom_A(E,B\lten_KM),
+\end{tikzcd}
+\]
+onde (1) é definida por 5.10.1, (2) é a restrição de escalares e (3) o isomorfismo de adjunção. Ora, a flecha $B\lten_KM\to\uHom_A(B,B\lten_KM)$ dada por 5.10.1 nada mais é que a flecha de adjunção correspondente aos funtores de restrição de escalares e $\uHom_A(B,-)$; disso se deduz imediatamente a comutatividade de $(*)$.
+
+Sejam $E\in\ob D^-(B)$, $M\in\ob D^b(K)$ tais que $\uRHom_B(E,B\lten_KM)\in\ob D^b(B^\circ)$. Dispõe-se então, por 5.3.5, de uma flecha de avaliação
+\[
+\uRHom_B(E,B\lten_KM)\lten_BE\longrightarrow M\lten_K(B\lten_{B^e}B),
+\]
+que, compondo-a com a flecha canônica $B\lten_{B^e}B\to B_\natural$, dá uma flecha
+\begin{equation}\tag{5.10.8}
+\uRHom_B(E,B\lten_KM)\lten_BE\longrightarrow M\lten_KB_\natural.
+\end{equation}
+
+\begin{statement}{Proposição 5.10.9}
+Suponhamos que $A$ seja de apresentação finita e plano como $K$-módulo, e que $A_\natural$, $B_\natural$ sejam planos sobre $K$. Sejam $E\in\ob D^-(B)$, $M\in\ob D^b(K)$ tais que $\uRHom_B(E,B\lten_KM)\in\ob D^b(B^\circ)$. Então $\uRHom_A(E,A\lten_KM)\in\ob D^b(A^\circ)$, e tem-se um quadrado comutativo
+\begin{equation}\tag{5.10.10}
+\begin{tikzcd}[column sep=large,row sep=large]
+\uRHom_B(E,B\lten_KM)\lten_BE \arrow[r,"5.10.8"] \arrow[d,"5.10.5"'] & M\lten_KB_\natural \arrow[d,"M\otimes_K\Tr_{B/A}"]\\
+\uRHom_A(E,A\lten_KM)\lten_AE \arrow[r,"5.10.8"'] & M\lten_KA_\natural .
+\end{tikzcd}
+\end{equation}
+\end{statement}
+
+As hipóteses adicionais sobre $A$ e $B$ (que se verificam, por exemplo, se $A$ e $B$ são $K$-álgebras de grupos finitos) são sem dúvida desnecessárias, e deveria existir um quadrado comutativo análogo a 5.10.10 com $A_\natural$ (resp. $B_\natural$) substituído por $A\lten_{A^e}A$ (resp. $B\lten_{B^e}B$).

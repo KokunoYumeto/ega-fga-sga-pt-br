@@ -1,0 +1,263 @@
+\section{Conjuntos construtíveis}
+\label{section:0.9}
+
+\subsection{Conjuntos construtíveis}
+\label{subsection:0.9.1}
+
+\begin{definition}[9.1.1]
+\label{0.9.1.1}
+Dizemos que uma aplicação contínua $f:X\to Y$ é \emph{quase-compacta} se, para todo subconjunto aberto quase-compacto $U$ de $Y$, $f^{-1}(U)$ é quase-compacto.
+Dizemos que um subconjunto $Z$ de um espaço topológico $X$ é \emph{retrocompacto} em $X$ se a injeção canônica $Z\to X$ é quase-compacta; em outros termos, se para todo subconjunto aberto quase-compacto $U$ de $X$, $U\cap Z$ é quase-compacto.
+\end{definition}
+
+Um subconjunto \emph{fechado} de $X$ é retrocompacto em $X$, mas um subconjunto quase-compacto de $X$ não é necessariamente retrocompacto em $X$.
+Se $X$ é quase-compacto, todo subconjunto aberto retrocompacto de $X$ é quase-compacto.
+É claro que toda união \emph{finita} de conjuntos retrocompactos em $X$ é retrocompacta em $X$, pois toda união finita de conjuntos quase-compactos é quase-compacta.
+Toda interseção finita de abertos retrocompactos de $X$ é um aberto retrocompacto de $X$.
+Em um espaço \emph{localmente noetheriano} $X$, todo conjunto quase-compacto é um subespaço noetheriano e, consequentemente, \emph{todo subconjunto} de $X$ é retrocompacto em $X$.
+
+\begin{definition}[9.1.2]
+\label{0.9.1.2}
+Dado um espaço topológico $X$, dizemos que um subconjunto de $X$ é \emph{construtível} se pertence ao menor conjunto de subconjuntos $\mathfrak{F}$ de $X$ que contém todos os subconjuntos abertos retrocompactos de $X$ e é estável por interseções finitas e complementares (o que implica que $\mathfrak{F}$ também é estável por uniões finitas).
+\end{definition}
+
+\begin{proposition}[9.1.3]
+\label{0.9.1.3}
+Para que um subconjunto de $X$ seja construtível, é necessário e suficiente que seja uma união finita de conjuntos da forma $U\cap\complement{V}$, onde $U$ e $V$ são abertos retrocompactos de $X$.
+\end{proposition}
+
+\begin{proof}
+É claro que a condição é suficiente.
+Para ver que é necessária, consideremos o conjunto $\mathfrak{G}$ das uniões finitas de conjuntos da forma $U\cap\complement{V}$, onde $U$ e $V$ são abertos retrocompactos de $X$; basta ver que o complementar de todo conjunto de $\mathfrak{G}$ pertence a $\mathfrak{G}$.
+Seja $Z=\bigcup_{i\in I}(U_i\cap\complement{V_i})$, onde $I$ é finito e os $U_i$ e $V_i$ são abertos retrocompactos de $X$; temos
+$\complement{Z}=\bigcap_{i\in I}(V_i\cup\complement{U_i})$, de modo que $\complement{Z}$ é uma união finita de conjuntos que são interseções de certo número dos $V_i$ e de certo número dos $\complement{U_i}$, portanto da forma
+\oldpage[0\textsubscript{III}]{13}
+$V\cap\complement{U}$, onde $U$ é a união de certo número dos $U_i$ e $V$ é a interseção de certo número dos $V_i$; mas observamos anteriormente que as uniões e interseções finitas de abertos retrocompactos de $X$ são abertos retrocompactos de $X$, de onde se segue a conclusão.
+\end{proof}
+
+\begin{corollary}[9.1.4]
+\label{0.9.1.4}
+Todo subconjunto construtível de $X$ é retrocompacto em $X$.
+\end{corollary}
+
+\begin{proof}
+Basta demonstrar que, se $U$ e $V$ são abertos retrocompactos de $X$, então $U\cap\complement{V}$ é retrocompacto em $X$; se $W$ é um aberto quase-compacto de $X$, então $W\cap U\cap\complement{V}$ é fechado no espaço quase-compacto $W\cap U$ e, portanto, é quase-compacto.
+\end{proof}
+
+Em particular:
+\begin{corollary}[9.1.5]
+\label{0.9.1.5}
+Para que um subconjunto aberto $U$ de $X$ seja construtível, é necessário e suficiente que seja retrocompacto em $X$.
+Para que um subconjunto fechado $F$ de $X$ seja construtível, é necessário e suficiente que o aberto $\complement{F}$ seja retrocompacto.
+\end{corollary}
+
+\begin{env}[9.1.6]
+\label{0.9.1.6}
+Um caso importante é aquele em que todo subconjunto aberto quase-compacto de $X$ é retrocompacto; em outros termos, aquele em que a interseção de dois subconjuntos abertos quase-compactos de $X$ é quase-compacta (cf.~\sref[I]{I.5.5.6}).
+Quando $X$ é, além disso, quase-compacto, isto implica que os subconjuntos abertos retrocompactos de $X$ coincidem com os subconjuntos abertos quase-compactos de $X$, e que os subconjuntos construtíveis de $X$ são as uniões finitas de conjuntos da forma $U\cap\complement{V}$, onde $U$ e $V$ são abertos quase-compactos.
+\end{env}
+
+\begin{corollary}[9.1.7]
+\label{0.9.1.7}
+Para que um subconjunto de um espaço noetheriano $X$ seja construtível, é necessário e suficiente que seja uma união finita de subconjuntos localmente fechados de $X$.
+\end{corollary}
+
+\begin{proposition}[9.1.8]
+\label{0.9.1.8}
+Seja $X$ um espaço topológico e $U$ um subconjunto aberto de $X$.
+\begin{enumerate}
+  \item[{\rm(i)}] Se $T$ é um subconjunto construtível de $X$, então $T\cap U$ é um subconjunto construtível de $U$.
+  \item[{\rm(ii)}] Suponhamos, além disso, que $U$ é retrocompacto em $X$. Para que um subconjunto $Z$ de $U$ seja construtível em $X$, é necessário e suficiente que seja construtível em $U$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\medskip\noindent
+\begin{enumerate}
+  \item[(i)] Mediante a Proposição \sref{0.9.1.3}, reduzimo-nos a demonstrar que, se $T$ é um aberto retrocompacto de $X$, então $T\cap U$ é um aberto retrocompacto de $U$; em outros termos, para todo aberto quase-compacto $W\subset U$, $T\cap U\cap W=T\cap W$ é quase-compacto, o que decorre imediatamente da hipótese.
+  \item[(ii)] A condição é necessária por (i), de modo que resta demonstrar que é suficiente.
+    Pela Proposição \sref{0.9.1.3}, basta considerar o caso em que $Z$ é um aberto retrocompacto \emph{em $U$}, pois então se seguirá que $U\setmin Z$ é construtível em $X$, e se $Z$ e $Z'$ são dois abertos retrocompactos \emph{em $U$}, então $Z\cap(U\setmin Z')$ será construtível em $X$.
+    Se $W$ é um aberto quase-compacto de $X$ e $Z$ um aberto retrocompacto de $U$, temos $Z\cap W=Z\cap(W\cap U)$, e por hipótese $W\cap U$ é um aberto quase-compacto de $U$; portanto, $W\cap Z$ é quase-compacto e, consequentemente, $Z$ é um aberto retrocompacto de $X$, e \emph{a fortiori} construtível em $X$.
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}[9.1.9]
+\label{0.9.1.9}
+Seja $X$ um espaço topológico e $(U_i)_{i\in I}$ um recobrimento finito de $X$ por abertos retrocompactos de $X$.
+Para que um subconjunto $Z$ de $X$ seja construtível em $X$, é necessário e suficiente que $Z\cap U_i$ seja construtível em $U_i$ para todo $i\in I$.
+\end{corollary}
+
+\begin{env}[9.1.10]
+\label{0.9.1.10}
+Suponhamos, em particular, que $X$ é quase-compacto e que todo ponto
+\oldpage[0\textsubscript{III}]{14}
+de $X$ admite um sistema fundamental de vizinhanças abertas retrocompactas em $X$ (e \emph{a fortiori} quase-compactas); então a condição para que um subconjunto $Z$ de $X$ seja construtível em $X$ é de natureza \emph{local}; em outros termos, é necessário e suficiente que, para todo $x\in X$, exista uma vizinhança aberta $V$ de $x$ tal que $V\cap Z$ seja construtível em $V$.
+Com efeito, se esta condição é satisfeita, então para todo $x\in X$ existe uma vizinhança aberta $V$ de $x$ que é \emph{retrocompacta em $X$} e tal que $V\cap Z$ é construtível em $V$, pelas hipóteses sobre $X$ e pela Proposição \sref{0.9.1.8}[i]; basta então recobrir $X$ por um número finito dessas vizinhanças e aplicar o Corolário \sref{0.9.1.9}.
+\end{env}
+
+\begin{definition}[9.1.11]
+\label{0.9.1.11}
+Seja $X$ um espaço topológico.
+Dizemos que um subconjunto $T$ de $X$ é \emph{localmente construtível} em $X$ se, para todo $x\in X$, existe uma vizinhança aberta $V$ de $x$ tal que $T\cap V$ é construtível em $V$.
+\end{definition}
+
+Da Proposição \sref{0.9.1.8}[i] segue-se que, se $V$ é tal que $V\cap T$ é construtível em $V$, então para todo aberto $W\subset V$, $W\cap T$ é construtível em $W$.
+Se $T$ é localmente construtível em $X$, então, para todo aberto $U$ de $X$, $T\cap U$ é localmente construtível em $U$, em virtude da observação anterior.
+A mesma observação mostra que o conjunto de subconjuntos localmente construtíveis de $X$ é estável por uniões finitas e interseções finitas; por outro lado, é claro que também é estável pela passagem ao complementar.
+
+\begin{proposition}[9.1.12]
+\label{0.9.1.12}
+Seja $X$ um espaço topológico.
+Todo conjunto construtível em $X$ é localmente construtível em $X$.
+A recíproca é verdadeira se $X$ é quase-compacto e se sua topologia admite uma base formada pelos conjuntos retrocompactos de $X$.
+\end{proposition}
+
+\begin{proof}
+A primeira afirmação decorre da Definição \sref{0.9.1.11}, e a segunda de \sref{0.9.1.10}.
+\end{proof}
+
+\begin{corollary}[9.1.13]
+\label{0.9.1.13}
+Seja $X$ um espaço topológico cuja topologia admite uma base formada pelos conjuntos retrocompactos de $X$.
+Então todo subconjunto $T$ localmente construtível de $X$ é retrocompacto em $X$.
+\end{corollary}
+
+\begin{proof}
+Seja $U$ um aberto quase-compacto de $X$; $T\cap U$ é localmente construtível em $U$, logo construtível em $U$ pela Proposição~\sref{0.9.1.12} e, consequentemente, quase-compacto pelo Corolário \sref{0.9.1.4}.
+\end{proof}
+
+\subsection{Subconjuntos construtíveis de espaços noetherianos}
+\label{subsection:0.9.2}
+
+\begin{env}[9.2.1]
+\label{0.9.2.1}
+Vimos em \sref{0.9.1.7} que, em um espaço noetheriano $X$, os subconjuntos construtíveis de $X$ são as \emph{uniões finitas de subconjuntos localmente fechados de $X$}.
+
+A imagem inversa de um conjunto construtível de $X$ por uma aplicação contínua de um espaço noetheriano $X'$ em $X$ é construtível em $X'$.
+Se $Y$ é um subconjunto construtível de um espaço noetheriano $X$, então os subconjuntos de $Y$ que são construtíveis como subespaços de $Y$ coincidem com os que são construtíveis como subespaços de $X$.
+\end{env}
+
+\begin{proposition}[9.2.2]
+\label{0.9.2.2}
+Seja $X$ um espaço noetheriano irredutível, e seja $E$ um subconjunto construtível de $X$.
+Para que $E$ seja denso em toda parte em $X$, é necessário e suficiente que $E$ contenha um subconjunto aberto não vazio de $X$.
+\end{proposition}
+
+\begin{proof}
+\oldpage[0\textsubscript{III}]{15}
+A condição é evidentemente suficiente, pois todo aberto não vazio é denso em $X$.
+Reciprocamente, seja $E=\bigcup_{i=1}^n(U_i\cap F_i)$ um subconjunto construtível de $X$, sendo os $U_i$ abertos não vazios e os $F_i$ fechados em $X$; temos então $\overline{E}\subset\bigcup_i F_i$.
+Consequentemente, se $\overline{E}=X$, então $X$ é igual a um dos $F_i$, logo $E\supset U_i$, o que termina a demonstração.
+\end{proof}
+
+Quando $X$ admite um ponto genérico $x$ \sref[0]{0.2.1.2}, a condição da Proposição \sref{0.9.2.2} equivale à relação $x\in E$.
+
+\begin{proposition}[9.2.3]
+\label{0.9.2.3}
+Seja $X$ um espaço noetheriano.
+Para que um subconjunto $E$ de $X$ seja construtível, é necessário e suficiente que, para todo subconjunto fechado irredutível $Y$ de $X$, $E\cap Y$ seja raro em $Y$ ou contenha um subconjunto aberto não vazio de $Y$.
+\end{proposition}
+
+\begin{proof}
+A necessidade da condição decorre de que $E\cap Y$ deve ser um subconjunto construtível de $Y$ e da Proposição \sref{0.9.2.2}, pois um subconjunto não denso de $Y$ é necessariamente raro no espaço irredutível $Y$ \sref[0]{0.2.1.1}.
+Para demonstrar que a condição é suficiente, apliquemos o princípio de indução noetheriana \sref[0]{0.2.2.2} ao conjunto $\mathfrak{F}$ de subconjuntos fechados $Y$ de $X$ tais que $Y\cap E$ é construtível (com respeito a $Y$ ou com respeito a $X$, o que é equivalente): podemos supor assim que, para todo subconjunto fechado $Y\neq X$ de $X$, $E\cap Y$ é construtível.
+Suponhamos primeiro que $X$ não é irredutível, e sejam $X_i$ ($1\leq i\leq m$) seus componentes irredutíveis, necessariamente em número finito \sref[0]{0.2.2.5}; por hipótese, os $E\cap X_i$ são construtíveis, logo também o é sua união $E$.
+Suponhamos agora que $X$ é irredutível; então, por hipótese, se $E$ é raro, tem-se $\overline{E}\neq X$ e $E=E\cap\overline{E}$ é construtível; se $E$ contém um subconjunto aberto não vazio $U$ de $X$, é a união de $U$ e $E\cap(X\setmin U)$; mas $X\setmin U$ é um conjunto fechado distinto de $X$, pelo que $E\cap(X\setmin U)$ é construtível; consequentemente, o próprio $E$ é construtível, o que termina a demonstração.
+\end{proof}
+
+\begin{corollary}[9.2.4]
+\label{0.9.2.4}
+Seja $X$ um espaço noetheriano e $(E_\alpha)$ uma família filtrante crescente de subconjuntos construtíveis de $X$, tal que
+\begin{enumerate}
+  \item[\emph{(1.o)}] $X$ é a união da família $(E_\alpha)$.
+  \item[\emph{(2.o)}] Todo subconjunto fechado irredutível de $X$ está contido no fecho de um dos $E_\alpha$.
+\end{enumerate}
+
+Então existe um índice $\alpha$ tal que $X=E_\alpha$.
+
+Quando todo subconjunto fechado irredutível de $X$ admite um ponto genérico, pode-se omitir a hipótese \emph{(2.o)}.
+\end{corollary}
+
+\begin{proof}
+Apliquemos o princípio de indução noetheriana \sref[0]{0.2.2.2} ao conjunto $\mathfrak{M}$ de subconjuntos fechados de $X$ contidos em ao menos um dos $E_\alpha$; podemos supor assim que todo subconjunto fechado $Y\neq X$ de $X$ está contido em um dos $E_\alpha$.
+A proposição é evidente se $X$ não é irredutível, porque cada um dos componentes irredutíveis $X_i$ de $X$ ($1\leq i\leq m$) está contido em um $E_{\alpha_i}$, e existe um $E_\alpha$ que contém todos os $E_{\alpha_i}$.
+Suponhamos agora que $X$ é irredutível.
+Por hipótese, existe um $\beta$ tal que $X=\overline{E_\beta}$, de modo que \sref{0.9.2.2} $E_\beta$ contém um subconjunto aberto não vazio $U$ de $X$.
+Mas então o conjunto fechado $X\setmin U$ está contido em um $E_\gamma$, e basta tomar um $E_\alpha$ que contenha $E_\beta$ e $E_\gamma$.
+Quando todo subconjunto fechado irredutível $Y$ de $X$
+\oldpage[0\textsubscript{III}]{16}
+admite um ponto genérico $y$, existe $\alpha$ tal que $y\in E_\alpha$, de modo que $Y=\overline{\{y\}}\subset\overline{E_\alpha}$, e a condição (2.o) é, portanto, consequência de (1.o).
+\end{proof}
+
+\begin{proposition}[9.2.5]
+\label{0.9.2.5}
+Seja $X$ um espaço noetheriano, seja $x$ um ponto de $X$ e seja $E$ um subconjunto construtível de $X$.
+Para que $E$ seja uma vizinhança de $x$, é necessário e suficiente que, para todo subconjunto fechado irredutível $Y$ de $X$ que contenha $x$, $E\cap Y$ seja denso em $Y$ (se existe um ponto genérico $y$ de $Y$, isto significa também \sref{0.9.2.2} que $y\in E$).
+\end{proposition}
+
+\begin{proof}
+A condição é evidentemente necessária; demonstraremos que é suficiente.
+Aplicando o princípio de indução noetheriana ao conjunto $\mathfrak{M}$ de subconjuntos fechados $Y$ de $X$ que contêm $x$ e tais que $E\cap Y$ é uma vizinhança de $x$ em $Y$, podemos supor que todo subconjunto fechado $Y\neq X$ de $X$ que contém $x$ pertence a $\mathfrak{M}$.
+Se $X$ não é irredutível, cada um dos componentes irredutíveis $X_i$ de $X$ que contêm $x$ é distinto de $X$, logo $E\cap X_i$ é uma vizinhança de $x$ com respeito a $X_i$; consequentemente, $E$ é uma vizinhança de $x$ na união dos componentes irredutíveis de $X$ que contêm $x$, e como esta união é uma vizinhança de $x$ em $X$, também o é $E$.
+Se $X$ é irredutível, $E$ é denso em $X$ por hipótese, pelo que contém um subconjunto aberto não vazio $U$ de $X$ \sref{0.9.2.2}; a proposição é então evidente se $x\in U$; em caso contrário, por hipótese, $x$ é um ponto interior de $E\cap(X\setmin U)$ relativo a $X\setmin U$, de modo que o fecho de $X\setmin E$ em $X$ não contém $x$, e o complementar desse fecho é uma vizinhança de $x$ contida em $E$, o que termina a demonstração.
+\end{proof}
+
+\begin{corollary}[9.2.6]
+\label{0.9.2.6}
+Seja $X$ um espaço noetheriano e seja $E$ um subconjunto de $X$.
+Para que $E$ seja um aberto de $X$, é necessário e suficiente que, para todo subconjunto fechado irredutível $Y$ de $X$ que interseca $E$, $E\cap Y$ contenha um subconjunto aberto não vazio de $Y$.
+\end{corollary}
+
+\begin{proof}
+A condição é evidentemente necessária; reciprocamente, se for satisfeita, implica que $E$ é construtível pela Proposição \sref{0.9.2.3}.
+Além disso, a Proposição \sref{0.9.2.5} mostra que $E$ é então uma vizinhança de cada um de seus pontos, de onde se segue a conclusão.
+\end{proof}
+
+\subsection{Funções construtíveis}
+\label{subsection:0.9.3}
+
+\begin{definition}[9.3.1]
+\label{0.9.3.1}
+Seja $h$ uma aplicação de um espaço topológico $X$ em um conjunto $T$.
+Dizemos que $h$ é \emph{construtível} se $h^{-1}(t)$ é construtível para todo $t\in T$, e vazio salvo para um número finito de valores de $t$; então, para todo subconjunto $S$ de $T$, $h^{-1}(S)$ é construtível.
+Dizemos que $h$ é \emph{localmente construtível} se todo $x\in X$ possui uma vizinhança aberta $V$ tal que $h|V$ é construtível.
+\end{definition}
+
+Toda função construtível é localmente construtível; a recíproca é verdadeira quando $X$ é quase-compacto e admite uma base formada pelos abertos retrocompactos de $X$ (em particular, quando $X$ é noetheriano).
+
+\begin{proposition}[9.3.2]
+\label{0.9.3.2}
+Seja $h$ uma aplicação de um espaço noetheriano $X$ em um conjunto $T$.
+Para que $h$ seja construtível, é necessário e suficiente que, para todo subconjunto fechado irredutível $Y$ de $X$, exista um subconjunto não vazio $U$ de $Y$, aberto com respeito a $Y$, sobre o qual $h$ seja constante.
+\end{proposition}
+
+\begin{proof}
+A condição é necessária: com efeito, por hipótese, $h$ somente toma um número finito de valores $t_i$ sobre $Y$, e cada um dos conjuntos $h^{-1}(t_i)\cap Y$ é construtível em $Y$ \sref{0.9.2.1}; como não podem ser todos subconjuntos raros do espaço $Y$, ao menos um deles contém um aberto não vazio \sref{0.9.2.3}.
+
+\oldpage[0\textsubscript{III}]{17}
+Para ver que a condição é suficiente, aplicamos o princípio de indução noetheriana ao conjunto $\mathfrak{M}$ de subconjuntos fechados $Y$ de $X$ tais que a restrição $h|Y$ é construtível; podemos supor assim que, para todo subconjunto fechado $Y\neq X$ de $X$,
+$h|Y$ é construtível.
+Se $X$ não é irredutível, a restrição de $h$ a cada um dos componentes irredutíveis (em número finito) $X_i$ de $X$ é construtível, e segue-se então imediatamente da Definição \sref{0.9.3.1} que $h$ é construtível.
+Se $X$ é irredutível, existe por hipótese um subconjunto aberto não vazio $U$ de $X$ sobre o qual $h$ é constante; por outro lado, a restrição de $h$ a $X\setmin U$ é construtível por hipótese, e segue-se imediatamente que $h$ é construtível.
+\end{proof}
+
+\begin{corollary}[9.3.3]
+\label{0.9.3.3}
+Seja $X$ um espaço noetheriano no qual todo subconjunto fechado irredutível admite um ponto genérico.
+Se $h$ é uma aplicação de $X$ em um conjunto $T$ tal que, para todo $t\in T$, $h^{-1}(t)$ é construtível, então $h$ é construtível.
+\end{corollary}
+
+\begin{proof}
+Se $Y$ é um subconjunto fechado irredutível de $X$ e $y$ seu ponto genérico, então $Y\cap h^{-1}(h(y))$ é construtível e contém $y$; portanto, \sref{0.9.2.2} este conjunto contém um subconjunto aberto não vazio de $Y$, e basta aplicar a Proposição \sref{0.9.3.2}.
+\end{proof}
+
+\begin{proposition}[9.3.4]
+\label{0.9.3.4}
+Seja $X$ um espaço noetheriano no qual todo subconjunto fechado irredutível admite um ponto genérico, e seja $h$ uma aplicação construtível de $X$ em um conjunto ordenado.
+Para que $h$ seja semicontínua superiormente sobre $X$, é necessário e suficiente que, para todo $x\in X$ e toda generalização \sref[0]{0.2.1.2} $x'$ de $x$, se tenha $h(x')\leq h(x)$.
+\end{proposition}
+
+\begin{proof}
+A função $h$ somente toma um número finito de valores; portanto, dizer que é semicontínua superiormente significa que, para todo $x\in X$, o conjunto $E$ dos $y\in X$ tais que $h(y)\leq h(x)$ é uma vizinhança de $x$.
+Por hipótese, $E$ é um subconjunto construtível de $X$; por outro lado, dizer que um subconjunto fechado irredutível $Y$ de $X$ contém $x$ significa que seu ponto genérico $y$ é uma generalização de $x$; a conclusão decorre então da Proposição \sref{0.9.2.5}.
+\end{proof}

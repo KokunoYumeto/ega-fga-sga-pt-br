@@ -1,0 +1,335 @@
+\section{Complemento sobre os módulos planos}
+\label{section:0.10}
+
+Para as demonstrações que faltam em \hyperref[subsection:0.10.1]{(10.1)} e \hyperref[subsection:0.10.2]{(10.2)}, remetemos o leitor a Bourbaki,~\emph{Alg.~comm.}, cap.~II e~III.
+
+\subsection{Relações entre módulos planos e módulos livres}
+\label{subsection:0.10.1}
+
+\begin{env}[10.1.1]
+\label{0.10.1.1}
+Seja $A$ um anel, $\mathfrak{J}$ um ideal de $A$ e $M$ um $A$-módulo;
+para todo inteiro $p\geq0$, temos um homomorfismo canônico de $(A/\mathfrak{J})$-módulos
+\[
+\label{0.10.1.1.1}
+  \vphi_p:(M/\mathfrak{J}M)\otimes_{A/\mathfrak{J}}(\mathfrak{J}^p/\mathfrak{J}^{p+1})\to\mathfrak{J}^pM/\mathfrak{J}^{p+1}M,
+  \tag{10.1.1.1}
+\]
+que é evidentemente \emph{sobrejetivo}.
+Denotamos por $\gr(A)=\oplus_{p\geq0}\mathfrak{J}^p/\mathfrak{J}^{p+1}$ o anel graduado associado a $A$ filtrado pelos $\mathfrak{J}^p$, e por $\gr(M)=\oplus_{p\geq0}\mathfrak{J}^pM/\mathfrak{J}^{p+1}M$ o $\gr(A)$-módulo graduado associado a $M$ filtrado pelos $\mathfrak{J}^pM$;
+temos então $\gr_p(A)=\mathfrak{J}^p/\mathfrak{J}^{p+1}$ e $\gr_p(M)=\mathfrak{J}^pM/\mathfrak{J}^{p+1}M$;
+os $\vphi$ definem um homomorfismo \emph{sobrejetivo} de $\gr(A)$-módulos graduados
+\[
+\label{0.10.1.1.2}
+  \vphi:\gr_0(M)\otimes_{\gr_0(A)}\gr(A)\to\gr(M).
+  \tag{10.1.1.2}
+\]
+\end{env}
+
+\oldpage[0\textsubscript{III-1}]{18}
+\begin{env}[10.1.2]
+\label{0.10.1.2}
+Suponhamos que se verifica \emph{uma} das hipóteses seguintes:
+\begin{enumerate}
+  \item[(i)] $\mathfrak{J}$ é nilpotente;
+  \item[(ii)] $A$ é noetheriano, $\mathfrak{J}$ está contido no radical de $A$ e $M$ é de tipo finito.
+\end{enumerate}
+Então as propriedades seguintes são equivalentes.
+\begin{enumerate}
+  \item[(a)] $M$ é um $A$-módulo livre.
+  \item[(b)] $M/\mathfrak{J}M=M\otimes_A(A/\mathfrak{J})$ é um $(A/\mathfrak{J})$-módulo livre e $\Tor_1^A(M,A/\mathfrak{J})=0$.
+  \item[(c)] $M/\mathfrak{J}M$ é um $(A/\mathfrak{J})$-módulo livre e o homomorfismo canônico \sref{0.10.1.1.2} é injetivo (e, portanto, bijetivo).
+\end{enumerate}
+\end{env}
+
+\begin{env}[10.1.3]
+\label{0.10.1.3}
+Suponhamos que $A/\mathfrak{J}$ é um \emph{corpo} (em outros termos, que $\mathfrak{J}$ é maximal) e que se verifica uma das hipóteses (i) e (ii) de \sref{0.10.1.2}.
+Então as propriedades seguintes são equivalentes.
+\begin{enumerate}
+  \item[(a)] $M$ é um $A$-módulo livre.
+  \item[(b)] $M$ é um $A$-módulo projetivo.
+  \item[(c)] $M$ é um $A$-módulo plano.
+  \item[(d)] $\Tor_1^A(M,A/\mathfrak{J})=0$.
+  \item[(e)] O homomorfismo canônico \sref{0.10.1.1.2} é bijetivo.
+\end{enumerate}
+
+Este resultado pode ser aplicado, em particular, aos dois casos seguintes:
+\begin{enumerate}
+  \item[(i)] $M$ é um módulo \emph{arbitrário} sobre um anel local $A$ cujo ideal maximal $\mathfrak{J}$ é \emph{nilpotente} (por exemplo, um anel artiniano local);
+  \item[(ii)] $M$ é um módulo \emph{de tipo finito} sobre um anel \emph{local noetheriano}.
+\end{enumerate}
+\end{env}
+
+\subsection{Critérios locais de planicidade}
+\label{subsection:0.10.2}
+
+\begin{env}[10.2.1]
+\label{0.10.2.1}
+Com as hipóteses e a notação de \sref{0.10.1.1}, consideremos as condições seguintes.
+\begin{enumerate}
+  \item[(a)] $M$ é um $A$-módulo plano.
+  \item[(b)] $M/\mathfrak{J}M$ é um $(A/\mathfrak{J})$-módulo plano e $\Tor_1^A(M,A/\mathfrak{J})=0$.
+  \item[(c)] $M/\mathfrak{J}M$ é um $(A/\mathfrak{J})$-módulo plano e o homomorfismo canônico \sref{0.10.1.1.2} é bijetivo.
+  \item[(d)] Para todo $n\geq1$, $M/\mathfrak{J}^nM$ é um $(A/\mathfrak{J}^n)$-módulo plano.
+\end{enumerate}
+
+Então temos as implicações
+\[
+  \text{(a)}\implies\text{(b)}\implies\text{(c)}\implies\text{(d)},
+\]
+e, se $\mathfrak{J}$ é \emph{nilpotente}, as quatro condições são \emph{equivalentes}.
+Ocorre também assim se $A$ é noetheriano e $M$ é \emph{idealmente separado}, isto é, se para todo ideal $\mathfrak{a}$ de $A$, o $A$-módulo $\mathfrak{a}\otimes_A M$ está \emph{separado} para a topologia $\mathfrak{J}$-pré-ádica.
+\end{env}
+
+\begin{env}[10.2.2]
+\label{0.10.2.2}
+Seja $A$ um anel noetheriano, $B$ uma $A$-álgebra comutativa noetheriana, $\mathfrak{J}$ um ideal de $A$ tal que $\mathfrak{J}B$ está contido no radical de $B$, e $M$ um $B$-\emph{módulo} de tipo finito.
+Então, quando $M$ é considerado como $A$-\emph{módulo}, as quatro condições de \sref{0.10.2.1} são \emph{equivalentes}.
+\oldpage[0\textsubscript{III-1}]{19}
+Este resultado se aplica, em primeiro lugar, ao caso em que $A$ e $B$ são anéis noetherianos \emph{locais} e o homomorfismo $A\to B$ é um homomorfismo \emph{local}.
+Mais precisamente, se $\mathfrak{J}$ é então o ideal \emph{maximal} de $A$, podemos suprimir, nas condições~\emph{(b)} e \emph{(c)}, a hipótese de que $M/\mathfrak{J}M$ seja plano, pois ela se verifica automaticamente, e a condição~\emph{(d)} implica que os módulos $M/\mathfrak{J}^nM$ são \emph{livres} sobre os $A/\mathfrak{J}^n$.
+\end{env}
+
+\begin{env}[10.2.3]
+\label{0.10.2.3}
+Com as hipóteses sobre $A$, $B$, $\mathfrak{J}$ e $M$ do início de \sref{0.10.2.2}, seja $\widehat{A}$ o completamento separado de $A$ para a topologia $\mathfrak{J}$-pré-ádica, e $\widehat{M}$ o completamento separado de $M$ para a topologia $\mathfrak{J}B$-pré-ádica.
+Para que $M$ seja um $A$-módulo plano, é necessário e suficiente que $\widehat{M}$ seja um $\widehat{A}$-módulo plano.
+\end{env}
+
+\begin{env}[10.2.4]
+\label{0.10.2.4}
+Seja $\rho:A\to B$ um homomorfismo local de anéis noetherianos locais, seja $k$ o corpo residual de $A$, e sejam $M$ e $N$ dois $B$-módulos de tipo finito, supondo $N$ \emph{$A$-plano}.
+Seja $u:M\to N$ um $B$-homomorfismo.
+Então as condições seguintes são equivalentes.
+\begin{enumerate}
+  \item[(a)] $u$ é injetivo e $\Coker(u)$ é um $A$-módulo plano.
+  \item[(b)] $u\otimes1:M\otimes_A k\to N\otimes_A k$ é injetivo.
+\end{enumerate}
+\end{env}
+
+\begin{env}[10.2.5]
+\label{0.10.2.5}
+Sejam $\rho:A\to B$ e $\sigma:B\to C$ homomorfismos locais de anéis noetherianos locais, seja $k$ o corpo residual de $A$, e seja $M$ um $C$-módulo de tipo finito.
+Suponhamos que $B$ é um $A$-módulo \emph{plano}.
+Então as condições seguintes são equivalentes.
+\begin{enumerate}
+  \item[(a)] $M$ é um $B$-módulo plano.
+  \item[(b)] $M$ é um $A$-módulo plano e $M\otimes_A k$ é um $(B\otimes_A k)$-módulo plano.
+\end{enumerate}
+\end{env}
+
+\begin{proposition}[10.2.6]
+\label{0.10.2.6}
+Sejam $A$ e $B$ anéis noetherianos locais, seja $\rho:A\to B$ um homomorfismo local, seja $\mathfrak{J}$ um ideal de $B$ contido no ideal maximal, e seja $M$ um $B$-módulo de tipo finito.
+Suponhamos que, para todo $n\geq0$, $M_n=M/\mathfrak{J}^{n+1}M$ é um $A$-módulo plano.
+Então $M$ é um $A$-módulo plano.
+\end{proposition}
+
+\begin{proof}
+Devemos demonstrar que, para todo homomorfismo injetivo $u:N'\to N$ de $A$-módulos de tipo finito, $v=1\otimes u:M\otimes_A N'\to M\otimes_A N$ é injetivo.
+Mas $M\otimes_A N'$ e $M\otimes_A N$ são $B$-módulos de tipo finito e, portanto, estão separados para a topologia $\mathfrak{J}$-pré-ádica \sref[0\textsubscript{I}]{0.7.3.5};
+basta, pois, demonstrar que o homomorfismo $\widehat{v}:\widehat{M\otimes_A N'}\to\widehat{M\otimes_A N}$ dos completamentos separados é injetivo.
+Mas $\widehat{v}=\varprojlim v_n$, onde $v_n$ é o homomorfismo $1\otimes u:M_n\otimes_A N'\to M_n\otimes_A N$;
+como, por hipótese, $M_n$ é $A$-plano, $v_n$ é injetivo para todo $n$, e também o é $\widehat{v}$, pois o funtor $\varprojlim$ é exato à esquerda.
+\end{proof}
+
+\begin{corollary}[10.2.7]
+\label{0.10.2.7}
+Seja $A$ um anel noetheriano, seja $B$ um anel noetheriano local, seja $\rho:A\to B$ um homomorfismo, seja $f$ um elemento do ideal maximal de $B$, e seja $M$ um $B$-módulo de tipo finito.
+Suponhamos que a homotecia $f_M:x\to fx$ sobre $M$ é injetiva e que $M/fM$ é um $A$-módulo plano.
+Então $M$ é um $A$-módulo plano.
+\end{corollary}
+
+\begin{proof}
+Seja $M_i=f^iM$ para $i\geq0$;
+como $f_M$ é injetiva, $M_i/M_{i+1}$ é isomorfo a $M/fM$ e, portanto, $A$-plano para todo $i\geq0$;
+a sucessão exata
+\[
+  0\to M_i/M_{i+1}\to M/M_{i+1}\to M/M_i\to 0
+\]
+nos dá, por indução sobre $i$, que $M/M_i$ é \emph{$A$-plano} para todo $i\geq0$ \sref[0\textsubscript{I}]{0.6.1.2};
+podemos, pois, aplicar \sref{0.10.2.6}.
+Também podemos raciocinar diretamente como segue:
+para todo $A$-módulo $N$ de tipo finito, $M\otimes_A N$ é um $B$-módulo de tipo finito;
+como $f$ pertence ao radical $\mathfrak{n}$ de $B$, a topologia $(f)$-ádica sobre $M\otimes_A N$ é mais fina que a topologia
+\oldpage[0\textsubscript{III-1}]{20}
+$\mathfrak{n}$-ádica, e sabemos que esta última está \emph{separada} \sref[0\textsubscript{I}]{0.7.3.5}.
+Ora, como $M/M_i$ é $A$-plano, temos
+\[
+  f^i(M\otimes_A N)=\Im(M_i\otimes_A N\to M\otimes_A N)=\Ker(M\otimes_A N\to(M/M_i)\otimes_A N)
+\]
+por \sref[0\textsubscript{I}]{0.6.1.2}.
+Seja, pois, $N$ um $A$-módulo de tipo finito, e seja $N'$ um submódulo de $N$, com injeção canônica $j:N'\to N$; no diagrama comutativo
+\[
+  \xymatrix{
+    M\otimes_A N'\ar[r]\ar[d]_{1_M\otimes j} &
+    (M/M_i)\otimes_A N'\ar[d]^{1_{M/M_i}\otimes j}\\
+    M\otimes_A N\ar[r] &
+    (M/M_i)\otimes_A N
+  }
+\]
+$1_{M/M_i}\otimes j$ é injetivo, porque $M/M_i$ é $A$-plano; concluímos, pois, que
+\[
+  \Ker(M\otimes_A N'\to M\otimes_A N)\subset\Ker(M\otimes_A N'\to(M/M_i)\otimes_A N')
+\]
+para todo $i$; como a interseção destes últimos núcleos é $0$, como vimos anteriormente, também o é o primeiro núcleo e, portanto, $M$ é $A$-plano.
+\end{proof}
+
+\begin{proposition}[10.2.8]
+\label{0.10.2.8}
+Seja $A$ um anel noetheriano reduzido e seja $M$ um $A$-módulo de tipo finito.
+Suponhamos que, para toda $A$-álgebra $B$ que seja um anel de valoração discreta, $M\otimes_A B$ é um $B$-módulo plano (e, portanto, livre \sref{0.10.1.3}).
+Então $M$ é um $A$-módulo plano.
+\end{proposition}
+
+\begin{proof}
+Sabemos que, para que $M$ seja plano, é necessário e suficiente que $M_\mathfrak{m}$ seja um $A_\mathfrak{m}$-módulo plano para todo ideal maximal $\mathfrak{m}$ de $A$ \sref[0\textsubscript{I}]{0.6.3.3};
+podemos, pois, restringir-nos ao caso em que $A$ é \emph{local} \sref[0\textsubscript{I}]{0.1.2.8}.
+Seja $\mathfrak{m}$ o ideal maximal de $A$, sejam $\mathfrak{p}_i$ ($1\leq i\leq r$) os ideais primos mínimos de $A$, e seja $k$ o corpo residual $A/\mathfrak{m}$.
+Sabemos \sref[II]{II.7.1.7} que existe, para cada $i$, um anel de valoração discreta $B_i$ que tem o mesmo corpo de frações $K_i$ que o domínio integral $A/\mathfrak{p}_i$ e que, além disso, domina $A/\mathfrak{p}_i$.
+Seja $M_i=M\otimes_A B_i$.
+Por hipótese, $M_i$ é livre sobre $B_i$ e, denotando por $k_i$ o corpo residual de $B_i$, temos
+\[
+\label{0.10.2.8.1}
+  \rg_{k_i}(M_i\otimes_{B_i}k_i)=\rg_{K_i}(M_i\otimes_{B_i}K_i).
+  \tag{10.2.8.1}
+\]
+
+Mas está claro que o homomorfismo composto $A\to A/\mathfrak{p}_i\to B_i$ é local, de modo que $k_i$ é uma extensão de $k$, e que temos $M_i\otimes_{B_i}k_i = M\otimes_A k_i = (M\otimes_A k)\otimes_k k_i$, assim como $M_i\otimes_{B_i}K_i = M\otimes_A K_i$.
+A equação~\sref{0.10.2.8.1} implica, portanto, que
+\[
+  \rg_k(M\otimes_A k)=\rg_{K_i}(M\otimes_A K_i)\quad\mbox{para $1\leq i\leq r$}
+\]
+e, como $A$ é reduzido, sabemos que esta condição implica que $M$ é um $A$-módulo \emph{livre} (Bourbaki, \emph{Alg. comm.}, cap.~II, \textsection~3, n\textsuperscript{o}~2, prop.~7).
+\end{proof}
+
+\subsection{Existência de extensões planas de anéis locais}
+\label{subsection:0.10.3}
+
+\begin{proposition}[10.3.1]
+\label{0.10.3.1}
+Seja $A$ um anel noetheriano local, com ideal maximal $\mathfrak{J}$ e corpo residual $k=A/\mathfrak{J}$.
+Seja $K$ uma extensão do corpo $k$.
+Então existe um homomorfismo local de $A$ em um anel noetheriano local $B$, tal que $B/\mathfrak{J}B$ é $k$-isomorfo a $K$ e tal que $B$ é um $A$-módulo plano.
+\end{proposition}
+
+O restante desta seção é dedicado a demonstrar esta proposição passo a passo.
+\begin{env}[10.3.1.1]
+\label{0.10.3.1.1}
+Suponhamos primeiro que $K=k(T)$, onde $T$ é uma indeterminada.
+No anel de polinômios $A'=A[T]$, consideremos o ideal primo $\mathfrak{J}'=\mathfrak{J}A'$, formado pelos
+\oldpage[0\textsubscript{III-1}]{21}
+polinômios cujos coeficientes pertencem ao ideal $\mathfrak{J}$;
+está claro que $A'/\mathfrak{J}'$ é canonicamente isomorfo a $k[T]$.
+Mostraremos que o anel de frações $B=A'_{\mathfrak{J}'}$ é o que buscamos (isto é, um anel que satisfaz as condições da conclusão da proposição);
+é claramente um anel noetheriano local, com ideal maximal $\mathfrak{L}=\mathfrak{J}B$.
+Além disso, $B/\mathfrak{L}=(A'/\mathfrak{J}')_{\mathfrak{J}'}=(k[T])_{\mathfrak{J}'}$ é precisamente o corpo de frações $K$ de $k[T]$.
+Finalmente, $B$ é um $A'$-módulo plano e $A'$ é um $A$-módulo livre, logo $B$ é um $A$-módulo plano \sref[0\textsubscript{I}]{0.6.2.1}.
+\end{env}
+
+\begin{env}[10.3.1.2]
+\label{0.10.3.1.2}
+Suponhamos agora que $K=k(t)=k[t]$, onde $t$ é algébrico sobre $k$;
+seja $f\in k[T]$ o polinômio mínimo de $t$;
+existe um polinômio mônico $F\in A[T]$ cuja imagem canônica em $k[T]$ é $f$.
+Seja, pois, $A'=A[T]$, e seja $\mathfrak{J}'$ o ideal $\mathfrak{J}A'+(F)$ de $A'$.
+Veremos que o anel quociente $B=A'/(F)$ é o que buscamos.
+Em primeiro lugar, está claro que $B$ é um $A$-módulo \emph{livre} e, portanto, plano.
+O anel $A'/\mathfrak{J}'$ é isomorfo a
+\[
+  (A'/\mathfrak{J}A')/\big((\mathfrak{J}A'+(F))/\mathfrak{J}A'\big)=k[T]/(f)=K;
+\]
+a imagem $\mathfrak{L}$ de $\mathfrak{J}'$ em $B$ é, portanto, maximal, e temos evidentemente $\mathfrak{L}=\mathfrak{J}B$.
+Finalmente, $B$ é um anel semilocal, porque é um $A$-módulo de tipo finito (Bourbaki, \emph{Alg. comm.}, cap.~IV, \textsection~2, n\textsuperscript{o}~5, cor.~3 da prop.~9), e seus ideais maximais estão em correspondência bijetiva com os de $B/\mathfrak{J}B$ (\cite[vol.~I, p.~259]{I-13});
+os argumentos anteriores demonstram então que $B$ é um anel local.
+\end{env}
+
+\begin{lemma}[10.3.1.3]
+\label{0.10.3.1.3}
+Seja $(A_\lambda,f_{\mu\lambda})$ um sistema indutivo filtrante de anéis locais, tal que os $f_{\mu\lambda}$ são homomorfismos locais;
+seja $\mathfrak{m}_\lambda$ o ideal maximal de $A_\lambda$, e seja $K_\lambda=A_\lambda/\mathfrak{m}_\lambda$.
+Então $A'=\varinjlim A_\lambda$ é um anel local, com ideal maximal $\mathfrak{m}'=\varinjlim\mathfrak{m}_\lambda$ e corpo residual $K=\varinjlim K_\lambda$.
+Além disso, se $\mathfrak{m}_\mu=\mathfrak{m}_\lambda A_\mu$ para $\lambda<\mu$, temos $\mathfrak{m}'=\mathfrak{m}_\lambda A'$ para todo $\lambda$.
+Se, além disso, para $\lambda<\mu$, $A_\mu$ é um $A_\lambda$-módulo plano e todos os $A_\lambda$ são noetherianos, então $A'$ é noetheriano e é um $A_\lambda$-módulo plano para todo $\lambda$.
+\end{lemma}
+
+\begin{proof}
+Como, por hipótese, $f_{\mu\lambda}(\mathfrak{m}_\lambda)\subset\mathfrak{m}_\mu$ para $\lambda<\mu$, os $\mathfrak{m}_\lambda$ formam um sistema indutivo e seu limite $\mathfrak{m}'$ é evidentemente um ideal de $A'$.
+Além disso, se $x'\not\in\mathfrak{m}'$, existe um $\lambda$ tal que $x'=f_\lambda(x_\lambda)$ para algum $x_\lambda\in A_\lambda$ (onde $f_\lambda:A_\lambda\to A'$ denota o homomorfismo canônico);
+como $x'\not\in\mathfrak{m}'$, necessariamente $x_\lambda\not\in\mathfrak{m}_\lambda$, de modo que $x_\lambda$ admite um inverso $y_\lambda$ em $A_\lambda$, e $y'=f_\lambda(y_\lambda)$ é o inverso de $x'$ em $A'$, o que demonstra que $A'$ é um anel local com ideal maximal $\mathfrak{m}'$;
+a afirmação sobre $K$ decorre imediatamente do fato de que $\varinjlim$ é um funtor exato.
+A hipótese $\mathfrak{m}_\mu=\mathfrak{m}_\lambda A_\mu$ implica que a aplicação canônica $\mathfrak{m}_\lambda\otimes_{A_\lambda}A_\mu\to\mathfrak{m}_\mu$ é sobrejetiva;
+a igualdade $\mathfrak{m}'=\mathfrak{m}_\lambda A'$ decorre então, novamente, do fato de que o funtor $\varinjlim$ é exato e comuta com o produto tensorial.
+
+Suponhamos agora que, para $\lambda<\mu$, temos $\mathfrak{m}_\mu=\mathfrak{m}_\lambda A_\mu$ e que $A_\mu$ é um $A_\lambda$-módulo plano.
+Então $A'$ é um $A_\lambda$-módulo plano para todo $\lambda$, por \sref[0\textsubscript{I}]{0.6.2.3};
+como $A'$ e $A_\lambda$ são anéis locais e $\mathfrak{m}'=\mathfrak{m}_\lambda A'$, $A'$ é até mesmo um módulo \emph{fielmente plano} sobre $A_\lambda$ \sref[0\textsubscript{I}]{0.6.6.2}.
+Suponhamos finalmente, além disso, que os $A_\lambda$ são \emph{noetherianos};
+as topologias $\mathfrak{m}_\lambda$-ádicas estão então separadas \sref[0\textsubscript{I}]{0.7.3.5};
+mostraremos agora que disso decorre que a topologia $\mathfrak{m}'$-ádica sobre $A'$ está \emph{separada}.
+Com efeito, se $x'\in A'$ pertence a todos os $\mathfrak{m}^{'n}$ ($n>0$), então é a imagem de algum $x_\mu\in A_\mu$ para certo índice $\mu$, e como a imagem inversa em $A_\mu$ de $\mathfrak{m}^{'n}=\mathfrak{m}_\mu^n A'$ é $\mathfrak{m}_\mu^n$ \sref[0\textsubscript{I}]{0.6.6.1}, $x_\mu$ pertence a todos os $\mathfrak{m}_\mu^n$, logo $x_\mu=0$ por hipótese e, portanto, $x'=0$.
+Denotemos por $\widehat{A}'$ o completamento de $A'$ para a topologia $\mathfrak{m}'$-ádica;
+o anterior mostra que temos $A'\subset\widehat{A}'$.
+Mostraremos agora que $\widehat{A}'$ é \emph{noetheriano} e \emph{$A_\lambda$-plano} para todo $\lambda$;
+disso,
+\oldpage[0\textsubscript{III-1}]{22}
+seguirá que $\widehat{A}'$ é $A'$-plano \sref[0\textsubscript{I}]{0.6.2.3} e, como $\mathfrak{m}'\widehat{A}'\neq\widehat{A}'$, que $\widehat{A}'$ é um $A'$-módulo fielmente plano \sref[0\textsubscript{I}]{0.6.6.2}; daí se obtém finalmente que $A'$ é \emph{noetheriano} \sref[0\textsubscript{I}]{0.6.5.2}, o que terminará a demonstração do lema.
+
+Temos $\widehat{A}'=\varprojlim_n A'/\mathfrak{m}^{\prime n}$;
+pelo fato de que $A'$ é $A_\lambda$-plano, temos
+\[
+  \mathfrak{m}^{\prime n}/\mathfrak{m}^{\prime n+1}=(\mathfrak{m}_\lambda^{n}/\mathfrak{m}_\lambda^{n+1})\otimes_{A_\lambda}A'=(\mathfrak{m}_\lambda^{n}/\mathfrak{m}_\lambda^{n+1})\otimes_{K_\lambda}(K_\lambda\otimes_{A_\lambda}A')=(\mathfrak{m}_\lambda^{n}/\mathfrak{m}_\lambda^{n+1})\otimes_{K_\lambda}K;
+\]
+como $\mathfrak{m}_\lambda^{n}/\mathfrak{m}_\lambda^{n+1}$ é um $K_\lambda$-espaço vetorial de dimensão finita, $\mathfrak{m}^{\prime n}/\mathfrak{m}^{\prime n+1}$ é um $K$-espaço vetorial de dimensão finita para todo $n\geq 0$.
+Segue-se então de \sref[0\textsubscript{I}]{0.7.2.12} e \sref[0\textsubscript{I}]{0.7.2.8} que $\widehat{A}'$ é \emph{noetheriano}.
+Sabemos além disso que o ideal maximal de $\widehat{A}'$ é $\mathfrak{m}'\widehat{A}'$, e que $\widehat{A}'/\mathfrak{m}^{\prime n}\widehat{A}'$ é isomorfo a $A'/\mathfrak{m}^{\prime n}$;
+como $A'/\mathfrak{m}^{\prime n}=(A_\lambda/\mathfrak{m}_\lambda^n)\otimes_{A_\lambda}A'$, vemos que $A'/\mathfrak{m}^{\prime n}$ é um $(A_\lambda/\mathfrak{m}_\lambda^n)$-módulo plano \sref[0\textsubscript{I}]{0.6.2.1};
+o critério~\sref{0.10.2.2} é, portanto, aplicável à $A_\lambda$-álgebra noetheriana $\widehat{A}'$, e mostra que $\widehat{A}'$ é \emph{$A_\lambda$-plano}.
+\end{proof}
+
+\begin{env}[10.3.1.4]
+\label{0.10.3.1.4}
+Tratemos agora o caso geral.
+Existe um ordinal $\gamma$ e, para todo ordinal $\lambda\leq\gamma$, um subcorpo $k_\lambda$ de $K$ que contém $k$, tais que (i) para todo $\lambda<\gamma$, $k_{\lambda+1}$ é uma extensão de $k_\lambda$ gerada por um único elemento; (ii) para todo ordinal limite $\mu$, $k_\mu=\bigcup_{\lambda<\mu}k_\lambda$; e (iii) $K=k_\gamma$.
+Com efeito, basta considerar uma bijeção $\xi\mapsto t_\xi$ do conjunto de ordinais $\xi\leq\beta$ (para algum $\beta$ apropriado) em $K$, e definir $k_\lambda$ por indução transfinita (para $\lambda\leq\beta$) como a união dos $k_\mu$ para $\mu<\lambda$ se $\lambda$ é um ordinal limite, e como $k_\nu(t_\xi)$ se $\lambda=\nu+1$, onde $\xi$ é o menor ordinal tal que $t_\xi\not\in k_\nu$;
+$\gamma$ é então, por definição, o menor ordinal $\leq\beta$ tal que $k_\gamma=K$.
+
+Tendo isso em mente, definiremos, por indução transfinita, uma família de anéis noetherianos locais $A_\lambda$ para $\lambda\leq\gamma$, e homomorfismos locais $f_{\mu\lambda}:A_\lambda\to A_\mu$ para $\lambda\leq\mu$, que satisfaçam as condições seguintes:
+\begin{enumerate}
+  \item[(i)] $(A_\lambda,f_{\mu\lambda})$ é um sistema indutivo e $A_0=A$;
+  \item[(ii)] para todo $\lambda$, temos um $k$-isomorfismo $A_\lambda/\mathfrak{J}A_\lambda\isoto k_\lambda$;
+  \item[(iii)] para $\lambda\leq\mu$, $A_\mu$ é um $A_\lambda$-módulo plano.
+\end{enumerate}
+
+Suponhamos, pois, definidos os $A_\lambda$ e os $f_{\mu\lambda}$ para $\lambda<\mu<\xi$, e suponhamos primeiro que $\xi=\zeta+1$, de modo que $k_\xi=k_\zeta(t)$.
+Se $t$ é transcendente sobre $k_\zeta$, definimos $A_\xi$, seguindo o procedimento de \sref{0.10.3.1.1}, como $(A_\zeta[t])_{\mathfrak{J}A_\zeta[t]}$;
+a aplicação canônica é $f_{\xi\zeta}$ e, para $\lambda<\zeta$, tomamos $f_{\xi\lambda}=f_{\xi\zeta}\circ f_{\zeta\lambda}$;
+a verificação das condições~(i) a (iii) é então imediata, em virtude do que foi demonstrado em \sref{0.10.3.1.1}.
+Suponhamos agora que $t$ é algébrico, e seja $h$ seu polinômio mínimo em $k_\zeta[T]$, e seja $H$ um polinômio mônico de $A_\zeta[T]$ cuja imagem em $k_\zeta[T]$ é $h$;
+tomamos então $A_\xi$ igual a $A_\zeta[T]/(H)$, definindo os $f_{\xi\lambda}$ como antes;
+a verificação das condições~(i) a (iii) decorre então do que foi demonstrado em \sref{0.10.3.1.2}.
+
+Suponhamos agora que $\xi$ não tem predecessor;
+tomamos então $A_\xi$ como limite indutivo do sistema indutivo de anéis locais $(A_\lambda,f_{\mu\lambda})$ para $\lambda<\xi$;
+definimos $f_{\xi\lambda}$ como a aplicação canônica para $\lambda<\xi$.
+O fato de que $A_\xi$ seja local e noetheriano, de que os $f_{\xi\lambda}$ sejam homomorfismos locais e de que as condições~(i) a (iii) sejam satisfeitas para $\lambda\leq\xi$
+\oldpage[0\textsubscript{III-1}]{23}
+decorre então da hipótese de indução e do Lema~\sref{0.10.3.1.3}.
+Com esta construção, está claro que o anel $B=A_\gamma$ satisfaz as condições de \sref{0.10.3.1}.\qed
+\end{env}
+
+Observemos que, por \sref{0.10.2.1}[c], temos um isomorfismo canônico
+\[
+\label{0.10.3.1.5}
+  \gr(A)\otimes_k K\simto\gr(B).
+  \tag{10.3.1.5}
+\]
+
+Também podemos substituir $B$ por seu completamento $\mathfrak{J}B$-ádico $\widehat{B}$ sem modificar as conclusões de \sref{0.10.3.1}, porque $\widehat{B}$ é um $B$-módulo plano \sref[0\textsubscript{I}]{0.7.3.3} e, portanto, um $A$-módulo plano \sref[0\textsubscript{I}]{0.6.2.1}.
+
+Demonstramos também o seguinte:
+\begin{corollary}[10.3.2]
+\label{0.10.3.2}
+Se $K$ é uma extensão de grau finito, podemos supor que $B$ é uma $A$-álgebra finita.
+\end{corollary}

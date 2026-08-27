@@ -1,0 +1,47 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 12697--12741 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{5. A fórmula de Weil (compare-se [3 VI §4])}
+
+\subsubsection*{5.0}
+
+Todos os esquemas considerados neste número serão definidos sobre um corpo de base $k$ algebricamente fechado.
+
+Usaremos as seguintes notações:
+\[
+\Lambda_\nu=\mathbb Z/\ell^\nu\mathbb Z,
+\]
+onde $\ell$ é um número primo dado, diferente da característica de $k$.
+
+Seja $\mathbb Z_\ell\to\Lambda_\nu$ o homomorfismo canônico. Induz um homomorfismo
+\[
+\lambda_\nu:\mathbb Z_\ell[G]\longrightarrow \Lambda_\nu[G]
+\]
+e, consequentemente, [VIII 9] um homomorfismo de redução
+\[
+\lambda_\nu^*:K^{\bullet}(\mathbb Z_\ell[G])\longrightarrow K^{\bullet}(\Lambda_\nu[G]).
+\]
+As imagens por $\lambda_\nu^*$ dos elementos associados aos módulos $Sw_y$, $Sw'_y$ serão denotadas por
+\[
+Sw_y^{\Lambda_\nu},\qquad Sw_y'{}^{\Lambda_\nu}.
+\]
+O homomorfismo de redução $\lambda_\nu^*$ é, de fato, um isomorfismo [IX 1.5]. A inversa de $\lambda_\nu^*$ será denotada por $\mu_\nu$.
+
+O feixe constante sobre o esquema $X$ associado ao anel $\Lambda_\nu$ será denotado por $\Lambda_{\nu,X}$.
+
+Seja $V$ um aberto de $X$, e seja $j:V\hookrightarrow X$ a imersão canônica. Põe-se
+\[
+j_!(\Lambda_{\nu,V})=\Lambda_{\nu,V,X}.
+\]
+
+\begin{statement}{Proposição 5.1}
+Sejam $C'$ uma curva algébrica lisa e própria sobre o corpo algebricamente fechado $k$, $G$ um grupo finito que opera sobre $C'$, $C=C'/G$, $p:C'\to C$ a projeção canônica, $U$ um aberto denso de $C$ tal que $U'=p^{-1}(U)$ seja um recobrimento principal de $U$ de grupo $G$, $Y=C-U$, $Y'=p^{-1}(Y)=C'-U'$, e seja $\EP(C)$ a característica de Euler--Poincaré de $C$ (igual a $2-2g$ se $C$ é conexa de gênero $g$).
+Nestas condições, tem-se a fórmula de Weil:
+\[
+\clKstar{\Lambda_\nu[G]}\bigl(\RG_{C'}(\Lambda_{\nu,U',C'})\bigr)
+=
+\EP(C)\clKstar{\Lambda_\nu[G]}(\Lambda_\nu[G])
+-\sum_{y\in Y}Sw_y'{}^{\Lambda_\nu},
+\tag{5.2}
+\]
+onde o primeiro membro de (5.2) é definido graças a 2.1.
+\end{statement}

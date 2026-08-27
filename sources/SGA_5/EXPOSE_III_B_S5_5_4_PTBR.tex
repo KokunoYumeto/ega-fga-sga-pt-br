@@ -1,0 +1,24 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5045--5066 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{5.4}
+
+Seja $A$ uma $K$-álgebra. Na situação $({}_AE,{}_AF_A,{}_AG)$, tem-se uma flecha canônica
+\begin{equation}\tag{5.4.1}
+\uHom_A(E,F)\otimes_AG\longrightarrow\uHom_A(E,F\otimes_AG),
+\qquad u\otimes y\longmapsto(x\longmapsto u(x)\otimes y),
+\end{equation}
+que corresponde por adjunção (5.2.1) à flecha $A$-linear
+\[
+E\otimes_K\uHom_A(E,F)\otimes_AG\longrightarrow F\otimes_AG
+\]
+definida pela flecha de avaliação $E\otimes_K\uHom_A(E,F)\to F$. A flecha 5.4.1 se deriva em uma flecha de $D(K)$, denominada flecha de produto tensorial,
+\begin{equation}\tag{5.4.2}
+\uRHom_A(E,F)\lten_AG\longrightarrow\uRHom_A(E,F\lten_AG),
+\end{equation}
+para $E\in\ob D^-(A)$, $F\in\ob D^+(A^e)$, $G\in\ob D^-(A)$, com $F\lten_AG\in\ob D^+(A)$. Se $E$ e $G$ estiverem limitados superiormente e tiverem componentes planas, e $F$ estiver limitado inferiormente e tiver componentes injetivas, o primeiro membro de 5.4.2 identifica-se, com efeito, com $\Hom_A^\bullet(E,F)\otimes_AG$, e é enviado ao segundo membro mediante a composta de 5.4.1 e da flecha natural
+\[
+\Hom_A^\bullet(E,F\otimes_AG)\longrightarrow \uRHom_A(E,F\otimes_AG)=\uRHom_A(E,F\lten_AG).
+\]
+A flecha 5.4.2 não é, em geral, um isomorfismo. Entretanto, o é em certos casos importantes, por exemplo se $E$ for perfeito (como se verifica reduzindo a $E=A$). Mais adiante veremos outro exemplo interessante (6.2.3).
+
+As flechas 5.3.5 e 5.4.2 desempenharão um papel essencial em todo o restante da exposição. Os exemplos de objetos $F$ que temos em mente são: a) $F=A$, ou $F=A$ considerado como $A$-módulo direito da maneira natural e como $A$-módulo esquerdo mediante um homomorfismo de $K$-álgebras $\varphi:A\to A$ (cf. 5.13); b) $F=M\lten_KA$, com $M\in\ob D^+(K)$; no número 6, $M$ será um complexo dualizante, vejam-se em particular 6.3.2, 6.4.1 e 6.5.6.

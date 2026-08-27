@@ -1,0 +1,42 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5139--5178 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{5.8}
+
+Sejam $P,Q$ $A$-bimódulos. Então $P\otimes_AQ$ e $Q\otimes_AP$ são $A$-bimódulos, e têm-se isomorfismos canônicos
+\begin{equation}\tag{5.8.1}
+(P\otimes_AQ)\otimes_{A^e}A\xrightarrow{\sim}P\otimes_{A^e}Q\xrightarrow{\sim}(Q\otimes_AP)\otimes_{A^e}A\xrightarrow{\sim}A\otimes_{A^e}(P\otimes_KQ)\otimes_{A^e}A,
+\end{equation}
+identificando-se canonicamente cada um dos objetos anteriores com o $K$-módulo quociente de $P\otimes_KQ$ pelo submódulo gerado pelas seções da forma $axb\otimes y-x\otimes bya$, para $x\in P$, $y\in Q$, $a,b\in A$. Se $A$ é plana sobre $K$, esses isomorfismos se derivam em isomorfismos
+\begin{equation}\tag{5.8.2}
+(P\lten_AQ)\lten_{A^e}A\simeq P\lten_{A^e}Q\simeq(Q\lten_AP)\lten_{A^e}A\simeq A\lten_{A^e}(P\lten_KQ)\lten_{A^e}A
+\end{equation}
+para $P,Q\in\ob D^-(A^e)$. Por outro lado, a flecha de composição no nível dos módulos
+\[
+\uHom_A(E,P\otimes_AF)\otimes_K\uHom_A(F,Q\otimes_AE)
+\longrightarrow\uHom_A(E,P\otimes_AQ\otimes_AE),
+\]
+\[
+f\otimes g\longmapsto (P\otimes_Ag)f,
+\]
+se deriva em
+\begin{equation}\tag{5.8.3}
+\uRHom_A(E,P\lten_AF)\lten_K\uRHom_A(F,Q\lten_AE)
+\longrightarrow\uRHom_A(E,P\lten_AQ\lten_AE)
+\end{equation}
+para $P,Q\in\ob D^b(A^e)$, $E,F\in\ob D^b(A)$ tais que os produtos tensoriais e os $\uRHom$ que figuram acima estejam em $D^b$. Quando $E$ e $F$ são perfeitos, essa flecha se identifica, mediante 5.4.2, com a flecha deduzida da flecha de avaliação $F\lten_K\uRHom_A(F,Q)\to Q$; disso se deduz facilmente que se tem um quadrado comutativo
+\begin{equation}\tag{5.8.4}
+\begin{tikzcd}[column sep=large,row sep=large]
+\uRHom_A(E,P\lten_AF)\lten_K\uRHom_A(F,Q\lten_AE) \arrow[r,"(1)"] \arrow[d,"(2)"'] & \uRHom_A(E,P\lten_AQ\lten_AE) \arrow[d,"\Tr_A"]\\
+\uRHom_A(F,Q\lten_AP\lten_AF) \arrow[r,"\Tr_A"'] & P\lten_{A^e}Q,
+\end{tikzcd}
+\end{equation}
+onde (1) e (2) são dadas por 5.8.3 (o ponto é que as duas flechas compostas de 5.8.4 são definidas pelo produto tensorial das flechas de avaliação
+\[
+F\lten_K\uRHom_A(F,Q)\longrightarrow Q,\qquad
+E\lten_K\uRHom_A(E,P)\longrightarrow P.
+\]
+Disso resulta que, para $u\in\uHom_A(E,P\lten_AF)$, $v\in\uHom_A(F,Q\lten_AE)$, tem-se
+\begin{equation}\tag{5.8.5}
+\Tr_A(vu)=\Tr_A(uv).
+\end{equation}
+Às vezes denotaremos por $\langle u,v\rangle_A$ o valor comum de 5.8.5.

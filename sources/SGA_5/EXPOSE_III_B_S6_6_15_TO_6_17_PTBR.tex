@@ -1,0 +1,57 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6272--6326 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{6.15}
+Sejam um diagrama $G$-equivariante 6.11.1, com $f$, $c$, $d$ próprios, e $U\to X$ uma imersão aberta $G$-equivariante. Supõe-se que $c_2$ é quase-finito e de dimensão Tor finita, que
+\[
+c_1^{-1}(U)\subset c_2^{-1}(U),
+\]
+que $G$ age trivialmente sobre $C$ e $D$, e que
+\[
+f|U:U\longrightarrow f(U)=V
+\]
+é um recobrimento étale de Galois de grupo $G$. Esta última hipótese implica que
+\[
+\R f_*(\Lambda_{U,X})\in\Ob D_{\mathrm{ctf}}({}_{\Lambda[G]}Y):
+\]
+Com efeito, $\R f_*(\Lambda_{U,X})$ está concentrado em grau $0$ e é a extensão por zero de um feixe sobre $V$ localmente isomorfo a $\Lambda[G]$. Assim, pode-se aplicar 6.12 a $L=\Lambda_{U,X}$, $u=\underline c_{U,X}$ e, levando em conta 6.14.6 e 6.14.7, obtém-se:
+
+\begin{statement}{Proposição 6.16}
+Sob as hipóteses de 6.15, para todo $g\in G$, tem-se
+\begin{equation}
+f_*^{gc}\Tr_{\Lambda}(g\underline c)
+-(fj)_*^{gc}\Tr_{\Lambda}(g\underline c_{X-U})
+=
+|Z_g|\,\Tr_{\Lambda[G]}(f_*\underline c_{U,X})(g^{-1}),
+\tag{6.16.1}
+\end{equation}
+onde $j:X-U\to X$ é a inclusão, e $Z_g$ designa o centralizador de $g$.
+\end{statement}
+
+Aplicando 6.16 ao sistema projetivo de correspondências $\underline c_{\ell}=(\underline c^{\Lambda_n})$, onde $\Lambda_n=\mathbb Z/\ell^n$ $(\ell$ primo $\ne p)$, e levando em conta que 6.14.6 e 6.14.7 dão, por passagem ao limite e aplicação de $f_*^{gc}$,
+\[
+f_*^{gc}\Tr_{\mathbb Z_{\ell}}(g\underline c_{\ell})
+=
+f_*^{gc}\Tr_{\mathbb Z_{\ell}}(g\underline c_{\ell,U,X})
++(fj)_*^{gc}\Tr_{\mathbb Z_{\ell}}(g\underline c_{\ell,X-U}),
+\]
+daí se deduz, segundo 6.13:
+
+\begin{statement}{Corolário 6.17}
+Sob as hipóteses de 6.15, para todo $g\in G$, tem-se
+\begin{equation}
+f_*^{gc}\Tr_{\mathbb Z_{\ell}}(g\underline c_{\ell})
+-(fj)_*^{gc}\Tr_{\mathbb Z_{\ell}}(g\underline c_{\ell,X-U})
+=
+|Z_g|\,\Tr_{\mathbb Z_{\ell}[G]}(f_*\underline c_{\ell,U,X})(g^{-1}),
+\tag{6.17.1}
+\end{equation}
+com as notações de 6.16.
+\end{statement}
+
+Levando em conta a compatibilidade dos traços locais com a localização e as observações feitas em 6.14, vê-se que 6.17 resolve afirmativamente, em uma formulação mais geral, a conjectura de divisibilidade de Grothendieck (XII 4.5), no caso em que o endomorfismo $\varphi$ de $G$ considerado em (loc. cit.) é a identidade.
+
+De fato, não é difícil, inspirando-se em 5.13, dar enunciados de divisibilidade análogos a 6.12, 6.13, 6.16 e 6.17 no caso em que $c$ não é $G$-equivariante, mas $c_2$ o é e $c_1$ verifica
+\[
+c_1(xg)=c_1(x)\varphi(g)
+\]
+para todo ponto $x$ de $G$, sendo $\varphi$ um endomorfismo dado de $G$: as fórmulas de divisibilidade escrevem-se como antes, com $Z_g$ substituído pelo $\varphi$-centralizador de $g^{-1}$ (5.13.5).

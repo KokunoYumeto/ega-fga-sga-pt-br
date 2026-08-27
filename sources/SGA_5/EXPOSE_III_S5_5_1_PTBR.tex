@@ -1,0 +1,63 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 3464--3525 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{5.1. Dual de uma correspondência}
+
+Sejam, para $i=1,2$, $X_i$ um $S$-esquema, $X=X_1\times_S X_2$, $p_i:X\to X_i$ as projeções e $L_i\in\operatorname{ob}D_{\mathrm{ctf}}(X_i)$. Toda correspondência cohomológica $u$ de $L_1$ a $L_2$ determina, ao aplicar $D_X$ e identificar $Dp_2^!$ com $p_2^*D$ e $Dp_1^*$ com $p_1^!D$, uma correspondência $Du$ de $DL_2$ a $DL_1$, denominada \emph{dual de $u$}. Em outras palavras, $D$ define um homomorfismo
+\begin{equation}
+\tag{5.1.1}
+D:\Hom(p_1^*L_1,p_2^!L_2)\longrightarrow \Hom(p_2^*DL_2,p_1^!DL_1).
+\end{equation}
+Verifica-se que 5.1.1 se obtém, aplicando $H^0(X,-)$, do isomorfismo
+\begin{equation}
+\tag{5.1.2}
+D:\uRHom(p_1^*L_1,p_2^!L_2)\xrightarrow{\sim}\uRHom(p_2^*DL_2,p_1^!DL_1)
+\end{equation}
+que torna comutativo o quadrado
+\begin{equation}
+\tag{5.1.3}
+\begin{tikzcd}[column sep=large,row sep=large]
+p_1^*DL_1\otimes^{\mathbf L}p_2^*L_2 \arrow[r,"3.1.1"] \arrow[d]
+& \uRHom(p_1^*L_1,p_2^!L_2) \arrow[d] \\
+p_2^*DDL_2\otimes^{\mathbf L}p_1^*DL_1 \arrow[r,"3.1.1"]
+& \uRHom(p_2^*DL_2,p_1^!DL_1),
+\end{tikzcd}
+\end{equation}
+em que a flecha vertical esquerda é a composta do isomorfismo de simetria com o morfismo definido pelo isomorfismo de bidualidade $L_2\to DDL_2$. Deduz-se facilmente das definições que o quadrado seguinte é comutativo:
+\begin{equation}
+\tag{5.1.4}
+\begin{tikzcd}[column sep=large,row sep=large]
+\uRHom_S(L_1,L_2)\otimes^{\mathbf L}\uRHom_S(L_2,L_1) \arrow[r,"4.1.3"] \arrow[d,"D\otimes^{\mathbf L} D"']
+& K_X \arrow[d,"\operatorname{Id}"] \\
+\uRHom_S(DL_2,DL_1)\otimes^{\mathbf L}\uRHom_S(DL_1,DL_2) \arrow[r,"4.1.3"]
+& K_X.
+\end{tikzcd}
+\end{equation}
+Seja $c:C\to X$ um $S$-morfismo e ponhamos $c_i=p_ic$; de 5.1.2, aplicando $c_*c^!$ (3.2.1), deduz-se um isomorfismo
+\begin{equation}
+\tag{5.1.5}
+D:\Hom(c_1^*L_1,c_2^!L_2)\xrightarrow{\sim}\Hom(c_2^*DL_2,c_1^!DL_1),
+\end{equation}
+e verifica-se que ele se identifica com aquele obtido ao aplicar o funtor $D_X$ e as identificações de $Dc_1^*$ com $c_1^!D$ e de $Dc_2^!$ com $c_2^*D$. Se $c':C'\to X$ e $c'':C''\to X$ são $S$-morfismos, de 5.1.4 deduz-se que, para
+\[
+u\in\Hom(c_1'{}^*L_1,c_2'{}^!L_2),\qquad v\in\Hom(c_2''{}^*L_2,c_1''{}^!L_1),\]
+\begin{equation}
+\tag{5.1.6}
+\langle u,v\rangle=\langle Du,Dv\rangle,
+\end{equation}
+com a notação de 4.2.5.
+
+Por outro lado, verifica-se que, na situação de 3.3, o seguinte quadrado é comutativo:
+\begin{equation}
+\tag{5.1.7}
+\begin{tikzcd}[column sep=large,row sep=large]
+f_*\uRHom_S(L_1,L_2) \arrow[r,"3.3.1"] \arrow[d,"f_*D"']
+& \uRHom_S(f_{1!}L_1,f_{2*}L_2) \arrow[d,"D"] \\
+f_*\uRHom_S(DL_2,DL_1) \arrow[r,"3.3.1"]
+& \uRHom_S(f_{2!}DL_2,f_{1*}DL_1),
+\end{tikzcd}
+\end{equation}
+e, portanto, que, na situação de 3.7.6, tem-se
+\begin{equation}
+\tag{5.1.8}
+f_*Du=Df_*u.
+\end{equation}

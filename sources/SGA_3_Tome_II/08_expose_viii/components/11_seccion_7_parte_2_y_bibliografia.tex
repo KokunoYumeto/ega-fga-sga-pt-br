@@ -1,0 +1,324 @@
+% Tradução brasileira revista a partir do workpass espanhol congelado;
+% a fonte permanece em source_es.
+% SGA 3, Exposé VIII, tradução brasileira: Corolário 7.5 a 7.13 e bibliografia.
+% Autoridade: Polo--Gille Exp8-8nov09.pdf, pp. locais 26--30,
+% leitor completo pp. 642--646. Fim estrito antes do Exposé IX.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:7:5}\textbf{Corolário 7.5.}
+\textit{Suponhamos ainda que \(G_0\) seja liso sobre \(k\) e que
+\(p\operatorname{id}_{G_0}\) seja plano. Equivalentemente, pela teoria de
+estrutura dos grupos algébricos sobre um corpo algebricamente
+fechado \(\overline{k}\), \(G_{\overline{k}}\) não contém nenhum subgrupo
+isomorfo ao grupo aditivo. Então, para todo \(\nu\geq\nu_0\) e todo
+\(n>0\), o grupo \({}_{p^\nu}H_n\) é plano sobre \(S_n\).}
+
+De fato, \(p^{\nu_0}\operatorname{id}_{Q_n}=0\) implica que
+\(p^\nu\operatorname{id}_{H_n}\) se fatora por \(G_n\), dando o
+diagrama comutativo
+\SGARefTarget{sga3:viii:diagram:7:5}
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+H_n
+  \arrow[r,"p^\nu\operatorname{id}_{H_n}"]
+  \arrow[dr,"v_n"]
+&
+H_n
+\\
+G_n
+  \arrow[u,"u_n"]
+  \arrow[r,"p^\nu\operatorname{id}_{G_n}"]
+&
+G_n
+  \arrow[u,"u_n"']
+.
+\end{tikzcd}
+\]
+Afirmamos que \(v_n\) é plano. Como \(H_n\) e \(G_n\) são planos sobre
+\(S_n\), basta verificar que \(v_0\) é plano (SGA~1, IV, 5.9). Podemos,
+portanto, tomar \(n=0\), de modo que \(S_n=\operatorname{Spec}(k)\). Como
+\(p\operatorname{id}_{G_0}\), e portanto
+\(p^\nu\operatorname{id}_{G_0}\), é plano, sua imagem é um subgrupo aberto
+induzido \(G'_0\) de \(G_0\). O morfismo \(u_0:G_0\to H_0\) é
+sobrejetivo, de modo que \(v_0\) toma seus valores em \(G'_0\) e pode
+ser considerado como um homomorfismo com contradomínio \(G'_0\). Seu composto com
+\(u_0\) é um epimorfismo; portanto, o próprio \(v_0\) é um epimorfismo e,
+por conseguinte, um homomorfismo plano para \(G'_0\), e daí para \(G_0\).
+Consequentemente, \(v_n\) é plano e
+\(\ker v_n={}_{p^\nu}H_n\)%
+\begingroup
+\renewcommand{\thefootnote}{\(\dagger\)}
+\footnote[0]{Nota da edição espanhola: a fonte imprime
+\({}_{p^\nu}H\) sobre \(S\) aqui e \({}_{p^\nu}H\) sobre \(S_n\) na
+demonstração do \SGARefLink{sga3:viii:lemma:7:7}{Lema 7.7}. Restituem-se
+os índices \(n\) em ambos os lugares, pois esses argumentos dizem respeito à
+família mudada de base sobre \(S_n\).}
+\endgroup
+é plano sobre \(S_n\). \qed
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:remark:7:5:after:01}\textbf{Observação.}
+Não utilizamos explicitamente a hipótese de que \(G_0\) seja liso
+sobre \(k\). Ela é, contudo, uma consequência fácil da planitude de
+\(p\operatorname{id}_{G_0}\) \emph{[a fonte imprime
+\(p\operatorname{id}_{G}\)]}; por isso se enunciou explicitamente a
+condição no Corolário~\SGARefLink{sga3:viii:corollary:7:5}{7.5}.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:lemma:7:6}\textbf{Lema 7.6.}
+\textit{Seja \(u:G\to H\) um monomorfismo sobrejetivo de grupos
+algébricos comutativos sobre um corpo \(k\) de característica \(p>0\),
+e ponhamos \(Q=H/G\), um grupo puramente infinitesimal. Existe um inteiro
+\(\nu_1\) tal que, para todo \(\nu\geq\nu_1\), a sequência}
+\[
+  0\longrightarrow{}_{p^\nu}G
+  \longrightarrow{}_{p^\nu}H
+  \longrightarrow Q\longrightarrow0
+\]
+\textit{é exata.}
+
+Basta estabelecer a exatidão em \(Q\), o que, por sua vez, equivale à
+injetividade do homomorfismo
+\SGARefTarget{sga3:viii:eq:7:6:x}
+\begin{equation}
+  \tag{x}
+  \mathscr O_{Q,e}\longrightarrow
+  \mathscr O_{{}_{p^\nu}H,e}
+\end{equation}
+de anéis locais nos elementos identidade. Recordemos que \(Q\) tem,
+como suporte conjuntista, o único ponto \(e\). Há um homomorfismo natural
+\SGARefTarget{sga3:viii:eq:7:6:xx}
+\begin{equation}
+  \tag{xx}
+  \mathscr O_{{}_{p^\nu}H,e}
+  \longrightarrow
+  \mathscr O_{H,e}/\mathfrak m^{p^\nu},
+\end{equation}
+onde \(\mathfrak m\) é o ideal de aumentação, equivalentemente o ideal
+maximal, de \(\mathscr O_{H,e}\). De fato,
+\(p^\nu\operatorname{id}_H\) se anula sobre o núcleo do homomorfismo de
+Frobenius iterado \(F^\nu\). O composto de
+\SGARefLink{sga3:viii:eq:7:6:x}{(x)} e
+\SGARefLink{sga3:viii:eq:7:6:xx}{(xx)} é o composto natural
+\SGARefTarget{sga3:viii:eq:7:6:xxx}
+\begin{equation}
+  \tag{xxx}
+  \mathscr O_{Q,e}\longrightarrow
+  \mathscr O_{H,e}\longrightarrow
+  \mathscr O_{H,e}/\mathfrak m^{p^\nu}.
+\end{equation}
+Ora, \(\mathscr O_{Q,e}\to\mathscr O_{H,e}\) é injetivo porque
+\(H\to Q\) é um epimorfismo e, portanto, plano. Além disso,
+\(\mathscr O_{Q,e}\) é artiniano, enquanto
+\(\bigcap_\nu\mathfrak m^{p^\nu}=0\) em \(\mathscr O_{H,e}\), de modo que
+a interseção dos ideais correspondentes em \(\mathscr O_{Q,e}\)
+também é zero. Um deles é, portanto, zero. Assim,
+\SGARefLink{sga3:viii:eq:7:6:xxx}{(xxx)} é injetivo, e a fortiori também
+o é \SGARefLink{sga3:viii:eq:7:6:x}{(x)}.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:lemma:7:7}\textbf{Lema 7.7.}
+\textit{Sob as hipóteses de
+\SGARefLink{sga3:viii:corollary:7:5}{7.5}, existe um inteiro \(\nu_1\) tal
+que, para todo \(\nu\geq\nu_1\) e todo \(n\), a sequência de
+\(S_n\)-grupos}
+\[
+  0\longrightarrow{}_{p^\nu}G_n
+  \longrightarrow{}_{p^\nu}H_n
+  \xrightarrow{\,w_n\,}Q_n
+  \longrightarrow0
+\]
+\textit{é exata. Mais precisamente, \(w_n\) é fielmente plano e seu
+núcleo é \({}_{p^\nu}G_n\).}
+
+Tomemos \(\nu_1\) como no Lema~\SGARefLink{sga3:viii:lemma:7:6}{7.6},
+aplicado a \(u_0:G_0\to H_0\), e exijamos \(\nu_1\geq\nu_0\), onde
+\(p^{\nu_0}=\operatorname{rank}Q_0\). Resta apenas verificar que \(w_n\) é
+fielmente plano. Pelo Corolário~\SGARefLink{sga3:viii:corollary:7:5}{7.5},
+\({}_{p^\nu}H_n\) é plano sobre \(S_n\), assim como \(Q_n\); basta, portanto,
+verificar que
+\[
+  w_0:{}_{p^\nu}H_0\longrightarrow Q_0
+\]
+é fielmente plano, equivalentemente um epimorfismo. Isso se deduz da
+escolha de \(\nu_1\).
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:7:8}\textbf{Corolário 7.8.}
+\textit{Suponhamos ainda que \(H\) seja separado sobre \(S\), ou, mais
+geralmente, que \({}_{p^\nu}H\) seja separado sobre \(S\) para todo \(\nu\),
+e que \({}_{p^\nu}G\) seja finito sobre \(S\) para todo \(\nu\). Então,
+para \(\nu\geq\nu_1\), os esquemas em grupos \({}_{p^\nu}G\) e
+\({}_{p^\nu}H\) são finitos e planos sobre \(S\), e há uma sequência
+exata}
+\SGARefTarget{sga3:viii:corollary:7:8:display:exact-sequence:01}\[
+  0\longrightarrow{}_{p^\nu}G
+  \longrightarrow{}_{p^\nu}H
+  \xrightarrow{\,w\,}Q
+  \longrightarrow0.
+\]
+
+Como \(u:G\to H\) é sobrejetivo, o morfismo induzido
+\({}_{p^\nu}G\to{}_{p^\nu}H\) também é sobrejetivo. A fonte é finita
+sobre \(S\) e o alvo é separado sobre \(S\), logo o alvo é
+finito sobre \(S\). Para provar que \({}_{p^\nu}G\) e \({}_{p^\nu}H\) são
+planos sobre \(S\), basta prová-lo depois de cada mudança de base para \(S_n\),
+onde isso está contido no Corolário~\SGARefLink{sga3:viii:corollary:7:5}{7.5}.
+Por fim, a
+\SGARefLink{sga3:viii:corollary:7:8:display:exact-sequence:01}{sequência
+exata anterior} obtém-se das sequências exatas do
+Lema~\SGARefLink{sga3:viii:lemma:7:7}{7.7} ao variar \(n\).
+
+Tomando fibras genéricas na sequência do
+Corolário~\SGARefLink{sga3:viii:corollary:7:8}{7.8}, e recordando que
+\(u_{s'}:G_{s'}\to H_{s'}\) é um isomorfismo, obtém-se que \(Q_{s'}\)
+é o grupo unidade. Como \(Q\) é plano sobre \(S\), o próprio \(Q\) é o
+grupo unidade; portanto, \(Q_s\) também o é, e \(u_s:G_s\to H_s\) é um
+isomorfismo. Provamos:
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:proposition:7:9}\textbf{Proposição 7.9.}
+\textit{Seja \(u:G\to H\) um homomorfismo de pré-esquemas em grupos de
+apresentação finita sobre um pré-esquema \(S\). Suponhamos:}
+\begin{enumerate}
+  \item[(a)]\SGARefTarget{sga3:viii:proposition:7:9:item:a}
+  \textit{\(u\) é um monomorfismo;}
+  \item[(b)]\SGARefTarget{sga3:viii:proposition:7:9:item:b}
+  \textit{\(G\) é plano sobre \(S\);}
+  \item[(c)]\SGARefTarget{sga3:viii:proposition:7:9:item:c}
+  \textit{para todo \(s\in S\) cujo corpo residual tenha característica
+  \(p>0\), seja \(S'=\operatorname{Spec}(\mathscr O_{S,s})\), e seja
+  \(u':G'\to H'\) o morfismo obtido de \(u\) por mudança de base para
+  \(S'\). Então \(G'\) é comutativo, a fibra especial
+  \(G'_0=G_s\) é liso sobre \(\kappa(s)\), e, para todo \(\nu>0\), o
+  grupo \({}_{p^\nu}G'\) é finito sobre \(S'\), enquanto
+  \({}_{p^\nu}H'\) é separado sobre \(S'\).}
+\end{enumerate}
+\textit{Sob essas hipóteses, \(u\) é uma imersão.}
+
+De fato, a finitude de \({}_pG'\) sobre \(S'\) implica a finitude de sua
+fibra especial sobre \(\kappa(s)\). Portanto,
+\(G'_0\otimes_{\kappa(s)}\overline{\kappa(s)}\) não contém nenhum
+subgrupo isomorfo ao grupo aditivo, e aplicam-se as hipóteses do
+Corolário~\SGARefLink{sga3:viii:corollary:7:5}{7.5}.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:remark:7:10}\textbf{Observação 7.10.}
+Exemplos de M. Raynaud (XVI, 1.1(a),
+\SGARefLink{sga3:viii:proposition:7:9:item:b}{(b)}) mostram que, na
+condição \SGARefLink{sga3:viii:proposition:7:9:item:c}{(c)}, não se pode
+omitir nem a finitude dos \({}_{p^\nu}G'\) sobre \(S'\), nem a separação
+dos \({}_{p^\nu}H'\) sobre \(S'\).
+
+Busquemos agora condições sob as quais \(u\) seja uma imersão
+fechada. Conservemos as hipóteses que precedem a
+Proposição~\SGARefLink{sga3:viii:proposition:7:9}{7.9}, mas deixemos de
+supor que \(u\) seja sobrejetivo; suponhamos apenas que seja um
+isomorfismo nas fibras genéricas. Já sabemos que \(u:G\to H\) é uma
+imersão aberta. O mesmo vale, portanto, para \(u_0:G_0\to H_0\), cuja
+imagem contém a componente identidade \((H_0)^0\). Como \(G_0\) é liso
+sobre \(k\) e não tem componente aditiva depois de estender a
+\(\overline{k}\), o mesmo vale para \(H_0\). Usamos:
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:lemma:7:11}\textbf{Lema 7.11.}
+\textit{Seja \(H\) um grupo algébrico comutativo sobre um corpo \(k\), e
+suponhamos que \(H\otimes_k\overline{k}\) não contenha nenhum subgrupo
+isomorfo a \(\mathbf G_a\). Se \(n=\deg(H/H^0)\), então}
+\[
+  {}_nH\longrightarrow H/H^0
+\]
+\textit{é sobrejetivo.}
+
+Podemos supor que \(k\) seja algebricamente fechado, caso em que isso se
+deduz do fato conhecido de que \(H^0(k)\) é um grupo divisível.
+
+Voltemos a \(u:G\to H\), e suponhamos que os \({}_nG\), \(n>0\), sejam
+próprios sobre \(S\), enquanto os \({}_nH\) sejam separados sobre \(S\).
+Os \({}_nH\) são também planos sobre \(S\). De fato, basta verificar a
+planitude nos pontos sobre \(s\), e portanto verificar que
+\(n\operatorname{id}_{H_0}\) seja plano. Como assinalado antes, isso equivale
+a que \((H_0)^0\) seja liso\footnote{Nota do editor: a terminologia foi
+atualizada, substituindo-se «simples» por «liso»; veja-se, por exemplo, a nota
+(1) escrita pelo autor A. Grothendieck em SGA~1, Exposé II.} sobre \(k\) e não tenha
+componente \(\mathbf G_a\) sobre \(\overline{k}\). Como
+\((H_0)^0=(G_0)^0\), isso se deduz da hipótese correspondente sobre
+\(G_0\).
+
+Como \(H\) é separado sobre \(S\), os \({}_nH\) também o são. O
+morfismo \({}_nG\to{}_nH\) é próprio e, portanto, tem imagem fechada. Sua
+imagem contém a fibra genérica de \({}_nH\), porque
+\(u_{s'}:G_{s'}\to H_{s'}\) é um isomorfismo. Como \({}_nH\) é plano
+sobre \(S\), é o fecho esquemático de sua fibra genérica. Portanto,
+\({}_nG\to{}_nH\), e daí \({}_nG_0\to{}_nH_0\), é sobrejetivo. Juntamente
+com \(G_0\supset(H_0)^0\), o Lema
+\SGARefLink{sga3:viii:lemma:7:11}{7.11} implica agora que \(G_0\to H_0\) é
+sobrejetivo. Portanto, \(u\) é sobrejetivo. Obtém-se:
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:proposition:7:12}\textbf{Proposição 7.12.}
+\textit{Com a notação de \SGARefLink{sga3:viii:proposition:7:9}{7.9},
+suponhamos que sejam satisfeitas as condições
+\SGARefLink{sga3:viii:proposition:7:9:item:a}{(a)} e
+\SGARefLink{sga3:viii:proposition:7:9:item:b}{(b)}, juntamente com a condição
+mais forte (c\(^{\prime}\)) obtida de
+\SGARefLink{sga3:viii:proposition:7:9:item:c}{(c)} exigindo, para todo
+inteiro \(n>0\), e não apenas para os da forma \(p^\nu\), que \({}_nG'\)
+seja finito sobre \(S'\) e \({}_nH'\) separado sobre \(S'\). Então \(u\)
+é uma imersão fechada.}
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:remark:7:13}\textbf{Observação 7.13.}
+\begin{enumerate}
+  \item[(a)] A hipótese de separação dos \({}_nH\) implica facilmente
+  que o próprio \(H\) é separado sobre \(S\). Isso também está contido
+  formalmente na Proposição~\SGARefLink{sga3:viii:proposition:7:12}{7.12},
+  tomando como \(G\) o \(S\)-grupo unidade. Se \(S\) é localmente
+  noetheriano, na Proposição~\SGARefLink{sga3:viii:proposition:7:9}{7.9}
+  basta supor que \(H\) seja localmente de tipo finito sobre \(S\), em vez
+  de tipo finito; a demonstração aplica-se literalmente. Para a
+  Proposição~\SGARefLink{sga3:viii:proposition:7:12}{7.12}, supõe-se
+  ainda que as fibras de \(H\) sejam de tipo finito.
+
+  \item[(b)]\SGAInlineRefTarget{sga3:viii:remark:7-13:item:b} Utilizando a
+  Proposição~\SGARefLink{sga3:viii:proposition:7:12}{7.12}, não é difícil
+  provar que, se \(u:G\to H\) é um monomorfismo de pré-esquemas em grupos
+  de apresentação finita sobre \(S\), \(G\) é diagonalizável, ou, mais
+  geralmente, de tipo multiplicativo, e \(H\) é separado sobre \(S\),
+  então \(u\) é uma imersão fechada. Essa é uma generalização
+  satisfatória da primeira conclusão de
+  \SGARefLink{sga3:viii:corollary:5:7}{5.7}. Se \(G\) é liso sobre \(S\),
+  aplique-se diretamente a
+  \SGARefLink{sga3:viii:proposition:7:12}{Proposição~7.12}; o caso geral
+  reduz-se facilmente a esse. Se não se supõe que \(H\) seja separado
+  sobre \(S\), ainda se pode mostrar que \(u\) é uma imersão; para um
+  toro \(G\), isso também se deduz do material que segue.
+
+  \item[(c)] Se se supõe que \(G\) tenha fibras conexas na
+  Proposição~\SGARefLink{sga3:viii:proposition:7:9}{7.9}, pode-se omitir
+  da condição \SGARefLink{sga3:viii:proposition:7:9:item:c}{(c)} a
+  separação de \({}_{p^\nu}H'\) sobre \(S'\). De fato, depois das
+  reduções da demonstração, pode-se supor que \(H\) seja plano sobre
+  \(S\) e \(u\) bijetivo. Assim, \(H\) tem fibras conexas, e o teorema de
+  Raynaud (VI\(_B\), 5.5) implica que \(H\) é separado sobre
+  \(S\).\footnote{Nota do editor: a atribuição, que aparecia em SGAD 1965,
+  deveria ser explicitada no Exposé VI\(_B\), §5, juntamente com as mudanças
+  entre SGAD e Lecture Notes 151.}
+\end{enumerate}
+
+\SGARefTarget{sga3:viii:bibliography}\section*{Bibliografia}
+\addcontentsline{toc}{section}{Bibliografia}
+\footnote{Nota do editor: referências adicionais citadas neste exposé.}
+
+\begin{description}
+  \item[\SGARefTarget{sga3:viii:bib:rg71}{[RG71]}]
+  M. Raynaud e L. Gruson, \textit{Critères de platitude et de
+  projectivité}, Invent. Math. \textbf{13} (1971), 1--89.
+
+  \item[\SGARefTarget{sga3:viii:bib:to70}{[TO70]}]
+  J. Tate e F. Oort, \textit{Group schemes of prime order}, Ann. Sci.
+  Éc. Norm. Supér. (4) \textbf{3} (1970), 1--21.
+\end{description}
+
+% FIM ESTRITO: o Exposé VIII termina aqui. O Exposé IX começa na p. 647
+% do leitor completo e fica fora desta unidade.

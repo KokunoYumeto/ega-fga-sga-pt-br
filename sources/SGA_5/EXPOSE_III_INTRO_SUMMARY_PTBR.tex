@@ -1,0 +1,29 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 1831--1857 (LF-normalized unit).
+\clearpage
+\begin{center}
+{\Large \textbf{SGA 5 --- Exposição III}}\\[0.4em]
+{\large \textbf{FÓRMULA DE LEFSCHETZ}}\\[0.3em]
+por A.~Grothendieck, redação de L.~Illusie
+\end{center}
+\enlargethispage{-2\baselineskip}
+
+Nesta exposição demonstramos a fórmula de Lefschetz em cohomologia étale para as correspondências entre complexos de feixes, na formulação de Verdier (cf.~[18]). Em uma redação anterior, distribuída pelo IHES há cerca de dez anos, enunciava-se a fórmula sob hipóteses de resolução, mas não se demonstravam as compatibilidades exigidas. Os teoremas de finitude de Deligne (SGA~$4^{1/2}$ Finitude) permitiram prescindir dessas hipóteses, com a condição de trabalhar com esquemas separados e de tipo finito sobre um corpo. Quanto às compatibilidades, o redator verificou-as (penosamente).
+
+Digamos desde o início que a fórmula de Lefschetz de que aqui se trata, assim como a fórmula dos traços para coeficientes constantes (SGA~$4^{1/2}$ Ciclo), que ela generaliza, é essencialmente trivial: não faz mais do que exprimir certas compatibilidades no formalismo de dualidade. Em linhas gerais, afirma que, sob certas condições, o traço de um endomorfismo de um complexo de hipercohomologia $\R\Gamma(X,L)$, onde $L$ é um complexo de feixes sobre $X$, pode ser calculado como a ``integral'' de certas classes de cohomologia sobre $X \times X$. Na prática, os endomorfismos considerados estão associados a correspondências $C \subset X \times X$, e as classes obtidas sobre o produto têm suporte em $C \cap \Delta$, onde $\Delta$ é a diagonal; essas classes são ``de natureza local'' em uma vizinhança dos pontos fixos, o que, em princípio, facilita seu cálculo. Vejam-se 4.2 e 4.7 para enunciados precisos. De fato, até agora o cálculo dessas classes ``locais'' em termos de invariantes mais compreensíveis, sem o qual a presente fórmula careceria de interesse, só foi abordado em situações muito particulares (vejam-se 4.10, 4.11 e a exposição seguinte, onde se trata, em particular, do caso da correspondência de Frobenius sobre uma curva).
+
+Na falta de uma boa categoria derivada de feixes $\ell$-ádicos (pois, infelizmente, a tese de Jouanolou não foi publicada), trabalhamos sistematicamente com coeficientes de torção (primos às características residuais). Apesar de algumas pequenas dificuldades técnicas na definição dos traços, esse ponto de vista conduz, de fato, a fórmulas mais finas e também mais manejáveis, na medida em que, para calcular os termos locais, se deseja trivializar mediante recobrimentos os feixes que intervêm (vejam-se, em particular, (SGA~$4^{1/2}$ Rapport), III~B e XII).
+
+No n\textsuperscript{o}~1 fixamos as notações e recordamos várias fórmulas de Künneth de (SGA~$4^{1/2}$ Finitude), que desempenham um papel essencial no que se segue. Introduzimos também certo número de categorias fibradas e cofibradas, cuja consideração facilita mais adiante algumas verificações de compatibilidade. O n\textsuperscript{o}~2, muito técnico, pode ser omitido em uma primeira leitura. Seu resultado principal (2.5) exprime uma compatibilidade entre o produto tensorial externo de $\uRHom$, a imagem direta e a mudança de base. No n\textsuperscript{o}~3 definimos as correspondências cohomológicas entre complexos e mostramos como atuam sobre a hipercohomologia; o resultado citado anteriormente permite descrever essa ação de várias maneiras equivalentes. O núcleo da exposição é o n\textsuperscript{o}~4, onde se define o emparelhamento de Verdier entre correspondências cohomológicas e se demonstra a fórmula de Lefschetz, em uma situação relativa sensivelmente mais geral do que a considerada habitualmente, com vistas a aplicações posteriores ao cálculo de termos locais. Damos os corolários mais evidentes para as correspondências com coeficientes constantes. No n\textsuperscript{o}~5 indicamos rapidamente como generalizar às correspondências entre complexos certas construções usuais sobre correspondências com coeficientes constantes (cf.~[12]), como a passagem ao dual, a composição e o produto tensorial externo. Omitiram-se a maioria das verificações, análogas às dos números anteriores. Por fim, no apêndice parafraseamos a teoria precedente no contexto dos feixes coerentes, utilizando o formalismo de dualidade de [8]. Aqui se pode trabalhar sobre uma base noetheriana arbitrária $S$, com a condição de supor, quando necessário, que os $S$-esquemas considerados sejam próprios, tenham dimensão Tor finita e sejam Tor-independentes. Demonstramos que a fórmula de Lefschetz assim obtida contém, como caso particular, a fórmula de Woods Hole [1], e assinalamos algumas aplicações.
+
+\subsection*{Sumario}
+\begin{enumerate}[label=\arabic*.]
+\item Notações e lembretes de fórmulas de Künneth.
+\item Funtorialidade de $\uRHom$ e produtos tensoriais externos.
+\item Correspondências cohomológicas.
+\item Apareamientos de correspondencias. Fórmula de Lefschetz.
+\item Complementos.
+\item Apêndice. A fórmula de Lefschetz para feixes coerentes.
+\end{enumerate}
+
+\setcounter{section}{0}% Reinicio técnico para integrar una exposición originalmente independiente.
+\section{Notações e lembretes de fórmulas de Künneth}

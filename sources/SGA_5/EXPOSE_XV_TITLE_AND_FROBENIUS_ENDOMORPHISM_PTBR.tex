@@ -1,0 +1,37 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 14242--14275 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\clearpage
+\section*{Exposição XV}
+\begin{center}
+\Large\bfseries MORFISMO DE FROBENIUS E RACIONALIDADE DAS FUNÇÕES $L$
+
+\medskip
+por C. Houzel
+\end{center}
+
+\subsection*{§ 1. Morfismo de Frobenius}
+
+\subsubsection*{n\textsuperscript{o} 1. Endomorfismo de Frobenius}
+
+\begin{statement}{Definição 1}
+Seja $p$ um número primo. Diz-se que um pré-esquema $X$ é de característica $p$ se $p\cdot 1_{\OO_X}=0$.
+\end{statement}
+
+Esta condição equivale à seguinte: o único morfismo $X\to\Spec(\bbZ)$ se fatora através de $\Spec(\bF_p)\to\Spec(\bbZ)$; observe-se ainda que tal fatoração é única.
+
+Denotaremos por $(\Sch)_p$ a subcategoria plena da categoria dos pré-esquemas cujos objetos são os pré-esquemas de característica $p$. De acordo com a observação precedente, a categoria $(\Sch)_p$ é naturalmente isomorfa à categoria dos $\bF_p$-pré-esquemas.
+
+Se $X$ é um pré-esquema de característica $p$, o par $\fr_X=(\id_{|X|},\varphi)$, onde $\varphi:\OO_X\longrightarrow\OO_X$ se define por $\varphi(f)=f^p$ para toda seção $f$ de $\OO_X$ em um aberto, é um endomorfismo de $X$, pois $\varphi$ é manifestamente um endomorfismo do feixe de anéis $\OO_X$.
+
+\begin{statement}{Definição 2}
+Seja $X$ um pré-esquema de característica $p$; chama-se endomorfismo de Frobenius de $X$ ao endomorfismo $\fr_X$ assim definido.
+\end{statement}
+
+O endomorfismo de Frobenius $\fr_X$ depende funtorialmente do pré-esquema $X$ de característica $p$, ou seja, para todo morfismo $g:X\to Y$ de pré-esquemas de característica $p$, o diagrama seguinte é comutativo:
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X \arrow[r,"\fr_X"] \arrow[d,"g"'] & X \arrow[d,"g"]\\
+Y \arrow[r,"\fr_Y"'] & Y.
+\end{tikzcd}
+\]
+Em outras palavras, definiu-se um endomorfismo $\fr$ do funtor identidade $\id_{(\Sch)_p}$.

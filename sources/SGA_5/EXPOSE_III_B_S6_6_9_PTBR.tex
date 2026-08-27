@@ -1,0 +1,43 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5933--5973 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{6.9}
+Seja $G$ um grupo finito. Se $X$ é um $G$-$S$-esquema, ou seja, um $S$-esquema provido de uma ação de $G$ por $S$-automorfismos\footnote{Convém fazer $G$ agir pela direita sobre os espaços.}, e $A$ uma $\Lambda$-álgebra\footnote{Interessa-nos sobretudo o caso das $\Lambda$-álgebras comutativas.}, denotaremos por $D(G,{}_AX)$ a categoria derivada da categoria de feixes de $G$-$A$-módulos à esquerda sobre $X$. Para as noções de $G$-feixe de conjuntos, de anéis, de módulos, etc., sobre $X$ para a topologia étale, remetemos o leitor a (X 1). Designaremos pelo índice $c$ (resp. ctf) a subcategoria plena formada pelos complexos de $G$-$A$-módulos que, como complexos de $A$-módulos, têm cohomologia construtível (resp. dimensão Tor finita e cohomologia construtível).
+
+Da mesma forma, se $B$ é uma $\Lambda$-álgebra, denotaremos por $D(G,{}_AX_B)$ a categoria derivada da categoria de $G$-$(A,B)$-bimódulos sobre $X$. Se $G$ atua trivialmente sobre $X$, um $G$-$A$-módulo à esquerda sobre $X$ não é senão um $A[G]$-módulo à esquerda sobre $X$ sem grupo de operadores, portanto
+\[
+D(G,{}_AX)=D({}_{A[G]}X);
+\]
+como $G$ é finito, tem-se ainda
+\[
+D_c({}_AX)=D_c({}_{A[G]}X),
+\]
+mas tem-se apenas uma inclusão
+\[
+D_{\mathrm{ctf}}({}_{A[G]}X)\subset D_{\mathrm{ctf}}(G,{}_AX).
+\]
+
+O formalismo de dualidade de (SGA 4 XVII, XVIII) estende-se sem dificuldade ao caso dos $G$-$S$-esquemas. Como o funtor de esquecimento da ação de $G$ é fiel, basta estender naturalmente a definição das ``seis operações'' $(\lten,\uRHom,f^*,f_*,f_!,f^!)$ e das flechas canônicas consideradas em (loc. cit.) (mudança de base, Künneth, dualidade, etc.). Esta extensão não oferece dificuldade: para definir os funtores $f_!$, $f^!$, basta usar compactificações equivariantes. Deixamos ao leitor a tarefa de parafrasear as definições e resultados de 6.2 a 6.8 no quadro dos $G$-$S$-esquemas.
+
+Se, para $i=1,2$, $X_i$ é um $G$-$S$-esquema, $c:C\to X=X_1\times_SX_2$ um $G$-$S$-morfismo, e $L_i\in\Ob D_{\mathrm{ctf}}(G,{}_AX_i)$, os elementos de
+\[
+\uHom_A(c_1^*L_1,c_2^!L_2)
+\]
+onde $\Hom_A$ é tomado na categoria $D(G,{}_A-)$, serão chamados correspondências cohomológicas equivariantes de $L_1$ a $L_2$ com suporte em $c$. Observe-se que, quando $G$ age trivialmente sobre $X_i$ $(i=1,2)$ e $L_i\in\Ob D_{\mathrm{ctf}}({}_{A[G]}X_i)$, o isomorfismo 6.4.1 em $D(G,X)$ refina-se em um isomorfismo
+\[
+D_{A[G]}L_1\lten_{S,A[G]}L_2
+\xrightarrow{\sim}
+\uRHom_{A[G]}(p_1^*L_1,p_2^!L_2).
+\]
+Consequentemente, em uma situação $G$-equivariante do tipo 6.5, com ação trivial de $G$ sobre os espaços, e $L\in\Ob D_{\mathrm{ctf}}({}_{A[G]}X)\subset D_{\mathrm{ctf}}(G,{}_AX)$, pode-se, para
+\[
+u\in\Hom_{A[G]}(c_1^*L,c_2^!L),
+\]
+definir um termo local
+\[
+\Tr_{A[G]}(u)\in H^0(X^c,KA[G]_{X^c,L_{\natural}}),
+\]
+mais fino, em um sentido evidente, do que o termo local
+\[
+\Tr_A(u)\in H^0(G,X^c,KA_{X^c,L_{\natural}})
+\]
+obtido utilizando apenas a dimensão Tor finita de $L$ em relação a $A$.

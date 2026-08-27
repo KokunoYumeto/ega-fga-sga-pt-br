@@ -1,0 +1,31 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5347--5375 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{5.11. Aplicação aos grupos finitos: propriedades de divisibilidade}
+
+Seja $G$ um grupo finito, cujo elemento neutro se denota por $e$, e ponhamos $K[G]=B$. O $K$-módulo $B_\natural$ é livre com base no conjunto $G_\natural$ das classes de conjugação de $G$; toda seção $s$ de $B_\natural$ se escreve de modo único
+\[
+s=\sum_{x\in G_\natural}s(x)x.
+\]
+
+\begin{statement}{Proposição 5.11.1}
+Cf. SGA $4^{1/2}$, Rapport 4.5. Sejam $E\in\ob D(B)_{\mathrm{parf}}$, $M\in\ob D^b(K)$. Para $u\in\uHom_B(E,M\lten_KE)$, tem-se, em $H^0(T,M)$,
+\begin{equation}\tag{*}
+\Tr_K(u)=|G|\footnote{Se $X$ é um conjunto, denota-se por $|X|$ o cardinal de $X$.}\,\Tr_B(u)(e).
+\end{equation}
+\end{statement}
+
+Com efeito, basta aplicar 5.10.11 com $A=K$, observando que $\Tr_{B/K}:B_\natural\to K$ é dada por
+\begin{equation}\tag{5.11.2}
+\Tr_{B/K}(g)=
+\begin{cases}
+|G|,& g=e,\\
+0,& g\ne e.
+\end{cases}
+\end{equation}
+
+\begin{statement}{Proposição 5.11.3}
+Sob as hipóteses de 5.11.1, seja $g\in G$, denotemos por $Z_g$ o centralizador de $g$ em $G$ e ponhamos $A=K[Z_g]$. Seja $u\in\uHom_B(E,M\lten_KE)$; denotemos por $gu\in\uHom_A(E,M\lten_KE)$ a composta da imagem de $u$ em $\uHom_A(E,M\lten_KE)$ com a multiplicação à esquerda por $g$. Então, tem-se, em $H^0(T,M)$,
+\[
+\Tr_A(gu)(e)=\Tr_B(u)(g^{-1}).
+\]
+\end{statement}

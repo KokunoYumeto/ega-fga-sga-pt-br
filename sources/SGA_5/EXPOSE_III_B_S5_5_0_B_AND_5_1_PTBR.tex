@@ -1,0 +1,30 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4964--4991 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Propomo-nos examinar aqui em que medida se pode substituir $K$ por uma $K$-álgebra $A$ nas construções anteriores (interessar-nos-á sobretudo o caso em que $A$ é a $K$-álgebra de um grupo finito ordinário) e definir, em particular, uma flecha de traço análoga a 5.0.8, que generalize a noção de traço não comutativo introduzida por Stallings em [5] e desenvolvida por Grothendieck na exposição XI deste seminário. Como se disse na introdução, essa exposição, redigida por I. Bucur, perdeu-se infelizmente; o leitor poderá, contudo, remeter-se à exposição de Deligne (SGA $4^{1/2}$, Rapport), onde se indicam os pontos essenciais. Se a substituição de $K$ por $A$ em 5.0.3 não apresenta dificuldade, não ocorre o mesmo em 5.0.2: se $E$ é um $A$-módulo esquerdo, a flecha de avaliação
+\[
+\uHom_A(E,A)\otimes_KE\longrightarrow A,
+\qquad f\otimes x\longmapsto f(x),
+\]
+em geral não se fatora através de $\uHom_A(E,A)\otimes_AE$, mas, passando ao quociente, dá uma flecha
+\begin{equation}\tag{5.0.9}
+\uHom_A(E,A)\otimes_AE\longrightarrow A_\natural,
+\end{equation}
+onde $A_\natural$ é o $K$-módulo quociente de $A$ pelo sub-$K$-módulo gerado localmente pelas seções locais da forma $ab-ba$. Se $E$ for localmente fator direto de um $A$-módulo esquerdo livre de tipo finito, a flecha de produto tensorial, análoga a 5.0.3,
+\begin{equation}\tag{5.0.10}
+\uHom_A(E,A)\otimes_AE\longrightarrow\uHom_A(E,E)
+\end{equation}
+é um isomorfismo e, compondo o inverso de 5.0.10 com 5.0.9, obtém-se um homomorfismo de traço
+\begin{equation}\tag{5.0.11}
+\Tr_A:\uHom_A(E,E)\longrightarrow A_\natural,
+\end{equation}
+que se reduz a 5.0.1 quando $A=K$. Por outro lado, verifica-se facilmente (veja-se 5.7) que, quando $T$ é pontual, 5.0.11 coincide com o homomorfismo de traço de Stallings e Grothendieck. Neste número examinaremos a extensão aos complexos e a derivação das flechas 5.0.9, 5.0.10 e 5.0.11, bem como o comportamento das flechas obtidas com respeito à extensão e à restrição dos escalares e a certos produtos tensoriais externos. De fato, derivaremos flechas um pouco mais gerais que 5.0.9 e 5.0.10, para que as construções possam aplicar-se à definição, no número 6, de termos locais de Lefschetz--Verdier ``não comutativos''.
+
+\subsubsection*{5.1. Notações}
+
+Se $A$ é uma $K$-álgebra, denotaremos por $A^\circ$ a álgebra oposta a $A$, e por $A^e=A\otimes_KA^\circ$ a álgebra envolvente de $A$. É equivalente dar-se um $A$-bimódulo, um $A^e$-módulo esquerdo ou um $A^e$-módulo direito. Em particular, $A$ é um $A$-bimódulo e, portanto, um $A^e$-módulo esquerdo e um $A^e$-módulo direito. Se $E$ é um bimódulo, recordemos ([1] IX 4) que
+\[
+H_0(A,E)=A\otimes_{A^e}E=E\otimes_{A^e}A
+\]
+é o $K$-módulo quociente de $E$ pelo sub-$K$-módulo gerado localmente pelas seções locais da forma $ax-xa$, para $x\in E$, $a\in A$\footnote{Se $M$ é um feixe, a notação $x\in M$ significa que $x$ é uma seção local de $M$.}. Às vezes escreveremos $E_\natural$ em lugar de $H_0(A,E)$. Em particular, $A_\natural$ é o $K$-módulo definido em 5.0.9. Se $A=K[G]$, onde $G$ é um grupo finito ordinário, $A_\natural$ nada mais é que o $K$-módulo livre sobre o conjunto $G_\natural$ das classes de conjugação de $G$.
+
+Se $A$, $B$ são $K$-álgebras, utilizaremos a notação de Cartan--Eilenberg ${}_AE$, $E_B$, ${}_AE_B$ para designar, respectivamente, um $A$-módulo esquerdo, um $B$-módulo direito e um módulo esquerdo sobre $A$ e direito sobre $B$. Por fim, denotaremos por $D(A)$ (resp. $D(A,B)$) a categoria derivada da categoria dos $A$-módulos esquerdos (resp. dos $A$-$B$-bimódulos, esquerdos sobre $A$ e direitos sobre $B$).

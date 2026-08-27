@@ -1,0 +1,35 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 12293--12325 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{prooftext}[Demonstração]
+Se $p:X\to Y=X/G$ é a projeção canônica, é bem sabido que se tem o isomorfismo canônico
+\[
+\R\Gamma_X(\Lambda_{V,X})\simeq \R\Gamma_Y(\R p_*(\Lambda_{V,X}))
+\]
+na categoria $D(\Lambda[G])$. Por outro lado, o complexo $\R p_*(\Lambda_{V,X})$ de $\Lambda[G]$-módulos sobre $Y$ tem dimensão Tor finita. De fato, como $p:X\to Y$ é um morfismo finito de esquemas, temos
+\[
+\R^q p_*(\Lambda_{V,X})=0\qquad(q\ne0)
+\]
+(SGA 4 VIII 5.5). Resulta, portanto, que
+\[
+\R p_*(\Lambda_{V,X})=p_*(\Lambda_{V,X}).
+\]
+(SGA 4 VIII 5.5) permite também determinar as fibras do feixe $p_*(\Lambda_{V,X})$, e encontra-se, tendo em conta que $G$ atua livremente sobre $V$:
+\[
+\bigl(p_*(\Lambda_{V,X})\bigr)_{\bar y}\simeq
+\begin{cases}
+\displaystyle \prod_{x\in p^{-1}(y)}\Lambda_{V,X,\bar x}\simeq \Lambda[G],& y\in p(V),\\[1em]
+0,& y\notin p(V),
+\end{cases}
+\]
+($\bar y$ é o ponto geométrico de $Y$ localizado em $y$).
+
+Por conseguinte, $\R p_*(\Lambda_{V,X})=p_*(\Lambda_{V,X})$ é plano sobre $\Lambda[G]$, pois o é fibra a fibra (SGA 4 XVII), e tem, portanto, dimensão Tor finita. Aplicando 2.1 ao morfismo canônico $Y\to\Spec(k)$, deduz-se que
+\[
+\R\Gamma_X(\Lambda_{V,X})=\R\Gamma_Y(\R p_*(\Lambda_{V,X}))
+\]
+Tem uma dimensão Tor finita.
+
+Para concluir que $\R\Gamma_X(\Lambda_{V,X})$ é perfeito, resta demonstrar que é pseudocoerente e de cohomologia limitada (VIII 8.1). Mas, como $\Lambda[G]$ é noetheriano, para verificar que $\R\Gamma_X(\Lambda_{V,X})$ é pseudocoerente basta demonstrar que os $H^q(X,\Lambda_{V,X})$ são de tipo finito sobre $\Lambda[G]$ (VIII 7.2) ou, o que é equivalente, sobre $\Lambda$, o que resulta de (SGA 4 XIV 1.1) aplicado ao $\Lambda$-módulo $\Lambda_{V,X}$.
+\end{prooftext}
+
+A fórmula de Weil 6.1 dará uma expressão da classe $\operatorname{cl}_{K^\bullet(\Lambda[G])}(\R\Gamma_X(\Lambda_{V,X}))$, para o caso de uma curva $X$, em termos de invariantes globais conhecidos e de invariantes locais que definiremos no n.\textsuperscript{o}~5.

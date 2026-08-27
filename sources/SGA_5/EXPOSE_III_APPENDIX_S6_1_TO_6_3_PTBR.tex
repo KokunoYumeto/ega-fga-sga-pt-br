@@ -1,0 +1,73 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 3702--3773 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{6. Apêndice. A fórmula de Lefschetz para feixes coerentes}
+
+Neste número, $S$ designa um esquema noetheriano. Os $S$-esquemas considerados serão supostos separados e de tipo finito. Recordemos que, segundo Nagata, todo $S$-morfismo entre tais esquemas é compactificável, isto é, fatora-se como uma imersão aberta seguida de um morfismo próprio. Para todo $S$-esquema $X$, denotaremos por $D(X)$ a categoria derivada da categoria de módulos sobre $\cO_X$.
+
+\subsection*{6.1}
+Lembre-se ([8] Ap.) que, para todo $S$-morfismo $f:X\to Y$, dispõe-se de um funtor
+\[
+f^!:D^+(Y)\longrightarrow D^+(X)
+\]
+(e de isomorfismos de transitividade $(gf)^! = f^!g^!$ para uma composta $gf$, com condição de cociclo). Se $f$ é próprio, $f^!$ é ``adjunto'' à direita do funtor $f_*:D^+(X)_{\mathrm{coh}}\to D^+(Y)_{\mathrm{coh}}$ (o índice ``coh'' designa a subcategoria plena formada pelos complexos de cohomologia coerente); essa adjunção se explicita no isomorfismo
+\begin{equation}
+\tag{6.1.1}
+f_*\uRHom(E,f^!F)\xrightarrow{\sim}\uRHom(f_*E,F)
+\end{equation}
+para $E\in\operatorname{ob}D(X)_{\mathrm{coh}}$ e $F\in\operatorname{ob}D^+(Y)$, definido de modo análogo ao isomorfismo (SGA~4 XVIII 3.1.9.6). As considerações de ([8] Ap.5), juntamente com o teorema de dualidade para o espaço projetivo, mostram que, se $f$ é suave, de dimensão pura $d$, tem-se um isomorfismo canônico
+\begin{equation}
+\tag{6.1.2}
+f^!L\xleftarrow{\sim} f^*L\otimes\Omega^d_{X/Y}[d];
+\end{equation}
+Se, além disso, $f$ é próprio, a flecha
+\begin{equation}
+\tag{6.1.3}
+\operatorname{Tr}_f:f_*(f^*L\otimes\Omega^d_{X/Y}[d])\longrightarrow L
+\end{equation}
+deduzida, por meio de 6.1.2, da flecha de adjunção $f_*f^!\to I$, coincide com o morfismo de traço ([8] VI).
+
+\subsection*{6.2}
+Ao contrário do que ocorre no caso dos coeficientes discretos, não há aqui uma subcategoria razoável de $D$ estável sob ``as seis operações'' $(f^*,f_*,f^!,f_!,\otimes^{\mathbf L},\uRHom)$. A noção de finitude mais natural parece ser a de perfeição relativa (SGA~6 III 4). Se $X$ é um $S$-esquema e $L\in\operatorname{ob}D(X)$, recordemos que $L$ é dito perfeito relativamente a $S$ se $L$ tem dimensão Tor finita relativamente a $S$ e cohomologia coerente. Denotaremos por $D(X)_{\mathrm{parf}/S}$ a subcategoria plena de $D(X)$ formada pelos complexos perfeitos relativamente a $S$. Em geral, ela não é estável nem por $\otimes^{\mathbf L}$ nem por $\uRHom$. Entretanto, se $E$ é perfeito (em sentido absoluto) e $F$ é perfeito relativamente a $S$, $\uRHom(E,F)$ é perfeito relativamente a $S$ (SGA~6 III 4.9). Por outro lado, sejam, para $i=1,2$, $X_i$ um $S$-esquema e $L_i\in\operatorname{ob}D^{-}(X_i)$. Poremos, como em 1.5,
+\[
+L_1\otimes_S^{\mathbf L}L_2=Lp_1^*L_1\otimes^{\mathbf L}Lp_2^*L_2,
+\]
+onde $p_i:X_1\times_SX_2\to X_i$ é a projeção. A consideração desse objeto só é razoável se $X_1$ e $X_2$ forem Tor-independentes sobre $S$, isto é (SGA~6 III 1.5), se $\Tor_i^S(\cO_X,\cO_Y)=0$ para $i\ne0$. Suponhamos que assim seja: então, se $L_1$ e $L_2$ forem perfeitos relativamente a $S$, também o será $L_1\otimes_S^{\mathbf L}L_2$ (SGA~6 III 4.7).
+
+Seja $f:X\to Y$ um $S$-morfismo. Se $f$ é próprio, tem-se $f_*D(X)_{\mathrm{parf}/S}\subset D(Y)_{\mathrm{parf}/S}$ (SGA~6 III 4.8). Se $f$ tem dimensão Tor finita, tem-se $f^*D(Y)_{\mathrm{parf}/S}\subset D(X)_{\mathrm{parf}/S}$ (SGA~6 III 4.5) e $f^!D(Y)_{\mathrm{parf}/S}\subset D(X)_{\mathrm{parf}/S}$ (SGA~6 III 4.9).
+
+Para todo $S$-esquema $a:X\to S$, poremos
+\begin{equation}
+\tag{6.2.1}
+K_X=a^!\cO_S,
+\end{equation}
+e denotaremos por $D_X$ (ou simplesmente por $D$) o funtor $\uRHom(-,K_X)$. Se $X$ tem dimensão Tor finita sobre $S$, $K_X$ é perfeito relativamente a $S$ e, para todo $L\in\operatorname{ob}D(X)_{\mathrm{parf}/S}$, tem-se $DL\in\operatorname{ob}D(X)_{\mathrm{parf}/S}$, e a flecha canônica $L\to DDL$ é um isomorfismo (SGA~6 III 4.9).
+
+Sejam $f:X\to Y$ um $S$-morfismo, $L\in\operatorname{ob}D(X)$ e $M\in\operatorname{ob}D(Y)$. Se $f^*M$ estiver definido (por exemplo, se $M\in\operatorname{ob}D^-(Y)$, ou se $f$ tiver dimensão Tor finita), poremos
+\[
+\Hom_f^{(1)}(L,M)=\Hom(f^*M,L),\qquad
+\Hom_f^{(2)}(L,M)=\Hom(L,f^*M).
+\]
+Se $f^!M$ estiver definido (por exemplo, se $M\in\operatorname{ob}D^+(Y)$, ou se $f$ for suave, ou finito e de dimensão Tor finita, ou uma composta de tais morfismos, pois nesses casos $f^!$ se prolonga, por meio de 6.1.1 e 6.1.2, a um funtor definido sobre toda a categoria $D(Y)$), poremos
+\[
+\Hom_f^{(3)}(L,M)=\Hom(L,f^!M),\qquad
+\Hom_f^{(4)}(L,M)=\Hom(f^!M,L).
+\]
+Os elementos de $\Hom_f^{(i)}(L,M)$ serão chamados, como em 1.4, \emph{flechas de tipo $i$ de $L$ a $M$ sobre $f$} (ou $f$-flechas de tipo $i$ de $L$ a $M$). Deixamos ao leitor a tarefa de explicitar a composição das flechas de tipo $i$, para $i$ fixo, e as categorias fibradas e cofibradas correspondentes. Recordemos apenas as fórmulas de adjunção parcial
+\[
+\Hom_f^{(1)}(L,M)=\Hom(M,f_*L)\quad(M\in\operatorname{ob}D^{-}(Y),\ L\in\operatorname{ob}D^+(X)),
+\]
+\[
+\Hom_f^{(3)}(L,M)=\Hom(f_*L,M)\quad(f\text{ próprio},\ L\in\operatorname{ob}D(X)_{\mathrm{coh}},\ M\in\operatorname{ob}D^+(Y)).
+\]
+
+\subsection*{6.3}
+Na situação de 1.6, suponhamos que $X_1$ e $X_2$ sejam Tor-independentes sobre $S$, assim como $Y_1$ e $Y_2$. Então, para $L_i\in\operatorname{ob}D(X_i)_{\mathrm{parf}/S}$, a flecha de Künneth 1.6.4 está definida (use-se o fato de que a dimensão Tor relativa finita se conserva por imagem direta (SGA~6 III 3.7.1)) e é um isomorfismo (para verificá-lo, podem-se supor afins $S$ e os $Y_i$ e, mediante um cálculo de Čech, reduzir-se a supor também afins $X_1$ e $X_2$; a conclusão é então uma consequência imediata das hipóteses de Tor-independência). Por outro lado, para $M_i\in\operatorname{ob}D(Y_i)_{\mathrm{parf}/S}$, com $f_1^!M_1$ ou $f_2^!M_2$ em $D^b$, a flecha de Künneth 1.7.3 está definida\footnote{No caso próprio, ou quando o morfismo se fatora como uma imersão fechada seguida de um morfismo suave, a definição da flecha é imediata; o caso geral se reduz ao de tal fatorização por descida cohomológica.}, e é um isomorfismo quando $f_1$ e $f_2$ têm dimensão Tor finita, como se verifica facilmente mediante o isomorfismo de Künneth de tipo 1.6.4 que acabamos de indicar, conjugado com 6.1.2, e mediante 6.1.1 quando $f_i$ é uma imersão fechada. Em particular, se $X_1$ e $X_2$ têm dimensão Tor finita sobre $S$ e são Tor-independentes, 1.7.6 é um isomorfismo.
+
+Define-se, como em 2.1, $\uRHom(u,v)$ para $(u,v)$ de tipo $(2,1)$ (resp. $(3,4)$, com $f$ próprio para evitar os pro-objetos devidos a um $f_!$). Sob hipóteses adequadas sobre os graus (veja-se, por exemplo, ([9] V 2.3)), estão definidas as flechas de avaliação (2.2.2) e de produto tensorial (2.2.3, 2.2.4), e as flechas 2.2.3 e 2.2.4 (sempre que estiverem definidas) são isomorfismos quando $E_1$ e $E_2$ são perfeitos (em sentido absoluto).
+
+Na situação de 2.4, suponhamos que os pares $(X_1,X_2)$, $(X_1,Y_2)$, $(Y_1,X_2)$ e $(Y_1,Y_2)$ são Tor-independentes sobre $S$; que $f_1$ é próprio; que $E_i,F_i$, $P_i,Q_i$, $\uRHom(E_i,F_i)$ e $\uRHom(P_i,Q_i)$ são perfeitos relativos a $S$; e que as flechas de Künneth
+\[
+f_1^!Q_1\otimes_S^{\mathbf L}Q_2\to(f_1\times_SY_2)^!(Q_1\otimes_S^{\mathbf L}Q_2),\qquad
+f_1^!Q_1\otimes_S^{\mathbf L}F_2\to(f_1\times_SY_2)^!(Q_1\otimes_S^{\mathbf L}F_2)
+\]
+são isomorfismos. Então 2.4.1 e o diagrama de 2.5 são definidos, e o último é comutativo (no entanto, as flechas horizontais não são necessariamente isomorfismos). A verificação é a mesma que para 2.5.

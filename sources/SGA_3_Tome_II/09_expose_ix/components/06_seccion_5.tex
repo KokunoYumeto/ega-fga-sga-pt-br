@@ -1,0 +1,468 @@
+% SGA 3, Exposé IX, tradução brasileira-portuguesa.
+% Escopo: §5 integral.
+% Autoridade: Polo--Gille Exp9-8nov09.pdf, pp. locais 18--22.
+
+\SGARefTarget{sga3:ix:section:5}\section*{5. Homomorfismos centrais dos
+grupos de tipo multiplicativo}
+\addcontentsline{toc}{section}{5. Homomorfismos centrais dos grupos de
+tipo multiplicativo}
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:lemma:5:0}\textbf{Lema 5.0.}%
+\footnote{Nota do editor: este lema foi explicitado porque é utilizado
+várias vezes mais abaixo; estava implícito no original.}
+\textit{Seja \((A,\mathfrak m)\) um anel local noetheriano, ponhamos
+\(S=\operatorname{Spec}(A)\), e seja \(H\) um esquema finito sobre \(S\),
+digamos \(H=\operatorname{Spec}(B)\), onde \(B\) é finito sobre \(A\).
+Seja \(K\) um subesquema de \(H\) tal que a redução módulo
+\(\mathfrak m^{n+1}\) dê \(K_n=H_n\) para todo \(n\). Então,
+\(K=H\).}
+
+\emph{Demonstração.}
+Seja \(s\) o ponto fechado de \(S\). Em primeiro lugar, \(K\) é um
+subesquema fechado de \(H\). Com efeito, a priori ele é um subesquema fechado
+de um aberto \(U\) de \(H\). Mas \(K\), e, portanto, \(U\), contém a
+fibra
+\[
+  K_s=H_s.
+\]
+Como \(H\to S\) é finito e, portanto, fechado, o complemento de \(U\)
+é vazio; assim, \(U=H\). Por conseguinte, \(K\) é definido por um ideal
+\(I\) de \(B\). A hipótese implica
+\[
+  I\subset\mathfrak m^nB
+  \qquad\text{para todo }n.
+\]
+Como \(B\) é um \(A\)-módulo finito, é separado para a topologia
+\(\mathfrak m\)-ádica. Portanto, \(I=0\). \qed
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:theorem:5:1}\textbf{Teorema 5.1.}
+\textit{Sejam \(u,v:H\to G\) dois homomorfismos de \(S\)-pré-esquemas em
+grupos, onde \(H\) é de tipo multiplicativo e de tipo finito.
+Suponhamos, ou que \(S\) seja localmente noetheriano, ou que \(G\) seja
+de apresentação finita sobre \(S\). Seja \(s\in S\) tal que \(u_s=v_s\),
+e suponhamos que \(u_s\) seja central. Existe, então, uma vizinhança aberta
+\(U\) de \(s\) tal que \(u_U=v_U\).}
+
+\emph{Demonstração.}
+Distinguimos os dois casos.
+
+\smallskip
+\SGARefTarget{sga3:ix:theorem:5:1:proof:item:a}\noindent\textit{(a) \(S\)
+localmente noetheriano.}%
+\footnote{Nota do editor: o original foi desenvolvido no que segue.}
+Seja
+\[
+  K=\operatorname{Ker}(u,v)
+\]
+a imagem inversa da diagonal de \(G\times_SG\) por
+\((u,v):H\to G\times_SG\). É um subpré-esquema em grupos de \(H\).
+Procuramos um aberto \(U\) para o qual \(K_U=H_U\). Como \(S\) é
+localmente noetheriano e \(H\) é de tipo finito sobre \(S\), o
+pré-esquema \(H\) é localmente noetheriano. Portanto, a imersão
+\(K\hookrightarrow H\) é de tipo finito (cf. EGA I, 6.3.5), de modo que
+\(K\) é de tipo finito e, por conseguinte, de apresentação finita sobre
+\(S\). Por EGA IV\(_3\), 8.8.2.4, basta provar que
+\[
+  K_{S_0}=H_{S_0},
+  \qquad
+  S_0=\operatorname{Spec}(\mathscr O_{S,s}).
+\]
+Podemos, pois, supor que \(S\) é local com ponto fechado \(s\).
+Substituir, se desejado, o anel local noetheriano \(A\) por seu
+completamento \(\widehat A\) fornece uma mudança de base fielmente plana
+quase compacta \(\widehat S\to S\), e permite supor que \(A\) é
+completo.
+\footnote{Nota do editor: isso se deve ao fato de que \(K=H\) se
+\(K_{\widehat S}=H_{\widehat S}\); cf. SGA~1, VIII,
+\SGARefLink{sga3:viii:corollary:5:4}{5.4}. O argumento seguinte não
+utiliza a completude de \(A\).}
+
+Por \SGARefLink{sga3:ix:corollary:3:4}{3.4}, tem-se \(u_n=v_n\) para
+todo \(n\), onde o subíndice denota a redução módulo
+\(\mathfrak m^{n+1}\), sendo \(\mathfrak m\) o ideal maximal de \(A\).
+Para todo \(m>0\), sejam
+\[
+  {}_mu,{}_mv:{}_mH\longrightarrow G
+\]
+os homomorfismos induzidos por \(u,v\). Então,
+\[
+  ({}_mu)_n=({}_mv)_n
+  \qquad\text{para todo }n.
+\]
+O grupo \({}_mH\) é finito sobre \(S\), por
+\SGARefLink{sga3:ix:proposition:2:2}{2.2}, de modo que
+\SGARefLink{sga3:ix:lemma:5:0}{5.0} dá \({}_mu={}_mv\). Isso vale para
+todo \(m\), e, portanto, \SGARefLink{sga3:ix:theorem:4:7}{4.7} dá
+\(u=v\).
+
+\smallskip
+\SGARefTarget{sga3:ix:theorem:5:1:proof:item:b}\noindent\textit{(b) \(G\)
+de apresentação finita.}%
+\footnote{Nota do editor: o original foi desenvolvido no que segue.}
+O grupo \(H\) também é de apresentação finita sobre \(S\). Por EGA
+IV\(_3\), 8.8.2, podemos supor novamente que \(S\) é local com ponto
+fechado \(s\), e basta provar \(u=v\). Seja \(f:S'\to S\) um morfismo
+fielmente plano quase compacto. Denotemos por
+\[
+  f_H:H'\to H,
+  \qquad
+  f_G:G'\to G,
+  \qquad
+  u',v':H'\to G'
+\]
+os morfismos resultantes. Se \(u'=v'\), então,
+\[
+  u\circ f_H=f_G\circ u'=f_G\circ v'=v\circ f_H,
+\]
+e \(u=v\), porque \(f_H\) é um epimorfismo. Após uma extensão
+de base fielmente plana quase compacta, podemos, portanto, supor que
+\(H\) é diagonalizável:
+\[
+  H=D_S(M)
+\]
+para um grupo comutativo \(M\) de tipo finito.
+
+Como na demonstração de \SGARefLink{sga3:ix:corollary:4:6}{4.6},
+introduzamos a família filtrante crescente de \(\mathbb Z\)-subálgebras
+\(A_i\) de \(A=\mathscr O_{S,s}\) que são de tipo finito, e ponhamos
+\[
+  S_i=\operatorname{Spec}(A_i).
+\]
+\footnotemark[30]
+Para todo \(i\), o grupo \(H=D_S(M)\) provém de
+\[
+  H_i=D_{S_i}(M).
+\]
+Como \(G\) é de apresentação finita sobre \(S\), EGA IV\(_3\), 8.8.2
+(vejam-se também VI\(_B\), 10.2 e 10.3) dá um índice \(i\), um
+pré-esquema em \(S_i\)-grupos \(G_i\) de apresentação finita e
+homomorfismos
+\[
+  u_i,v_i:H_i\longrightarrow G_i
+\]
+cujas mudanças de base são \(u,v\). Seja \(s_i\) a imagem de \(s\) em
+\(S_i\), e definamos
+\[
+  \rho_i:H_i\times_{S_i}G_i\longrightarrow G_i,
+  \qquad
+  \rho_i(h,g)=u_i(h)g\,u_i(h)^{-1}.
+\]
+Como \(u_s\) é central,
+\[
+  \rho_s=\rho_i\times_{\kappa(s_i)}\kappa(s)
+\]
+é a segunda projeção. A extensão
+\(\kappa(s_i)\to\kappa(s)\) é fielmente plana, de modo que \(\rho_i\)
+também é a segunda projeção sobre \(s_i\); portanto,
+\((u_i)_{s_i}\) é central. Do mesmo modo, \(u_s=v_s\) implica
+\[
+  (u_i)_{s_i}=(v_i)_{s_i}.
+\]
+A parte \SGARefLink{sga3:ix:theorem:5:1:proof:item:a}{(a)}, aplicada
+sobre \(S_i\), dá agora a conclusão. \qed
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:5:2}\textbf{Corolário 5.2.}
+\textit{Seja \(u:H\to G\) um homomorfismo de \(S\)-pré-esquemas em grupos,
+onde \(H\) é de tipo multiplicativo e de tipo finito, e suponhamos, ou
+que \(S\) seja localmente noetheriano, ou que \(G\) seja de
+apresentação finita sobre \(S\). Se \(s\in S\) e \(u_s\) é o
+homomorfismo unidade, existe uma vizinhança aberta \(U\) de \(s\) sobre a
+qual \(u_U\) é o homomorfismo unidade.}
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:5:3}\textbf{Corolário 5.3.}
+\textit{Sejam \(u,H,G\) como em
+\SGARefLink{sga3:ix:corollary:5:2}{5.2}, e suponhamos, ademais, que \(G\) seja
+separado sobre \(S\). Seja \(U\) o conjunto dos pontos \(s\in S\) para
+os quais \(u_s\) é o homomorfismo unidade. Então, \(U\) é aberto e
+fechado em \(S\), e \(u_U:H_U\to G_U\) é o homomorfismo unidade.}
+
+\emph{Demonstração.}
+Resta apenas provar que ele é fechado. Ponhamos \(K=\operatorname{Ker}(u)\).
+Como \(G\) é separado sobre \(S\), \(K\) é um subpré-esquema fechado de
+\(H\), e \(U\) é o conjunto dos pontos \(s\in S\) para os quais
+\(K_s=H_s\). Segue-se facilmente que \(U\) é fechado, por exemplo, por
+\SGARefLink{sga3:viii:theorem:6:4}{VIII, 6.4}, pois \(H\) é essencialmente
+livre sobre \(S\) por VIII,
+\SGARefLink{sga3:viii:proposition:6:3}{6.3}. Alternativamente, podemos
+supor que \(S\) é reduzido e que \(U\) é denso em \(S\), e, portanto,
+esquematicamente denso. Então, \(H_U\) é esquematicamente denso em
+\(H\), porque \(H\) é plano sobre \(S\),%
+\footnote{Nota do editor: e de apresentação finita sobre \(S\); cf. EGA
+IV\(_3\), 11.10.5(ii) e 11.9.10(ii).}
+e \(u\) e o homomorfismo unidade, por serem iguais sobre \(H_U\), são
+iguais sobre \(H\). \qed
+
+% Página-fonte: Exp9 p. local 20; leitor completo p. 666.
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:5:4}\textbf{Corolário 5.4.}
+\textit{Seja \(S\) um pré-esquema; sejam \(H,G\) \(S\)-grupos, com \(H\) de
+tipo multiplicativo e de tipo finito e \(G\) separado e de apresentação
+finita sobre \(S\); e seja \(\pi:S'\to S\) um}%
+\footnote{Nota do editor: «morfismo de recobrimento para a topologia
+fielmente plana quase compacta» foi substituído por «epimorfismo efetivo
+universal», para que o resultado se aplique ao morfismo \(K\to S\) de
+\SGARefLink{sga3:ix:corollary:5:5}{5.5}; o início da demonstração foi
+modificado de modo correspondente.}
+\textit{ epimorfismo efetivo universal ---por exemplo, um morfismo
+fielmente plano quase compacto ou um morfismo que admita uma seção
+(cf. IV, \SGARefLink{sga3:iv:proposition:1:12}{1.12})--- cujas fibras sejam
+geometricamente conexas.}%
+\footnote{Nota do editor: isso se cumpre, por exemplo, quando
+\(S=\operatorname{Spec}(k)\) e \(S'=\operatorname{Spec}(k')\), onde
+\(k\) é um corpo e \(k'/k\) é radicial; cf. X,
+\SGARefLink{sga3:x:proposition:1:4}{Proposição~1.4}.}
+
+\textit{Seja \(u':H'\to G'\) um homomorfismo central dos
+\(S'\)-grupos obtidos de \(H,G\) por mudança de base. Existe, então, um
+único homomorfismo \(u:H\to G\) de \(S\)-grupos tal que
+\(u\times_SS'=u'\). Se \(S'/S\) admite uma seção \(g\), então \(u\)
+é o morfismo obtido de \(u'\) pela mudança de base \(g:S\to S'\).}
+
+\emph{Demonstração.}
+Como \(\pi\) é um epimorfismo efetivo universal, \(H'\to H\) também o é;
+a unicidade se deduz como no início da demonstração de
+\SGARefLink{sga3:ix:theorem:5:1:proof:item:b}{5.1(b)}. Se \(\pi\) tem
+uma seção \(g\), então,
+\[
+  u'=\pi^*u
+  \quad\Longrightarrow\quad
+  u=g^*\pi^*u=g^*u'.
+\]
+
+Para a existência, IV, \SGARefLink{sga3:iv:proposition:2:3}{2.3} nos
+reduz a mostrar que os dois homomorfismos
+\[
+  u_1'',u_2'':H''\longrightarrow G''
+\]
+de \(S''\)-grupos obtidos de \(u'\) pelas duas mudanças de base
+\[
+  \operatorname{pr}_1,\operatorname{pr}_2:
+  S''=S'\times_SS'\longrightarrow S'
+\]
+são iguais. Suas imagens inversas pela diagonal \(S'\to S''\) são
+iguais, pois ambas são \(u'\).%
+\footnote{Nota do editor: a frase precedente foi acrescentada.}
+Como \(u_1'',u_2''\) são centrais, podemos aplicar
+\SGARefLink{sga3:ix:corollary:5:3}{5.3} a
+\[
+  u_1''(u_2'')^{-1}.
+\]
+Existe, pois, um subconjunto aberto e fechado \(U\) de \(S''\), que
+contém a diagonal, sobre o qual \(u_1''\) e \(u_2''\) coincidem. As
+fibras de \(S'/S\) são geometricamente conexas, logo as de \(S''/S\)
+também o são, e, em particular, são conexas. Como \(U\) contém as
+diagonais dessas fibras, ele contém cada fibra e, portanto, é igual a
+\(S''\). Isso prova a existência. \qed
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:5:5}\textbf{Corolário 5.5.}
+\textit{Seja \(S\) um pré-esquema, seja \(K\) um pré-esquema em \(S\)-grupos
+localmente de tipo finito}%
+\footnote{Nota do editor: acrescentou-se a hipótese «localmente de tipo
+finito» para concordar com VI\(_A\),
+\SGARefLink{sga3:ix:corollary:2:4}{2.4}. De fato, sobre um corpo, todo
+esquema em grupos conexo é geometricamente conexo.}
+\textit{ e de fibras conexas, e seja \(H\) um subgrupo invariante de
+\(K\), de tipo multiplicativo e de tipo finito. Então, \(H\) é um
+subgrupo central de \(K\).}
+
+\emph{Demonstração.}%
+\footnote{Nota do editor: o original foi desenvolvido no que segue.}
+Em primeiro lugar, \(\pi:K\to S\) tem fibras geometricamente conexas,
+pois, para um esquema em grupos localmente de tipo finito sobre um corpo,
+a conexidade implica a conexidade geométrica (cf. VI\(_A\),
+\SGARefLink{sga3:ix:corollary:2:4}{2.4}). Apliquemos
+\SGARefLink{sga3:ix:corollary:5:4}{5.4} com \(G=H\) e \(S'=K\) ao
+homomorfismo de \(K\)-grupos
+\[
+  u':H_K\longrightarrow H_K,
+  \qquad
+  (h,k)\longmapsto(khk^{-1},k).
+\]
+É central porque \(H\) é comutativo. Sua imagem inversa pela seção
+unidade \(\epsilon:S\to K\) é o homomorfismo identidade de \(H\).
+\emph{[A fonte imprime aqui «de \(K\)»; o endomorfismo exibido de
+\(H_K\) indica que se pretende \(H\).]}
+O \SGARefLink{sga3:ix:corollary:5:4}{Corolário~5.4} implica, portanto,
+que o próprio \(u'\) é a identidade sobre \(H_K\). Assim, \(H\) é central em
+\(K\). \qed
+
+Indiquemos as variantes dos resultados anteriores para os subgrupos
+centrais de tipo multiplicativo. Pelo
+\SGARefLink{sga3:ix:theorem:3:2:bis}{Teorema~3.2 bis}, obtém-se:
+
+% Página-fonte: Exp9 p. local 21; leitor completo p. 667.
+\medskip
+\noindent\SGARefTarget{sga3:ix:theorem:5:1:bis}\textbf{Teorema 5.1 bis.}
+\textit{Seja \(G\) um pré-esquema em \(S\)-grupos, e sejam \(H_1,H_2\) dois
+subpré-esquemas em grupos de tipo multiplicativo e de tipo finito, com
+\((H_1)_s\) central. Suponhamos, ou que \(S\) seja localmente
+noetheriano, ou que \(G\) seja de apresentação finita sobre \(S\). Para
+todo \(s\in S\) tal que \((H_1)_s=(H_2)_s\), existe uma vizinhança aberta
+\(U\) de \(s\) para a qual \(H_1|_U=H_2|_U\).}
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:5:3:bis}\textbf{Corolário 5.3 bis.}
+\textit{Sob as hipóteses precedentes, suponhamos, ademais, que \(G\) seja
+separado sobre \(S\). Seja \(U\) o conjunto dos pontos \(s\in S\) para
+os quais \((H_1)_s=(H_2)_s\). Então, \(U\) é aberto e fechado em
+\(S\), e \(H_1|_U=H_2|_U\).}
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:5:4:bis}\textbf{Corolário 5.4 bis.}
+\textit{Seja \(S\) um pré-esquema, seja \(G\) um pré-esquema em grupos
+separado e de apresentação finita sobre \(S\), seja \(S'\to S\) um
+morfismo de recobrimento para a topologia fielmente plana quase compacta
+com fibras geometricamente conexas, e seja \(H'\) um subgrupo de tipo
+multiplicativo e de tipo finito de \(G'=G\times_SS'\). Existe, então, um
+único subgrupo \(H\) de \(G\) tal que \(H'=H\times_SS'\). O subgrupo
+\(H\) é de tipo multiplicativo e de tipo finito sobre \(S\), por
+\SGARefLink{sga3:ix:definition:1:1}{1.1} e
+\SGARefLink{sga3:ix:proposition:2:1:item:b:01}{2.1(b)}. Se \(S'\to S\)
+admite uma seção \(g\), então \(H=g^*H'\).}
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:theorem:5:6}\textbf{Teorema 5.6.}
+\textit{Seja \(S\) um pré-esquema e seja \(u:H\to G\) um homomorfismo de
+\(S\)-pré-esquemas em grupos, onde \(H\) é de tipo multiplicativo e de
+tipo finito e \(G\) é de apresentação finita sobre \(S\).}
+\begin{enumerate}
+  \item[(a)]\SGARefTarget{sga3:ix:theorem:5:6:item:a}
+  \textit{Suponhamos que \(G\) tenha fibras conexas. Se \(s\in S\) e
+  \(u_s:H_s\to G_s\) é central, existe uma vizinhança aberta \(U\) de
+  \(s\) tal que o homomorfismo \(H|_U\to G|_U\) induzido por \(u\) é
+  central.}
+
+  \item[(b)]\SGARefTarget{sga3:ix:theorem:5:6:item:b}
+  \textit{Se \(u_s:H_s\to G_s\) é central para todo \(s\in S\),
+  então \(u\) é central.}
+\end{enumerate}
+
+\emph{Demonstração.}
+Provemos primeiro \SGARefLink{sga3:ix:theorem:5:6:item:a}{(a)}.%
+\footnote{Nota do editor: o original foi desenvolvido na demonstração
+de \SGARefLink{sga3:ix:theorem:5:6:item:a}{(a)}.}
+Raciocinando exatamente como na demonstração de
+\SGARefLink{sga3:ix:theorem:5:1:proof:item:b}{5.1(b)}, podemos supor
+primeiro que \(S\) é local com ponto fechado \(s\), depois que
+\(H=D_S(M)\) é diagonalizável e, por último, que existem uma
+\(\mathbb Z\)-subálgebra \(A_i\) de tipo finito de
+\(A=\mathscr O_{S,s}\) e um homomorfismo
+\[
+  u_i:D_{S_i}(M)\longrightarrow G_i
+\]
+cuja mudança de base é \(u\) e para o qual \((u_i)_{s_i}\) é central,
+onde \(s_i\) é a imagem de \(s\) em \(S_i\). Reduzimo-nos, assim, ao caso
+em que \(S\) é noetheriano local com ponto fechado \(s\), e devemos
+provar que \(u\) é central.
+
+% Página-fonte: Exp9 p. local 22; leitor completo p. 668.
+Seja \(K=\operatorname{Ker}(v,w)\), onde
+\[
+  v,w:H\times_SG\rightrightarrows G
+\]
+são definidas por
+\SGARefTarget{sga3:ix:theorem:5:6:display:01}
+\[
+  v(h,g)=g,
+  \qquad
+  w(h,g)=\operatorname{int}(u(h))\cdot g
+        =u(h)g\,u(h)^{-1}.
+\]
+Então, \(K\) é um subgrupo sobre \(G\) de
+\[
+  H_G=H\times_SG,
+\]
+e devemos provar que \(K=H_G\). Por
+\SGARefLink{sga3:ix:corollary:4:9}{4.9}, basta mostrar que \(K\) contém
+\[
+  {}_m(H_G)=({}_mH)\times_SG
+\]
+para todo \(m>0\). Reduzimo-nos, pois, ao caso \(H={}_mH\), de modo que
+\(H\) é finito sobre \(S\).
+
+Seja \(e\) o elemento unidade da fibra \(G_s\), e ponhamos
+\[
+  S^0=\operatorname{Spec}(\mathscr O_{G,e}),
+  \qquad
+  S_n^0=S^0\times_SS_n,
+  \qquad
+  S_n=\operatorname{Spec}(A/\mathfrak m^{n+1}).
+\]
+O esquema \(S^0\) é noetheriano local porque \(G\) é de apresentação
+finita sobre o esquema noetheriano \(S\). A mudança de base
+\[
+  K_{S^0}=K\times_GS^0
+\]
+é um subesquema de
+\[
+  H_{S^0}=H\times_SS^0,
+\]
+e \SGARefLink{sga3:ix:corollary:3:9}{3.9} dá
+\[
+  K_{S_n^0}=H_{S_n^0}
+  \qquad\text{para todo }n.
+\]
+\footnote{Nota do editor: o original foi desenvolvido e corrigido,
+substituindo-se «a seção unidade de \((G_H)_n\) sobre \(H_n\)» por
+\(H_{S_n^0}\).}
+Como \(H_{S^0}\) é finito sobre \(S^0\),
+\SGARefLink{sga3:ix:lemma:5:0}{5.0}, aplicado ao anel local noetheriano
+\(\mathscr O_{G,e}\), dá
+\[
+  K_{S^0}=H_{S^0}.
+\]
+\emph{[A fonte imprime aqui o anel local indefinido \(B\); pretende-se
+o anel local noetheriano \(\mathscr O_{G,e}\) que acaba de ser
+introduzido.]}
+
+Por outro lado, \(H\times_SG\) é noetheriano, pois é de apresentação
+finita sobre o esquema noetheriano \(S\). Assim, a imersão
+\[
+  K\hookrightarrow H\times_SG
+\]
+é de tipo finito (cf. EGA I, 6.3.5), e \(K\) é de apresentação finita
+sobre \(G\). A igualdade
+\[
+  K_{S^0}=H_G\times_GS^0
+\]
+implica, então, por EGA IV\(_3\), 8.8.2.4, que existe uma vizinhança aberta
+\(W\) de \(e\) em \(G\) tal que
+\[
+  K\times_GW
+  =H_G\times_GW
+  =H\times_SW.
+\]
+Portanto, \(K\) contém a vizinhança aberta
+\[
+  V=H\times_SW
+\]
+da seção unidade de \(G_H=G\times_SH\) sobre \(H\).
+
+Para todo \(t\in H\), a fibra \(G_t\) é um grupo algébrico sobre
+\(\kappa(t)\), e, portanto, Cohen--Macaulay por VI\(_A\), 1.1.1; não tem,
+pois, componente imersa. Também é conexa e, portanto, irredutível
+por VI\(_A\), 2.4, de modo que seu ponto genérico é seu único ponto
+associado. EGA IV\(_2\), 3.1.8 mostra, então, que \(V_t\) é
+esquematicamente denso em \(G_t\). Por
+\SGARefLink{sga3:ix:corollary:4:3}{4.3}, \(V\) é esquematicamente denso
+em \(G_H\).
+
+Ademais, como \(K\) é um \(H\)-subgrupo de \(G_H\), induz em cada fibra
+\(G_h\) um subgrupo \(K_h\). Esse subgrupo contém uma vizinhança aberta do
+elemento unidade; como \(G_h\) é conexo, segue-se que \(K_h=G_h\). Assim,
+\(K=G_H\) como conjunto. Finalmente, \(K\) é um subpré-esquema fechado
+de \(G_H\) que contém o subpré-esquema esquematicamente denso \(V\), e,
+portanto, \(K=G_H\). Isso prova
+\SGARefLink{sga3:ix:theorem:5:6:item:a}{(a)}.
+
+A parte \SGARefLink{sga3:ix:theorem:5:6:item:b}{(b)} se deduz
+diretamente de \SGARefLink{sga3:ix:corollary:3:9}{3.9}: para verificar
+que um subpré-esquema \(K\) de \(P=G\times_SH\) é igual a \(P\), basta
+verificar, após toda mudança de base \(S'\to S\) na qual \(S'\)
+seja o espectro de um quociente artiniano de um anel local de \(S\), que
+\(K'=P'\). \qed

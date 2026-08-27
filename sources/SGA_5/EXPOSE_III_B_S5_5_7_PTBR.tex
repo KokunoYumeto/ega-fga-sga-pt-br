@@ -1,0 +1,41 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5099--5137 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{5.7}
+
+Os traços definidos em 5.6 generalizam simultaneamente os traços comutativos usuais ((SGA 6 I), ([3] V 3)) e os traços não comutativos de Stallings [5] e Grothendieck.
+
+(a) Suponhamos que $A=K$. Então $A^e=A_\natural=K$, a flecha 5.6.1 se escreve
+\[
+\Tr_K:\uRHom_K(E,F\lten_KE)\longrightarrow F
+\]
+e coincide com a flecha de traço definida em ([3] V 3.7.1), no caso particular em que o complexo $K$ de loc. cit. está reduzido a $A$. Em particular,
+\[
+\Tr_K:\uRHom_K(E,E)\longrightarrow K
+\]
+coincide com o traço definido em (SGA 6 I 8).
+
+(b) Supõe-se novamente que $A$ seja uma $K$-álgebra plana, não necessariamente comutativa. Propomo-nos explicitar 5.6.4 para $E$ estritamente perfeito, isto é, limitado, com componentes que localmente são fatores diretos de módulos livres de tipo finito. Em primeiro lugar, tomemos $E=A$; $\uRHom_A(A,A)=\uHom_A(A,A)$ identifica-se com $A$ mediante $f\mapsto f(1)$, $a\mapsto(x\mapsto xa)$, e 5.6.3 identifica-se com a projeção canônica $A\to A_\natural$, que denotaremos por $a\mapsto a_\natural$; portanto, se $d_a$ designa a multiplicação à direita por $a$,
+\begin{equation}\tag{5.7.1}
+\Tr_A(d_a)=a_\natural.
+\end{equation}
+Sejam, para $1\le i\le n$, os $E_i$ cópias de $A$, e seja $E=\bigoplus_{1\le i\le n}E_i$. O isomorfismo 5.4.2, para $F=A$, $G=E$, se escreve
+\[
+\bigoplus_{1\le i,j\le n}\uHom_A(E_i,A)\otimes_AE_j\longrightarrow\uHom_A(E,E),
+\]
+e, para $u=\sum u_{ij}\otimes 1\in\uHom_A(E,E)$ $(u_{ij}\otimes 1\in\uHom_A(E_i,A)\otimes_A E_j)$, temos
+\begin{equation}\tag{5.7.2}
+\Tr_A(u)=\sum_i (u_{ii})_\natural,
+\end{equation}
+Por definição da flecha de avaliação 5.3.5. Agora vamos tomar como $E$ um fator direto de $A^n$, imagem de um projetor $p$; denotemos por $i:E\to A^n$ a inclusão; então, para $u\in\uHom_A(E,E)$, temos
+\begin{equation}\tag{5.7.3}
+\Tr_A(u)=\Tr_A(iup),
+\end{equation}
+como se vê quer com a ajuda de 5.6.5, quer diretamente a partir da definição. Por fim, suponhamos que $E$ seja estritamente perfeito; se $u\in\Hom_A(E,E)$ é um homomorfismo de complexos, por 5.6.5 e 5.6.6 tem-se
+\begin{equation}\tag{5.7.4}
+\Tr_A(u)=\sum_i(-1)^i\Tr_A(u^i).
+\end{equation}
+O fato de que 5.6.4 provém, por aplicação de $H^0$, de um homomorfismo de complexos $\uHom_A^\bullet(E,E)\to A$ (5.6.3) implica que, se $u$, $v\in\Hom_A(E,E)$ são homotópicos, temos
+\begin{equation}\tag{5.7.5}
+\Tr_A(u)=\Tr_A(v).
+\end{equation}
+Como todo endomorfismo de $E$ em $D(A)$ está definido localmente por um endomorfismo de complexos, localmente único salvo homotopia (SGA 6 I 4.10), as fórmulas 5.7.2 a 5.7.4 permitem, portanto, calcular $\Tr_A(u)$ para todo endomorfismo $u$ de $E$ em $D(A)$ e, combinadas com 5.7.5, fornecem uma definição direta de $\Tr_A(u)$. No caso em que o topos $T$ é pontual, recupera-se a definição de (SGA $4^{1/2}$, Rapport 4.3).

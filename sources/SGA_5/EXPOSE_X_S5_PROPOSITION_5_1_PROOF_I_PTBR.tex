@@ -1,0 +1,52 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 12743--12791 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{prooftext}[Demonstração]
+Denotemos por $S_1$ (resp. $S_2$) o primeiro membro (resp. o segundo) da fórmula a demonstrar. Como o homomorfismo de redução $\lambda_\nu^*$ é, de fato, um isomorfismo, basta provar que
+\[
+\mu_\nu(S_1)=\mu_\nu(S_2).
+\]
+Por outro lado, por (3.2), o homomorfismo traço
+\[
+K^*(\mathbb Z_\ell[G])\xrightarrow{\ tr\ }\mathcal F(G,\mathbb Z_\ell)
+\]
+é um monomorfismo. Por conseguinte, basta demonstrar que
+\[
+\operatorname{tr}(\mu_\nu(S_1))=\operatorname{tr}(\mu_\nu(S_2)).
+\]
+O carácter $\sigma_2=\operatorname{tr}(\mu_\nu(S_2))$ é obviamente dado pela fórmula
+\[
+\sigma_2=\EP(C)r_G-\sum_{y\in Y}\sigma'_y,
+\tag{5.2.1}
+\]
+onde $\sigma'_y$ é o caráter de $Sw'_y$ ((4.2.7) e (4.2.3)), e $r_G$ é a representação regular.
+
+Consideremos agora os homomorfismos de redução para os traços:
+\[
+\mathcal F(G,\mathbb Z_\ell)\xrightarrow{\lambda_n^\natural}\mathcal F(G,\mathbb Z/\ell^n\mathbb Z).
+\]
+Evidentemente,
+\[
+\mathcal F(G,\mathbb Z_\ell)=\varprojlim_n\mathcal F(G,\mathbb Z/\ell^n\mathbb Z).
+\]
+Basta, portanto, provar que, qualquer que seja $n$,
+\[
+\lambda_n^\natural(\operatorname{tr}(\mu_\nu(S_1)))=\lambda_n^\natural(\sigma_2).
+\]
+O primeiro membro é igual a $\operatorname{tr}(\lambda_n^\natural(\mu_\nu(S_1)))$; ora,
+\[
+\lambda_n^\natural(\mu_\nu(S_1))
+=
+\clKstar{\Lambda_n[G]}\bigl(\RG_{C'}(\Lambda_{n,U',C'})\bigr),
+\]
+graças à fórmula de Künneth (SGA 4 XVIII)
+\[
+\RG_{C'}(\Lambda_{n,U',C'})\otimes_{\Lambda_n}^{L}\Lambda_\nu
+\simeq \RG_{C'}(\Lambda_{\nu,U',C'})
+\quad\text{para } n\ge\nu.
+\]
+Ficamos, pois, reduzidos a demonstrar a igualdade
+\[
+\operatorname{tr}\bigl(\clKstar{\Lambda_n[G]}(\RG_{C'}(\Lambda_{n,U',C'}))\bigr)
+=
+\lambda_n^\natural(\sigma_2).
+\]

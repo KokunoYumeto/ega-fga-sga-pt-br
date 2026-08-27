@@ -1,0 +1,22 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5523--5542 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{6. Correspondências equivariantes e divisibilidade dos termos locais}
+
+\subsection*{6.1. Notações}
+
+Neste número, $S$ designa o espectro de um corpo de característica $p$, e $\Lambda$ um anel comutativo noetheriano anulado por um inteiro não divisível por $p$. Os $S$-esquemas considerados serão supostos separados e de tipo finito. As $\Lambda$-álgebras consideradas serão associativas, unitárias e de tipo finito, mas não necessariamente comutativas. Na maioria dos casos, e em particular para tudo quanto se refere aos ``termos locais de Lefschetz--Verdier não comutativos'', serão supostas planas; nas aplicações serão álgebras de grupos finitos.
+
+Se $X$ é um $S$-esquema e $A$ uma $\Lambda$-álgebra, denotar-se-á por $D({}_AX)$ (resp. $D(X_A)$) a categoria derivada da categoria de feixes de $A$-módulos esquerdos (resp. direitos) sobre $X$; para $A$ comutativa, escrever-se-á também $D(X,A)$ em lugar de $D({}_AX)$, e $D(X)=D(X,\Lambda)$. Denotar-se-á por $D_c(-)$ (resp. $D_{\mathrm{ctf}}(-)$) a subcategoria plena formada pelos complexos com cohomologia construtível (resp. de dimensão Tor finita e com cohomologia construtível). Se $A$, $B$ são $\Lambda$-álgebras, denotar-se-á por $D({}_AX_B)$ a categoria derivada da categoria de feixes de $(A,B)$-bimódulos, esquerdos sobre $A$ e direitos sobre $B$. Por fim, utilizar-se-ão as notações $A^o$, $A^e$, $A_{\natural}$ de 5.1.
+
+\subsection*{6.2}
+O formalismo de (III 1, 2, 3) estende-se sem dificuldade ao caso ``não comutativo''. Indiquemos brevemente os pontos principais dessa generalização.
+
+Sejam $X$ um $S$-esquema, e $A$, $B$ $\Lambda$-álgebras. Se $L\in\Ob D_{\mathrm{ctf}}(X_A)$, $M\in\Ob D({}_AX_B)$, sendo $M$ de dimensão Tor finita e com cohomologia construtível como objeto de $D(X_B)$, então
+\[
+L\lten_A M\in\Ob D(X_B)_{\mathrm{ctf}}
+\]
+(a verificação é imediata). Por outro lado, de (SGA $4^{1/2}$ Finitude 1.6) deduz-se que, para $M$ como antes e $L\in\Ob D_{\mathrm{ctf}}({}_AX)$, tem-se
+\[
+\uRHom_A(L,M)\in\Ob D_{\mathrm{ctf}}(X_B).
+\]
+De (loc. cit.) resulta também que, se $f$ é um $S$-morfismo, $D_{\mathrm{ctf}}({}_A-)$ é estável sob as operações $(f^*,f_*,f_!,f^!)$ (sendo trivial o caso de $f^*$).

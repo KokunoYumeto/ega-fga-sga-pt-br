@@ -1,0 +1,26 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 15104--15126 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+% TERMINOLOGY: historical source "clôture normale" denotes the integral closure here; rendered as clausura integral per SGA5-TERM-278.
+Transformemos mais uma vez a fórmula (2), supondo que $X$ seja próprio, o que permite escrever a cohomologia ordinária em lugar da cohomologia com suportes próprios. Recordemos que a categoria dos $\mathbb Q_\ell$-feixes sobre $X$ é uma categoria de frações daquela dos feixes $\ell$-ádicos; por abuso de notação, doravante designaremos por $F=(F_\nu)_{\nu\in\mathbb N}$ o feixe $\ell$-ádico\footnote{Para simplificar a escrita, suporemos no restante da demonstração que $\Omega=\mathbb Q_\ell$. No caso geral, seria preciso substituir $\mathbb Z_\ell$ pelo fecho integral de $\mathbb Z_\ell$ em $\Omega$. (Detalhes deixados ao leitor).} sobre $X$ que corresponde ao $\mathbb Q_\ell$-feixe subjacente a $F$. Então $\bar F=(\bar F_\nu)$ e os morfismos de Frobenius $\overline{\Fr}^*_{F_\nu/X}$ definem um morfismo de feixes $\ell$-ádicos
+\[
+\overline{\Fr}^*_{F/X}:\fr_X^*(\bar F)\longrightarrow\bar F,
+\]
+de onde se obtém uma correspondência $\ell$-ádica sobre $(\bar X,\bar F)$. Para cada inteiro $\nu$ sabe-se que o endomorfismo $\fr_{\R\Gamma_{\bar X}(\bar F_\nu)}$ definido por $(\bar{\fr}_X,\overline{\Fr}^*_{F_\nu/X})$ é o inverso de $f_{\R\Gamma_{\bar X}(\bar F)}$ (§2, n\textsuperscript{o}~3, corolário da proposição 3); utilizando a definição da cohomologia $\ell$-ádica, obtém-se então que o endomorfismo $\fr_{H^i(\bar X,\bar F)}$ de $H^i(\bar X,\bar F)$ definido por $(\bar{\fr}_X,\overline{\Fr}^*_{F/X})$ é o inverso de $f_{H^i(\bar X,\bar F)}$; assim,
+\[
+f^{-n}_{H^i(\bar X,\bar F)}=\fr^n_{H^i(\bar X,\bar F)}
+\]
+para todo $n\ge1$ e todo $i$.
+
+Aplicemos este resultado ao caso particular em que $X=x=\Spec(\mathbb F_q)$ ($q=p^d$) é reduzido a um ponto cujo grau $d$ divide $n$. Obtém-se:
+\[
+f^{-n}_{F_{\bar x}}=\fr^n_{F_{\bar x}}=(\Fr^*_{F_{\bar x}/\bar x})^n
+\]
+($\bar x=$ ponto geométrico definido por uma imersão de $\mathbb F_q$ em $\bar{\mathbb F}_p$).
+
+Por outro lado, $\bar{\fr}_X$ e $f_X$ atuam de modo inverso sobre os pontos de $\bar X$. Segue-se que a projeção $\bar X\to X$ estabelece uma correspondência bijetiva entre o conjunto dos pontos fechados de grau $d$ de $X$ e o conjunto das órbitas de cardinal $d$ da ação de $\bar{\fr}_X$ sobre $\bar X$. Observando que o conjunto $\bar X^{\bar{\fr}_X^n}$ dos pontos de $\bar X$ fixos por $\bar{\fr}_X^n$ é a união das órbitas de $\bar{\fr}_X$ cujo cardinal divide $n$, pode-se transcrever (2) na forma «geométrica»:
+\[
+\sum_{\bar x\in\bar X^{\bar{\fr}_X^n}}\Tr(\fr^n_{F_{\bar x}})
+=\sum_i(-1)^i\Tr(\fr^n_{H^i(\bar X,\bar F)}).
+\tag{2'}
+\]
+É uma fórmula de tipo Lefschetz sobre o esquema $\bar X$ munido do feixe $\bar F$ e da correspondência $(\bar{\fr}_X,\overline{\Fr}^*_{F/X})$.

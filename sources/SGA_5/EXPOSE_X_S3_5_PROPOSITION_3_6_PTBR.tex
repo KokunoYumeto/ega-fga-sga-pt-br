@@ -1,0 +1,31 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 12404--12432 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{3.5}
+
+Sejam $\Lambda$ um anel comutativo, $A$ e $B$ duas álgebras sobre $\Lambda$, e $C=A\otimes_{\Lambda}B$. Os $C$-módulos são, portanto, os $A$-$B$-bimódulos.
+
+Se $\Delta$ é uma subcategoria triangulada plena de $D(A)$, denotaremos por $D(C)_{\Delta}$ a subcategoria triangulada plena de $D(C)$ engendrada pelos complexos que, considerados como objetos de $D(A)$, pertencem a $\Delta$.
+
+\begin{statement}{Proposição 3.6}
+Com as notações de 3.4 e 3.5, seja $\Delta$ uma subcategoria triangulada plena de $D(A)$ estável sob somandos diretos. Se $P^\bullet$ é um objeto de $D(B)_{\parf}$ (VIII 7) e $M^\bullet$ é um objeto de $D(C)_{\Delta}$, o complexo de $A$-módulos $\RHom_B(P^\bullet,M^\bullet)\in D(A)$ definido em 4.1 é um objeto de $\Delta$. Resulta, em particular, um pareamento de categorias trianguladas
+\[
+\RHom:D(B)_{\parf}\times D(C)_{\Delta}\longrightarrow \Delta,
+\tag{3.6.1}
+\]
+isto é, um bifuntor exato em cada variável e, por conseguinte (VIII 3), uma aplicação bilinear.
+\[
+K^{\bullet}(B)\times K^{\bullet}(D(C)_{\Delta})\xrightarrow{\operatorname{hom}} K(\Delta)
+\tag{3.6.2}
+\]
+tal que
+\[
+K(a)\bigl(\cl_{K^{\bullet}(B)}(P^\bullet),\cl_{K(D(C)_{\Delta})}(M^\bullet)\bigr)
+=\cl_{K(\Delta)}\bigl(\RHom_B(P^\bullet,M^\bullet)\bigr).
+\tag{3.6.3}
+\]
+Obtém-se um enunciado análogo se se substitui $B$ pelo seu oposto $B^\circ$ e $\RHom_B(P^\bullet,M^\bullet)$ por $P^\bullet\otimes_B^{\mathbf L}M^\bullet$.
+\end{statement}
+
+\begin{prooftext}[Demonstração]
+Demonstra-se primeiro que $\RHom_B(P^\bullet,M^\bullet)$ é um objeto de $\Delta$ no caso particular em que $P^\bullet$ tem uma única componente não nula, e depois se raciocina por indução sobre o número de componentes não nulas de $P^\bullet$.
+\end{prooftext}

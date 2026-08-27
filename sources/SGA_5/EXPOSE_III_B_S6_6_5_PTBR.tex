@@ -1,0 +1,90 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5669--5756 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{6.5}
+Sejam $A$ uma $\Lambda$-álgebra plana, $X$ um $S$-esquema, $X^2=X\times_SX$, $p_1,p_2:X^2\to X$ as projeções canônicas, $\delta:X\to X^2$ a diagonal, e
+\[
+c:C\longrightarrow X^2
+\]
+um $S$-morfismo, $c_i=p_ic$, $X^c=C\times_{X^2}X$ o esquema de pontos fixos de $c$, de onde se obtém um quadrado cartesiano
+\begin{equation}
+\begin{tikzcd}[column sep=large,row sep=large]
+X^c \arrow[r,"i^c"] \arrow[d,"\delta^c"'] & X \arrow[d,"\delta"]\\
+C \arrow[r,"c"'] & X^2 .
+\end{tikzcd}
+\tag{6.5.1}
+\end{equation}
+Ponhamos
+\begin{equation}
+KA_{X,L_{\natural}}=K_X\lten_{\Lambda}(A\lten_{A^e}A),
+\qquad
+KA_{X,\natural}=K_X\lten_{\Lambda}A_{\natural}.
+\tag{6.5.2}
+\end{equation}
+Seja $L\in\Ob D_{\mathrm{ctf}}({}_AX)$. Define-se um homomorfismo de ``traço local'''
+\begin{equation}
+\Tr_A:\delta^*\uRHom_A(p_1^*L,p_2^!L)
+\longrightarrow
+KA_{X,L_{\natural}},
+\tag{6.5.3}
+\end{equation}
+compondo o isomorfismo
+\begin{equation}
+\delta^*\uRHom_A(p_1^*L,p_2^!L)
+\xrightarrow{\sim}
+\delta^*(D_AL\lten_{S,A}L)
+\tag{6.5.4}
+\end{equation}
+deduzido do inverso de 6.4.1 (para $X_1=X_2$, $L_1=L_2$) pela aplicação de $\delta^*$, o isomorfismo trivial
+\begin{equation}
+\delta^*(D_AL\lten_{S,A}L)=D_AL\lten_AL,
+\tag{6.5.5}
+\end{equation}
+e a flecha de avaliação 5.3.5
+\begin{equation}
+D_AL\lten_AL\longrightarrow KA_{X,L_{\natural}}.
+\tag{6.5.6}
+\end{equation}
+(onde $KA_X\lten_{A^e}A$ foi identificado com $KA_{X,L_{\natural}}$ graças a 6.3.2, $K_X\otimes A=KA_X$). Da definição resulta imediatamente que, para $X=S$, 6.5.3 coincide com a flecha
+\[
+\Tr_A:\uRHom_A(L,L)\longrightarrow A\lten_{A^e}A
+\]
+de 5.6.1. Compondo a flecha que se deduz de 6.5.3 ao aplicar $i_*^ci^{c!}$ após a flecha
+\begin{equation}
+\delta^*c_*\uRHom_A(c_1^*L,c_2^!L)
+\longrightarrow
+i_*^ci^{c!}\delta^*\uRHom_A(p_1^*L,p_2^!L)
+\tag{6.5.7}
+\end{equation}
+deduzida de 6.4.2 e da flecha de mudança de base
+\[
+\delta^*c_*c^!\longrightarrow i_*^ci^{c!}\delta^*,
+\]
+obtém-se uma flecha
+\begin{equation}
+\Tr_A:\delta^*c_*\uRHom_A(c_1^*L,c_2^!L)
+\longrightarrow
+i_*^ci^{c!}KA_{X,L_{\natural}}
+=i_*^cKA_{X^c,L_{\natural}},
+\tag{6.5.8}
+\end{equation}
+de onde se obtém a flecha
+\begin{equation}
+\Tr_A:\uHom_A(c_1^*L,c_2^!L)
+\longrightarrow
+H^0(X^c,KA_{X^c,L_{\natural}}).
+\tag{6.5.9}
+\end{equation}
+Seguiremos denotando por $\Tr_A$ as flechas compostas de 6.5.3, 6.5.8 e 6.5.9 com as flechas obtidas da flecha canônica
+\[
+KA_{X,L_{\natural}}\longrightarrow KA_{X,\natural}.
+\]
+É fácil verificar que, para $A=\Lambda$, para $u\in\Hom(c_1^*L,c_2^!L)$, tem-se
+\begin{equation}
+\Tr(u)=\langle u,1\rangle,
+\tag{6.5.10}
+\end{equation}
+com a notação de (III 4.2.5), onde $1$ designa a correspondência diagonal. Mais precisamente, a flecha
+\[
+c_*\uRHom(c_1^*L,c_2^!L)\longrightarrow \delta_*i_*^cK_{X^c}
+\]
+A adjunta de 6.5.8 é a definida por (III 4.2.4') com $X_1=X_2$, $L_1=L_2$, $d=\delta$, e a correspondência diagonal $1\in\Hom(L,L)$.

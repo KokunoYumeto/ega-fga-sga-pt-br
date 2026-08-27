@@ -1,0 +1,45 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 12792--12834 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Denotemos por $\tau$ o primeiro membro desta equação, e seja $g\in G$. O elemento $g$ induz evidentemente um endomorfismo do triângulo distinguido
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+& \RG_{Y'}(\Lambda_{n,Y'}) \arrow[dl] \arrow[dr] & \\
+\RG_{C'}(\Lambda_{n,U',C'}) \arrow[rr] && \RG_{C'}(\Lambda_{n,C'})
+\end{tikzcd}
+\]
+Tem-se, portanto,
+\[
+\tau(g)=\Tr^*g_{\RG_{C'}(\Lambda_{n,U',C'})}
+=\Tr^*g_{\RG_{C'}(\Lambda_{n,C'})}
+-\Tr^*g_{\RG_{Y'}(\Lambda_{n,Y'})}.
+\]
+Para abreviar, escreveu-se $\Tr^*$ em vez de $\Tr^*_{\Lambda_n}$.
+
+Ora, aplicando uma fórmula de Lefschetz trivial ao espaço discreto $Y'$ sobre o qual opera $g$, tem-se:
+\[
+\begin{aligned}
+\Tr^*g_{\RG_{Y'}(\Lambda_{n,Y'})}
+&=\text{número de pontos fixos da restrição } g_{Y'} \text{ de } g \text{ a } Y'\\
+&=\sum_{\substack{y'\in Y'\\gy'=y'}}1.
+\end{aligned}
+\]
+Por outro lado, a fórmula de Lefschetz (III 4.7) para a ação de $g$ sobre $C'$ dá, se $g\ne e$,
+\[
+\Tr^*g_{\RG_{C'}(\Lambda_{n,C'})}
+=
+\sum_{y'\in Y'} v_{y'}(g),
+\]
+a soma das multiplicidades dos pontos fixos da aplicação $g_{C'}:C'\to C'$, e tem-se
+\[
+\Tr^*g_{\RG_{C'}(\Lambda_{n,C'})}=\EP(C')\cdot1_\Lambda
+\quad\text{para }g=e,
+\]
+graças ao cálculo explícito dos $H^1(C',\Lambda_{n,C'})$, mediante (SGA 4 IX 47) e Künneth (SGA 4 XVII). Obtém-se, pois, a fórmula seguinte para $\tau$:
+\[
+\tau(g)=
+\begin{cases}
+\displaystyle\sum_{\substack{y'\in Y'\\g(y')=y'}}\bigl(v_{y'}(g)-1\bigr),& g\ne e,\\[0.8em]
+\EP(C')-\operatorname{card}(Y'),& g=e.
+\end{cases}
+\tag{5.2.2}
+\]

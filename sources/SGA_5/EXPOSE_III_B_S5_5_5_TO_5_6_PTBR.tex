@@ -1,0 +1,32 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5068--5097 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{5.5}
+
+Denotemos por $DF(A)$ a categoria derivada dos complexos de $A$-módulos esquerdos munidos de uma filtração finita ([3] V). Então, na situação de 5.2, tem-se um isomorfismo canônico de $DF(K)$, análogo a 5.2.2, para $E\in\ob D^-F(A)$, $F\in\ob D^-F(B,A)$ ($=D^-F(B\otimes_KA^\circ)$), $G\in\ob D^+F(B)$. Do mesmo modo, têm-se flechas derivadas filtradas análogas a 5.3.4, 5.3.5, 5.3.6 e 5.4.2. Essas flechas são compatíveis com a passagem aos graduados associados, no sentido de ([3] V 1,2).
+
+\subsubsection*{5.6}
+
+Supõe-se que $A$ seja plana sobre $K$. Denotemos por $D(A)_{\mathrm{parf}}$ a subcategoria plena de $D(A)$ formada pelos complexos de amplitude perfeita finita, isto é, perfeitos e de dimensão Tor finita (SGA 6 I). Define-se uma flecha canônica, denominada traço,
+\begin{equation}\tag{5.6.1}
+\Tr_A=\uRHom_A(E,F\lten_AE)\longrightarrow F\lten_{A^e}A
+\end{equation}
+Para $E\in\ob D(A)_{\mathrm{parf}}$, $F\in\ob D^b(A^e)$, compondo o isomorfismo inverso de 5.4.2 para $G=E$ com a flecha de avaliação 5.3.5. Deduz-se dela uma flecha de traço
+\begin{equation}\tag{5.6.2}
+\Tr_A:\uHom_A(E,F\lten_AE)\longrightarrow H^0(T,F\lten_{A^e}A).
+\end{equation}
+Para $F=A$, compondo com a flecha canônica $A\lten_{A^e}A\to A\otimes_{A^e}A=A_\natural$ (5.1), obtêm-se flechas, também chamadas traços,
+\begin{align}
+\Tr_A:\uRHom_A(E,E)&\longrightarrow A_\natural,\tag{5.6.3}\\
+\Tr_A:\uHom_A(E,E)&\longrightarrow H^0(T,A_\natural).\tag{5.6.4}
+\end{align}
+Observe-se que 5.6.4 é uma flecha bastante inócua, de natureza local, enquanto 5.6.3 é uma flecha substancial, de natureza global.
+
+Designemos por $DF(A)_{\mathrm{parf}}$ a subcategoria plena de $DF(A)$ formada pelos complexos filtrados cujo graduado tem amplitude perfeita finita. Então tem-se uma flecha de $DF(K)$ análoga a 5.6.1 para $E\in\ob DF(A)_{\mathrm{parf}}$, $F\in\ob D^bF(A^e)$, de onde resultam flechas análogas a 5.6.2, 5.6.3 e 5.6.4. Das observações de 5.5 resulta que a flecha 5.6.1 filtrada é compatível com a passagem ao graduado associado (cf. [3] V 3.7.2), e daí se deduz, como em loc. cit., que, se $F$ tem a filtração concentrada em grau $0$, para $u\in\Hom_{DF(A)}(E,F\lten_AE)$ se tem
+\begin{equation}\tag{5.6.5}
+\Tr_A(u)=\sum_i\Tr_A(\operatorname{gr}^i u).
+\end{equation}
+Esta fórmula implica, em particular, que, para $E\in\ob D(A)_{\mathrm{parf}}$, $F\in\ob D^b(A^e)$, $u\in\uHom_A(E,F\lten_AE)$, temos
+\begin{equation}\tag{5.6.6}
+\Tr(u[1])=-\Tr(u),
+\end{equation}
+onde $u[1]:E[1]\to(F\lten_AE)[1]$ é o deslocado de $u$.

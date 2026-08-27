@@ -1,0 +1,320 @@
+% SGA 3, Exposé IX, tradução brasileira.
+% Escopo: §4 desde o início até a primeira metade do Lema 4.4.
+% Autoridade: Polo--Gille Exp9-8nov09.pdf, pp. locais 10--14.
+
+\setcounter{footnote}{10}
+
+\SGARefTarget{sga3:ix:section:4}\section*{4. O teorema de densidade}
+\addcontentsline{toc}{section}{4. O teorema de densidade}
+
+Este teorema (cf. \SGARefLink{sga3:ix:theorem:4:7}{4.7 abaixo})%
+\begingroup
+\renewcommand{\thefootnote}{\(\ast\)}%
+\footnote{Todos os resultados desde
+\SGARefLink{sga3:ix:definition:4:1}{4.1} até
+\SGARefLink{sga3:ix:corollary:4:6}{4.6} estão contidos em EGA
+IV\(_3\), 11.10, ao qual remetemos o leitor para uma exposição sistemática
+da noção de densidade esquemática.}%
+\addtocounter{footnote}{-1}%
+\endgroup,
+juntamente com o teorema\footnote{Nota do editor: o teorema de
+«algebricidade» \SGARefLink{sga3:ix:theorem:7:1}{7.1}.} da
+\SGARefLink{sga3:ix:section:7}{Seção~7}, será a ferramenta essencial na
+presente Exposição e nas duas seguintes para passar das
+propriedades infinitesimais dos grupos de tipo multiplicativo
+desenvolvidas acima às suas propriedades «finitas».
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:definition:4:1}\textbf{Definição 4.1.}
+\textit{Seja \(X\) um pré-esquema. Diz-se que uma família
+\((Z_i)_{i\in I}\) de subpré-esquemas de \(X\) é \emph{esquematicamente
+densa} se, para todo aberto \(U\) de \(X\) e todo subpré-esquema fechado
+\(U_0\) de \(U\) que contenha todos os \(Z_i\cap U\), tem-se
+\(U_0=U\).}
+
+\textit{Diz-se que um subpré-esquema \(Z\) de \(X\) é
+\emph{esquematicamente denso em \(X\)} se a família de um só elemento
+formada por \(Z\) for esquematicamente densa.}
+
+É imediato (cf. EGA IV\(_3\), 11.10.1) que a definição equivale a
+dizer que, para todo aberto \(U\) de \(X\), toda seção \(f\) de
+\(\mathscr O_U\) que se anule sobre cada \(Z_i\cap U\) é nula. De maneira
+equivalente, a interseção dos núcleos dos homomorfismos canônicos
+\SGARefTarget{sga3:ix:definition:4:1:display:01}
+\[
+  u_i:\mathscr O_X\longrightarrow (v_i)_*(\mathscr O_{Z_i})
+\]
+é nula, onde \(v_i:Z_i\to X\) é a imersão canônica.%
+\footnote{Nota do editor: todos os resultados sobre densidade esquemática
+enunciados em EGA IV\(_3\), \S11.10 deduzem-se dos resultados sobre
+«famílias separadoras de homomorfismos» provados em loc.\ cit., \S11.9,
+ao qual remeterão algumas notas editoriais posteriores.}
+Quando \(X\) está sobre um pré-esquema \(S\), isso equivale também à
+afirmação seguinte: para todo aberto \(U\) de \(X\), todo
+\(S\)-pré-esquema \(Y\) separado sobre \(S\) e todo par de morfismos
+\(u,v:U\to Y\) que coincidam sobre os \(Z_i\cap U\), tem-se \(u=v\).
+Com efeito, \(u=v\) equivale a \(U_0=U\), onde \(U_0\) é a imagem
+inversa da diagonal em \(Y\times_S Y\) pelo \(S\)-morfismo
+\(U\to Y\times_S Y\) definido por \((u,v)\). A diagonal é um
+subpré-esquema fechado de \(Y\times_S Y\), de modo que \(U_0\) é um
+subpré-esquema fechado de \(U\) que contém todos os \(Z_i\cap U\). A
+densidade esquemática dá, pois, \(U_0=U\), e portanto \(u=v\). Para a
+recíproca, tome-se \(Y=\operatorname{Spec}\mathscr O_S[T]\).
+
+Na terminologia introduzida ao final de EGA I, 9.5, dizer que o
+subpré-esquema \(Z\) é esquematicamente denso em \(X\) significa também
+que \(X\) é o \emph{subpré-esquema aderência} de \(Z\) em \(X\).
+
+% Página-fonte: Exp9 p. local 11; leitor completo p. 657.
+\medskip
+\noindent\SGARefTarget{sga3:ix:lemma:4:2}\textbf{Lema 4.2.}
+\textit{Seja \(X\) um \(S\)-pré-esquema plano e seja \((Z_i)_{i\in I}\) uma
+família de subpré-esquemas de \(X\), planos sobre \(S\). Seja \(S_0\) um
+subpré-esquema de \(S\) definido por um ideal nilpotente \(\mathscr J\), e
+suponhamos que os módulos \(\mathscr J^n/\mathscr J^{n+1}\) sejam localmente
+livres sobre \(S_0\). Sejam \(X_0,Z_{i0}\) os obtidos de \(X,Z_i\) pela
+mudança de base \(S_0\to S\). Se \((Z_{i0})_{i\in I}\) for
+esquematicamente densa em \(X_0\), então \((Z_i)_{i\in I}\) será
+esquematicamente densa em \(X\).}
+
+\emph{Demonstração.}
+Suponhamos \(\mathscr J^{n+1}=0\), onde \(n\geq0\), e raciocinemos por
+indução sobre \(n\); a afirmação é trivial para \(n=0\). Definamos
+\(S_m,X_m,Z_{im}\) por redução módulo \(\mathscr J^{m+1}\), como de
+costume. A hipótese de indução já implica que
+\((Z_{i,n-1})_{i\in I}\) é esquematicamente densa em \(X_{n-1}\).
+Após substituir \(X\) por um aberto induzido, basta provar que toda
+seção \(f\) de \(\mathscr O_X\) que se anule sobre todos os \(Z_i\) é
+nula.
+
+A seção \(f_{n-1}\) de
+\[
+  \mathscr O_{X_{n-1}}
+  =\mathscr O_X/\mathscr J^n\mathscr O_X
+\]
+definida por \(f\) anula-se sobre os \(Z_{i,n-1}\), logo é nula. Por
+conseguinte, \(f\) é uma seção de \(\mathscr J^n\mathscr O_X\). Como
+\(X\) é plano sobre \(S\), existe um isomorfismo
+\SGARefTarget{sga3:ix:lemma:4:2:display:01}
+\[
+  \mathscr J^n\mathscr O_X
+  \xleftarrow{\ \sim\ }
+  \mathscr E\otimes_{\mathscr O_{S_0}}\mathscr O_{X_0},
+  \qquad
+  \mathscr E=\mathscr J^n=\mathscr J^n/\mathscr J^{n+1}.
+\]
+Do mesmo modo, como cada \(Z_i\) é plano sobre \(S\), a
+restrição \(f_i\) de \(f\) a \(Z_i\) pode ser vista como uma seção de
+\SGARefTarget{sga3:ix:lemma:4:2:display:02}
+\[
+  \mathscr J^n\mathscr O_{Z_i}
+  \xleftarrow{\ \sim\ }
+  \mathscr E\otimes_{\mathscr O_{S_0}}\mathscr O_{Z_{i0}}.
+\]
+Por hipótese, todos os \(f_i\) são nulos. O módulo \(\mathscr E\) é
+localmente livre por hipótese e, portanto, também o é
+\[
+  \mathscr F
+  =\mathscr E\otimes_{\mathscr O_{S_0}}\mathscr O_{X_0}.
+\]
+Assim, \(f\) é uma seção do módulo localmente livre \(\mathscr F\) sobre
+\(X_0\) cuja restrição a cada \(Z_{i0}\) é nula. Como a família
+\((Z_{i0})_{i\in I}\) é esquematicamente densa em \(X_0\), segue-se
+imediatamente que \(f=0\). \qed
+
+% Página-fonte: Exp9 p. local 12; leitor completo p. 658.
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:4:3}\textbf{Corolário 4.3.}
+\textit{Seja \(X\) um \(S\)-pré-esquema localmente noetheriano, plano sobre
+\(S\), e seja \((Z_i)_{i\in I}\) uma família de subpré-esquemas de \(X\),
+planos sobre \(S\). Suponhamos que, para todo \(s\in S\), a família de
+fibras \((Z_{is})_{i\in I}\) seja esquematicamente densa em \(X_s\).
+Então \((Z_i)_{i\in I}\) é esquematicamente densa em \(X\).}
+
+\emph{Demonstração.}
+Após substituir \(X\) por um aberto induzido, basta provar que toda
+seção \(f\) de \(\mathscr O_X\) cuja restrição a todos os \(Z_i\) é
+nula é ela própria nula.%
+\footnote{Nota do editor: desenvolveu-se o original no que segue.}
+Para isso, basta mostrar que a imagem de \(f\) em \(\mathscr O_{X,x}\)
+é nula para todo \(x\in X\). Seja \(\mathfrak m_x\) o ideal maximal de
+\(\mathscr O_{X,x}\), e seja \(\mathfrak m_s\) o de
+\(\mathscr O_{S,s}\), onde \(s\) é a imagem de \(x\) em \(S\). Como
+\(\mathscr O_{X,x}\) é noetheriano,
+\[
+  \bigcap_{n\in\mathbb N}\mathfrak m_x^n=0,
+  \qquad\text{y, con mayor razón,}\qquad
+  \bigcap_{n\in\mathbb N}\mathscr O_{X,x}\mathfrak m_s^n=0.
+\]
+Basta, pois, mostrar, para todo inteiro \(n\), que a seção induzida por
+\(f\) sobre
+\[
+  X\times_S
+  \operatorname{Spec}\bigl(\mathscr O_{S,s}/\mathfrak m_s^{n+1}\bigr)
+\]
+é nula. Por hipótese,
+\[
+  Z_{is}=Z_i\otimes_{\mathscr O_{S,s}}\kappa(s)
+\]
+é uma família esquematicamente densa em
+\[
+  X_s=X\otimes_{\mathscr O_{S,s}}\kappa(s).
+\]
+Reduzimo-nos, assim, ao caso em que \(S\) é o espectro de um anel local
+cujo ideal maximal \(\mathscr J\) é nilpotente,
+\(S_0=\operatorname{Spec}\kappa(s)\), e se cumprem as hipóteses do
+\SGARefLink{sga3:ix:lemma:4:2}{Lema~4.2}. Segue-se a conclusão. \qed
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:lemma:4:4}\textbf{Lema 4.4.}
+\textit{Seja \(S\) um pré-esquema localmente noetheriano, seja \(X\) um
+\(S\)-pré-esquema localmente noetheriano, plano sobre \(S\), e seja
+\((Z_i)_{i\in I}\) uma família de subpré-esquemas de \(X\), planos sobre
+\(S\). Suponhamos que, para todo \(s\in S\), a família de fibras
+\((Z_{is})_{i\in I}\) seja esquematicamente densa em \(X_s\). Então,
+para toda mudança de base \(S'\to S\), sem exigir que \(S'\) seja localmente
+noetheriano, a família \((Z_i')_{i\in I}\) é esquematicamente densa em
+\(X'\). Dito de outro modo, \((Z_i)_{i\in I}\) é universalmente
+esquematicamente densa em \(X\) com respeito a \(S\) (cf. EGA IV\(_3\),
+Definição 11.10.8).}
+
+\emph{Demonstração.}%
+\footnote{Nota do editor: para outra demonstração, que reduz ao caso em
+que \(S'\) é localmente noetheriano e utiliza
+\SGARefLink{sga3:ix:corollary:4:3}{4.3} e
+\SGARefLink{sga3:ix:lemma:4:5}{4.5} como aqui, vejam-se EGA IV\(_3\),
+11.9.16 e 11.9.12. Na última linha da demonstração de 11.9.16,
+substitua-se 11.9.5 por 11.9.12.}
+Seja \(f'\) uma seção de \(\mathscr O_{X'}\) sobre um aberto \(U'\) de
+\(X'\), que se anule sobre os \(Z_i'\); devemos provar que \(f'=0\).
+Fixemos \(s'\in S'\). Basta provar que \(f'\) se anula em todo ponto de
+\(U'\) situado sobre \(s'\). Se \(s\) é a imagem de \(s'\) em \(S\),
+após substituir \(S,S'\) pelos espectros de seus anéis locais em
+\(s,s'\), podemos supor que \(S,S'\) são locais e que \(s,s'\) são seus
+pontos fechados. Podemos supor também que \(X\) é afim, de modo que
+\SGARefTarget{sga3:ix:lemma:4:4:display:01}
+\[
+  \begin{gathered}
+    S=\operatorname{Spec}(A),\qquad
+    S'=\operatorname{Spec}(A'),\\
+    X=\operatorname{Spec}(B),\qquad
+    X'=\operatorname{Spec}(B'),\qquad
+    B'=B\otimes_A A',
+  \end{gathered}
+\]
+onde \(A,A'\) são locais, \(A\to A'\) é um homomorfismo local, e
+\(A,B\) são noetherianos. Podemos supor ainda que \(U'\) é afim, da
+forma \(X'_{g'}\), com \(g'\in B'\).
+
+Para toda \(A\)-subálgebra \(A''\) de \(A'\), ponhamos
+\[
+  S''=\operatorname{Spec}(A'')
+\]
+e sejam \(X'',Z_i''\) os obtidos de \(X,Z_i\) pela mudança de base
+\(S''\to S\). Obtém-se o diagrama
+\SGARefTarget{sga3:ix:lemma:4:4:diagram:01}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+  % La fuente imprime visiblemente subíndices n en los nodos superiores
+  % central y derecho; se conservan pese a la prosa circundante.
+  Z^i \arrow[d] & Z_n^{i''} \arrow[l]\arrow[d]
+    & Z_n^{i'} \arrow[l]\arrow[d] \\
+  X \arrow[d] & X'' \arrow[l]\arrow[d] & X' \arrow[l]\arrow[d] \\
+  S & S'' \arrow[l] & S' \arrow[l].
+\end{tikzcd}
+\]
+
+% Página-fonte: Exp9 p. local 13; leitor completo p. 659.
+No que segue, limitamo-nos aos \(A''\) que são localizações de
+\(A\)-subálgebras \(A_1''\) de \(A'\), de tipo finito sobre \(A\), em
+\(\mathfrak m'\cap A_1''\), onde \(\mathfrak m'\) é o ideal maximal de
+\(A'\). Assim, os homomorfismos \(A\to A''\to A'\) são locais. Esses
+\(A''\) formam uma família filtrante crescente de subálgebras cuja união,
+e portanto cujo limite direto, é \(A'\). Do mesmo modo,
+\[
+  B'=\varinjlim_{A''}\bigl(B\otimes_A A''\bigr).
+\]
+Existem, pois, tal \(A''\) e um elemento
+\(g''\in B''=B\otimes_A A''\) cuja imagem em \(B'\) é \(g'\).
+
+Pelo \SGARefLink{sga3:ix:lemma:4:5}{Lema~4.5 abaixo}, a propriedade de
+\((Z_{is})_{i\in I}\) ser esquematicamente densa em \(X_s\)
+conserva-se por toda mudança de base \(S''\to S\).%
+\footnote{Nota do editor: acrescentou-se a frase precedente e desenvolveu-se
+o original no que segue.}
+Por conseguinte, como cada \(S''\) é localmente noetheriano, substituir
+\(S\) por um \(S''\) adequado e \(X,Z_i\) por \(X'',Z_i''\) conserva as
+hipóteses do \SGARefLink{sga3:ix:lemma:4:4}{Lema~4.4}.
+
+Podemos supor, portanto, que \(g'\) provém de um elemento \(g\in B\).
+Após substituir \(X\) pelo aberto \(X_g=U\), podemos supor que
+\(U'=X'\). Do mesmo modo, podemos supor que \(f'\) provém de uma
+seção \(f\) de \(\mathscr O_X\) sobre \(X\).
+
+Seja \(Y=V(f)\) o subesquema de \(X\) definido por \(f\), e ponhamos
+\[
+  Y_i=Z_i\times_XY.
+\]
+Assim, \(Y_i\) é o subesquema fechado \(V(f_i)\) de \(Z_i\), onde
+\(f_i\) é a seção de \(\mathscr O_{Z_i}\) induzida por \(f\).
+Denotando por \(Y',Y_i'\) os \(S'\)-esquemas obtidos por mudança de base,
+tem-se
+\SGARefTarget{sga3:ix:lemma:4:4:display:02}
+\[
+  Y'=V(f'),
+  \qquad
+  Y_i'=Z_i'\times_{X'}Y'=V(f_i'),
+\]
+e valem relações análogas para \(Y'',Y_i''\). A afirmação de que
+\(f'\) se anula sobre os \(Z_i'\) equivale a
+\[
+  Y_i'=Z_i'\qquad\text{para todo }i.
+\]
+\footnote{Nota do editor: o original acrescentava «ao menos em todo ponto
+\(x'\) de \(X'\) situado sobre \(s'\)», mas essa restrição parece
+desnecessária.}
+
+Seja \(\mathfrak m\) o ideal maximal de \(A\). Para todo \(n\geq0\),
+introduzamos o subesquema fechado
+\[
+  S_n=\operatorname{Spec}(A/\mathfrak m^{n+1})
+\]
+de \(S\), e sejam \(X_n,Y_n,Z_n^i,Y_n^i\) os obtidos de
+\(X,Y,Z_i,Y_i\) pela mudança de base \(S_n\to S\). Mais geralmente,
+para todo \(S\)-pré-esquema \(P\), escrevamos \(P_n=P\times_SS_n\).
+
+Para todo \(n\) e \(i\in I\), consideremos o funtor
+\SGARefTarget{sga3:ix:lemma:4:4:display:03}
+\[
+  F_n^i
+  =\prod_{Z_n^i/S_n}Y_n^i/Z_n^i:
+  (\mathbf{Sch})_{/S_n}^{\circ}\longrightarrow\mathbf{Set},
+\]
+definido, para todo \(P\) sobre \(S_n\), por
+\SGARefTarget{sga3:ix:lemma:4:4:display:04}
+\[
+F_n^i(P)
+=\Gamma\bigl((Y_n^i)_P/(Z_n^i)_P\bigr)
+=
+\begin{cases}
+  \varnothing,&(Y_n^i)_P\ne(Z_n^i)_P,\\
+  \{\operatorname{id}\},&(Y_n^i)_P=(Z_n^i)_P.
+\end{cases}
+\]
+Como \(S_n\) é local artiniano e \(Z_n^i\) é plano, e portanto
+essencialmente livre, sobre \(S_n\),
+\SGARefLink{sga3:viii:theorem:6:4}{VIII, 6.4} mostra que cada \(F_n^i\)
+é representado por um subpré-esquema fechado \(T_n^i\) de \(S_n\).
+
+% Página-fonte: Exp9 p. local 14; leitor completo p. 660.
+O completamento \(\widehat A\) do anel local \(A\) é noetheriano
+porque \(A\) o é, e é o limite projetivo dos anéis \(A_n\).%
+\footnote{Nota do editor: desenvolveu-se e corrigiu-se o original para
+mostrar que o limite projetivo dos anéis \(\mathscr O(T_n^i)\)
+define um subesquema formal fechado de \(\operatorname{Spf}(\widehat A)\).}
+Seja \(K_n^i\) o ideal de
+\[
+  A_n=A/\mathfrak m^{n+1}
+\]
+que define \(T_n^i\), e seja \(K^i=\varprojlim_nK_n^i\); este é um ideal
+de \(\widehat A\).

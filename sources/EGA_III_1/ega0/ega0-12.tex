@@ -1,0 +1,1667 @@
+\section{Suplemento sobre a cohomologia de feixes}
+\label{section:0.12}
+
+\subsection{Cohomologia de feixes de módulos sobre espaços anelados}
+\label{subsection:0.12.1}
+
+\begin{env}[12.1.1]
+\label{0.12.1.1}
+\oldpage[0\textsubscript{III}]{49}
+Seja $(X,\sh{O}_X)$ um espaço anelado.
+Lembremos que, para todo $\sh{O}_X$-módulo $\sh{F}$, define-se a
+cohomologia $\HH^\bullet(X,\sh{F})$, que é um funtor cohomológico universal
+(T, 2.2) da categoria $\cat{C}(X)$ de
+$\sh{O}_X$-módulos na categoria de grupos abelianos; é o funtor derivado
+do funtor exato à esquerda
+\[
+  \sh{F}\longmapsto\Gamma(X,\sh{F}).
+\]
+O funtor $\HH^\bullet(X,\sh{F})$ é isomorfo
+\oldpage[0\textsubscript{III}]{50}
+à restrição à categoria $\cat{C}(X)$ do funtor cohomológico
+definido do mesmo modo sobre a categoria de feixes de grupos abelianos
+em $X$ (G, II, 7.2.1).
+\end{env}
+
+\begin{env}[12.1.2]
+\label{0.12.1.2}
+Ponhamos $A=\Gamma(X,\sh{O}_X)$.
+Como todo elemento de $A$ define um endomorfismo do grupo abeliano
+$\Gamma(X,\sh{F})$, define por funtorialidade um endomorfismo do
+$\delta$-funtor $\HH^\bullet(X,\sh{F})$.
+Estes endomorfismos dotam cada $\HH^p(X,\sh{F})$ de uma
+estrutura de $A$-módulo, e o operador de conexão $\partial$ é
+$A$-linear.
+Além disso, para quaisquer dois inteiros não negativos $p,q$ e quaisquer dois
+$\sh{O}_X$-módulos $\sh{F},\sh{G}$, existe um homomorfismo de
+$A$-módulos, chamado \emph{produto cup},
+\[
+\label{0.12.1.2.1}
+\tag{12.1.2.1}
+  \HH^p(X,\sh{F})\otimes_A\HH^q(X,\sh{G})
+  \longrightarrow
+  \HH^{p+q}\bigl(X,\sh{F}\otimes_{\sh{O}_X}\sh{G}\bigr)
+\]
+(G, II, 6.6).
+Estes homomorfismos fazem da soma direta $S$ dos
+$\HH^p(X,\sh{O}_X)$, para $p\geq0$, uma $A$-álgebra graduada
+anticomutativa, e da soma direta dos $\HH^p(X,\sh{F})$ um
+$S$-módulo graduado.
+
+Para todo recobrimento aberto $\mathfrak{U}$ de $X$, denotaremos sempre
+por $\check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{F})$ (contrariamente a
+(G, II, 5.1)) o complexo de cocadeias alternadas do nervo de
+$\mathfrak{U}$ com valores no sistema de coeficientes
+$\Gamma(U_\alpha,\sh{F})$.
+Está claro que
+$\check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{F})$ é um
+$A$-módulo graduado, de modo que os grupos de cohomologia
+$\check{\HH}^p(\mathfrak{U},\sh{F})$ deste complexo estão dotados de
+uma estrutura de $A$-módulo.
+Além disso, as aplicações canônicas
+\[
+  \check{\HH}^p(\mathfrak{U},\sh{F})
+  \longrightarrow
+  \HH^p(X,\sh{F})
+\]
+(G, II, 5.4) são $A$-lineares.
+\end{env}
+
+\begin{env}[12.1.3]
+\label{0.12.1.3}
+Seja $(X',\sh{O}_{X'})$ um segundo espaço anelado, e seja
+$f=(\psi,\theta)$ um morfismo de $X'$ em $X$.
+Ponhamos $A'=\Gamma(X',\sh{O}_{X'})$; o $\psi$-morfismo $\theta$
+define canonicamente um homomorfismo de anéis $A\to A'$.
+Seja $\sh{F}$ um $\sh{O}_X$-módulo e $\sh{F}'$ um
+$\sh{O}_{X'}$-módulo.
+Para todo $f$-morfismo $u:\sh{F}\to\sh{F}'$
+\sref[0\textsubscript{I}]{0.4.4.1}, veremos que se pode definir,
+para todo $p\geq0$, um dihomomorfismo
+\[
+\label{0.12.1.3.1}
+\tag{12.1.3.1}
+  u_p:\HH^p(X,\sh{F})\longrightarrow\HH^p(X',\sh{F}').
+\]
+
+Com efeito, como $\psi^*$ é exato na categoria de feixes de grupos
+abelianos sobre $X$, o funtor
+\[
+  \sh{F}\longmapsto\HH^\bullet(X',\psi^*(\sh{F}))
+\]
+é um $\delta$-funtor sobre dita categoria, e sabe-se que existe um
+homomorfismo canônico de $\delta$-funtores
+\[
+\label{0.12.1.3.2}
+\tag{12.1.3.2}
+  \HH^\bullet(X,\sh{F})
+  \longrightarrow
+  \HH^\bullet(X',\psi^*(\sh{F}))
+\]
+determinado de maneira única pela condição de que, em grau $0$, reduz-se
+ao homomorfismo canônico
+\[
+  \Gamma(X,\sh{F})
+  \longrightarrow
+  \Gamma(X',\psi^*(\sh{F}))
+\]
+(T, 3.2.2).
+Além disso, todo elemento de $A$ determina um endomorfismo $\mu$ de
+$\Gamma(X,\sh{F})$ e um endomorfismo $\mu'$ de
+$\Gamma(X',\psi^*(\sh{F}))$ tal que o diagrama
+\[
+\label{0.12.1.3.3}
+\tag{12.1.3.3}
+  \xymatrix{
+    \Gamma(X,\sh{F})\ar[r]\ar[d]_\mu
+      & \Gamma(X',\psi^*(\sh{F}))\ar[d]^{\mu'}\\
+    \Gamma(X,\sh{F})\ar[r]
+      & \Gamma(X',\psi^*(\sh{F}))
+  }
+\]
+é comutativo.
+\oldpage[0\textsubscript{III}]{51}
+Pela propriedade de unicidade para prolongar morfismos de funtores
+cohomológicos universais (T, 2.2), obtêm-se prolongações únicas de
+$\mu$ e $\mu'$ à cohomologia que fazem comutativos os diagramas
+análogos a \sref{0.12.1.3.3}.
+Assim, \sref{0.12.1.3.2} é um homomorfismo de $A$-módulos.
+
+Observemos agora que
+\[
+  f^*(\sh{F})
+  =
+  \psi^*(\sh{F})
+  \otimes_{\psi^*(\sh{O}_X)}
+  \sh{O}_{X'},
+\]
+e, portanto, que existe um dihomomorfismo canônico
+\[
+  \psi^*(\sh{F})\longrightarrow f^*(\sh{F})
+\]
+do $\psi^*(\sh{O}_X)$-módulo $\psi^*(\sh{F})$ no
+$\sh{O}_{X'}$-módulo $f^*(\sh{F})$.
+Por funtorialidade, obtém-se, pois, um dihomomorfismo funtorial
+\[
+\label{0.12.1.3.4}
+\tag{12.1.3.4}
+  \HH^p(X',\psi^*(\sh{F}))
+  \longrightarrow
+  \HH^p(X',f^*(\sh{F})),
+\]
+sendo $A$ e $A'$ os anéis correspondentes.
+Compondo este dihomomorfismo com \sref{0.12.1.3.2}, obtém-se um
+dihomomorfismo canônico, funtorial em $\sh{F}$,
+\[
+\label{0.12.1.3.5}
+\tag{12.1.3.5}
+  \theta_p:\HH^p(X,\sh{F})
+  \longrightarrow
+  \HH^p(X',f^*(\sh{F})).
+\]
+
+Finalmente, por funtorialidade, o homomorfismo
+$u^\sharp:f^*(\sh{F})\to\sh{F}'$ dá um homomorfismo de
+$A'$-módulos
+\[
+  \HH^p(X',f^*(\sh{F}))
+  \longrightarrow
+  \HH^p(X',\sh{F}'),
+\]
+que, composto com \sref{0.12.1.3.5}, dá
+\sref{0.12.1.3.1}.
+
+Seja $f'=(\psi',\theta'):X''\to X'$ um segundo morfismo de espaços
+anelados, e seja $f''=f\circ f'$ o morfismo composto.
+Levando em conta a compatibilidade do funtor $\psi'^*$ com os
+produtos tensoriais \sref[0\textsubscript{I}]{0.4.3.3}, verifica-se
+imediatamente que o composto do dihomomorfismo
+\[
+  \HH^p(X',f^*(\sh{F}))
+  \longrightarrow
+  \HH^p\bigl(X'',f'^*(f^*(\sh{F}))\bigr)
+\]
+com \sref{0.12.1.3.5} é o dihomomorfismo correspondente
+\[
+  \HH^p(X,\sh{F})
+  \longrightarrow
+  \HH^p(X'',f''^*(\sh{F})).
+\]
+\end{env}
+
+\begin{env}[12.1.4]
+\label{0.12.1.4}
+Pode-se dar uma definição direta do homomorfismo
+\sref{0.12.1.3.2} como segue.
+Tomemos uma resolução injetiva
+$\sh{L}^\bullet=(\sh{L}^i)$ de $\sh{F}$ constituída por feixes de
+grupos abelianos sobre $X$.
+Como o funtor $\psi^*$ é exato,
+$\psi^*(\sh{L}^\bullet)$ é uma resolução de $\psi^*(\sh{F})$
+constituída por feixes sobre $X'$.
+Se $\sh{L}'^\bullet=(\sh{L}'^i)$ é uma resolução injetiva de
+$\psi^*(\sh{F})$ na categoria de feixes de grupos abelianos sobre
+$X'$, existe um morfismo
+\[
+  \psi^*(\sh{L}^\bullet)\longrightarrow\sh{L}'^\bullet
+\]
+de complexos de feixes de grupos abelianos, compatível com os
+aumentos (M, V, 1.1.a), e determinado salvo homotopia.
+Obtêm-se assim homomorfismos
+\[
+  \Gamma(X,\sh{L}^\bullet)
+  \longrightarrow
+  \Gamma(X',\psi^*(\sh{L}^\bullet))
+  \longrightarrow
+  \Gamma(X',\sh{L}'^\bullet)
+\]
+de complexos de grupos abelianos.
+Seu composto, ao passar à cohomologia, dá um morfismo de
+$\delta$-funtores
+\[
+  \HH^\bullet(X,\sh{F})
+  \longrightarrow
+  \HH^\bullet(X',\psi^*(\sh{F}));
+\]
+como coincide com \sref{0.12.1.3.2} em grau $0$, é idêntico a ele
+(T, 2.2).
+
+Consideremos agora um recobrimento aberto
+$\mathfrak{U}=(U_\alpha)$ de $X$, e seja
+$\mathfrak{U}'=(f^{-1}(U_\alpha))$ o recobrimento aberto por imagens inversas
+de $X'$.
+Para todo subconjunto aberto $V$ de $X$, os homomorfismos canônicos
+\[
+  \Gamma(V,\sh{F})
+  \longrightarrow
+  \Gamma(f^{-1}(V),f^*(\sh{F}))
+\]
+definem imediatamente (cf.\ G, II, 5.1) um homomorfismo de complexos
+\[
+  \check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{F})
+  \longrightarrow
+  \check{\mathrm{C}}^\bullet(\mathfrak{U}',f^*(\sh{F})),
+\]
+e, portanto, homomorfismos canônicos
+\[
+\label{0.12.1.4.1}
+\tag{12.1.4.1}
+  \theta_p:
+  \check{\HH}^p(\mathfrak{U},\sh{F})
+  \longrightarrow
+  \check{\HH}^p(\mathfrak{U}',f^*(\sh{F})).
+\]
+
+\oldpage[0\textsubscript{III}]{52}
+Além disso, existem diagramas comutativos
+\[
+\label{0.12.1.4.2}
+\tag{12.1.4.2}
+  \xymatrix{
+    \check{\HH}^p(\mathfrak{U},\sh{F})
+      \ar[r]^-{\theta_p}\ar[d]
+      & \check{\HH}^p(\mathfrak{U}',f^*(\sh{F}))\ar[d]\\
+    \HH^p(X,\sh{F})
+      \ar[r]_-{\theta_p}
+      & \HH^p(X',f^*(\sh{F})),
+  }
+\]
+onde as setas verticais são os homomorfismos canônicos de
+(G, II, 5.2).
+Para demonstrar a comutatividade de \sref{0.12.1.4.2}, consideremos o
+complexo de feixes de cocadeias alternadas de $\sh{F}$ relativo a
+$\mathfrak{U}$,
+$\sh{C}^\bullet(\mathfrak{U},\sh{F})$, para o qual
+\[
+  \Gamma\bigl(X,\sh{C}^\bullet(\mathfrak{U},\sh{F})\bigr)
+  =
+  \check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{F})
+\]
+(G, II, 5.2).
+Os homomorfismos canônicos
+\[
+  \Gamma(V,\sh{F})
+  \longrightarrow
+  \Gamma(f^{-1}(V),\psi^*(\sh{F}))
+\]
+definem então um $\psi$-morfismo
+\[
+  \sh{C}^\bullet(\mathfrak{U},\sh{F})
+  \longrightarrow
+  \sh{C}^\bullet(\mathfrak{U}',\psi^*(\sh{F})),
+\]
+e, com a notação precedente, existe um diagrama comutativo
+\[
+  \xymatrix{
+    \Gamma\bigl(X,\sh{C}^\bullet(\mathfrak{U},\sh{F})\bigr)
+      \ar[r]\ar[d]
+      & \Gamma\bigl(X',
+          \sh{C}^\bullet(\mathfrak{U}',\psi^*(\sh{F}))\bigr)\ar[d]\\
+    \Gamma(X,\sh{L}^\bullet)\ar[r]
+      & \Gamma(X',\psi^*(\sh{L}^\bullet))\ar[r]
+      & \Gamma(X',\sh{L}'^\bullet).
+  }
+\]
+Ao passar à cohomologia, obtêm-se diagramas comutativos
+\[
+  \xymatrix{
+    \check{\HH}^p(\mathfrak{U},\sh{F})\ar[r]\ar[d]
+      & \check{\HH}^p(\mathfrak{U}',\psi^*(\sh{F}))\ar[d]\\
+    \HH^p(X,\sh{F})\ar[r]
+      & \HH^p(X',\psi^*(\sh{F})),
+  }
+\]
+onde as setas verticais são os homomorfismos canônicos de
+(G, II, 5.2).
+Basta combinar estes diagramas com os diagramas comutativos
+\[
+  \xymatrix{
+    \check{\HH}^p(\mathfrak{U}',\psi^*(\sh{F}))\ar[r]\ar[d]
+      & \check{\HH}^p(\mathfrak{U}',f^*(\sh{F}))\ar[d]\\
+    \HH^p(X',\psi^*(\sh{F}))\ar[r]
+      & \HH^p(X',f^*(\sh{F})),
+  }
+\]
+\oldpage[0\textsubscript{III}]{53}
+que provêm do homomorfismo
+$\psi^*(\sh{F})\to f^*(\sh{F})$ e da funtorialidade dos
+homomorfismos canônicos de (G, II, 5.2), para obter a comutatividade
+de \sref{0.12.1.4.2}.
+
+Observemos que se
+$A=\Gamma(X,\sh{O}_X)$ e $A'=\Gamma(X',\sh{O}_{X'})$, então
+\sref{0.12.1.4.1} é um dihomomorfismo de módulos correspondente aos
+anéis $A$ e $A'$.
+Existe para \sref{0.12.1.4.1} uma propriedade de transitividade com respeito
+a um composto de dois morfismos, análoga à de
+\sref{0.12.1.3.5}.
+Finalmente, nas definições precedentes, em lugar de uma resolução
+injetiva $\sh{L}^\bullet$ de $\sh{F}$, poder-se-ia ter partido igualmente
+de uma resolução tal que
+\[
+  \HH^p(X,\sh{L}^i)=0
+  \qquad\text{para todo $i$ e todo $p>0$}
+\]
+(G, II, 4.7.1).
+\end{env}
+
+\begin{env}[12.1.5]
+\label{0.12.1.5}
+Sejam $\sh{F},\sh{G},\sh{H}$ três $\sh{O}_X$-módulos, e consideremos
+um $\sh{O}_X$-homomorfismo
+\[
+  u:\sh{F}\otimes_{\sh{O}_X}\sh{G}\longrightarrow\sh{H},
+\]
+que dá, em cohomologia, os homomorfismos
+\[
+\label{0.12.1.5.1}
+\tag{12.1.5.1}
+  \HH^p(X,\sh{F})\otimes_A\HH^q(X,\sh{G})
+  \longrightarrow
+  \HH^{p+q}(X,\sh{H})
+\]
+deduzidos do produto cup \sref{0.12.1.2.1}.
+Demonstraremos que, sob as hipóteses e com a notação de
+\sref{0.12.1.3}, os diagramas
+\[
+\label{0.12.1.5.2}
+\tag{12.1.5.2}
+  \xymatrix@C=10pt{
+    \HH^p(X,\sh{F})\otimes_A\HH^q(X,\sh{G})
+      \ar[r]\ar[d]
+      & \HH^{p+q}(X,\sh{H})\ar[d]\\
+    \HH^p(X',f^*(\sh{F}))\otimes_{A'}
+      \HH^q(X',f^*(\sh{G}))
+      \ar[r]
+      & \HH^{p+q}(X',f^*(\sh{H}))
+  }
+\]
+são comutativos, onde as setas verticais provêm dos
+homomorfismos canônicos \sref{0.12.1.3.5}.
+
+Lembremos para isso que \sref{0.12.1.5.1} pode ser obtido a partir das
+resoluções canônicas (G, II, 4.3)
+$\sh{L}^\bullet,\sh{M}^\bullet,\sh{N}^\bullet$ de
+$\sh{F},\sh{G},\sh{H}$ respectivamente, que estão constituídas por
+$\sh{O}_X$-módulos, e da aplicação linear
+\[
+  \sh{L}^\bullet\otimes_{\sh{O}_X}\sh{M}^\bullet
+  \longrightarrow
+  \sh{N}^\bullet
+\]
+de complexos de $\sh{O}_X$-módulos correspondente a $u$.
+Esta aplicação proporciona um homomorfismo de complexos de $A$-módulos
+\[
+  \Gamma(X,\sh{L}^\bullet)\otimes_A\Gamma(X,\sh{M}^\bullet)
+  \longrightarrow
+  \Gamma(X,\sh{N}^\bullet),
+\]
+e, portanto, ao passar à cohomologia, homomorfismos
+\[
+  \HH^p\bigl(\Gamma(X,\sh{L}^\bullet)\bigr)
+  \otimes_A
+  \HH^q\bigl(\Gamma(X,\sh{M}^\bullet)\bigr)
+  \longrightarrow
+  \HH^{p+q}\bigl(\Gamma(X,\sh{N}^\bullet)\bigr)
+\]
+(G, II, 6.6).
+Existe claramente um diagrama comutativo
+\[
+\label{0.12.1.5.3}
+\tag{12.1.5.3}
+  \xymatrix@C=8pt{
+    \Gamma(X,\sh{L}^\bullet)\otimes_A
+      \Gamma(X,\sh{M}^\bullet)
+      \ar[r]\ar[d]
+      & \Gamma(X,\sh{N}^\bullet)\ar[d]\\
+    \Gamma(X',\psi^*(\sh{L}^\bullet))
+      \otimes_{\Gamma(X',\psi^*(\sh{O}_X))}
+      \Gamma(X',\psi^*(\sh{M}^\bullet))
+      \ar[r]
+      & \Gamma(X',\psi^*(\sh{N}^\bullet)).
+  }
+\]
+\oldpage[0\textsubscript{III}]{54}
+Ao passar à cohomologia, obtêm-se diagramas comutativos
+\[
+\label{0.12.1.5.4}
+\tag{12.1.5.4}
+  \xymatrix@C=7pt{
+    \HH^p(X,\sh{F})\otimes_A\HH^q(X,\sh{G})
+      \ar[r]\ar[d]
+      & \HH^{p+q}(X,\sh{H})\ar[d]\\
+    \HH^p\bigl(\Gamma(X',\psi^*(\sh{L}^\bullet))\bigr)
+      \otimes_{\Gamma(X',\psi^*(\sh{O}_X))}
+      \HH^q\bigl(\Gamma(X',\psi^*(\sh{M}^\bullet))\bigr)
+      \ar[r]
+      & \HH^{p+q}\bigl(\Gamma(X',\psi^*(\sh{N}^\bullet))\bigr).
+  }
+\]
+Mas como
+$\psi^*(\sh{L}^\bullet)$,
+$\psi^*(\sh{M}^\bullet)$, e
+$\psi^*(\sh{N}^\bullet)$
+são resoluções de
+$\psi^*(\sh{F})$,
+$\psi^*(\sh{G})$, e
+$\psi^*(\sh{H})$ respectivamente, existe um diagrama comutativo
+(G, II, 6.6.1)
+\[
+\label{0.12.1.5.5}
+\tag{12.1.5.5}
+  \xymatrix@C=7pt{
+    \HH^p\bigl(\Gamma(X',\psi^*(\sh{L}^\bullet))\bigr)
+      \otimes_{\Gamma(X',\psi^*(\sh{O}_X))}
+      \HH^q\bigl(\Gamma(X',\psi^*(\sh{M}^\bullet))\bigr)
+      \ar[r]\ar[d]
+      & \HH^{p+q}\bigl(\Gamma(X',\psi^*(\sh{N}^\bullet))\bigr)
+        \ar[d]\\
+    \HH^p(X',\psi^*(\sh{F}))
+      \otimes_{\Gamma(X',\psi^*(\sh{O}_X))}
+      \HH^q(X',\psi^*(\sh{G}))
+      \ar[r]
+      & \HH^{p+q}(X',\psi^*(\sh{H})).
+  }
+\]
+Finalmente, por funtorialidade, existe um diagrama comutativo
+\[
+\label{0.12.1.5.6}
+\tag{12.1.5.6}
+  \xymatrix@C=7pt{
+    \HH^p(X',\psi^*(\sh{F}))
+      \otimes_{\Gamma(X',\psi^*(\sh{O}_X))}
+      \HH^q(X',\psi^*(\sh{G}))
+      \ar[r]\ar[d]
+      & \HH^{p+q}(X',\psi^*(\sh{H}))\ar[d]\\
+    \HH^p(X',f^*(\sh{F}))\otimes_{A'}
+      \HH^q(X',f^*(\sh{G}))
+      \ar[r]
+      & \HH^{p+q}(X',f^*(\sh{H})).
+  }
+\]
+Combinando os três diagramas \sref{0.12.1.5.4},
+\sref{0.12.1.5.5} e \sref{0.12.1.5.6}, obtém-se o diagrama
+comutativo desejado \sref{0.12.1.5.2}.
+\end{env}
+
+\begin{remark}[12.1.6]
+\label{0.12.1.6}
+\oldpage[0\textsubscript{III}]{55}
+Com a notação de \sref{0.12.1.3}, suponhamos que existe um
+diagrama comutativo
+\[
+\label{0.12.1.6.1}
+\tag{12.1.6.1}
+  \xymatrix{
+    0\ar[r] & \sh{F}\ar[r]^r\ar[d]_u
+      & \sh{G}\ar[r]^s\ar[d]_v
+      & \sh{H}\ar[r]\ar[d]_w & 0\\
+    0\ar[r] & \sh{F}'\ar[r]_{r'}
+      & \sh{G}'\ar[r]_{s'}
+      & \sh{H}'\ar[r] & 0,
+  }
+\]
+onde $r,s$ são homomorfismos de $\sh{O}_X$-módulos,
+$r',s'$ são homomorfismos de $\sh{O}_{X'}$-módulos,
+$u,v,w$ são $f$-morfismos, e as linhas são exatas.
+Segue-se que o diagrama
+\[
+\label{0.12.1.6.2}
+\tag{12.1.6.2}
+  \xymatrix@C=6pt{
+    \cdots\ar[r]
+      & \HH^p(X,\sh{F})\ar[r]\ar[d]_{u_p}
+      & \HH^p(X,\sh{G})\ar[r]\ar[d]_{v_p}
+      & \HH^p(X,\sh{H})\ar[r]^-\partial\ar[d]_{w_p}
+      & \HH^{p+1}(X,\sh{F})\ar[r]\ar[d]_{u_{p+1}}
+      & \cdots\\
+    \cdots\ar[r]
+      & \HH^p(X',\sh{F}')\ar[r]
+      & \HH^p(X',\sh{G}')\ar[r]
+      & \HH^p(X',\sh{H}')\ar[r]_-\partial
+      & \HH^{p+1}(X',\sh{F}')\ar[r]
+      & \cdots
+  }
+\]
+é comutativo.
+Com efeito, \sref{0.12.1.6.1} se fatora como
+\[
+  \xymatrix@R=14pt{
+    0\ar[r] & \sh{F}\ar[r]\ar[d]
+      & \sh{G}\ar[r]\ar[d]
+      & \sh{H}\ar[r]\ar[d] & 0\\
+    0\ar[r] & \psi^*(\sh{F})\ar[r]\ar[d]
+      & \psi^*(\sh{G})\ar[r]\ar[d]
+      & \psi^*(\sh{H})\ar[r]\ar[d] & 0\\
+    0\ar[r] & \sh{F}'\ar[r]
+      & \sh{G}'\ar[r]
+      & \sh{H}'\ar[r] & 0,
+  }
+\]
+onde a linha intermediária é exata
+\sref[0\textsubscript{I}]{0.3.7.2}.
+Basta então utilizar o fato de que \sref{0.12.1.3.2} é um
+homomorfismo de $\delta$-funtores e que os
+$\HH^p(X',\sh{F}')$ formam um $\delta$-funtor em $\sh{F}'$.
+\end{remark}
+
+\begin{env}[12.1.7]
+\label{0.12.1.7}
+Com as hipóteses e a notação de \sref{0.12.1.3}, consideremos agora o
+caso
+\[
+  \sh{F}=f_*(\sh{F}')=\psi_*(\sh{F}').
+\]
+Veremos que o dihomomorfismo definido em \sref{0.12.1.3},
+\[
+  \HH^p(X,f_*(\sh{F}'))\longrightarrow\HH^p(X',\sh{F}'),
+  \tag{12.1.7.1}
+  \label{0.12.1.7.1}
+\]
+pode ser obtido (salvo um automorfismo de $\HH^p(X',\sh{F}')$) como um
+homomorfismo de bordo de uma sucessão espectral para o funtor composto
+\[
+  \sh{F}'\leadsto\Gamma(X,\psi_*(\sh{F}'))
+\]
+(T, 2.4).
+A descrição de \sref{0.12.1.7.1} dada em \sref{0.12.1.4} mostra
+aqui que este homomorfismo pode ser obtido como segue.
+Tomemos resoluções injetivas $\sh{L}^\bullet$ e
+${\sh{L}'}^\bullet$ de $\psi_*(\sh{F}')$ e $\sh{F}'$,
+respectivamente, e depois um homomorfismo de complexos
+\[
+  v:\psi^*(\sh{L}^\bullet)\longrightarrow{\sh{L}'}^\bullet
+\]
+``acima'' do homomorfismo canônico
+$\psi^*(\psi_*(\sh{F}'))\to\sh{F}'$.
+\oldpage[0\textsubscript{III}]{56}
+Observemos em seguida que
+\[
+  \Gamma(X',{\sh{L}'}^\bullet)
+  =\Gamma(X,\psi_*({\sh{L}'}^\bullet))
+\]
+e que o homomorfismo composto
+\[
+  \Gamma(X,\sh{L}^\bullet)
+  \longrightarrow\Gamma(X',\psi^*(\sh{L}^\bullet))
+  \xrightarrow{\Gamma(v)}\Gamma(X',{\sh{L}'}^\bullet)
+\]
+não é senão
+\[
+  \Gamma(v^\flat):
+  \Gamma(X,\sh{L}^\bullet)
+  \longrightarrow\Gamma(X,\psi_*({\sh{L}'}^\bullet))
+  \tag{12.1.7.2}
+  \label{0.12.1.7.2}
+\]
+\sref[0\textsubscript{I}]{0.3.7.1}; e \sref{0.12.1.7.1} se
+obtém passando à cohomologia em \sref{0.12.1.7.2}.
+
+Por outro lado, as sucessões espectrais para o funtor composto
+\[
+  \sh{F}'\leadsto\Gamma(X,\psi_*(\sh{F}'))
+\]
+são obtidas tomando uma resolução injetiva de Cartan--Eilenberg
+\[
+  \sh{M}^{\bullet\bullet}=(\sh{M}^{ij})
+\]
+do complexo $\psi_*({\sh{L}'}^\bullet)$ na categoria de
+feixes de grupos abelianos sobre $X$.
+As sucessões espectrais em questão são as do bicomplexo
+$\Gamma(X,\sh{M}^{\bullet\bullet})$; são birregulares, pois
+$\sh{M}^{ij}=0$ para $i<0$ ou $j<0$.
+Ora, a primeira sucessão espectral deste bicomplexo degenera, pois
+os feixes $\psi_*({\sh{L}'}^i)$ são flácidos (G, II, 3.1.1), e
+portanto
+\[
+  \HH_\mathrm{II}^q
+    \bigl(\Gamma(X,\sh{M}^{i,\bullet})\bigr)
+  =\HH^q\bigl(\psi_*({\sh{L}'}^i)\bigr)=0
+  \qquad(q>0)
+\]
+(G, II, 4.4.3).
+Por conseguinte, existem homomorfismos de bordo bijetivos
+\sref{0.11.1.6}
+\[
+  {}'E_2^{i0}
+  =\HH^i\!\left(
+      \HH_\mathrm{II}^0
+        \bigl(\Gamma(X,\sh{M}^{\bullet\bullet})\bigr)
+    \right)
+  \longrightarrow
+  \HH^i\bigl(\Gamma(X,\sh{M}^{\bullet\bullet})\bigr),
+  \tag{12.1.7.3}
+  \label{0.12.1.7.3}
+\]
+e sabemos por \sref{0.11.3.4} que este homomorfismo provém, ao passar
+à cohomologia, do aumento
+\[
+  \Gamma(X,\psi_*({\sh{L}'}^\bullet))
+  \longrightarrow\Gamma(X,\sh{M}^{\bullet\bullet}),
+  \tag{12.1.7.4}
+  \label{0.12.1.7.4}
+\]
+que, por sua vez, provém do aumento
+\[
+  \eta:\psi_*({\sh{L}'}^\bullet)
+  \longrightarrow\sh{M}^{\bullet\bullet}.
+\]
+
+Por outro lado, para a segunda sucessão espectral, existem homomorfismos
+de bordo
+\[
+  {}''E_2^{i0}
+  =\HH^i\!\left(
+      \HH_\mathrm{I}^0
+        \bigl(\Gamma(X,\sh{M}^{\bullet\bullet})\bigr)
+    \right)
+  \longrightarrow
+  \HH^i\bigl(\Gamma(X,\sh{M}^{\bullet\bullet})\bigr),
+  \tag{12.1.7.5}
+  \label{0.12.1.7.5}
+\]
+que provêm, por \sref{0.11.3.4}, ao passar à cohomologia, do
+homomorfismo de complexos
+\[
+  Z_\mathrm{I}^0
+    \bigl(\Gamma(X,\sh{M}^{\bullet\bullet})\bigr)
+  \longrightarrow\Gamma(X,\sh{M}^{\bullet\bullet}).
+\]
+Como $\psi_*$ é exato à esquerda, a sucessão
+\[
+  0\longrightarrow\psi_*(\sh{F}')
+  \longrightarrow\psi_*({\sh{L}'}^0)
+  \longrightarrow\psi_*({\sh{L}'}^1)
+\]
+é exata.
+Pela definição de uma resolução de Cartan--Eilenberg
+\sref{0.11.4.2}, podemos tomar, portanto,
+\[
+  B_\mathrm{I}^0(\sh{M}^{\bullet\bullet})=0,
+  \qquad
+  Z_\mathrm{I}^0(\sh{M}^{\bullet\bullet})=\sh{L}^\bullet.
+\]
+Como o diagrama
+\[
+  \xymatrix@C=50pt@R=24pt{
+    \sh{L}^0\ar[r]^{i^0}
+      & \sh{M}^{00}\\
+    \psi_*(\sh{F}')\ar[u]^\varepsilon
+      \ar[r]_{\varepsilon'}\ar[ur]^{\varepsilon''}
+      & \psi_*({\sh{L}'}^0)\ar[u]_{\eta^0}
+  }
+\]
+é comutativo, a injeção de complexos
+$i:\sh{L}^\bullet\to\sh{M}^{\bullet\bullet}$ é compatível com os
+aumentos $\varepsilon$ e $\varepsilon''$.
+Existem, pois, dois homomorfismos de complexos de $\sh{L}^\bullet$
+em $\sh{M}^{\bullet\bullet}$,
+\[
+  \xymatrix@C=52pt@R=22pt{
+    \sh{L}^\bullet\ar[r]^i\ar[dr]_{v^\flat}
+      & \sh{M}^{\bullet\bullet}\\
+    & \psi_*({\sh{L}'}^\bullet)\ar[u]_\eta
+  }
+\]
+\oldpage[0\textsubscript{III}]{57}
+compatíveis com os aumentos $\varepsilon$ e
+$\varepsilon''$.
+Como $\sh{L}^\bullet$ é uma resolução injetiva e
+$\sh{M}^{\bullet\bullet}$ está constituído por feixes injetivos, segue-se
+de (M, V, 1.1(a)) que estes dois homomorfismos são homotópicos.
+O mesmo vale, portanto, para os dois homomorfismos correspondentes
+\[
+  \Gamma(X,\sh{L}^\bullet)
+  \longrightarrow\Gamma(X,\sh{M}^{\bullet\bullet}),
+\]
+e, ao passar à cohomologia, dão por conseguinte o mesmo
+homomorfismo.
+Em outras palavras, temos demonstrado que o homomorfismo de bordo
+\sref{0.12.1.7.5}, escrito
+\[
+  \HH^p(X,\psi_*(\sh{F}'))
+  \longrightarrow\HH^p\bigl(\Gamma(X,\sh{M}^{\bullet\bullet})\bigr),
+\]
+é o composto de \sref{0.12.1.7.1} e
+\sref{0.12.1.7.3}, estando este último escrito
+\[
+  \HH^p(X',\sh{F}')
+  \longrightarrow\HH^p\bigl(\Gamma(X,\sh{M}^{\bullet\bullet})\bigr)
+\]
+e tendo-se visto que é um isomorfismo.
+Isto demonstra a asserção.
+\end{env}
+
+\subsection{Imagens diretas superiores}
+\label{subsection:0.12.2}
+
+\begin{env}[12.2.1]
+\label{0.12.2.1}
+Sejam $(X,\sh{O}_X)$ e $(Y,\sh{O}_Y)$ dois espaços anelados, e seja
+$f=(\psi,\theta)$ um morfismo de $X$ em $Y$.  Esse morfismo define o funtor imagem
+direta
+\[
+  f_*:\cat{C}(X)\longrightarrow\cat{C}(Y),
+\]
+que é além disso idêntico à restrição a $\cat{C}(X)$ do
+funtor $\psi_*$ definido sobre a categoria de feixes de grupos abelianos
+em $X$.
+Este último funtor é aditivo e exato à esquerda; e como todo feixe de
+grupos abelianos sobre $X$ é isomorfo a um subfeixe de um feixe injetivo
+de grupos abelianos, definem-se os funtores derivados à direita
+\[
+  \sh{F}\longmapsto\RR^p\psi_*(\sh{F})
+\]
+de $\psi_*$.  Os $\RR^p\psi_*(\sh{F})$ são feixes de grupos abelianos
+sobre $Y$, e os $\RR^p\psi_*$ formam um funtor cohomológico universal
+(T, 2.3).
+
+Além disso, $\RR^p\psi_*(\sh{F})$ é o feixe associado ao
+pré-feixe
+\[
+  V\longmapsto\HH^p(f^{-1}(V),\sh{F})
+\]
+(T, 3.7.2).
+Suponhamos agora que $\sh{F}$ é um $\sh{O}_X$-módulo.
+Então $\HH^p(f^{-1}(V),\sh{F})$ está dotado naturalmente da estrutura
+de $\Gamma(f^{-1}(V),\sh{O}_X)$-módulo, e portanto da de
+$\Gamma(V,\psi_*(\sh{O}_X))$-módulo; o homomorfismo
+\[
+  \theta:\sh{O}_Y\longrightarrow\psi_*(\sh{O}_X)
+\]
+dota-o então da estrutura de
+$\Gamma(V,\sh{O}_Y)$-módulo.
+Para as estruturas assim definidas, a restrição de um subconjunto aberto
+$V$ a um subconjunto aberto $V'\subset V$ define um dihomomorfismo.  Isto
+define, portanto, sobre todo $\RR^p\psi_*(\sh{F})$ a estrutura de um
+$\sh{O}_Y$-módulo.  Denotamos este $\sh{O}_Y$-módulo por
+$\RR^p f_*(\sh{F})$; assim, $\RR^p f_*$ fica definido como um funtor
+aditivo de $\cat{C}(X)$ em $\cat{C}(Y)$.
+
+Além disso, os $\RR^p f_*$ formam um $\delta$-funtor.  Com efeito, se
+\[
+  0\longrightarrow\sh{F}'\longrightarrow\sh{F}
+  \longrightarrow\sh{F}''\longrightarrow0
+\]
+é uma sucessão exata de $\sh{O}_X$-módulos, a descrição precedente
+dos $\RR^p\psi_*$ e da estrutura de $\sh{O}_Y$-módulo sobre
+$\RR^p\psi_*(\sh{F})$ mostra imediatamente que o homomorfismo de conexão
+\[
+  \partial:\RR^p\psi_*(\sh{F}'')
+  \longrightarrow\RR^{p+1}\psi_*(\sh{F}')
+\]
+é um homomorfismo de $\sh{O}_Y$-módulos.
+Finalmente, os $\RR^p f_*$ identificam-se com os funtores derivados à
+direita de $f_*$.  Todo $\sh{O}_X$-módulo admite uma resolução injetiva por
+$\sh{O}_X$-módulos, e tal resolução está constituída por feixes flácidos
+de grupos abelianos (G, II, 7.1); pode, portanto, ser utilizada para calcular
+os $\RR^p\psi_*(\sh{F})$, pois $\RR^n\psi_*(\sh{G})=0$ para $n\geq1$
+para todo feixe flácido $\sh{G}$ (T, 2.4.1, Observação~3, e o
+ corolário da Proposição~\EGAUnavailableHyperref{0.3.3.2}{3.3.2}).
+Segue-se que os $\RR^p f_*$ formam um funtor cohomológico universal
+de $\cat{C}(X)$ em $\cat{C}(Y)$ (T, 2.3).
+\end{env}
+
+\begin{env}[12.2.2]
+\label{0.12.2.2}
+Sejam $\sh{F}$ e $\sh{G}$ dois $\sh{O}_X$-módulos.
+Com a notação de \sref{0.12.2.1}, para todo subconjunto aberto $V$ de
+$Y$ existe o homomorfismo de produto cup \sref{0.12.1.2.1}
+\[
+  \begin{aligned}
+  &\HH^p(f^{-1}(V),\sh{F})
+    \otimes_{\Gamma(f^{-1}(V),\sh{O}_X)}
+    \HH^q(f^{-1}(V),\sh{G})\\
+  &\hspace{55mm}\longrightarrow
+    \HH^{p+q}\bigl(f^{-1}(V),
+      \sh{F}\otimes_{\sh{O}_X}\sh{G}\bigr).
+  \end{aligned}
+\]
+\oldpage[0\textsubscript{III}]{58}
+Segue-se imediatamente da definição do produto cup
+(G, II, 6.6) que estes homomorfismos comutam com a restrição de
+$V$ a um subespaço aberto $V'$ de $V$.
+Por outro lado, $\theta$ dá um homomorfismo de anéis
+\[
+  \Gamma(V,\sh{O}_Y)
+  \longrightarrow\Gamma(V,\psi_*(\sh{O}_X))
+  =\Gamma(f^{-1}(V),\sh{O}_X),
+\]
+e, portanto, um homomorfismo canônico de produtos tensoriais
+\[
+  \begin{aligned}
+  &\HH^p(f^{-1}(V),\sh{F})
+    \otimes_{\Gamma(V,\sh{O}_Y)}
+    \HH^q(f^{-1}(V),\sh{G})\\
+  &\quad\longrightarrow
+    \HH^p(f^{-1}(V),\sh{F})
+    \otimes_{\Gamma(f^{-1}(V),\sh{O}_X)}
+    \HH^q(f^{-1}(V),\sh{G}),
+  \end{aligned}
+\]
+que é igualmente compatível com a restrição de $V$ a $V'$.
+Por composição, obtém-se assim um homomorfismo de
+$\Gamma(V,\sh{O}_Y)$-módulos.  Para os feixes associados aos
+pré-feixes em questão, define um homomorfismo canônico,
+funtorial em $\sh{F}$ e $\sh{G}$,
+\[
+  \RR^p f_*(\sh{F})\otimes_{\sh{O}_Y}\RR^q f_*(\sh{G})
+  \longrightarrow
+  \RR^{p+q}f_*
+    \bigl(\sh{F}\otimes_{\sh{O}_X}\sh{G}\bigr).
+  \tag{12.2.2.1}
+  \label{0.12.2.2.1}
+\]
+Para $p=q=0$, este homomorfismo reduz-se a
+\sref[0\textsubscript{I}]{0.4.2.2.1}.
+\end{env}
+
+\begin{proposition}[12.2.3]
+\label{0.12.2.3}
+Para todo $\sh{O}_X$-módulo $\sh{F}$ e todo $\sh{O}_Y$-módulo
+$\sh{L}$ localmente livre de posto finito, existem isomorfismos canônicos
+funtoriais
+\[
+  \RR^p f_*(\sh{F})\otimes_{\sh{O}_Y}\sh{L}
+  \simto
+  \RR^p f_*
+    \bigl(\sh{F}\otimes_{\sh{O}_X}f^*(\sh{L})\bigr).
+  \tag{12.2.3.1}
+  \label{0.12.2.3.1}
+\]
+\end{proposition}
+
+\begin{proof}
+O homomorfismo \sref{0.12.2.3.1} é obtido compondo o
+seguinte caso particular de \sref{0.12.2.2.1},
+\[
+  \RR^p f_*(\sh{F})
+    \otimes_{\sh{O}_Y}f_*\bigl(f^*(\sh{L})\bigr)
+  \longrightarrow
+  \RR^p f_*
+    \bigl(\sh{F}\otimes_{\sh{O}_X}f^*(\sh{L})\bigr),
+  \tag{12.2.3.2}
+  \label{0.12.2.3.2}
+\]
+com o homomorfismo do primeiro membro de
+\sref{0.12.2.3.1} ao de \sref{0.12.2.3.2} induzido pelo
+homomorfismo canônico \sref[0\textsubscript{I}]{0.4.4.3.2}.
+Para verificar que \sref{0.12.2.3.1} é um isomorfismo quando $\sh{L}$ é
+localmente livre, pode reduzir-se imediatamente ao caso
+$\sh{L}=\sh{O}_Y$, pois a questão é local sobre $Y$ e os
+funtores em questão são aditivos em $\sh{L}$.
+Nesse caso, em vista da definição de \sref{0.12.2.2.1}, a
+proposição reduz-se a verificar que o homomorfismo correspondente
+de pré-feixes é bijetivo; isto segue-se imediatamente de
+$f^*(\sh{O}_Y)=\sh{O}_X$.
+\end{proof}
+
+\begin{env}[12.2.4]
+\label{0.12.2.4}
+Seja $(Z,\sh{O}_Z)$ um terceiro espaço anelado, e seja
+$g:Y\to Z$ um morfismo de espaços anelados.
+Sabemos (G, II, 7.1 e 3.1.1) que, para todo
+$\sh{O}_X$-módulo injetivo $\sh{G}$, $f_*(\sh{G})$ é um feixe flácido de
+grupos abelianos.  Por conseguinte, por \sref{0.12.2.1},
+\[
+  \RR^p g_*\bigl(f_*(\sh{G})\bigr)=0
+  \qquad(p>0).
+\]
+Segue-se (T, 2.4.1) que a sucessão espectral de Leray para funtores
+compostos se aplica ao composto $g_*\circ f_*$.  Existe uma
+sucessão espectral birregular cujo termo limite é o funtor
+$\RR^\bullet h_*$, onde $h=g\circ f$, e cujo termo $E_2$ é
+\[
+  E_2^{pq}=\RR^p g_*\bigl(\RR^q f_*(\sh{F})\bigr).
+  \tag{12.2.4.1}
+  \label{0.12.2.4.1}
+\]
+\end{env}
+
+\begin{env}[12.2.5]
+\label{0.12.2.5}
+Sob as condições de \sref{0.12.2.4}, definiremos diretamente
+homomorfismos canônicos de $\sh{O}_Z$-módulos
+\[
+  \RR^n g_*\bigl(f_*(\sh{F})\bigr)
+  \longrightarrow\RR^n h_*(\sh{F})
+  \tag{12.2.5.1}
+  \label{0.12.2.5.1}
+\]
+e
+\[
+  \RR^n h_*(\sh{F})
+  \longrightarrow g_*\bigl(\RR^n f_*(\sh{F})\bigr),
+  \tag{12.2.5.2}
+  \label{0.12.2.5.2}
+\]
+\oldpage[0\textsubscript{III}]{59}
+que podem identificar-se com os ``homomorfismos de bordo'' da sucessão
+espectral de Leray (cf.\ \sref{0.12.1.7}).
+Basta trabalhar com os pré-feixes aos quais estão associados os feixes de
+imagens diretas superiores \sref{0.12.2.1}.
+Para isso, seja $W$ um subconjunto aberto qualquer de $Z$, e consideremos
+sua imagem inversa $g^{-1}(W)$ em $Y$.  Existe um
+dihomomorfismo canônico
+\[
+  \begin{aligned}
+  \HH^n\bigl(g^{-1}(W),f_*(\sh{F})\bigr)
+  &\longrightarrow
+  \HH^n\bigl(f^{-1}(g^{-1}(W)),
+    f^*(f_*(\sh{F}))\bigr),
+  \end{aligned}
+  \tag{12.2.5.3}
+  \label{0.12.2.5.3}
+\]
+sendo os anéis correspondentes
+$\Gamma(g^{-1}(W),\sh{O}_Y)$ e
+$\Gamma(h^{-1}(W),\sh{O}_X)$.
+Por outro lado, o homomorfismo canônico
+\sref[0\textsubscript{I}]{0.4.4.3.3} dá, por funtorialidade,
+homomorfismos canônicos
+\[
+  \HH^n\bigl(h^{-1}(W),f^*(f_*(\sh{F}))\bigr)
+  \longrightarrow
+  \HH^n\bigl(h^{-1}(W),\sh{F}\bigr),
+  \tag{12.2.5.4}
+  \label{0.12.2.5.4}
+\]
+que são homomorfismos de
+$\Gamma(h^{-1}(W),\sh{O}_X)$-módulos.
+Levando em conta o homomorfismo de anéis
+\[
+  \Gamma(W,\sh{O}_Z)
+  \longrightarrow\Gamma(g^{-1}(W),\sh{O}_Y),
+\]
+vemos que, compondo \sref{0.12.2.5.3} com
+\sref{0.12.2.5.4}, se obtém um homomorfismo de pré-feixes e, portanto, o
+homomorfismo de feixes \sref{0.12.2.5.1}.
+
+A definição de \sref{0.12.2.5.2} é ainda mais simples.
+Por definição, $\RR^n h_*(\sh{F})$ está associado ao pré-feixe
+\[
+  W\longmapsto
+  \HH^n\bigl(f^{-1}(g^{-1}(W)),\sh{F}\bigr),
+\]
+enquanto que $\RR^n f_*(\sh{F})$ está associado ao pré-feixe
+\[
+  V\longmapsto\HH^n(f^{-1}(V),\sh{F}).
+\]
+Existe, portanto, um homomorfismo canônico
+\[
+  \HH^n\bigl(f^{-1}(g^{-1}(W)),\sh{F}\bigr)
+  \longrightarrow
+  \Gamma\bigl(g^{-1}(W),\RR^n f_*(\sh{F})\bigr),
+\]
+e é imediato que estes homomorfismos definem um homomorfismo de
+pré-feixes, que, por sua vez, define \sref{0.12.2.5.2}.
+\end{env}
+
+\begin{env}[12.2.6]
+\label{0.12.2.6}
+Sob as hipóteses de \sref{0.12.2.4}, sejam $\sh{F}$, $\sh{G}$
+e $\sh{K}$ três $\sh{O}_X$-módulos, e seja
+\[
+  u:\sh{F}\otimes_{\sh{O}_X}\sh{G}\longrightarrow\sh{K}
+\]
+um $\sh{O}_X$-homomorfismo.
+Então os diagramas seguintes são comutativos:
+\[
+  \xymatrix@C=10pt@R=24pt{
+    \RR^p g_*(f_*(\sh{F}))
+      \otimes_{\sh{O}_Z}\RR^q g_*(f_*(\sh{G}))
+      \ar[r]\ar[d]
+      & \RR^{p+q}g_*(f_*(\sh{K}))\ar[d]\\
+    \RR^p h_*(\sh{F})
+      \otimes_{\sh{O}_Z}\RR^q h_*(\sh{G})
+      \ar[r]
+      & \RR^{p+q}h_*(\sh{K}),
+  }
+  \tag{12.2.6.1}
+  \label{0.12.2.6.1}
+\]
+e
+\[
+  \xymatrix@C=10pt@R=24pt{
+    \RR^p h_*(\sh{F})
+      \otimes_{\sh{O}_Z}\RR^q h_*(\sh{G})
+      \ar[r]\ar[d]
+      & \RR^{p+q}h_*(\sh{K})\ar[d]\\
+    g_*(\RR^p f_*(\sh{F}))
+      \otimes_{\sh{O}_Z}g_*(\RR^q f_*(\sh{G}))
+      \ar[r]
+      & g_*(\RR^{p+q}f_*(\sh{K})).
+  }
+  \tag{12.2.6.2}
+  \label{0.12.2.6.2}
+\]
+\oldpage[0\textsubscript{III}]{60}
+Aqui as setas horizontais provêm de \sref{0.12.2.2.1} (a última
+combinada com \sref[0\textsubscript{I}]{0.4.2.2.1}), e as setas
+verticais de \sref{0.12.2.5.1} e \sref{0.12.2.5.2}, respectivamente.
+
+Com efeito, basta verificar a asserção para os homomorfismos de pré-feixes
+correspondentes.  Voltando às definições de
+\sref{0.12.2.2} e \sref{0.12.2.5}, reduz-se imediatamente, para
+\sref{0.12.2.6.1}, aos diagramas comutativos
+\sref{0.12.1.5.2}; a verificação é ainda mais simples para
+\sref{0.12.2.6.2}.
+\end{env}
+
+\subsection{Suplementos sobre os funtores Ext de feixes}
+\label{subsection:0.12.3}
+
+\begin{env}[12.3.1]
+\label{0.12.3.1}
+Seja $(X,\sh{O}_X)$ um espaço anelado.
+Não recordaremos a definição nem as propriedades principais dos
+bifuntores
+\[
+  \Ext^p_{\sh{O}_X}(X;\sh{F},\sh{G}),
+  \qquad
+  \shExt^p_{\sh{O}_X}(\sh{F},\sh{G}),
+\]
+o primeiro com valores na categoria de
+$\Gamma(X,\sh{O}_X)$-módulos e o segundo na categoria de
+$\sh{O}_X$-módulos, nem a sucessão espectral birregular
+$E(\sh{F},\sh{G})$ que os relaciona (T, 4.2 e G, II, 7.3).
+\end{env}
+
+\begin{env}[12.3.2]
+\label{0.12.3.2}
+Assim como em (M, XIV, 1), define-se a noção de uma
+\emph{extensão} de um $\sh{O}_X$-módulo $\sh{F}$ por um
+$\sh{O}_X$-módulo $\sh{G}$ e a lei de composição sobre as classes de
+extensões equivalentes: os argumentos utilizados para os módulos
+transportam-se imediatamente para uma categoria abeliana arbitrária.
+A segunda demonstração de (M, XIV, 1.1), que somente utiliza a existência de
+imersões em objetos injetivos, continua sendo, portanto, válida na
+categoria de $\sh{O}_X$-módulos.  Mostra que
+\[
+  \Ext^1_{\sh{O}_X}(X;\sh{F},\sh{G})
+\]
+identifica-se canonicamente com o grupo abeliano de classes de
+extensões de $\sh{F}$ por $\sh{G}$.
+\end{env}
+
+\begin{proposition}[12.3.3]
+\label{0.12.3.3}
+Seja $(X,\sh{O}_X)$ um espaço anelado cujo feixe de anéis
+$\sh{O}_X$ é coerente.
+Então, para todo par de $\sh{O}_X$-módulos coerentes $\sh{F}$ e
+$\sh{G}$ e todo $p\geq0$,
+\[
+  \shExt^p_{\sh{O}_X}(\sh{F},\sh{G})
+\]
+é um $\sh{O}_X$-módulo coerente.
+\end{proposition}
+
+\begin{proof}
+Os $\shExt^p_{\sh{O}_X}(\sh{F},\sh{G})$ formam um funtor cohomológico
+contravariante em $\sh{F}$.
+Como $\sh{F}$ é coerente, para todo $p$ e todo ponto $x\in X$
+existem uma vizinhança aberta $U$ de $x$ em $X$ e uma sucessão exata
+de $(\sh{O}_X|U)$-módulos
+\[
+  0\longrightarrow\sh{R}\longrightarrow\sh{L}_{p-1}
+  \longrightarrow\cdots\longrightarrow\sh{L}_0
+  \longrightarrow\sh{F}|U\longrightarrow0,
+\]
+onde cada $\sh{L}_i$ ($0\leq i\leq p-1$) é isomorfo a
+$\sh{O}_X^{n_i}|U$, e $\sh{R}$ é coerente.
+Isto decorre por indução sobre $p$ de
+\sref[0\textsubscript{I}]{0.5.3.2} e
+\sref[0\textsubscript{I}]{0.5.3.4}, pois $\sh{O}_X$ é coerente.
+
+Além disso, para $p\geq1$,
+\[
+  \shExt^p_{\sh{O}_X|U}(\sh{L}|U,\sh{G}|U)=0
+\]
+para todo $\sh{O}_X$-módulo $\sh{L}$ tal que $\sh{L}|U$ seja
+isomorfo a $\sh{O}_X^n|U$ (T, 4.2.3).
+O argumento de (M, V, 7.2) se aplica, portanto, ao funtor cohomológico
+contravariante
+\[
+  \sh{F}\longmapsto
+  \shHom_{\sh{O}_X|U}(\sh{F}|U,\sh{G}|U)
+\]
+e dá uma sucessão exata
+\[
+  \begin{aligned}
+  \shHom_{\sh{O}_X|U}(\sh{L}_{p-1},\sh{G}|U)
+  &\longrightarrow
+  \shHom_{\sh{O}_X|U}(\sh{R},\sh{G}|U)\\
+  &\longrightarrow
+  \shExt^p_{\sh{O}_X|U}(\sh{F}|U,\sh{G}|U)
+  \longrightarrow0.
+  \end{aligned}
+\]
+Os dois primeiros termos são $(\sh{O}_X|U)$-módulos coerentes
+\sref[0\textsubscript{I}]{0.5.3.5}; portanto, também o é o terceiro
+\sref[0\textsubscript{I}]{0.5.3.4}.
+\end{proof}
+
+\oldpage[0\textsubscript{III}]{61}
+\begin{proposition}[12.3.4]
+\label{0.12.3.4}
+Seja $f:X\to Y$ um morfismo plano de espaços anelados, e sejam
+$\sh{F}$ e $\sh{G}$ dois $\sh{O}_Y$-módulos.
+\begin{enumerate}
+  \item[\rm(i)] Existe um homomorfismo de bifuntores cohomológicos
+  \[
+    f^*\bigl(\shExt^\bullet_{\sh{O}_Y}(\sh{F},\sh{G})\bigr)
+    \longrightarrow
+    \shExt^\bullet_{\sh{O}_X}
+      \bigl(f^*(\sh{F}),f^*(\sh{G})\bigr),
+    \tag{12.3.4.1}
+    \label{0.12.3.4.1}
+  \]
+  que, em grau $0$, se reduz ao homomorfismo canônico
+  \sref[0\textsubscript{I}]{0.4.4.6}.
+
+  \item[\rm(ii)] Existe um morfismo canônico de sucessões espectrais
+  \[
+    E(\sh{F},\sh{G})
+    \longrightarrow E\bigl(f^*(\sh{F}),f^*(\sh{G})\bigr),
+    \tag{12.3.4.2}
+    \label{0.12.3.4.2}
+  \]
+  cuja aplicação sobre os termos $E_2$ é dada pelos homomorfismos
+  \[
+    \begin{aligned}
+    \HH^p\bigl(Y,\shExt^q_{\sh{O}_Y}(\sh{F},\sh{G})\bigr)
+    \longrightarrow
+    \HH^p\bigl(X,\shExt^q_{\sh{O}_X}
+      (f^*(\sh{F}),f^*(\sh{G}))\bigr),
+    \end{aligned}
+    \tag{12.3.4.3}
+    \label{0.12.3.4.3}
+  \]
+  deduzidos de \sref{0.12.3.4.1} e \sref{0.12.1.3.1}.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\begin{enumerate}
+  \item[\rm(i)]
+  Como $f^*$ é exato sobre a categoria de $\sh{O}_Y$-módulos
+  \sref[0\textsubscript{I}]{0.6.7.2}, os funtores
+  \[
+    \sh{G}\longmapsto
+      f^*\bigl(\shHom_{\sh{O}_Y}(\sh{F},\sh{G})\bigr),
+    \qquad
+    \sh{G}\longmapsto
+      \shHom_{\sh{O}_X}\bigl(f^*(\sh{F}),f^*(\sh{G})\bigr)
+  \]
+  são exatos à esquerda.  O homomorfismo canônico
+  \sref[0\textsubscript{I}]{0.4.4.6} induz, portanto, canonicamente um
+  homomorfismo entre seus funtores derivados.
+
+  Para calcular estes funtores derivados, tomemos uma resolução injetiva
+  $\sh{L}^\bullet=(\sh{L}^i)$ de $\sh{G}$.  Têm-se então
+  homomorfismos
+  \[
+    \begin{aligned}
+    \sh{H}^p\!\left(
+      f^*\bigl(\shHom_{\sh{O}_Y}
+        (\sh{F},\sh{L}^\bullet)\bigr)\right)
+    \longrightarrow
+    \sh{H}^p\!\left(
+      \shHom_{\sh{O}_X}
+        (f^*(\sh{F}),f^*(\sh{L}^\bullet))\right)
+    \end{aligned}
+  \]
+  entre os feixes de cohomologia de complexos.
+  Pela exatidão de $f^*$, o primeiro membro é
+  \[
+    f^*\bigl(\shExt^p_{\sh{O}_Y}(\sh{F},\sh{G})\bigr).
+  \]
+  A exatidão de $f^*$ implica também que
+  $f^*(\sh{L}^\bullet)$ é uma resolução de $f^*(\sh{G})$.
+  Se ${\sh{L}'}^\bullet=({\sh{L}'}^i)$ é uma resolução injetiva
+  de $f^*(\sh{G})$ na categoria de $\sh{O}_X$-módulos, existe um
+  homomorfismo de complexos
+  \[
+    f^*(\sh{L}^\bullet)\longrightarrow{\sh{L}'}^\bullet,
+  \]
+  determinado salvo homotopia, e portanto um homomorfismo bem definido em
+  cohomologia.  Seu composto com o homomorfismo precedente é
+  \sref{0.12.3.4.1}.
+
+  \item[\rm(ii)]
+  Com a notação precedente, existe um homomorfismo de complexos de
+  $\sh{O}_X$-módulos
+  \[
+    f^*\bigl(\shHom_{\sh{O}_Y}(\sh{F},\sh{L}^\bullet)\bigr)
+    \longrightarrow
+    \shHom_{\sh{O}_X}
+      \bigl(f^*(\sh{F}),{\sh{L}'}^\bullet\bigr).
+  \]
+  Seja $\sh{M}^{\bullet\bullet}$ uma resolução injetiva de
+  Cartan--Eilenberg de
+  $\shHom_{\sh{O}_Y}(\sh{F},\sh{L}^\bullet)$ na categoria de
+  $\sh{O}_Y$-módulos.  Como $f^*$ é exato,
+  $f^*(\sh{M}^{\bullet\bullet})$ é uma resolução de Cartan--Eilenberg de
+  $f^*(\shHom_{\sh{O}_Y}(\sh{F},\sh{L}^\bullet))$.
+  Se ${\sh{M}'}^{\bullet\bullet}$ é uma resolução injetiva de
+  Cartan--Eilenberg de
+  $\shHom_{\sh{O}_X}(f^*(\sh{F}),{\sh{L}'}^\bullet)$, existe
+  \sref{0.11.4.2} um homomorfismo, determinado salvo homotopia,
+  \[
+    f^*(\sh{M}^{\bullet\bullet})
+    \longrightarrow{\sh{M}'}^{\bullet\bullet},
+  \]
+  compatível com o homomorfismo precedente; em outras palavras, existe
+  um $f$-morfismo
+  $\sh{M}^{\bullet\bullet}\to{\sh{M}'}^{\bullet\bullet}$ de
+  bicomplexos de feixes.
+  Induz um dihomomorfismo
+  \[
+    \Gamma(Y,\sh{M}^{\bullet\bullet})
+    \longrightarrow\Gamma(X,{\sh{M}'}^{\bullet\bullet})
+  \]
+  de bicomplexos de módulos, determinado salvo homotopia, e portanto
+  um morfismo bem definido de sucessões espectrais
+  \sref{0.11.3.2}.  Este é precisamente o morfismo desejado
+  \sref{0.12.3.4.2}, e a descrição
+  \sref{0.12.3.4.3} decorre imediatamente das definições.
+\end{enumerate}
+\end{proof}
+
+\begin{proposition}[12.3.5]
+\label{0.12.3.5}
+Sob as hipóteses de \sref{0.12.3.4}, suponhamos além disso que o
+feixe de anéis $\sh{O}_Y$ é coerente.
+Então, para todo $\sh{O}_Y$-módulo coerente $\sh{F}$, os
+homomorfismos canônicos \sref{0.12.3.4.1} são bijetivos.
+\end{proposition}
+
+\begin{proof}
+\oldpage[0\textsubscript{III}]{62}
+Como a questão é local sobre $Y$, podemos supor que existe uma
+sucessão exata
+\[
+  0\longrightarrow\sh{R}\longrightarrow\sh{O}_Y^n
+  \longrightarrow\sh{F}\longrightarrow0.
+\]
+Então $\sh{R}$ é também um $\sh{O}_Y$-módulo coerente
+\sref[0\textsubscript{I}]{0.5.3.4}.
+Para demonstrar que os homomorfismos
+\[
+  f^*\bigl(\shExt^p_{\sh{O}_Y}(\sh{F},\sh{G})\bigr)
+  \longrightarrow
+  \shExt^p_{\sh{O}_X}
+    \bigl(f^*(\sh{F}),f^*(\sh{G})\bigr)
+\]
+são bijetivos, raciocinamos por indução sobre $p$.
+Para $p=0$, a asserção é
+\sref[0\textsubscript{I}]{0.6.7.6.1}.
+Existe um diagrama comutativo com linhas exatas
+\[
+{\tiny
+  \xymatrix@C=2pt@R=24pt{
+  f^*\!\left(\shExt^{p-1}_{\sh{O}_Y}(\sh{O}_Y^n,\sh{G})\right)
+    \ar[r]\ar[d]
+  & f^*\!\left(\shExt^{p-1}_{\sh{O}_Y}(\sh{R},\sh{G})\right)
+    \ar[r]^\partial\ar[d]
+  & f^*\!\left(\shExt^p_{\sh{O}_Y}(\sh{F},\sh{G})\right)
+    \ar[r]\ar[d]
+  & f^*\!\left(\shExt^p_{\sh{O}_Y}(\sh{O}_Y^n,\sh{G})\right)
+    \ar[d]\\
+  \shExt^{p-1}_{\sh{O}_X}(\sh{O}_X^n,f^*(\sh{G}))
+    \ar[r]
+  & \shExt^{p-1}_{\sh{O}_X}(f^*(\sh{R}),f^*(\sh{G}))
+    \ar[r]^\partial
+  & \shExt^p_{\sh{O}_X}(f^*(\sh{F}),f^*(\sh{G}))
+    \ar[r]
+  & \shExt^p_{\sh{O}_X}(\sh{O}_X^n,f^*(\sh{G})).
+  }}
+\]
+Aqui temos utilizado $f^*(\sh{O}_Y)=\sh{O}_X$; como $f^*$ é exato,
+ambas as linhas são exatas.
+Além disso,
+\[
+  \shExt^p_{\sh{O}_Y}(\sh{O}_Y^n,\sh{G})=0,
+  \qquad
+  \shExt^p_{\sh{O}_X}(\sh{O}_X^n,f^*(\sh{G}))=0
+  \qquad(p>0)
+\]
+(T, 4.2.3).
+Pela hipótese de indução, as duas primeiras setas verticais do
+diagrama precedente são isomorfismos, enquanto que os termos da
+direita são nulos.  Segue-se que
+\[
+  f^*\bigl(\shExt^p_{\sh{O}_Y}(\sh{F},\sh{G})\bigr)
+  \longrightarrow
+  \shExt^p_{\sh{O}_X}
+    \bigl(f^*(\sh{F}),f^*(\sh{G})\bigr)
+\]
+é um isomorfismo.
+\end{proof}
+
+\subsection{Hipercohomologia do funtor imagem direta}
+\label{subsection:0.12.4}
+
+\begin{env}[12.4.1]
+\label{0.12.4.1}
+Sejam $(X,\sh{O}_X)$ e $(Y,\sh{O}_Y)$ dois espaços anelados, e seja
+$f:X\longrightarrow Y$ um morfismo de espaços anelados.
+Pode-se formar a hipercohomologia de $f_*$ com respeito a um complexo
+arbitrário de $\sh{O}_X$-módulos
+$\sh{K}^\bullet=(\sh{K}^i)_{i\in\bb{Z}}$
+\sref{0.11.4.4}, pois os limites indutivos filtrantes existem e são exatos
+na categoria abeliana de $\sh{O}_Y$-módulos (T, 3.1.1).
+Os $\sh{O}_Y$-módulos de hipercohomologia
+$\RR^p f_*(\sh{K}^\bullet)$ serão também denotados por
+$\sh{H}^p(f,\sh{K}^\bullet)$, ou simplesmente
+$\sh{H}^p_f(\sh{K}^\bullet)$.
+Lembremos que $\sh{H}^\bullet(f,\sh{K}^\bullet)$ é a cohomologia do
+bicomplexo de $\sh{O}_Y$-módulos $f_*(\sh{L}^{\bullet\bullet})$,
+onde $\sh{L}^{\bullet\bullet}$ é uma resolução injetiva de
+Cartan--Eilenberg de $\sh{K}^\bullet$ na categoria de
+$\sh{O}_X$-módulos.
+É o termo limite de duas sucessões espectrais cujos termos $E_2$
+são dados por
+\begin{equation}
+\label{0.12.4.1.1}
+\tag{12.4.1.1}
+  {}'E_2^{pq}
+  =\sh{H}^p\bigl(\sh{H}^q(f,\sh{K}^\bullet)\bigr)
+\end{equation}
+e
+\begin{equation}
+\label{0.12.4.1.2}
+\tag{12.4.1.2}
+  {}''E_2^{pq}
+  =\sh{H}^p\bigl(f,\sh{H}^q(\sh{K}^\bullet)\bigr)
+  \quad
+  \bigl(=\RR^p f_*(\sh{H}^q(\sh{K}^\bullet))\bigr).
+\end{equation}
+Nestas fórmulas adotamos a notação geral $T(A^\bullet)$
+para o transformado de um complexo por um funtor \sref{0.11.2.1}, e, para
+um $\sh{O}_X$-módulo $\sh{F}$, escrevemos
+$\sh{H}^p(f,\sh{F})$ em lugar de $\RR^p f_*(\sh{F})$.
+Lembremos também que a primeira sucessão espectral é sempre regular.
+Ambas as sucessões espectrais são birregulares quando $\sh{K}^\bullet$ está
+limitado inferiormente,
+\oldpage[0\textsubscript{III}]{63}
+ou quando existe um inteiro $m$ tal que todo $\sh{O}_X$-módulo
+admite uma resolução flácida de comprimento $\leq m$ \sref{0.11.4.4}.
+\end{env}
+
+\begin{env}[12.4.2]
+\label{0.12.4.2}
+Denotaremos analogamente por $\bb{H}^\bullet(X,\sh{K}^\bullet)$ a
+hipercohomologia do funtor $\Gamma$ com respeito a um complexo
+$\sh{K}^\bullet$ de $\sh{O}_X$-módulos.
+Assim, os $\bb{H}^p(X,\sh{K}^\bullet)$ são
+$\Gamma(X,\sh{O}_X)$-módulos.
+Além disso, $\bb{H}^\bullet(X,\sh{K}^\bullet)$ pode ser considerado um
+caso particular de $\sh{H}^\bullet(f,\sh{K}^\bullet)$, onde $f$ é um
+morfismo de $(X,\sh{O}_X)$ a um espaço anelado constituído por um ponto
+dotado do anel $\Gamma(X,\sh{O}_X)$.
+
+Para todo subconjunto aberto $V$ de $X$, escreveremos
+$\bb{H}^\bullet(V,\sh{K}^\bullet)$ em lugar de
+$\bb{H}^\bullet(V,\sh{K}^\bullet|V)$.
+\end{env}
+
+\begin{proposition}[12.4.3]
+\label{0.12.4.3}
+Para todo inteiro $p\in\bb{Z}$, o $\sh{O}_Y$-módulo
+$\sh{H}^p(f,\sh{K}^\bullet)$ é canonicamente isomorfo ao feixe
+associado ao pré-feixe
+\[
+  U\longmapsto
+  \bb{H}^p\bigl(f^{-1}(U),\sh{K}^\bullet\bigr)
+\]
+sobre $Y$.
+\end{proposition}
+
+\begin{proof}
+Com a notação de \sref{0.12.4.1}, o feixe de cohomologia
+$\sh{H}^p(f_*(\sh{L}^{\bullet\bullet}))$ está associado ao
+pré-feixe
+\[
+  U\longmapsto
+  \HH^p\bigl(\Gamma(U,f_*(\sh{L}^{\bullet\bullet}))\bigr)
+  =
+  \HH^p\bigl(\Gamma(f^{-1}(U),\sh{L}^{\bullet\bullet})\bigr).
+\]
+Mas está claro que
+$\sh{L}^{\bullet\bullet}|f^{-1}(U)$ é uma resolução injetiva de
+Cartan--Eilenberg de $\sh{K}^\bullet|f^{-1}(U)$ (T, 3.1.3).
+Por conseguinte,
+\[
+  \HH^p\bigl(\Gamma(f^{-1}(U),\sh{L}^{\bullet\bullet})\bigr)
+  =
+  \bb{H}^p\bigl(f^{-1}(U),\sh{K}^\bullet\bigr)
+\]
+por definição.
+\end{proof}
+
+\begin{proposition}[12.4.4]
+\label{0.12.4.4}
+A hipercohomologia $\sh{H}^\bullet(f,\sh{K}^\bullet)$ é um
+funtor cohomológico de $\sh{K}^\bullet$ em cada um dos casos
+seguintes:
+\begin{enumerate}
+  \item[\rm{a)}] $\sh{K}^\bullet$ varia na categoria de complexos
+    limitados inferiormente;
+  \item[\rm{b)}] existe um inteiro $m$ tal que todo
+    $\sh{O}_X$-módulo admite uma resolução flácida de comprimento $\leq m$;
+  \item[\rm{c)}] $X$ é um espaço noetheriano.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Os casos~a) e~b) são casos particulares de \sref{0.11.5.4}.
+Por outro lado, o caso~c) segue-se de \sref{0.11.5.2}, pois, neste
+caso, o funtor $f_*$ comuta com os limites indutivos
+(G, II, 3.10.1).
+\end{proof}
+
+\begin{env}[12.4.5]
+\label{0.12.4.5}
+Seja agora $\mathfrak{U}=(U_\alpha)$ um recobrimento aberto de $X$.
+Para todo complexo de \emph{pré-feixes}
+$\sh{K}^\bullet=(\sh{K}^j)$ sobre $X$, consideremos o bicomplexo
+$\check{\mathrm{C}}^\bullet(\mathfrak{U},\sh{K}^\bullet)$ cuja
+componente de bigrado $(i,j)$ é
+$\check{\mathrm{C}}^i(\mathfrak{U},\sh{K}^j)$, o grupo de
+$i$-cocadeias alternadas do nervo de $\mathfrak{U}$ com valores
+em $\sh{K}^j$ (G, II, 5.1).
+Chamamos a cohomologia deste bicomplexo de
+\emph{hipercohomologia do recobrimento $\mathfrak{U}$ com
+coeficientes em $\sh{K}^\bullet$}, e a denotamos por
+\[
+  \bb{H}^\bullet(\mathfrak{U},\sh{K}^\bullet)
+  =
+  \HH^\bullet
+  \bigl(\check{\mathrm{C}}^\bullet
+    (\mathfrak{U},\sh{K}^\bullet)\bigr).
+\]
+A sucessão espectral de Leray de um recobrimento
+(T, 3.8.1 e G, II, 5.9.1) se generaliza à hipercohomologia como segue.
+\end{env}
+
+\begin{proposition}[12.4.6]
+\label{0.12.4.6}
+Seja $\sh{K}^\bullet=(\sh{K}^i)$ um complexo de
+$\sh{O}_X$-módulos.
+Existe um funtor espectral regular de $\sh{K}^\bullet$ com
+termo limite $\bb{H}^\bullet(X,\sh{K}^\bullet)$ e termo $E_2$
+\begin{equation}
+\label{0.12.4.6.1}
+\tag{12.4.6.1}
+  E_2^{pq}
+  =
+  \CHH^p\bigl(\mathfrak{U},h^q(\sh{K}^\bullet)\bigr),
+\end{equation}
+onde $h^q(\sh{K}^\bullet)$ denota o complexo de pré-feixes
+\[
+  V\longmapsto\HH^q(V,\sh{K}^\bullet)
+\]
+sobre $X$.
+Esta sucessão espectral é birregular se $\sh{K}^\bullet$ está limitado
+inferiormente.
+\end{proposition}
+
+\begin{proof}
+Seja $\sh{L}^{\bullet\bullet}$ uma resolução injetiva de
+Cartan--Eilenberg de $\sh{K}^\bullet$, e consideremos o tricomplexo
+\[
+  \check{\mathrm{C}}^\bullet
+  (\mathfrak{U},\sh{L}^{\bullet\bullet})
+  =
+  \bigl(\check{\mathrm{C}}^i
+    (\mathfrak{U},\sh{L}^{jk})\bigr).
+\]
+Consideremos primeiro este tricomplexo como um bicomplexo nos graus $i$ e
+$j+k$.
+Como $i$ somente toma valores não negativos, a segunda sucessão espectral
+deste bicomplexo é regular \sref{0.11.3.3} e degenerada, porque
+\[
+  \CHH^q(\mathfrak{U},\sh{L}^{jk})=0
+  \qquad(q>0),
+\]
+sendo os $\sh{O}_X$-módulos $\sh{L}^{jk}$ feixes flácidos
+\oldpage[0\textsubscript{III}]{64}
+(G, II, 5.2.3).
+Segue-se que existe um isomorfismo canônico
+\[
+  \HH^n\bigl(
+    \check{\mathrm{C}}^\bullet
+      (\mathfrak{U},\sh{L}^{\bullet\bullet})
+  \bigr)
+  \isoto
+  \HH^n\bigl(\Gamma(X,\sh{L}^{\bullet\bullet})\bigr)
+\]
+\sref{0.11.1.6}, em virtude de (G, II, 5.2.2), e portanto, pela
+definição \sref{0.12.4.2}, um isomorfismo
+\[
+  \HH^n\bigl(
+    \check{\mathrm{C}}^\bullet
+      (\mathfrak{U},\sh{L}^{\bullet\bullet})
+  \bigr)
+  \isoto
+  \bb{H}^n(X,\sh{K}^\bullet).
+\]
+
+Consideremos agora
+$\check{\mathrm{C}}^\bullet
+(\mathfrak{U},\sh{L}^{\bullet\bullet})$
+como um bicomplexo nos graus $i+j$ e $k$.
+Como $k$ somente toma valores não negativos, a primeira sucessão espectral
+deste bicomplexo é sempre regular.
+É birregular se $\sh{L}^{jk}=0$ para $j<j_0$, isto é, quando
+$\sh{K}^\bullet$ está limitado inferiormente \sref{0.11.3.3}.
+Esta é a sucessão espectral desejada.
+Com efeito, para todo $j$, $\sh{L}^{j,\bullet}$ é uma resolução
+injetiva de $\sh{K}^j$; por conseguinte, quando $i$ varia,
+\[
+  \HH^q\bigl(
+    \check{\mathrm{C}}^i
+      (\mathfrak{U},\sh{L}^{j,\bullet})
+  \bigr)
+\]
+é precisamente o complexo de cocadeias
+$\check{\mathrm{C}}^i(\mathfrak{U},h^q(\sh{K}^j))$.
+Isto demonstra a proposição.
+\end{proof}
+
+\begin{corollary}[12.4.7]
+\label{0.12.4.7}
+Se, para todo simplexo $\sigma$ do nervo de $\mathfrak{U}$ e
+todo inteiro $i$, tem-se
+\[
+  \HH^q(U_\sigma,\sh{K}^i)=0
+  \qquad(q>0),
+\]
+então existe um isomorfismo canônico
+\begin{equation}
+\label{0.12.4.7.1}
+\tag{12.4.7.1}
+  \bb{H}^\bullet(\mathfrak{U},\sh{K}^\bullet)
+  \isoto
+  \bb{H}^\bullet(X,\sh{K}^\bullet).
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+A hipótese implica que
+$\check{\mathrm{C}}^\bullet
+(\mathfrak{U},h^q(\sh{K}^j))=0$ para $q>0$, e portanto que
+$E_2^{pq}=0$ para $q>0$.
+Como a sucessão espectral \sref{0.12.4.6.1} é degenerada e
+regular, a conclusão segue-se da definição
+\sref{0.12.4.5} de
+$\bb{H}^\bullet(\mathfrak{U},\sh{K}^\bullet)$ e de
+\sref{0.11.1.6}.
+\end{proof}
+
+\begin{env}[12.4.8]
+\label{0.12.4.8}
+Seja $(X',\sh{O}_{X'})$ um segundo espaço anelado, e seja
+$f=(\psi,\theta)$ um morfismo de $X'$ em $X$.
+Pelo mesmo método que em \sref{0.12.1.3} e \sref{0.12.1.4}, se
+define um dihomomorfismo para a hipercohomologia de um complexo
+$\sh{K}^\bullet$ de $\sh{O}_X$-módulos:
+\begin{equation}
+\label{0.12.4.8.1}
+\tag{12.4.8.1}
+  \bb{H}^p(X,\sh{K}^\bullet)
+  \longrightarrow
+  \bb{H}^p(X',f^*(\sh{K}^\bullet)).
+\end{equation}
+Partindo de uma resolução injetiva de Cartan--Eilenberg
+$\sh{L}^{\bullet\bullet}$ de $\sh{K}^\bullet$, observemos que, como
+$\psi^*$ é exato, $\psi^*(\sh{L}^{\bullet\bullet})$ é uma
+resolução de Cartan--Eilenberg de $\psi^*(\sh{K}^\bullet)$ na
+categoria de $\psi^*(\sh{O}_X)$-módulos.
+Existe, portanto, um morfismo
+\[
+  \psi^*(\sh{L}^{\bullet\bullet})
+  \longrightarrow
+  {\sh{L}'}^{\bullet\bullet},
+\]
+onde ${\sh{L}'}^{\bullet\bullet}$ é uma resolução injetiva de
+Cartan--Eilenberg de $\psi^*(\sh{K}^\bullet)$.
+Induz um morfismo em cohomologia
+\[
+  \bb{H}^\bullet(X,\sh{K}^\bullet)
+  \longrightarrow
+  \bb{H}^\bullet
+  (X',\psi^*(\sh{K}^\bullet)).
+\]
+Compondo-o com o morfismo induzido por funtorialidade a partir de
+$\psi^*(\sh{K}^\bullet)\longrightarrow f^*(\sh{K}^\bullet)$ obtém-se
+o morfismo desejado \sref{0.12.4.8.1}.
+
+Partindo de \sref{0.12.4.8.1} e \sref{0.12.4.3}, e raciocinando como
+em \sref{0.12.2.5}, podem-se então definir, para dois morfismos de
+espaços anelados
+\[
+  f:X\longrightarrow Y,
+  \qquad
+  g:Y\longrightarrow Z,
+\]
+com $h=g\circ f$, homomorfismos para a hipercohomologia de um complexo
+$\sh{K}^\bullet$ de $\sh{O}_X$-módulos:
+\begin{equation}
+\label{0.12.4.8.2}
+\tag{12.4.8.2}
+  \sh{H}^n(g,f_*(\sh{K}^\bullet))
+  \longrightarrow
+  \sh{H}^n(h,\sh{K}^\bullet),
+\end{equation}
+e
+\begin{equation}
+\label{0.12.4.8.3}
+\tag{12.4.8.3}
+  \sh{H}^n(h,\sh{K}^\bullet)
+  \longrightarrow
+  g_*\bigl(\sh{H}^n(f,\sh{K}^\bullet)\bigr).
+\end{equation}
+Deixamos ao leitor os detalhes das definições.
+\end{env}

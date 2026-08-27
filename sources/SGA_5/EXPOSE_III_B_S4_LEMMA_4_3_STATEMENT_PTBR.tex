@@ -1,0 +1,40 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4796--4833 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+A demonstração apoiará-se no
+
+\begin{statement}{Lema 4.3}
+Sejam $Z$ um esquema noetheriano regular conexo de dimensão $2$, de características residuais primas a $\ell$, e $X$, $Y$ divisores regulares que se intersectam transversalmente em um ponto $z$, de onde se obtém um diagrama de inclusões
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+Z-(X\cup Y) \arrow[r,"i'"] \arrow[d,hook,"j'"'] & Z-Y \arrow[d,hook,"j"]\\
+Z-X \arrow[r,"i"'] & Z\\
+Y-z \arrow[r,"i_1"'] \arrow[u,hook,"m'"'] & Y \arrow[u,hook,"m"] .
+\end{tikzcd}
+\]
+Adoptamos a hipótese de pureza:
+\[
+(P)\qquad \R^qj_*(\mathbb Z/\ell)=0\quad\text{para }q>1.
+\]
+Seja, por outro lado, $L\in\Ob D^b(Z-(X\cup Y),\Lambda)$, com cohomologia construtível e localmente constante, cuja representação correspondente de $\pi_1(Z-(X\cup Y))$ se fatore por um $\ell$-grupo. Então:
+\begin{enumerate}[label=\alph*)]
+\item Tem-se um isomorfismo canônico
+\[
+i_{1!}m'^*\R j_*i'_!L\xrightarrow{\sim} m^*\R j_*(i'_!L),
+\]
+e o complexo $m'^*\R j_*i'_!L$ tem cohomologia construtível e localmente constante.
+\item Suponhamos que $Y$ seja conexo, e seja $\bar s$ um ponto geométrico de $Y$ situado sobre um ponto fechado $s\ne z$. Então, a flecha de restrição
+\begin{equation}
+\R\Gamma(Y,m^*\R j_*(i'_!L))\longrightarrow (\R j_*(i'_!L))_{\bar s}
+\tag{4.3.1}
+\end{equation}
+é nula.
+\item Sob as hipóteses de b), seja $C$ um subesquema fechado de dimensão $1$ de $Z$ tal que $Y\cap C=s$, e denotemos por $\widetilde C$ a localização estrita de $C$ em $\bar s$. Então, a flecha de restrição
+\begin{equation}
+\R\Gamma(Z-Y,i'_!L)
+\longrightarrow
+\R\Gamma(\widetilde C-\bar s,i'_!(L)|\widetilde C-\bar s)
+\tag{4.3.2}
+\end{equation}
+é nula.
+\end{enumerate}
+\end{statement}

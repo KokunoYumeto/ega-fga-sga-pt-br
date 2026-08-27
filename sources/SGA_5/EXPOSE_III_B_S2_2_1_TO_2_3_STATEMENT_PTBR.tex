@@ -1,0 +1,100 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4342--4439 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{2. Redução a um teorema de anulação}
+
+\subsubsection*{2.1}
+Sob as hipóteses de 1.1, denotemos por $s$ (resp. $t$) a imagem de $z$ em $A$ (resp. $B$), e por $i:U=X-\{x\}\hookrightarrow X$ e $j:V=Y-\{y\}\hookrightarrow Y$ as inclusões canônicas. Como $a_2$ e $b_1$ são finitos, tem-se $a_2^{-1}(y)=s$, $b_1^{-1}(x)=t$, e, portanto,
+\[
+a_1^{-1}(U)\subset a_2^{-1}(V),\qquad b_2^{-1}(V)\subset b_1^{-1}(U),
+\]
+e temos diagramas comutativos
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+U \arrow[d,"i"] \arrow[rd,phantom,"(1)"{description}] & a_1^{-1}(U) \arrow[l,"a'_1"'] \arrow[r,"a'_2"] \arrow[d] \arrow[rd,phantom,"(2)"{description}] & V \arrow[d,"j"]\\
+X & A \arrow[l,"a_1"] \arrow[r,"a_2"'] & Y
+\end{tikzcd}
+\qquad
+\begin{tikzcd}[column sep=large,row sep=large]
+U \arrow[d,"i"] \arrow[rd,phantom,"(3)"{description}] & b_2^{-1}(V) \arrow[l,"b'_1"'] \arrow[r,"b'_2"] \arrow[d] \arrow[rd,phantom,"(4)"{description}] & V \arrow[d,"j"]\\
+X & B \arrow[l,"b_1"] \arrow[r,"b_2"'] & Y ,
+\end{tikzcd}
+\]
+onde os quadrados (1) e (4) são cartesianos.
+
+\begin{statement}{Lema 2.2}
+Para demonstrar 1.2, basta considerar os dois casos seguintes:
+\[
+\text{a) } L_x=0,\quad M_y=0;\qquad
+\text{b) } L|U=0,\quad M|V=0 .
+\]
+\end{statement}
+
+Consideremos as filtrações decrescentes sobre $L$ e $M$ definidas pelos subcomplexos
+\[
+F^nL=
+\begin{cases}
+L,& n\le 0,\\
+i_!i^*L,& n=1,\\
+0,& n>1,
+\end{cases}
+\qquad
+F^nM=
+\begin{cases}
+M,& n\le 0,\\
+j_!j^*M,& n=1,\\
+0,& n>1.
+\end{cases}
+\]
+O complexo $a_{2*}a_1^*L$ (resp. $b_{1*}b_2^*M$) é então filtrado por
+\[
+F^n a_{2*}a_1^*L=a_{2*}a_1^*F^nL.
+\]
+Temos $F^n a_{2*}a_1^*L=a_{2*}a_1^*L$ para $n\le 0$, e $0$ para $n>1$; além disso, como $a_2$ é finito e o quadrado (1) é cartesiano, temos
+\[
+F^1a_{2*}a_1^*L=j_!(a'_2)_!(a'_1)^*i^*L.
+\]
+Da mesma forma, temos
+\[
+F^n b_{1*}b_2^*M=
+\begin{cases}
+b_{1*}b_2^*M,& n\le 0,\\
+i_!(b'_1)_!(b'_2)^*j^*M,& n=1,\\
+0,& n>1.
+\end{cases}
+\]
+
+Podemos supor que $u$ (resp. $v$) é definido por um homomorfismo de complexos
+\[
+u:a_{2*}a_1^*L\longrightarrow M
+\quad
+(\text{resp. }v:b_{1*}b_2^*M\longrightarrow L).
+\]
+As fórmulas anteriores mostram que o homomorfismo composto
+\[
+F^1a_{2*}a_1^*L\longrightarrow a_{2*}a_1^*L\xrightarrow{u}M
+\]
+(resp. $F^1b_{1*}b_2^*M\to b_{1*}b_2^*M\xrightarrow{v}L$) se fatora de modo único através de $F^1M$ (resp. $F^1L$); em outros termos, $u$ (resp. $v$) é um homomorfismo de complexos filtrados. Assim, $u$ (resp. $v$) é o homomorfismo subjacente a uma correspondência filtrada, no sentido de (III 4.13), que continuaremos denotando por
+\[
+u\in\Hom_{DF}(a_1^*L,a_2^!M),\qquad
+v\in\Hom_{DF}(b_2^*M,b_1^!L).
+\]
+Pela aditividade dos produtos cup ([3] V 3.8.7), (III 4.13.1), tem-se
+\[
+\langle u_z,v_z\rangle
+ =\langle \operatorname{gr}^0u_z,\operatorname{gr}^0v_z\rangle
+ +\langle \operatorname{gr}^1u_z,\operatorname{gr}^1v_z\rangle,
+\]
+e
+\[
+\langle u,v\rangle
+ =\langle \operatorname{gr}^0u,\operatorname{gr}^0v\rangle
+ +\langle \operatorname{gr}^1u,\operatorname{gr}^1v\rangle.
+\]
+Disso resulta o lema, pois $\operatorname{gr}^1L=i_!i^*L$ (resp. $\operatorname{gr}^1M=j_!j^*M$) tem uma fibra nula em $x$ (resp. $y$), enquanto $\operatorname{gr}^0L$ (resp. $\operatorname{gr}^0M$) está concentrado em $x$ (resp. $y$).
+
+\begin{statement}{Lema 2.3}
+Sob as hipóteses de 1.1, suponhamos que $L|U=0$, $M|V=0$. Então, tem-se
+\[
+\langle u_z,v_z\rangle=\langle u,v\rangle .
+\]
+\end{statement}

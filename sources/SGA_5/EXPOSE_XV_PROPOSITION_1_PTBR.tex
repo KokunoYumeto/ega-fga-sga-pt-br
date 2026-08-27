@@ -1,0 +1,28 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 14320--14345 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+As primeiras propriedades formais do morfismo de Frobenius são enunciadas na seguinte proposição.
+
+\begin{statement}{Proposição 1}
+\begin{enumerate}[label=\alph*)]
+\item \emph{(Transitividade.) } Sejam $S$ um pré-esquema de característica $p$ e $g:X\to Y$ um $S$-morfismo de $S$-pré-esquemas. O diagrama a seguir é comutativo e seus três quadrados são cartesianos:
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+X \arrow[d,"g"'] & X^{(p/S)} \arrow[l,"\pi_{X/S}"'] \arrow[d,"g^{(p/S)}"] & X^{(p/Y)} \arrow[l] \arrow[d,"g^{(p/Y)}"] & X \arrow[l,"\Fr_{X/Y}"'] \arrow[ll,bend left=35,"\Fr_{X/S}"{description,pos=0.62}] \arrow[dl,"g"] \\
+Y \arrow[d] & Y^{(p/S)} \arrow[l,"\pi_{Y/S}"] \arrow[d] & Y \arrow[l,"\Fr_{Y/S}"] \arrow[dl] & {} \\
+S & S \arrow[l,"\fr_S"] & {} & {}
+\end{tikzcd}
+\]
+
+\item \emph{(Mudança de base.) } Sejam $g:S'\to S$ um morfismo de pré-esquemas de característica $p$ e $X$ um $S$-pré-esquema. Tem-se um isomorfismo canônico
+\[
+X^{(p/S)}\times_S S'\simeq (X\times_S S')^{(p/S')}
+\]
+funtorial em $X$, isto é, $(X^{(p/S)})'\simeq X'{}^{(p/S')}$, denotando por um $'$ o resultado da mudança de base por $g$; além disso,
+\[
+\Fr_{X'/S'}=(\Fr_{X/S})'
+\]
+sob a identificação fornecida pelo isomorfismo anterior.
+\end{enumerate}
+\end{statement}
+
+A demonstração é imediata.

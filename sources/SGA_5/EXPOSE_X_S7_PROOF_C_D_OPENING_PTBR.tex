@@ -1,0 +1,48 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 12971--13016 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+c) Seja $\Phi$ um complexo de feixes como em b). Tem-se o isomorfismo
+\[
+\RG_C(\Phi)=(\R\Gamma^G)(\RG_{C'}(\Phi')),
+\qquad \Phi'=p^*(\Phi).
+\tag{7.5}
+\]
+Com efeito:
+\[
+(\R\Gamma^G)(\RG_{C'}(\Phi'))
+\simeq
+(\R\Gamma^G)(\RG_C(p_*(\Phi')))
+\simeq
+\RG_C(\R\underline{\Gamma}^G(p_*(\Phi')))
+\]
+graças a (7.3), e (7.5) resulta do isomorfismo (7.4).
+
+d) Denotemos por $i':U'\to C'$, $i:U\to C$ as inclusões canônicas, e ponhamos
+\[
+\Phi=F_{U,C}=i_!(F|U).
+\]
+Para calcular $\RG_C(\Phi)$ pode-se aplicar a fórmula (7.5). Por outro lado, com as notações de 7.1,
+\[
+\Phi'\simeq \Lambda_{U',C'}\otimes_\Lambda^L M,
+\]
+e a fórmula de Künneth (SGA 4 XVII) dá
+\[
+\RG_{C'}(\Phi')
+\simeq
+\RG_{C'}(\Lambda_{U',C'}\otimes_\Lambda^L M)
+\xleftarrow{\sim}
+\RG_{C'}(\Lambda_{U',C'})\otimes_\Lambda^L M.
+\tag{7.6}
+\]
+Este último isomorfismo é, de fato, um isomorfismo entre os objetos de $D(A[G])$ definidos por ambos os membros. Combinando (7.6), (7.5) e a fórmula (3.9.1), que é aplicável graças a 2.1, obtém-se
+\[
+\RG_C(F_{U,C})
+\simeq
+\R\Gamma^G\bigl(\RG_{C'}(\Lambda_{U',C'})\otimes_\Lambda^L M\bigr)
+\simeq
+\RHom_{\Lambda[G]}\bigl(\RG_{C'}(\Lambda_{U',C'})^\vee,M\bigr).
+\tag{7.7}
+\]
+Por conseguinte, tendo em conta que $M\simeq F_{\bar\eta}\in\Ob(\Delta)$ (condição (i)) e (3.6), obtém-se
+\[
+\RG_C(F_{U,C})\in\Ob(\Delta).
+\]

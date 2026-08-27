@@ -1,0 +1,254 @@
+% Tradução brasileira revista a partir do workpass espanhol congelado;
+% a fonte permanece em source_es.
+% SGA 3, Exposé VIII, tradução brasileira: §3.
+% Autoridade: Polo--Gille Exp8-8nov09.pdf, pp. locais 8--11,
+% leitor completo pp. 624--627.
+
+\SGARefTarget{sga3:viii:section:3}\section*{3. Propriedades de exatidão do funtor
+\texorpdfstring{\(D_S\)}{D\_S}}
+\addcontentsline{toc}{section}{3. Propriedades de exatidão do funtor
+\texorpdfstring{\(D_S\)}{D\_S}}
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:theorem:3:1}\textbf{Teorema 3.1.}
+\textit{Seja \(S\) um pré-esquema, e seja}
+\SGARefTarget{sga3:viii:theorem:3:1:diagram:01}
+\[
+  0\longrightarrow M'
+   \xrightarrow{u}M
+   \xrightarrow{v}M''
+   \longrightarrow0
+\]
+\textit{uma sequência exata de grupos comutativos ordinários. Tomemos
+a sequência de homomorfismos transpostos}
+\SGARefTarget{sga3:viii:theorem:3:1:diagram:02}
+\[
+  0\longrightarrow D_S(M'')
+   \xrightarrow{v^t}D_S(M)
+   \xrightarrow{u^t}D_S(M')
+   \longrightarrow0.
+\]
+\begin{enumerate}
+  \item[(i)]\SGARefTarget{sga3:viii:theorem:3:1:item:i:01}
+  \textit{O homomorfismo \(v^t\) induz um isomorfismo de \(D_S(M'')\)
+  sobre o núcleo de \(u^t\), e \(u^t\) é fielmente plano e
+  quase compacto.}
+
+  \item[(ii)]\SGARefTarget{sga3:viii:theorem:3:1:item:ii:01}%
+  \footnote{Nota do editor: o que segue foi acrescentado, e a demonstração
+  foi desenvolvida em conformidade.}
+  \textit{\(D_S(M')\) representa o feixe quociente
+  \(D_S(M)/D_S(M'')\) para a topologia \((\mathrm{fpqc})\).}
+\end{enumerate}
+
+Denotemos por \(\mathcal M\) a família dos morfismos fielmente planos
+e quase compactos. Primeiro,
+\SGARefLink{sga3:viii:theorem:3:1:item:ii:01}{(ii)} deduz-se de
+\SGARefLink{sga3:viii:theorem:3:1:item:i:01}{(i)} (cf. IV,
+\SGARefLink{sga3:iv:corollary:4:6:5:1}{4.6.5.1}). De fato, a relação de
+equivalência sobre \(D_S(M)\) definida por \(u^t\) é a mesma que a
+definida pelo subgrupo
+\[
+  \operatorname{Ker}(u^t)=D_S(M'').
+\]
+Como \(u^t\in\mathcal M\), essa relação de equivalência é
+\(\mathcal M\)-efetiva (cf. IV,
+\SGARefLink{sga3:iv:scholium:3:3:2:1}{3.3.2.1}); portanto, \(D_S(M')\)
+representa o feixe quociente para a topologia \((\mathrm{fpqc})\) (cf. IV,
+\SGARefLink{sga3:iv:lemma:4:6:5}{4.6.5}).
+
+A primeira afirmação de
+\SGARefLink{sga3:viii:theorem:3:1:item:i:01}{(i)} é uma consequência
+imediata da definição dos funtores \(D_S(-)\). Mais geralmente,
+toda sequência exata
+\SGARefTarget{sga3:viii:theorem:3:1:diagram:03}
+\[
+  M'\longrightarrow M\longrightarrow M''\longrightarrow0
+\]
+sem zero à esquerda dá origem a uma sequência transposta exata
+\SGARefTarget{sga3:viii:theorem:3:1:diagram:04}
+\[
+  0\longrightarrow D_S(M'')
+   \longrightarrow D_S(M)
+   \longrightarrow D_S(M').
+\]
+(Isso continua válido no quadro mais geral considerado no início
+do \(\SGARefLink{sga3:viii:section:1}{\S1}\).) Por outro lado, como
+\(D_S(M)\) e \(D_S(M')\) são afins sobre \(S\), o morfismo \(u^t\) é
+necessariamente afim e, a fortiori, quase compacto, qualquer que seja o
+homomorfismo \(u:M'\to M\). A segunda afirmação de
+\SGARefLink{sga3:viii:theorem:3:1:item:i:01}{(i)} deduzir-se-á, portanto,
+do \SGARefLink{sga3:viii:corollary:3:2:item:a:01}{item (a)} do
+\SGARefLink{sga3:viii:corollary:3:2}{corolário seguinte}.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:3:2}\textbf{Corolário 3.2.}
+\textit{Seja \(S\) um pré-esquema não vazio, seja \(u:M'\to M\) um
+homomorfismo de grupos comutativos ordinários e seja \(u^t:G\to G'\) o
+homomorfismo transposto. Então:}
+\begin{enumerate}
+  \item[(a)]\SGARefTarget{sga3:viii:corollary:3:2:item:a:01}
+  \textit{\(u\) é um monomorfismo se, e somente se, \(u^t\) é fielmente plano;}
+
+  \item[(b)]\SGARefTarget{sga3:viii:corollary:3:2:item:b:01}
+  \textit{\(u\) é um epimorfismo se, e somente se, \(u^t\) é um
+  monomorfismo; nesse caso, \(u^t\) é, de fato, uma imersão fechada.}
+\end{enumerate}
+
+Para demonstrar \SGARefLink{sga3:viii:corollary:3:2:item:a:01}{(a)},
+observe-se que, se \(u\) é um monomorfismo, então
+\(\mathcal O_S(M)\), como módulo sobre \(\mathcal O_S(M')\), possui uma
+base não vazia: o sistema de seções definido por qualquer sistema de
+representantes de \(M\) módulo \(M'\). Por conseguinte, é fielmente plano.
+Reciprocamente, se \(\mathcal O_S(M)\) é fielmente plano sobre
+\(\mathcal O_S(M')\), então
+\[
+  u^t:\mathcal O_S(M')\longrightarrow\mathcal O_S(M)
+\]
+é injetivo, o que, quando \(S\ne\varnothing\), implica que
+\(u:M'\to M\) é injetivo.
+
+Para demonstrar \SGARefLink{sga3:viii:corollary:3:2:item:b:01}{(b)},
+observe-se que, se \(u\) é um epimorfismo, então
+\(\mathcal O_S(M')\to\mathcal O_S(M)\) é sobrejetivo, de modo que \(u^t\)
+é uma imersão fechada e, a fortiori, um monomorfismo. Reciprocamente, se
+\(u^t\) é um monomorfismo, então \(\operatorname{Ker}u^t\) é o grupo
+unidade. Pondo \(M''=\operatorname{Coker}u\), vimos que
+\[
+  \operatorname{Ker}u^t\simeq D_S(M'').
+\]
+Por \SGARefLink{sga3:viii:proposition:2:1:item:d:01}{2.1(d)}, tem-se
+\(M''=0\), e \(u\) é um epimorfismo.
+
+O argumento habitual fornece agora a
+\SGARefLink{sga3:viii:corollary:3:3}{consequência seguinte} de
+\SGARefLink{sga3:viii:theorem:3:1}{3.1}.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:3:3}\textbf{Corolário 3.3.}
+\textit{Seja}
+\SGARefTarget{sga3:viii:corollary:3:3:diagram:00}
+\[
+  M'\xrightarrow{u}M\xrightarrow{v}M''
+\]
+\textit{uma sequência exata de grupos comutativos ordinários, e tomemos a
+sequência transposta}
+\SGARefTarget{sga3:viii:corollary:3:3:diagram:01}
+\[
+  G''\xrightarrow{v^t}G\xrightarrow{u^t}G'.
+\]
+\textit{Então \(v^t\) induz um morfismo fielmente plano e quase compacto
+de \(G''\) para \(\operatorname{Ker}u^t\), e esse núcleo é um grupo
+diagonalizável isomorfo a}
+\[
+  D_S(v(M))=D_S(\operatorname{Coker}u).
+\]
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:3:4}\textbf{Corolário 3.4.}
+\textit{Seja \(S\) um pré-esquema, seja \(u:G\to H\) um homomorfismo de
+pré-esquemas em grupos sobre \(S\), localmente diagonalizáveis, com \(H\) de
+tipo finito sobre \(S\), e ponhamos \(G'=\operatorname{Ker}u\). Então:}
+\begin{enumerate}
+  \item[(a)]\SGARefTarget{sga3:viii:corollary:3:4:item:a:01}
+  \textit{\(G'\) é localmente diagonalizável e, se \(G\) é de tipo
+  finito sobre \(S\), \(G'\) também o é;}
+
+  \item[(b)]\SGARefTarget{sga3:viii:corollary:3:4:item:b:01}
+  \textit{o quociente \(G/G'\) «existe»: mais precisamente, a relação de
+  equivalência sobre \(G\) definida por \(G'\) é \(\mathcal M\)-efetiva,
+  onde \(\mathcal M\) é a família dos morfismos fielmente planos e
+  quase compactos (cf. IV, \SGARefLink{sga3:iv:subsection:3:4}{3.4}). Além disso,
+  \(G/G'\) é localmente diagonalizável e de tipo finito sobre \(S\);}
+
+  \item[(c)]\SGARefTarget{sga3:viii:corollary:3:4:item:c:01}
+  \textit{o homomorfismo \(u:G\to H\) fatora-se de maneira única como}
+  \SGARefTarget{sga3:viii:corollary:3:4:diagram:01}
+  \[
+    G\xrightarrow{v}G/G'\xrightarrow{w}H,
+  \]
+  \textit{onde \(v\) é o homomorfismo canônico e, portanto, é
+  fielmente plano e quase compacto. Além disso, \(w\) é uma imersão fechada
+  e, a fortiori, um monomorfismo.}
+\end{enumerate}
+\textit{Por fim, o quociente}
+\[
+  H'=H/\operatorname{Im}w
+    =\operatorname{Coker}w
+    =\operatorname{Coker}u
+\]
+\textit{existe: mais precisamente, a relação de equivalência sobre \(H\)
+definida por \(G/G'\) é \(\mathcal M\)-efetiva, e \(H'\) é de tipo
+finito sobre \(S\).}
+
+A primeira afirmação de
+\SGARefLink{sga3:viii:corollary:3:4:item:c:01}{(c)} deduz-se de
+\SGARefLink{sga3:viii:corollary:3:4:item:b:01}{(b)}, pela definição do
+quociente \(G/G'\) (cf. IV,
+\SGARefLink{sga3:iv:lemma:3:2:3}{3.2.3}).
+\footnote{Nota do editor: o original foi desenvolvido no que segue.}
+Mostremos que o feixe quociente \((\mathrm{fpqc})\)
+\(\widetilde G/\widetilde{G'}\) é representável. Isso pode ser verificado
+localmente sobre \(S\), assim como todas as demais afirmações; podemos
+supor, portanto, que \(G\) e \(H\) sejam diagonalizáveis, da forma
+\(D_S(M)\) e \(D_S(N)\).
+
+Como \(H\) é de tipo finito sobre \(S\), o grupo \(N\) é de tipo finito
+por \SGARefLink{sga3:viii:proposition:2:1:item:b:01}{2.1(b)}. Portanto, por
+\SGARefLink{sga3:viii:corollary:1:5}{1.5}, \(u\) é definido por um
+homomorfismo \(u':N\to M\). De
+\SGARefLink{sga3:viii:theorem:3:1}{3.1} e
+\SGARefLink{sga3:viii:corollary:3:2}{3.2} deduz-se que
+\[
+  G'\simeq D_S(\operatorname{Coker}u')
+\]
+e que \(\widetilde G/\widetilde{G'}\) é representado por
+\(D_S(\operatorname{Im}u')\). Além disso, considerando a sequência exata
+\SGARefTarget{sga3:viii:corollary:3:4:diagram:02}
+\[
+  0\longrightarrow\operatorname{Ker}u'
+   \longrightarrow N
+   \xrightarrow{w'}\operatorname{Im}u'
+   \longrightarrow0,
+\]
+vê-se que \(w\) é uma imersão fechada e que
+\[
+  H'=H/\operatorname{Im}w=D_S(\operatorname{Ker}u').
+\]
+Este último é de tipo finito sobre \(S\), pois \(N\), e portanto
+\(\operatorname{Ker}u'\), é de tipo finito.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:remarks:3:4}\textbf{Observações.}
+O resultado da existência de quocientes de
+\SGARefLink{sga3:viii:corollary:3:4}{3.4} será generalizado
+consideravelmente no \(\SGARefLink{sga3:viii:section:5}{\S5}\).
+
+Por outro lado, observe-se que, na
+\SGARefLink{sga3:viii:section:3}{presente seção} e na
+\SGARefLink{sga3:viii:section:2}{precedente}, a hipótese
+\(S\ne\varnothing\) foi utilizada apenas para assegurar a validade de certas
+recíprocas que permitem deduzir propriedades dos grupos ordinários
+correspondentes a partir de certas hipóteses sobre grupos diagonalizáveis
+sobre \(S\). Os resultados no sentido «direto» são válidos sem restrição
+alguma sobre \(S\), e as demonstrações aqui dadas aplicam-se em geral.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:3:5}\textbf{Corolário 3.5.}
+\textit{Seja \(G\) um pré-esquema em grupos diagonalizável sobre \(S\), e seja
+\(n\ne0\) um inteiro. Então o subgrupo \({}_nG\) de \(G\), núcleo do
+homomorfismo}
+\[
+  n\mathbin{\cdot}\operatorname{id}_G:G\longrightarrow G,
+\]
+\textit{é inteiro sobre \(S\), e é finito sobre \(S\) se \(G\) é de
+tipo finito sobre \(S\).}
+
+De fato, se \(G=D_S(M)\), então
+\[
+  {}_nG=D_S(M/nM)
+\]
+por \SGARefLink{sga3:viii:theorem:3:1}{3.1}, e o resultado deduz-se de
+\SGARefLink{sga3:viii:proposition:2:1:item:b:01}{2.1(b)},
+\SGARefLink{sga3:viii:proposition:2:1:item:c:01}{(c)} e
+\SGARefLink{sga3:viii:proposition:2:1:item:cprime:01}{\((c')\)}.

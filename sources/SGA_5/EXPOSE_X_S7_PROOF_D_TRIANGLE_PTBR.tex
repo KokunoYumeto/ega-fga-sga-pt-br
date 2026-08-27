@@ -1,0 +1,34 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 13017--13048 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Por outro lado, tem-se o triângulo distinguido (onde $Y=C-U$)
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+& \RG_Y(F|Y) \arrow[dl] & \\
+\RG_C(F_{U,C}) \arrow[rr] && \RG_C(F) \arrow[ul]
+\end{tikzcd}
+\tag{7.8}
+\]
+onde, evidentemente,
+\[
+\RG_Y(F)=\coprod_{y\in Y}F_y\in\Ob(\Delta),
+\]
+uma vez que $F_y\in\Ob(\Delta)$ (condição (i)). Resulta, portanto, que $\RG_C(F)\in\Ob(\Delta)$, ou seja, a primeira afirmação do teorema. O triângulo distinguido (7.8) fornece, além disso, a relação
+\[
+\clK{\Delta}(\RG_C(F))
+=
+\clK{\Delta}(\RG_C(F_{U,C}))
++\sum_{y\in Y}\clK{\Delta}(F_y),
+\]
+e, utilizando o isomorfismo 7.7, obtém-se:
+\[
+\clK{\Delta}(\RG_C(F))
+=
+\clK{\Delta}\bigl(\RHom_{\Lambda[G]}(\RG_{C'}(\Lambda_{U',C'})^\vee,F_{\bar\eta})\bigr)
++\sum_{y\in Y}\clK{\Delta}(F_y).
+\]
+Para obter a fórmula de Euler--Poincaré basta agora utilizar a fórmula de Weil (5.2). Com efeito, primeiro 4.4, (5.2) e 3.6 (no caso particular $B=\Lambda[G]$) fornecem
+\[
+\clKstar{\Lambda[G]}\bigl(\RG_{C'}(\Lambda_{U',C'})\bigr)
+=
+\clKstar{\Lambda[G]}\bigl(\RG_{C'}(\Lambda_{U',C'})^\vee\bigr).
+\]

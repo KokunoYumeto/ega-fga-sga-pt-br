@@ -1,0 +1,342 @@
+% SGA 3, Exposé IX, tradução brasileira.
+% Escopo: §2 integral.
+% Autoridade: Polo--Gille Exp9-8nov09.pdf, pp. locais 4--7,
+% leitor completo pp. 650--653, pp. impressas 41--46.
+
+\setcounter{footnote}{2}
+
+\SGARefTarget{sga3:ix:section:2}\section*{2. Extensão de certas
+propriedades dos grupos diagonalizáveis aos grupos de tipo
+multiplicativo}
+\addcontentsline{toc}{section}{2. Extensão de certas propriedades dos
+grupos diagonalizáveis aos grupos de tipo multiplicativo}
+
+As extensões em questão são consequências essencialmente triviais
+dos resultados da Exposição precedente, levando-se em conta
+\SGARefLink{sga3:ix:definition:1:1}{as definições de 1.1} e o caráter
+«local» (para a topologia fielmente plana e quase compacta) dos
+resultados considerados.
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:definition:2:0}\textbf{Definição 2.0.}
+\footnote{Nota do editor: acrescentou-se esta definição; ela intervém nas
+Proposições~\SGARefLink{sga3:ix:proposition:2:3}{2.3} e
+\SGARefLink{sga3:ix:proposition:2:7}{2.7}.}
+\textit{Denotamos por \(\mathcal M\) o conjunto dos morfismos
+fielmente planos e quase compactos.}
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:proposition:2:1}\textbf{Proposição 2.1.}
+\textit{Seja \(G\) um grupo de tipo multiplicativo sobre um pré-esquema
+\(S\). Então:}
+\begin{enumerate}
+  \item[(a)]\SGARefTarget{sga3:ix:proposition:2:1:item:a:01}
+  \textit{\(G\) é fielmente plano sobre \(S\) e afim sobre \(S\)
+  (\emph{a fortiori}, quase compacto sobre \(S\));}
+
+  \item[(b)]\SGARefTarget{sga3:ix:proposition:2:1:item:b:01}
+  \textit{\(G\) é de tipo finito sobre \(S\) se, e somente se, é de
+  apresentação finita sobre \(S\), se, e somente se, para todo \(s\in S\),
+  o tipo de \(G\) em \(s\) é dado por um grupo comutativo de tipo
+  finito;}
+
+  \item[(c)]\SGARefTarget{sga3:ix:proposition:2:1:item:c:01}
+  \textit{\(G\) é finito sobre \(S\) se, e somente se, para todo
+  \(s\in S\), o tipo de \(G\) em \(s\) é dado por um grupo
+  comutativo finito, se, e somente se (quando \(S\) é quase compacto), \(G\)
+  é de tipo finito sobre \(S\) e é anulado por um inteiro \(n>0\);}
+
+  \item[\((c')\)]\SGARefTarget{sga3:ix:proposition:2:1:item:cprime:01}
+  \textit{\(G\) é inteiro sobre \(S\) se, e somente se, para todo
+  \(s\in S\), o tipo de \(G\) em \(s\) é dado por um grupo
+  comutativo de torção;}
+
+  \item[(d)]\SGARefTarget{sga3:ix:proposition:2:1:item:d:01}
+  \textit{\(G\) é o grupo unidade se, e somente se, para todo \(s\in S\),
+  o tipo de \(G\) em \(s\) é dado pelo grupo comutativo zero;}
+
+  \item[(e)]\SGARefTarget{sga3:ix:proposition:2:1:item:e:01}
+  \textit{\(G\) é liso sobre \(S\) se, e somente se, para todo \(s\in S\),
+  o tipo de \(G\) em \(s\) é dado por um grupo comutativo de tipo
+  finito cujo subgrupo de torção tem ordem prima com a característica
+  de \(\kappa(s)\).}
+\end{enumerate}
+
+Essas afirmações deduzem-se de
+\SGARefLink{sga3:viii:proposition:2:1}{VIII~2.1}, levando em conta que
+as propriedades em questão descendem por morfismos fielmente planos e
+quase compactos (cf. SGA~1, VIII, ou EGA~IV\textsubscript{2}, \S2).
+
+Utilizando \SGARefLink{sga3:viii:corollary:3:5}{VIII~3.5}, obtém-se
+também:
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:proposition:2:2}\textbf{Proposição 2.2.}
+\textit{Seja \(G\) um grupo de tipo multiplicativo e de tipo finito sobre
+\(S\). Para todo inteiro \(n\ne0\), o núcleo
+\({}_nG=\ker(n\cdot\operatorname{id}_G)\) é um grupo de tipo
+multiplicativo, finito sobre \(S\).}
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:proposition:2:3}\textbf{Proposição 2.3.}
+\textit{Seja \(G\) um grupo de tipo multiplicativo sobre o pré-esquema
+\(S\), que atua livremente à direita sobre um \(S\)-pré-esquema
+\(X\), afim sobre \(S\). Então:}
+\begin{enumerate}
+  \item[(a)]\SGARefTarget{sga3:ix:proposition:2:3:item:a:01}
+  \textit{a relação de equivalência definida por \(G\) em \(X\) é
+  \(\mathcal M\)-efetiva
+  (\SGARefLink{sga3:iv:subsection:3:4}{IV~3.4}), e \(Y=X/G\) é afim
+  sobre \(S\);}
+
+  \item[(b)]\SGARefTarget{sga3:ix:proposition:2:3:item:b:01}
+  \textit{se, além disso, \(X\) é de apresentação finita (respectivamente,
+  de tipo finito) sobre \(S\), o mesmo vale para \(Y\).}
+\end{enumerate}
+
+\SGARefLink{sga3:ix:proposition:2:3:item:a:01}{A primeira afirmação}
+deduz-se de \SGARefLink{sga3:viii:theorem:5:1}{VIII~5.1}, que trata do caso
+em que \(G\) é diagonalizável, e de
+\SGARefLink{sga3:iv:proposition:3:5:2}{IV~3.5.2}, que permite reduzir-se a
+esse caso. Com efeito, os morfismos fielmente planos e quase compactos
+\(S'\to S\) são morfismos de descida efetiva para a categoria fibrada
+dos esquemas afins sobre os esquemas: se \(Y'\) é afim sobre \(S'\)
+e está munido de um dado de descida relativo a \(S'\to S\), esse dado
+é efetivo, isto é, \(Y'\) provém de um esquema \(Y\) afim sobre
+\(S\) (cf. SGA~1, \SGARefLink{sga3:viii:proposition:2:1}{VIII~2.1}).
+
+% Página-fonte: Exp9 p. local 5; leitor completo p. 651; p. impressa 43.
+Para \SGARefLink{sga3:ix:proposition:2:3:item:b:01}{a segunda afirmação},
+reduz-se igualmente ao caso diagonalizável de
+\SGARefLink{sga3:viii:corollary:5:8}{VIII~5.8}, pois as condições de
+finitude consideradas descendem por morfismos fielmente planos e
+quase compactos (SGA~1, VIII~3.3 e 3.6\footnote{Nota do editor: veja-se
+também V, 9.1, ou EGA~IV\textsubscript{2}, 2.7.1.}). Procedendo como em
+VIII, Corolários~5.5--5.7, deduz-se de
+\SGARefLink{sga3:ix:proposition:2:3}{2.3}:
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:2:4}\textbf{Corolário 2.4.}
+\textit{Sob as hipóteses de
+\SGARefLink{sga3:ix:proposition:2:3}{2.3}, o morfismo gráfico}
+\SGARefTarget{sga3:ix:corollary:2:4:diagram:01}
+\[
+  X\times_S G\longrightarrow X\times_S X
+\]
+\textit{é uma imersão fechada. Para toda seção \(\sigma\) de \(X\)
+sobre \(S\), o morfismo correspondente}
+\[
+  G\longrightarrow X,\qquad g\longmapsto\sigma\cdot g,
+\]
+\textit{é uma imersão fechada.}
+
+Em particular:
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:2:5}\textbf{Corolário 2.5.}
+\textit{Seja \(u:G\to H\) um monomorfismo de \(S\)-pré-esquemas em grupos,
+com \(G\) de tipo multiplicativo e \(H\) afim sobre \(S\). Então
+\(u\) é uma imersão fechada, \(H/G=Y\) existe e é afim sobre \(S\),
+e \(H\) é um fibrado principal homogêneo sobre \(Y\) sob \(G_Y\).}
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:remark:2:6}\textbf{Observação 2.6.}
+Seja \(u:G\to H\) um monomorfismo de \(S\)-pré-esquemas em grupos, onde
+\(G\) é de tipo multiplicativo e de tipo finito sobre \(S\), e \(H\) é
+de apresentação finita e separado sobre \(S\). Pode-se então demonstrar
+que \(u\) é uma imersão fechada utilizando
+\SGARefLink{sga3:viii:proposition:7:12}{VIII~7.12} (veja-se a Observação
+\SGARefLink{sga3:viii:remark:7-13:item:b}{VIII~7.13(b)}).
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:proposition:2:7}\textbf{Proposição 2.7.}
+\textit{Seja \(u:G\to H\) um homomorfismo de \(S\)-grupos de tipo
+multiplicativo, com \(H\) de tipo finito sobre \(S\). Então:}
+\begin{enumerate}
+  \item[(i)]\SGARefTarget{sga3:ix:proposition:2:7:item:i:01}
+  \textit{\(G_0=\ker u\) é um \(S\)-grupo de tipo multiplicativo; a
+  relação de equivalência definida por \(G_0\) em \(G\) é
+  \(\mathcal M\)-efetiva e, portanto
+  (\SGARefLink{sga3:iv:subsection:3:4}{IV~3.4}), \(u\) se fatora como}
+  \SGARefTarget{sga3:ix:proposition:2:7:diagram:01}
+  \[
+    G\longrightarrow G/G_0=I\longrightarrow H,
+  \]
+  \textit{onde \(I\to H\) é um monomorfismo\footnote{Nota do editor:
+  na realidade, até mesmo uma imersão fechada.} de \(S\)-grupos. O grupo
+  \(I\) é de tipo multiplicativo, a relação de equivalência em \(H\)
+  definida por \(I\) é \(\mathcal M\)-efetiva e, por conseguinte,
+  \(H_0=H/I\) existe e é também de tipo multiplicativo;}
+
+  \item[(ii)]\SGARefTarget{sga3:ix:proposition:2:7:item:ii:01}
+  \textit{\(H_0\) e \(I\) são de tipo finito, e \(G_0\) também o é
+  quando \(G\) o é.}
+\end{enumerate}
+
+\emph{Demonstração.}
+Procedendo como para \SGARefLink{sga3:ix:proposition:2:3}{2.3}, reduz-se
+ao caso em que \(G\) e \(H\) são diagonalizáveis; então
+\SGARefLink{sga3:ix:proposition:2:7}{2.7} reduz-se a
+\SGARefLink{sga3:viii:corollary:3:4}{VIII~3.4}.
+
+Registremos os corolários seguintes.
+
+% Página-fonte: Exp9 p. local 6; leitor completo p. 652; p. impressa 44.
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:2:8}\textbf{Corolário 2.8.}
+\begin{enumerate}
+  \item[(a)]\SGARefTarget{sga3:ix:corollary:2:8:item:a:01}
+  \textit{Seja \(S\) um pré-esquema. A categoria dos \(S\)-grupos de
+  tipo multiplicativo e de tipo finito é uma categoria abeliana.}
+
+  \item[(b)]\SGARefTarget{sga3:ix:corollary:2:8:item:b:01}
+  \textit{Seja \(u:G\to H\) um homomorfismo nessa categoria. Ele é um
+  monomorfismo (respectivamente, um epimorfismo, respectivamente, um
+  isomorfismo) nessa categoria se, e somente se, \(u\) é um monomorfismo de
+  pré-esquemas (respectivamente, \(u\) é fielmente plano,
+  respectivamente, \(u\) é um isomorfismo de pré-esquemas).}
+\end{enumerate}
+
+Basta observar que o produto de dois \(S\)-grupos de tipo multiplicativo
+ainda é de tipo multiplicativo (o que é imediato), e evidentemente
+é de tipo finito sobre \(S\) se ambos os fatores o são. O restante de
+\SGARefLink{sga3:ix:corollary:2:8}{2.8} deduz-se imediatamente de
+\SGARefLink{sga3:ix:proposition:2:7}{2.7}; deixam-se os pormenores ao leitor.
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:2:9}\textbf{Corolário 2.9.}
+\textit{Seja \(u:G\to H\) um homomorfismo de \(S\)-grupos de tipo
+multiplicativo e de tipo finito. Seja \(U\) o conjunto dos pontos \(s\in S\)
+para os quais \(u_s:G_s\to H_s\) é um monomorfismo (respectivamente,
+fielmente plano, respectivamente, um isomorfismo). Então \(U\) é ao mesmo
+tempo aberto e fechado, e o homomorfismo induzido \(u_U:G_U\to H_U\) é um
+monomorfismo (respectivamente, fielmente plano, respectivamente, um
+isomorfismo).}
+
+Seja \(P\) (respectivamente, \(Q\)) o núcleo (respectivamente, o conúcleo)
+de \(u\). Por \SGARefLink{sga3:ix:proposition:2:7}{2.7}, \(Q\) existe e
+\(P\) e \(Q\) são de tipo multiplicativo; além disso, a formação de \(P\) e
+\(Q\) comuta com toda mudança de base \(S'\to S\), em particular com a
+formação das fibras. Por outro lado, \(u\) é um monomorfismo
+(respectivamente, fielmente plano, respectivamente, um isomorfismo) se, e
+somente se, \(P=0\) (respectivamente, \(Q=0\), respectivamente, \(P=Q=0\)).
+Essas observações reduzem-nos a verificar a afirmação seguinte: se
+\(R\) é um \(S\)-grupo de tipo multiplicativo, o conjunto \(U\) dos
+pontos \(s\in S\) para os quais \(R_s=0\) é aberto e fechado, e
+\(R_U=0\). Isso está contido na Observação
+\SGARefLink{sga3:ix:remark:1:4:1:item:a}{1.4.1(a)}.
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:2:10}\textbf{Corolário 2.10.}
+\textit{Seja \(G\) um \(S\)-grupo de tipo multiplicativo e de tipo finito,
+e sejam \(H\) e \(H'\) dois subgrupos de tipo multiplicativo.}
+\begin{enumerate}
+  \item[(a)]\SGARefTarget{sga3:ix:corollary:2:10:item:a:01}
+  \textit{\(H''=H\cap H'\) é um subgrupo de \(G\) de tipo
+  multiplicativo.}
+
+  \item[(b)]\SGARefTarget{sga3:ix:corollary:2:10:item:b:01}
+  \textit{Seja \(U\) o conjunto dos \(s\in S\) para os quais
+  \(H_s\subseteq H'_s\) (respectivamente, \(H_s=H'_s\)). Então \(U\)
+  é aberto e fechado, e \(H_U\subseteq H'_U\) (respectivamente,
+  \(H_U=H'_U\)).}
+\end{enumerate}
+
+Aqui, naturalmente, o sinal de interseção em \(H\cap H'\) denota a
+interseção em sentido funtorial, a saber, \(H\times_GH'\), que é
+manifestamente um \(S\)-subgrupo de \(G\). Do mesmo modo, o sinal de inclusão
+(respectivamente, o sinal de igualdade) denota a relação de ordem
+(respectivamente, a igualdade) entre subfuntores de \(H\), e não a
+inclusão (respectivamente, a igualdade) dos conjuntos subjacentes.
+
+Aplicando primeiro \SGARefLink{sga3:ix:proposition:2:7}{2.7} ao morfismo de
+inclusão \(H\to G\), obtém-se que \(H\) é de tipo finito; o mesmo
+vale para \(H'\). De
+\SGARefLink{sga3:ix:corollary:2:8}{2.8} segue então que
+\(H\cap H'\) é de tipo multiplicativo e de tipo finito. (Observe-se que o
+funtor canônico da categoria considerada em
+\SGARefLink{sga3:ix:corollary:2:8}{2.8} para a categoria
+\((\mathbf{Sch})/S\) comuta com os limites projetivos finitos.)
+
+A formação de \(H\cap H'\) comuta com a extensão da base, em
+particular com a formação das fibras. Além disso, \(H\subseteq H'\)
+(respectivamente, \(H=H'\)) equivale a \(H''=H\) (respectivamente, a
+\(H''=H\) e \(H''=H'\)). Consideremos os homomorfismos canônicos
+\(H''\to H\) e \(H''\to H'\). Então \(U\) é o conjunto dos pontos
+\(s\in S\) para os quais o homomorfismo induzido \(H''_s\to H_s\) é um
+isomorfismo (respectivamente, para os quais \(H''_s\to H_s\) e
+\(H''_s\to H'_s\) são isomorfismos).
+
+% Página-fonte: Exp9 p. local 7; leitor completo p. 653; pp. impressas 45--46.
+Por \SGARefLink{sga3:ix:corollary:2:9}{2.9}, segue que \(U\) é aberto
+e fechado e que \(H''_U\to H_U\) (respectivamente, \(H''_U\to H_U\) e
+\(H''_U\to H'_U\)) são isomorfismos. Isso dá a conclusão desejada.
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:proposition:2:11}\textbf{Proposição 2.11.}
+\textit{Seja \(S\) um pré-esquema, seja \(G\) um \(S\)-grupo de tipo
+multiplicativo e de tipo finito sobre \(S\), seja \(H\) um subgrupo de
+\(G\) de tipo multiplicativo, e ponhamos \(K=G/H\), grupo quociente de
+\(G\) de tipo multiplicativo.}
+\begin{enumerate}
+  \item[(i)]\SGARefTarget{sga3:ix:proposition:2:11:item:i:01}
+  \textit{Suponhamos que \(G\) seja trivial, isto é, diagonalizável.
+  Existe uma partição de \(S\) em subconjuntos abertos e fechados \(S_i\)
+  tal que, para todo \(i\), \(H_{S_i}\) e \(K_{S_i}\) são
+  diagonalizáveis. Em particular, se \(S\) é conexo, \(H\) e \(K\) são
+  diagonalizáveis.}
+
+  \item[(ii)]\SGARefTarget{sga3:ix:proposition:2:11:item:ii:01}
+  \textit{\SGARefLink{sga3:ix:proposition:2:11:item:i:01}{A mesma
+  afirmação} vale substituindo «diagonalizável» por «isotrivial», desde
+  que \(S\) seja conexo, localmente conexo ou quase compacto.}
+
+  \item[(iii)]\SGARefTarget{sga3:ix:proposition:2:11:item:iii:01}
+  \textit{Se \(G\) é localmente trivial (respectivamente, localmente
+  isotrivial, respectivamente, quase-isotrivial), o mesmo vale para \(K\)
+  e \(H\).}
+\end{enumerate}
+
+\emph{Demonstração.}
+\SGARefLink{sga3:ix:proposition:2:11:item:i:01}{(i)} Por hipótese,
+\(G=D_S(M)\), onde \(M\) é um grupo comutativo de tipo finito. Para
+cada grupo quociente \(M_i\) de \(M\), seja \(H_i=D_S(M_i)\) o subgrupo
+diagonalizável correspondente de \(G\)
+(\SGARefLink{sga3:viii:theorem:3:1}{VIII~3.1}). Seja \(S_i\) o conjunto
+dos pontos \(s\in S\) para os quais \(H_s=(H_i)_s\). Por
+\SGARefLink{sga3:ix:corollary:2:10}{2.10}, \(S_i\) é aberto e fechado,
+e \(H_{S_i}=(H_i)_{S_i}\); assim, \(H_{S_i}\) é diagonalizável e, por
+conseguinte, \(K_{S_i}\) também o é
+(\SGARefLink{sga3:viii:theorem:3:1}{VIII~3.1}). Os \(S_i\) são
+manifestamente disjuntos dois a dois, e afirmamos que cobrem \(S\). Com
+efeito, para todo \(s\), o grupo \(H_s\), por ser um subgrupo do grupo
+diagonalizável \(G_s\), é diagonalizável (cf.
+\SGARefLink{sga3:ix:proposition:8:1}{8.1} abaixo\footnote{Nota do
+editor: corrigiu-se a referência errônea a IV~4.7.5. Observe-se que a
+\SGARefLink{sga3:ix:section:8}{Seção~8} da presente Exposição é
+independente das Seções~\SGARefLink{sga3:ix:section:3}{3}--%
+\SGARefLink{sga3:ix:section:7}{7}.}). Assim, \(H_s\) é da forma
+\(D_{\kappa(s)}(M_i)\), por
+\SGARefLink{sga3:viii:corollary:1:5}{VIII~1.5} e
+\SGARefLink{sga3:ix:theorem:3:2:item:b}{3.2(b)}. Restringindo-nos à
+família dos \(S_i\) não vazios, fica provada a afirmação
+\SGARefLink{sga3:ix:proposition:2:11:item:i:01}{(i)}.
+
+\SGARefLink{sga3:ix:proposition:2:11:item:ii:01}{(ii)} Por hipótese,
+existe um morfismo finito, étale e sobrejetivo \(S'\to S\) tal que
+\(G_{S'}\) é diagonalizável. Todo ponto de \(S'\) possui, portanto, uma
+vizinhança aberta e fechada \(U'\) tal que \(H_{U'}\) e \(K_{U'}\) são
+diagonalizáveis. A imagem \(U\) de \(U'\) em \(S\) é aberta e fechada,
+e \(S'\to S\) continua a induzir um morfismo finito, étale e sobrejetivo
+\(U'\to U\). Assim, todo ponto \(s\in S\) possui uma vizinhança aberta e fechada
+\(U\) tal que \(H_U\) e \(K_U\) são isotriviais. A afirmação
+\SGARefLink{sga3:ix:proposition:2:11:item:ii:01}{(ii)} segue
+imediatamente.
+
+\SGARefLink{sga3:ix:proposition:2:11:item:iii:01}{(iii)} Isso se deduz
+imediatamente de \SGARefLink{sga3:ix:proposition:2:11:item:i:01}{(i)},
+\SGARefLink{sga3:ix:proposition:2:11:item:ii:01}{(ii)} e das
+definições. Além disso, o caso quase-isotrivial também se deduzirá do fato
+mais geral «tipo finito \(\Longrightarrow\) quase-isotrivial», anunciado
+em \SGARefLink{sga3:ix:comments:1:2}{1.2}
+(cf. \SGARefLink{sga3:x:corollary:4-5}{X~4.5}).

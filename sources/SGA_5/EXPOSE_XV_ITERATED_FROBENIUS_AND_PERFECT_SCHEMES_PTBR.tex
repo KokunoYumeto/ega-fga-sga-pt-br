@@ -1,0 +1,35 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 14508--14540 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{n\textsuperscript{o} 4. Morfismo de Frobenius iterado; pré-esquemas perfeitos}
+
+Para todo inteiro $\nu\geq 0$, o endomorfismo iterado $\fr_X^\nu$ depende funtorialmente do pré-esquema $X$ de característica $p$. Portanto, se $S$ é um pré-esquema de característica $p$ e $X$ um $S$-pré-esquema, $\fr_X^\nu$ fatora-se, de maneira única, em um $S$-morfismo
+\[
+\Fr_{X/S}^\nu:X\longrightarrow X^{(p^\nu/S)},
+\]
+onde
+\[
+X^{(p^\nu/S)}=X\times_S(S,\fr_S^\nu),
+\]
+seguido da projeção $X^{(p^\nu/S)}\to X$. O morfismo $\Fr_{X/S}^\nu$ depende funtorialmente do $S$-pré-esquema $X$ e é compatível com a mudança de base em $S$ (cf. n$^\circ$2, prop. 1b)). Além disso, é claro que
+\[
+X^{(p^\nu/S)}=X^{(p^\nu)}\simeq\bigl(X^{(p^{\nu-1})}\bigr)^{(p)}
+\]
+e que
+\[
+\Fr_{X/S}^\nu=(\Fr_{X/S}^{\nu-1})^{(p)}\circ\Fr_{X/S},
+\]
+sob a identificação proporcionada pelo isomorfismo canônico precedente.
+
+\begin{statement}{Definição 4}
+Diz-se que um pré-esquema $S$ de característica $p$ é perfeito se $\fr_S$ é um automorfismo de $S$.
+\end{statement}
+
+Se $S$ é um pré-esquema perfeito de característica $p$ e $X$ um $S$-pré-esquema, vê-se imediatamente que $X^{(p/S)}$ identifica-se com o pré-esquema $X$ considerado como $S$-pré-esquema através do morfismo $\fr_S^{-1}\circ g:X\to S$, onde $g$ é o morfismo estrutural de $X$ em $S$; sob esta identificação, $\Fr_{X/S}=\fr_X$.
+
+Como exemplo de pré-esquema perfeito, temos $S=\Spec(\mathbb F_q)$, onde $q=p^\nu$ é uma potência da característica $p$; com efeito, neste caso $\fr_S^\nu=\id_S$. Se $X$ é um $S$-pré-esquema, vê-se que
+\[
+X^{(p^\nu/S)}=X,
+\qquad
+\Fr_{X/S}^\nu=\fr_X^\nu.
+\]
+Observe que, para $\nu=1$, obtém-se $S=\Spec(\mathbb F_p)$, para o qual $\fr_S=\id_S$; os $S$-pré-esquemas são os pré-esquemas de característica $p$; sobre essa base $S$, $X^{(p/S)}=X$ e $\Fr_{X/S}=\fr_X$.

@@ -1,0 +1,182 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 3283--3463 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Corolário 4.5}
+Sob as hipóteses de 4.4, tem-se um quadrado comutativo
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+\Hom(c_1'{}^*L_1,c_2'{}^!L_2)\otimes
+\Hom(c_2''{}^*L_2,c_1''{}^!L_1)
+ \arrow[r,"4.2.5"] \arrow[d,"3.7.6\otimes 3.7.6"'] &
+\H^0(C,K_C)\arrow[d,"g_*"]\\
+\Hom(d_1'{}^*f_{1*}L_1,d_2'{}^!f_{2*}L_2)\otimes
+\Hom(d_2''{}^*f_{2*}L_2,d_1''{}^!f_{1*}L_1)
+ \arrow[r,"4.2.5"'] &
+\H^0(D,K_D),
+\end{tikzcd}
+\]
+em que $g_*$ é definida pela flecha de adjunção
+\[
+g_*K_C=g_*g^!K_D\longrightarrow K_D.
+\]
+Em outros termos, para
+\[
+u\in\Hom(c_1'{}^*L_1,c_2'{}^!L_2),\qquad
+v\in\Hom(c_2''{}^*L_2,c_1''{}^!L_1),
+\]
+tem-se
+\begin{equation}
+\tag{4.5.1}
+\langle f_*u,f_*v\rangle=g_*\langle u,v\rangle.
+\end{equation}
+\end{statement}
+
+Para todo $S$-esquema próprio $t:T\longrightarrow S$, denotemos por
+\begin{equation}
+\tag{4.6}
+\int_T:\H^0(T,K_T)\longrightarrow \H^0(S,K_S)=\H^0(S,A)
+\end{equation}
+a flecha definida pela flecha de adjunção
+\[
+t_!K_T\longrightarrow A.
+\]
+
+\begin{statement}{Corolário 4.7 -- Fórmula de Lefschetz--Verdier}
+Sob as hipóteses de 4.4, suponhamos que $Y_1=Y_2=S=D'=D''$. Para
+\[
+u\in\Hom(c_1'{}^*L_1,c_2'{}^!L_2),\qquad
+v\in\Hom(c_2''{}^*L_2,c_1''{}^!L_1),
+\]
+tem-se
+\begin{equation}
+\tag{4.7.1}
+\langle u_*,v_*\rangle=\int_C\langle u,v\rangle,
+\end{equation}
+em que
+\[
+u_*\in\Hom(f_{1*}L_1,f_{2*}L_2),\qquad
+v_*\in\Hom(f_{2*}L_2,f_{1*}L_1)
+\]
+são os homomorfismos deduzidos de $u$, $v$ por imagem direta sobre $S$ (3.7.6), e
+\[
+\langle u_*,v_*\rangle=\Tr(u_*v_*)=\Tr(v_*u_*)
+\]
+é o produto cup, no sentido de (SGA 6 I 8.3), dos homomorfismos de complexos perfeitos $u_*$, $v_*$ (4.1.5).
+\end{statement}
+
+Levando em conta 3.6.5, tem-se, em particular:
+
+\begin{statement}{Corolário 4.8}
+Sejam $t:T\longrightarrow S$ um $S$-esquema próprio, $\Delta\subset T\times_S T$ a diagonal, $F:T\longrightarrow T$ um $S$-endomorfismo de $T$, $T^F=(\text{gráfico de }F)\times_{(T\times_S T)}\Delta$ o esquema de pontos fixos de $F$, $L\in\ob\Dctf(T)$, $u\in\Hom(F^*L,L)$ uma correspondência de $L$ a $L$ com suporte no gráfico de $F$, $1\in\Hom(L,L)$ a correspondência identidade, com suporte em $\Delta$ (3.2 b)). Então, tem-se
+\[
+\Tr(u_*)=\int_{T^F}\langle u,1\rangle,
+\]
+em que $u_*$ é o endomorfismo de $t_*L$ composto de $t_*L\longrightarrow t_*F^*L$ (imagem inversa) e de $t_*u:t_*F^*L\longrightarrow t_*L$.
+\end{statement}
+
+Das observações de 3.2 a) e 3.6 deduz-se, por outro lado:
+
+\begin{statement}{Corolário 4.9}
+Sob as hipóteses de 4.7, suponhamos que $X_i$ seja liso sobre $S$, de dimensão relativa pura $r_i$, e que $C'$ (resp. $C''$) seja um subesquema fechado de $X$, finito e de dimensão Tor finita sobre $X_2$ (resp. $X_1$). Sejam
+\[
+\cl(C')\in \H_{C'}^{2r_1}(X,A(r_1)),\qquad
+\cl(C'')\in \H_{C''}^{2r_2}(X,A(r_2))
+\]
+as classes de cohomologia de $C'$ e $C''$,
+\[
+\cl(C')_*\in\Hom(\R f_{1*}A,\R f_{2*}A),\qquad
+\cl(C'')_*\in\Hom(\R f_{2*}A,\R f_{1*}A)
+\]
+os homomorfismos correspondentes (3.2 a), 3.7.6). Tem-se então
+\[
+\langle \cl(C')_*,\cl(C'')_*\rangle
+=
+\int_{C'\cap C''}\cl(C)\cl(D),
+\]
+onde
+\[
+\cl(C)\cl(D)\in
+\H_{C'\cap C''}^{2(r_1+r_2)}(X,A(r_1+r_2))
+=
+\H^0(C'\cap C'',K_{C'\cap C''})
+\]
+é o produto cup habitual.
+\end{statement}
+
+Levando em conta 4.3, tem-se, em particular:
+
+\begin{statement}{Corolário 4.10}
+Sob as hipóteses de 4.9, suponhamos que $C'\cap C''$ seja finito. Para $z\in C'\cap C''$, denotemos por $(C'\!\cdot C'')_z$ a imagem em $A$ da multiplicidade de interseção de $C'$ e $C''$ em $z$. Então, tem-se
+\[
+\langle \cl(C')_*,\cl(C'')_*\rangle
+=
+\sum_{z\in C'\cap C''}(C'\!\cdot C'')_z.
+\]
+\end{statement}
+
+\begin{statement}{4.11}
+Sob as hipóteses de 4.9, tem-se, em geral,
+\begin{equation}
+\tag{4.11.1}
+\langle \cl(C')_*,\cl(C'')_*\rangle
+=
+\sum_{Z\in\pi_0(C'\cap C'')}(\cl(C')\cl(C''))_Z,
+\end{equation}
+em que $\pi_0(C'\cap C'')$ denota o conjunto das componentes conexas de $C'\cap C''$, e $(\cl(C')\cl(C''))_Z$ a restrição de $\cl(C')\cl(C'')$ a $\H^0(Z,K_Z)$. Quando $Z$ é uma componente de dimensão $\geq 1$, o cálculo de $(\cl(C')\cl(C''))_Z$ apresenta problemas, pois estamos em uma situação ``de excesso''. Se $Z$ é lisa, de dimensão pura $d$, se $C'$ e $C''$ são lisos em uma vizinhança de $Z$, e se $X$ é projetivo, pode-se demonstrar que se tem
+\begin{equation}
+\tag{4.11.2}
+\int_Z(\cl(C')\cl(C''))_Z=\int_Z c_d(N_Z),
+\end{equation}
+em que $N_Z$ é o feixe localmente livre de posto $d$ definido pela sequência exata de fibrados normais
+\[
+0\longrightarrow N_{Z/C'}\oplus N_{Z/C''}\longrightarrow N_{Z/X}\longrightarrow N_Z\longrightarrow 0,
+\]
+e $c_d(N_Z)\in \H^{2d}(Z,A(d))$ denota sua $d$-ésima classe de Chern (SGA 5 VII) (utilizar (SGA 6 XIV 6.3) para reduzir-se ao cálculo de um número de interseção em teoria K, e aplicar (SGA 6 VII 2.5), cf. ([10] 4.1); a hipótese de projetividade é provavelmente desnecessária).
+
+Seja $T$ um $S$-esquema projetivo liso; tomemos como correspondência $C'$ (resp. $C''$) o gráfico de um $S$-endomorfismo $F$ (resp. a diagonal), e suponhamos que o esquema de pontos fixos $T^F=C'\cap C''$ seja liso. O feixe $N_{(T^F)}$ acima não é senão o feixe tangente a $T^F$, de modo que 4.11.2 implica, pela fórmula de Gauss--Bonnet (SGA 5 VII 4.9), o análogo de uma fórmula bem conhecida pelos topólogos:
+\begin{equation}
+\tag{4.11.3}
+\Tr(F,\R\Gamma(T,A))=\EP(T^F),
+\end{equation}
+em que $\EP(T^F)$ denota a característica de Euler--Poincaré de $T_s^F$ para $s$ um ponto geométrico sobre $S$ (loc. cit.).
+\end{statement}
+
+O cálculo de $(\cl(C')\cl(C''))_Z$ para uma componente $Z$ de dimensão $\geq 1$, não lisa, não foi abordado em geral, pelo menos até onde sabe o redator.
+
+\begin{statement}{4.12}
+Na situação de 4.7, seja $z$ um ponto isolado de $C$, com projeção $z_i$ sobre $X_i$, $a'$ (resp. $a''$) sobre $C'$ (resp. $C''$), e seja $\bar z$ um ponto geométrico sobre $z$, de imagem $\bar z_i$ sobre $z_i$. Suponhamos que $c_2'$ (resp. $c_1''$) seja quase-finito e plano em $a'$ (resp. $a''$), que $L_i$ seja perfeito em uma vizinhança de $z_i$, e que $u$ (resp. $v$) seja dado em uma vizinhança de $a'$ (resp. $a''$) por
+\[
+\Tr_{c_2'}:c_{2!}'c_2'{}^*L_2\longrightarrow L_2
+\quad\text{e}\quad
+s\in\Hom(c_1'{}^*L_1,c_2'{}^*L_2)
+\]
+(resp.
+\[
+\Tr_{c_1''}:c_{1!}''c_1''{}^*L_1\longrightarrow L_1
+\quad\text{e}\quad
+t\in\Hom(c_2''{}^*L_2,c_1''{}^*L_1)).
+\]
+Denotemos por $s_{\bar z}\in\Hom(L_{1\bar z_1},L_{2\bar z_2})$ (resp. $t_{\bar z}\in\Hom(L_{2\bar z_2},L_{1\bar z_1})$) o homomorfismo deduzido de $s$ (resp. $t$) por passagem às fibras. Denotemos também, como em 3.2 a), por $\cl(c')$ (resp. $\cl(c'')$) a correspondência de $X_1$ a $X_2$ (resp. de $X_2$ a $X_1$) definida, em uma vizinhança de $a'$ (resp. $a''$), por $c_2'$ (resp. $c_1''$), e por $(C'\!\cdot C'')_z$ o termo local $\langle\cl(c'),\cl(c'')\rangle_z$ correspondente (igual à imagem em $A$ da multiplicidade de interseção de $C'$ e $C''$ em $z$ quando $C'$ e $C''$ são subesquemas fechados de $X$, com $X_1$ e $X_2$ lisos). Tem-se então:
+\begin{equation}
+\tag{4.12.1}
+\langle u,v\rangle_z=(C'\!\cdot C'')_z\langle s_{\bar z},t_{\bar z}\rangle.
+\end{equation}
+Com efeito, isto resulta facilmente de 4.2.6.
+\end{statement}
+
+\begin{statement}{4.13}
+Se $T$ é um esquema sobre $S$, denotemos por $DF(T)$ a categoria derivada filtrada dos complexos de $A_T$-módulos com filtração finita ([9] V 1), e por $DF_{\ctf}(T)$ a subcategoria plena formada pelos $L$ tais que $\gr(L)\in\ob\Dctf(T)$. O sorites de compatibilidade dos funtores derivados filtrados com a passagem aos graduados associados implica que $DF_{\ctf}$ é estável pelas seis operações $f^*$, $f_*$, $f_!$, $f^!$, $\otimes^{\mathbf L}$, $\uRHom$. As definições e os resultados dos números anteriores são válidos, mutatis mutandis, em $DF_{\ctf}$. O emparelhamento 4.1.2 é compatível com a passagem aos graduados associados (considerando-se $K_X$ munido da filtração trivial), e daí resulta que, com as notações de 4.2.5, para $L_i\in\ob DF_{\ctf}(X_i)$,
+\[
+u\in\Hom_{DF}(c_1^*L_1,c_2^!L_2),\qquad
+v\in\Hom_{DF}(d_2^*L_2,d_1^!L_1),
+\]
+tem-se a seguinte igualdade em $\H^0(E,K_E)$:
+\begin{equation}
+\tag{4.13.1}
+\langle u,v\rangle=\sum_i\langle \gr^i u,\gr^i v\rangle.
+\end{equation}
+Como observa Deligne, esta observação aplica-se em particular à situação considerada por Langlands em ([13] §7). As correspondências que ele considera em (loc. cit. 7.11) preservam, com efeito, nas proximidades dos pontos fixos, filtrações finitas dos feixes, cujos graduados associados induzem, sobre a localização estrita na imagem de um ponto fixo, ou um feixe constante, ou a extensão por zero de um feixe constante sobre o complemento do ponto fechado. O cálculo dos termos locais reduz-se facilmente, por 4.13, a 4.12.1 e ao caso de feixes concentrados nos pontos fechados que são imagens dos pontos fixos, caso tratado diretamente. Aplicando 4.7, obtém-se a fórmula de Lefschetz requerida em ([13] 7.11). Assinalemos que o enunciado geral (loc. cit. 7.12) é verdadeiro; a demonstração, mais delicada, será dada em III B.
+\end{statement}
+
+
+
+\section*{5. Complementos}

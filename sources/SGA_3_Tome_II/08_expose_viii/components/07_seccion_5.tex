@@ -1,0 +1,280 @@
+% Tradução brasileira revista a partir do workpass espanhol congelado;
+% a fonte permanece em source_es.
+% SGA 3, Exposé VIII, tradução brasileira: §5.
+% Autoridade: Polo--Gille Exp8-8nov09.pdf, pp. locais 14--17,
+% leitor completo pp. 630--633.
+
+\setcounter{footnote}{16}
+
+\SGARefTarget{sga3:viii:section:5}\section*{5. Quociente de um esquema afim por um grupo diagonalizável que atua livremente}
+\addcontentsline{toc}{section}{5. Quociente de um esquema afim por um grupo diagonalizável que atua livremente}
+
+\noindent\footnote{Nota do editor: acrescentamos a frase seguinte.}
+Denotamos por \(\mathcal M\) o conjunto dos morfismos fielmente planos
+e quase compactos, e lembremos que os torsores se entendem com relação à
+topología \((\mathrm{fpqc})\).
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:theorem:5:1}\textbf{Teorema 5.1.}
+\begin{itshape}
+Seja \(S\) um pré-esquema, \(M\) um grupo comutativo ordinário,
+\(G=D_S(M)\) o grupo diagonalizável sobre \(S\) que ele define, e \(P\)
+um \(S\)-pré-esquema afim sobre \(S\), sobre o qual \(G\) atua livremente
+à direita.
+
+Então a relação de equivalência definida por \(G\) sobre \(P\) é
+\(\mathcal M\)-efetiva (cf. IV,
+\SGARefLink{sga3:iv:subsection:3:4}{3.4}); isto é, existe o quociente
+\(X=P/G\), e \(P\) é um torsor sobre \(X\) sob \(G_X=D_X(M)\). Além disso,
+\(P/G\) é afim sobre \(S\). Mais precisamente, se \(P\) é definido pela
+álgebra \(M\)-graduada \(\mathcal A\), então \(P/G\) é isomorfo a
+\(\operatorname{Spec}(\mathcal A_0)\), onde
+\(\mathcal A_0=\mathcal A^G\) é a componente de grau zero de
+\(\mathcal A\).
+\end{itshape}
+
+\smallskip
+\noindent\textit{Demonstração.}
+Ponha-se \(X=\operatorname{Spec}(\mathcal A_0)\). A inclusão
+\(\mathcal A_0\to\mathcal A\) fornece um morfismo natural \(P\to X\),
+invariante sob a ação de \(G\). Assim, \(P\) torna-se um
+\(X\)-pré-esquema, afim sobre \(X\), com grupo de operadores
+\(G_X=D_X(M)\); a hipótese de que \(G\) atua livremente sobre \(P/S\)
+implica que \(G_X\) atua livremente sobre \(P/X\). Resta apenas mostrar que
+\(P\) é um fibrado principal homogêneo sob \(G_X\), usando o fato de
+que \(\mathcal B_0=\mathcal O_X\), onde \(\mathcal B\) é a álgebra
+\(M\)-graduada sobre \(X\) que define \(P/X\).
+
+Podemos supor, portanto, que \(X=S\) e que \(S\) seja afim. Então
+\(P\) é afim, definido por um anel \(M\)-graduado \(A\); denotemos por
+\(A_m\) sua parte homogênea de grau \(m\), de modo que
+\(S=\operatorname{Spec}(A_0)\). Em virtude de
+\SGARefLink{sga3:viii:proposition:4:6}{4.6}, resta verificar
+\[
+  A_m\cdot A_{-m}=A_0
+  \qquad\text{para todo \(m\in M\).}
+  \tag{x}\label{sga3:viii:theorem:5:1:eq:x:01}
+\]
+Um cálculo direto também mostra que
+\SGARefLink{sga3:viii:theorem:5:1:eq:x:01}{(x)} equivale a dizer que
+\[
+  P\times_SG\longrightarrow P\times_SP
+\]
+é uma imersão fechada, e não apenas um monomorfismo (como se deduz da
+hipótese de que \(G\) atua livremente); equivalentemente, o homomorfismo
+de anéis afins
+\[
+  \theta:A\otimes_{A_0}A\longrightarrow A(M)
+\]
+é sobrejetivo.\footnote{Nota do editor: de fato, para todo \(b\in A\)
+e todo \(a_m\in A_m\), tem-se
+\(\theta(b\otimes a_m)=ba_m\otimes e_m\); portanto, a sobrejetividade de
+\(\theta\) equivale a
+\(\SGARefLink{sga3:viii:theorem:5:1:eq:x:01}{(x)}\).}
+Isso prova \SGARefLink{sga3:viii:theorem:5:1}{5.1} se se supõe que a
+relação de equivalência definida por \(G\) sobre \(P\) seja fechada.
+Mostremos que isso decorre da hipótese de que
+\(G\) atua livremente. Isso também está implícito no
+\SGARefLink{sga3:viii:theorem:5:1}{Teorema 5.1}: o esquema
+\(G\times_SP\) deve ser isomorfo a \(P\times_XP\), que é fechado em
+\(P\times_SP\) porque \(X\) é afim, e portanto separado, sobre \(S\).
+
+Seja \(R=P\times_SG\). A hipótese de que \(G\) atua livremente, isto é,
+de que \(R\to P\times_SP\) é um monomorfismo, diz que o morfismo diagonal
+\[
+  R\longrightarrow
+  R\times_{(P\times_SP)}R=R'
+\]
+é um isomorfismo. Tem-se \(R=\operatorname{Spec}(A(M))\) e
+\[
+  R'=\operatorname{Spec}\bigl(A(M\times M)/K\bigr),
+\]
+\footnote{Nota do editor: denotamos por \(K\) o ideal denotado por
+\(J\) no original, para distingui-lo dos ideais \(J_p\) de \(A_0\)
+que aparecem em \(\SGARefLink{sga3:viii:theorem:5:1:eq:xxx:01}{(xxx)}\).
+Também explicamos abaixo que as relações
+\SGARefLink{sga3:viii:theorem:5:1:eq:xx:01}{(xx)} equivalem à igualdade
+\(K=K'\); veja-se o que segue.}
+onde \(K\) é o ideal gerado pelos elementos
+\[
+  x_m(e_{m,0}-e_{0,m}),
+  \qquad m\in M,\quad x_m\in A_m.
+\]
+Seja
+\[
+  \phi:A(M\times M)\longrightarrow A(M)
+\]
+o homomorfismo sobrejetivo de anéis definido por
+\[
+  x e_{m,n}\longmapsto x e_{m+n}
+  \qquad (m,n\in M,\ x\in A),
+\]
+onde os \(e_m\), respectivamente
+\(e_{m,n}=e_m\otimes e_n\), são os elementos da base canônica de
+\(A(M)\), respectivamente de \(A(M\times M)\). O morfismo diagonal
+\(R\to R'\) corresponde então ao homomorfismo
+\[
+  \bar\phi:A(M\times M)/K\longrightarrow A(M)
+\]
+obtido passando ao quociente por \(K\). O núcleo de \(\phi\) é o ideal
+\(K'\) gerado por
+\[
+  d_m=e_{m,0}-e_{0,m}.
+\]
+\emph{[A fonte imprime \(\ker(\bar\phi)=K'\); depois de passar ao quociente
+por \(K\), o núcleo correspondente é \(K'/K\).]}
+Tem-se \(K\subseteq K'\), e a hipótese de que \(G\) atua livremente
+sobre \(P\), isto é, de que \(\bar\phi\) é um isomorfismo, equivale a
+\(K'=K\), o que se exprime pelas relações
+\[
+  d_m\in K=\sum_p A(M\times M)\,A_p\,d_p
+  \qquad\text{para todo \(m\in M\).}
+  \tag{xx}\label{sga3:viii:theorem:5:1:eq:xx:01}
+\]
+
+Utilizando a trigraduação natural de \(A(M\times M)\), e o fato de que
+o primeiro grau de \(d_m\) é zero, isso diz que \(d_m\) pode ser escrito
+como soma de elementos da forma
+\[
+  f e_{r,s}(e_{p,0}-e_{0,p}),
+  \qquad f\in A_{-p}\cdot A_p.
+\]
+Como o grau total de \(d_m\) é \(m\), basta utilizar termos que
+satisfaçam
+\[
+  r+s+p=m.
+\]
+
+Assim, para todo \(m\in M\), deve existir uma expressão
+\[
+  \left\{
+  \begin{aligned}
+    d_m=e_{m,0}-e_{0,m}
+      &=\sum_{r,s}\lambda_{r,s}
+        (e_{m-s,s}-e_{r,m-r}),\\
+    \lambda_{r,s}&\in J_p=A_p\cdot A_{-p}\subseteq A_0,
+      \qquad p=m-(r+s).
+  \end{aligned}
+  \right.
+  \tag{xxx}\label{sga3:viii:theorem:5:1:eq:xxx:01}
+\]
+Devemos deduzir \SGARefLink{sga3:viii:theorem:5:1:eq:x:01}{(x)}, isto é,
+as relações
+\[
+  J_n=A_0
+  \qquad\text{para todo \(n\in M\).}
+  \tag{xxxx}\label{sga3:viii:theorem:5:1:eq:xxxx:01}
+\]
+Para isso basta estabelecer
+\SGARefLink{sga3:viii:theorem:5:1:eq:xxxx:01}{a mesma relação} módulo todo
+ideal maximal de \(A_0\). Como todas as hipóteses se conservam sob essa
+redução, podemos supor que \(A_0\) seja um corpo.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:lemma:5:2}\textbf{Lema 5.2.}
+\textit{Sob as condições anteriores, sendo \(A_0\) um corpo, se
+\(M\ne0\), existe \(p\in M-\{0\}\) tal que \(J_p=A_0\).}
+
+De fato, caso contrário, a soma do membro direito de
+\SGARefLink{sga3:viii:theorem:5:1:eq:xxx:01}{(xxx)} se anularia para todo
+\(m\in M\), o que é absurdo.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:5:3}\textbf{Corolário 5.3.}
+\textit{Sob as condições anteriores, mas sem supor que \(A_0\) seja
+um corpo, existem finitos elementos \(p_i\in M-\{0\}\) tais que}
+\[
+  \sum_iJ_{p_i}=A_0.
+\]
+
+De fato, apliquemos \SGARefLink{sga3:viii:lemma:5:2}{5.2} às
+situações obtidas de \(A/A_0\) por redução módulo os ideais
+maximais de \(A_0\).\footnote{Nota do editor: de
+\SGARefLink{sga3:viii:lemma:5:2}{5.2} deduz-se que
+\(\sum_{p\ne0}J_p=A_0\); portanto, \(1\) pode ser escrito como uma soma
+finita \(\sum_i x_i\), com \(x_i\in J_{p_i}\).}
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:5:4}\textbf{Corolário 5.4.}
+\textit{Suponhamos novamente que \(A_0\) seja um corpo. Para todo subgrupo
+\(N\) de \(M\), com \(N\ne M\), existe \(p\in M-N\) tal que
+\(J_p=A_0\).}
+
+De fato, seja \(M'=M/N\), e tomemos o anel \(M'\)-graduado
+\(A'\), cujo anel subjacente é \(A\) e cuja graduação é dada por
+\[
+  A'_{m'}=\coprod_{m\in h^{-1}(m')}A_m,
+\]
+onde \(h:M\to M'=M/N\) é o homomorfismo canônico. Geometricamente,
+essa construção equivale a considerar o subgrupo \(G'=D_S(M')\) de
+\(G\), e a estrutura sobre \(P\) de esquema com grupo de operadores
+\(G'\), induzida pela ação de \(G\). É claro então que \(G'\) atua
+livremente sobre \(P\) \emph{[a fonte imprime \(P'\)]}; isto é, o par
+\((M',A')\) satisfaz as hipóteses de
+\SGARefLink{sga3:viii:corollary:5:3}{5.3}. Assim,
+\[
+  1=\sum_i f_i g_i,
+  \qquad
+  f_i\in A'_{m_i'},\quad
+  g_i\in A'_{-m_i'},\quad
+  m_i'\in M'-\{0\}.
+\]
+Tomando as componentes do membro direito ao longo de \(A_0\), e
+usando que \(A_0\) é um corpo, obtém-se imediatamente
+\SGARefLink{sga3:viii:corollary:5:4}{5.4}.
+
+Observe-se agora que
+\[
+  J_pJ_q\subseteq J_{p+q}
+  \qquad\text{y}\qquad
+  J_p=J_{-p}.
+\]
+
+Assim, se \(N\) denota o conjunto dos \(m\in M\) tais que \(J_m=A_0\)
+\emph{[a fonte imprime \(J_p=A_0\)]}, então \(N\) é um subgrupo de
+\(M\). Por \SGARefLink{sga3:viii:corollary:5:4}{5.4}, é igual a \(M\).
+Isto conclui a demonstração do
+\SGARefLink{sga3:viii:theorem:5:1}{Teorema 5.1}.
+
+Como foi observado durante a demonstração, o
+\SGARefLink{sga3:viii:theorem:5:1}{Teorema 5.1} implica:
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:5:5}\textbf{Corolário 5.5.}
+\textit{Sob as hipóteses de
+\SGARefLink{sga3:viii:theorem:5:1}{5.1}, o morfismo gráfico}
+\[
+  P\times_SG\longrightarrow P\times_SP
+\]
+\textit{é uma imersão fechada.}
+
+Deduz-se imediatamente:
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:5:6}\textbf{Corolário 5.6.}
+\textit{Seja \(\sigma\) uma seção de \(P\) sobre \(S\). Então o
+morfismo \(g\mapsto\sigma\cdot g\) de \(G\) para \(P\), definido por
+\(\sigma\), é uma imersão fechada.}
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:5:7}\textbf{Corolário 5.7.}
+\textit{Sejam \(G\) e \(H\) dois \(S\)-grupos, com \(G\) diagonalizável e
+\(H\) afim sobre \(S\), e seja \(u:G\to H\) um homomorfismo de
+\(S\)-grupos que é um monomorfismo. Então \(u\) é uma imersão
+fechada, existe \(H/G=X\), \(H\) é um fibrado principal homogêneo sobre
+\(X\) sob \(G_X\), e \(X\) é afim sobre \(S\).}
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:5:8}\textbf{Corolário 5.8.}
+\textit{Sob as hipóteses de
+\SGARefLink{sga3:viii:theorem:5:1}{5.1}, se \(P\) é de tipo finito
+(respectivamente, de apresentação finita) sobre \(S\), então o mesmo
+vale para \(X=P/G\).}
+
+De fato, a hipótese implica que as fibras de \(G_X\) são de tipo
+finito. Portanto, \(G_X\) é de apresentação finita sobre \(X\), por
+\SGARefLink{sga3:viii:proposition:2:1:item:b:01}{2.1(b)}; como \(P\) é um
+torsor sob \(G_X\), é, portanto, de apresentação finita sobre
+\(X\).\footnote{Nota do editor: cf. EGA II, 2.7.1(vi).} É também
+fielmente plano sobre \(X\), de modo que a conclusão se deduz do Exposé
+V, Proposição \SGARefLink{sga3:v:proposition:9:1}{9.1}.

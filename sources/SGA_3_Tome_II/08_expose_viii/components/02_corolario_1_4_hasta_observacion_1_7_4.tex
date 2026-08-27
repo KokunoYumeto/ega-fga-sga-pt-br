@@ -1,0 +1,349 @@
+% Tradução brasileira revista a partir do workpass espanhol congelado;
+% a fonte permanece em source_es.
+% SGA 3, Exposé VIII, tradução brasileira.
+% Escopo: Corolário 1.4 a Observação 1.7.4, antes do §2.
+% Autoridade: Polo--Gille Exp8-8nov09.pdf, pp. locais 4--7 (parcial),
+% leitor completo pp. 620--623 (parcial).
+
+% Página-fonte: Exp8 p. local 4; leitor completo p. 620.
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:1:4}\textbf{Corolário 1.4.}
+\textit{Um grupo diagonalizável é reflexivo; portanto, o mesmo vale para
+um grupo localmente diagonalizável. Se \(M\) e \(N\) são dois grupos
+comutativos ordinários, o homomorfismo natural}
+\SGARefTarget{sga3:viii:corollary:1:4:display:natural-isomorphism:01}\[
+  \operatorname{Hom}_{S\text{-}\mathrm{gr}}(M_S,N_S)
+  \longrightarrow
+  \operatorname{Hom}_{S\text{-}\mathrm{gr}}(D(N_S),D(M_S))
+\]
+\textit{é bijetivo.}
+
+\footnote{Nota do editor: a discussão seguinte foi desenvolvida.}
+\SGARefTarget{sga3:viii:corollary:1:4:discussion:01}Como
+\SGARefLink{sga3:viii:corollary:1:4:display:natural-isomorphism:01}{o
+isomorfismo anterior} é compatível com a extensão da base, deduz-se
+um isomorfismo de \(S\)-funtores em grupos
+\SGARefTarget{sga3:viii:eq:1:4:1}
+\begin{equation}
+  \tag{1}
+  \operatorname{\underline{Hom}}_{S\text{-}\mathrm{gr}}(M_S,N_S)
+  \xrightarrow{\ \sim\ }
+  \operatorname{\underline{Hom}}_{S\text{-}\mathrm{gr}}
+    (D(N_S),D(M_S)).
+\end{equation}
+Para todo \(S\)-pré-esquema \(T\),
+\[
+  \operatorname{\underline{Hom}}_{S\text{-}\mathrm{gr}}(M_S,N_S)(T)
+  =
+  \operatorname{Hom}_{\mathrm{gr}}\bigl(M,\Gamma(N_T/T)\bigr),
+\]
+e, por I, \SGARefLink{sga3:i:subsection:1:8}{1.8}, \(\Gamma(N_T/T)\) é
+o grupo abeliano das aplicações localmente constantes \(T\to N\).
+Por outro lado, seja \(\operatorname{Hom}_{\mathrm{gr}}(M,N)_S\) o
+\(S\)-grupo constante associado ao grupo abeliano ordinário
+\(\operatorname{Hom}_{\mathrm{gr}}(M,N)\). Há um homomorfismo evidente de
+\(S\)-funtores em grupos comutativos
+\SGARefTarget{sga3:viii:eq:1:4:2}
+\begin{equation}
+  \tag{2}
+  \operatorname{Hom}_{\mathrm{gr}}(M,N)_S
+  \xrightarrow{\ \theta\ }
+  \operatorname{\underline{Hom}}_{S\text{-}\mathrm{gr}}(M_S,N_S),
+\end{equation}
+que é sempre um monomorfismo e é um isomorfismo se \(M\) é de tipo
+finito.\footnote{Nota do editor: denotemos por \(F(M)\) e \(G(M)\) os
+membros esquerdo e direito de \(\SGARefLink{sga3:viii:eq:1:4:2}{(2)}\),
+respectivamente. Se \(M=M_1\oplus M_2\), há isomorfismos canônicos
+\(F(M)=F(M_1)\oplus F(M_2)\) e
+\(G(M)=G(M_1)\oplus G(M_2)\). Basta, portanto, verificar que \(\theta\) é um
+isomorfismo quando \(M=\mathbf Z/r\mathbf Z\), \(r\geq0\). Nesse caso,
+\(F(M)=({}_rN)_S\), onde \({}_rN\) é o núcleo de
+\(r\operatorname{id}_N\), e para todo \(T\to S\) o homomorfismo
+\[
+  F(M)(T)=\Gamma({}_rN_T/T)
+  \longrightarrow
+  G(M)(T)={}_r\Gamma(N_T/T)
+\]
+é bijetivo.}
+
+O item \SGARefLink{sga3:viii:corollary:1:5:item:a}{(a)} do
+\SGARefLink{sga3:viii:corollary:1:5}{corolário seguinte} deduz-se do
+\SGARefLink{sga3:viii:corollary:1:4:discussion:01}{que precede}; o item
+\SGARefLink{sga3:viii:corollary:1:5:item:b}{(b)} resulta dele pelos
+resultados de descida recordados em
+\SGARefLink{sga3:viii:paragraph:1-7}{1.7}.
+\footnote{Nota do editor: depois de
+\SGARefLink{sga3:viii:corollary:1:5}{1.5}, o original enunciava que, mais
+geralmente, se \(G\) e \(H\) são localmente diagonalizáveis e \(H\) é de
+tipo finito, então
+\(\operatorname{\underline{Hom}}_{S\text{-}\mathrm{gr}}(G,H)\) é
+representável. \SGARefLink{sga3:viii:corollary:1:5:item:b}{Esta afirmação}
+foi incluída em \SGARefLink{sga3:viii:corollary:1:5}{1.5} e sua
+demonstração foi explicitada em
+\SGARefLink{sga3:viii:paragraph:1-7}{1.7}.}
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:1:5}\textbf{Corolário 1.5.}
+\begin{enumerate}
+  \item[(a)]\SGARefTarget{sga3:viii:corollary:1:5:item:a}
+  \textit{Sejam \(M\) e \(N\) dois grupos comutativos ordinários, com \(M\)
+  de tipo finito. Então há um isomorfismo}
+  \[
+    \operatorname{Hom}_{\mathrm{gr}}(M,N)_S
+    \xrightarrow{\ \sim\ }
+    \operatorname{\underline{Hom}}_{S\text{-}\mathrm{gr}}
+      (D(N_S),D(M_S));
+  \]
+  \textit{por conseguinte,
+  \(\operatorname{\underline{Hom}}_{S\text{-}\mathrm{gr}}
+  (D(N_S),D(M_S))\) é representável.}
+
+  \item[(b)]\SGARefTarget{sga3:viii:corollary:1:5:item:b}
+  \textit{Mais geralmente, se \(G\) e \(H\) são localmente
+  diagonalizáveis e \(H\) é de tipo finito, então
+  \(\operatorname{\underline{Hom}}_{S\text{-}\mathrm{gr}}(G,H)\) é
+  representável.}
+\end{enumerate}
+
+\footnote{Nota do editor: seria preciso acrescentar um enunciado 1.5.1 relativo ao
+funtor \(\operatorname{\underline{Isom}}_{S\text{-}\mathrm{gr}}(G,H)\),
+considerado em X, \SGARefLink{sga3:x:corollary:5-10}{5.10} e 5.11.}
+O Corolário~\SGARefLink{sga3:viii:corollary:1:5}{1.5} fornece:
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:1:6}\textbf{Corolário 1.6.}
+\textit{Sob as hipóteses de
+\SGARefLink{sga3:viii:corollary:1:5}{1.5}, se \(S\) é conexo, então}
+\[
+  \operatorname{Hom}_{S\text{-}\mathrm{gr}}(D_S(N),D_S(M))
+  \xrightarrow{\ \sim\ }
+  \operatorname{Hom}_{\mathrm{gr}}(M,N)
+\]
+\textit{e}
+\[
+  \operatorname{Isom}_{S\text{-}\mathrm{gr}}(D_S(N),D_S(M))
+  \xrightarrow{\ \sim\ }
+  \operatorname{Isom}_{\mathrm{gr}}(M,N).
+\]
+
+\medskip
+\noindent\SGAInlineRefTarget{sga3:viii:paragraph:1-7}\SGARefTarget{sga3:viii:subsection:1:7}\textbf{1.7. Descida da
+representabilidade.}
+\footnote{Nota do editor: foi acrescentado
+\SGARefLink{sga3:viii:paragraph:1-7}{este parágrafo} para explicitar o
+caráter «local sobre \(S\)» da representabilidade de certos feixes sobre
+\(S\), usado repetidamente mais adiante e implicitamente
+no original.}
+Recordemos aqui vários resultados de descida que serão usados com
+frequência no que segue.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:scholium:1:7:1}\textbf{Escolio 1.7.1.}
+\textit{Seja \(S\) um pré-esquema e sejam \(X,Y,T\) \(S\)-pré-esquemas. Se
+\((T_i)\) é um recobrimento aberto de \(T\), e se
+\(T_{ij}=T_i\cap T_j=T_i\times_TT_j\), então, como dar um
+morfismo de \(T\)-pré-esquemas \(X_T\to Y_T\) é uma questão local sobre
+\(T\), há uma sequência exata de conjuntos}
+\SGARefTarget{sga3:viii:eq:1:7:1}
+\begin{equation}
+  \tag{1}
+  \operatorname{Hom}_T(X_T,Y_T)
+  \longrightarrow
+  \prod_i\operatorname{Hom}_{T_i}(X_{T_i},Y_{T_i})
+  \rightrightarrows
+  \prod_{i,j}\operatorname{Hom}_{T_{ij}}(X_{T_{ij}},Y_{T_{ij}}).
+\end{equation}
+\textit{Assim, \(\operatorname{\underline{Hom}}_S(X,Y)\) é um
+\(S\)-funtor local, isto é, um feixe sobre \((\mathbf{Sch})_{/S}\) para a
+topologia de Zariski.}
+
+Mais geralmente, por IV, \SGARefLink{sga3:iv:corollary:4:5:13}{4.5.13},
+\(\operatorname{\underline{Hom}}_S(X,Y)\) é um feixe sobre
+\((\mathbf{Sch})_{/S}\) para toda topologia menos fina que a topologia
+canônica, por exemplo a topologia fpqc. Se \(G\) e \(H\) são pré-esquemas
+em grupos sobre \(S\), segue-se que o subfuntor
+\(\operatorname{\underline{Hom}}_{S\text{-}\mathrm{gr}}(G,H)\) é um feixe
+fpqc e, a fortiori, um funtor local.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:lemma:1:7:2}\textbf{Lema 1.7.2.}
+\footnote{Nota do editor: veja-se também a Observação XI,
+\SGARefLink{sga3:xi:remark:3:4}{3.4}.}
+\textit{Seja \(F\) um \(S\)-funtor local.}
+\begin{enumerate}
+  \item[(i)]\SGARefTarget{sga3:viii:lemma:1:7:2:item:i}
+  \textit{Suponhamos que haja um recobrimento aberto \((S_i)\) de \(S\)
+  tal que a restrição \(F_i=F\times_SS_i\) de \(F\) a cada \(S_i\) seja
+  representável por um \(S_i\)-pré-esquema \(X_i\). Então \(F\) é
+  representável por um \(S\)-pré-esquema \(X\).}
+
+  \item[(ii)]\SGARefTarget{sga3:viii:lemma:1:7:2:item:ii}
+  \textit{Suponhamos que \(F\) seja um feixe fpqc e que haja um morfismo
+  fielmente plano e quase compacto \(S'\to S\) tal que
+  \(F'=F\times_SS'\) seja representável por um \(S'\)-pré-esquema \(X'\).
+  Então \(X'\) possui um dado de descida relativo a \(S'\to S\)
+  (cf. IV, \SGARefLink{sga3:iv:definition:2:1}{2.1}). Se esse dado de
+  descida é efetivo, como ocorre quando \(X'\) é afim sobre \(S'\),
+  então \(F\) é representável por um \(S\)-pré-esquema \(X\).}
+\end{enumerate}
+
+\emph{Demonstração.}
+\SGARefLink{sga3:viii:lemma:1:7:2:item:i}{(i)} A hipótese implica que
+\(X_i\times_SS_j\) e \(X_j\times_SS_i\) representam ambos a restrição de
+\(F\) a \(S_{ij}=S_i\times_SS_j\). O lema de Yoneda fornece, portanto,
+um único isomorfismo de \(S_{ij}\)-pré-esquemas
+\[
+  c_{ji}:X_i\times_SS_j\xrightarrow{\ \sim\ }X_j\times_SS_i.
+\]
+Sobre \(S_{ijk}=S_i\times_SS_j\times_SS_k\), obtém-se o diagrama
+comutativo de isomorfismos
+\SGARefTarget{sga3:viii:diagram:1:7:2:i}
+\[
+\begin{tikzcd}[column sep=small,row sep=large]
+X_i\times_SS_j\times_SS_k
+  \arrow[r,"c_{ji}\times\operatorname{id}_{S_k}"]
+  \arrow[d,equal]
+&
+X_j\times_SS_i\times_SS_k
+  \arrow[r,equal]
+&
+X_j\times_SS_k\times_SS_i
+  \arrow[d,"c_{kj}\times\operatorname{id}_{S_i}"]
+\\
+X_i\times_SS_k\times_SS_j
+  \arrow[r,"c_{ki}\times\operatorname{id}_{S_j}"]
+&
+X_k\times_SS_i\times_SS_j
+  \arrow[r,equal]
+&
+X_k\times_SS_j\times_SS_i .
+\end{tikzcd}
+\]
+De fato, todos os seus objetos representam a restrição de \(F\) a
+\(S_{ijk}\). Portanto, os \(c_{ji}\) satisfazem a relação de cociclo
+usual \(c_{kj}\circ c_{ji}=c_{ki}\).
+
+Deduz-se que os \(X_i\) se colam para formar um \(S\)-pré-esquema \(X\)
+tal que \(X\times_SS_i=X_i\) para todo \(i\). Para todo \(Y\) sobre
+\(S_i\),
+\SGARefTarget{sga3:viii:eq:1:7:2:star}
+\begin{equation}
+  \tag{\(\ast\)}
+  F(Y)=F_i(Y)
+  =\operatorname{Hom}_{S_i}(Y,X\times_SS_i)
+  =\operatorname{Hom}_S(Y,X)=h_X(Y).
+\end{equation}
+Para um \(Y\to S\) arbitrário, os \(Y_i=Y\times_SS_i\) formam um
+recobrimento aberto de \(Y\); ponhamos
+\(Y_{ij}=Y_i\times_YY_j=Y\times_SS_{ij}\). Como \(F\) é local por
+hipótese e \(h_X\) é local porque a topologia de Zariski é menos fina
+que a topologia canônica, tanto \(F(Y)\) como \(h_X(Y)\) identificam-se,
+em virtude de \SGARefLink{sga3:viii:eq:1:7:2:star}{\((\ast)\)}, com os
+núcleos dos respectivos pares de setas
+\[
+  \prod_iF(Y_i)\rightrightarrows\prod_{i,j}F(Y_{ij}),
+  \qquad
+  \prod_ih_X(Y_i)\rightrightarrows\prod_{i,j}h_X(Y_{ij}).
+\]
+Isso prova \SGARefLink{sga3:viii:lemma:1:7:2:item:i}{(i)}.
+
+\SGARefLink{sga3:viii:lemma:1:7:2:item:ii}{(ii)} Ponhamos
+\(S''=S'\times_SS'\), e denotemos por \(S''_1\) e \(S''_2\) o \(S''\)
+considerado como \(S'\)-pré-esquema mediante a primeira e a segunda
+projeção. Os funtores \(F''_1=F'\times_{S'}S''_1\) e
+\(F''_2=F'\times_{S'}S''_2\) são representados, respectivamente, por
+\(X''_1=X'\times_{S'}S''_1\) e \(X''_2=X'\times_{S'}S''_2\). Como
+\[
+  F''_1=F\times_SS''=F''_2,
+\]
+há um único \(S''\)-isomorfismo
+\[
+  c:X''_1\xrightarrow{\ \sim\ }X''_2.
+\]
+Sejam \(q_i\) e \(p_{ji}\), respectivamente, a projeção de
+\(S'''=S'\times_SS'\times_SS'\) sobre seu \(i\)-ésimo fator e sobre seus
+\(i\)-ésimo e \(j\)-ésimo fatores. Seja
+\(X'''_i=X'\times_{S'}S'''_i\), onde \(S'''_i\) denota \(S'''\) visto
+como \(S'\)-pré-esquema mediante \(q_i\), e seja
+\(p_{ji}^{*}(c):X'''_i\xrightarrow{\sim}X'''_j\) o morfismo obtido de
+\(c\) por mudança de base. Obtém-se o diagrama
+\SGARefTarget{sga3:viii:diagram:1:7:2:ii}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X'''_1
+  \arrow[r,"p_{21}^{*}(c)"]
+  \arrow[dr,"p_{31}^{*}(c)"']
+&
+X'''_2
+  \arrow[d,"p_{32}^{*}(c)"]
+\\
+&X'''_3 .
+\end{tikzcd}
+\]
+Os três objetos representam a restrição de \(F\) a \(S'''\), de modo
+que o diagrama é comutativo:
+\[
+  p_{32}^{*}(c)\circ p_{21}^{*}(c)=p_{31}^{*}(c).
+\]
+Assim, \(c\) é um dado de descida sobre \(X'\) relativo a \(S'\to S\)
+(cf. IV, \SGARefLink{sga3:iv:definition:2:1}{2.1}).
+
+Suponhamos que esse dado de descida seja efetivo; então existe um
+\(S\)-pré-esquema \(X\) tal que \(X'\simeq X\times_SS'\). Esse é o caso
+quando \(X'\) é afim sobre \(S'\), por SGA~1, VIII,
+\SGARefLink{sga3:viii:proposition:2:1}{2.1}.\footnote{Nota do editor: para
+outro critério de efetividade, veja-se X,
+\SGARefLink{sga3:x:lemma:5-4}{5.4}--\SGARefLink{sga3:viii:corollary:5:6}{5.6}.}
+Para todo \(Y\to S'\), tem-se então
+\SGARefTarget{sga3:viii:eq:1:7:2:double-star}
+\begin{equation}
+  \tag{\(\ast\ast\)}
+  F(Y)=F'(Y)
+  =\operatorname{Hom}_{S'}(Y,X\times_SS')
+  =\operatorname{Hom}_S(Y,X)=h_X(Y).
+\end{equation}
+Para um \(Y\to S\) arbitrário, ponhamos \(Y'=Y\times_SS'\) e
+\(Y''=Y'\times_YY'\simeq Y\times_SS''\). Assim como \(S'\to S\), o
+morfismo \(Y'\to Y\) é fielmente plano e quase compacto e, portanto, um
+epimorfismo \(\mathcal M\)-efetivo, onde \(\mathcal M\) é a família dos
+morfismos fielmente planos e quase compactos. A relação de
+equivalência
+\[
+  Y'\times_YY'\rightrightarrows Y'
+\]
+é \(\mathcal M\)-efetiva e tem \(Y\) como quociente. Como \(F\)
+é um feixe fpqc por hipótese, enquanto \(h_X\) também o é porque a topologia
+fpqc é menos fina que a topologia canônica, tanto \(F(Y)\) como \(h_X(Y)\)
+identificam-se, em virtude de
+\SGARefLink{sga3:viii:eq:1:7:2:double-star}{\((\ast\ast)\)}, com os
+respectivos núcleos de
+\[
+  F(Y')\rightrightarrows F(Y'\times_YY'),
+  \qquad
+  h_X(Y')\rightrightarrows h_X(Y'\times_YY').
+\]
+Isso prova \SGARefLink{sga3:viii:lemma:1:7:2:item:ii}{(ii)}. \qed
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:1:7:3}\textbf{Corolário 1.7.3.}
+\textit{Seja \(F\) um feixe fpqc sobre \((\mathbf{Sch})_{/S}\). Suponhamos que
+haja um recobrimento aberto \((S_i)\) de \(S\), e, para cada \(i\), um
+morfismo fielmente plano e quase compacto \(S'_i\to S_i\), tal que
+\(F'_i=F\times_SS'_i\) seja representável por um \(S'_i\)-pré-esquema
+\(X'_i\) afim sobre \(S'_i\). Então \(F\) é representável por um
+\(S\)-pré-esquema \(X\) afim sobre \(S\), com
+\(X\times_SS'_i=X'_i\) para todo \(i\). Se, além disso, cada
+\(X'_i\to S'_i\) é uma imersão fechada (respectivamente, um morfismo
+finito e étale), então o mesmo vale para \(X\to S\).}
+
+A primeira afirmação decorre de
+\SGARefLink{sga3:viii:lemma:1:7:2}{1.7.2}. Para a segunda, basta verificar
+que cada morfismo \(X\times_SS_i\to S_i\) é uma imersão fechada
+(respectivamente, finito e étale); isso decorre de EGA~IV\(_2\), 2.7.1
+(respectivamente, junto com IV\(_4\), 17.7.3).
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:remark:1:7:4}\textbf{Observação 1.7.4.}
+A afirmação \SGARefLink{sga3:viii:corollary:1:5:item:b}{1.5(b)} deduz-se,
+como anunciado, de \SGARefLink{sga3:viii:scholium:1:7:1}{1.7.1} e de
+\SGARefLink{sga3:viii:lemma:1:7:2:item:i}{1.7.2(i)}.

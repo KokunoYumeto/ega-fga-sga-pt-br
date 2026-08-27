@@ -1,0 +1,71 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6023--6091 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{6.11}
+Sejam $f:X\to Y$ um $G$-$S$-morfismo próprio e
+\begin{equation}
+\begin{tikzcd}[column sep=large,row sep=large]
+C \arrow[r,"c"] \arrow[d] & X\times_SX \arrow[d,"f\times_Sf"]\\
+D \arrow[r,"d"'] & Y\times_SY
+\end{tikzcd}
+\tag{6.11.1}
+\end{equation}
+um quadrado comutativo $G$-equivariante de $G$-$S$-esquemas, com $c$ e $d$ próprios. Supõe-se que $G$ atua trivialmente sobre $Y$ e $D$. Denotaremos por
+\begin{equation}
+f^{c/d}\quad(\text{ou } f^c):X^c\longrightarrow Y^d
+\tag{6.11.2}
+\end{equation}
+o morfismo induzido por 6.11.1 sobre os esquemas de pontos fixos de $c$ e $d$, com as notações de 6.5.1. Seja $L\in\Ob D_{\mathrm{ctf}}(G,{}_AX)$, e seja
+\[
+u\in\Hom(c_1^*L,c_2^!L)
+\]
+uma correspondência $G$-equivariante com suporte em $c$, de onde se obtém, por imagem direta, uma correspondência $G$-equivariante
+\[
+f_*u\in\Hom_{\Lambda[G]}(d_1^*f_*L,d_2^!f_*L).
+\]
+Para $g\in G$, denotaremos por $Z_g$ o centralizador de $g$, e seja
+\begin{equation}
+gu\in\Hom((gc)_1^*L,c_2^!L)
+\tag{6.11.3}
+\end{equation}
+a correspondência $Z_g$-equivariante com suporte em
+\begin{equation}
+gc\stackrel{\mathrm{dfn}}{=}(gc_1=c_1g,c_2):C\to X\times_SX,
+\tag{6.11.4}
+\end{equation}
+definida como a composta das flechas
+\[
+g^*(c_1^*L)\xrightarrow{\alpha_g}c_1^*L\xrightarrow{u}c_2^!L,
+\]
+onde $\alpha_g$ é a flecha que define a ação de $G$ sobre $c_1^*L$. É claro que se tem
+\begin{equation}
+f_*(gu)=g(f_*u).
+\tag{6.11.5}
+\end{equation}
+
+\begin{statement}{Proposição 6.12}
+Sob as hipóteses de 6.11, suponhamos que se tem
+\[
+f_*L\in\Ob D_{\mathrm{ctf}}({}_{\Lambda[G]}Y).
+\]
+Então, para todo $g\in G$, tem-se
+\begin{equation}
+f_*^{gc}\Tr_{\Lambda}(gu)
+=
+|Z_g|\,\Tr_{\Lambda[G]}(f_*u)(g^{-1}),
+\tag{6.12.1}
+\end{equation}
+onde
+\[
+f_*^{gc}:H^0(X^{gc},K_{X^{gc}})\longrightarrow H^0(Y^d,K_{Y^d})
+\]
+é o morfismo ``de Gysin'' definido pela flecha de adjunção
+\[
+f_*^{gc}K_{X^{gc}}=f_*^{gc}f^{gc!}K_{Y^d}\longrightarrow K_{Y^d}.
+\]
+\end{statement}
+
+De fato, por 6.10.5 aplicado a $f_*u$ e por 6.11.5, tem-se
+\[
+\Tr_{\Lambda}(f_*(gu))=|Z_g|\,\Tr_{\Lambda[G]}(f_*u)(g^{-1}),
+\]
+e, consequentemente, 6.12.1 deduz-se da fórmula de Lefschetz (III 4.5.1).

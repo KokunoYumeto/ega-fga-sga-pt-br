@@ -1,0 +1,97 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6387--6481 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{6.20}
+Sejam, para $i=1,2$, $X_i$ um $G$-$S$-esquema,
+\[
+X=X_1\times_SX_2,\qquad c:C\to X
+\]
+um $G$-$S$-morfismo tal que $c_2$ seja quase-finito e de dimensão Tor finita. Sejam $L_i\in\Ob D^+(G,{}_AX_i)$. O morfismo de traço
+\[
+\Tr_{c_2}:c_{2!}c_2^*L_2\longrightarrow L_2
+\]
+define por adjunção uma flecha de $D(G,X)$ que continuaremos denotando por
+\begin{equation}
+\Tr_{c_2}:c_2^*L_2\longrightarrow c_2^!L_2,
+\tag{6.20.1}
+\end{equation}
+que permite associar a todo morfismo $G$-equivariante
+\[
+u\in\Hom(c_1^*L_1,c_2^*L_2)
+\]
+uma correspondência $G$-equivariante
+\begin{equation}
+u^! = \Tr_{c_2}\circ u\in\Hom(c_1^*L_1,c_2^!L_2).
+\tag{6.20.2}
+\end{equation}
+
+\begin{statement}{Proposição 6.21}
+Sejam $f:X\to Y$ um $G$-$S$-morfismo próprio e um quadrado comutativo equivariante 6.11.1, com ação trivial de $G$ sobre $Y$ e $D$. Suponhamos que $c$ e $d$ são próprios, que $c_2$ e $d_2$ são quase-finitos e de dimensão Tor finita, e que o quadrado
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+C \arrow[r,"c_2"] \arrow[d,"h"'] & X \arrow[d,"f"]\\
+D \arrow[r,"d_2"'] & Y
+\end{tikzcd}
+\]
+seja cartesiano e Tor-independente (SGA 6 III 1.5). Sejam $M\in\Ob D_{\mathrm{ctf}}(Y)$,
+\[
+v\in\Hom(d_1^*M,d_2^*M),
+\]
+daí se obtém um homomorfismo $G$-equivariante
+\[
+h^*v\in\Hom(c_1^*f^*M,c_2^*f^*M),
+\]
+e correspondências $G$-equivariantes
+\[
+(h^*v)^!\in\Hom(c_1^*f^*M,c_2^!f^*M),
+\qquad
+f_*((h^*v)^!)\in\Hom(d_1^*(f_*f^*M),d_2^!(f_*f^*M)).
+\]
+Tem-se então um quadrado comutativo de flechas de $D({}_{\Lambda[G]}Y)$, considerando-se $M$ como objeto de $D({}_{\Lambda[G]}Y)$ por meio da ação trivial,
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+d_1^*M \arrow[r,"v^!"] \arrow[d] & d_2^!M \arrow[d] & {}\\
+d_1^*f_*f^*M \arrow[r,"f_*((h^*v)^!)"'] & d_2^!f_*f^*M,
+\end{tikzcd}
+\]
+onde as flechas verticais são dadas pela flecha de adjunção $M\to f_*f^*M$.
+\end{statement}
+
+Ponhamos $h^*v=u$, $f^*M=L$, e consideremos o diagrama
+\[
+\begin{tikzcd}[column sep=3.2em,row sep=large]
+d_1^*M \arrow[r,"v"] \arrow[d,"{(1)}"'] &
+d_2^*M \arrow[rr,"\Tr_{d_2}"] \arrow[d,"{(2)}"'] &&
+d_2^!M \arrow[d,"{(3)}"] & {}\\
+d_1^*f_*L \arrow[r,"{(4)}"'] &
+h_*c_1^*L \arrow[r,"h_*u"'] &
+h_*c_2^*L \arrow[r,"h_*\Tr_{c_2}"'] &
+h_*c_2^!L \arrow[r,"{(5)}"'] &
+d_2^!f_*L,
+\arrow[from=1-1,to=2-2, phantom, "\scriptstyle (A)"]
+\arrow[from=1-2,to=2-4, phantom, "\scriptstyle (B)"]
+\end{tikzcd}
+\]
+Aqui as flechas (1) e (3) são dadas pela flecha de adjunção $M\to f_*L$, (2) pela flecha de adjunção $d_2^*M\to h_*h^*(d_2^*M)=h_*c_2^*L$, (4) pela flecha de mudança de base, e (5) é o isomorfismo canônico (SGA 4 XVIII 3.1.12.3). Por definição, $v^!$ é a composta da linha superior. Por outro lado, da interpretação da imagem direta de uma correspondência (III 3.5 b), 3.7) deduz-se que $f_*u^!$ é a composta da linha inferior. Basta, pois, demonstrar a comutatividade dos quadrados (A) e (B). A de (A) resulta imediatamente da definição da flecha de mudança de base. Quanto à de (B), ela decorre do fato de que, levando em conta a hipótese de Tor-independência, $\Tr_{d_2}$ é compatível com a mudança de base por $f$ (SGA $4^{1/2}$ Ciclo 2.3.3), daí a conclusão.
+
+Aplicando 6.19, deduz-se:
+
+\begin{statement}{Corolário 6.22}
+Sob as hipóteses de 6.21, suponhamos que
+\[
+f_*f^*M\in\Ob D_{\mathrm{ctf}}({}_{\Lambda[G]}Y),
+\]
+e que a flecha de adjunção
+\[
+M\to f_*f^*M
+\]
+induz um isomorfismo
+\[
+M\xrightarrow{\sim}\uRHom_{\Lambda[G]}(\Lambda,f_*f^*M).
+\]
+Então, tem-se
+\begin{equation}
+\Tr_{\Lambda}(v^!)=
+\sum_{g\in G_{\natural}}\Tr_{\Lambda[G]}(f_*((f^*v)^!))(g^{-1}).
+\tag{6.22.1}
+\end{equation}
+\end{statement}

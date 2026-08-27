@@ -1,0 +1,55 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5377--5429 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Demonstraremos, mais geralmente, que se tem um quadrado comutativo
+\begin{equation}\tag{5.11.4}
+\begin{tikzcd}[column sep=3.0em,row sep=2.2em]
+\uRHom_B(E,M\lten_KE) \arrow[r,"\Tr_B"] \arrow[d] &
+M\lten_KB_\natural \arrow[r,"{x\mapsto x(g^{-1})}"] &
+M \arrow[d,equal] \\
+\uRHom_A(E,M\lten_KE) \arrow[r,"\Tr_A"'] &
+M\lten_KA_\natural \arrow[r,"{x\mapsto x(e)}"'] &
+M,
+\end{tikzcd}
+\end{equation}
+onde a flecha vertical da esquerda é a composta da restrição de escalares com a multiplicação à esquerda por $g$. Esse quadrado é o bordo do diagrama
+\[
+\begin{tikzcd}[column sep=2.8em,row sep=2.0em]
+\uRHom_B(E,M\lten_KE) \arrow[r,"\Tr_B"] \arrow[d,"\mathrm{rest}"'] &
+M\lten_KB_\natural \arrow[r,"{x\mapsto x(g^{-1})}"] \arrow[d,"{\underset{(1)}{\Tr_{B/A}}}" description] &
+M \arrow[d,equal] \\
+\uRHom_A(E,M\lten_KE) \arrow[r,"\Tr_A"'] \arrow[d,"{\uRHom_A(E,s_g)}"'] &
+M\lten_KA_\natural \arrow[d,"{\underset{(2)}{s_g}}" description] \arrow[dr,phantom,"\scriptstyle(3)" description] &
+M \\
+\uRHom_A(E,M\lten_KE) \arrow[r,"\Tr_A"'] &
+M\lten_KA_\natural \arrow[r,"{x\mapsto x(e)}"'] &
+M,
+\end{tikzcd}
+\]
+onde $\mathrm{rest}$ designa a restrição de escalares e $s_g$ a multiplicação à esquerda por $g$. O quadrado (1) comuta em virtude de 5.10.11, e (2) por definição de $\Tr_A$. Basta, pois, demonstrar a comutatividade de (3), e para isso basta provar que, para $h\in G$, tem-se
+\[
+\Tr_A(x\mapsto gxh)(e)=\text{valor em }g^{-1}\text{ da imagem de }h\text{ em }B,
+\]
+Isto é,
+\begin{equation}\tag{*}
+\Tr_A(x\mapsto gxh)(e)=
+\begin{cases}
+1,& g^{-1}\text{ é conjugado de }h,\\
+0,& \text{caso contrário}.
+\end{cases}
+\end{equation}
+Para isso, pode-se substituir $T$ pelo topos pontual e $K$ por $\mathbb Z$, e basta então demonstrar (*) depois de multiplicar por $|Z_g|$. Levando em conta 5.11.1, ficamos, pois, reduzidos a demonstrar que
+\[
+\Tr_{\mathbb Z}(x\mapsto gxh)=
+\begin{cases}
+|Z_g|,& g^{-1}\text{ é conjugado de }h,\\
+0,& \text{caso contrário}.
+\end{cases}
+\]
+Mas isso resulta do fato de que o primeiro membro é o número de pontos fixos da aplicação $x\mapsto gxh$ de $G$ em $G$, de onde se deduzem a comutatividade de 5.11.4 e a conclusão de 5.11.3.
+
+\begin{statement}{Corolário 5.11.5}
+Sob as hipóteses de 5.11.3, tem-se
+\begin{equation}\tag{5.11.5}
+\Tr_K(gu)=|Z_g|\,\Tr_B(u)(g^{-1})=|Z_g|\,\Tr_A(gu)(e).
+\end{equation}
+\end{statement}

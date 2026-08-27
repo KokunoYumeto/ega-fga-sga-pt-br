@@ -1,0 +1,27 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 14656--14680 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+F(U^{(p/X)}) \arrow[r,"F(\Fr_{U/X})"] \arrow[d]
+& F(U) \arrow[d]\\
+F'(U'{}^{(p/X')}) \arrow[r,"F'(\Fr_{U'/X'})"']
+& F'(U') ,
+\end{tikzcd}
+\]
+onde as flechas verticais são as aplicações canônicas; ora, isto decorre imediatamente de
+\[
+\Fr_{U'/X'}=(\Fr_{U/X})'
+\]
+(§ 1, n$^\circ$2, prop. 1b)).
+
+Para provar c), compondo com $(\Fr^*_{/})^{-1}$, reduz-se a provar que $\id_{\mathcal F}$ tem um único $(\Sch)_p$-endomorfismo: a identidade. Ora, se $\varphi$ é um $(\Sch)_p$-endomorfismo de $\id_{\mathcal F}$, sejam $F$ um feixe sobre um pré-esquema $X$ de característica $p$ e $U$ um pré-esquema étale sobre $X$; sabe-se que $F(U)$ se identifica com $\Hom_U(U,F|U)$ e $\varphi_F(U):F(U)\to F(U)$ com a aplicação
+\[
+s\longmapsto \varphi_{F|U}\circ s=s\circ\varphi_U,
+\]
+onde $s\in\Hom_U(U,F|U)$; como o feixe final $U$ de $\widetilde U_{\et}$ não admite outro endomorfismo senão a identidade, tem-se $\varphi_U=\id_U$; resulta que $\varphi_F(U)$ é também a identidade de $F(U)$ e que $\varphi=\id_{\mathcal F}$.
+
+Naturalmente, se o feixe $F$ é provido de uma estrutura algebraica, o isomorfismo $\Fr^*_{F/X}$ é compatível com essa estrutura; por exemplo, se o $F$ é um feixe de grupos sobre o pré-esquema $X$ de característica $p$, $\Fr^*_{F/X}$ é um isomorfismo de feixes de grupos. Seja $\Lambda$ um anel e seja $F$ um feixe de $\Lambda$-módulos sobre $X$; então $\Fr^*_{F/X}$ é um isomorfismo de feixes de $\Lambda$-módulos. Mais geralmente, se $F^\bullet$ é um complexo de $\Lambda$-módulos, define-se imediatamente um isomorfismo
+\[
+\Fr^*_{F^\bullet/X}:\fr_X^*(F^\bullet)\longrightarrow F^\bullet
+\]
+igual a $\Fr^*_{F^i/X}$ sobre a componente de grau $i$ (graças à proposição 1a)); neste caso, o par $(\fr_X,\Fr^*_{F^\bullet/X})$ é, de fato, uma correspondência (no sentido habitual) sobre $(X,F^\bullet)$; esta correspondência é funtorial em $F^\bullet$ e compatível com a mudança de base em $X$ (proposição 1a), b)).

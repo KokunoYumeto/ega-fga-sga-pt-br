@@ -1,0 +1,428 @@
+% SGA 3, Exposé IX, tradução brasileira-portuguesa.
+% Escopo: §7 integral.
+% Autoridade: Polo--Gille Exp9-8nov09.pdf, pp. locais 26--30.
+
+\SGARefTarget{sga3:ix:section:7}
+\section*{7. Algebricidade dos homomorfismos formais em um grupo afim}
+\addcontentsline{toc}{section}{7. Algebricidade dos homomorfismos
+formais em um grupo afim}
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:theorem:7:1}\textbf{Teorema 7.1.}
+\textit{Seja \(A\) um anel noetheriano munido de um ideal \(I\) tal
+que \(A\) seja separado e completo para a topologia \(I\)-ádica. Ponhamos
+\[
+  S=\operatorname{Spec}(A),
+  \qquad
+  S_n=\operatorname{Spec}(A/I^{n+1}),
+\]
+e sejam \(H,G\) pré-esquemas em \(S\)-grupos, com \(H\) de tipo
+multiplicativo isotrivial e \(G\) afim. Então, a aplicação canônica
+\SGARefTarget{sga3:ix:theorem:7:1:equation:x}
+\begin{equation}
+  \tag{x}
+  \theta:
+  \operatorname{Hom}_{S\text{-}\mathrm{gr}}(H,G)
+  \longrightarrow
+  \varprojlim_n
+  \operatorname{Hom}_{S_n\text{-}\mathrm{gr}}(H_n,G_n)
+\end{equation}
+é bijetiva, onde \(H_n,G_n\) são os \(S_n\)-grupos deduzidos de
+\(H,G\) pela mudança de base \(S_n\to S\).}
+
+\emph{Demonstração.}
+Suponhamos primeiro que \(H\) é diagonalizável, portanto da forma
+\[
+  H=\operatorname{Spec}A(M),
+\]
+onde \(B=A(M)\) é a álgebra do grupo comutativo \(M\) com
+coeficientes em \(A\). Podemos escrever também
+\[
+  G=\operatorname{Spec}(C),
+\]
+onde \(C\) é uma \(A\)-álgebra munida de uma aplicação diagonal que
+satisfaz os axiomas usuais. Os homomorfismos de \(S\)-grupos
+\(H\to G\) correspondem bijetivamente aos homomorfismos de
+\(A\)-álgebras
+\[
+  \varphi:C\longrightarrow B
+\]
+compatíveis com as aplicações diagonais, isto é, tais que, para
+todo \(f\in C\),
+\SGARefTarget{sga3:ix:theorem:7:1:display:01}
+\[
+  \Delta_H(\varphi(f))
+  =(\varphi\otimes\varphi)(\Delta_G(f)).
+\]
+Uma descrição análoga vale para os homomorfismos de
+\(S_n\)-grupos \(H_n\to G_n\), dados por homomorfismos de
+\(A_n\)-álgebras
+\[
+  \varphi_n:C_n\longrightarrow B_n,
+\]
+onde
+\[
+  A_n=A/I^{n+1},
+  \qquad
+  B_n=B\otimes_AA_n,
+  \qquad
+  C_n=C\otimes_AA_n.
+\]
+\emph{[A fonte imprime \(C=C\otimes_AA_n\) na última igualdade;
+entende-se \(C_n\).]}
+Ponhamos
+\SGARefTarget{sga3:ix:theorem:7:1:display:02}
+\[
+  \widehat B=\varprojlim_n B_n,
+  \qquad
+  \widehat C=\varprojlim_n C_n.
+\]
+Então,
+\[
+  \widehat B=\varprojlim_n A_n(M)
+\]
+identifica-se com um submódulo do produto \(A^M\), a saber, o
+submódulo formado pelas famílias \((a_m)_{m\in M}\) de elementos de
+\(A\) que tendem a zero para a topologia \(I\)-ádica segundo o filtro
+dos complementares das partes finitas de \(M\). Em particular, o
+homomorfismo canônico
+\[
+  B\longrightarrow\widehat B
+\]
+é injetivo.\footnote{Nota do editor: desenvolveu-se o argumento que
+segue.}
+O sistema projetivo
+\[
+  \theta(\varphi)=(\varphi_n)_{n\geq0}
+\]
+define um homomorfismo
+\[
+  \widehat\varphi:\widehat C\longrightarrow\widehat B
+\]
+tal que \SGARefLink{sga3:ix:theorem:7:1:diagram:01}{o diagrama seguinte}
+é comutativo:
+\SGARefTarget{sga3:ix:theorem:7:1:diagram:01}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+  C
+    \arrow[r,"\varphi"]
+    \arrow[d]
+  & B
+    \arrow[d]
+  \\
+  \widehat C
+    \arrow[r,"\widehat\varphi"]
+  & \widehat B.
+\end{tikzcd}
+\]
+
+Provemos que \(\theta\) é sobrejetiva. Seja
+\((\varphi_n)_{n\geq0}\) um sistema projetivo; devemos mostrar que ele
+é obtido por redução a partir de algum \(\varphi\) do primeiro membro de
+\SGARefLink{sga3:ix:theorem:7:1:equation:x}{\((x)\)}. A priori, o
+sistema \((\varphi_n)\) define um homomorfismo sobre as álgebras
+completadas,
+\[
+  \widehat\varphi:\widehat C\longrightarrow\widehat B.
+\]
+Basta provar que a composta
+\[
+  \Phi:
+  C\longrightarrow\widehat C
+   \xrightarrow{\widehat\varphi}\widehat B
+\]
+envia \(C\) em \(B\). Com efeito, nesse caso ela fornece um
+homomorfismo de \(A\)-álgebras
+\SGARefTarget{sga3:ix:theorem:7:1:display:phi:01}\[
+  \varphi:C\longrightarrow B
+\]
+cujas reduções são os \(\varphi_n\). Vê-se imediatamente que
+\SGARefLink{sga3:ix:theorem:7:1:display:phi:01}{esse homomorfismo} é
+compatível com as aplicações diagonais, já que os
+\(\varphi_n\) o são e uma vez que
+\[
+  B\otimes_AB\longrightarrow\widehat{B\otimes_AB}
+\]
+é injetivo, como resulta do mesmo argumento após substituir \(M\)
+por \(M\times M\).
+
+Ao passar aos completamentos, o homomorfismo diagonal \(\Delta_H\)
+define
+\SGARefTarget{sga3:ix:theorem:7:1:display:03}
+\[
+  \widehat\Delta_H:
+  \widehat B\longrightarrow\widehat{B\otimes_AB}.
+\]
+Tomando o limite projetivo dos diagramas análogos definidos pelos
+\(\varphi_n\), obtém-se o diagrama comutativo
+\SGARefTarget{sga3:ix:theorem:7:1:diagram:02}
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+  C
+    \arrow[r,"\Phi"]
+    \arrow[d,"\Delta_G"']
+  & \widehat B
+    \arrow[d,"\widehat\Delta_H"]
+  \\
+  C\otimes_A C
+    \arrow[r,"\Psi"]
+  & \widehat{B\otimes_A B},
+\end{tikzcd}
+\]
+onde \(\Psi\) é a composta
+\SGARefTarget{sga3:ix:theorem:7:1:display:04}
+\[
+  C\otimes_A C
+  \xrightarrow{\ \Phi\otimes\Phi\ }
+  \widehat B\otimes_A\widehat B
+  \longrightarrow
+  \widehat{B\otimes_A B};
+\]
+A última flecha é o homomorfismo canônico evidente. Assim,
+para todo \(f\in C\), o elemento \(\Phi(f)\in\widehat B\) tem a
+propriedade de que sua imagem por \(\widehat\Delta_H\) é um elemento
+«decomponível» de \(\widehat{B\otimes_A B}\), a saber, um elemento da
+imagem de \(\widehat B\otimes_A\widehat B\).
+
+Seja \((e_m)_{m\in M}\) a base canônica de \(A(M)\), e seja
+\((e_{m,m'})\) a de
+\[
+  A(M\times M)=A(M)\otimes_AA(M).
+\]
+Como
+\[
+  \Delta_H(e_m)=e_m\otimes e_m=e_{m,m}
+  \qquad (m\in M),
+\]
+basta agora aplicar \SGARefLink{sga3:ix:lemma:7:2}{o lema seguinte}.
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:lemma:7:2}\textbf{Lema 7.2.}
+\begin{itshape}
+Sejam \(A\) um anel noetheriano, \(M\) um conjunto e
+\((a_{m,m'})\) uma família de elementos de \(A\), indexada por
+\(M\times M\), que satisfaz:
+\begin{enumerate}
+  \item[(i)] \SGARefTarget{sga3:ix:lemma:7:2:item:i}
+  \(a_{m,m'}=0\) se \(m\neq m'\); isto é, o suporte da família
+  está contido na diagonal de \(M\times M\);
+
+  \item[(ii)] \SGARefTarget{sga3:ix:lemma:7:2:item:ii}
+  Tem-se
+  \SGARefTarget{sga3:ix:lemma:7:2:display:01}
+  \[
+    a_{m,m'}=\sum_i b_m^ic_{m'}^i,
+  \]
+  onde os \(b^i,c^i\) são um número finito de elementos de \(A^M\);
+  dito de outro modo, \((a_{m,m'})\) pertence à imagem do
+  homomorfismo canônico
+  \[
+    A^M\otimes_AA^M\longrightarrow A^{M\times M}.
+  \]
+\end{enumerate}
+Nessas condições, o suporte de \((a_{m,m'})\) é finito.
+\end{itshape}
+
+\emph{Demonstração.}
+Por \SGARefLink{sga3:ix:lemma:7:2:item:i}{(i)}, a família
+\((a_{m,m'})\) é determinada pelos elementos
+\[
+  a_m=a_{m,m}.
+\]
+Para \(x=(x_n)_{n\in M}\in A(M)\), ponhamos
+\[
+  (u\cdot x)_m=\sum_{m'}a_{m,m'}x_{m'}.
+\]
+Interpretamos, assim, \((a_{m,m'})\) como a matriz de um homomorfismo
+\[
+  u:A(M)\longrightarrow A^M.
+\]
+A condição \SGARefLink{sga3:ix:lemma:7:2:item:i}{(i)} dá simplesmente
+\[
+  (u\cdot x)_m=a_mx_m.
+\]
+Além disso, a condição
+\SGARefLink{sga3:ix:lemma:7:2:item:ii}{(ii)} dá
+\[
+  u\cdot x\in\sum_i A\cdot b^i.
+\]
+Portanto, \(u(A(M))\) está contido em um \(A\)-módulo de tipo
+finito. Se \((e_m)_{m\in M}\) designa a base canônica de
+\[
+  A(M)\subset A^M,
+\]
+todos os elementos \(a_me_m\) estão contidos em um \(A\)-módulo de
+tipo finito. Como \(A\) é noetheriano, o módulo gerado por
+esses elementos é, por sua vez, de tipo finito. Como os \(e_m\) são
+linearmente independentes, todos os \(a_m\), salvo um número finito,
+são nulos. Isso prova o lema e, portanto, o Teorema
+\SGARefLink{sga3:ix:theorem:7:1}{7.1}, quando \(H\) é diagonalizável.
+\qed
+
+Tratemos agora o caso geral de
+\SGARefLink{sga3:ix:theorem:7:1}{7.1}, no qual só se supõe que
+\(H\) seja isotrivial. Existe, então, um morfismo finito étale
+e sobrejetivo
+\[
+  S'\longrightarrow S
+\]
+tal que
+\[
+  H'=H\times_SS'
+\]
+é diagonalizável. Utilizaremos somente o fato de que \(S'\to S\)
+é finito e de recobrimento para a topologia fielmente plana e
+quase compacta, ou simplesmente para a topologia canônica sobre
+\((\mathbf{Sch})\). Assim, «étale» poderia ser substituído por «plano».
+
+Ponhamos
+\[
+  S''=S'\times_SS',
+\]
+e introduzamos também
+\[
+  S'_n
+  \quad\text{e}\quad
+  S''_n
+  =S''\times_SS_n
+  =S'_n\times_{S_n}S'_n,
+\]
+juntamente com \(H',G',H'',G'',H'_n,G'_n,H''_n,G''_n\), deduzidos de
+\(H,G\) pelas mudanças de base evidentes. Os grupos \(H'\) e \(H''\)
+são diagonalizáveis. Ademais, \(S'\), e, portanto, \(S''\), é afim. Se
+\[
+  S'=\operatorname{Spec}(A'),
+  \qquad
+  S''=\operatorname{Spec}(A''),
+\]
+então \(A'\) e \(A''\) são separados e completos para as topologias
+definidas por \(IA'\) e \(IA''\), respectivamente, porque ambos são
+finitos sobre \(A\).
+
+Como \(S'\to S\) e \(S'_n\to S_n\) são morfismos de recobrimento,
+temos um diagrama comutativo de aplicações de conjuntos cujas duas
+linhas são exatas:
+\SGARefTarget{sga3:ix:theorem:7:1:diagram:03}
+\[
+\begin{tikzcd}[
+  column sep=small,
+  row sep=large,
+  cells={nodes={font=\small}}
+]
+  \operatorname{Hom}_{S\text{-}\mathrm{gr}}(H,G)
+    \arrow[r]
+    \arrow[d,"u"]
+  & \operatorname{Hom}_{S'\text{-}\mathrm{gr}}(H',G')
+    \arrow[r,shift left=.6ex]
+    \arrow[r,shift right=.6ex]
+    \arrow[d,"u'"]
+  & \operatorname{Hom}_{S''\text{-}\mathrm{gr}}(H'',G'')
+    \arrow[d,"u''"]
+  \\
+  \varprojlim_n
+    \operatorname{Hom}_{S_n\text{-}\mathrm{gr}}(H_n,G_n)
+    \arrow[r]
+  & \varprojlim_n
+    \operatorname{Hom}_{S'_n\text{-}\mathrm{gr}}(H'_n,G'_n)
+    \arrow[r,shift left=.6ex]
+    \arrow[r,shift right=.6ex]
+  & \varprojlim_n
+    \operatorname{Hom}_{S''_n\text{-}\mathrm{gr}}(H''_n,G''_n).
+\end{tikzcd}
+\]
+A segunda linha é exata porque é o limite projetivo dos
+diagramas exatos associados aos diferentes \(S'_n\to S_n\). Pelo
+caso diagonalizável já provado, \(u'\) e \(u''\) são bijetivos. Por
+conseguinte, \(u\) também o é, o que termina a demonstração de
+\SGARefLink{sga3:ix:theorem:7:1}{7.1}. \qed
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:corollary:7:3}\textbf{Corolário 7.3.}
+\textit{Nas condições de
+\SGARefLink{sga3:ix:theorem:7:1}{7.1}, suponhamos, ademais, que \(G\) seja
+liso sobre \(S\), e seja
+\[
+  u_0:H_0\longrightarrow G_0
+\]
+um homomorfismo de \(S_0\)-grupos. Existe, então, um homomorfismo de
+\(S\)-grupos
+\[
+  u:H\longrightarrow G
+\]
+que levanta \(u_0\). Quaisquer dois levantamentos \(u,u'\) são
+conjugados por um elemento \(g\in G(S)\) cuja redução é o elemento
+unidade de \(G_0(S_0)\).}
+
+\emph{Demonstração.}
+Isso resulta da combinação de
+\SGARefLink{sga3:ix:theorem:3:6}{3.6} e
+\SGARefLink{sga3:ix:theorem:7:1}{7.1}. Para construir \(u\), constroem-se
+sucessivamente os \(u_n\), o que é possível por
+\SGARefLink{sga3:ix:theorem:3:6}{3.6}; o Teorema
+\SGARefLink{sga3:ix:theorem:7:1}{7.1} mostra, então, que o sistema
+\((u_n)\) provém de um \(S\)-homomorfismo \(u\). Dados dois
+levantamentos \(u,u'\), constroem-se sucessivamente elementos \(g_n\)
+tais que
+\[
+  g_0=1,
+  \qquad
+  g_n\text{ é a redução de }g_{n+1},
+  \qquad
+  u'_n=\operatorname{int}(g_n)u_n.
+\]
+Mais uma vez, isso é possível por
+\SGARefLink{sga3:ix:theorem:3:6}{3.6}. Como \(A\) é separado e
+completo, os \(g_n\) provêm de um elemento \(g\in G(S)\). Por fim, a
+injetividade de \SGARefLink{sga3:ix:theorem:7:1}{7.1} dá
+\[
+  u'=\operatorname{int}(g)u.
+\]
+\qed
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:remark:7:4}\textbf{Observação 7.4.}
+\textit{Compare-se \SGARefLink{sga3:ix:theorem:7:1}{7.1} com EGA III,
+5.4.1, que implica que o enunciado de
+\SGARefLink{sga3:ix:theorem:7:1}{7.1} continua válido se, em vez
+de supor que \(H\) seja de tipo multiplicativo e que \(G\) seja afim,
+supõe-se que \(H\) seja próprio sobre \(S\), e que \(G\) seja separado e
+localmente de tipo finito sobre \(S\). Um enunciado como o de
+\SGARefLink{sga3:ix:theorem:7:1}{7.1} sem hipótese de propriedade é
+impossível em geral; ele é um dos aspectos mais importantes da
+grande rigidez da estrutura de um grupo de tipo
+multiplicativo.}
+
+\textit{O enunciado análogo com
+\[
+  G=H=\mathbf G_a
+\]
+é falso em geral. Com efeito, tome-se \(A\) de característica \(p>0\),
+e definam-se os \(u_n\), por redução módulo \(I^{n+1}\), a partir de
+uma série formal aditiva
+\SGARefTarget{sga3:ix:remark:7:4:display:01}
+\[
+  u(T)=\sum_{n\geq0}a_nT^{p^n},
+\]
+onde os \(a_n\in A\) tendem a zero para a topologia \(I\)-ádica,
+mas não para a topologia discreta.}
+
+\textit{O enunciado de
+\SGARefLink{sga3:ix:theorem:7:1}{7.1} também se torna falso se se
+suprime a hipótese de que \(G\) seja afim, mesmo quando
+\(H=\mathbf G_m\). Obtém-se um exemplo, com \(A\) um anel de
+valorização discreta completo, a partir de uma curva elíptica sobre o
+corpo de frações \(K\) de \(A\) cuja redução, na teoria de
+Néron--Kodaira, digamos, é o grupo \(\mathbf G_m\) sobre o corpo
+residual \(k\).\footnote{Nota do editor: poder-se-ia dar explicitamente
+um exemplo semelhante.} Tem-se, então, um esquema em grupos
+comutativo liso \(G\) sobre \(S\), cuja fibra especial é
+\(\mathbf G_{m,k}\). Por
+\SGARefLink{sga3:ix:theorem:3:6}{3.6}, isso permite construir um sistema
+projetivo de isomorfismos
+\[
+  u_n:H_n\xrightarrow{\ \sim\ }G_n,
+  \qquad H=\mathbf G_{m,A},
+\]
+ao passo que a fibra genérica de \(G\) é uma variedade abeliana. Por
+conseguinte, não existe nenhum homomorfismo de \(S\)-grupos \(H\to G\)
+distinto do homomorfismo zero.}

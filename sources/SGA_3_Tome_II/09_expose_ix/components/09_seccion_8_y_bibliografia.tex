@@ -1,0 +1,239 @@
+% SGA 3, Exposé IX, tradução brasileira-portuguesa.
+% Escopo: §8 integral, bibliografia final e notas editoriais 49--55.
+% Autoridade: Polo--Gille Exp9-8nov09.pdf, pp. locais 30--32.
+
+\setcounter{footnote}{48}
+\SGARefTarget{sga3:ix:section:8}
+\begingroup
+\renewcommand{\thefootnote}{*}
+\renewcommand{\theHfootnote}{ix-section-eight-star}
+\section*{8. Subgrupos, grupos quociente e extensões de grupos de
+tipo multiplicativo sobre um corpo\protect\footnotemark}
+\addcontentsline{toc}{section}{8. Subgrupos, grupos quociente e extensões
+de grupos de tipo multiplicativo sobre um corpo}
+\footnotetext{Acrescentado em julho de 1969. Este número tardio é independente
+das Seções \SGARefLink{sga3:ix:section:3}{3} a
+\SGARefLink{sga3:ix:section:7}{7}.}
+\endgroup
+\setcounter{footnote}{48}
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:scholium:8:0}\textbf{Escólio 8.0.}
+\footnote{Nota do editor: acrescentou-se este escólio.} ---
+\textit{Sejam \(k\) um corpo e \(H\) um \(k\)-esquema em grupos afim.
+Denotemos por \(k[H]\) sua álgebra afim e por
+\[
+  X(H)=\operatorname{Hom}_{k\text{-}\mathrm{gr}}
+    (H,\mathbf G_{m,k})
+\]
+o grupo de caracteres de \(H\). Pelo lema de independência dos
+caracteres, \(X(H)\) é uma parte linearmente independente de \(k[H]\).
+Por conseguinte, \(H\) é diagonalizável se, e somente se, \(X(H)\) gera
+\(k[H]\) como \(k\)-espaço vetorial.}
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:proposition:8:1}\textbf{Proposição 8.1.} ---
+\textit{Seja \(G\) um esquema em grupos diagonalizável (respectivamente,
+de tipo multiplicativo) sobre um corpo \(k\).\footnote{Nota do editor:
+acrescentaram-se as palavras «sobre um corpo \(k\)», implícitas no
+original. Ademais, «grupo algébrico» foi substituído por «esquema em
+grupos», pois não se supõe que \(G\) seja de tipo finito.} Então,
+para todo subesquema em grupos \(H\) de \(G\), os esquemas \(H\) e
+\(G/H\) são diagonalizáveis (respectivamente, de tipo multiplicativo).}
+
+A Definição \SGARefLink{sga3:ix:definition:1:1}{1.1} reduz
+imediatamente o enunciado ao caso sem a ressalva entre parênteses.
+Uma passagem simples ao limite, utilizando VI\textsubscript{B}
+\SGARefLink{prop:sga3-VIB-11.13}{11.13} e
+\SGARefLink{sga3:viii:theorem:3:1}{VIII 3.1}, reduz-nos ao caso em que
+\(G\) é de tipo finito sobre \(k\).\footnote{Nota do editor: seria
+preciso detalhar essa passagem ao limite? Utilizar
+\SGARefLink{sga3:ix:scholium:8:0}{8.0} e também a igualdade
+\[
+  G/H=\varprojlim_i G_i/H_i
+\]
+(cf.\ VI\textsubscript{B}, demonstração de
+\SGARefLink{thm:sga3-VIB-11.17}{11.17}). Para ver que
+\(H=\varprojlim_i(H\cap G_i)\), utiliza-se que \(H\) é fechado em
+\(G\)? Utilizando esse fato, pode-se dar uma demonstração direta.}
+Por VI\textsubscript{B}
+\SGARefLink{thm:sga3-VIB-11.16}{11.16},\footnote{Nota do editor: sem
+dúvida seria preciso reescrever VI\textsubscript{B}
+\SGARefLink{thm:sga3-VIB-11.16}{11.16} na forma usual, mais
+agradável. Em particular, basta um único \(f_i\) a seguir.} pode-se
+encontrar uma família finita de elementos não nulos
+\SGARefTarget{sga3:ix:eq:8:1:1}
+\begin{equation}
+  \tag{8.1.1}
+  f_i=\sum_m a_{im}m,\qquad a_{im}\in k,
+\end{equation}
+do anel afim \(k(M)\) de \(G=D_k(M)\), tal que os pontos de \(H\),
+com valores em uma \(k\)-álgebra arbitrária \(k'\), são precisamente os
+pontos \(g\in G(k')\) para os quais
+\SGARefTarget{sga3:ix:eq:8:1:2}
+\begin{equation}
+  \tag{8.1.2}
+  \tau_g f_i=\lambda_i(g)f_i,
+  \qquad \lambda_i(g)\in k',
+\end{equation}
+onde \(\tau_g\) designa a translação por \(g\). Ora,
+\SGARefTarget{sga3:ix:eq:8:1:3}
+\begin{equation}
+  \tag{8.1.3}
+  \tau_g f_i=\sum_m a_{im}\chi_m(g)m,
+\end{equation}
+onde \(\chi_m:G\to\mathbf G_{m,k}\) é o caráter associado a \(m\).
+Portanto, \SGARefLink{sga3:ix:eq:8:1:2}{(8.1.2)} equivale a
+\SGARefTarget{sga3:ix:eq:8:1:4}
+\begin{equation}
+  \tag{8.1.4}
+  \chi_m(g)=\chi_{m'}(g)
+  \qquad\text{se }m,m'\in Z_i,
+\end{equation}
+onde \(Z_i\) designa o conjunto dos \(m\in M\) tais que
+\(a_{im}\neq0\). A mesma relação pode ser escrita
+\[
+  \chi_{m'-m}(g)=1
+  \qquad\text{se }m,m'\in Z_i.
+\]
+
+Seja \(N\) o subgrupo de \(M\) gerado por todos os elementos
+\(m'-m\), onde \(i\) varia e \(m,m'\in Z_i\). Da definição de
+\(D_k(M)\simeq G\), resulta que \(H\) se identifica com \(D_k(M/N)\).
+Portanto, \SGARefLink{sga3:viii:theorem:3:1}{VIII 3.1} identifica
+\(G/H\) com \(D_k(N)\).
+\hfill\(\square\)
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:proposition:8:2}\textbf{Proposição 8.2.}
+\footnote{Nota do editor: desenvolveram-se tanto o enunciado quanto sua
+demonstração.} ---
+\textit{Sejam \(k\) um corpo; \(H\) e \(K\), \(k\)-esquemas em grupos de
+tipo multiplicativo e de tipo finito; e \(G\), um \(k\)-esquema em
+grupos que entram em uma sequência exata
+\SGARefTarget{sga3:ix:eq:8:2:0}
+\[
+  1\longrightarrow H\longrightarrow G\longrightarrow K\longrightarrow 1
+\]
+(o que implica que \(G\) é de tipo finito sobre \(k\)).}
+
+\SGARefTarget{sga3:ix:proposition:8:2:item:i}\textit{(i) Se \(G\) é
+comutativo ou \(K\) é conexo, então \(G\) é de tipo multiplicativo.}
+
+\SGARefTarget{sga3:ix:proposition:8:2:item:ii}\textit{(ii) Se \(K\) e
+\(H\) são diagonalizáveis e \(K\) é um toro, então \(G\) é
+diagonalizável.}
+
+Para a demonstração de
+\SGARefLink{sga3:ix:proposition:8:2:item:i}{(i)}, remete-se o leitor a
+\SGARefLink{sga3:xvii:proposition:7:1:1}{XVII 7.1.1}, do qual
+\SGARefLink{sga3:ix:proposition:8:2:item:i}{8.2(i)} é um caso
+particular. O caso de um corpo é tratado na parte
+\SGARefLink{sga3:xvii:proposition:7:1:1:item:i}{(i)} da demonstração
+de \SGARefLink{sga3:xvii:proposition:7:1:1}{XVII 7.1.1}, sem utilizar
+os resultados dos exposés posteriores.
+
+Para \SGARefLink{sga3:ix:proposition:8:2:item:ii}{(ii)}, suponhamos
+agora que \(K\) e \(H\) são diagonalizáveis:
+\[
+  K\simeq D_k(M)
+  \qquad\text{e}\qquad
+  H\simeq D_k(N),
+\]
+e suponhamos que \(G\) é de tipo multiplicativo, como resulta de
+\SGARefLink{sga3:ix:proposition:8:2:item:i}{(i)} quando \(K\) é um
+toro. Por \SGARefLink{sga3:x:proposition:1:4}{X 1.4}, \(G\) é
+isotrivial sobre \(k\); isto é, existe uma extensão separável finita
+\(k'/k\) tal que
+\[
+  G'=G\times_k k'
+\]
+é diagonalizável. Por conseguinte, \(G'=D_{k'}(E)\) para um grupo
+comutativo \(E\), e tem-se uma sequência exata
+\SGARefTarget{sga3:ix:eq:8:2:1}
+\begin{equation}
+  \tag{1}
+  0\longrightarrow D_{k'}(N)\longrightarrow D_{k'}(E)
+    \longrightarrow D_{k'}(M)\longrightarrow 0.
+\end{equation}
+Por \SGARefLink{sga3:viii:theorem:3:1}{VIII 3.1} e
+\SGARefLink{sga3:ix:theorem:3:2}{3.2}, \(M\) é, pois, um subgrupo de
+\(E\), e tem-se uma sequência exata
+\SGARefTarget{sga3:ix:eq:8:2:2}
+\begin{equation}
+  \tag{2}
+  0\longrightarrow M\longrightarrow E\longrightarrow N\longrightarrow 0.
+\end{equation}
+
+Para uma extensão dada \(E_0\) de \(N\) por \(M\), consideremos o
+\(k\)-grupo diagonalizável \(G_0=D_k(E_0)\). O funtor em grupos sobre
+\(k\), \(A\), dos automorfismos da extensão
+\SGARefTarget{sga3:ix:eq:8:2:3}
+\begin{equation}
+  \tag{3}
+  1\longrightarrow H\longrightarrow G_0\longrightarrow K\longrightarrow 1,
+\end{equation}
+é o subfuntor em grupos de
+\(\operatorname{Aut}_{k\text{-}\mathrm{gr}}(G_0)\) cujos pontos sobre
+um \(k\)-pré-esquema \(T\) são os
+\[
+  \phi\in\operatorname{Aut}_{T\text{-}\mathrm{gr}}(G_T)
+\]
+que induzem a identidade sobre \(H_T\) e \(K_T\), identifica-se com
+\(\operatorname{Hom}_{k\text{-}\mathrm{gr}}(K,H)\). Por
+\SGARefLink{sga3:viii:corollary:1:5}{VIII 1.5}, este é o
+\(k\)-grupo constante de valor
+\[
+  L=\operatorname{Hom}_{\mathrm{gr}}(N,M).
+\]
+% Candidato a erro de fonte: a extensão é formada com G_0,
+% mas o PDF imprime G_T no grupo de automorfismos.
+
+Resulta que as extensões \(G\) de \(K\) por \(H\) que se tornam
+isomorfas a \SGARefLink{sga3:ix:eq:8:2:3}{(3)} sobre um fecho
+separável \(k_s\) de \(k\) classificam-se do mesmo modo que os
+\(k\)-torsores, para a topologia étale, sob o grupo constante \(L_k\).
+Ponhamos \(\Gamma=\operatorname{Gal}(k_s/k)\). Como \(L\) é um
+\(\Gamma\)-módulo trivial, esses torsores são classificados por
+\SGARefTarget{sga3:ix:eq:8:2:4}
+\[
+  H^1_{\mathrm{\acute et}}(k,L_k)
+  =H^1(\Gamma,L)
+  =\operatorname{Hom}_{\mathrm{gr.\,top.}}(\Gamma,L).
+\]
+
+Se, ademais, \(K\) é um toro, então \(M\) é sem torção e, portanto,
+\(L\) também. Por conseguinte,
+\[
+  \operatorname{Hom}_{\mathrm{gr.\,top.}}(\Gamma,L)=0,
+\]
+e toda extensão de \(K\) por \(H\) já é diagonalizável.
+
+\medskip
+\noindent\SGARefTarget{sga3:ix:remark:8:3}\textbf{Observação 8.3.} ---
+\textit{Como já se assinalou na demonstração de
+\SGARefLink{sga3:ix:proposition:8:2}{8.2},
+\SGARefLink{sga3:ix:proposition:8:2:item:i}{a primeira afirmação} é
+enunciada e demonstrada, sobre uma base arbitrária, em
+\SGARefLink{sga3:xvii:proposition:7:1:1}{XVII 7.1.1}.
+\SGARefLink{sga3:ix:proposition:8:2:item:ii}{A segunda afirmação} será
+estendida por descida ao caso de um esquema-base inteiro normal ---ou,
+mais geralmente, geometricamente unirramoso--- utilizando
+\SGARefLink{sga3:x:lemma:5-13}{X 5.13} mais adiante.}
+
+\textit{Por fim, \SGARefLink{sga3:ix:proposition:8:1}{8.1} também
+é um corolário, claramente menos
+trivial, de \SGARefLink{sga3:ix:theorem:6:8}{6.8}, que também é válido
+sobre um esquema-base arbitrário.}\footnote{Nota do editor: note-se,
+contudo, que a demonstração de
+\SGARefLink{sga3:ix:theorem:6:8}{6.8} utiliza
+\SGARefLink{sga3:ix:proposition:8:1}{8.1}.}
+
+\SGARefTarget{sga3:ix:bibliography}
+\section*{Bibliografia}
+\addcontentsline{toc}{section}{Bibliografia}
+\footnote{Nota do editor: referências adicionais citadas neste
+Exposé.}
+
+\noindent \SGARefTarget{sga3:ix:bib:bens}[BEns] N. Bourbaki,
+\textit{Théorie des ensembles}, capítulos I--IV, Hermann, 1970.

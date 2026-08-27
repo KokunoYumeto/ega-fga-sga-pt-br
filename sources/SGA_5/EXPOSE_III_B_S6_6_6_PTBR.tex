@@ -1,0 +1,80 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5758--5835 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{6.6}
+Sejam $A$ uma $\Lambda$-álgebra plana, e, para $i=1,2$, $X_i$ um $S$-esquema, $X=X_1\times_SX_2$, $L_i\in\Ob D_{\mathrm{ctf}}({}_AX_i)$. Define-se um emparelhamento
+\begin{equation}
+\uRHom_A(p_1^*L_1,p_2^!L_2)
+\lten_{\Lambda}
+\uRHom_A(p_2^*L_2,p_1^!L_1)
+\longrightarrow
+KA_{X,L_{\natural}}
+\tag{6.6.1}
+\end{equation}
+da seguinte forma. Identifica-se o primeiro membro com
+\[
+\uRHom_A(p_1^*L_1,p_1^*KA_{X_1})
+\lten_A p_2^*L_2
+\lten_{\Lambda}
+\uRHom_A(p_2^*L_2,p_2^*KA_{X_2})
+\lten_A p_1^*L_1
+\]
+por meio dos isomorfismos 6.4.1, e depois com
+\[
+A\lten_{A^e}\uRHom_A(\ )\lten_{\Lambda}p_2^*L_2
+ \lten_{\Lambda}\uRHom_A(\ )\lten_{\Lambda}p_1^*L_1\lten_{A^e}A
+\]
+por meio de 5.3.1; este objeto é enviado a
+\[
+A\lten_{A^e}(KA_{X_1}\lten_{\Lambda}KA_{X_2})\lten_{A^e}A=R
+\]
+pelo produto tensorial das flechas de avaliação 5.3.6; por último, identifica-se $R$ com
+\[
+A\lten_{A^e}(KA_{X_1}\lten_A KA_{X_2})
+\]
+por meio de 5.8.2, e depois com $KA_{X,L_{\natural}}$ por meio de 6.5.2 e (III 1.7.6).
+
+Se $c:C\to X$, $d:D\to X$ são correspondências, e
+\[
+e=c\times_Xd:E\to X,
+\]
+de 6.6.1 deduz-se, como em (III 4.2), um emparelhamento
+\begin{equation}
+c_*\uRHom_A(c_1^*L_1,c_2^!L_2)
+\lten_{\Lambda}
+d_*\uRHom_A(d_2^*L_2,d_1^!L_1)
+\longrightarrow
+e_*KA_{E,L_{\natural}},
+\tag{6.6.2}
+\end{equation}
+de onde se obtém um produto cup
+\begin{equation}
+\langle\ ,\ \rangle_A:
+\uHom_A(c_1^*L_1,c_2^!L_2)\otimes
+\uHom_A(d_2^*L_2,d_1^!L_1)
+\longrightarrow
+H^0(E,KA_{E,L_{\natural}}).
+\tag{6.6.3}
+\end{equation}
+Não é difícil estender ao caso não comutativo a noção de composição de correspondências estudada em (III 5.2), e verifica-se que, para
+\[
+u\in\uHom_A(c_1^*L_1,c_2^!L_2),\qquad
+v\in\uHom_A(d_2^*L_2,d_1^!L_1),
+\]
+tem-se a fórmula análoga a (III 5.2.9)
+\begin{equation}
+\langle u,v\rangle_A=\Tr_A(vu)=\Tr_A(uv).
+\tag{6.6.4}
+\end{equation}
+A fórmula de Lefschetz (III 4.4) generaliza-se sem dificuldade neste contexto: dados $S$-morfismos próprios $f_i:X_i\to Y_i$ $(i=1,2)$, e um cubo comutativo (III 4.4.0), tem-se, para $L_i\in\Ob D_{\mathrm{ctf}}({}_AX_i)$, um quadrado comutativo análogo a (III 4.4.1), com $K_C$ (resp. $K_D$) substituído por $KA_{C,L_{\natural}}$ (resp. $KA_{D,L_{\natural}}$), e uma fórmula análoga a (III 4.5.1), em $H^0(D,KA_{D,L_{\natural}})$:
+\begin{equation}
+\langle f_*u,f_*v\rangle_A=g_*\langle u,v\rangle_A.
+\tag{6.6.5}
+\end{equation}
+A flecha
+\[
+f_*c_*KA_{C,L_{\natural}}\longrightarrow d_*KA_{D,L_{\natural}}
+\]
+deduz-se da flecha (4) de (III 4.4.1) por tensorização com
+\[
+A\lten_{A^e}A .
+\]

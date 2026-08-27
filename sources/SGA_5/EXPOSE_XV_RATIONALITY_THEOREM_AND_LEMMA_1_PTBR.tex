@@ -1,0 +1,52 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 14955--15004 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{n\textsuperscript{o} 2. Enunciado do teorema de racionalidade e redução ao caso de uma curva}
+
+\begin{statement}{Teorema}
+Sejam $X$ um esquema de tipo finito sobre $\mathbb F_p$, de dimensão $n$, $g:X\to e$ seu morfismo estrutural e $F$ um $\Omega$-feixe construtível sobre $X$. Tem-se
+\[
+L_F=\prod_{i=0}^{2n}\bigl(L_{\R^i_!g(F)}\bigr)^{(-1)^i}.
+\tag{1}
+\]
+\end{statement}
+
+Neste enunciado, os $\R^i_!g(F)$ são as imagens diretas superiores com suportes próprios, no sentido da coomologia $\ell$-ádica. Põe-se
+\[
+H^i_!(\bar X,\bar F)=\R^i_!\bar g(\bar F)=\R^i_!g(F)_{\bar e}
+\]
+(teorema de mudança de base), onde $\bar X$, $\bar F$ e $\bar g$ são obtidos de $X$, $F$ e $g$ mediante a mudança de base $\bar e\to e$, sendo $\bar e$ o espectro de um fecho algébrico de $\mathbb F_p$. Com esta notação, tem-se, de acordo com o n\textsuperscript{o}~1,
+\[
+L_{\R^i_!g(F)}(t)=1/\det(1-f^{-1}_{H^i_!(\bar X,\bar F)}t)
+ =L_{f^{-1}_{H^i_!(\bar X,\bar F)}}(t)
+\]
+pondo $L_u(t)=1/\det(1-ut)$ para todo endomorfismo $u$ de um espaço vetorial de dimensão finita, de acordo com o formalismo desenvolvido em uma exposição anterior.
+
+Mais geralmente, consideremos um morfismo $u:X\to Y$ de esquemas de tipo finito sobre $\mathbb F_p$ e um $\Omega$-feixe construtível $F$ sobre $X$. Designemos por $(P_{F,u})$ a seguinte propriedade:
+\[
+(P_{F,u}):\qquad
+L_F=\prod_i\bigl(L_{\R^i_!u(F)}\bigr)^{(-1)^i}.
+\]
+O enunciado do teorema para o par $(X,F)$ não é senão $(P_{F,g})$, onde $g:X\to e$ é o morfismo estrutural de $X$. Reduziremos ao caso em que $X$ seja a reta projetiva mediante alguns lemas.
+
+\begin{statement}{Lema 1}
+Seja $u:X\to Y$ um morfismo de esquemas de tipo finito sobre $\mathbb F_p$ e seja $F$ um $\Omega$-feixe construtível. Se $(P_{F|X_y,u_y})$ for verdadeira para todo $y\in Y^0$, então $(P_{F,u})$ será verdadeira.
+\end{statement}
+
+De facto,
+\[
+L_F=\prod_{y\in Y^0}L_{F|X_y}
+\]
+(n\textsuperscript{o}~1, proposição 1c)
+\[
+=\prod_{y\in Y^0}\prod_i\bigl(L_{\R^i_!u_y(F|X_y)}\bigr)^{(-1)^i}
+\]
+utilizando $(P_{F|X_y,u_y})$; ora,
+\[
+\R^i_!u_y(F|X_y)\simeq \R^i_!u(F)_y
+\]
+(teorema de mudança de base), que dá
+\[
+L_F=\prod_i\left(\prod_{y\in Y^0}L_{(\R^i_!u(F))_y}\right)^{(-1)^i}
+=\prod_i\bigl(L_{\R^i_!u(F)}\bigr)^{(-1)^i}
+\]
+por definição da função $L$ sobre $Y$.

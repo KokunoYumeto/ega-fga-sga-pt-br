@@ -1,0 +1,21 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4909--4926 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+% FIX#58: book p160 prints P^1_s (lowercase closed point s); edition had P^1_S --- s->S transcription slip. Exceptional divisor = P^1 over residue field of s (dim 1); P^1_S over base would be wrong dim. 800dpi-confirmed 2026-07-03.
+Demonstremos 4.2. Sejam $f:T'\to T$ a explosão do ideal maximal de $T$, $D=f^{-1}(z)(\simeq\mathbb P^1_s)$ o divisor excepcional, e $A'$, $B'$, $X'$ as transformadas estritas respectivas de $A$, $B$, $X$. $T'$ é, pois, regular, conexo e de dimensão $2$; $X'$ é um divisor regular que corta transversalmente $D$ em um ponto $z'$, e as hipóteses de posição geral sobre $A$, $B$, $X$ significam que $A'$ é disjunto de $B'\cup X'$. Denotemos por $E'$ a imagem inversa de $E$ sobre $T'-(A'\cup D\cup X')$ e
+\[
+i':T'-(A'\cup D\cup X')\hookrightarrow T'-(A'\cup D)
+\]
+a inclusão. Trata-se de demonstrar que a flecha de restrição
+\begin{equation}
+\R\Gamma(T'-(A'\cup D),i'_!(E'))
+\longrightarrow
+\R\Gamma(B'\cup D,i'_!(E')|B'-(B'\cup D))
+\tag{*}
+\end{equation}
+é nula. Ora, $B'$ é uma união disjunta de esquemas estritamente locais $B'_j$ $(1\le j\le n)$, de dimensão $1$, tais que, para cada $j$, $B'_j\cap D$ se reduz a um ponto $b_j$. Aplicando 4.3 c) a $(Z=T'-A', X=X', Y=D-(D\cap A'), L=E', C=B'_j)$ (a hipótese (P) se verifica em virtude do teorema de pureza relativa (SGA 4 XVI 3), pois $(Z,Y)$ é limite projetivo filtrante de pares suaves de codimensão $1$ sobre $S$, com morfismos de transição afins étales), obtém-se que a flecha de restrição
+\[
+\R\Gamma(T'-(A'\cup D),i'_!(E'))
+\longrightarrow
+\R\Gamma(B'_j-b_j,i'_!(E')|B'_j-b_j)
+\]
+é nula. Portanto, (*) é nula, o que conclui a demonstração de 4.2 e, por conseguinte, as de 2.5 e 1.2.

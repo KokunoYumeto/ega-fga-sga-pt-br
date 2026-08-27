@@ -1,0 +1,30 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4161--4188 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{Exposição III B\\Cálculos de termos locais}
+\begin{center}
+Por Luc Illusie
+\end{center}
+
+\section*{Introdução}
+
+Esta exposição, redigida em janeiro de 1977, não corresponde a nenhuma exposição oral do seminário. Compreende duas partes independentes. Na primeira, calculamos os termos locais de Lefschetz--Verdier para correspondências cohomológicas entre curvas suaves sobre um corpo algebricamente fechado, com suporte em correspondências que satisfazem certas hipóteses de posição geral. A fórmula obtida fornece como corolários a fórmula de Verdier~[6] para endomorfismos transversais (que se aplica, em particular, ao caso do endomorfismo de Frobenius) e a fórmula enunciada por Langlands em ([4]~7.12). O método de demonstração é paralelo ao seguido por Artin--Verdier em [6]. Reduz-se o problema a demonstrar a nulidade do termo local quando os complexos de feixes dados têm fibra nula nas imagens do ponto fixo considerado e, de fato, demonstra-se uma propriedade mais forte, a saber, que certa flecha de restrição é nula (2.5). Para estabelecer essa propriedade, começa-se por reduzir ao caso de ramificação moderada mediante recobrimentos do mesmo grau das duas curvas dadas (a fim de não destruir as hipóteses de posição geral) e depois trata-se diretamente esse caso mediante o lema de Abhyankar e o teorema de pureza relativa. A segunda parte desta exposição, de natureza muito mais técnica, inspira-se no método utilizado por Grothendieck para estabelecer a fórmula de Lefschetz para certas correspondências cohomológicas sobre curvas (vejam-se XII e (SGA~$4^{1/2}$ Rapport)). No n\textsuperscript{o}~5 desenvolvemos, para os complexos de módulos sobre um topos, uma teoria de traços não comutativos que generaliza a teoria comutativa de (SGA~6~I) e recupera, no caso de um topos pontual, a teoria não comutativa desenvolvida por Grothendieck no seminário oral (esta havia sido redigida na exposição XI, infelizmente desaparecida). Aplicamos as técnicas do n\textsuperscript{o}~5 para definir, no n\textsuperscript{o}~6, termos locais de Lefschetz--Verdier para correspondências cohomológicas entre complexos de módulos sobre anéis não necessariamente comutativos. Esses termos locais comportam-se como traços não comutativos e permitem, em particular, quando se toma como anel de base a álgebra de um grupo, decompor canonicamente os termos locais ordinários associados a correspondências equivariantes. Como aplicação, demonstramos a conjectura de divisibilidade de Grothendieck de (XII~4.5), em uma forma mais geral. Mostramos também que os termos locais definidos por Grothendieck na fórmula de Lefschetz de XII são efetivamente os termos locais de Lefschetz--Verdier, e generalizamos a fórmula de (loc. cit.).
+
+Agradeço a P.~Deligne as sugestões úteis que me fez no decorrer de numerosas conversas; sou-lhe particularmente grato por ter assinalado e ajudado a corrigir um erro em uma demonstração inicial do teorema~1.2.
+
+\section*{Sumario}
+\begin{tabular}{@{}p{0.84\textwidth}r@{}}
+I. Correspondências em posição geral entre curvas & 3\\
+1. Enunciado do teorema e corolários & 3\\
+2. Redução a um teorema de anulação & 9\\
+3. Redução ao caso moderado & 15\\
+4. Fim da demonstração de 1.2 & 20\\
+II. Correspondencias equivariantes & 25\\
+5. Traços não comutativos & 25\\
+6. Correspondências equivariantes e divisibilidade de termos locais & 46
+\end{tabular}
+
+\section*{I. Correspondências em posição geral entre curvas}
+
+Nesta parte, $S$ designa o espectro de um corpo algebricamente fechado $k$ de car.~$p$, e $\Lambda$ um anel comutativo noetheriano anulado por um inteiro primo com $p$. Para todo esquema $X$ sobre $S$, denotar-se-á por $D(X)$ a categoria derivada dos feixes de $\Lambda$-módulos sobre $X$, e por $D_{\ctf}(X)$ a subcategoria plena de $D(X)$ formada pelos complexos de dimensão Tor finita e com cohomologia construtível.
+
+\subsection*{1. Enunciado do teorema e corolários}

@@ -1,0 +1,41 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5204--5242 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{equation}\tag{5.9.4}
+\begin{tikzcd}[column sep=large,row sep=large]
+\uRHom_A(E,E) \arrow[r,"\Tr_A"] \arrow[d] & A\lten_{A^e}A \arrow[d]\\
+\uRHom_B(B\lten_AE,B\lten_AE) \arrow[r,"\Tr_B"'] & B\lten_{B^e}B,
+\end{tikzcd}
+\end{equation}
+onde a flecha vertical da esquerda e a da direita são dadas, respectivamente, pela extensão de escalares e pela flecha canônica deduzida de $A\to B$.
+
+\subsubsection*{5.10. Traços e restrição de escalares}
+
+Seja $A\to B$ um morfismo de $K$-álgebras planas tal que $B$, como $A$-módulo esquerdo, seja plano e de apresentação finita, isto é, localmente fator direto de um $A$-módulo livre de tipo finito. Esse é o caso, por exemplo, se $A\to B$ é o morfismo $K[H]\to K[G]$ definido por um morfismo injetivo de grupos discretos $H\hookrightarrow G$ de índice finito. O homomorfismo de restrição de escalares
+\[
+\uHom_B(B,B)\longrightarrow\uHom_A(B,B),
+\]
+onde $B$ é considerado como módulo esquerdo, identifica-se, mediante os isomorfismos canônicos
+\[
+B\xrightarrow{\sim}\uHom_B(B,B),\qquad \uHom_A(B,A)\otimes_AB\xrightarrow{\sim}\uHom_A(B,B),
+\]
+com uma flecha de $B$-bimódulos
+\begin{equation}\tag{5.10.1}
+B\longrightarrow\uHom_A(B,A)\otimes_AB.
+\end{equation}
+A composta de 5.10.1 com a flecha de avaliação $\uHom_A(B,A)\otimes_AB\to A_\natural$ (5.3.3) é o homomorfismo $f\mapsto\Tr_A(f)$ ($=\Tr_A(d_f)$, onde $d_f$ é a multiplicação à direita por $f$); portanto, em virtude da fórmula $\Tr_A(fg)=\Tr_A(gf)$ (5.8.5), fatora-se através de $B_\natural$ em uma flecha que se continua denotando por $\Tr_{B/A}:B_\natural\to A_\natural$; tem-se, pois, um quadrado comutativo
+\begin{equation}\tag{5.10.2}
+\begin{tikzcd}[column sep=large,row sep=large]
+B \arrow[r,"\Tr_B"] \arrow[d,"5.10.1"'] & B_\natural \arrow[d,"\Tr_{B/A}"]\\
+\uHom_A(B,A)\otimes_AB \arrow[r,"\mathrm{ev}"'] & A_\natural .
+\end{tikzcd}
+\end{equation}
+Na situação $({}_BE,{}_BP_A)$, tem-se um homomorfismo de $B$-módulos direitos
+\begin{equation}\tag{5.10.3}
+\uHom_B(E,P)\otimes_AB\longrightarrow\uHom_B(E,P\otimes_AB),\qquad
+u\otimes b\longmapsto(x\longmapsto u(x)\otimes b),
+\end{equation}
+que é um isomorfismo, como se verifica imediatamente: basta ver que o homomorfismo $K$-linear subjacente é um isomorfismo, e isso resulta de que $B$ é localmente fator direto de um $A$-módulo livre de tipo finito. Esse isomorfismo se deriva em um isomorfismo de $D(B)$
+\begin{equation}\tag{5.10.4}
+\uRHom_B(E,P)\lten_AB\xrightarrow{\sim}\uRHom_B(E,P\lten_AB),
+\end{equation}
+para $E\in\ob D^-(B)$, $P\in\ob D^+(B\otimes_KA^\circ)$: resolve-se $E$ por módulos da forma $B\otimes_AL$, onde $L$ é plano, e $P$ por $(B\otimes_KA^\circ)$-módulos injetivos, que são necessariamente injetivos como $B$-módulos, por ser $A$ plano sobre $K$; isso permite suprimir a $\R$ do membro esquerdo, e a resolução escolhida para $E$ permite também suprimi-la do direito.

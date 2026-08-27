@@ -1,0 +1,36 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4092--4127 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{6.13}
+Suponhamos que $S$ seja o espectro de um fecho algébrico do corpo finito $\mathbb F_q$ e que $X/S$ provenha, por extensão dos escalares, de um esquema próprio e suave $X_0/\mathbb F_q$. Tomemos como $F$ o endomorfismo de Frobenius de $X/S$ ``definido pela elevação das coordenadas à $q$-\'ésima potência''. Tem-se $X^F=X_0(\mathbb F_q)$, e $X^F$ é formado por pontos transversais, pois $dF=0$. Se $L$ é um feixe localmente livre de tipo finito sobre $X$ e $u\in\Hom(F^*L,L)$, a fórmula de Woods Hole se escreve, portanto,
+\begin{equation}
+\tag{6.13.1}
+\sum_i(-1)^i\operatorname{Tr}((F,u),H^i(X,L))=
+\sum_{x\in X_0(\mathbb F_q)}\operatorname{Tr}(u_x,L_x).
+\end{equation}
+Em particular, para $L=\OO_X$ e $u$ o isomorfismo canônico $F^*\OO_X\xrightarrow{\sim}\OO_X$, obtém-se:
+\begin{equation}
+\tag{6.13.2}
+\sum_i(-1)^i\operatorname{Tr}(F,H^i(X,\OO_X))=\operatorname{Card}(X_0(\mathbb F_q))\quad(\operatorname{mod} p).
+\end{equation}
+A teoria de Artin--Schreier permite reescrever o primeiro membro como $\sum_i(-1)^i\operatorname{Tr}(F,H^i(X,\mathbb F_p))$, onde $H^*(X,\mathbb F_p)$ designa a cohomologia étale de $X$ com valores no feixe constante $\mathbb F_p$. Mediante um refinamento desse argumento, Deligne, em (SGA $4^{1/2}$ Fonctions L), deduziu de 6.13.1 a seguinte generalização de 6.13.2:
+
+
+\begin{statement}{Teorema 6.13.3 (Deligne)}
+Sejam $X_0$ um esquema separado e de tipo finito sobre $\mathbb F_q$, $X$ o esquema deduzido de $X_0$ por extensão dos escalares a um fecho algébrico $k$ de $\mathbb F_q$ e $F$ o endomorfismo de Frobenius de $X/k$. Então, para todo $L_0\in\ob D_{\ctf}(X_0,\mathbb F_p)$, denotando por $L$ a imagem inversa de $L_0$ sobre $X$, tem-se
+\[
+\sum_i(-1)^i\operatorname{Tr}(F,H_c^i(X,L))=
+\sum_{x\in X^F}\operatorname{Tr}(F,L_x).
+\]
+\end{statement}
+
+Assinalemos que o caso particular de 6.13.3 correspondente a $L_0=\mathbb F_p$ foi estabelecido por Katz em (SGA 7 XXII) por um método completamente diferente, baseado no cálculo, à maneira de Dwork, da função zeta de uma hipersuperfície. Por outro lado, 6.13.2, no caso próprio e suave, é também consequência imediata da fórmula de Lefschetz em cohomologia cristalina ([5] VII 3.1.9). De fato, a cohomologia cristalina fornece a informação mais precisa de que cada fator $\det(1-Ft,H^i(X_0/W))\in W[t]$ da função zeta é congruente módulo $p$ com $\det(1-Ft,H^i(X_0,\OO_{X_0}))$ (ao menos se $H^*(X_0/W)$ não tiver torção). Katz demonstrou [11] que, mediante as estimativas de B. Mazur [14], podiam-se obter congruências superiores (nas quais intervêm os $H^i(X_0,\Omega^j_{X_0})$ e a operação de Cartier) para hipersuperfícies (ou interseções completas) suaves cujos números de Hodge (na dimensão de interesse) se supõem nulos até certo grau.
+
+Por outro lado, se $X_0$ é um esquema próprio sobre $\mathbb F_q$, geometricamente íntegro e tal que $H^i(X_0,\OO_{X_0})=0$ para $i>0$, a fórmula de Lefschetz--Verdier 6.7.2, aplicada a $X=X_0\otimes k$ e ao endomorfismo de Frobenius de $X$, implica imediatamente que $X_0$ possui ao menos um ponto racional sobre $\mathbb F_q$ (pois $\operatorname{Tr}(F,\R\Gamma(X,\OO_X))=1$). Serre pergunta se essa conclusão continua verdadeira quando se substitui $\mathbb F_q$ por um corpo que satisfaz $(C_1)$ ([17] II 3), por exemplo $\mathbb C(t)$ (Tsen) ou $\mathbb C((t))$ (Lang) (veja-se loc. cit. para outros exemplos); observa, com efeito, que, se $X_0$ é uma interseção completa de multigrau $(m_1,\ldots,m_r)$ em $\mathbb P^n$, a condição de trivialidade da cohomologia equivale ([16] n\textsuperscript{o} 78) à condição $m_1+\cdots+m_r<n+1$, que é também a que intervém quando se escreve a condição $(C_1)$.
+
+\subsection*{6.14}
+A fórmula de Woods Hole tem muitas outras aplicações, para as quais remetemos a [2] e à exposição de Beauville [4].
+
+
+\subsection*{6.15}
+
+O redator não examinou o caso das componentes de pontos fixos de dimensão $\geq1$, mas não se exclui que de 6.7.2 (combinada provavelmente com Riemann--Roch) possam ser deduzidas fórmulas de Lefschetz--Riemann--Roch ao estilo das de Donovan [7], Iversen [10] e Nielsen [15] (ao menos com valores no corpo de base). Por outro lado, não se exclui que a fórmula 6.7.2, aplicada sobre os números duais, forneça fórmulas de resíduos para os campos vetoriais análogas às de Bott [6], [3].

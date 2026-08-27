@@ -1,0 +1,54 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6549--6600 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Lema 6.23.3}
+(cf. SGA $4^{1/2}$ Rapport 4.7). Sejam $P$ um $G_V$-módulo localmente fator direto de um módulo livre de tipo finito, $P'=i_!P$, e $Q$ um complexo de $\Lambda[G]$-módulos, perfeito sobre $\Lambda$. Então $P\lten_{\Lambda}Q$, considerado como objeto de $D({}_{\Lambda[G]}V)$ mediante a ação diagonal de $G$, é perfeito sobre $\Lambda[G]$, e tem-se um quadrado comutativo
+\begin{equation}
+\tag{*}
+\begin{tikzcd}[column sep=huge,row sep=large]
+\delta^*\uRHom_{\Lambda[G]}(p_1^*P',p_2^!P')\lten_{\Lambda}
+\uRHom_{\Lambda[G]}(Q,Q) \arrow[r,"(1)"] \arrow[d,"(2)"']
+& K_Y \arrow[d,equal]\\
+\delta^*\uRHom_{\Lambda[G]}(p_1^*P'\lten_{\Lambda}Q,p_2^!P'\lten_{\Lambda}Q) \arrow[r,"(3)"']
+& K_Y ,
+\end{tikzcd}
+\end{equation}
+onde $\delta:Y\to Y\times_SY$ é a diagonal, a flecha horizontal superior é o produto tensorial das flechas
+\[
+\delta^*\uRHom_{\Lambda[G]}(p_1^*P',p_2^!P')\xrightarrow{6.5.3}
+K\Lambda[G]_{Y,\natural}\xrightarrow{x\mapsto x(e)}K_Y
+\]
+e
+\[
+\uRHom_{\Lambda[G]}(Q,Q)\xrightarrow{\Tr_{\Lambda}}\Lambda,
+\]
+a flecha vertical deduz-se do produto tensorial externo por restrição de escalares mediante a diagonal
+\[
+\Lambda[G]\to\Lambda[G]\otimes\Lambda[G],
+\]
+e a flecha horizontal inferior é a composta de 6.5.3 (definida porque $P'\lten_{\Lambda}Q\in\ob D_{\mathrm{ctf}}({}_{\Lambda[G]}Y)$) e de $x\mapsto x(e)$\footnote{Deveria ser possível substituir $P$ por um complexo perfeito (sobre $\Lambda[G]$) (e até mesmo $P'$ por um objeto de $D_{\mathrm{ctf}}({}_{\Lambda[G]}Y)$).}.
+\end{statement}
+
+A primeira afirmação é evidente, pois se reduz ao caso $P=\Lambda[G]_V$, e então $P\lten_{\Lambda}Q$ é isomorfo ao produto tensorial de $P$ por $Q$ considerado com a ação trivial de $G$. Para a segunda, observe primeiro que, de acordo com 6.5.4 e 6.5.5,
+\[
+\delta^*\uRHom_{\Lambda[G]}(p_1^*P',p_2^!P')
+\xrightarrow{\sim}
+D_{\Lambda[G]}(i_!P)\lten_{\Lambda[G]} i_!P
+\xrightarrow{\sim}
+i_!(D_{\Lambda[G]}P\lten_{\Lambda[G]}P),
+\]
+de modo que se reduz a verificar que o quadrado induzido por (*) sobre $V$ é comutativo. Portanto, pode-se supor que $V=Y$. O quadrado (*) escreve-se então
+\begin{equation}
+\tag{**}
+\begin{tikzcd}[column sep=huge,row sep=large]
+\uRHom_{\Lambda[G]}(P,K_Y\lten P)\lten\uRHom_{\Lambda[G]}(Q,Q)
+  \arrow[r,"(1)"] \arrow[d,"(2)"']
+& K_Y \arrow[d,equal]\\
+\uRHom_{\Lambda[G]}(P\lten Q,K_Y\lten P\lten Q) \arrow[r,"(3)"']
+& K_Y ,
+\end{tikzcd}
+\end{equation}
+onde (2) é o produto tensorial externo, (1) é dado por
+\[
+\Tr_{\Lambda[G]}(-)(e)\otimes\Tr_{\Lambda},
+\]
+(traços no sentido do n\textsuperscript{o}~5), e (3) por $\Tr_{\Lambda[G]}(-)(e)$. Por descenso, reduz-se ao caso $P=\Lambda[G]_Y$, e, pela observação inicial, pode-se então supor que $G$ age trivialmente sobre $Q$. A afirmação é, nesse caso, consequência imediata de 5.12.5.

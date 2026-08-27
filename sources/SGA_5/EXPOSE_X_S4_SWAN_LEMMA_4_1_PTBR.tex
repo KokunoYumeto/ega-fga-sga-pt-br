@@ -1,0 +1,32 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 12511--12540 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{4. A representação de Swan}
+
+Seja $E$ uma curva algébrica lisa e conexa sobre o corpo algebricamente fechado $k$. Se $x\in E$ é um ponto fechado de $E$, seu anel local $\mathcal O_{E,x}$, ou simplesmente $\mathcal O_x$, é um anel de valoração discreta cujo corpo de frações é isomorfo ao corpo de funções racionais sobre $E$ e cujo corpo residual é $k$. A valoração correspondente será denotada por $v_x$.
+
+\begin{statement}{Lema 4.1}
+Sejam $E$ uma curva algébrica lisa sobre o corpo algebricamente fechado $k$ e $g:E\to E$ um endomorfismo de $E$ diferente da identidade. Suponha-se que $x\in E$ seja um ponto fixo isolado de $g$, e seja $\pi$ um uniformizante de $\mathcal O_{E,x}$. Se $v_x$ é a valoração correspondente de $\mathcal O_{E,x}$, então a multiplicidade $v_x(g)$ do ponto fixo $x$ da aplicação $g$ (IV) é igual a $v_x(g(\pi)-\pi)$.
+\end{statement}
+
+
+No produto $E\times E$, a diagonal e o gráfico do endomorfismo $g$ serão denotados por $\Delta$ e $\Gamma_g$ respectivamente. Sejam
+\[
+\delta:E\longrightarrow E\times E,\qquad
+\delta:E\longrightarrow E\times E
+\]
+as imersões correspondentes. Sobre os anéis locais completados de $x$, resp. $(x,x)$, são dadas pelos homomorfismos
+\[
+\delta^*,\gamma^*:A\widehat\otimes A\longrightarrow A
+\qquad (A=\widehat{\mathcal O}_x),
+\]
+onde
+\[
+\delta^*(a\otimes b)=ab,\qquad
+\gamma^*(a\otimes b)=a\,g^*(b).
+\]
+Trata-se de avaliar a multiplicidade $v_x(g)$ do ponto $\delta(x)$ na interseção $\Delta\Gamma_g$ sobre $E\times E$. Ora, o divisor $\Delta$ corresponde ao ideal gerado pelo elemento $1\otimes\pi-\pi\otimes1$ de $A\widehat\otimes A$. Portanto, a multiplicidade de $\delta(x)$ na interseção $\Delta\Gamma_g$ é
+\[
+v_x(g)=v_x\bigl(\gamma^*(1\otimes\pi-\pi\otimes1)\bigr)
+      =v_x(g(\pi)-\pi),
+\]
+c.q.d.

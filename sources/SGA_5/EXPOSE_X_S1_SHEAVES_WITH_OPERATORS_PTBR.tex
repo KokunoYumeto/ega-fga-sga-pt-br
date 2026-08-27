@@ -1,0 +1,36 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 12238--12271 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{1. Feixes sobre um esquema com operadores}
+
+Seja $X$ um esquema dotado de um grupo $G$ que atua por automorfismos. Procedendo como em ([T] cap. V), pode-se definir a noção de feixe étale sobre $X$ com grupo de operadores $G$, ou simplesmente «feixe sobre $(X_{\et},G)$».
+
+Por definição, dar um feixe étale sobre $X$ com grupo de operadores $G$ consiste em dar um feixe $F\in \Ob(\widetilde X_{\et})$ e um morfismo
+\[
+S_g:F\longrightarrow g^*(F)
+\]
+para cada $g\in G$, de modo que se cumpram as condições seguintes:
+\[
+\text{a) }\quad S_e=1_F,
+\]
+b) Para $g,h\in G$, o diagrama
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+F \arrow[r,"S_{hg}"] \arrow[d,"S_h"'] & (hg)^*(F) \arrow[d,"C_{h,g}(F)"]\\
+h^*(F) \arrow[r,"h^*(S_g)"'] & h^*(g^*(F))
+\end{tikzcd}
+\]
+é comutativo, onde
+\[
+C_{h,g}(F):(hg)^*(F)\longrightarrow h^*(g^*(F))
+\]
+É o isomorfismo canônico.
+
+Os morfismos entre dois feixes $(F,S_g)$, $(F',S'_g)$ sobre $X$ com grupo de operadores $G$ definem-se de maneira evidente, e obtém-se uma categoria $\widetilde X_{\et,G}$ que é um topos, como resulta facilmente do critério de Giraud (SGA 4 II 4.12).
+
+Dado um anel $A$ de $\widetilde X_{\et,G}$, pode ser considerada a categoria abeliana dos $A$-módulos, que denotar-se-á por $\Mod(A)$.
+
+Por exemplo, dado um anel $\Lambda$, pode-se dotar trivialmente o feixe constante $\Lambda_X$, associado a $\Lambda$, de uma estrutura de feixe com grupo de operadores $G$, utilizando os isomorfismos canônicos de transitividade
+\[
+S_g:\Lambda_X\xrightarrow{\sim}g^*(\Lambda_X).
+\]
+Todos os resultados demonstrados em [T], cap. V, podem ser estendidos a este quadro, e deixamos os detalhes ao leitor.

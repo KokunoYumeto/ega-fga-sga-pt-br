@@ -1,0 +1,33 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 14625--14655 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Observe-se que o enunciado b) implica o enunciado a); este último é completamente evidente.
+
+Demonstremos b). Sejam $g:X'\to X$ um morfismo de pré-esquemas de característica $p$ e $F$ um feixe sobre $X_{\et}$; ponhamos $F'=g^*(F)$ e, mais geralmente, denotemos por uma linha a imagem inversa por $g$ de todo objeto dado sobre $X$. Como
+\[
+g\circ\fr_{X'}=\fr_X\circ g,
+\]
+tem-se
+\[
+\fr_{X'}^*(F')=\fr_{X'}^*(g^*F)=g^*(\fr_X^*F)=(\fr_X^*F)'
+\]
+de onde resulta que os $\fr_X^*$ definem um funtor cartesiano $\fr^*$ sobre $(\Sch)_p$. Resta provar que
+\[
+\Fr^*_{F'/X'}=(\Fr^*_{F/X})'.
+\]
+Utilizando as propriedades dos funtores adjuntos, vê-se que isto equivale a mostrar que a imagem de $F'(\Fr_{/X'})^{-1}$ pela aplicação bijetiva
+\[
+\Hom_{X'}(F',\fr_{X'*}(F'))
+ =\Hom_{X'}(g^*F,\fr_{X'*}g^*F)
+ \simeq \Hom_X(F,g_*\fr_{X'*}g^*F)
+\]
+($g^*$ adjunto de $g_*$) coincide com a imagem de $F(\Fr_{/X})^{-1}$ pela aplicação
+\[
+\Hom_X(F,\fr_{X*}F)\longrightarrow
+\Hom_X(F,\fr_{X*}g_*g^*F)=
+\Hom_X(F,g_*\fr_{X'*}g^*F)
+\]
+definida pelo morfismo de adjunção $F\xrightarrow{\alpha} g_*g^*F$; em outras palavras, deve-se mostrar que
+\[
+\alpha\circ F(\Fr_{/X})=g_*(F'(\Fr_{/X'}))\circ\fr_{X*}(\alpha),
+\]
+isto é, que para todo pré-esquema $U$ étale sobre $X$ se tem um diagrama comutativo

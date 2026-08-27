@@ -1,0 +1,84 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 3619--3701 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{5.3. Produto tensorial externo de correspondências}
+
+Sejam, para $1\leq i\leq 4$, $X_i$ um $S$-esquema, $X=X_1\times_SX_2\times_SX_3\times_SX_4$, $X_{ij}=X_i\times_SX_j$ e $L_i\in\operatorname{ob}D_{\mathrm{ctf}}(X_i)$. O isomorfismo de Künneth (1.7.6, 2.2.4)
+\[
+DL_1\otimes_S^{\mathbf L}DL_3\xrightarrow{\sim}D(L_1\otimes_S^{\mathbf L}L_3)
+\]
+define um isomorfismo sobre $X$
+\begin{equation}
+\tag{5.3.1}
+(DL_1\otimes_S^{\mathbf L}L_2)\otimes_S^{\mathbf L}(DL_3\otimes_S^{\mathbf L}L_4)
+\xrightarrow{\sim}D(L_1\otimes_S^{\mathbf L}L_3)\otimes_S^{\mathbf L}(L_2\otimes_S^{\mathbf L}L_4),
+\end{equation}
+que, de acordo com 3.1.1, pode ser reescrita na forma
+\begin{equation}
+\tag{5.3.2}
+\uRHom_S(L_1,L_2)\otimes_S^{\mathbf L}\uRHom_S(L_3,L_4)
+\xrightarrow{\sim}\uRHom_S(L_1\otimes_S^{\mathbf L}L_3,L_2\otimes_S^{\mathbf L}L_4).
+\end{equation}
+Daí se obtém um emparelhamento, chamado \emph{produto tensorial externo},
+\begin{equation}
+\tag{5.3.3}
+\Hom_S(L_1,L_2)\otimes\Hom_S(L_3,L_4)
+\longrightarrow\Hom_S(L_1\otimes_S^{\mathbf L}L_3,L_2\otimes_S^{\mathbf L}L_4),
+\end{equation}
+que denotaremos por $(u,v)\mapsto u\otimes_S^{\mathbf L}v$. O emparelhamento 5.3.2 também pode ser interpretado como a composta do produto tensorial externo
+\[
+\uRHom(E_1,E_2)\otimes_S^{\mathbf L}\uRHom(E_3,E_4)
+\xrightarrow{\sim}\uRHom(E_1\otimes_S^{\mathbf L}E_3,E_2\otimes_S^{\mathbf L}E_4)
+\]
+(onde $E_1=p_{12,1}^*L_1$, etc., com notações evidentes) e do isomorfismo definido por Künneth
+\[
+E_2\otimes_S^{\mathbf L}E_4\xrightarrow{\sim}p_{24}^!(L_2\otimes_S^{\mathbf L}L_4)\quad (1.7.3).
+\]
+
+Sejam $c':C'\to X_{12}$ e $c'':C''\to X_{34}$ correspondências, e seja $c:C=C'\times_SC''\to X=X_{13}\times_SX_{24}$ a correspondência produto. De 5.3.2 deduz-se, ou define-se de modo análogo, um emparelhamento
+\begin{equation}
+\tag{5.3.4}
+\uRHom(c_1'{}^*L_1,c_2'{}^!L_2)\otimes_S^{\mathbf L}\uRHom(c_3''{}^*L_3,c_4''{}^!L_4)
+\longrightarrow\uRHom(c_{13}^*(L_1\otimes_S^{\mathbf L}L_3),c_{24}^!(L_2\otimes_S^{\mathbf L}L_4)),
+\end{equation}
+de onde se obtém um emparelhamento produto tensorial externo, $(u,v)\mapsto u\otimes_S^{\mathbf L}v$,
+\begin{equation}
+\tag{5.3.5}
+\Hom(c_1'{}^*L_1,c_2'{}^!L_2)\otimes\Hom(c_3''{}^*L_3,c_4''{}^!L_4)
+\longrightarrow\Hom(c_{13}^*(L_1\otimes_S^{\mathbf L}L_3),c_{24}^!(L_2\otimes_S^{\mathbf L}L_4)).
+\end{equation}
+
+Verifica-se que esses emparelhamentos são compatíveis com as imagens diretas, no sentido seguinte. Sejam, para $1\leq i\leq4$, $f_i:X_i\to Y_i$ um $S$-morfismo; sejam $c'$, $c''$ e $c$ como acima, com $c'$ e $c''$ próprios; sejam $d':D'\to Y_{12}$ e $d'':D''\to Y_{34}$ morfismos próprios, $d:D=D'\times_SD''\to Y=Y_{12}\times_SY_{34}$; e sejam dados quadrados comutativos
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X_{12} \arrow[d,"f_{12}"'] & C' \arrow[l] \arrow[d] \\
+Y_{12} & D' \arrow[l]
+\end{tikzcd}
+\qquad
+\begin{tikzcd}[column sep=large,row sep=large]
+X_{34} \arrow[d,"f_{34}"'] & C'' \arrow[l] \arrow[d] \\
+Y_{34} & D'' \arrow[l]
+\end{tikzcd}
+\]
+Tem-se então um quadrado comutativo
+\begin{equation}
+\tag{5.3.6}
+\begin{tikzcd}[column sep=large,row sep=large]
+\Hom(c_1'{}^*L_1,c_2'{}^!L_2)\otimes\Hom(c_3''{}^*L_3,c_4''{}^!L_4) \arrow[r,"5.3.5"] \arrow[d,"f_{12}\otimes f_{34}"']
+& \Hom(c_{13}^*L_{13},c_{24}^!L_{24}) \arrow[d,"f_{13,24*}"] \\
+\Hom(d_1'{}^*M_1,d_2'{}^!M_2)\otimes\Hom(d_3''{}^*M_3,d_4''{}^!M_4) \arrow[r,"5.3.5"]
+& \Hom(d_{13}^*M_{13},d_{24}^!M_{24}),
+\end{tikzcd}
+\end{equation}
+onde $M_i=f_{i!}L_i$ se $i=1,3$ e $f_i{}_*L_i$ caso contrário, $L_{ij}=L_i\otimes_S^{\mathbf L}L_j$ e $M_{ij}=M_i\otimes_S^{\mathbf L}M_j$ (tem-se também um quadrado análogo com $\uRHom$).
+
+Suponhamos que $X_3=X_2$, $X_4=X_1$, $L_3=L_2$ e $L_4=L_1$. Um raciocínio análogo ao do último parágrafo de 5.2 mostra que, para $u\in\Hom_S(L_1,L_2)$ e $v\in\Hom_S(L_2,L_1)$, tem-se
+\begin{equation}
+\tag{5.3.7}
+\langle u,v\rangle=\langle u\otimes_S^{\mathbf L}v,1\rangle,
+\end{equation}
+onde $1$ designa a correspondência diagonal de $L_{12}$ a $L_{12}$ sobre $X_{12}$, e o produto cup do segundo membro é tomado no sentido de 4.2.5. Mais geralmente, se $c':C'\to X_{12}$ e $c'':C''\to X_{21}$ são correspondências, sua ``interseção'' $C=C'\times_{X_{12}}C''$ identifica-se com o produto fibrado de $C'\times_SC''\to X=X_{12}\times_SX_{21}$ e da diagonal $X_{12}\to X$, e, para $u\in\Hom(c_1'{}^*L_1,c_2'{}^!L_2)$ e $v\in\Hom(c_2''{}^*L_2,c_1''{}^!L_1)$, tem-se a seguinte igualdade em $H^0(C,K_C)$:
+\begin{equation}
+\tag{5.3.8}
+\langle u,v\rangle=\langle u\otimes_S^{\mathbf L}v,1\rangle,
+\end{equation}
+onde $1$ designa, como acima, a correspondência diagonal. Têm-se, portanto, dois procedimentos ``diagonais'' (5.2.10, 5.3.8) para calcular o ``termo local de Verdier'' $\langle u,v\rangle$.

@@ -1,0 +1,25 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5480--5502 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{5.13. Traços de endomorfismos semilineares}
+
+Sejam $A$ uma $K$-álgebra e $\varphi$ um endomorfismo de $A$. Se $E$, $F$ são $A$-módulos esquerdos, recordemos que um homomorfismo aditivo $u:E\to F$ é dito $\varphi$-$A$-linear se satisfaz $u(ax)=\varphi(a)u(x)$ para quaisquer $a\in A$, $x\in E$, isto é, se $u$ é um homomorfismo $A$-linear de $E$ ao $A$-módulo ${}_{(\varphi)}F$ deduzido de $F$ por restrição de escalares segundo $\varphi$. Se $F$ é um $A$-bimódulo e $G$ um $A$-módulo esquerdo, tem-se um isomorfismo evidente
+\[
+{}_{(\varphi)}F\otimes_AG\xrightarrow{\sim}{}_{(\varphi)}(F\otimes_AG),
+\]
+que se deriva trivialmente em
+\[
+{}_{(\varphi)}F\lten_AG\xrightarrow{\sim}{}_{(\varphi)}(F\lten_AG).
+\]
+Suponhamos que $A$ seja plana sobre $K$. De 5.4.2 deduz-se então uma flecha
+\begin{equation}\tag{5.13.1}
+\uRHom_A(E,{}_{(\varphi)}F)\lten_AG\longrightarrow\uRHom_A(E,{}_{(\varphi)}(F\lten_AG))
+\end{equation}
+para $E\in\ob D^-(A)$, $F\in\ob D^+(A^e)$, $G\in\ob D^-(A)$, com $F\lten_AG\in\ob D^+(A)$. Para $E\in\ob D(A)_{\mathrm{parf}}$, 5.13.1 é um isomorfismo, o que permite definir, por meio de 5.3.5, uma flecha de traço
+\begin{equation}\tag{5.13.2}
+\Tr_{A,\varphi}:\uRHom_A(E,{}_{(\varphi)}(F\lten_AE))\longrightarrow {}_{(\varphi)}F\lten_{A^e}A.
+\end{equation}
+Dela se deduz, em particular, para $F=A$, uma flecha
+\begin{equation}\tag{5.13.3}
+\Tr_{A,\varphi}:\uHom_A(E,{}_{(\varphi)}E)\longrightarrow H^0(T,A_{\natural,\varphi}),
+\end{equation}
+onde $A_{\natural,\varphi}={}_{(\varphi)}A\otimes_{A^e}A$ é o $K$-módulo quociente de $A$ pelo submódulo gerado localmente pelas seções locais da forma $ab-\varphi(b)a$. No caso em que $A=K[G]$, sendo $G$ um grupo discreto e estando $\varphi$ definido por um endomorfismo $\varphi$ de $G$, $A_{\natural,\varphi}$ é o $K$-módulo livre com base $G_{\natural,\varphi}$, onde $G_{\natural,\varphi}$ é o quociente de $G$ pela ação $(g,x)\mapsto\varphi(g)xg^{-1}$; as órbitas são às vezes denominadas classes de $\varphi$-conjugação de $G$. Os traços 5.13.2 coincidem, quando $T$ é pontual, com os considerados por Grothendieck e mencionados na exposição XII.

@@ -1,0 +1,27 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 15128--15151 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Para simplificar as notações, escreveremos doravante $X$, $F$, $h$ e $h_F$ em lugar de $\bar X$, $\bar F$, $\bar{\fr}_X^n$ e $(\overline{\Fr}^*_{F/X})^n$ (como $X$ e $F$ já não intervirão, não há risco de confusão); suporemos que $X$ seja uma curva projetiva e lisa sobre $k=\bar{\mathbb F}_p$. Todos os pontos fixos de $h$ em $X$ têm multiplicidade $1$; com efeito, $h$ atua por $T\mapsto T^{p^n}$ sobre o completamento do anel local de um ponto fixo, onde $T$ designa um uniformizante. O teorema decorrerá do resultado seguinte:
+
+\begin{statement}{Proposição 2}
+Sejam $X$ uma curva projetiva e lisa sobre um corpo algebraicamente fechado $k$ de característica $p$, $F$ um feixe $\ell$-ádico construtível sobre $X_{\et}$ (com $\ell$ um número primo, $\ell\ne p$), $h$ um endomorfismo de $X$ tal que todos os seus pontos fixos tenham multiplicidade $1$, e $h_F:h^*(F)\to F$ um morfismo de feixes. Vale a fórmula seguinte, onde $h_{H^i(X,F)}$ designa o endomorfismo de $H^i(X,F)$ definido por $(h,h_F)$:
+\[
+\sum_{x\in X^h}\Tr((h_F)_x)=\sum_i(-1)^i\Tr(h_{H^i(X,F)}).
+\tag{2''}
+\]
+\end{statement}
+
+Neste seminário estabeleceu-se uma fórmula de Lefschetz análoga para um feixe de torção construtível $F_\nu$, anulado por $\ell^{\nu+1}$ sobre a curva $X$, munido de um morfismo $h_{F_\nu}:h^*(F_\nu)\to F_\nu$. Escreve-se:
+\[
+\sum_{x\in X^h}\Tr((h_{F_\nu})_x)=\Tr^*h_{\R\Gamma_X(F_\nu)},
+\tag{3}
+\]
+onde ambos os membros pertencem a $\mathbb Z/\ell^{\nu+1}\mathbb Z$.
+
+% SOURCE_ANOMALY_PRESERVED: frozen authority line 15145 and printed p. 472 both say F (not F_\nu) is annihilated by \ell^{\nu+1}; retained verbatim rather than silently regularized.
+Suponhamos que o feixe $\ell$-ádico do enunciado se escreva $F=(F_\nu)_{\nu\in\mathbb N}$, com $F$ anulado por $\ell^{\nu+1}$. Para cada $\nu$ pode-se escrever a fórmula $(3)_\nu$, e vê-se que os primeiros membros dessas fórmulas são, ao variar $\nu$, as componentes de um inteiro $\ell$-ádico que é precisamente o primeiro membro da fórmula (2'') a demonstrar. Resta estabelecer que os segundos membros das fórmulas $(3)_\nu$ definem, ao variar $\nu$, um inteiro $\ell$-ádico igual a
+\[
+\sum_i(-1)^i\Tr(h_{H^i(X,F)}),
+\quad\text{com}\quad
+H^i(X,F)=\varprojlim_\nu H^i(\R\Gamma_X(F_\nu)).
+\]
+Isto resulta de lemas puramente algébricos que demonstraremos para terminar.

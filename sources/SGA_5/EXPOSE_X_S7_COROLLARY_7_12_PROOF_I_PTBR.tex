@@ -1,0 +1,45 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 13163--13204 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{prooftext}[Demonstração de 7.12]
+O fato de que $\RG_{!V}(F)\in\Ob(\Delta)$ resulta imediatamente de 7.1 aplicado ao complexo $i_!(F)$, onde $i:V\to C$; com efeito,
+\[
+\RG_{!V}(F)=\RG_C(i_!F).
+\]
+Para provar que $\RG_V(F)\in\Ob(\Delta)$, considera-se o triângulo distinguido
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+& Q^\bullet \arrow[dl] &\\
+\R i_!(F) \arrow[rr] && \R i_*(F) \arrow[ul],
+\end{tikzcd}
+\]
+onde $Q^\bullet$ está concentrado sobre $Z=C-V$; daí, aplicando $\RG_C$, o triângulo distinguido
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+& \RG_Z(Q^\bullet|Z) \arrow[dl] &\\
+\RG_{!V}(F) \arrow[rr] && \RG_V(F) \arrow[ul].
+\end{tikzcd}
+\tag{7.16}
+\]
+Como $\RG_{!V}(F)\in\Ob(\Delta)$, resulta que $\RG_V(F)\in\Ob(\Delta)$ se, e somente se, $\RG_Z(Q^\bullet|Z)\in\Ob(\Delta)$, isto é, $(\R i_*(F))_{\bar x}\in\Ob(\Delta)$ para todo $x\in Z$. Recorde-se que, para calcular $(\R i_*(F))_{\bar x}$, considera-se o quadrado cartesiano
+\[
+\begin{tikzcd}
+\bar V \arrow[r,hook,"j"] \arrow[d,"u"'] & C_x \arrow[d]\\
+V \arrow[r,hook] & C
+\end{tikzcd}
+\]
+onde $C_x$ é a localização estrita correspondente ao ponto geométrico $x$; tem-se
+\[
+\R i_*(F)_{\bar x}\simeq \RG_{\bar V}(u^*(F)),
+\]
+em virtude de 7.14, e tem-se, portanto, $(\R i_*(F))_{\bar x}\in\Ob(\Delta)$ e
+\[
+\clK{\Delta}((\R i_*(F))_{\bar x})=0.
+\]
+Resulta que
+\[
+\clK{\Delta}(\RG_Z(Q^\bullet|Z))=0
+\]
+e o triângulo distinguido (7.16) fornece
+\[
+\clK{\Delta}(\RG_{!V}(F))=\clK{\Delta}(\RG_V(F)).
+\]

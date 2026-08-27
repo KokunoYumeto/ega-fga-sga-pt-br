@@ -1,0 +1,60 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6328--6385 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{6.18}
+Ponhamos
+\begin{equation}
+N_G=\sum_{g\in G} g\in\Lambda[G].
+\tag{6.18.1}
+\end{equation}
+Seja $X$ um $S$-esquema. Para $L\in\Ob D({}_{\Lambda[G]}X)$, a multiplicação à esquerda por $N_G$ induz uma flecha de $D(X)$
+\begin{equation}
+N_G:\Lambda\lten_{\Lambda[G]}L
+\longrightarrow
+\uRHom_{\Lambda[G]}(\Lambda,L),
+\tag{6.18.2}
+\end{equation}
+onde $\Lambda$ é considerado como uma $\Lambda[G]$-álgebra por aumento natural, que envia todo $g\in G$ para $1$.
+
+\begin{statement}{Lema 6.18.3}
+Se $L\in\Ob D_{\mathrm{ctf}}({}_{\Lambda[G]}X)$, a flecha 6.18.2 é um isomorfismo.
+\end{statement}
+
+De fato, por devissage nos reduzimos a supor primeiro que $L$ é perfeito, e depois que $L=\Lambda[G]$; a afirmação deduz-se então de que $N_G$ (6.18.1) é uma base do módulo de elementos invariantes sob a ação de $G$ do $\Lambda[G]$-módulo à esquerda $\Lambda[G]$.
+
+\begin{statement}{Proposição 6.19}
+Na situação de 6.11, sejam $M\in\Ob D_{\mathrm{ctf}}(Y)$,
+\[
+v\in\Hom(d_1^*M,d_2^!M),
+\]
+e $a:M\to f_*L$ uma flecha de $D({}_{\Lambda[G]}Y)$, considerando-se $M$ como objeto de $D({}_{\Lambda[G]}Y)$ por meio da aumentação $\Lambda[G]\to\Lambda$, tais que o quadrado
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+d_1^*M \arrow[r,"v"] \arrow[d,"d_1^*a"'] & d_2^!M \arrow[d,"d_2^!a"] & {}\\
+d_1^*f_*L \arrow[r,"f_*u"'] & d_2^!f_*L
+\end{tikzcd}
+\]
+seja comutativo. Supõe-se que $f_*M\in\Ob D_{\mathrm{ctf}}({}_{\Lambda[G]}Y)$ e que $a$ induz um isomorfismo
+\[
+M\xrightarrow{\sim}\uRHom_{\Lambda[G]}(\Lambda,f_*L).
+\]
+Então, tem-se
+\begin{equation}
+\Tr_{\Lambda}(v)=
+\sum_{g\in G_{\natural}}\Tr_{\Lambda[G]}(f_*u)(g^{-1}).
+\tag{6.19.1}
+\end{equation}
+\end{statement}
+
+De acordo com 6.18.3, a flecha $a$, seguida de $N_G^{-1}$, fornece um isomorfismo
+\[
+M\xrightarrow{\sim}\Lambda\lten_{\Lambda[G]}f_*L,
+\]
+mediante o qual $v$ se identifica com
+\[
+\Lambda\lten_{\Lambda[G]}f_*u.
+\]
+De acordo com 6.7.2, $\Tr_{\Lambda}(v)$ é, portanto, a imagem de $\Tr_{\Lambda[G]}(f_*u)$ por meio da flecha induzida pela aumentação
+\[
+\Lambda[G]\longrightarrow \Lambda;
+\]
+Ora, esta, por definição, envia cada classe de conjugação a $1$, de onde resulta a conclusão.

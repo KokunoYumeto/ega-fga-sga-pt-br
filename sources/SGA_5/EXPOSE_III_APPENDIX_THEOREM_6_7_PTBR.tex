@@ -1,0 +1,43 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 3861--3902 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Teorema 6.7}
+Sejam, para $i=1,2$, $f_i:X_i\to Y_i$ um $S$-morfismo próprio, $f=f_1\times_Sf_2:X\to Y$, e sejam $p_i:X\to X_i$, $q_i:Y\to Y_i$ as projeções. Seja, por outro lado, um cubo 4.4.0 de faces horizontais cartesianas, com $c'$, $c''$, $d'$ e $d''$ próprios, e com $c'$, $c''$ (resp. $d'$, $d''$) de dimensão Tor finita nos pontos situados sobre $c(C)$ (resp. $d(D)$). Ponhamos $c_i'=p_ic'$, $c_i''=p_ic''$, $d_i'=q_id'$ e $d_i''=q_id''$. Sejam, por último, $L_i\in\operatorname{ob}D(X_i)_{\mathrm{parf}/S}$. Supõe-se que os pares $(X_1,X_2)$, $(X_1,Y_2)$, $(Y_1,X_2)$ e $(Y_1,Y_2)$ sejam Tor-independentes sobre $S$, e que $X_i$ e $Y_i$ tenham dimensão Tor finita sobre $S$. Tem-se então um quadrado comutativo
+\begin{equation}
+\tag{6.7.1}
+\begin{tikzcd}[column sep=small,row sep=large]
+f_*c'_*\uRHom(c_1'{}^*L_1,c_2'{}^!L_2)\otimes^{\mathbf L} f_*c''_*\uRHom(c_2''{}^*L_2,c_1''{}^!L_1) \arrow[r,"(1)"] \arrow[d,"(2)"']
+& f_*\uRHom(\R c'_*\cO_{C'}\otimes^{\mathbf L}\R c''_*\cO_{C''},K_X) \arrow[d,"(4)"] \\
+d'_*\uRHom(d_1'{}^*M_1,d_2'{}^!M_2)\otimes^{\mathbf L} d''_*\uRHom(d_2''{}^*M_2,d_1''{}^!M_1) \arrow[r,"(3)"]
+& \uRHom(\R d'_*\cO_{D'}\otimes^{\mathbf L}\R d''_*\cO_{D''},K_Y),
+\end{tikzcd}
+\end{equation}
+onde $M_i=f_{i*}L_i$, $(3)$ é dado por 6.6.2, $(1)$ deduz-se de 6.6.2 aplicando $f_*$ e compondo com a flecha canônica $f_*c'_*\otimes^{\mathbf L} f_*c''_*\to f_*(c'_*\otimes^{\mathbf L} c''_*)$, $(2)$ é o produto tensorial das flechas 6.5.4 relativas às faces que contêm $f$, e $(4)$ é a composta do isomorfismo de dualidade 6.1.1 e da flecha definida pela flecha canônica
+\[
+\R d'_*\cO_{D'}\otimes^{\mathbf L}\R d''_*\cO_{D''}\longrightarrow f_*(\R c'_*\cO_{C'}\otimes^{\mathbf L}\R c''_*\cO_{C''})
+\]
+(adjunta do produto tensorial das flechas de mudança de base $f^*\R d'_*\cO_{D'}\to \R c'_*\cO_{C'}$, $f^*\R d''_*\cO_{D''}\to \R c''_*\cO_{C''}$).
+\end{statement}
+
+A demonstração é essencialmente a mesma que a de 4.4; deixamos ao leitor as pequenas modificações que devem ser introduzidas.
+
+Quando $c'$ e $c''$ são Tor-independentes, assim como $d'$ e $d''$, a flecha (4) de 6.7.1 se reescreve na forma $f_*c_*K_C\to d_*K_D$; ela é definida simplesmente pela flecha de adjunção $g_*K_C=g_*g^!K_D\to K_D$ (como a flecha (4) de 4.4.1). Entretanto, não seria natural considerar apenas esse caso, pois assim se excluiriam as correspondências com interseção excessiva.
+
+De 6.7 deduzem-se fórmulas análogas a 4.5.1 e 4.7.1: sob as hipóteses de 6.7, tem-se, para $u\in\Hom(c_1'{}^*L_1,c_2'{}^!L_2)$ e $v\in\Hom(c_2''{}^*L_2,c_1''{}^!L_1)$,
+\begin{equation}
+\tag{6.7.2}
+\langle f_*u,f_*v\rangle=f_*\langle u,v\rangle,
+\end{equation}
+onde $f_*u$ (resp. $f_*v$) designa a correspondência imagem direta de $u$ (resp. $v$) no sentido de 6.5.5, e $f_*$ no segundo membro é o homomorfismo
+\begin{equation}
+\tag{6.7.3}
+\Hom(\R c'_*\cO_{C'}\otimes^{\mathbf L}\R c''_*\cO_{C''},K_X)
+\longrightarrow
+\Hom(\R d'_*\cO_{D'}\otimes^{\mathbf L}\R d''_*\cO_{D''},K_Y)
+\end{equation}
+composto do isomorfismo de dualidade 6.1.1 e da flecha induzida pela flecha canônica
+\[
+\R d'_*\cO_{D'}\otimes^{\mathbf L}\R d''_*\cO_{D''}\longrightarrow f_*(\R c'_*\cO_{C'}\otimes^{\mathbf L}\R c''_*\cO_{C''})
+\]
+citada em 6.7. Quando $Y_1=Y_2=S=D'=D''$, 6.7.2 é a \emph{fórmula de Lefschetz--Verdier}.
+
+Como ilustração, mostraremos que esta fórmula implica a fórmula de Woods Hole [1].

@@ -1,0 +1,132 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 1858--1988 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{1.1}
+Denotamos por $S$ o espectro de um corpo. Salvo indicação em contrário, os $S$-esquemas considerados a seguir serão $S$-esquemas separados e de tipo finito.
+
+Denotamos por $A$ um anel comutativo noetheriano, anulado por um inteiro inversível em $S$. Se $X$ é um $S$-esquema, denotamos por $D(X)=D(X,A)$ a categoria derivada dos complexos de $A$-módulos sobre $X$ (para a topologia étale), e por $D_{\ctf}(X)$ a subcategoria plena formada pelos complexos de dimensão Tor finita e cohomologia construtível. A categoria $D_{\ctf}(X)$ é uma subcategoria triangulada de $D(X)$. Se $E,F \in \ob D_{\ctf}(X)$, deduz-se facilmente das definições que $E \otimes^{L} F \in \ob D_{\ctf}(X)$. Segundo (SGA~$4^{1/2}$ Teorema de finitude 1.6, 1.7), tem-se também $\uRHom(E,F) \in \ob D_{\ctf}(X)$.
+
+\subsection*{1.2}
+Seja $f:X\to Y$ um $S$-morfismo. Tem-se trivialmente
+\[
+f^{*}D_{\ctf}(Y) \subset D_{\ctf}(X),
+\]
+e, segundo (loc. cit.),
+\[
+\R f_{*}D_{\ctf}(X) \subset D_{\ctf}(Y),\qquad
+\R f_{!}D_{\ctf}(X) \subset D_{\ctf}(Y),\qquad
+\R f^{!}D_{\ctf}(Y) \subset D_{\ctf}(X),
+\]
+(a inclusão relativa a $\R f_{!}$ utiliza apenas o teorema de finitude para os morfismos próprios (SGA~4~XIV) e o sorites (SGA~4~XVII~5.2.11); portanto, vale mais geralmente para todo morfismo compactificável cujas fibras tenham dimensão limitada superiormente). A seguir escreveremos às vezes $f_{*}$, $f_{!}$, $f^{!}$ em vez de $\R f_{*}$, $\R f_{!}$, $\R f^{!}$; as hipóteses de 1.1 implicam que esses funtores estão definidos sobre toda a categoria derivada.
+
+\subsection*{1.3}
+Para $f:X\to S$, poremos
+\[
+K_X=f^{!}A,
+\]
+e denotaremos por $D_X$ (ou $D$) o funtor $\uRHom(-,K_X)$. Segundo (SGA~$4^{1/2}$ Teorema de finitude 4.3), o complexo $K_X$ é dualizante: para $E\in\ob D_{\ctf}(X)$, tem-se canonicamente
+\[
+E \xrightarrow{\sim} DDE.
+\]
+
+\subsection*{1.4}
+Sejam $f:X\to Y$ um $S$-morfismo, $L\in\ob D(X)$, $M\in\ob D(Y)$. Poremos
+\[
+\Hom_f^{(1)}(L,M)=\Hom(f^{*}M,L)\quad (\simeq \Hom(M,f_{*}L)),
+\]
+\[
+\Hom_f^{(2)}(L,M)=\Hom(L,f^{*}M),
+\]
+\[
+\Hom_f^{(3)}(L,M)=\Hom(f_{!}L,M)\quad (\overset{\text{(SGA~4~XVIII~3.1.5)}}{\simeq} \Hom(L,f^{!}M)),
+\]
+\[
+\Hom_f^{(4)}(L,M)=\Hom(f^{!}M,L).
+\]
+Os elementos de $\Hom_f^{(i)}(L,M)$ serão chamados \emph{flechas de tipo $i$ de $L$ a $M$ sobre $f$} (ou $f$-flechas de tipo $i$ de $L$ a $M$). Os isomorfismos de transitividade dos funtores $f^{*}$, $f_{*}$, $f_{!}$, $f^{!}$ permitem compor as flechas de tipo $i$ para $i$ fixo, e obtêm-se assim certas categorias fibradas ou cofibradas sobre a categoria dos $S$-esquemas: por exemplo, para $i=1$ (resp. $i=3$) obtém-se a categoria fibrada e cofibrada considerada em (SGA~4~XVII~4.1.3) (resp. (SGA~4~XVIII~3.1.13)), cuja fibra em $X$ é a categoria oposta a $D(X)$ (resp. $D(X)$).
+
+\subsection*{1.5}
+Sejam, para $i=1,2$, $X_i$ um $S$-esquema, $X=X_1\times_S X_2$, $L_i\in\ob D^{-}(X_i)$. Poremos
+\[
+L_1\otimes^{L}_{S}L_2=\pr_1^{*}L_1\otimes^{L}\pr_2^{*}L_2,
+\]
+onde $\pr_i:X\to X_i$ é a projeção canônica.
+
+\subsection*{1.6}
+Sejam, para $i=1,2$, $f_i:X_i\to Y_i$ um $S$-morfismo,
+\[
+f=f_1\times_S f_2:X=X_1\times_S X_2\to Y=Y_1\times_S Y_2,
+\]
+$L_i\in\ob D^{-}(X_i)$, $M_i\in\ob D^{-}(Y_i)$. O isomorfismo canônico evidente
+\begin{equation}\tag{1.6.1}
+f_1^{*}M_1\otimes^{L}_{S}f_2^{*}M_2\xrightarrow{\sim}f^{*}(M_1\otimes^{L}_{S}M_2)
+\end{equation}
+permite definir, para $u_i\in\Hom_{f_i}^{(1)}(L_i,M_i)$ (resp. $\Hom_{f_i}^{(2)}(L_i,M_i)$),
+\begin{equation}\tag{1.6.2}
+u_1\otimes^{L}_{S}u_2\in\Hom_{f}^{(1)}(L,M)\quad(\text{resp. }\Hom_f^{(2)}(L,M)),
+\end{equation}
+onde $L=L_1\otimes^{L}_{S}L_2$, $M=M_1\otimes^{L}_{S}M_2$. Se $u_i$, $v_i$ forem componíveis, tem-se
+\begin{equation}\tag{1.6.3}
+(v_1u_1)\otimes^{L}_{S}(v_2u_2)=(v_1\otimes^{L}_{S}v_2)(u_1\otimes^{L}_{S}u_2).
+\end{equation}
+Tomando $M_i=f_{i*}L_i$, e $u_i$ de tipo~1, dado pela identidade de $f_{i*}L_i$, 1.6.2 fornece uma \emph{flecha de Künneth} (cf.~SGA~4~XVII~5.4.1.4)
+\begin{equation}\tag{1.6.4}
+f_{1*}L_1\otimes^{L}_{S}f_{2*}L_2\longrightarrow f_{*}(L_1\otimes^{L}_{S}L_2).
+\end{equation}
+De acordo com (SGA~$4^{1/2}$ Teorema de finitude 1.9), 1.6.4 é um isomorfismo: de fato, por 1.6.3 nos reduzimos ao caso em que $X_2=Y_2$, $f_2=1$, e se aplica (loc. cit. App.). Quando $f_1$ e $f_2$ são próprios, não é necessário invocar (loc. cit.): 1.6.4 é um caso particular do isomorfismo de Künneth (SGA~4~XVII~5.4.3).
+
+\subsection*{1.7}
+Escolhamos uma compactificação $f_i=p_i j_i$, onde $j_i$ é uma imersão aberta e $p_i$ um morfismo próprio. Ao compor o isomorfismo canônico (onde $j=j_1\times_S j_2$)
+\[
+j_{1!}L_1\otimes^{L}_{S}j_{2!}L_2\xrightarrow{\sim}j_{!}(L_1\otimes^{L}_{S}L_2)
+\]
+com 1.6.4 para $(p_i,j_{i!}L_i)$, obtém-se um isomorfismo de Künneth (SGA~4~XVII~5.4.3)
+\begin{equation}\tag{1.7.1}
+f_{1!}L_1\otimes^{L}_{S}f_{2!}L_2\xrightarrow{\sim}f_{!}(L_1\otimes^{L}_{S}L_2).
+\end{equation}
+Verifica-se facilmente (loc. cit.) que 1.7.1 não depende das compactificações escolhidas e é compatível com os isomorfismos de transitividade para as composições $g_if_i$ (cf.~(loc. cit. 5.2.4)). Graças a 1.7.1, pode-se definir, para $u_i\in\Hom_{f_i}^{(3)}(L_i,M_i)$,
+\begin{equation}\tag{1.7.2}
+u_1\otimes^{L}_{S}u_2\in\Hom_f^{(3)}(L,M)
+\end{equation}
+com $L$ e $M$ como em 1.6.2, e tem-se uma fórmula de transitividade análoga a 1.6.3.
+
+Para $L_i=f_i^{!}M_i$, e $u_i$ dado pela identidade de $L_i$, 1.7.2 fornece uma \emph{flecha de Künneth}
+\begin{equation}\tag{1.7.3}
+f_1^{!}M_1\otimes^{L}_{S}f_2^{!}M_2\longrightarrow f^{!}(M_1\otimes^{L}_{S}M_2).
+\end{equation}
+
+\subsection*{Proposição 1.7.4}
+A flecha 1.7.3 é um isomorfismo.
+
+Pela fórmula de transitividade, basta tratar o caso em que $X_2=Y_2$, $f_2=1$. Por devissage, reduzimo-nos a $M_2=g_{*}j_{!}A_V$, onde $j:V\to U$ é uma imersão aberta e $g:U\to Y_2$ um morfismo finito, e depois, por (SGA~4~XVIII~3.1.12.3), ao caso em que $M_2=A_{Y_2}$. Por localização sobre $X_2$, pode-se supor, por outro lado, que $f_1=g_1j_1$, onde $j_1$ é uma imersão fechada e $g_1$ um morfismo suave de dimensão relativa pura $n_1$. Por transitividade, basta tratar os casos
+\[
+\text{a) } f_1=g_1,\qquad \text{b) } f_1=j_1.
+\]
+No caso a), o morfismo de traço fornece, por adjunção (SGA~4~XVIII~3.2.5), um isomorfismo
+\[
+f_1^{*}M_1(n_1)[2n_1]\xrightarrow{\sim}f_1^{!}M_1;
+\]
+esse é compatível com a mudança de base $Y_2\to S$, pois o morfismo de traço também o é (SGA~4~XVIII~2.9), de onde resulta 1.7.4 nesse caso. No caso b), se $i_1$ denota a inclusão do aberto complementar, tem-se uma sequência exata
+\[
+0\longrightarrow j_{1*}\R j_1^{!}M_1\longrightarrow M_1\longrightarrow \R i_{1*}i_1^{*}M_1\longrightarrow0,
+\]
+e a compatibilidade de $\R i_{1*}$ com a mudança de base, caso particular de 1.6.4, implica a conclusão.
+
+Graças a 1.7.3, podemos definir, para $u_i\in\Hom_f^{(4)}(L_i,M_i)$,
+\begin{equation}\tag{1.7.5}
+u_1\otimes^{L}_{S}u_2\in\Hom_f^{(4)}(L,M)
+\end{equation}
+($L$ e $M$ como em 1.6.2), com uma fórmula de transitividade análoga a 1.6.3.
+
+Por outro lado, com as notações de 1.3, 1.7.3 fornece um isomorfismo
+\begin{equation}\tag{1.7.6}
+K_{X_1}\otimes^{L}_{S}K_{X_2}\xrightarrow{\sim}K_X.
+\end{equation}
+
+\subsection*{1.8}
+Sejam $f:X\to Y$ um $S$-morfismo, $L\in\ob D(X)$, $M\in\ob D(Y)$, $S'$ um $S$-esquema, $P\in\ob D(S')$, $f':X'\to Y'$ o morfismo deduzido de $f$ pela mudança de base $S'\to S$. A flecha identidade de $P$ pode ser considerada indistintamente como uma flecha de tipo $i$ ($1\leq i\leq4$) sobre a flecha identidade de $S'$; para $u\in\Hom_f^{(i)}(L,M)$ ($1\leq i\leq4$), pode-se, portanto, segundo 1.6.2, 1.7.2, 1.7.5, considerar
+\begin{equation}\tag{1.8.1}
+u\otimes^{L}_{S}\Id_P\in\Hom_{f'}^{(i)}(L\otimes^{L}_{S}P,M\otimes^{L}_{S}P).
+\end{equation}
+Escreveremos às vezes $u\otimes^{L}_{S}P$ em vez de $u\otimes^{L}_{S}\Id_P$.
+
+\section{Funtorialidade de \texorpdfstring{$\uRHom$}{RHom} e produtos tensoriais externos}

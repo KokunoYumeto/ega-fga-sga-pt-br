@@ -1,0 +1,740 @@
+\section{Cohomologia dos esquemas afins}
+\label{section:III.1}
+
+\subsection{Revisão do complexo da álgebra exterior}
+\label{subsection:III.1.1}
+
+\begin{env}[1.1.1]
+\label{III.1.1.1}
+Seja $A$ um anel e seja $\mathbf{f}=(f_i)_{1\leq i\leq r}$ um sistema de $r$ elementos de $A$.
+O \emph{complexo da álgebra exterior $K_\bullet(\mathbf{f})$} correspondente a $\mathbf{f}$ é um complexo de cadeias (G, I, 2.2) definido do modo seguinte: o $A$-módulo graduado $K_\bullet(\mathbf{f})$ é igual à \emph{álgebra exterior $\wedge(A^r)$}, graduada da maneira usual, e a aplicação bordo é a \emph{multiplicação interior $i_\mathbf{f}$} por $\mathbf{f}$, considerado como elemento do dual $\dual{(A^r)}$; lembremos que $i_\mathbf{f}$ é uma \emph{antiderivação} de grau $-1$ de $\wedge(A^r)$, e que, se $(\mathbf{e}_i)_{1\leq i\leq r}$ é a base canônica de $A^r$, tem-se $i_\mathbf{f}(\mathbf{e}_i)=f_i$; a verificação da condição $i_\mathbf{f}\circ i_\mathbf{f}=0$ é imediata.
+
+Uma definição equivalente é a seguinte: para cada $i$, considera-se um complexo de cadeias $K_\bullet(f_i)$ definido por $K_0(f_i)=K_1(f_i)=A$, $K_n(f_i)=0$ para $n\neq 0,1$; a aplicação bordo fica definida pela condição de que $d_1:A\to A$ seja a \emph{multiplicação por $f_i$}.
+Toma-se então como $K_\bullet(\mathbf{f})$ o \emph{produto tensorial $K_\bullet(f_1)\otimes K_\bullet(f_2)\otimes\cdots\otimes K_\bullet(f_r)$} (G, I, 2.7), provido de seu grau total; a verificação do isomorfismo deste complexo com o definido anteriormente é imediata.
+\end{env}
+
+\begin{env}[1.1.2]
+\label{III.1.1.2}
+Para todo $A$-módulo $M$, define-se o \emph{complexo de cadeias}
+\[
+\label{III.1.1.2.1}
+  K_\bullet(\mathbf{f},M)=K_\bullet(\mathbf{f})\otimes_A M
+  \tag{1.1.2.1}
+\]
+e o \emph{complexo de cocadeias} (G, I, 2.2)
+\[
+\label{III.1.1.2.2}
+  K^\bullet(\mathbf{f},M)=\Hom_A(K_\bullet(\mathbf{f}),M).
+  \tag{1.1.2.2}
+\]
+
+Se $g$ é uma $k$-cocadeia deste último complexo e se põe
+\[
+  g(i_1,\dots,i_k)=g(\mathbf{e}_{i_1}\wedge\cdots\wedge\mathbf{e}_{i_k}),
+\]
+então $g$ identifica-se com uma aplicação \emph{alternada} de $[1,r]^k$ em $M$, e das definições anteriores deduz-se que
+\[
+\label{III.1.1.2.3}
+  d^k g(i_1,i_2,\dots,i_{k+1})=\sum_{h=1}^{k+1}(-1)^{h-1}f_{i_h}g(i_1,\dots,\widehat{i_h},\dots,i_{k+1}).
+  \tag{1.1.2.3}
+\]
+\end{env}
+
+\begin{env}[1.1.3]
+\label{III.1.1.3}
+\oldpage[III]{83}
+Dos complexos anteriores deduzem-se, como de costume, os \emph{$A$-módulos de homologia e de cohomologia} (G, I, 2.2)
+\[
+  \HH_\bullet(\mathbf{f},M)=\HH_\bullet(K_\bullet(\mathbf{f},M)),
+  \tag{1.1.3.1}
+\]
+\[
+  \HH^\bullet(\mathbf{f},M)=\HH^\bullet(K^\bullet(\mathbf{f},M)).
+  \tag{1.1.3.2}
+\]
+
+Define-se um \emph{$A$-isomorfismo $K_i(\mathbf{f},M)\isoto K^{r-i}(\mathbf{f},M)$} que envia cada cadeia $z=\sum(\mathbf{e}_{i_1}\wedge\cdots\wedge\mathbf{e}_{i_k})\otimes z_{i_1,\dots,i_k}$ à cocadeia $g_z$ tal que $g_z(j_1,\dots,j_{r-k})=\varepsilon z_{i_1,\dots,i_k}$, onde $(j_h)_{1\leq h\leq r-k}$ é a sucessão estritamente crescente complementar à sucessão estritamente crescente $(i_h)_{1\leq h\leq k}$ em $[1,r]$ e $\varepsilon=(-1)^\nu$, sendo $\nu$ o número de inversões da permutação $i_1,\dots,i_k,j_1,\dots,j_{r-k}$ de $[1,r]$.
+Verifica-se que $g_{dz}=d(g_z)$, o que dá um isomorfismo
+\[
+  \HH^i(\mathbf{f},M)\isoto\HH_{r-i}(\mathbf{f},M)\text{ para }0\leq i\leq r.
+  \tag{1.1.3.3}\label{III.1.1.3.3}
+\]
+
+Neste capítulo se considerarão especialmente os módulos de cohomologia $\HH^\bullet(\mathbf{f},M)$.
+
+Para um $\mathbf{f}$ dado, é imediato (G, I, 2.1) que $M\mapsto\HH^\bullet(\mathbf{f},M)$ é um \emph{funtor cohomológico} (T, II, 2.1) da categoria de $A$-módulos na categoria de $A$-módulos graduados, nulo nos graus $<0$ e $>r$.
+Além disso, tem-se
+\[
+  \HH^0(\mathbf{f},M)=\Hom_A(A/(\mathbf{f}),M),
+  \tag{1.1.3.4}
+\]
+denotando por $(\mathbf{f})$ o ideal de $A$ gerado por $f_1,\dots,f_r$; isto deduz-se imediatamente de (\hyperref[III.1.1.2.3]{1.1.2.3}), e é claro que $\HH^0(\mathbf{f},M)$ identifica-se com o submódulo de $M$ \emph{anulado por $(\mathbf{f})$}.
+De maneira análoga, por (\hyperref[III.1.1.2.3]{1.1.2.3}) tem-se
+\[
+  \HH^r(\mathbf{f},M)=M/\bigg(\sum_{i=1}^r f_i M\bigg)=(A/(\mathbf{f}))\otimes_A M.
+  \tag{1.1.3.5}\label{III.1.1.3.5}
+\]
+
+Utilizar-se-á o seguinte resultado conhecido, do qual se recordará uma demonstração para sermos completos:
+\end{env}
+
+\begin{proposition}[1.1.4]
+\label{III.1.1.4}
+Sejam $A$ um anel, $\mathbf{f}=(f_i)_{1\leq i\leq r}$ uma família finita de elementos de $A$ e $M$ um $A$-módulo.
+Se, para $1\leq i\leq r$, a aplicação $z\mapsto f_i\cdot z$ sobre $M_{i-1}=M/(f_1 M+\cdots+f_{i-1}M)$ é injetiva, então $\HH^i(\mathbf{f},M)=0$ para $i\neq r$.
+\end{proposition}
+
+\begin{proof}
+Basta provar que $\HH_i(\mathbf{f},M)=0$ para todo $i>0$, em virtude de (\hyperref[III.1.1.3.3]{1.1.3.3}).
+Procede-se por indução sobre $r$, sendo trivial o caso $r=0$.
+Coloque-se $\mathbf{f}'=(f_i)_{1\leq i\leq r-1}$; esta família satisfaz as condições do enunciado, de modo que, se pusermos $L_\bullet=K_\bullet(\mathbf{f}',M)$, por hipótese tem-se $\HH_i(L_\bullet)=0$ para $i>0$, e $\HH_0(L_\bullet)=M_{r-1}$ em virtude de (\hyperref[III.1.1.3.3]{1.1.3.3}) e (\hyperref[III.1.1.3.5]{1.1.3.5}).
+Para abreviar, coloque-se $K_\bullet=K_\bullet(f_r)=K_0\oplus K_1$, com $K_0=K_1=A$ e $d_1:K_1\to K_0$ igual à multiplicação por $f_r$; por definição \sref{III.1.1.1}, tem-se $K_\bullet(\mathbf{f},M)=K_\bullet\otimes_A L_\bullet$.
+Dispõe-se do seguinte lema:
+
+\begin{lemma}[1.1.4.1]
+\label{III.1.1.4.1}
+Seja $K_\bullet$ um complexo de cadeias de $A$-módulos livres, nulo salvo nas dimensões $0$ e $1$.
+Para todo complexo de cadeias $L_\bullet$ de $A$-módulos tem-se uma sucessão exata
+\[
+  0\to\HH_0(K_\bullet\otimes\HH_p(L_\bullet))\to\HH_p(K_\bullet\otimes L_\bullet)\to\HH_1(K_\bullet\otimes\HH_{p-1}(L_\bullet))\to 0
+\]
+para todo índice $p$.
+\end{lemma}
+
+\oldpage[III]{84}
+Este é um caso particular de uma sucessão exata de termos de grau baixo da sucessão espectral de K\"unneth (M, XVII, 5.2 (a) e G, I, 5.5.2); pode demonstrar-se diretamente como segue.
+Considerem-se $K_0$ e $K_1$ como complexos de cadeias (nulos nas dimensões $\neq 0$ e $\neq 1$, respectivamente); tem-se então uma sucessão exata de complexos
+\[
+  0\to K_0\otimes L_\bullet\to K_\bullet\otimes L_\bullet\to K_1\otimes L_\bullet\to 0,
+\]
+à qual pode aplicar-se a sucessão exata de homologia
+\[
+  \begin{aligned}
+  \cdots&\to\HH_{p+1}(K_1\otimes L_\bullet)
+  \xrightarrow{\partial}\HH_p(K_0\otimes L_\bullet)
+  \to\HH_p(K_\bullet\otimes L_\bullet)\\
+  &\to\HH_p(K_1\otimes L_\bullet)
+  \xrightarrow{\partial}\HH_{p-1}(K_0\otimes L_\bullet)\to\cdots.
+  \end{aligned}
+\]
+Mas é evidente que $\HH_p(K_0\otimes L_\bullet)=K_0\otimes\HH_p(L_\bullet)$ e $\HH_p(K_1\otimes L_\bullet)=K_1\otimes\HH_{p-1}(L_\bullet)$ para todo $p$; além disso, verifica-se imediatamente que o operador $\partial:K_1\otimes\HH_p(L_\bullet)\to K_0\otimes\HH_p(L_\bullet)$ não é senão $d_1\otimes 1$; o lema deduz-se assim da sucessão exata anterior e da definição de $\HH_0(K_\bullet\otimes\HH_p(L_\bullet))$ e $\HH_1(K_\bullet\otimes\HH_{p-1}(L_\bullet))$.
+
+Estabelecido o lema, o final da demonstração da Proposição \sref{III.1.1.4} é imediato: a hipótese de indução e o Lema \sref{III.1.1.4.1} dão $\HH_p(K_\bullet\otimes L_\bullet)=0$ para $p\geq 2$; além disso, se provarmos que $\HH_1(K_\bullet,\HH_0(L_\bullet))=0$, deduz-se também do Lema \sref{III.1.1.4.1} que $\HH_1(K_\bullet\otimes L_\bullet)=0$; mas, por definição, $\HH_1(K_\bullet,\HH_0(L_\bullet))$ não é senão o núcleo da aplicação $z\mapsto f_r\cdot z$ sobre $M_{r-1}$, e, como por hipótese este núcleo é nulo, a demonstração está concluída.
+\end{proof}
+
+\begin{env}[1.1.5]
+\label{III.1.1.5}
+Seja $\mathbf{g}=(g_i)_{1\leq i\leq r}$ uma segunda sucessão de $r$ elementos de $A$, e coloque-se $\mathbf{f}\mathbf{g}=(f_i g_i)_{1\leq i\leq r}$.
+Pode-se definir um homomorfismo canônico de complexos
+\[
+  \vphi_\mathbf{g}:K_\bullet(\mathbf{f}\mathbf{g})\to K_\bullet(\mathbf{f})
+  \tag{1.1.5.1}
+\]
+como a extensão canônica à álgebra exterior $\wedge(A^r)$ da aplicação $A$-linear $(x_1,\dots,x_r)\mapsto(g_1 x_1,\dots,g_r x_r)$ de $A^r$ em si mesmo.
+Para ver que se trata de um homomorfismo de complexos, basta observar, em geral, que, se $u:E\to F$ é uma aplicação $A$-linear, $\mathbf{x}\in\dual{F}$ e $\mathbf{y}={}^t u(\mathbf{x})\in\dual{E}$, tem-se a fórmula
+\[
+  (\wedge u)\circ i_\mathbf{y}=i_\mathbf{x}\circ(\wedge u);
+  \tag{1.1.5.2}
+\]
+com efeito, ambos os membros são antiderivações de $\wedge F$, e basta verificar que coincidem sobre $F$, o que se deduz imediatamente das definições.
+
+Quando se identifica $K_\bullet(\mathbf{f})$ com o produto tensorial dos $K_\bullet(f_i)$ \sref{III.1.1.1}, $\vphi_\mathbf{g}$ é o produto tensorial dos $\vphi_{g_i}$, onde $\vphi_{g_i}$ é a identidade em grau $0$ e a multiplicação por $g_i$ em grau $1$.
+\end{env}
+
+\begin{env}[1.1.6]
+\label{III.1.1.6}
+Em particular, para todo par de inteiros $m$ e $n$ tais que $0\leq n\leq m$, têm-se homomorfismos de complexos
+\[
+  \vphi_{\mathbf{f}^{m-n}}:K_\bullet(\mathbf{f}^m)\to K_\bullet(\mathbf{f}^n)
+  \tag{1.1.6.1}
+\]
+e, por conseguinte, homomorfismos
+\[
+  \vphi_{\mathbf{f}^{m-n}}:K^\bullet(\mathbf{f}^n,M)\to K^\bullet(\mathbf{f}^m,M),
+  \tag{1.1.6.2}
+\]
+\[
+  \vphi_{\mathbf{f}^{m-n}}:\HH^\bullet(\mathbf{f}^n,M)\to\HH^\bullet(\mathbf{f}^m,M).
+  \tag{1.1.6.3}
+\]
+
+\oldpage[III]{85}
+Estes últimos homomorfismos satisfazem evidentemente a condição de transitividade $\vphi_{\mathbf{f}^{m-p}}=\vphi_{\mathbf{f}^{m-n}}\circ\vphi_{\mathbf{f}^{n-p}}$ para $p\leq n\leq m$; definem, portanto, dois \emph{sistemas indutivos} de $A$-módulos; põe-se
+\[
+  C^\bullet((\mathbf{f}),M)=\varinjlim_n K^\bullet(\mathbf{f}^n,M),
+  \tag{1.1.6.4}
+\]
+\[
+  \HH^\bullet((\mathbf{f}),M)=\HH^\bullet(C^\bullet((\mathbf{f}),M))=\varinjlim_n\HH^\bullet(\mathbf{f}^n,M),
+  \tag{1.1.6.5}
+\]
+deduzindo-se a última igualdade do fato de que o passo ao limite indutivo comuta com o funtor $\HH^\bullet$ (G, I, 2.1).
+Ver-se-á mais adiante \sref{III.1.4.3} que $\HH^\bullet((\mathbf{f}),M)$ não depende do \emph{ideal $(\mathbf{f})$} de $A$ (e, de maneira análoga, da topologia $(\mathbf{f})$-pré-ádica sobre $A$), o que justifica as notações.
+
+É claro que $M\mapsto C^\bullet((\mathbf{f}),M)$ é um funtor exato $A$-linear e que $M\mapsto\HH^\bullet((\mathbf{f}),M)$ é um funtor cohomológico.
+\end{env}
+
+\begin{env}[1.1.7]
+\label{III.1.1.7}
+Coloquem-se $\mathbf{f}=(f_i)\in A^r$ e $\mathbf{g}=(g_i)\in A^r$; denote-se por $e_\mathbf{g}$ a multiplicação à esquerda pelo vetor $\mathbf{g}\in A^r$ sobre a álgebra exterior $\wedge(A^r)$; sabe-se que se tem a \emph{fórmula de homotopia}
+\[
+  i_\mathbf{f}e_\mathbf{g}+e_\mathbf{g}i_\mathbf{f}=\langle\mathbf{g},\mathbf{f}\rangle 1
+  \tag{1.1.7.1}
+\]
+no $A$-módulo $\wedge(A^r)$ ($1$ denota o automorfismo identidade de $\wedge(A^r)$); esta relação implica também que \emph{no complexo $K_\bullet(\mathbf{f})$} tem-se
+\[
+  de_\mathbf{g}+e_\mathbf{g}d=\langle\mathbf{g},\mathbf{f}\rangle 1.
+  \tag{1.1.7.2}
+\]
+
+Se o ideal $(\mathbf{f})$ é igual a $A$, existe $\mathbf{g}\in A^r$ tal que $\langle\mathbf{g},\mathbf{f}\rangle=\sum_{i=1}^r g_i f_i=1$.
+Por conseguinte (G, I, 2.4):
+\end{env}
+
+\begin{proposition}[1.1.8]
+\label{III.1.1.8}
+Suponha-se que o ideal $(\mathbf{f})$ gerado pelos $f_i$ é igual a $A$.
+Então o complexo $K_\bullet(\mathbf{f})$ é homotopicamente trivial, assim como os complexos $K_\bullet(\mathbf{f},M)$ e $K^\bullet(\mathbf{f},M)$ para todo $A$-módulo $M$.
+\end{proposition}
+
+\begin{corollary}[1.1.9]
+\label{III.1.1.9}
+Se $(\mathbf{f})=A$, então $\HH^\bullet(\mathbf{f},M)=0$ e $\HH^\bullet((\mathbf{f}),M)=0$ para todo $A$-módulo $M$.
+\end{corollary}
+
+\begin{proof}
+Com efeito, tem-se então $(\mathbf{f}^n)=A$ para todo $n$.
+\end{proof}
+
+\begin{remark}[1.1.10]
+\label{III.1.1.10}
+Com as mesmas notações anteriores, coloque-se $X=\Spec(A)$ e seja $Y$ o subpré-esquema fechado de $X$ definido pelo ideal $(\mathbf{f})$.
+Provar-se-á em \textsection9 que $\HH^\bullet((\mathbf{f}),M)$ é isomorfo à cohomologia $\HH_Y^\bullet(X,\widetilde{M})$ correspondente ao antifiltro $\Phi$ de subconjuntos fechados de $Y$ (T, 3.2).
+Mostrar-se-á também que a Proposição \sref{III.1.2.3}, aplicada a $X$ e a $\sh{F}=\widetilde{M}$, é um caso particular de uma sucessão exata de cohomologia
+\[
+  \cdots\to\HH_Y^p(X,\sh{F})\to\HH^p(X,\sh{F})\to\HH^p(X\setmin Y,\sh{F})\to\HH_Y^{p+1}(X,\sh{F})\to\cdots.
+\]
+\end{remark}
+
+\subsection{Cohomologia de \v Cech de um recobrimento aberto}
+\label{subsection:III.1.2}
+
+\begin{notation}[1.2.1]
+\label{III.1.2.1}
+Nesta seção, denota-se por:
+\begin{enumerate}
+  \item $X$ um pré-esquema;
+  \item $\sh{F}$ um $\sh{O}_X$-módulo quase-coerente;
+\oldpage[III]{86}
+  \item $A=\Gamma(X,\sh{O}_X)$, $M=\Gamma(X,\sh{F})$;
+  \item $\mathbf{f}=(f_i)_{1\leq i\leq r}$ um sistema finito de elementos de $A$;
+  \item $U_i=X_{f_i}$, o aberto \sref[0]{0.5.5.2} dos $x\in X$ tais que $f_i(x)\neq 0$;
+  \item $U=\bigcup_{i=1}^r U_i$;
+  \item $\mathfrak{U}$ o recobrimento $(U_i)_{1\leq i\leq r}$ de $U$.
+\end{enumerate}
+\end{notation}
+
+\begin{env}[1.2.2]
+\label{III.1.2.2}
+Suponha-se que $X$ é um pré-esquema cujo espaço subjacente é \emph{noetheriano}, ou um \emph{esquema} cujo espaço subjacente é \emph{quase-compacto}.
+Sabe-se então \sref[I]{I.9.3.3} que $\Gamma(U_i,\sh{F})=M_{f_i}$.
+Coloque-se
+\[
+  U_{i_0 i_1\cdots i_p}=\bigcap_{k=0}^p U_{i_k}=X_{f_{i_0}f_{i_1}\cdots f_{i_p}}
+\]
+\sref[0]{0.5.5.3}; tem-se, portanto, também
+\[
+  \Gamma(U_{i_0 i_1\cdots i_p},\sh{F})=M_{f_{i_0}f_{i_1}\cdots f_{i_p}}.
+  \tag{1.2.2.1}
+\]
+
+Por \sref[0]{0.1.6.1}, $M_{f_{i_0}f_{i_1}\cdots f_{i_p}}$ identifica-se com o limite indutivo $\varinjlim_n M_{i_0 i_1\cdots i_p}^{(n)}$, onde o sistema indutivo é formado pelos $M_{i_0 i_1\cdots i_p}^{(n)}=M$, sendo os homomorfismos $\vphi_{nm}:M_{i_0 i_1\cdots i_p}^{(m)}\to M_{i_0 i_1\cdots i_p}^{(n)}$ a multiplicação por $(f_{i_0}f_{i_1}\cdots f_{i_p})^{n-m}$ para $m\leq n$.
+Denota-se por $C_n^p(M)$ o conjunto de aplicações \emph{alternadas} de $[1,r]^{p+1}$ em $M$ (para todo $n$); estes $A$-módulos formam também um sistema indutivo com respeito aos $\vphi_{nm}$.
+Se $C^p(\mathfrak{U},\sh{F})$ é o grupo das $p$-cocadeias \emph{alternadas} de \v Cech relativas ao recobrimento $\mathfrak{U}$, com coeficientes em $\sh{F}$ (G, II, 5.1), do que precede deduz-se que pode escrever-se
+\[
+  C^p(\mathfrak{U},\sh{F})=\varinjlim_n C_n^p(M).
+  \tag{1.2.2.2}
+\]
+
+Com as notações de \sref{III.1.1.2}, $C_n^p(M)$ identifica-se com $K^{p+1}(\mathbf{f}^n,M)$, e a aplicação $\vphi_{nm}$ identifica-se com a aplicação $\vphi_{\mathbf{f}^{n-m}}$ definida em \sref{III.1.1.6}.
+Tem-se assim, para todo $p\geq 0$, um isomorfismo canônico funtorial
+\[
+  C^p(\mathfrak{U},\sh{F})\isoto C^{p+1}((\mathbf{f}),M).
+  \tag{1.2.2.3}\label{III.1.2.2.3}
+\]
+
+Além disso, a fórmula (\hyperref[III.1.1.2.3]{1.1.2.3}) e a definição da cohomologia de um recobrimento (G, II, 5.1) mostram que os isomorfismos (\hyperref[III.1.2.2.3]{1.2.2.3}) são compatíveis com as aplicações cobordo.
+\end{env}
+
+\begin{proposition}[1.2.3]
+\label{III.1.2.3}
+Se $X$ é um pré-esquema cujo espaço subjacente é noetheriano, ou um esquema cujo espaço subjacente é quase-compacto, existe um isomorfismo canônico funtorial em $\sh{F}$
+\[
+  \HH^p(\mathfrak{U},\sh{F})\isoto\HH^{p+1}((\mathbf{f}),M)\text{ para }p\geq 1.
+  \tag{1.2.3.1}\label{III.1.2.3.1}
+\]
+
+Além disso, tem-se uma sucessão exata funtorial em $\sh{F}$
+\[
+  0\to\HH^0((\mathbf{f}),M)\to M\to\HH^0(\mathfrak{U},\sh{F})\to\HH^1((\mathbf{f}),M)\to 0.
+  \tag{1.2.3.2}\label{III.1.2.3.2}
+\]
+\end{proposition}
+
+\oldpage[III]{87}
+\begin{proof}
+Os isomorfismos (\hyperref[III.1.2.3.1]{1.2.3.1}) são consequências imediatas do que foi visto em \sref{III.1.2.2}.
+Por outro lado, tem-se $C^0(\mathfrak{U},\sh{F})=C^1((\mathbf{f}),M)$; por conseguinte, $\HH^0(\mathfrak{U},\sh{F})$ identifica-se com o subgrupo dos $1$-cociclos de $C^1((\mathbf{f}),M)$; como $M=C^0((\mathbf{f}),M)$, a sucessão exata (\hyperref[III.1.2.3.2]{1.2.3.2}) não é senão a dada pela definição dos grupos de cohomologia $\HH^0((\mathbf{f}),M)$ e $\HH^1((\mathbf{f}),M)$.
+\end{proof}
+
+\begin{corollary}[1.2.4]
+\label{III.1.2.4}
+Suponha-se que os $X_{f_i}$ são quase-compactos e que existem $g_i\in\Gamma(U,\sh{O}_X)$ tais que $\sum_i g_i(f_i|U)=1|U$.
+Então, para todo $(\sh{O}_X|U)$-módulo quase-coerente $\sh{G}$, tem-se $\HH^p(\mathfrak{U},\sh{G})=0$ para $p>0$; se além disso $U=X$, o homomorfismo canônico (\hyperref[III.1.2.3.2]{1.2.3.2}) $\Gamma(X,\sh{G})\to\HH^0(\mathfrak{U},\sh{G})$ é bijetivo.
+\end{corollary}
+
+\begin{proof}
+Como, por hipótese, os $U_i=X_{f_i}$ são quase-compactos, também o é $U$, e pode reduzir-se ao caso $U=X$; pondo $N=\Gamma(X,\sh{G})$, a hipótese implica então que $\HH^p((\mathbf{f}),N)=0$ para todo $p\geq 0$ \sref{III.1.1.9}.
+O corolário deduz-se imediatamente de (\hyperref[III.1.2.3.1]{1.2.3.1}) e (\hyperref[III.1.2.3.2]{1.2.3.2}).
+\end{proof}
+
+Observe-se que, dado que $\HH^0(\mathfrak{U},\sh{F})=\HH^0(U,\sh{F})$ (G, II, 5.2.2), demonstrou-se novamente \sref[I]{I.1.3.7} como caso particular.
+
+\begin{remark}[1.2.5]
+\label{III.1.2.5}
+Suponha-se que $X$ é um \emph{esquema afim}; então os $U_i=X_{f_i}=D(f_i)$ são abertos afins, assim como os $U_{i_0 i_1\cdots i_p}$ (mas $U$ não é necessariamente afim).
+Neste caso, os funtores $\Gamma(X,\sh{F})$ e $\Gamma(U_{i_0 i_1\cdots i_p},\sh{F})$ são exatos em $\sh{F}$ \sref[I]{I.1.3.11}.
+Se houver uma sucessão exata $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ de $\sh{O}_X$-módulos quase-coerentes, a sucessão de complexos
+\[
+  0\to C^\bullet(\mathfrak{U},\sh{F}')\to C^\bullet(\mathfrak{U},\sh{F})\to C^\bullet(\mathfrak{U},\sh{F}'')\to 0
+\]
+é exata e dá, portanto, uma sucessão exata de cohomologia
+\[
+  \cdots\to\HH^p(\mathfrak{U},\sh{F}')\to\HH^p(\mathfrak{U},\sh{F})\to\HH^p(\mathfrak{U},\sh{F}'')\xrightarrow{\partial}\HH^{p+1}(\mathfrak{U},\sh{F}')\to\cdots.
+\]
+Por outro lado, se pusermos $M'=\Gamma(X,\sh{F}')$ e $M''=\Gamma(X,\sh{F}'')$, a sucessão $0\to M'\to M\to M''\to 0$ é exata; como $C^\bullet((\mathbf{f}),M)$ é um funtor exato em $M$, tem-se também a sucessão exata de cohomologia
+\[
+  \cdots\to\HH^p((\mathbf{f}),M')\to\HH^p((\mathbf{f}),M)\to\HH^p((\mathbf{f}),M'')\xrightarrow{\partial}\HH^{p+1}((\mathbf{f}),M')\to\cdots.
+\]
+
+Assim, como o diagrama
+\[
+  \xymatrix{
+    0\ar[r] &
+    C^\bullet(\mathfrak{U},\sh{F}')\ar[r]\ar[d] &
+    C^\bullet(\mathfrak{U},\sh{F})\ar[r]\ar[d] &
+    C^\bullet(\mathfrak{U},\sh{F}'')\ar[r]\ar[d] &
+    0\\
+    0\ar[r] &
+    C^\bullet((\mathbf{f}),M')\ar[r] &
+    C^\bullet((\mathbf{f}),M)\ar[r] &
+    C^\bullet((\mathbf{f}),M'')\ar[r] &
+    0
+  }
+\]
+\oldpage[III]{88}
+é comutativo, conclui-se que os diagramas
+\[
+  \xymatrix{
+    \HH^p(\mathfrak{U},\sh{F}'')\ar[r]^\partial\ar[d] &
+    \HH^{p+1}(\mathfrak{U},\sh{F}')\ar[d]\\
+    \HH^{p+1}((\mathbf{f}),M'')\ar[r]^\partial &
+    \HH^{p+2}((\mathbf{f}),M')
+  }
+  \tag{1.2.5.1}
+\]
+são comutativos para todo $p$~(G, I, 2.1.1).
+\end{remark}
+
+\subsection{Cohomologia de um esquema afim}
+\label{subsection:III.1.3}
+
+\begin{theorem}[1.3.1]
+\label{III.1.3.1}
+Seja $X$ um esquema afim.
+Para todo $\sh{O}_X$-módulo quase-coerente $\sh{F}$, tem-se $\HH^p(X,\sh{F})=0$ para todo $p>0$.
+\end{theorem}
+
+\begin{proof}
+Seja $\mathfrak{U}$ um recobrimento finito de $X$ pelos abertos afins $X_{f_i}=D(f_i)$ ($1\leq i\leq r$); sabe-se então que o ideal de $A=\Gamma(X,\sh{O}_X)$ gerado pelos $f_i$ é igual a $A$.
+Do Corolário~\sref{III.1.2.4} conclui-se, pois, que $\HH^p(\mathfrak{U},\sh{F})=0$ para $p>0$.
+Como existem recobrimentos finitos de $X$ por abertos afins arbitrariamente finos \sref[I]{I.1.1.10}, a definição da cohomologia de \v Cech (G, II, 5.8) mostra que também $\CHH^p(X,\sh{F})=0$ para $p>0$.
+Mas isto se aplica também a todo pré-esquema $X_f$, para $f\in A$ \sref[I]{I.1.3.6}; portanto, $\CHH^p(X_f,\sh{F})=0$ para $p>0$.
+Como $X_f\cap X_g=X_{fg}$, deduz-se também que $\HH^p(X,\sh{F})=0$ para todo $p>0$, em virtude de (G, II, 5.9.2).
+\end{proof}
+
+\begin{corollary}[1.3.2]
+\label{III.1.3.2}
+Seja $Y$ um pré-esquema e seja $f:X\to Y$ um morfismo afim \sref[II]{II.1.6.1}.
+Para todo $\sh{O}_X$-módulo quase-coerente $\sh{F}$, tem-se $\RR^q f_*(\sh{F})=0$ para $q>0$.
+\end{corollary}
+
+\begin{proof}
+Por definição, $\RR^q f_*(\sh{F})$ é o $\sh{O}_Y$-módulo associado ao pré-feixe $U\mapsto\HH^q(f^{-1}(U),\sh{F})$, onde $U$ percorre os abertos de $Y$.
+Mas os abertos afins formam uma base de $Y$, e, para um aberto tal $U$, $f^{-1}(U)$ é afim \sref[II]{II.1.3.2}; portanto, $\HH^q(f^{-1}(U),\sh{F})=0$ pelo Teorema~\sref{III.1.3.1}, o que prova o corolário.
+\end{proof}
+
+\begin{corollary}[1.3.3]
+\label{III.1.3.3}
+Seja $Y$ um pré-esquema e seja $f:X\to Y$ um morfismo afim.
+Para todo $\sh{O}_X$-módulo quase-coerente $\sh{F}$, o homomorfismo canônico $\HH^p(Y,f_*(\sh{F}))\to\HH^p(X,\sh{F})$ (\textbf{0},~12.1.3.1) é bijetivo para todo $p$.
+\end{corollary}
+
+\begin{proof}
+Basta (por \sref[0]{0.12.1.7}) mostrar que os homomorfismos de bordo $''E_2^{p0}=\HH^p(Y,f_*(\sh{F}))\to\HH^p(X,\sh{F})$ da segunda sucessão espectral do funtor composto $\Gamma f_*$ são bijetivos.
+Mas o termo $E_2$ desta sucessão espectral é dado por $''E_2^{pq}=\HH^p(Y,\RR^q f_*(\sh{F}))$ (G, II, 4.17.1); pelo Corolário~\sref{III.1.3.2}, $''E_2^{pq}=0$ para $q>0$, e a sucessão espectral degenera; daí a afirmação \sref[0]{0.11.1.6}.
+\end{proof}
+
+\begin{corollary}[1.3.4]
+\label{III.1.3.4}
+Sejam $f:X\to Y$ um morfismo afim e $g:Y\to Z$ um morfismo.
+\oldpage[III]{89}
+Para todo $\sh{O}_X$-módulo quase-coerente $\sh{F}$, o homomorfismo canônico $\RR^p g_*(f_*(\sh{F}))\to\RR^p(g\circ f)_*(\sh{F})$ (\textbf{0},~12.2.5.1) é bijetivo para todo $p$.
+\end{corollary}
+
+\begin{proof}
+Basta observar que, segundo o Corolário~\sref{III.1.3.3}, para todo aberto afim $W$ de $Z$, o homomorfismo canônico $\HH^p(g^{-1}(W),f_*(\sh{F}))\to\HH^p(f^{-1}(g^{-1}(W)),\sh{F})$ é bijetivo; isto prova que o homomorfismo de pré-feixes que define o homomorfismo canônico $\RR^p g_*(f_*(\sh{F}))\to\RR^p(g\circ f)_*(\sh{F})$ é bijetivo \sref[0]{0.12.2.5}.
+\end{proof}
+
+\subsection{Aplicação à cohomologia de pré-esquemas arbitrários}
+\label{subsection:III.1.4}
+
+\begin{proposition}[1.4.1]
+\label{III.1.4.1}
+Seja $X$ um esquema e seja $\mathfrak{U}=(U_\alpha)$ um recobrimento de $X$ por abertos afins.
+Para todo $\sh{O}_X$-módulo quase-coerente $\sh{F}$, os módulos de cohomologia $\HH^\bullet(X,\sh{F})$ e $\HH^\bullet(\mathfrak{U},\sh{F})$ (sobre $\Gamma(X,\sh{O}_X)$) são canonicamente isomorfos.
+\end{proposition}
+
+\begin{proof}
+Como $X$ é um esquema, toda interseção finita $V$ de abertos do recobrimento $\mathfrak{U}$ é afim \sref[I]{I.5.5.6}; portanto, $\HH^q(V,\sh{F})=0$ para $q\geq 1$ pelo Teorema~\sref{III.1.3.1}.
+A proposição deduz-se então de um teorema de Leray (G, II, 5.4.1).
+\end{proof}
+
+\begin{remark}[1.4.2]
+\label{III.1.4.2}
+Observe-se que o resultado da Proposição~\sref{III.1.4.1} continua válido quando as interseções finitas dos conjuntos $U_\alpha$ são afins, mesmo sem supor necessariamente que $X$ seja um esquema.
+\end{remark}
+
+\begin{corollary}[1.4.3]
+\label{III.1.4.3}
+Seja $X$ um esquema de espaço subjacente quase-compacto, seja $A=\Gamma(X,\sh{O}_X)$ e seja $\mathbf{f}=(f_i)_{1\leq i\leq r}$ uma sucessão finita de elementos de $A$ tal que os $X_{f_i}$ (notação de \sref{III.1.2.1}) sejam afins.
+Então (com as notações de \sref{III.1.2.1}), para todo $\sh{O}_X$-módulo quase-coerente $\sh{F}$, tem-se um isomorfismo canônico funtorial em $\sh{F}$
+\[
+  \HH^q(U,\sh{F})\isoto\HH^{q+1}((\mathbf{f}),M)\text{ para }q\geq 1,
+  \tag{1.4.3.1}\label{III.1.4.3.1}
+\]
+e uma sucessão exata funtorial em $\sh{F}$
+\[
+  0\to\HH^0((\mathbf{f}),M)\to M\to\HH^0(U,\sh{F})\to\HH^1((\mathbf{f}),M)\to 0.
+  \tag{1.4.3.2}
+\]
+\end{corollary}
+
+\begin{proof}
+Isto deduz-se imediatamente das Proposições~\sref{III.1.4.1} e \sref{III.1.2.3}.
+\end{proof}
+
+\begin{env}[1.4.4]
+\label{III.1.4.4}
+Se $X$ é um \emph{esquema afim}, da Observação~\sref{III.1.2.5} e da Proposição~\sref{III.1.4.1} deduz-se que, para todo $q\geq 0$, os diagramas
+\[
+  \xymatrix{
+    \HH^q(U,\sh{F}'')\ar[r]^\partial\ar[d] &
+    \HH^{q+1}(U,\sh{F}')\ar[d]\\
+    \HH^{q+1}((\mathbf{f}),M'')\ar[r]^\partial &
+    \HH^{q+2}((\mathbf{f}),M')
+  }
+  \tag{1.4.4.1}
+\]
+correspondentes a uma sucessão exata $0\to\sh{F}'\to\sh{F}\to\sh{F}''\to 0$ de $\sh{O}_X$-módulos quase-coerentes (com as notações da Observação~\sref{III.1.2.5}) são comutativos.
+\end{env}
+
+\begin{proposition}[1.4.5]
+\label{III.1.4.5}
+\oldpage[III]{90}
+Seja $X$ um esquema quase-compacto, seja $\sh{L}$ um $\sh{O}_X$-módulo invertível, e considere-se o anel graduado $A_\bullet=\Gamma_\bullet(\sh{L})$ \sref[0]{0.5.4.6}; então $\HH^\bullet(\sh{F},\sh{L})=\bigoplus_{n\in\bb{Z}}\HH^\bullet(X,\sh{F}\otimes\sh{L}^{\otimes n})$ é um $A_\bullet$-módulo graduado e, para todo $f\in A_n$, tem-se um isomorfismo canônico
+\[
+  \HH^\bullet(X_f,\sh{F})\isoto(\HH^\bullet(\sh{F},\sh{L}))_{(f)}
+  \tag{1.4.5.1}\label{III.1.4.5.1}
+\]
+de $(A_\bullet)_{(f)}$-módulos.
+\end{proposition}
+
+\begin{proof}
+Como $X$ é um esquema quase-compacto, pode calcular-se a cohomologia de todos os $\sh{O}_X$-módulos $\sh{F}\otimes\sh{L}^{\otimes n}$ utilizando um mesmo recobrimento finito $\mathfrak{U}=(U_i)$, formado por abertos afins tais que a restrição $\sh{L}|U_i$ seja isomorfa a $\sh{O}_X|U_i$ para cada $i$ \sref{III.1.4.1}.
+É então imediato que os $U_i\cap X_f$ são abertos afins \sref[I]{I.1.3.6}, e pode calcular-se assim a cohomologia $\HH^\bullet(X_f,\sh{F}\otimes\sh{L}^{\otimes n})$ utilizando o recobrimento $\mathfrak{U}|X_f=(U_i\cap X_f)$ \sref{III.1.4.1}.
+É imediato que, para todo $f\in A_n$, a multiplicação por $f$ define um homomorfismo $C^\bullet(\mathfrak{U},\sh{F}\otimes\sh{L}^m)\to C^\bullet(\mathfrak{U},\sh{F}\otimes\sh{L}^{\otimes(m+n)})$ e, portanto, um homomorfismo $\HH^\bullet(\mathfrak{U},\sh{F}\otimes\sh{L}^{\otimes m})\to\HH^\bullet(\mathfrak{U},\sh{F}\otimes\sh{L}^{\otimes(m+n)})$, o que estabelece a primeira afirmação.
+Por outro lado, para um $f\in A_n$ dado, de \sref[I]{I.9.3.2} deduz-se que se tem um isomorfismo de complexos de $(A_\bullet)_{(f)}$-módulos
+\[
+  C^\bullet(\mathfrak{U}|X_f,\sh{F})\isoto\bigg(\!\!C^\bullet\bigg(\mathfrak{U},\bigoplus_{n\in\bb{Z}}\sh{F}\otimes\sh{L}^{\otimes n}\bigg)\!\!\bigg)_{(f)},
+\]
+levando em conta \sref[I]{I.1.3.9}[ii].
+Ao passar à cohomologia destes complexos obtém-se o isomorfismo (\hyperref[III.1.4.5.1]{1.4.5.1}), recordando que o funtor $M\mapsto M_{(f)}$ é exato sobre a categoria de $A_\bullet$-módulos graduados.
+\end{proof}
+
+\begin{corollary}[1.4.6]
+\label{III.1.4.6}
+Suponha-se que sejam satisfeitas as hipóteses da Proposição~\sref{III.1.4.5} e, além disso, que $\sh{L}=\sh{O}_X$.
+Se pusermos $A=\Gamma(X,\sh{O}_X)$, então, para todo $f\in A$, tem-se um isomorfismo canônico $\HH^\bullet(X_f,\sh{F})\isoto(\HH^\bullet(X,\sh{F}))_f$ de $A_f$-módulos.
+\end{corollary}
+
+\begin{corollary}[1.4.7]
+\label{III.1.4.7}
+Seja $X$ um esquema quase-compacto e seja $f$ um elemento de $\Gamma(X,\sh{O}_X)$.
+\begin{enumerate}
+  \item[{\rm(i)}] Suponha-se que o aberto $X_f$ é afim.
+    Então, para todo $\sh{O}_X$-módulo quase-coerente $\sh{F}$, todo $i>0$ e todo $\xi\in\HH^i(X,\sh{F})$, existe um inteiro $n>0$ tal que $f^n\xi=0$.
+  \item[{\rm(ii)}] Reciprocamente, suponha-se que $X_f$ é quase-compacto e que, para todo feixe quase-coerente de ideais $\sh{J}$ de $\sh{O}_X$ e todo $\zeta\in\HH^1(X,\sh{J})$, existe um $n>0$ tal que $f^n\zeta=0$.
+    Então $X_f$ é afim.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+\medskip\noindent
+\begin{enumerate}
+  \item[(i)] Se $X_f$ é afim, tem-se $\HH^i(X_f,\sh{F})=0$ para todo $i>0$ \sref{III.1.3.1}, de modo que a afirmação deduz-se diretamente do Corolário~\sref{III.1.4.6}.
+  \item[(ii)] Em virtude do critério de Serre \sref[II]{II.5.2.1}, basta provar que, para todo feixe quase-coerente de ideais $\sh{K}$ de $\sh{O}_X|X_f$, tem-se $\HH^1(X_f,\sh{K})=0$.
+    Como $X_f$ é um aberto quase-compacto de um esquema quase-compacto $X$, existe um feixe quase-coerente de ideais $\sh{J}$ de $\sh{O}_X$ tal que $\sh{K}=\sh{J}|X_f$ \sref[I]{I.9.4.2}.
+    Segundo o Corolário~\sref{III.1.4.6}, tem-se $\HH^1(X_f,\sh{K})=(\HH^1(X,\sh{J}))_f$, e a hipótese implica que o membro da direita é nulo, o que dá a afirmação.
+\end{enumerate}
+\end{proof}
+
+\begin{remark}[1.4.8]
+\label{III.1.4.8}
+Observe-se que o Corolário~\sref{III.1.4.7}[i] dá uma demonstração mais simples da relação (\textbf{II},~4.5.13.2).
+\end{remark}
+
+\begin{lemma}[1.4.9]
+\label{III.1.4.9}
+\oldpage[III]{91}
+Seja $X$ um esquema quase-compacto, seja $\mathfrak{U}=(U_i)_{1\leq i\leq n}$ um recobrimento finito de $X$ por abertos afins e seja $\sh{F}$ um $\sh{O}_X$-módulo quase-coerente.
+O complexo de feixes $\sh{C}^\bullet(\mathfrak{U},\sh{F})$ definido pelo recobrimento $\mathfrak{U}$ (G, II, 5.2) é então um $\sh{O}_X$-módulo quase-coerente.
+\end{lemma}
+
+\begin{proof}
+Das definições (G, II, 5.2) deduz-se que $\sh{C}^p(\mathfrak{U},\sh{F})$ é a soma direta dos feixes imagem direta dos $\sh{F}|U_{i_0\cdots i_p}$ pela imersão canônica $U_{i_0\cdots i_p}\to X$.
+A hipótese de que $X$ é um esquema implica que estas imersões são morfismos afins \sref[I]{I.5.5.6}; portanto, os $\sh{C}^p(\mathfrak{U},\sh{F})$ são quase-coerentes \sref[II]{II.1.2.6}.
+\end{proof}
+
+\begin{proposition}[1.4.10]
+\label{III.1.4.10}
+Seja $u:X\to Y$ um morfismo separado e quase-compacto.
+Para todo $\sh{O}_X$-módulo quase-coerente $\sh{F}$, os $\RR^q u_*(\sh{F})$ são $\sh{O}_Y$-módulos quase-coerentes.
+\end{proposition}
+
+\begin{proof}
+A questão é local sobre $Y$, de modo que pode supor-se que $Y$ é afim.
+Então $X$ é uma união finita de abertos afins $U_i$ ($1\leq i\leq n$); seja $\mathfrak{U}$ o recobrimento $(U_i)$.
+Além disso, como $Y$ é um esquema, de \sref[I]{I.5.5.10} deduz-se que, para todo aberto afim $V\subset Y$, a imersão canônica $u^{-1}(V)\to X$ é um morfismo afim; conclui-se (Proposição~\sref{III.1.4.1} e (G, II, 5.2)) que se tem um isomorfismo canônico
+\[
+  \HH^\bullet(u^{-1}(V),\sh{F})\isoto\HH^\bullet(\Gamma(V,\sh{K}^\bullet)),
+  \tag{1.4.10.1}\label{III.1.4.10.1}
+\]
+onde se põe $\sh{K}^\bullet=u_*(\sh{C}^\bullet(\mathfrak{U},\sh{F}))$.
+Segundo o Lema~\sref{III.1.4.9} e \sref[I]{I.9.2.2}, $\sh{K}^\bullet$ é um $\sh{O}_Y$-módulo quase-coerente; além disso, constitui um \emph{complexo de feixes}, dado que também o é $\sh{C}^\bullet(\mathfrak{U},\sh{F})$.
+Da definição da cohomologia $\sh{H}^\bullet(\sh{K}^\bullet)$ (G, II, 4.1) deduz-se então que esta última é formada por $\sh{O}_Y$-módulos quase-coerentes \sref[I]{I.4.1.1}.
+Como (para $V$ afim em $Y$) o funtor $\Gamma(V,\sh{G})$ é exato em $\sh{G}$ sobre a categoria de $\sh{O}_Y$-módulos quase-coerentes, tem-se (G, II, 4.1)
+\[
+  \HH^\bullet(\Gamma(V,\sh{K}^\bullet))=\Gamma(V,\sh{H}^\bullet(\sh{K}^\bullet)).
+  \tag{1.4.10.2}\label{III.1.4.10.2}
+\]
+
+Finalmente, observe-se que da definição do homomorfismo canônico
+\[
+  \HH^\bullet(\mathfrak{U},\sh{F})\to\HH^\bullet(X,\sh{F}),
+\]
+dado em (G, II, 5.2), deduz-se que, se $V'\subset V$ é outro aberto afim de $Y$, o
+diagrama
+\[
+  \xymatrix{
+    \HH^\bullet(u^{-1}(V),\sh{F})\ar[r]^\sim\ar[d] &
+    \HH^\bullet(\Gamma(V,\sh{K}^\bullet))\ar[d]\\
+    \HH^\bullet(u^{-1}(V'),\sh{F})\ar[r]^\sim &
+    \HH^\bullet(\Gamma(V',\sh{K}^\bullet))
+  }
+\]
+é comutativo.
+Do que precede conclui-se que os isomorfismos (\hyperref[III.1.4.10.1]{1.4.10.1}) definem um isomorfismo de $\sh{O}_Y$-módulos
+\[
+  \RR^\bullet u_*(\sh{F})\isoto\sh{H}^\bullet(\sh{K}^\bullet),
+  \tag{1.4.10.3}\label{III.1.4.10.3}
+\]
+\oldpage[III]{92}
+e, por conseguinte, $\RR^\bullet u_*(\sh{F})$ é quase-coerente.
+\end{proof}
+
+Além disso, de (\hyperref[III.1.4.10.3]{1.4.10.3}), (\hyperref[III.1.4.10.2]{1.4.10.2}) e (\hyperref[III.1.4.10.1]{1.4.10.1}) deduz-se que:
+\begin{corollary}[1.4.11]
+\label{III.1.4.11}
+Sob as hipóteses da Proposição~\sref{III.1.4.10}, para todo aberto afim $V$ de $Y$, o homomorfismo canônico
+\[
+  \HH^q(u^{-1}(V),\sh{F})\to\Gamma(V,\RR^q u_*(\sh{F}))
+  \tag{1.4.11.1}\label{III.1.4.11.1}
+\]
+é um isomorfismo para todo $q\geq 0$.
+\end{corollary}
+
+\begin{corollary}[1.4.12]
+\label{III.1.4.12}
+Suponha-se que sejam satisfeitas as hipóteses da Proposição~\sref{III.1.4.10} e, além disso, que $Y$ é quase-compacto.
+Então existe um inteiro $r>0$ tal que, para todo $\sh{O}_X$-módulo quase-coerente $\sh{F}$ e todo inteiro $q>r$, tem-se $\RR^q u_*(\sh{F})=0$.
+Se $Y$ é afim, pode tomar-se como $r$ um inteiro tal que exista um recobrimento de $X$ formado por $r$ abertos afins.
+\end{corollary}
+
+\begin{proof}
+Como se pode recobrir $Y$ por um número finito de abertos afins, em virtude do Corolário~\sref{III.1.4.11} pode reduzir-se a demonstração à segunda afirmação.
+Se $\mathfrak{U}$ é um recobrimento de $X$ por $r$ abertos afins, tem-se $\HH^q(\mathfrak{U},\sh{F})=0$ para $q>r$, dado que as cocadeias de $C^q(\mathfrak{U},\sh{F})$ são alternadas; a afirmação deduz-se então da Proposição~\sref{III.1.4.1}.
+\end{proof}
+
+\begin{corollary}[1.4.13]
+\label{III.1.4.13}
+Suponha-se que sejam satisfeitas as hipóteses da Proposição~\sref{III.1.4.10} e, além disso, que $Y=\Spec(A)$ é afim.
+Então, para todo $\sh{O}_X$-módulo quase-coerente $\sh{F}$ e todo $f\in A$, tem-se
+\[
+  \Gamma(Y_f,\RR^q u_*(\sh{F}))=(\Gamma(Y,\RR^q u_*(\sh{F})))_f
+\]
+salvo isomorfismo canônico.
+\end{corollary}
+
+\begin{proof}
+Isto deduz-se do fato de que $\RR^q u_*(\sh{F})$ é um $\sh{O}_Y$-módulo quase-coerente \sref[I]{I.1.3.7}.
+\end{proof}
+
+\begin{proposition}[1.4.14]
+\label{III.1.4.14}
+Sejam $f:X\to Y$ um morfismo separado e quase-compacto e $g:Y\to Z$ um morfismo afim.
+Para todo $\sh{O}_X$-módulo quase-coerente $\sh{F}$, o homomorfismo canônico $\RR^p(g\circ f)_*(\sh{F})\to g_*(\RR^p f_*(\sh{F}))$ (\textbf{0},~12.2.5.2) é bijetivo para todo $p$.
+\end{proposition}
+
+\begin{proof}
+Para todo aberto afim $W$ de $Z$, $g^{-1}(W)$ é um aberto afim de $Y$.
+O homomorfismo de pré-feixes que define o homomorfismo canônico
+\[
+  \RR^p(g\circ f)_*(\sh{F})\to g_*(\RR^p f_*(\sh{F}))
+\]
+\sref[0]{0.12.2.5} é, portanto, bijetivo em virtude do Corolário~\sref{III.1.4.11}.
+\end{proof}
+
+\begin{proposition}[1.4.15]
+\label{III.1.4.15}
+Sejam $u:X\to Y$ um morfismo separado de tipo finito e $v:Y'\to Y$ um morfismo plano de pré-esquemas \sref[0]{0.6.7.1}; seja $u'=u_{(Y')}$, de modo que se tem o diagrama comutativo
+\[
+  \xymatrix{
+    X\ar[d]_u &
+    X'=X_{(Y')}\ar[l]_{v'}\ar[d]^{u'}\\
+    Y &
+    Y'\ar[l]_{v}.
+  }
+  \tag{1.4.15.1}
+  \label{III.1.4.15.1}
+\]
+Então, para todo $\sh{O}_X$-módulo quase-coerente $\sh{F}$, $\RR^q u_*'(\sh{F}')$ é canonicamente isomorfo a $\RR^q u_*(\sh{F})\otimes_{\sh{O}_Y}\sh{O}_{Y'}=v^*(\RR^q u_*(\sh{F}))$ para todo $q\geq 0$, onde $\sh{F}'={v'}^*(\sh{F})=\sh{F}\otimes_{\sh{O}_Y}\sh{O}_{Y'}$.
+\end{proposition}
+
+\oldpage[III]{93}
+\begin{proof}
+O homomorfismo canônico $\rho:\sh{F}\to v_*'({v'}^*(\sh{F}))$ (\textbf{0},~4.4.3.2) define por funtorialidade um homomorfismo
+\[
+  \RR^q u_*(\sh{F})\to\RR^q u_*(v_*'(\sh{F}')).
+  \tag{1.4.15.2}\label{III.1.4.15.2}
+\]
+
+Por outro lado, pondo $w=u\circ v'=v\circ u'$, têm-se os homomorfismos canônicos (\textbf{0}~,12.2.5.1 e 12.2.5.2)
+\[
+  \RR^q u_*(v_*'(\sh{F}'))\to\RR^q w_*(\sh{F}')\to v_*(\RR^q u_*'(\sh{F}')).
+  \tag{1.4.15.3}\label{III.1.4.15.3}
+\]
+
+Compondo (\hyperref[III.1.4.15.3]{1.4.15.3}) e (\hyperref[III.1.4.15.2]{1.4.15.2}), obtém-se um homomorfismo
+\[
+  \psi:\RR^q u_*(\sh{F})\to v_*(\RR^q u_*'(\sh{F}')),
+\]
+e obtém-se finalmente um homomorfismo canônico (cuja definição não impõe \emph{hipótese alguma} sobre $v$)
+\[
+  \psi^\sharp:v^*(\RR^q u_*(\sh{F}))\to\RR^q u_*'(\sh{F}'),
+  \tag{1.4.15.4}
+\]
+e é preciso provar que é um isomorfismo quando $v$ é \emph{plano}.
+É claro que a questão é local sobre $Y$ e $Y'$; pode supor-se, portanto, que $Y=\Spec(A)$ e $Y'=\Spec(B)$; utilizar-se-á além disso o seguinte lema:
+\begin{lemma}[1.4.15.5]
+\label{III.1.4.15.5}
+Sejam $\vphi:A\to B$ um homomorfismo de anéis, $Y=\Spec(A)$, $X=\Spec(B)$, $f:X\to Y$ o morfismo correspondente a $\vphi$, e $M$ um $B$-módulo.
+Para que o $\sh{O}_X$-módulo $\widetilde{M}$ seja $f$-plano \sref[0]{0.6.7.1}, é necessário e suficiente que $M$ seja um $A$-módulo plano.
+Em particular, para que o morfismo $f$ seja plano, é necessário e suficiente que $B$ seja um $A$-módulo plano.
+\end{lemma}
+
+Isto deduz-se da definição \sref[0]{0.6.7.1} e de \sref[0]{0.6.3.3}, levando em conta \sref[I]{I.1.3.4}.
+
+Assim, de (\hyperref[III.1.4.11.1]{1.4.11.1}) e das definições dos homomorfismos (\hyperref[III.1.4.15.3]{1.4.15.3}) (cf.~\sref[0]{0.12.2.5}) deduz-se que $\psi$ corresponde então ao morfismo composto
+\[
+  \HH^q(X,\sh{F})\xrightarrow{\rho_q}\HH^q(X,v_*'({v'}^*(\sh{F})))\xrightarrow{\theta_q}\HH^q(X',{v'}^*(v_*'({v'}^*(\sh{F}))))\xrightarrow{\sigma_q}\HH^q(X',{v'}^*(\sh{F})),
+\]
+onde $\rho_q$ e $\sigma_q$ são os homomorfismos de cohomologia correspondentes aos morfismos canônicos $\rho$ e $\sigma:{v'}^*(v_*'(\sh{G}'))\to\sh{G}'$, e $\theta_q$ é o $\vphi$-morfismo (\textbf{0},~12.1.3.1) relativo ao $\sh{O}_X$-módulo $v_*'({v'}^*(\sh{F}))$.
+Mas, pela funtorialidade de $\theta_q$, tem-se o diagrama comutativo
+\[
+  \xymatrix{
+    \HH^q(X,\sh{F})\ar[rr]^{\rho_q}\ar[dd]_{\theta_q} & &
+    \HH^q(X,v_*'({v'}^*(\sh{F})))\ar[dd]^{\theta_q}\\\\
+    \HH^q(X',{v'}^*(\sh{F}))\ar[rr]^{{v'}^*(\rho_q)} & &
+    \HH^q(X',{v'}^*(v_*'({v'}^*(\sh{F})))),
+  }
+\]
+\oldpage[III]{94}
+e, como por definição \sref[0]{0.4.4.3} ${v'}^*(\rho)$ é o inverso de $\sigma$, vê-se que o morfismo composto considerado anteriormente não é, afinal, senão $\theta_q$; por conseguinte, $\psi^\sharp$ é o $B$-homomorfismo associado $\HH^q(X,\sh{F})\otimes_A B\to\HH^q(X',\sh{F}')$.
+Como $u$ é de tipo finito, $X$ é uma união finita de abertos afins $U_i$ ($1\leq i\leq r$); seja $\mathfrak{U}$ o recobrimento $(U_i)$.
+Como $v$ é um morfismo afim, também o é $v'$ \sref[II]{II.1.6.2}[iii]; por conseguinte, os $U_i'={v'}^{-1}(U_i)$ formam um recobrimento aberto afim $\mathfrak{U}'$ de $X'$.
+Sabe-se então \sref[0]{0.12.1.4.2} que o diagrama
+\[
+  \xymatrix{
+    \HH^q(\mathfrak{U},\sh{F})\ar[r]^{\theta_q}\ar[d] &
+    \HH^q(\mathfrak{U}',\sh{F}')\ar[d]\\
+    \HH^q(X,\sh{F})\ar[r]^{\theta_q} &
+    \HH^q(X',\sh{F}')
+  }
+\]
+é comutativo, e as setas verticais são isomorfismos dado que $X$ e $X'$ são esquemas \sref{III.1.4.1}.
+Por conseguinte, basta provar que o $\vphi$-morfismo canônico $\theta_q:\HH^q(\mathfrak{U},\sh{F})\to\HH^q(\mathfrak{U}',\sh{F}')$ é tal que o $B$-homomorfismo associado
+\[
+  \HH^q(\mathfrak{U},\sh{F})\otimes_A B\to\HH^q(\mathfrak{U}',\sh{F}')
+\]
+seja um isomorfismo.
+Para toda sucessão $\mathbf{s}=(i_k)_{0\leq k\leq p}$ de $p+1$ índices de $[1,r]$, coloquem-se $U_\mathbf{s}=\bigcap_{k=0}^p U_{i_k}$, $U_\mathbf{s}'=\bigcap_{k=0}^p U_{i_k}'={v'}^{-1}(U_\mathbf{s})$, $M_\mathbf{s}=\Gamma(U_\mathbf{s},\sh{F})$ e $M_\mathbf{s}'=\Gamma(U_\mathbf{s}',\sh{F}')$.
+A aplicação canônica $M_\mathbf{s}\otimes_A B\to M_\mathbf{s}'$ é um isomorfismo \sref[I]{I.1.6.5}; portanto, a aplicação canônica $C^p(\mathfrak{U},\sh{F})\otimes_A B\to C^p(\mathfrak{U}',\sh{F}')$ é um isomorfismo, mediante o qual $d\otimes 1$ identifica-se com a aplicação cobordo $C^p(\mathfrak{U}',\sh{F}')\to C^{p+1}(\mathfrak{U}',\sh{F}')$.
+Como $B$ é um $A$-módulo \emph{plano}, da definição dos módulos de cohomologia deduz-se que a aplicação canônica $\HH^q(\mathfrak{U},\sh{F})\otimes_A B\to\HH^q(\mathfrak{U}',\sh{F}')$ é um isomorfismo \sref[0]{0.6.1.1}.
+Este resultado se generalizará mais adiante em \EGAUnavailableHyperref{section:III.6}{\textsection6}.
+\end{proof}
+
+\begin{corollary}[1.4.16]
+\label{III.1.4.16}
+Sejam $A$ um anel, $X$ um $A$-esquema de tipo finito e $B$ uma $A$-álgebra fielmente plana sobre $A$.
+Para que $X$ seja afim, é necessário e suficiente que $X\otimes_A B$ o seja.
+\end{corollary}
+
+\begin{proof}
+A condição é evidentemente necessária \sref[I]{I.3.2.2}; provaremos que é suficiente.
+Como $X$ é separado sobre $A$ e o morfismo $\Spec(B)\to\Spec(A)$ é plano, da Proposição~\sref{III.1.4.15} deduz-se que
+\[
+\label{III.1.4.16.1}
+  \HH^i(X\otimes_A B,\sh{F}\otimes_A B)=\HH^i(X,\sh{F})\otimes_A B
+  \tag{1.4.16.1}
+\]
+para todo $i\geq 0$ e todo $\sh{O}_X$-módulo quase-coerente $\sh{F}$.
+Se $X\otimes_A B$ é afim, o membro esquerdo de (\hyperref[III.1.4.16.1]{1.4.16.1}) é nulo para $i=1$; portanto, também o é $\HH^1(X,\sh{F})$, dado que $B$ é um $A$-módulo fielmente plano.
+Como $X$ é um esquema quase-compacto, a demonstração termina pelo critério de Serre \sref[II]{II.5.2.1}.
+\end{proof}
+
+\begin{proposition}[1.4.17]
+\label{III.1.4.17}
+Seja $X$ um pré-esquema e seja $0\to\sh{F}\xrightarrow{u}\sh{G}\xrightarrow{v}\sh{H}\to 0$ uma sucessão exata de $\sh{O}_X$-módulos.
+Se $\sh{F}$ e $\sh{H}$ são quase-coerentes, também o é $\sh{G}$.
+\end{proposition}
+
+\oldpage[III]{95}
+\begin{proof}
+A questão é local sobre $X$, de modo que pode supor-se que $X=\Spec(A)$ é afim; basta então provar que $\sh{G}$ satisfaz as condições (d1) e (d2) de \sref[I]{I.1.4.1} (com $V=X$).
+A verificação de (d2) é imediata, pois, se $t\in\Gamma(X,\sh{G})$ se anula ao restringi-lo a $D(f)$, o mesmo ocorre com sua imagem $v(t)\in\Gamma(X,\sh{H})$; portanto, existe um $m>0$ tal que $f^m v(t)=v(f^m t)=0$ \sref[I]{I.1.4.1}, e, como $\Gamma$ é exato à esquerda, $f^m t=u(s)$, onde $s\in\Gamma(X,\sh{F})$; como $u$ é injetivo, a restrição de $s$ a $D(f)$ é nula, logo por \sref[I]{I.1.4.1} existe um inteiro $n>0$ tal que $f^n s=0$; deduz-se finalmente que $f^{m+n}t=u(f^n s)=0$.
+
+Verifique-se agora (d1); seja $t'\in\Gamma(D(f),\sh{G})$; como $\sh{H}$ é quase-coerente, existe um inteiro $m$ tal que $f^m v(t')=v(f^m t')$ se prolongue a uma seção $z\in\Gamma(X,\sh{H})$ \sref[I]{I.1.4.1}.
+Mas, em virtude do Teorema~\sref{III.1.3.1} (o de (\textbf{I},~5.1.9.2)) aplicado ao $\sh{O}_X$-módulo quase-coerente $\sh{F}$, a sucessão $\Gamma(X,\sh{G})\to\Gamma(X,\sh{H})\to 0$ é exata; existe, pois, $t\in\Gamma(X,\sh{G})$ tal que $z=v(t)$; vê-se assim que $v(f^m t'-t'')=0$, denotando por $t''$ a restrição de $t$ a $D(f)$; portanto, $f^m t'-t''=u(s')$, onde $s'\in\Gamma(D(f),\sh{F})$.
+Mas, como $\sh{F}$ é quase-coerente, existe um inteiro $n>0$ tal que $f^n s'$ se prolongue a uma seção $s\in\Gamma(X,\sh{F})$; como $f^{m+n}t'-f^n t''=u(f^n s')$, vê-se que $f^{m+n}t'$ é a restrição a $D(f)$ de uma seção $f^n t+u(s)\in\Gamma(X,\sh{G})$, o que termina a demonstração.
+\end{proof}

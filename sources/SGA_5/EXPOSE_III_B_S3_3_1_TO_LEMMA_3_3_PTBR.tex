@@ -1,0 +1,43 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4626--4666 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{3. Redução ao caso moderado}
+
+\subsubsection*{3.1}
+Recordemos que o anel de base $\Lambda$ é anulado por um inteiro primo a $p$ e, portanto, é produto direto de anéis noetherianos $\Lambda_i$, sendo cada $\Lambda_i$ anulado por uma potência de um número primo $\ell_i\ne p$. Para todo esquema $S'$ sobre $S$, a categoria derivada $D(S',\Lambda)$ é produto das categorias $D(S',\Lambda_i)$, de modo que, para demonstrar a nulidade de 2.6.4, pode-se supor que $\Lambda$ seja anulado por uma potência de um número primo $\ell\ne p$. Por outro lado, pode-se supor que $P$ (resp. $Q$) seja limitado e tenha componentes localmente livres de tipo finito.
+
+\subsubsection*{3.2}
+Ponhamos $X-x=U$ e $Y-y=V$. Sejam $U''/U$ um recobrimento de Galois finito de grupo $G$ que trivializa as componentes de $P$, $H$ um $\ell$-subgrupo de Sylow de $G$, $U'=U''/H$ o recobrimento quociente e $X'$ o esquema regular estritamente local de dimensão um obtido normalizando $X$ em $U'$: $X'/X$ é um recobrimento finito e conexo de grau $d_1$ primo a $\ell$, e a representação de $\pi_1(U')$ definida pelas componentes de $P'=P|U'$ se fatora através de um $\ell$-grupo finito. Procedendo do mesmo modo com $Q$, obtém-se um recobrimento finito e conexo $Y'/Y$ de grau $d_2$ primo a $\ell$, que induz sobre $V$ um recobrimento étale $V'$ tal que a representação de $\pi_1(V')$ definida pelas componentes de $Q'=Q|V'$ se fatora através de um $\ell$-grupo finito. Seja
+\[
+d=d_1e_1=d_2e_2=\operatorname{ppcm}(d_1,d_2).
+\]
+Extraindo, se necessário, uma raiz $e_1$-ésima (resp. $e_2$-ésima) de um uniformizador de $X'$ (resp. $Y'$), pode-se supor que $X'$ (resp. $Y'$) tenha as mesmas propriedades que antes e, além disso, que $d_1=d_2=d$.
+
+Sejam $x'$ (resp. $y'$) o ponto fechado de $X'$ (resp. $Y'$), $T'$ a localização estrita de $X'\times_S Y'$ em $(x',y')$, $z'$ o ponto fechado de $T'$, $A'$ (resp. $B'$) a imagem inversa de $A$ (resp. $B$) em $T'$, e
+\[
+E'=(P\otimes_S Q)|T'-(X'\cup Y')
+   =(P'\otimes_S Q')|T'-(X'\cup Y').
+\]
+Tem-se então um quadrado comutativo de flechas de restrição
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+\R\Gamma(T-(Y\cup A),g_!(E)|T-(Y\cup A))
+ \arrow[r,"b^*"] \arrow[d]
+&
+\R\Gamma(B-z,g_!(E)|B-z) \arrow[d,"(1)"]\\
+\R\Gamma(T'-(Y'\cup A'),g'_!(E')|T'-(Y'\cup A'))
+ \arrow[r,"b'{}^*"]
+&
+\R\Gamma(B'-z',g'_!(E')|B'-z') ,
+\end{tikzcd}
+\]
+onde $b':B'\to T'$ e $g':T'-(X'\cup Y')\to T'-Y'$ são as inclusões. O recobrimento $T'/T$ é finito, de grau $d^2$, e étale fora de $X\cup Y$; portanto, induz um recobrimento étale de grau $d^2$ de $B'-z'$ sobre $B-z$. A composta de (1) e do morfismo de traço
+\[
+\R\Gamma(B'-z',g'_!(E')|B'-z')
+ \longrightarrow
+\R\Gamma(B-z,g_!(E)|B-z)
+\]
+é, portanto, a multiplicação por $d^2$, que é um isomorfismo, pois $\ell$ não divide $d$. Para demonstrar que a flecha 2.6.4 é nula, basta, pois, demonstrar que $b'{}^*=0$. Ficamos assim reduzidos ao caso em que a representação de $\pi_1(U)$ (resp. $\pi_1(V)$) definida pelas componentes de $P$ (resp. $Q$) se fatora através de um $\ell$-grupo finito, contanto que se verifique que $A'$ e $B'$ satisfazem as hipóteses de posição geral de 1.2. Isso resultará do lema seguinte:
+
+\begin{statement}{Lema 3.3}
+Sob as hipóteses de 1.2, sendo $a$ e $b$ imersões fechadas, sejam $X'/X$ e $Y'/Y$ recobrimentos finitos de esquemas regulares estritamente locais de dimensão um sobre $S$, do mesmo grau $d$. Denotemos por $A'$ (resp. $B'$) a imagem inversa de $A$ (resp. $B$) em $X'\times_S Y'$. Então cada um dos pares $(A',B')$, $(A',X')$ e $(Y',B')$ está em posição geral (no sentido de 1.2)~(*)\footnote{(*) com o abuso de notação habitual $X'=X'\times\{y'\}$, etc. (onde $x'$ (resp.\ $y'$) é o ponto fechado de $X'$ (resp.\ $Y'$)).}.
+\end{statement}

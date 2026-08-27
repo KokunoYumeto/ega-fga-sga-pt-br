@@ -1,0 +1,20 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 5504--5521 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Na situação de 5.10, se $\varphi$, $\psi$ são endomorfismos respectivos de $A$, $B$, compatíveis com $A\to B$, existe uma única flecha
+\[
+\Tr_A:B_{\natural,\psi}\longrightarrow A_{\natural,\varphi}
+\]
+que torna comutativo o quadrado análogo a 5.10.2
+\begin{equation}\tag{5.13.4}
+\begin{tikzcd}[column sep=large,row sep=large]
+{}_{(\psi)}B=\uHom_B(B,{}_{(\psi)}B) \arrow[r,"\Tr_{B,\psi}"] \arrow[d] & B_{\natural,\psi} \arrow[d,"\Tr_A"]\\
+\uHom_A(B,{}_{(\varphi)}A)\otimes_AB \arrow[r,"\mathrm{ev}"'] & A_{\natural,\varphi},
+\end{tikzcd}
+\end{equation}
+onde $\mathrm{ev}$ é a flecha de avaliação e a flecha vertical da esquerda é a restrição de escalares. Define-se uma flecha análoga a 5.10.5, substituindo $A\otimes_KM$ (resp. $B\otimes_KM$) por ${}_{(\varphi)}A\otimes_KM$ (resp. ${}_{(\psi)}B\otimes_KM$), e têm-se compatibilidades análogas a 5.10.6, 5.10.9 e 5.10.11, cuja formulação se deixa ao cuidado do leitor.
+
+Sejam $G$ um grupo finito e $\varphi$ um endomorfismo de $G$. Para $g\in G$, denotemos por $Z_{g,\varphi}$ o $\varphi$-centralizador de $g$ em $G$, isto é, o conjunto dos $x\in G$ tais que $\varphi(x)gx^{-1}=g$. Ponhamos $A=K[G]$, e sejam $E\in\ob D(A)_{\mathrm{parf}}$, $M\in\ob D^b(K)$. Das compatibilidades anteriores deduz-se facilmente que, para $u\in\uHom_A(E,{}_{(\varphi)}(M\lten_KE))$, $g\in G$, tem-se
+\begin{equation}\tag{5.13.5}
+\Tr_K(gu)=|Z_{g^{-1},\varphi}|\,\Tr_{A,\varphi}(u)(g^{-1}),
+\end{equation}
+deixando-se ao leitor os detalhes da verificação.

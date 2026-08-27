@@ -1,0 +1,89 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 3774--3860 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{6.4}
+Sejam, para $i=1,2$, $X_i$ um $S$-esquema, $X=X_1\times_SX_2$, e sejam $p_i:X\to X_i$, $q_i:X_i\to S$ as projeções canônicas. Supõe-se que $X_1$ e $X_2$ sejam Tor-independentes e que $q_1$ tenha dimensão Tor finita. Sejam, por outro lado, $L_i\in\operatorname{ob}D(X_i)_{\mathrm{parf}/S}$. Pelo análogo de 2.2.4, tem-se uma flecha canônica
+\begin{equation}
+\tag{6.4.1}
+DL_1\otimes_S^{\mathbf L}L_2\longrightarrow \uRHom(L_1\otimes_S^{\mathbf L}\cO_{X_2},q_1^!\cO_S\otimes_S^{\mathbf L}L_2),
+\end{equation}
+de onde, compondo-se com o isomorfismo de Künneth (6.3) $q_1^!\cO_S\otimes_S^{\mathbf L}L_2\xrightarrow{\sim}p_2^!L_2$, obtém-se uma flecha
+\begin{equation}
+\tag{6.4.2}
+DL_1\otimes_S^{\mathbf L}L_2\longrightarrow\uRHom(p_1^*L_1,p_2^!L_2).
+\end{equation}
+A flecha 6.4.1 (e, portanto, também 6.4.2) é um isomorfismo, como se vê reduzindo ao caso em que $q_1$ é uma imersão fechada.
+
+Como em 3.1.2, poremos
+\begin{equation}
+\tag{6.4.3}
+\uRHom(p_1^*L_1,p_2^!L_2)=\uRHom_S(L_1,L_2),\qquad
+\Hom(p_1^*L_1,p_2^!L_2)=\Hom_S(L_1,L_2),
+\end{equation}
+e chamaremos os elementos de $\Hom_S(L_1,L_2)$ de \emph{correspondências cohomológicas de $L_1$ a $L_2$}. Se $c:C\to X$ é uma correspondência (própria, na prática), tem-se, pela fórmula de indução ([8] III 8.8)\footnote{A hipótese de que exista uma fatorização como imersão fechada seguida de um morfismo suave em (loc. cit.) é desnecessária.},
+\begin{equation}
+\tag{6.4.4}
+c^!\uRHom(p_1^*L_1,p_2^!L_2)=\uRHom(c_1^*L_1,c_2^!L_2),
+\end{equation}
+e os elementos de
+\[
+\Hom(c_1^*L_1,c_2^!L_2)=H^0(X,c_*c^!\uRHom(p_1^*L_1,p_2^!L_2))
+\]
+serão chamados \emph{correspondências (cohomológicas) de $L_1$ a $L_2$ com suporte em $C$}. Veremos mais adiante exemplos análogos aos de 3.2.
+
+\subsection*{6.5}
+Sejam, para $i=1,2$, $f_i:X_i\to Y_i$ um $S$-morfismo próprio e $f=f_1\times_Sf_2:X\to Y$. Supõe-se que $X_i$ e $Y_i$ têm dimensão Tor finita sobre $S$, e que os quadrados de 2.4.0 são Tor-independentes. Sejam $L_i\in\operatorname{ob}D(X_i)_{\mathrm{parf}/S}$. Como em 3.3.1, define-se um isomorfismo
+\begin{equation}
+\tag{6.5.1}
+f_*\uRHom_S(L_1,L_2)\xrightarrow{\sim}\uRHom_S(f_{1*}L_1,f_{2*}L_2),
+\end{equation}
+de onde, aplicando $\R\Gamma(Y,-)$, obtém-se um isomorfismo
+\begin{equation}
+\tag{6.5.2}
+f_*:\Hom_S(L_1,L_2)\xrightarrow{\sim}\Hom_S(f_{1*}L_1,f_{2*}L_2),
+\end{equation}
+que denotaremos simplesmente por $u\mapsto u_*$ quando $Y_1=Y_2=S$. Tem-se um diagrama comutativo análogo a 3.4.1, como se deduz do análogo de 2.5 assinalado em 6.3. Dele se deduz um corolário análogo a 6.5 e, quando $Y_1=Y_2=S$ é o espectro de um corpo, uma descrição, análoga à de 3.6, das operações $u_*$ sobre a cohomologia.
+
+Dado um quadrado comutativo 3.7.1, com $c$ próprio, tem-se, para $K\in\operatorname{ob}D^+(C)$, uma flecha canônica
+\begin{equation}
+\tag{6.5.3}
+f_*c_*c^!K\longrightarrow d_*d^!f_*K,
+\end{equation}
+definida do mesmo modo que 3.7.3 (o isomorfismo $g_*'c'^!\xrightarrow{\sim}d^!f_*$ também é válido no presente contexto: define-se a flecha por transposição de uma flecha de mudança de base e verifica-se que ela é um isomorfismo reduzindo-se aos casos em que $d$ é suave e em que é uma imersão fechada). Tomando $K=\uRHom_S(L_1,L_2)$, de 6.5.3 e 6.5.1 deduzem-se as flechas canônicas
+\begin{equation}
+\tag{6.5.4}
+f_*c_*\uRHom(c_1^*L_1,c_2^!L_2)\longrightarrow d_*\uRHom(d_1^*(f_{1*}L_1),d_2^!(f_{2*}L_2)),
+\end{equation}
+\begin{equation}
+\tag{6.5.5}
+f_*:\Hom(c_1^*L_1,c_2^!L_2)\longrightarrow\Hom(d_1^*(f_{1*}L_1),d_2^!(f_{2*}L_2)),
+\end{equation}
+análogas a 3.7.5 e 3.7.6.
+
+\subsection*{6.6}
+Sejam, para $i=1,2$, $X_i$ $S$-esquemas de dimensão Tor finita e Tor-independentes, e $L_i\in\operatorname{ob}D(X_i)_{\mathrm{parf}/S}$. O produto tensorial externo das flechas de avaliação $DL_i\otimes^{\mathbf L}L_i\to K_{X_i}$ define, como em 4.1, emparelhamentos ``produtos cup'' análogos a 4.1.2, 4.1.3 e 4.1.4.
+
+Sejam $c:C\to X$ e $d:D\to X$ morfismos próprios, $e=c\times_Xd:E\to X$, e $P,Q\in\operatorname{ob}D(X)_{\mathrm{parf}/S}$. Segundo 6.1.1, temos
+\[
+c_*c^!P=\uRHom(\R c_*\cO_C,P)
+\]
+(e um isomorfismo análogo para $d$). Supondo que $c$ e $d$ tenham dimensão Tor finita nos pontos situados sobre $e(E)$, deduz-se, por produto tensorial, uma flecha canônica
+\begin{equation}
+\tag{6.6.1}
+c_*c^!P\otimes^{\mathbf L}d_*d^!Q\longrightarrow
+\uRHom(\R c_*\cO_C\otimes^{\mathbf L}\R d_*\cO_D,P\otimes^{\mathbf L}Q).
+\end{equation}
+Quando $c$ e $d$ são Tor-independentes, o segundo membro se reescreve, mediante Künneth e 6.1.1, como $e_*e^!(P\otimes^{\mathbf L}Q)$, e 6.6.1 toma a forma 4.2.3. Para $P=DL_1\otimes_S^{\mathbf L}L_2$ e $Q=L_1\otimes_S^{\mathbf L}DL_2$, de 6.6.1 e dos emparelhamentos indicados acima deduzem-se emparelhamentos análogos a 4.2.4 e 4.2.5:
+\begin{equation}
+\tag{6.6.2}
+c_*\uRHom(c_1^*L_1,c_2^!L_2)\otimes^{\mathbf L}d_*\uRHom(d_2^*L_2,d_1^!L_1)
+\longrightarrow\uRHom(\R c_*\cO_C\otimes^{\mathbf L}\R d_*\cO_D,K_X),
+\end{equation}
+\begin{equation}
+\tag{6.6.3}
+\langle\ ,\ \rangle:\Hom(c_1^*L_1,c_2^!L_2)\otimes\Hom(d_2^*L_2,d_1^!L_1)
+\longrightarrow\Hom(\R c_*\cO_C\otimes^{\mathbf L}\R d_*\cO_D,K_X).
+\end{equation}
+Assim como os emparelhamentos de 4.2, estes são compatíveis com a localização étale. Quando $c$ e $d$ são Tor-independentes, o segundo membro de 6.6.2 (resp. 6.6.3) identifica-se canonicamente com $e_*K_E$ (resp. $H^0(E,K_E)$).
+
+O teorema 4.4 tem o seguinte análogo:
+ 

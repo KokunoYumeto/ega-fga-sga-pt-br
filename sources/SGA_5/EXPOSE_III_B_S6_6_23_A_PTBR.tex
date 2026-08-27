@@ -1,0 +1,67 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6483--6547 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Proposição 6.23}
+Sob as hipóteses de 6.21, suponhamos dada, além disso, uma imersão aberta
+\[
+i:V\hookrightarrow Y
+\]
+tal que $(fc_1)^{-1}(V)$ seja conexo, que $d_1^{-1}(V)\subset d_2^{-1}(V)$, e que $f$ induza um recobrimento principal de Galois de grupo $G$,
+\[
+f_V:U=f^{-1}(V)\to V.
+\]
+Suponhamos ainda que $M$ seja da forma $M=i_!E$, onde $E\in\Ob D(V)$, e que se tenha um isomorfismo
+\[
+\alpha:f_V^*E\xrightarrow{\sim}\Lambda_X\lten_{\Lambda}E_0
+\]
+de $D(G,X)$, com $E_0\in\Ob D(\Lambda[G])$, perfeito sobre $\Lambda$. Seja
+\[
+v\in\Hom(d_1^*M,d_2^*M)
+\]
+como em 6.21, e denotemos por
+\[
+v_0\in\Hom_{\Lambda[G]}(E_0,E_0)
+\]
+o homomorfismo definido, graças a $\alpha$, por $f^*v|c_1^{-1}(U)$. Então, se $\underline c_{U,X}$ designa a correspondência definida em 6.14.3, tem-se, com a notação 6.20.2,
+\begin{equation}
+\Tr_{\Lambda}(v^!)
+=
+\sum_{g\in G_{\natural}}
+\Tr_{\Lambda[G]}(f_*\underline c_{U,X})(g^{-1})\Tr_{\Lambda}(gv_0).
+\tag{6.23.1}
+\end{equation}
+\end{statement}
+
+Observe-se que, graças ao caráter central de $\Tr_{\Lambda}$, o segundo membro não depende da escolha de $\alpha$.
+
+Pela fórmula de projeção
+\[
+f_*f^*\Lambda_Y\lten M\xrightarrow{\sim}f_*f^*M
+\]
+e 6.15, $M$ satisfaz as hipóteses de 6.22. Por outro lado, $\alpha$ define um isomorfismo
+\[
+f^*M\xrightarrow{\sim}\Lambda_{U,X}\otimes E_0
+\]
+mediante o qual $(f^*v)^!$ se identifica com o produto tensorial externo $\underline c_{U,X}\otimes v_0$. Pela fórmula de projeção, $f_*f^*M$ identifica-se, portanto, com $f_*(\Lambda_{U,X})\otimes E_0$, e $f_*((f^*v)^!)$ com o produto tensorial externo $f_*\underline c_{U,X}\otimes v_0$. Para $g\in G$, a correspondência $Z_g$-equivariante $gf_*((f^*v)^!)$ identifica-se, portanto, com
+\[
+gf_*\underline c_{U,X}\otimes gv_0.
+\]
+Como, de acordo com 6.10.4, tem-se
+\[
+\Tr_{\Lambda[G]}(f_*((f^*v)^!))(g^{-1})
+=
+\Tr_{\Lambda[Z_g]}(gf_*((f^*v)^!))(e),
+\]
+basta, levando em conta 6.22.1, demonstrar a fórmula
+\[
+\Tr_{\Lambda[Z_g]}(gf_*\underline c_{U,X}\otimes gv_0)(e)
+=
+\Tr_{\Lambda[G]}(f_*\underline c_{U,X})(g^{-1})\Tr_{\Lambda}(gv_0),
+\]
+ou, o que vem a ser o mesmo de acordo com 6.10.4,
+\begin{equation}
+\Tr_{\Lambda[Z_g]}(gf_*\underline c_{U,X}\otimes gv_0)(e)
+=
+\Tr_{\Lambda[Z_g]}(gf_*\underline c_{U,X})(e)\Tr_{\Lambda}(gv_0).
+\tag{6.23.2}
+\end{equation}
+Substituindo, se necessário, $G$ por $Z_g$, pode-se supor que $g=e$ e, voltando à definição dos traços, vê-se que basta demonstrar o lema seguinte.

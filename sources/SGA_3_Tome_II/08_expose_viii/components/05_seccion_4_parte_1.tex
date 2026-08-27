@@ -1,0 +1,305 @@
+% Tradução brasileira revista a partir do workpass espanhol congelado;
+% a fonte permanece em source_es.
+% SGA 3, Exposé VIII, tradução brasileira: §4 até a primeira frase
+% da demonstração do Corolário 4.7.
+% Autoridade: Polo--Gille Exp8-8nov09.pdf, pp. locais 11--13,
+% leitor completo pp. 627--629.
+
+\SGARefTarget{sga3:viii:section:4}\section*{4. Torsores sob um grupo diagonalizável}
+\addcontentsline{toc}{section}{4. Torsores sob um grupo diagonalizável}
+
+\SGARefTarget{sga3:viii:section:4:problem:01}Seja \(S\) um pré-esquema e seja
+\(G=D_S(M)\) um grupo diagonalizável sobre \(S\). Determinaremos os
+\(G\)-torsores (ou fibrados principais homogêneos sob \(G\)) sobre \(S\)
+para a topologia fielmente plana e quase compacta; cf. Exposé IV,
+\SGARefLink{sga3:iv:subsection:5:1}{5.1}. Recordemos que um pré-esquema
+\(P\) sobre \(S\), com grupo de operadores \(S\)-grupal \(G\), chama-se
+\emph{torsor} ou \emph{fibrado principal homogêneo} se todo ponto de \(S\)
+admite uma vizinhança aberta \(U\) e um morfismo fielmente plano e
+quase compacto \(S'\to U\) tais que
+\[
+  P'=P\times_SS'
+\]
+é isomorfo, como objeto com operadores, a
+\[
+  G'=G\times_SS',
+\]
+onde \(G'\) atua sobre si mesmo por translações à direita. Como
+\(G\) é afim sobre \(S\), SGA 1, VIII 5.6 implica que \(P\) é
+necessariamente afim sobre \(S\). Além disso, como o próprio \(G\) é fielmente
+plano e quase compacto sobre \(S\), \(P\) é principal homogêneo sob \(G\)
+se, e somente se, for formalmente principal homogêneo e, além disso, fielmente plano e
+quase compacto sobre \(S\) (cf. IV,
+\SGARefLink{sga3:iv:proposition:5:1:6}{5.1.6}).
+
+Recordemos também
+(\SGARefLink{sga3:i:proposition:4-7-3}{Exposé I, 4.7.3}) que dar um
+\(S\)-pré-esquema \(P\), afim sobre \(S\), com grupo de operadores
+\(G=D_S(M)\), equivale a dar uma álgebra comutativa quase-coerente
+graduada por \(M\) sobre \(S\). Em outras palavras, equivale a dar uma
+álgebra quase-coerente \(\mathscr A\) sobre \(S\), juntamente com uma
+decomposição em soma direta como módulo
+\[
+  \mathscr A=\coprod_{m\in M}\mathscr A_m,
+\]
+tal que
+\[
+  \mathscr A_m\mathbin{\cdot}\mathscr A_{m'}
+  \subseteq\mathscr A_{m+m'}
+  \qquad\text{para }m,m'\in M.
+\]
+Feita essa observação, a resposta ao
+\SGARefLink{sga3:viii:section:4:problem:01}{problema anterior} é a
+seguinte.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:proposition:4:1}\textbf{Proposição 4.1.}
+\textit{Seja \(P\) o pré-esquema com grupo de operadores sobre \(S\)
+\(G=D_S(M)\), definido pela álgebra \(M\)-graduada \(\mathscr A\).
+Então \(P\) é um fibrado principal homogêneo sob \(G\) se, e somente se,
+\(\mathscr A\) satisfaz as condições seguintes:}
+\begin{enumerate}
+  \item[(a)]\SGARefTarget{sga3:viii:proposition:4:1:item:a:01}
+  \textit{para todo \(m\in M\), \(\mathscr A_m\) é um módulo invertível
+  sobre \(S\);}
+
+  \item[(b)]\SGARefTarget{sga3:viii:proposition:4:1:item:b:01}
+  \textit{para \(m,m'\in M\), o homomorfismo}
+  \[
+    \mathscr A_m\otimes_{\mathcal O_S}\mathscr A_{m'}
+    \longrightarrow\mathscr A_{m+m'}
+  \]
+  \textit{induzido pela multiplicação em \(\mathscr A\) é um
+  isomorfismo.}
+\end{enumerate}
+
+A necessidade de \SGARefLink{sga3:viii:proposition:4:1}{essas condições}
+deduz-se imediatamente por descida, pois elas são satisfeitas quando \(P\)
+é o fibrado principal homogêneo trivial, isto é, quando
+\(\mathscr A=\mathcal O_S(M)\). Para a suficiência, observe-se que
+\SGARefLink{sga3:viii:proposition:4:1:item:a:01}{(a)} já implica que \(P\)
+é fielmente plano sobre \(S\); de qualquer modo, é quase compacto sobre \(S\),
+pois é afim sobre \(S\). Resta, portanto, verificar que \(P\) é
+formalmente principal homogêneo sob \(G\), isto é, que o morfismo usual
+\SGARefTarget{sga3:viii:proposition:4:1:diagram:01}
+\[
+  P\times_SG\longrightarrow P\times_SP
+\]
+é um isomorfismo. Em termos de álgebras graduadas,
+\SGARefLink{sga3:viii:proposition:4:1:diagram:01}{esse morfismo} é dado
+explicitamente pelo homomorfismo
+\SGARefTarget{sga3:viii:proposition:4:1:diagram:02}
+\[
+  \mathscr A\otimes\mathscr A
+  \longrightarrow
+  \mathscr A(M)=\mathscr A\otimes\mathcal O_S(M).
+\]
+
+No bigrau \((m,n)\), onde \(m,n\in M\), ele é dado por
+\[
+  x_m\otimes y_n\longmapsto x_my_n\otimes e_n.
+\]
+No nível dos graus,
+\SGARefLink{sga3:viii:proposition:4:1:diagram:02}{esse homomorfismo} é
+compatível com o homomorfismo \(M\times M\to M\times M\) dado por
+\[
+  (m,n)\longmapsto(m+n,n),
+\]
+o que mostra que
+\SGARefLink{sga3:viii:proposition:4:1:item:b:01}{(b)} exprime precisamente,
+e independentemente de
+\SGARefLink{sga3:viii:proposition:4:1:item:a:01}{(a)}, que \(P\) é
+formalmente principal homogêneo, e prova
+\SGARefLink{sga3:viii:proposition:4:1}{4.1}.
+
+A descida fielmente plana também fornece:
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:4:2}\textbf{Corolário 4.2.}
+\textit{As condições de \SGARefLink{sga3:viii:proposition:4:1}{4.1}
+implicam que o homomorfismo}
+\[
+  \mathcal O_S\longrightarrow\mathscr A_0
+\]
+\textit{é um isomorfismo.}
+
+Por exemplo, se \(M=\mathbb Z\), então, sob as condições de
+\SGARefLink{sga3:viii:proposition:4:1}{4.1}, a álgebra \(\mathscr A\) fica
+essencialmente determinada por \(\mathscr A_1=\mathscr L\), a saber,
+\[
+  \mathscr A\simeq\coprod_{n\in\mathbb Z}\mathscr L^{\otimes n}
+\]
+como álgebras graduadas. Obtemos assim o resultado conhecido:
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:4:3}\textbf{Corolário 4.3.}
+\textit{A categoria dos fibrados principais homogêneos \(P\) sobre
+\(S\) sob \(\mathbb G_{m,S}\) é equivalente à categoria dos
+módulos invertíveis \(\mathscr L\) sobre \(S\), sendo os morfismos em
+ambas as categorias os isomorfismos das estruturas consideradas. Obtêm-se
+funtores quase inversos associando a \(P\) a componente de grau
+\(1\) de sua álgebra afim \(\mathbb Z\)-graduada, e associando a
+\(\mathscr L\) o espectro da álgebra \(\mathbb Z\)-graduada}
+\[
+  \coprod_{n\in\mathbb Z}\mathscr L^{\otimes n}.
+\]
+
+Em particular:
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:4:4}\textbf{Corolário 4.4.}
+\textit{O grupo das classes de isomorfia de fibrados principais homogêneos
+sobre \(S\) sob \(\mathbb G_{m,S}\) é isomorfo ao grupo
+\(\operatorname{Pic}(S)\) das classes de isomorfia de módulos invertíveis
+sobre \(S\), isto é, a}
+\[
+  H^1(S,\mathcal O_S^\times).
+\]
+
+Como \(\mathbb G_{m,S}\) é o esquema de automorfismos do módulo
+\(\mathcal O_S\), o Corolário
+\SGARefLink{sga3:viii:corollary:4:4}{4.4} equivale ao
+\SGARefLink{sga3:viii:corollary:4:5}{enunciado seguinte}, uma das formas
+do «\SGARefLink{sga3:viii:corollary:4:5}{Teorema 90}» de Hilbert.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:4:5}\textbf{Corolário 4.5.}
+\textit{Todo fibrado principal homogêneo sobre \(S\) sob \(\mathbb G_m\)
+é localmente trivial para a topologia de Zariski.}
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:remark:4:5:1}\textbf{Observação 4.5.1.}
+\SGARefLink{sga3:viii:corollary:4:5}{O enunciado anterior} deixa de ser
+verdadeiro, em geral, para um grupo como \(\mu_n\), ou para uma «forma
+torcida» de \(\mathbb G_m\). Por exemplo, a única forma torcida de
+\(\mathbb G_m\) sobre o corpo \(\mathbb R\) dos números reais tem
+primeiro grupo de coomologia igual a \(\mathbb Z/2\mathbb Z\).
+
+\footnote{Nota do editor: foi acrescentado o que segue.}
+De fato, seja \(\mathbb S^1\) o núcleo do morfismo norma
+\[
+  N:\prod_{\mathbb C/\mathbb R}\mathbb G_{m,\mathbb C}
+  \longrightarrow\mathbb G_{m,\mathbb R};
+\]
+é uma forma torcida por \(\mathbb C/\mathbb R\) de
+\(\mathbb G_{m,\mathbb R}\). A equação \(N(z)=-1\) em
+\(\prod_{\mathbb C/\mathbb R}(\mathbb G_{m,\mathbb C})\) define um torsor
+\(X\) sob \(\mathbb S^1\) sobre \(\operatorname{Spec}(\mathbb R)\),
+localmente trivial para a topologia étale, mas não trivial, pois
+\(X(\mathbb R)=\varnothing\). Mostremos que
+\[
+  H^1_{\mathrm{\acute et}}(\mathbb R,\mathbb S^1)
+  \simeq\mathbb Z/2\mathbb Z.
+\]
+Há uma sequência exata de grupos algébricos comutativos lisos sobre
+\(\mathbb R\)
+\SGARefTarget{sga3:viii:remark:4:5:1:diagram:01}
+\[
+  1\longrightarrow\mathbb S^1
+  \longrightarrow\prod_{\mathbb C/\mathbb R}\mathbb G_{m,\mathbb C}
+  \longrightarrow\mathbb G_{m,\mathbb R}
+  \longrightarrow1,
+\]
+que dá origem a uma sequência exata longa de coomologia étale (ou de
+coomologia de Galois):
+\SGARefTarget{sga3:viii:remark:4:5:1:diagram:02}
+\[
+\begin{aligned}
+  0\longrightarrow\mathbb S^1(\mathbb R)
+  &\longrightarrow\mathbb C^\times
+   \xrightarrow{N}\mathbb R^\times
+   \longrightarrow H^1_{\mathrm{\acute et}}(\mathbb R,\mathbb S^1)\\
+  &\longrightarrow
+   H^1_{\mathrm{\acute et}}\!
+   \left(\mathbb R,
+     \prod_{\mathbb C/\mathbb R}\mathbb G_{m,\mathbb C}\right)
+   \longrightarrow\cdots .
+\end{aligned}
+\]
+Ora (veja-se, por exemplo, XXIV,
+\SGARefLink{sga3:xxiv:proposition:8-4}{8.4}),
+\[
+  H^1_{\mathrm{\acute et}}\!
+  \left(\mathbb R,
+    \prod_{\mathbb C/\mathbb R}\mathbb G_{m,\mathbb C}\right)
+  \simeq
+  H^1_{\mathrm{\acute et}}(\mathbb C,\mathbb G_{m,\mathbb C}),
+\]
+e este último grupo é zero por
+\SGARefLink{sga3:viii:corollary:4:5}{4.5} (ou, neste caso, porque
+\(\mathbb C\) é algebricamente fechado). Obtém-se, portanto, um
+isomorfismo
+\[
+  H^1_{\mathrm{\acute et}}(\mathbb R,\mathbb S^1)
+  \simeq\mathbb R^\times/N(\mathbb C^\times)
+  \simeq\{\pm1\}.
+\]
+
+Precisaremos do \SGARefLink{sga3:viii:proposition:4:6}{resultado seguinte}
+na \SGARefLink{sga3:viii:section:5}{seção seguinte}.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:proposition:4:6}\textbf{Proposição 4.6.}
+\textit{Sob as condições de
+\SGARefLink{sga3:viii:proposition:4:1}{4.1}, as condições
+\SGARefLink{sga3:viii:proposition:4:1:item:a:01}{(a)} e
+\SGARefLink{sga3:viii:proposition:4:1:item:b:01}{(b)} equivalem às
+condições seguintes:}
+\begin{enumerate}
+  \item[\((a')\)]\SGARefTarget{sga3:viii:proposition:4:6:item:aprime:01}
+  \textit{o homomorfismo \(\mathcal O_S\to\mathscr A_0\) é um
+  isomorfismo;}
+
+  \item[\((b')\)]\SGARefTarget{sga3:viii:proposition:4:6:item:bprime:01}
+  \textit{para todo \(m\in M\) (basta exigi-lo para os elementos de um
+  sistema de geradores de \(M\)), tem-se}
+  \[
+    \mathscr A_m\mathbin{\cdot}\mathscr A_{-m}=\mathscr A_0.
+  \]
+\end{enumerate}
+
+A necessidade é clara em virtude de
+\SGARefLink{sga3:viii:corollary:4:2}{4.2}.\footnote{Nota do editor: foi
+corrigido «\SGARefLink{sga3:viii:proposition:4:1}{4.1}» para
+«\SGARefLink{sga3:viii:corollary:4:2}{4.2}».} Ficamos assim reduzidos a
+demonstrar o \SGARefLink{sga3:viii:corollary:4:7}{corolário seguinte}.
+
+\medskip
+\noindent\SGARefTarget{sga3:viii:corollary:4:7}\textbf{Corolário 4.7.}
+\textit{Seja}
+\[
+  A=\coprod_{n\in\mathbb Z}A_n
+\]
+\textit{um anel \(\mathbb Z\)-graduado tal que}
+\[
+  A_1\mathbin{\cdot}A_{-1}=A_0.
+\]
+\textit{Então os \(A_n\) são \(A_0\)-módulos invertíveis e, para
+\(n,n'\in\mathbb Z\), o homomorfismo}
+\[
+  A_n\otimes_{A_0}A_{n'}\longrightarrow A_{n+n'}
+\]
+\textit{induzido pela multiplicação em \(A\) é um isomorfismo.}
+
+Por hipótese, existem \(f_i\in A_1\) e \(g_i\in A_{-1}\) tais que
+\SGARefTarget{sga3:viii:corollary:4:7:eq:star:01}
+\[
+  \makebox[\displaywidth][s]{%
+    \(\text{(*)}\)\hfill
+    \(\displaystyle\sum_i f_ig_i=1.\)\hfill
+    \(\phantom{\text{(*)}}\)%
+  }
+\]
+Como a afirmação a demonstrar é local sobre
+\(\operatorname{Spec}(A_0)\),\footnote{Nota do editor: a passagem seguinte
+foi desenvolvida.} e como
+\(\SGARefLink{sga3:viii:corollary:4:7:eq:star:01}{(*)}\) mostra que
+\(\operatorname{Spec}(A_0)\) é coberto pelos abertos afins
+\(D(f_ig_i)\), reduzimo-nos ao caso em que há um elemento \(f\in A_1\)
+invertível em \(A\). Então, para todo \(n\in\mathbb Z\), \(f^n\) é um
+elemento invertível de \(A_n\), e define portanto um isomorfismo
+\[
+  A_0\xrightarrow{\ \sim\ }A_n,
+  \qquad h\longmapsto f^nh.
+\]
+Além disso,

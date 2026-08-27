@@ -1,0 +1,31 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 15193--15221 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+A existência dos sistemas $(K'_\nu)$ e $(h'_\nu)$ baseia-se em dois lemas, nos quais se consideram um anel comutativo $A$, um ideal $I$ de $A$ e o funtor
+\[
+T:L\longmapsto L\otimes_A A_0
+\]
+($L$ complexo de $A$-módulos limitado à direita), com $A_0=A/I$.
+
+\begin{statement}{Lema 1}
+Suponhamos que o ideal $I$ seja nilpotente. Consideremos um complexo $L\in D^-(A)$ plano em cada grau, um complexo $M\in D^-(A_0)$ projetivo em cada grau e um isomorfismo
+\[
+u:T(L)\xrightarrow{\sim}M
+\]
+em $D^-(A_0)$. Existem um complexo de $A$-módulos $L'$, limitado à direita e projetivo em cada grau, um isomorfismo
+\[
+v:L\xrightarrow{\sim}L'
+\]
+em $D^-(A)$ e um isomorfismo de complexos
+\[
+w:T(L')\xrightarrow{\sim}M,
+\]
+tais que $u=w\circ T(v)$ em $D^-(A_0)$.
+\end{statement}
+
+\begin{statement}{Observação}
+Se $M$ for livre, respectivamente de tipo finito, em cada grau, o complexo $L'$ também será livre, respectivamente de tipo finito, em cada grau. Com efeito, se um $A$-módulo plano $N$ for tal que $T(N)$ seja livre, respectivamente de tipo finito, demonstra-se facilmente que $N$ é livre, respectivamente de tipo finito (Bourbaki, Alg. comm., cap.~II, §3, prop.~5). Assinalemos o seguinte corolário: seja $L\in\Ob D^-(A)$ tal que $L\lten_A A_0$ seja um complexo de $A_0$-módulos pseudocoerente, respectivamente perfeito, isto é, isomorfo em $D^-(A)$ a um complexo limitado superiormente, respectivamente limitado, e projetivo de tipo finito em cada grau. Então $L$ é um complexo de $A$-módulos pseudocoerente, respectivamente perfeito.
+\end{statement}
+
+\begin{statement}{Lema 2}
+Consideremos um complexo de $A$-módulos $L$, limitado à direita e projetivo em cada grau, munido de um endomorfismo $\varphi$, e um endomorfismo $\varphi_0$ de $M=T(L)$ que coincide com $T(\varphi)$ no sentido da categoria derivada $D^-(A_0)$. Existe um endomorfismo $\varphi'$ de $L$ que coincide com $\varphi$ no sentido de $D^-(A)$ e satisfaz $T(\varphi')=\varphi_0$.
+\end{statement}

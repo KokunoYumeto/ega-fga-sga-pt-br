@@ -1,0 +1,31 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 14739--14767 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{n\textsuperscript{o} 3. Comportamento dos produtos}
+
+Sejam $X$ e $X'$ pré-esquemas de característica $p$; seu produto $X\times X'$ é idêntico ao produto fibrado $X\times_eX'$, onde $e=\Spec(\mathbb F_p)$. É claro que
+\[
+\fr_{X\times X'}=\fr_X\times\fr_{X'}=(\fr_X\times\id_{X'})\circ(\id_X\times\fr_{X'})
+=(\id_X\times\fr_{X'})\circ(\fr_X\times\id_{X'}).
+\]
+Deduz-se imediatamente que, para todo $X$-pré-esquema $Y$ e todo $X'$-pré-esquema $Y'$, tem-se um isomorfismo canônico
+\[
+(Y\times Y')^{(p/X\times X')}\simeq Y^{(p/X)}\times Y'{}^{(p/X')},
+\]
+mediante este isomorfismo, pode-se escrever:
+\[
+\Fr_{Y\times Y'/X\times X'}=\Fr_{Y/X}\times\Fr_{Y'/X'}.
+\]
+
+\begin{statement}{Proposição 3}
+Sejam $X$ e $X'$ pré-esquemas de característica $p$, $\Lambda$ um anel comutativo, $F$ um feixe de $\Lambda$-módulos sobre $X_{\et}$ e $F'$ um feixe de $\Lambda$-módulos sobre $X'_{\et}$. Tem-se
+\[
+\Fr^*_{F\boxt_\Lambda F'/X\times X'}
+=\Fr^*_{F/X}\otimes\Fr^*_{F'/X'}
+=(\Fr^*_{F/X}\otimes\id_{\fr_{X'}^*F'})\circ
+(\id_F\otimes\Fr^*_{F'/X'})
+\]
+\[
+=(\id_{\fr_X^*F}\otimes\Fr^*_{F'/X'})\circ
+(\Fr^*_{F/X}\otimes\id_{F'}).
+\]
+\end{statement}

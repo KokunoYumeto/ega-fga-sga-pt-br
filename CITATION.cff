@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Cite the Zenodo record for this validated Brazilian-Portuguese working preview."
+title: "EGA–FGA–SGA em português brasileiro: prévia de trabalho validada"
+type: dataset
+authors:
+  - name: "Grothendieck, Alexandre"
+  - name: "EGA/FGA/SGA contributors"
+repository-code: "https://github.com/KokunoYumeto/ega-fga-sga-pt-br"
+date-released: 2026-08-27
+version: "2026-08-27-preview.1"
+

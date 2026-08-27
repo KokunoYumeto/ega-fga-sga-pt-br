@@ -1,0 +1,38 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4835--4870 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+O isomorfismo trivial
+\[
+i^*\R j_*i'_!L\xrightarrow{\sim}\R j'_*(i'^*i'_!L)=\R j'_*L
+\]
+dá um isomorfismo
+\[
+m'^*\R j_*i'_!L\xrightarrow{\sim} i_1^*m^*\R j_*i'_!L,
+\]
+de onde se obtém, por adjunção, uma flecha
+\[
+i_{1!}m'^*\R j_*i'_!L\longrightarrow m^*\R j_*(i'_!L),
+\]
+que induz um isomorfismo fora de $z$. Demonstremos que esta flecha é um isomorfismo, isto é, se $\bar z$ é um ponto geométrico situado sobre $z$,
+\[
+(\R j_*(i'_!L))_{\bar z}=0.
+\]
+Para isso, pode-se substituir $\Lambda$ por $\mathbb Z/\ell^\nu$, onde $\ell^\nu$ anula $\Lambda$, e, por devissage e passagem ao limite, ficamos reduzidos ao caso em que $L$ é um $\mathbb Z/\ell^\nu$-módulo localmente constante de tipo finito, correspondente a uma representação de $\pi_1$ que se fatora através de um $\ell$-grupo. Como o único grupo abeliano finito de $\ell$-torção que é simples sob a ação de um $\ell$-grupo é $\mathbb Z/\ell$ com ação trivial, ficamos reduzidos, mediante um novo devissage, ao caso em que $L$ é o feixe constante $\mathbb Z/\ell$.
+
+Sejam $\widetilde Z$ a localização estrita de $Z$ em $\bar z$, $\widetilde X=X\times_Z\widetilde Z$, $\widetilde Y=Y\times_Z\widetilde Z$, $i':\widetilde Z-(\widetilde X\cup\widetilde Y)\hookrightarrow \widetilde Z-\widetilde Y$ a inclusão. Tem-se
+\[
+(\R j_*(i'_!(\mathbb Z/\ell)))_{\bar z}
+=\R\Gamma(\widetilde Z-\widetilde Y,i'_!(\mathbb Z/\ell)),
+\]
+de modo que ficamos reduzidos a demonstrar que a flecha de restrição
+\[
+H^n(\widetilde Z-\widetilde Y,\mathbb Z/\ell)
+\longrightarrow
+H^n(\widetilde X-\bar z,\mathbb Z/\ell)
+\]
+é um isomorfismo para todo $n$. Ora, para $n\le1$ isso é uma consequência do lema de Abhyankar, e para $n>1$ ambos os membros são nulos pela hipótese de pureza. Fica assim demonstrada a primeira afirmação de a). Demonstremos a segunda. Por devissage, pode-se supor que $L$ esteja concentrado em grau $0$. A hipótese (P) implica, por devissage, que $\R^qj_*i'_!L=0$ para $q>2$. Resta demonstrar que $m'^*\R^qj_*i'_!L$ é construtível e localmente constante para $q\le1$, o que é padrão. Para a construtibilidade, resolvendo $L$ pela direita mediante feixes do tipo $p_*p^*L$, onde $p:Z'\to Z$ é um recobrimento finito moderadamente ramificado ao longo de $Y$, ficamos reduzidos ao caso em que $L$ é constante, de valor $L_0$: tem-se então
+\[
+m'^*j_*i'_!L=(L_0)_{Y-z},
+\qquad
+m'^*\R^1j_*i'_!L=(L_0)_{Y-z}(-1)
+\]
+por Abhyankar. Para demonstrar que é localmente constante, trata-se de ver que as flechas de especialização são isomorfismos. Para isso, pode-se substituir, como antes, $\Lambda$ por $\mathbb Z/\ell^\nu$, e, por devissage, ficamos reduzidos ao caso em que $L$ é o feixe constante $\mathbb Z/\ell$: conclui-se com a ajuda do lema de Abhyankar.

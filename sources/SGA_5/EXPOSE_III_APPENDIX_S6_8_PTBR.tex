@@ -1,0 +1,58 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 3903--3960 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{6.8}
+Para isso, precisaremos recordar alguns fatos sobre a classe de cohomologia ``de Hodge'' associada a um subesquema regularmente imerso em um esquema suave e sobre os resíduos de Grothendieck ([8] III 9). Sejam $f:X\to S$ um morfismo suave de dimensão relativa pura $N$ e $i:Y\hookrightarrow X$ uma imersão regular de codimensão $d$ (isto é, ((SGA~IV 16.9.2), (SGA~6 VII 1)), um subesquema fechado definido localmente por uma sucessão regular de $d$ equações ou, em uma terminologia equivalente ((8 III 1), (SGA~6 VIII 1)), uma imersão fechada (localmente) de interseção completa de codimensão $d$). Ponhamos $g=fi$. Associa-se então a $Y$ um elemento
+\begin{equation}
+\tag{6.8.1}
+\cl_{X/S}(Y)\in\Ext^d_{\cO_X}(\cO_Y,\Omega^d_{X/S}),
+\end{equation}
+chamado \emph{classe de cohomologia associada a $Y$}, definido do seguinte modo. Segundo o teorema ``de pureza'' ([8] III 7.2), tem-se
+\begin{equation}
+\tag{6.8.2}
+\Ext^i_{\cO_X}(\cO_Y,\Omega^d_{X/S})=
+\begin{cases}
+0,& i\ne d,\\
+\underline{\Hom}(\bigwedge^d N_{Y/X},\Omega^d_{X/S}\otimes\cO_Y),& i=d,
+\end{cases}
+\end{equation}
+onde $N_{Y/X}=I/I^2$ é o feixe conormal ($I=\Ker\,\cO_X\to\cO_Y$). Por conseguinte,
+\begin{equation}
+\tag{6.8.3}
+\Ext^d_{\cO_X}(\cO_Y,\Omega^d_{X/S})=H^0(Y,\underline{\Hom}(\bigwedge^dN_{Y/X},\Omega^d_{X/S}\otimes\cO_Y)).
+\end{equation}
+
+A diferencial $d_{X/S}:\OO_X\to\Omega^1_{X/S}$ induz uma aplicação $\OO_Y$-linear
+\[
+d_{X/S}\otimes 1:N_{Y/X}\longrightarrow \Omega^1_{X/S}\otimes\OO_Y.
+\]
+A $d$-ésima potência exterior dessa aplicação é uma seção global, sobre $Y$, de $\Lambda^d N_{Y/X}^{\vee}\otimes\Omega^d_{X/S}$, cuja imagem em $\Ext^d_{\OO_X}(\OO_Y,\Omega^d_{X/S})$ pelo isomorfismo 6.8.3 é, por definição, a classe 6.8.1.
+
+Suponhamos que $g$ seja finito e plano (portanto, $d=N$). Seja $\omega\in H^0(Y,\Lambda^d N_{Y/X}^{\vee}\otimes\Omega^d_{X/S})$. Segundo 6.8.2 e 6.1, pode-se considerar $\omega$ como um homomorfismo
+\[
+\OO_Y\longrightarrow g^!\OO_S(=\Lambda^d N_{Y/X}^{\vee}\otimes\Omega^d_{X/S}),
+\]
+e, por adjunção, como um homomorfismo $g_*\OO_Y\to\OO_S$. Define-se o resíduo (relativo a $g$) de $\omega$ como a seção de $\OO_S$ que é imagem de $1$ por esse homomorfismo, e denota-se por $\operatorname{Res}_{Y/S}(\omega)$ (cf. ([8] III 9)). Denotemos, por outro lado, por $i_*\omega\in H^N(X,\Omega^N_{X/S})$ a imagem de $\omega$ pela composta do isomorfismo 6.8.3 e da flecha canônica
+\[
+\Ext^N_{\OO_X}(\OO_Y,\Omega^N_{X/S})\longrightarrow H^N(X,\Omega^N_{X/S}).
+\]
+Quando $f$ é próprio, da transitividade dos morfismos de traço (ou flechas de adjunção) $i_*i^!\to 1$ e $f_*f^!\to 1$ deduz-se que
+\begin{equation}
+\tag{6.8.4}
+\operatorname{Res}_{Y/S}(\omega)=\operatorname{Tr}_f(i_*\omega),
+\end{equation}
+onde $\operatorname{Tr}_f:H^N(X,\Omega^N_{X/S})\to H^0(S,\OO_S)$ é definido pela flecha de adjunção $f_*f^!\OO_S=\R f_*\Omega^N_{X/S}[N]\to\OO_S$ (6.1). Por outro lado, sem supor que seja próprio, tem-se a compatibilidade importante ([8] III 9 R6)
+\begin{equation}
+\tag{6.8.5}
+\operatorname{Res}_{Y/S}(y\cl_{X/S}(Y))=\operatorname{Tr}_{Y/S}(y),
+\end{equation}
+para $y\in H^0(Y,\OO_Y)$, onde $\operatorname{Tr}_{Y/S}:g_*\OO_Y\to\OO_S$ designa o traço no sentido clássico, isto é, $\operatorname{Tr}_{Y/S}(y)$ = traço do endomorfismo de $g_*\OO_Y$ definido pela multiplicação por $y$ (essa compatibilidade não é demonstrada em (loc. cit.); o caso $N=1$ é tratado em [Raynaud, Anneaux locaux henséliens, VII 1, Lecture Notes in Math. n\textsuperscript{o} 169, Springer Verlag, 1970]). Em outros termos, $\operatorname{Tr}_{Y/S}$ corresponde, por adjunção, ao homomorfismo $\OO_Y\to g^!\OO_S$ definido pela multiplicação por $\cl_{X/S}(Y)$. Disso resulta que, para $F\in\ob D(S)_{\coh}$, a flecha
+\begin{equation}
+\tag{6.8.6}
+g^*F\longrightarrow g^!F=g^*F\otimes^{\LL}g^!\OO_S
+\end{equation}
+dada pelo produto por $\cl_{X/S}(Y)$ corresponde, por adjunção, à flecha
+\begin{equation}
+\tag{6.8.7}
+g_*g^*F=F\otimes^{\LL}g_*\OO_Y\longrightarrow F
+\end{equation}
+definida por $\operatorname{Tr}_{Y/S}:g_*\OO_Y\to\OO_S$.

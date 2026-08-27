@@ -1,0 +1,37 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4928--4962 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{II. Correspondências equivariantes}
+
+\subsection*{5. Traços não comutativos}
+
+Fixemos neste número um topos $T$ e um anel comutativo unitário $K$ de $T$. Os anéis considerados serão supostos associativos e unitários, mas não necessariamente comutativos. Chamaremos de $K$-álgebra todo anel $A$ (associativo e unitário) de $T$ munido de um homomorfismo (unitário) $K\to A$ cuja imagem esteja contida no centro.
+
+\subsubsection*{5.0. Introdução}
+
+Seja $E$ um $K$-módulo que localmente é fator direto de um módulo livre de tipo finito. Dispõe-se então de um homomorfismo de traço, de natureza local,
+\begin{equation}\tag{5.0.1}
+\Tr_K:\uHom_K(E,E)\longrightarrow K,
+\end{equation}
+definido compondo a flecha de avaliação
+\begin{equation}\tag{5.0.2}
+\uHom_K(E,K)\otimes_KE\longrightarrow K,\qquad f\otimes x\longmapsto f(x),
+\end{equation}
+com o inverso do isomorfismo canônico de produto tensorial
+\begin{equation}\tag{5.0.3}
+\uHom_K(E,K)\otimes_KE\longrightarrow\uHom_K(E,E),\qquad f\otimes y\longmapsto (x\longmapsto f(x)y).
+\end{equation}
+As flechas 5.0.2 e 5.0.3 definem-se mais geralmente para todo $K$-módulo $E$, e delas se deduzem, para todo complexo de $K$-módulos $E$, homomorfismos de complexos
+\begin{align}
+\uHom_K^\bullet(E,K)\otimes_KE&\longrightarrow K,\qquad f\otimes x\longmapsto f(x),\tag{5.0.4}\\
+\uHom_K^\bullet(E,K)\otimes_KE&\longrightarrow \uHom_K^\bullet(E,E),\qquad f\otimes y\longmapsto (x\longmapsto f(x)y).\tag{5.0.5}
+\end{align}
+Por derivação, 5.0.4 e 5.0.5 dão, para $E\in\ob D^-(K)$, flechas de $D(K)$
+\begin{align}
+\uRHom_K(E,K)\lten_KE&\longrightarrow K,\tag{5.0.6}\\
+\uRHom_K(E,K)\lten_KE&\longrightarrow\uRHom_K(E,E).\tag{5.0.7}
+\end{align}
+Se $E$ é perfeito (SGA 6 I), 5.0.7 é um isomorfismo, como se verifica facilmente reduzindo ao caso $E=K$; compondo o inverso de 5.0.7 com 5.0.6, obtém-se um homomorfismo de traço, de natureza global,
+\begin{equation}\tag{5.0.8}
+\Tr_K:\uRHom_K(E,E)\longrightarrow K,
+\end{equation}
+que generaliza 5.0.1 (para mais detalhes, ver SGA 6 I 7, 8).

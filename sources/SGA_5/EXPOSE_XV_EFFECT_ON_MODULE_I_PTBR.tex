@@ -1,0 +1,26 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 14417--14440 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{n\textsuperscript{o} 3. Efeito sobre um módulo. Exemplos}
+
+Sejam $S$ um pré-esquema de característica $p$ e $X$ um $S$-pré-esquema; para todo $\OO_X$-módulo $\cE$, feixe para a topologia de Zariski, põe-se
+\[
+\cE^{(p/S)}=\pi_{X/S}^*(\cE)=\cE\otimes_{\OO_X}\OO_{X^{(p)}}
+ =\cE\otimes_{\OO_S}\OO_{(S,\fr_S)}.
+\]
+É um $\OO_{X^{(p)}}$-módulo; tem-se
+\[
+\cE^{(p/X)}\simeq \Fr_{X/S}^*(\cE^{(p/S)}).
+\]
+
+O caso mais interessante é aquele em que $X=S$; pode-se então escrever $\cE^{(p)}$ em vez de $\cE^{(p/S)}$ sem risco de confusão; $\cE^{(p)}=\fr_S^*(\cE)$. O morfismo de adjunção
+\[
+\cE\longrightarrow \fr_{S*}\fr_S^*(\cE)
+\]
+é um morfismo de feixes abelianos $\cE\to\cE^{(p)}$ que não é $\OO_S$-linear, mas $p$-linear, em um sentido evidente; é manifestamente um morfismo $p$-linear universal de $\cE$ com valores em um $\OO_S$-módulo.
+
+É claro que $\cE^{(p)}$ depende funtorialmente de $\cE$ e que o funtor $\cE\mapsto\cE^{(p)}$ é exato à direita, mas não exato em geral; comuta com o produto tensorial:
+\[
+(\cE\otimes_{\OO_X}\cF)^{(p)}\simeq
+\cE^{(p)}\otimes_{\OO_{X^{(p)}}}\cF^{(p)},
+\]
+e conserva propriedades tais como: quase-coerente, tipo finito, de apresentação finita, plana, localmente livre, etc. Em particular, se $\cL$ é um feixe inversível sobre $S$, imediatamente se vê que $\cL^{(p)}$ é canonicamente isomórfico a $\cL^{\otimes p}$, pois o morfismo $\cL\to\cL^{\otimes p}$ definido pela elevação à $p$-ésima potência tensorial das seções é um morfismo $p$-linear universal.

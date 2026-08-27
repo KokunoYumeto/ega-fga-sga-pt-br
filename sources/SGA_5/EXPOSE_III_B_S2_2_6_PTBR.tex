@@ -1,0 +1,73 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4554--4625 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{2.6}
+A demonstração de 2.5 ocupará o restante do número 2 e os números 3 e 4. Levando em conta a simetria do enunciado, basta demonstrar a afirmação relativa a $b^*$. Vamos reformulá-la de uma maneira que nos seja mais cômoda. Observemos primeiro que
+\[
+\R\Gamma(T,(DL\lten_SM)|T)
+ =(DL\lten_SM)_z
+ =(DL)_x\lten M_y=0,
+\]
+dado que $M_y=0$, e que, da mesma forma,
+\[
+\R\Gamma(B,b^*(DL\lten_SM))
+ =(DL\lten_SM)_z=0.
+\]
+Por conseguinte, os triângulos de cohomologia relativa fornecem isomorfismos
+\[
+\R\Gamma(T-A,(DL\lten_SM)|T-A)
+ \xrightarrow{\sim}
+\R\Gamma_A(T,(DL\lten_SM)|T)[1],
+\]
+\[
+\R\Gamma(B-z,(DL\lten_SM)|B-z)
+ \xrightarrow{\sim}
+\R\Gamma_z(B,b^*(DL\lten_SM))[1],
+\]
+mediante os quais a flecha $b^*$ de 2.5, deslocada em 1, se identifica com a restrição
+\begin{equation}
+b^*:\R\Gamma(T-A,(DL\lten_SM)|T-A)
+ \longrightarrow \R\Gamma(B-z,(DL\lten_SM)|B-z).
+\tag{2.6.1}
+\end{equation}
+Como $L_x=0$ e $M_y=0$, pode-se escrever
+\begin{equation}
+L=i_!DP,\qquad M=j_!Q,
+\tag{2.6.2}
+\end{equation}
+onde $i:X-x\to X$ e $j:Y-y\to Y$ designam as inclusões, e $P\in\Ob D_{\mathrm{ctf}}(X-x)$, $Q\in\Ob D_{\mathrm{ctf}}(Y-y)$. Pelo isomorfismo de dualidade (SGA 4 XVIII 3.19.6), juntamente com uma passagem ao limite, tem-se
+\[
+DL=\R i_*DDP=\R i_*P,
+\]
+Portanto,
+\[
+DL\lten_SM=\R i_*P\lten_Sj_!Q.
+\]
+Ponhamos $X\times_SY=Z$, e identifiquemos $X\times\{y\}$ e $\{x\}\times Y$ com subesquemas fechados de $Z$ (resp. de $T$), que denotaremos simplesmente por $X$ e $Y$. Denotemos por
+\[
+f':Z-Y\hookrightarrow Z,\qquad
+g':Z-(X\cup Y)\hookrightarrow Z-Y,
+\]
+\[
+f:T-Y\hookrightarrow T,\qquad
+g:T-(X\cup Y)\hookrightarrow T-Y
+\]
+As inclusões. A fórmula de Künneth (III 1.6.4) fornece, passando ao limite,
+\[
+DL\lten_SM=\R f'_*g'_!(P\lten_SQ),
+\]
+de onde
+\begin{equation}
+(DL\lten_SM)|T=\R f_*g_!((P\lten_SQ)|T-(X\cup Y)).
+\tag{2.6.3}
+\end{equation}
+Com essa identificação, 2.6.1 se escreve
+\begin{equation}
+b^*:\R\Gamma(T-(Y\cup A),g_!(E)|T-(Y\cup A))
+ \longrightarrow \R\Gamma(B-z,g_!(E)|B-z),
+\tag{2.6.4}
+\end{equation}
+onde
+\[
+E=(P\lten_SQ)|T-(X\cup Y).
+\]
+Nos dois números seguintes, demonstraremos que a flecha 2.6.4 é nula: primeiro reduziremos ao caso em que os feixes de cohomologia de $E$ têm ramificação moderada e, mais precisamente, em que a ação da inércia se fatora através de um $\ell$-grupo, para um número primo $\ell\ne p$; depois trataremos diretamente esse caso mediante um teorema de pureza.

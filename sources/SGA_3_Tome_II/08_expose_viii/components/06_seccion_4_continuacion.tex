@@ -1,0 +1,51 @@
+% Tradução brasileira revista a partir do workpass espanhol congelado;
+% a fonte permanece em source_es.
+% SGA 3, Exposé VIII, tradução brasileira.
+% Continuação da demonstração do Corolário 4.7 e final de 4.6.
+% Autoridade: Exp8 p. local 14; leitor completo p. 630.
+
+Isto mostra que obtemos um isomorfismo
+\[
+  A_0[t,t^{-1}]\longrightarrow A
+\]
+de álgebras \(A_0\)-graduadas que envia \(t\) em \(f\), o que conclui a
+demonstração de \SGARefLink{sga3:viii:corollary:4:7}{4.7}.
+
+No caso de
+\SGARefLink{sga3:viii:proposition:4:6}{4.6},
+\SGARefLink{sga3:viii:corollary:4:7}{4.7} já mostra que os
+\(\mathscr A_m\), para \(m\in M\), são invertíveis. Para demonstrar a
+condição \SGARefLink{sga3:viii:proposition:4:1:item:b:01}{4.1(b)}, podemos
+supor, portanto, que \(\mathscr A_m\) e \(\mathscr A_{m'}\) tenham bases
+\(f_m\) e \(f_{m'}\), com inversos
+\[
+  f_m^{-1}\in\Gamma(\mathscr A_{-m})
+  \qquad\text{y}\qquad
+  f_{m'}^{-1}\in\Gamma(\mathscr A_{-m'}).
+\]
+A multiplicação por
+\[
+  f_m^{-1}f_{m'}^{-1}
+  \in\Gamma(\mathscr A_{-m-m'})
+\]
+define então um homomorfismo
+\[
+  \mathscr A_{m+m'}\longrightarrow
+  \mathscr A_0\simeq\mathcal O_S
+\]
+que envia a imagem de \(f_m\otimes f_{m'}\) para a seção unidade de
+\(\mathcal O_S\). No diagrama
+\SGARefTarget{sga3:viii:proposition:4:6:diagram:01}
+\[
+\begin{tikzcd}[column sep=large]
+  \mathscr A_m\otimes\mathscr A_{m'}
+    \arrow[r,"u"]
+    \arrow[rr,bend left=32,"w"]
+  & \mathscr A_{m+m'}
+    \arrow[r,"v"]
+  & \mathscr A_0\simeq\mathcal O_S ,
+\end{tikzcd}
+\]
+os morfismos \(w\) e \(v\) são, por conseguinte, epimorfismos de feixes
+invertíveis e, portanto, isomorfismos; consequentemente, \(u\) é um
+isomorfismo. \hfill\(\square\)

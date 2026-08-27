@@ -1,0 +1,37 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 15006--15040 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Corolário}
+Seja $u:X\to Y$ um morfismo finito de esquemas de tipo finito sobre $\mathbb F_p$, e seja $F$ um $\Omega$-feixe construtível sobre $X$. A propriedade $(P_{F,u})$ é verdadeira.
+\end{statement}
+
+O lema permite reduzir-se ao caso em que $Y$ seja pontual: $Y=\Spec(\mathbb F_q)$. Então $X$ é finito e
+\[
+u_*(F)\simeq \bigoplus_{x\in X}u_*(F_x).
+\]
+Para estabelecer a fórmula $(P_{F,u})$, $L_F=L_{u_*F}$, reduz-se assim ao caso em que o próprio $X$ seja pontual: $X=\Spec(\mathbb F_{q'})$. Sejam $g:X\to e$ e $h:Y\to e$ os morfismos estruturais; por definição (n\textsuperscript{o}~1), tem-se
+\[
+L_F=L_{g_*F}=L_{h_*u_*F}=L_{u_*F},
+\]
+dado que $g=h\circ u$.
+
+\begin{statement}{Lema 2}
+Sejam $u:X\to Y$, $v:Y\to Z$ morfismos de esquemas de tipo finito sobre $\mathbb F_p$ e $F$ um $\Omega$-feixe construtível sobre $X$. Se as propriedades $(P_{F,u})$ e $(P_{\R^i_!u(F),v})$ forem verdadeiras para todo $i$, então $(P_{F,v\circ u})$ será verdadeira.
+\end{statement}
+
+De facto,
+\[
+L_F=\prod_i\bigl(L_{\R^i_!u(F)}\bigr)^{(-1)^i}
+ =\prod_i\prod_j\bigl(L_{\R^j_!v(\R^i_!u(F))}\bigr)^{(-1)^i(-1)^j}
+\]
+\[
+=\prod_{i,j}\bigl(L_{\R^j_!v(\R^i_!u(F))}\bigr)^{(-1)^{i+j}}
+\]
+De acordo com $(P_{F,u})$ e $(P_{\R^i_!u(F),v})$. A sucessão espectral de Leray
+\[
+\R^j_!v(\R^i_!u(F))\Longrightarrow \R^k_!(v\circ u)(F)
+\]
+e a multiplicatividade de $L_F$ em relação a $F$ (n\textsuperscript{o}~1, proposição 1a)) dão finalmente
+\[
+L_F=\prod_k\bigl(L_{\R^k_!(v\circ u)(F)}\bigr)^{(-1)^k},
+\]
+que era o que queríamos demonstrar.

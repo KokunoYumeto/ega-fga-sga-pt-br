@@ -1,0 +1,80 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 12542--12619 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{4.2}
+
+Seja $C$ uma curva algebraica lisa, própria e conectada sobre o corpo algebraicamente fechado $k$. Se $\eta$ é seu ponto genérico, denotemos por $K=k(\eta)$ seu corpo de funções racionais.
+
+Seja
+\[
+K'\supset K,\qquad [K':K]=n
+\]
+uma extensão de Galois finita de grau $n$ e grupo de Galois $G$. Denotemos por $C'$ a normalização de $C$ em $K'$, e seja
+\[
+p:C'\longrightarrow C
+\]
+a projeção canônica. O grupo de Galois $G$ opera evidentemente sobre $C'$. O estabilizador de $y'\in C'$ em $G$ denotar-se-á por $G_{y'}$.
+
+Se $\pi$ é um uniformizante de $\mathcal O_{C',y'}$ e se $s\in G_{y'}$, $s\ne e$, ponhamos
+\[
+v_{y'}(s(\pi)-\pi)=v_{y'}(s)
+\tag{4.2.1}
+\]
+(a multiplicidade do ponto fixo $y'$ para a aplicação $s:C'\to C'$ (lema 4.1)).% SOURCE_ANOMALY_PRESERVED: the fixed-point result is Lemma 4.1, but the frozen authority and scan print Lemma 5.1.
+
+A representação de Swan associada a $y'$ define-se por seu caráter $\sigma_{y'}$, dado pela fórmula
+\[
+\sigma_{y'}(s)=
+\begin{cases}
+1-v_{y'}(s),& s\ne e,\\[0.4em]
+\displaystyle\sum_{s\ne e}\bigl(v_{y'}(s)-1\bigr),& s=e.
+\end{cases}
+\tag{4.2.2}
+\]
+Os resultados de Artin--Serre--Swan (IX Th. 4) mostram que, sendo $\ell$ um número primo distinto da característica de $k$, existe um $\mathbb Z_\ell[G_{y'}]$-módulo projetivo de tipo finito $Sw_{y'}$, determinado salvo isomorfismo, cujo caráter é $\sigma_{y'}$.
+
+Também é útil considerar o $\mathbb Z_\ell[G_{y'}]$-módulo
+\[
+Sw'_{y'}=Sw_{y'}\oplus\mathbb Z_\ell[G_{y'}].
+\tag{4.2.3}
+\]
+O caráter $\sigma'_{y'}$ de $Sw'_{y'}$ é dado pela fórmula
+\[
+\sigma'_{y'}(s)=
+\begin{cases}
+1-v_{y'}(s),& s\ne e,\\[0.4em]
+\displaystyle 1+\sum_{s\ne e}v_{y'}(s)
+=1+v_{y'}(\mathfrak D_{C'/C}),& s=e,
+\end{cases}
+\tag{4.2.4}
+\]
+onde $\mathfrak D_{C'/C}$ é a diferente do recobrimento $C'/C$; a última fórmula não é senão [3, Cap. VI 2, prop. 4], tomando ali $H=\{1\}$.
+
+Por fim, a função
+\[
+a_{y'}=\sigma_{y'}+u_{G_{y'}}=\sigma'_{y'}-1_{G_{y'}},
+\tag{4.2.5}
+\]
+onde $u_{G_{y'}}$ denota o caráter do ideal de aumento de $\mathbb Z_\ell[G_{y'}]$, é também o caráter de um $\mathbb Q_\ell[G_{y'}]$-módulo, a representação de Artin de $G_{y'}$, que será denotada por $Art_{y'}$.
+
+Tem-se, portanto,
+\[
+a_{y'}(s)=
+\begin{cases}
+-v_{y'}(s),& s\ne e,\\[0.4em]
+\displaystyle\sum_{s\ne e}v_{y'}(s)=v_{y'}(\mathfrak D_{C'/C}),& s=e.
+\end{cases}
+\tag{4.2.6}
+\]
+
+Consideremos agora a inclusão $G_{y'}\subset G$. Põe-se:
+\[
+Sw_y=Sw_{y'}\otimes_{\mathbb Z_\ell[G_{y'}]}\mathbb Z_\ell[G],
+\qquad
+Sw'_y=Sw'_{y'}\otimes_{\mathbb Z_\ell[G_{y'}]}\mathbb Z_\ell[G],
+\tag{4.2.7}
+\]
+\[
+Art_y=Art_{y'}\otimes_{\mathbb Q_\ell[G_{y'}]}\mathbb Q_\ell[G].
+\tag{4.2.8}
+\]
+Os caracteres das representações anteriores são denotados por $\sigma_y$, $\sigma'_y$, $a_y$.

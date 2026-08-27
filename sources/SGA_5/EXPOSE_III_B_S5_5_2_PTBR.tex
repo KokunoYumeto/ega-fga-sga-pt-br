@@ -1,0 +1,21 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 4993--5011 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{5.2}
+
+Sejam $A$, $B$ $K$-álgebras. Recordemos que, na situação $({}_AE,{}_BF_A,{}_BG)$, tem-se um isomorfismo canônico
+\begin{equation}\tag{5.2.1}
+\uHom_A(E,\uHom_B(F,G))\xrightarrow{\sim}\uHom_B(F\otimes_AE,G),\qquad
+f\longmapsto (y\otimes x\longmapsto f(x)(y)).
+\end{equation}
+Este se deriva em um isomorfismo
+\begin{equation}\tag{5.2.2}
+\uRHom_A(E,\uRHom_B(F,G))\xrightarrow{\sim}\uRHom_B(F\lten_AE,G)
+\end{equation}
+para $E\in\ob D^-(A)$, $F\in\ob D(B,A)$, $G\in\ob D^+(B)$. Com efeito, pode-se supor que $E$ esteja limitado superiormente e tenha componentes planas, e que $G$ esteja limitado inferiormente e tenha componentes injetivas; tem-se então $\uRHom_B(F\lten_AE,G)=\Hom_B^\bullet(F\otimes_AE,G)$, $\uRHom_B(F,G)=\Hom_B^\bullet(F,G)$ e $\uRHom_A(E,\Hom_B^\bullet(F,G))=\Hom_A^\bullet(E,\Hom_B^\bullet(F,G))$, pois, se $E$ é acíclico, $F\otimes_AE$ é acíclico, de modo que $\Hom_A^\bullet(E,\Hom_B^\bullet(F,G))\simeq\Hom_B^\bullet(F\otimes_AE,G)$ é acíclico. Para $E$ e $G$ como antes, 5.2.2 é dado pelo isomorfismo de complexos
+\[
+\Hom_A^\bullet(E,\Hom_B^\bullet(F,G))\xrightarrow{\sim}\Hom_B^\bullet(F\otimes_AE,G)
+\]
+definido por 5.2.1. Observe-se que, se $A$ e $B$ são planos sobre $K$, 5.2.2 continua válido sob as condições $E\in\ob D(A)$, $F\in\ob D^-(B,A)$, $G\in\ob D^+(B)$, como se vê resolvendo $F$ por módulos planos sobre $(B\otimes_KA^\circ)$. De 5.2.2 deduz-se um isomorfismo
+\begin{equation}\tag{5.2.3}
+\uHom_A(E,\uRHom_B(F,G))\xrightarrow{\sim}\uHom_B(F\lten_AE,G).
+\end{equation}
