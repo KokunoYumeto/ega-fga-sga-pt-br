@@ -3,6 +3,11 @@
   "release": "2026-08-27-preview.1",
   "status": "PASS_AS_INCOMPLETE_VALIDATED_PREVIEW",
   "language": "pt-BR",
+  "zenodo": {
+    "version_doi": "10.5281/zenodo.22132459",
+    "concept_doi": "10.5281/zenodo.22132458",
+    "anonymous_public_byte_readback": "PASS"
+  },
   "lead_pdf": {
     "filename": "EGA_III_1_PTBR_FIRST_PUBLIC_CHECKPOINT.pdf",
     "bytes": 1376037,

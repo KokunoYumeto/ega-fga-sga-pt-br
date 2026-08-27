@@ -31,4 +31,4 @@ Os avisos históricos de autoria e copyright são preservados como proveniência
 
 ## Citação
 
-Consulte o DOI do Zenodo indicado na página de lançamento. O repositório público é `KokunoYumeto/ega-fga-sga-pt-br`.
+DOI desta versão: [10.5281/zenodo.22132459](https://doi.org/10.5281/zenodo.22132459). DOI conceitual para todas as versões: [10.5281/zenodo.22132458](https://doi.org/10.5281/zenodo.22132458). O repositório público é `KokunoYumeto/ega-fga-sga-pt-br`.
