@@ -1,5 +1,11 @@
 # EGA–FGA–SGA em português brasileiro — prévia de trabalho validada
 
+## Leia primeiro: edição em PDF
+
+**[Abrir/baixar EGA III-1 em português brasileiro (PDF, 149 páginas)](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-08-27-preview.1/EGA_III_1_PTBR_FIRST_PUBLIC_CHECKPOINT.pdf)**
+
+O PDF é o ativo principal e legível desta publicação. O arquivo ZIP de fontes é material secundário para reprodução e continuidade técnica.
+
 Esta é uma **prévia incompleta e em desenvolvimento**, não uma tradução integral de EGA, FGA ou SGA. Ela preserva apenas tranches em português brasileiro que já possuem recibos locais de validação sem falhas. Arquivos candidatos, unidades incompletas e saídas de modelo sem revisão foram excluídos.
 
 ## Conteúdo desta prévia
