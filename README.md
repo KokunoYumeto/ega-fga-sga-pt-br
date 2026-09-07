@@ -1,42 +1,37 @@
-# EGA–FGA–SGA em português brasileiro — prévia validada
+# EGA, FGA e SGA em português brasileiro
 
-## Related editions
+Traduções matemáticas independentes, em uma coleção de cobertura parcial. Os arquivos de fonte e os registros de correção acompanham os leitores; a coleção não se apresenta como tradução completa de todos os volumes.
 
-Each link goes directly to a peer edition repository; there is no central hub. Coverage describes public releases and may trail local production.
+## EGA IV-2: começar a leitura
 
-| Edition | Language | Public scope |
-|---|---|---|
-| [EGA — French](https://github.com/KokunoYumeto/ega-fr) | French | Complete declared EGA I–IV scope |
-| [EGA — English](https://github.com/KokunoYumeto/ega-en) | English | Complete declared EGA 0–IV scope |
-| [EGA/FGA — Spanish](https://github.com/KokunoYumeto/ega-fga-es) | Spanish | Validated partial EGA; FGA tranches A and B |
-| [SGA — Spanish](https://github.com/KokunoYumeto/sga-es) | Spanish | Complete 13-book linked edition |
-| [SGA — English](https://github.com/KokunoYumeto/sga-en) | English | Complete published scope; SGA 6 has mixed source alignment |
-| [EGA/FGA/SGA — Brazilian Portuguese](https://github.com/KokunoYumeto/ega-fga-sga-pt-br) | Brazilian Portuguese | Validated partial release, including complete EGA III-1 and SGA 5 readers |
-| [EGA/FGA/SGA — Vietnamese](https://github.com/KokunoYumeto/ega-fga-sga-vi) | Vietnamese | Validated partial release; current public readers are EGA |
-| [FGA — English (external)](https://github.com/thosgood/fga) | English | Independently maintained external edition |
+- [Leitor corrente: seções 2.1 e 2.8](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-09-07-preview.1/EGA_IV2_PTBR_CURRENT.pdf).
+- [Leitor diplomático: seções 2.1 e 2.8](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-09-07-preview.1/EGA_IV2_PTBR_DIPLOMATIC.pdf).
 
-## Edição pública atual
+Cada leitor tem seis páginas, reúne as duas seções completas e conserva a numeração original. As seções 2.2 a 2.7 não estão incluídas. Os marcadores do PDF levam diretamente a cada seção. Os PDFs independentes de §2.1 e §2.8 também estão disponíveis.
 
-- [Última versão no GitHub](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/latest)
-- [Versão `v2026-08-29-preview.1`](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/tag/v2026-08-29-preview.1)
-- [DOI conceitual estável `10.5281/zenodo.22132458`](https://doi.org/10.5281/zenodo.22132458)
-- [Snapshot exato `10.5281/zenodo.22164556`](https://doi.org/10.5281/zenodo.22164556)
+A leitura corrente incorpora correções documentadas. A leitura diplomática preserva as leituras impressas traduzidas. Em §2.8, a única diferença entre os textos é a remissão (2.8.4.1), corrente, ou (2.8.3.1), impressa. O pacote R2 preserva as fontes e os controles da seção; o suplemento R3 modifica apenas a apresentação das capas vietnamitas, sem alterar o texto matemático.
 
-O GitHub é a superfície viva e navegável; o Zenodo preserva snapshots citáveis. A versão pública atual reúne **nove leitores correntes, 559 páginas**, acompanhados por fontes e evidências verificáveis.
+## Outros textos disponíveis
 
-## Cobertura pública
+- SGA 5: leitor de 323 páginas, `SGA5_PTBR_R4_20260829.pdf`.
+- FGA: exposés 212, 221, 232, 236 e comentários; leitores corrente e diplomático.
+- EGA III-1: `EGA_III_1_PTBR_FIRST_PUBLIC_CHECKPOINT.pdf`.
+- EGA IV-1: Capítulo 0, §14.
+- EGA I: §§7.3.1–7.3.7, nos leitores e suplementos identificados no manifesto.
 
-- **EGA I** — unidades selecionadas de §7.3.
-- **EGA III-1** — leitor completo em PT-BR, 149 páginas.
-- **EGA IV-1** — ponto de controle da §14.
-- **EGA IV-2** — ponto de controle da §2.1, com ramos corrente e diplomático.
-- **FGA, tranche B** — leitores corrente/corrigido e diplomático, 73 páginas.
-- **SGA 5** — leitor corrente R4 completo no escopo publicado, 323 páginas; validação 376/376.
+Esses leitores, pacotes de fontes e controles anteriormente publicados permanecem disponíveis nesta versão, sem alteração. `CONTENT_MANIFEST.json` e `SHA256SUMS.txt` identificam exatamente todos os arquivos.
 
-Os ativos de cada versão estão na página de release, com `CONTENT_MANIFEST.json`, recibos e `SHA256SUMS.txt`. O texto desta página descreve somente os bytes públicos; o trabalho local pode estar adiante.
+## Autoria e tradução
 
-## Natureza da edição
+EGA é de Alexander Grothendieck, redigido com a colaboração de Jean Dieudonné. Os textos FGA aqui reunidos são de Alexander Grothendieck. SGA 5 foi dirigido por Alexander Grothendieck, com a colaboração de Ion Bucur, Charles Houzel, Luc Illusie, Jean-Pierre Jouanolou e Jean-Pierre Serre; Luc Illusie editou o volume. Esses créditos dizem respeito às obras originais, não à aprovação destas traduções.
 
-Esta é uma prévia matemática aberta, validada e incompleta. Ela não afirma que EGA, FGA ou SGA estejam integralmente traduzidos para PT-BR, nem substitui as edições históricas francesas. Fórmulas, rótulos, referências e estrutura TeX são comparados deterministicamente com testemunhas congeladas; leituras diplomáticas e correções aceitas permanecem reversíveis e documentadas.
+Tradução independente assistida por IA, mantida pelo projeto Interlanguage. Não é uma edição oficial nem endossada pelos autores ou pelas instituições de origem. As leituras originais e as intervenções editoriais são distinguidas nos materiais de proveniência.
 
-Os avisos históricos de autoria e copyright são preservados como proveniência. Nenhuma licença aberta geral é alegada para materiais históricos subjacentes.
+## Outras edições e fontes
+
+- [Coleção em português brasileiro: DOI permanente](https://doi.org/10.5281/zenodo.22132458).
+- [Coleção em vietnamita](https://doi.org/10.5281/zenodo.22134809).
+- [EGA em francês](https://github.com/KokunoYumeto/ega-fr) · [EGA em inglês](https://github.com/KokunoYumeto/ega-en).
+- [EGA IV-2: fonte impressa, NUMDAM](https://www.numdam.org/item/PMIHES_1965__24__5_0/).
+
+Todos os arquivos podem ser lidos e baixados publicamente, sem autenticação.
