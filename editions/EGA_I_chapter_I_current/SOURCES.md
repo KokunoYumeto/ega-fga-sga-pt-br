@@ -1,0 +1,5 @@
+# Fontes, direitos e autoria
+
+A obra original é de Alexandre Grothendieck, com a colaboração de Jean Dieudonné: EGA I, Publications Mathématiques de l’IHÉS 4 (1960), [NUMDAM](https://numdam.org/item/PMIHES_1960__4__5_0/). A referência inglesa e a estrutura TeX têm origem na tradução humana de [ryankeleti/ega](https://github.com/ryankeleti/ega/tree/3d7afe28c99d1887ccdb85acf2ca1afd93fb1971). Os colaboradores nomeados são Mateo Carmona, Tim Holzschuh, Tim Hosgood, Ryan Keleti, Thiago Solovera & Nery, Wayne Yang. A versão 3d7afe28c99d1887ccdb85acf2ca1afd93fb1971 identifica a referência inglesa comparada; as contribuições específicas constam dos [créditos por seção](https://github.com/ryankeleti/ega/blob/3d7afe28c99d1887ccdb85acf2ca1afd93fb1971/README.md). A tradução brasileira, as correções e a composição são produzidas por IA; não se atribuem aos tradutores humanos do inglês. A atribuição não estabelece autorização ou endosso.
+
+Tradução brasileira, revisão e composição produzidas por IA: OpenAI Codex; GPT-6 Sol e GPT-6.1 Sol no texto herdado, GPT-6 Astra nas correções aqui incorporadas, esforço Ultra. Não se afirma revisão humana.

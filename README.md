@@ -57,3 +57,8 @@ A tradução para o português é produzida por IA. As correções, a edição e
 [Oito exposições e erratas: edição corrigida](editions/FGA_current/README.md) · [tradução segundo o impresso](editions/FGA_diplomatic/README.md). [Fontes e autoria](ATTRIBUTION_FGA.md).
 
 [Leitores PDF da edição de 15 de outubro de 2026](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/tag/v2026-10-15-fga.1).
+
+
+## EGA I: capítulo I
+
+[Fontes da edição corrigida: §§1–10 e índices](editions/EGA_I_chapter_I_current/README.md).
