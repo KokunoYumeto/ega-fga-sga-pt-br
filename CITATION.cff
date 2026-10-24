@@ -1,11 +1,38 @@
 cff-version: 1.2.0
-message: "Cite the Zenodo record for this validated Brazilian-Portuguese working preview."
-title: "EGA–FGA–SGA em português brasileiro: prévia de trabalho validada"
+message: Cite the Zenodo record for this validated Brazilian-Portuguese working preview.
+title: 'EGA–FGA–SGA em português brasileiro: prévia de trabalho validada'
 type: dataset
 authors:
-  - name: "Grothendieck, Alexandre"
-  - name: "EGA/FGA/SGA contributors"
-repository-code: "https://github.com/KokunoYumeto/ega-fga-sga-pt-br"
-date-released: 2026-08-27
-version: "2026-08-27-preview.1"
-doi: "10.5281/zenodo.22132459"
+- name: Grothendieck, Alexandre
+- name: EGA/FGA/SGA contributors
+repository-code: https://github.com/KokunoYumeto/ega-fga-sga-pt-br
+date-released: '2026-08-27'
+version: 2026-08-27-preview.1
+doi: 10.5281/zenodo.22132459
+references:
+- type: software
+  title: EGA — community English translation
+  authors:
+  - family-names: Carmona
+    given-names: Mateo
+  - family-names: Holzschuh
+    given-names: Tim
+  - family-names: Hosgood
+    given-names: Tim
+  - family-names: Keleti
+    given-names: Ryan
+  - family-names: Solovera & Nery
+    given-names: Thiago
+  - family-names: Yang
+    given-names: Wayne
+  repository-code: https://github.com/ryankeleti/ega
+  url: https://github.com/ryankeleti/ega/tree/3d7afe28c99d1887ccdb85acf2ca1afd93fb1971
+  commit: 3d7afe28c99d1887ccdb85acf2ca1afd93fb1971
+- type: software
+  title: FGA — human English translation used as a reference
+  authors:
+  - family-names: Hosgood
+    given-names: Tim
+  repository-code: https://github.com/thosgood/fga
+  url: https://github.com/thosgood/fga/tree/9976dd5f8e2ddcb388f0a07f3aa334f120d1019f
+  commit: 9976dd5f8e2ddcb388f0a07f3aa334f120d1019f
