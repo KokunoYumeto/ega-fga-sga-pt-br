@@ -1,5 +1,9 @@
 # EGA, FGA e SGA em português brasileiro
 
+## EGA II: fontes editáveis
+
+[Texto da edição corrigida](editions/EGA_II_current/README.md) · [tradução diplomática](editions/EGA_II_diplomatic/README.md). [Fontes e contribuições](ATTRIBUTION_EGA_II.md).
+
 Traduções matemáticas independentes, em uma coleção de cobertura parcial. Os arquivos de fonte e os registros de correção acompanham os leitores; a coleção não se apresenta como tradução completa de todos os volumes.
 
 ## EGA IV-2: começar a leitura
@@ -25,7 +29,7 @@ Esses leitores, pacotes de fontes e controles anteriormente publicados permanece
 
 EGA é de Alexander Grothendieck, redigido com a colaboração de Jean Dieudonné. Os textos FGA aqui reunidos são de Alexander Grothendieck. SGA 5 foi dirigido por Alexander Grothendieck, com a colaboração de Ion Bucur, Charles Houzel, Luc Illusie, Jean-Pierre Jouanolou e Jean-Pierre Serre; Luc Illusie editou o volume. Esses créditos dizem respeito às obras originais, não à aprovação destas traduções.
 
-Tradução independente assistida por IA, mantida pelo projeto Interlanguage. Não é uma edição oficial nem endossada pelos autores ou pelas instituições de origem. As leituras originais e as intervenções editoriais são distinguidas nos materiais de proveniência.
+Tradução independente produzida por IA, mantida pelo projeto Interlanguage. Não é uma edição oficial nem endossada pelos autores ou pelas instituições de origem. As leituras originais e as intervenções editoriais são distinguidas nos materiais de proveniência.
 
 ## Outras edições e fontes
 
@@ -35,3 +39,14 @@ Tradução independente assistida por IA, mantida pelo projeto Interlanguage. N�
 - [EGA IV-2: fonte impressa, NUMDAM](https://www.numdam.org/item/PMIHES_1965__24__5_0/).
 
 Todos os arquivos podem ser lidos e baixados publicamente, sem autenticação.
+
+## Fontes, direitos e autoria
+
+Os direitos sobre as obras originais e sobre as contribuições protegidas a estas traduções e transcrições derivadas permanecem com seus respectivos titulares. Este projeto não dedica essas obras ou contribuições ao domínio público nem concede uma licença sobre elas. Os avisos de direitos de terceiros e as autorizações já concedidas continuam aplicáveis.
+
+Estas edições são disponibilizadas gratuitamente, para fins não comerciais e exclusivamente educativos, sob a presunção de que os respectivos titulares dos direitos não se oporiam à disponibilidade gratuita destas traduções e transcrições, ao lado dos originais franceses no [NUMDAM](https://www.numdam.org/). Essa presunção não significa que uma autorização tenha sido obtida; o acesso gratuito aos originais não autoriza, por si só, sua tradução, adaptação ou republicação.
+
+Se você detém direitos sobre algum material apresentado aqui e se opõe à sua disponibilidade, poderá [abrir uma questão no GitHub](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/issues). O responsável pela publicação retirará o material afetado a pedido do titular dos direitos.
+
+
+A tradução para o português é produzida por IA. As correções, a edição e a composição também são produzidas por IA. O responsável pela publicação não traduziu o texto. A autoria e as atribuições das obras originais e das contribuições herdadas são preservadas; não são atribuídas à IA. As correções documentadas desta edição incluem OpenAI Codex, GPT-6 Astra, esforço Ultra.
