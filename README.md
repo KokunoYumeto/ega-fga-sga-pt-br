@@ -50,3 +50,10 @@ Se você detém direitos sobre algum material apresentado aqui e se opõe à sua
 
 
 A tradução para o português é produzida por IA. As correções, a edição e a composição também são produzidas por IA. O responsável pela publicação não traduziu o texto. A autoria e as atribuições das obras originais e das contribuições herdadas são preservadas; não são atribuídas à IA. As correções documentadas desta edição incluem OpenAI Codex, GPT-6 Astra, esforço Ultra.
+
+
+## FGA: fontes editáveis
+
+[Oito exposições e erratas: edição corrigida](editions/FGA_current/README.md) · [tradução segundo o impresso](editions/FGA_diplomatic/README.md). [Fontes e autoria](ATTRIBUTION_FGA.md).
+
+[Leitores PDF da edição de 15 de outubro de 2026](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/tag/v2026-10-15-fga.1).
