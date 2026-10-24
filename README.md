@@ -67,3 +67,8 @@ A tradução para o português é produzida por IA. As correções, a edição e
 ## EGA IV, terceira parte
 
 [Fontes editáveis das seções 8–15](editions/EGA_IV_3_sections_current/README.md).
+
+
+## EGA IV, quarta parte: componente de fonte
+
+[Seção 19.4, leitura corrigida](source_components/EGA_IV4_section_19_4/README.md).

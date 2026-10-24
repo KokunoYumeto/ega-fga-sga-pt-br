@@ -1,0 +1,188 @@
+\subsection{Aplicação: critérios para que os pré-esquemas obtidos por explosão sejam regulares ou lisos.}
+\label{subsection:IV.19.4}
+
+\oldpage[IV-4]{198}
+
+\begin{env}[19.4.1]
+\label{IV.19.4.1}
+Sejam $X$ um pré-esquema e $Y$ um subpré-esquema fechado de $X$, definido por um ideal quase-coerente $\mathscr J$ de $\sh{O}_X$. Recordemos (II, 8.1.3) que o $X$-esquema $X'$ obtido pela explosão de $Y$ é o pré-esquema
+\[
+  X'=\operatorname{Proj}(\mathscr S),\qquad\text{onde}\qquad \mathscr S=\bigoplus_{n\geq0}\mathscr J^n.
+\]
+Se $\mathscr J$ é de tipo finito, o morfismo estrutural $f:X'\to X$ é projetivo. Sem nenhuma hipótese sobre $\mathscr J$, o subpré-esquema fechado
+\[
+  Y'=f^{-1}(Y)
+\]
+de $X'$ é definido pelo ideal quase-coerente $\mathscr J\sh{O}_{X'}$ de $\sh{O}_{X'}$, canonicamente isomorfo a $\sh{O}_{X'}(1)$; mais precisamente, tem-se uma sequência exata
+\begin{equation}
+  0\longrightarrow\sh{O}_{X'}(1)\xrightarrow{\widetilde u_0}\sh{O}_{X'}\longrightarrow\sh{O}_{Y'}\longrightarrow0.
+  \tag{19.4.1.1}\label{IV.19.4.1.1}
+\end{equation}
+onde $\mathscr J\sh{O}_{X'}$ é a imagem de $\widetilde u_0$ (II, 8.1.7 e 8.1.8). Como, em uma vizinhança de um ponto de $X'$, o $\sh{O}_{X'}$-módulo $\sh{O}_{X'}(1)$ é livre de posto $1$, $\mathscr J\sh{O}_{X'}$ é gerado em tal vizinhança por uma seção que não é divisor de zero\footnote{O texto impresso diz «section inversible»; a injetividade da sequência exata precedente fornece um elemento que não é divisor de zero, não uma unidade.} de $\sh{O}_{X'}$ e, por conseguinte, $\mathscr J\sh{O}_{X'}/\mathscr J^2\sh{O}_{X'}$ é um $\sh{O}_{X'}/\mathscr J\sh{O}_{X'}$-módulo livre de posto $1$. Isso demonstra a primeira afirmação do lema seguinte:
+\end{env}
+
+\begin{lemma}[19.4.2]
+\label{IV.19.4.2}
+A imersão canônica $Y'\to X'$ é regular e de codimensão $1$, e $Y'$ é canonicamente isomorfo ao $Y$-esquema $\operatorname{Proj}(\operatorname{gr}_{\mathscr J}^*(\sh{O}_X))$.
+\end{lemma}
+
+A segunda afirmação decorre de (II, 3.5.3)\footnote{O texto impresso cita (II, 3.3.3); o resultado de mudança de base para Proj utilizado aqui é (II, 3.5.3).} aplicado à injeção canônica $Y\to X$, levando em conta que $\mathscr S\otimes_{\sh{O}_X}\sh{O}_Y=\operatorname{gr}_{\mathscr J}^*(\sh{O}_X)$ por definição, pois $\sh{O}_Y$ é isomorfo a $\sh{O}_X/\mathscr J$ e $\mathscr J^n\otimes_{\sh{O}_X}(\sh{O}_X/\mathscr J)$ a $\mathscr J^n/\mathscr J^{n+1}$.
+
+\begin{corollary}[19.4.3]
+\label{IV.19.4.3}
+Se a imersão canônica $Y\to X$ é quase-regular, a restrição $g:Y'\to Y$ do morfismo $f$ é lisa.
+\end{corollary}
+
+Com efeito, $\sh{N}_{Y/X}=\mathscr J/\mathscr J^2$ é então um $\sh{O}_Y$-módulo localmente livre de posto finito e $\operatorname{gr}_{\mathscr J}^*(\sh{O}_X)$ é isomorfo a $\mathbf S_{\sh{O}_Y}^*(\sh{N}_{Y/X})$ (16.9.8); portanto, $Y'$ é $Y$-isomorfo a $\mathbf P(\sh{N}_{Y/X})$ e, por conseguinte, é liso sobre $Y$ (17.3.9).
+
+Veremos mais adiante (cap. V) que $g$ continua liso quando a imersão $Y\to X$ «apresenta apenas singularidades ordinárias».
+
+\begin{proposition}[19.4.4]
+\label{IV.19.4.4}
+Com as notações de (19.4.1), suponhamos que $X$ seja localmente noetheriano e que o morfismo $g:Y'\to Y$, restrição de $f$, seja liso. Sejam $x'$ um ponto de $Y'$ e $x=g(x')$. Para que $Y$ seja regular no ponto $x$, é necessário e suficiente que $Y'$ seja regular no ponto $x'$; quando isso ocorre, $X'$ é então regular no ponto $x'$.
+\end{proposition}
+
+A primeira afirmação decorre de (17.5.8), e a segunda, de (19.1.1) e (19.4.2).
+
+\begin{corollary}[19.4.5]
+\label{IV.19.4.5}
+Sob as hipóteses gerais de (19.4.4), suponhamos que $Y$ seja regular no ponto $x$. Então, para toda generalização $x_1$ de $x$ em $X$ que não pertença a $Y$, $X$ é regular no ponto $x_1$. Se $\operatorname{Reg}(X)$ é aberto ((6.12), por exemplo, se $X$ é excelente (7.8.6, (iii)))
+
+\oldpage[IV-4]{199}
+
+e, se $Y$ for regular, então existe uma vizinhança aberta $U$ de $Y$ em $X$ tal que $X$ é regular nos pontos de $U-Y$.
+\end{corollary}
+
+Para demonstrar a primeira afirmação, podemos restringir-nos ao caso em que $X$ é um pré-esquema local de ponto fechado $x$; a hipótese implica então que $Y$ é regular ($0$, 17.3.2), e, por (19.4.4), o mesmo ocorre com $Y'$. Observemos agora que o morfismo $f:X'\to X$ é projetivo e, portanto, próprio; consequentemente (II, 7.2.1), se considerarmos o único ponto $x'_1$ de $X'$ acima de $x_1$ (II, 8.1.3), existe uma especialização de $x'_1$ que pertence a $Y'$; aplicando (19.4.4) a essa especialização e utilizando ($0$, 17.3.2), conclui-se que $X'$ é regular no ponto $x'_1$ e, portanto, que $X$ é regular no ponto $x_1$, pois $X'-Y'$ é isomorfo a $X-Y$ (II, 8.1.3). Se $Y$ for regular, todo ponto de $X-Y$ que seja uma generalização de um ponto de $Y$ pertence, portanto, a $\operatorname{Reg}(X)$; se $\operatorname{Reg}(X)$ for aberto, $U=Y\cup\operatorname{Reg}(X)$ será então localmente construtível e estável por generalização e, portanto, aberto ($0_{\mathrm{III}}$, 9.2.5), e responderá à questão.
+
+\begin{proposition}[19.4.6]
+\label{IV.19.4.6}
+Sejam $g:X\to S$ um morfismo, $Y$ um subpré-esquema fechado de $X$ definido por um ideal quase-coerente $\mathscr J$, $X'$ o $X$-esquema obtido pela explosão de $Y$ e $Y'$ a imagem inversa de $Y$ em $X'$.
+\begin{enumerate}
+  \item[(i)] As condições $a)$ e $b)$ abaixo são equivalentes. Elas implicam $c)$; se $X$ é plano sobre $S$, a condição $c)$ também lhes é equivalente:
+  \begin{enumerate}
+    \item[a)] $\operatorname{gr}_{\mathscr J}^*(\sh{O}_X)$ é uma $\sh{O}_X$-álgebra $g$-plana.
+    \item[b)] Para todo $n\geq0$, o $\sh{O}_X$-módulo $\sh{O}_X/\mathscr J^{n+1}$ é $g$-plano (em outras palavras, a $n$-ésima vizinhança infinitesimal $Y^{(n)}$ de $Y$ em $X$ (16.1.2) é $S$-plana).
+    \item[c)] Para toda mudança de base $S_1\to S$ e todo inteiro $n\geq1$, se pusermos $X_1=X\times_S S_1$, o homomorfismo canônico $\mathscr J^n\otimes_{\sh{O}_S}\sh{O}_{S_1}\to\mathscr J^n\sh{O}_{X_1}$ será bijetivo.
+  \end{enumerate}
+  Quando a condição $a)$, ou a condição equivalente $b)$, é satisfeita, $Y'$ é $S$-plano e, para toda mudança de base $S_1\to S$, se $Y_1$ for a imagem inversa de $Y$ em $X_1$, o pré-esquema $X'_1$ obtido pela explosão de $Y_1$ em $X_1$ será canonicamente isomorfo a $X'\times_S S_1$.
+  \item[(ii)] Suponhamos que se satisfaçam as condições $a)$ e $b)$ de (i) e, além disso, que os morfismos $X\to S$ e $Y\to S$ sejam localmente de apresentação finita. Então $\mathscr S=\bigoplus_{n\geq0}\mathscr J^n$ é uma $\sh{O}_X$-álgebra de apresentação finita, o morfismo $X'\to X$ é de apresentação finita, a imersão canônica $Y'\to X'$ é transversalmente regular de codimensão $1$ relativamente a $S$, e o conjunto dos pontos de $X$ (resp. $X'$) nos quais $X$ (resp. $X'$) é $S$-plano é uma vizinhança de $Y$ (resp. $Y'$).
+\end{enumerate}
+\end{proposition}
+
+\begin{enumerate}
+  \item[(i)] Podemos trabalhar no caso afim $S=\Spec(A)$, $X=\Spec(B)$, com $\mathscr J=\widetilde{\mathfrak J}$. Ponhamos $Q_m=B/\mathfrak J^m$ para $m\geq1$ e $G_r=\mathfrak J^r/\mathfrak J^{r+1}$ para $r\geq0$. A álgebra graduada de $a)$ é plana se, e somente se, todos os $G_r$ forem planos. Como $Q_1=G_0$, as sequências exatas $0\to G_r\to Q_{r+1}\to Q_r\to0$ para $r\geq1$ provam a equivalência de $a)$ e $b)$: uma extensão de módulos planos é plana, e o núcleo de uma aplicação sobrejetiva entre módulos planos é plano ($0_{\mathrm I}$, 6.1.2). A sequência exata dos Tor associada a $0\to\mathfrak J^m\to B\to Q_m\to0$ mostra que $b)$ implica $c)$. Reciprocamente, suponhamos que $B$ seja plano sobre $A$ e que a condição $c)$ seja satisfeita. Para toda $A$-álgebra $A'$, a mesma sequência exata e a injetividade de $c)$ dão $\operatorname{Tor}_1^A(Q_m,A')=0$. Tomando a álgebra $A'=A\oplus M$ com ideal $M$ de quadrado nulo, cuja multiplicação é $(a,m)(a',m')=(aa',am'+a'm)$, onde $M$ é um $A$-módulo arbitrário, obtemos $\operatorname{Tor}_1^A(Q_m,M)=0$. Todos os $Q_m$ são, portanto, planos, o que prova a recíproca condicional. As conclusões seguintes são estabelecidas sob a condição $a)$, ou sob a condição equivalente $b)$. Se pusermos $\mathscr J_1=\mathscr J\otimes_{\sh{O}_S}\sh{O}_{S_1}$, teremos então $\bigoplus_{n\geq0}\mathscr J_1^n=(\bigoplus_{n\geq0}\mathscr J^n)\otimes_{\sh{O}_S}\sh{O}_{S_1}$, de onde decorre imediatamente a afirmação relativa ao pré-esquema obtido por explosão $X'_1$. Por fim, para demonstrar que $Y'$ é $S$-plano, podemos restringir-nos também ao caso em que $S$ e $X$ são afins; se pusermos $C=\operatorname{gr}_{\mathfrak J}^*(B)$, todo ponto de $Y'$ admite então, em virtude de (19.4.2) e de (II, 2.3.6), um
+
+\oldpage[IV-4]{200}
+
+vizinhança aberta afim cujo anel é da forma $C_{(t)}$, onde $t$ é um elemento homogêneo de grau $1$ de $C$; como, por hipótese, $C$ é um $A$-módulo plano, o mesmo ocorre com seu anel de frações $C_t$ e com a componente de grau $0$, $C_{(t)}$, desse $A$-módulo graduado, donde nossa afirmação.
+  \item[(ii)] Podemos sempre nos limitar ao caso em que $S$ e $X$ são afins, sendo então $B$ uma $A$-álgebra de apresentação finita e $\mathfrak J$ um ideal de tipo finito de $B$. Em virtude de (8.9.1), (8.6.3) e (11.2.9), existem um subanel noetheriano $A_0$ de $A$, uma $A_0$-álgebra de tipo finito $B_0$ e um ideal $\mathfrak J_0$ de $B_0$ tais que $B=B_0\otimes_{A_0}A$, $\mathfrak J=\mathfrak J_0B$, $\operatorname{gr}_{\mathfrak J_0}^*(B_0)$ é um $A_0$-módulo \emph{plano} e $\operatorname{gr}_{\mathfrak J}^*(B)=\operatorname{gr}_{\mathfrak J_0}^*(B_0)\otimes_{A_0}A$. Em virtude de (i), temos então $\bigoplus_{n\geq0}\mathfrak J^n=(\bigoplus_{n\geq0}\mathfrak J_0^n)\otimes_{A_0}A=(\bigoplus_{n\geq0}\mathfrak J_0^n)\otimes_{B_0}B$; como $\bigoplus_{n\geq0}\mathfrak J_0^n$ é uma $B_0$-álgebra gerada pelo ideal de tipo finito $\mathfrak J_0$ de $B_0$ e, portanto, uma $B_0$-álgebra de tipo finito, é de apresentação finita, já que $B_0$ é noetheriano; deduz-se que $\bigoplus_{n\geq0}\mathfrak J^n$ é uma $B$-álgebra de apresentação finita. Do mesmo modo, o morfismo $\operatorname{Proj}(\bigoplus_{n\geq0}\mathfrak J_0^n)\to\Spec(B_0)$ é de tipo finito (II, 2.7.1) e, portanto, de apresentação finita; assim, o morfismo $X'\to X$, que dele se deduz por mudança de base, é de apresentação finita. Já sabemos por (19.4.2) que a imersão canônica $Y'\to X'$ é regular; como $Y'$ é $S$-plano, conforme visto em (i), deduz-se de (19.2.4) que a imersão $Y'\to X'$ é transversalmente regular relativamente a $S$ e que $X'$ é $S$-plano nos pontos de $Y'$ e, portanto (11.3.1), em uma vizinhança aberta de $Y'$. Por outro lado, o fato de que $\operatorname{gr}_{\mathscr J}^*(\sh{O}_X)$ é uma $\sh{O}_X$-álgebra $S$-plana implica, por (11.3.4), que $X$ é $S$-plano nos pontos de $Y$ e, portanto (11.3.1), em uma vizinhança de $Y$.
+\end{enumerate}
+
+\begin{corollary}[19.4.7]
+\label{IV.19.4.7}
+Sejam $g:X\to S$ um morfismo localmente de apresentação finita e $Y$ um subpré-esquema fechado de $X$ tal que o morfismo composto $Y\to X\to S$ seja localmente de apresentação finita; suponhamos, além disso, que $Y$ seja $S$-plano e que $\sh{O}_X$ seja normalmente plano ao longo de $Y$ (11.3.4). Então (com as notações de (19.4.1)), o morfismo $X'\to X$ é de apresentação finita, a imersão canônica $Y'\to X'$ é transversalmente regular de codimensão $1$ relativamente a $S$, $Y'$ é $Y$-plano (e, portanto, $S$-plano), e o conjunto dos pontos de $X$ (resp. $X'$) nos quais $X$ (resp. $X'$) é $S$-plano é uma vizinhança de $Y$ (resp. $Y'$).
+\end{corollary}
+
+Com efeito, por hipótese, $\operatorname{gr}_{\mathscr J}^*(\sh{O}_X)$ é um $(\sh{O}_X/\mathscr J)$-módulo plano e, portanto, é $S$-plano, visto que se supõe que $Y$ seja $S$-plano. Podem-se, por conseguinte, aplicar os resultados de (19.4.6, (i) e (ii)). Como $Y'$ é $Y$-isomorfo a $\operatorname{Proj}(\operatorname{gr}_{\mathscr J}^*(\sh{O}_X))$ (19.4.2), o mesmo raciocínio que em (19.4.6) mostra que $Y'$ é $Y$-plano.
+
+\begin{proposition}[19.4.8]
+\label{IV.19.4.8}
+Suponhamos que se satisfaçam as hipóteses de (19.4.7) e, além disso, que o morfismo $Y'\to Y$ seja liso. Sejam $x'$ um ponto de $Y'$ e $x$ sua imagem em $Y$. Para que $Y$ seja liso sobre $S$ no ponto $x$, é necessário e suficiente que $Y'$ seja liso sobre $S$ no ponto $x'$; quando isso ocorre, $X'$ é então liso sobre $S$ no ponto $x'$.
+
+As conclusões precedentes verificam-se, em particular, quando o morfismo $X\to S$ é localmente de apresentação finita e a imersão $Y\to X$ é transversalmente regular relativamente a $S$.
+\end{proposition}
+
+Tendo em conta a compatibilidade da formação de um pré-esquema obtido por explosão com as mudanças de base no caso considerado (19.4.6, (i)), bem como (17.5.1) e (17.7.1),
+
+\oldpage[IV-4]{201}
+
+basta considerar o caso em que $S$ é o espectro de um corpo algebricamente fechado. Mas então equivale a dizer que um $S$-pré-esquema localmente de tipo finito é liso sobre $S$ em um ponto ou que é regular nesse ponto (17.15.1); as conclusões decorrem, portanto, de (19.4.4).
+
+Quando $X\to S$ é localmente de apresentação finita e a imersão canônica $Y\to X$ é quase-regular, essa imersão é, por definição, de apresentação finita, pois o ideal que define $Y$ é de tipo finito; portanto, o morfismo composto $Y\to X\to S$ é localmente de apresentação finita. Já vimos em (19.4.3) que, nessas condições, o morfismo $Y'\to Y$ é liso; além disso, sabemos então que $\sh{N}_{Y/X}$ é um $\sh{O}_Y$-módulo localmente livre e que $\operatorname{gr}_{\mathscr J}^*(\sh{O}_X)$ é isomorfo a $\mathbf S_{\sh{O}_Y}^*(\sh{N}_{Y/X})$ e, portanto, é um $\sh{O}_Y$-módulo plano. Assim, todas as hipóteses de (19.4.7) são satisfeitas e podem-se aplicar as conclusões do enunciado de (19.4.8).
+
+\begin{corollary}[19.4.9]
+\label{IV.19.4.9}
+Sob as hipóteses gerais de (19.4.8), suponhamos, além disso, que $Y$ seja liso sobre $S$ no ponto $x$. Então, para toda generalização $x_1$ de $x$ em $X$ que não pertença a $Y$, $X$ é liso sobre $S$ no ponto $x_1$. Se $Y$ é liso sobre $S$, existe então uma vizinhança aberta $U$ de $Y$ em $X$ tal que $X$ é liso sobre $S$ nos pontos de $U-Y$.
+\end{corollary}
+
+Para a primeira afirmação, podemos nos limitar ao caso em que $X$ é um esquema local de ponto fechado $x$, e a hipótese implica então que $Y$ é liso sobre $S$, pois toda vizinhança do ponto fechado de $Y$ em $Y$ é necessariamente o próprio $Y$; conclui-se, portanto, pelo mesmo raciocínio que em (19.4.5), utilizando o fato de que o conjunto dos pontos nos quais $X'$ é liso sobre $S$ é aberto em $X'$. Para demonstrar a segunda afirmação, podemos nos reduzir ao caso em que $S$ é noetheriano e $X$ de tipo finito sobre $S$, graças a (8.9.1), (8.6.3), (11.2.9) e (17.7.6); conclui-se então como em (19.4.5), utilizando o fato de que o conjunto dos pontos nos quais $X$ é liso sobre $S$ é aberto em $X$.
+
+\begin{remark}[19.4.10]
+\label{IV.19.4.10}
+Em (19.4.6, (ii)), substituamos a hipótese de que $X$ e $Y$ são localmente de apresentação finita sobre $S$ pela de que $S$ e $X$ (e, portanto, também $Y$) são \emph{localmente noetherianos}. Então é claro que $\bigoplus_{n\geq0}\mathscr J^n$ é uma $\sh{O}_X$-álgebra de tipo finito, que o morfismo $X'\to X$ é de tipo finito, e resulta ainda de (19.2.4), aplicado aos pré-esquemas localmente noetherianos, que a imersão $Y'\to X'$ é transversalmente regular relativamente a $S$ e que $X'$ é $S$-plano nos pontos de $Y'$.
+\end{remark}
+
+\begin{proposition}[19.4.11]
+\label{IV.19.4.11}
+Sejam $X$ um pré-esquema, $\mathscr E$ um $\sh{O}_X$-módulo quase-coerente, $u:\mathscr E\to\sh{O}_X$ um homomorfismo de $\sh{O}_X$-módulos, $\mathscr J=u(\mathscr E)$ o ideal quase-coerente de $\sh{O}_X$ imagem de $u$, e $Y$ o subpré-esquema fechado de $X$ definido por $\mathscr J$. Seja $X'$ o $X$-esquema obtido pela explosão de $Y$. Por outro lado, sejam $P=\mathbf P(\mathscr E)$ o fibrado projetivo sobre $X$ definido por $\mathscr E$ (II, 4.1.1), $p:P\to X$ o morfismo estrutural, $\alpha_1^{\#}:p^*(\mathscr E)\to\sh{O}_P(1)$ o homomorfismo canônico (II, 4.1.5.1) e $\mathscr H$ seu núcleo, de modo que se tem a sequência exata
+\[
+  0\longrightarrow\mathscr H\longrightarrow p^*(\mathscr E)\xrightarrow{\alpha_1^{\#}}\sh{O}_P(1)\longrightarrow0.
+\]
+Por fim, seja $\mathscr K$ o ideal quase-coerente de $\sh{O}_P$ imagem da restrição $v:\mathscr H\to\sh{O}_P$ de $p^*(u)$, e seja $Z$ o subpré-esquema fechado de $P$ definido por $\mathscr K$.
+
+\oldpage[IV-4]{202}
+
+\begin{enumerate}
+  \item[(i)] A imagem de $X'$ pela imersão fechada $j:X'\to\mathbf P(\mathscr E)$ correspondente ao homomorfismo sobrejetivo de $\sh{O}_X$-álgebras graduadas $\mathbf S_{\sh{O}_X}(\mathscr E)\to\mathbf S_{\sh{O}_X}(\mathscr J)\to\bigoplus_{n\geq0}\mathscr J^n$ (II, 3.6.2) é um subpré-esquema fechado de $Z$.
+  \item[(ii)] Se $\mathscr E$ é um $\sh{O}_X$-módulo localmente livre de posto $m$, $\mathscr H$ é um $\sh{O}_P$-módulo localmente livre de posto $m-1$.
+  \item[(iii)] Suponha-se que $X$ seja localmente noetheriano, que $\mathscr E$ seja localmente livre de tipo finito, que o subpré-esquema $Y$ seja regular e que, em todo ponto $x\in Y$, a imersão canônica $i:Y\to X$ seja regular e de codimensão igual a $\operatorname{rg}_{\sh{O}_{X,x}}(\mathscr E_x)$ (o que exprimiremos dizendo que o homomorfismo $u$ é \emph{regular} no ponto $x$ (cf. cap. V)). Então a imagem de $X'$ pela imersão fechada $j:X'\to P$ é o subpré-esquema fechado $Z$ de $P$; em todos os pontos de $X'-Y'$ ($Y'$ é a imagem inversa de $Y$ em $X'$), a imersão $j$ é transversalmente regular relativamente a $X$; por fim, em todos os pontos $x'$ de $Y'$, $X'$ é regular, a imersão $j$ é regular e de codimensão $\operatorname{rg}_{\sh{O}_{P,z}}(\mathscr H_z)$, onde $z=j(x')$ (em outras palavras, o homomorfismo $v:\mathscr H\to\sh{O}_P$ é regular em $z$).
+\end{enumerate}
+\end{proposition}
+
+Como todas as questões são locais sobre $X$, pode-se restringir ao caso em que $X=\Spec(A)$ é afim e $\mathscr E=\widetilde E$, onde $E$ é um $A$-módulo. Para verificar (i), pode-se, além disso, examinar unicamente o que ocorre em um aberto afim de $P$ da forma $D_+(t)$, onde $t\in E=\mathbf S_A^1(E)$ (II, 2.3.14). Se se põe $S=\mathbf S_A(E)$, tem-se então $\Gamma(D_+(t),\sh{O}_P)=S_{(t)}$ (II, 2.4.1), e $p^*(\mathscr E)|D_+(t)=(E\otimes_A S_{(t)})^\sim$. Remetendo à definição de $\alpha_1^{\#}$ (II, 2.6.2.2), vê-se que a todo elemento
+\[
+  a=\sum_i x^{(i)}\otimes\frac{x_1^{(i)}x_2^{(i)}\cdots x_n^{(i)}}{t^n}
+\]
+de $E\otimes_A S_{(t)}$ (onde $x^{(i)}$ e os $x_j^{(i)}$ pertencem a $E$), $\alpha_1^{\#}$ faz corresponder o elemento
+\[
+  \sum_i\frac{x^{(i)}x_1^{(i)}\cdots x_n^{(i)}}{t^n}
+\]
+de $(S(1))_{(t)}$. Trata-se (para demonstrar (i)) de provar que, se este último elemento é nulo, o mesmo ocorre com a imagem de
+\[
+  a'=v(a)=\sum_i u(x^{(i)})\frac{x_1^{(i)}\cdots x_n^{(i)}}{t^n}
+\]
+pelo homomorfismo canônico $S_{(t)}\to(\bigoplus_{n\geq0}(u(E))^n)_{(u(t))}$ (II, 3.6.2). Ora, essa imagem não é senão
+\[
+  \sum_i\frac{u(x^{(i)})u(x_1^{(i)})\cdots u(x_n^{(i)})}{(u(t))^n}
+\]
+no anel $A_{u(t)}$, isto é, o produto do elemento $u(t)$ pela imagem canônica de $\sum_i x^{(i)}x_1^{(i)}\cdots x_n^{(i)}/t^{n+1}$ pelo homomorfismo de álgebras que estende canonicamente a $S_{(t)}$ o homomorfismo $u:E\to A$ de $A$-módulos. Isso demonstra (i).
+
+Para estabelecer (ii), observemos que se pode supor que $E$ é um $A$-módulo livre de posto $m$; como $\alpha_1^{\#}:E\otimes_A S_{(t)}\to(S(1))_{(t)}$ é sobrejetivo e $(S(1))_{(t)}$ é um $S_{(t)}$-módulo livre de posto $1$, a sequência exata
+\[
+  0\longrightarrow H_{(t)}\longrightarrow E\otimes_A S_{(t)}\xrightarrow{\alpha_1^{\#}}(S(1))_{(t)}\longrightarrow0
+\]
+é \emph{cindida}, e $H_{(t)}$ é, portanto, um $S_{(t)}$-módulo projetivo de posto $m-1$, de onde resulta (ii).
+
+Para demonstrar (iii), examinemos primeiro o que ocorre sobre um ponto $x\in X-Y$. Então $u:\mathscr E\to\sh{O}_X$, restrito a uma vizinhança de $x$, é sobrejetivo, de modo que se pode restringir ao caso em que $\mathscr J=\sh{O}_X$, caso no qual $X'$ se identifica canonicamente com $X$. Para ver então que o subpré-esquema fechado de $P$ imagem de $X'$ se identifica com $Z$, pode-se restringir, como no início, ao caso em que $X=\Spec(A)$ é afim e, além disso, $E=A^m$, de modo que $S=A[T_0,\ldots,T_{m-1}]$. Com as notações do início, pode-se supor também que $u(t)\ne0$ (pois os valores de $t\in E$
+
+\oldpage[IV-4]{203}
+
+que verificam essa condição geram a álgebra simétrica $\mathbf S_A(E)$); mudando, se necessário, a base de $E$, pode-se, portanto, supor que $t=T_0$ e $u(T_i)=0$ para $1\leq i\leq m-1$, de modo que $S_{(t)}$ se identifica canonicamente com $A[T_1,\ldots,T_{m-1}]$. Os elementos de $H$ são então os elementos da forma
+\[
+  \sum_\alpha L_\alpha(\mathbf T)\otimes\mathbf T^\alpha
+\]
+de $E\otimes_A A[T_1,\ldots,T_{m-1}]$, em que os $L_\alpha(\mathbf T)=\lambda_{\alpha0}+\lambda_{\alpha1}T_1+\cdots+\lambda_{\alpha,m-1}T_{m-1}$ devem ser tais que $\sum_\alpha L_\alpha(\mathbf T)\mathbf T^\alpha=0$ em $A[T_1,\ldots,T_{m-1}]$. Verifica-se facilmente que, quando a condição $\lambda_{\mathbf0,0}=0$ é satisfeita, os valores dos $\lambda_{\alpha0}$ podem ser escolhidos \emph{arbitrariamente} para $|\alpha|\geq1$, e sempre se podem então determinar os $\lambda_{\alpha i}$ para $i\geq1$ de modo que se verifique a condição $\sum_\alpha L_\alpha(\mathbf T)\mathbf T^\alpha=0$. Os elementos correspondentes do ideal $\mathscr K$ são então os polinômios $\sum_\alpha\lambda_{\alpha0}\mathbf T^\alpha$ \emph{sem termo constante}, e, como $(\mathbf S_A(A))_{(t)}$ se identifica com $A$, esses polinômios são exatamente os elementos do núcleo do homomorfismo $(\mathbf S_A(E))_{(t)}\to(\mathbf S_A(A))_{(t)}$. Demonstrou-se assim, por (19.2.1), que a imersão $j:X'\to P$ é \emph{transversalmente regular} relativamente a $X$ em todos os pontos de $X'-Y'$ e que $j(X')=Z$ nesses pontos.
+
+Resta examinar o que ocorre sobre um ponto $x\in Y$. A hipótese de «regularidade» de $u$ nesse ponto, formulada em (iii), equivale (em virtude de (19.1.1) e de ($0$, 17.1.7)) a dizer que $X$ é \emph{regular} no ponto $x$ e que o homomorfismo
+\[
+  u_x\otimes1:\mathscr E_x\otimes_{\sh{O}_{X,x}}\mathbf k(x)\longrightarrow\mathfrak m_x/\mathfrak m_x^2
+\]
+é \emph{injetivo}. Isso posto, como o morfismo $p:P\to X$ é liso (17.3.9), para todo $z\in P$ sobre $x$, $P$ é regular no ponto $z$ (17.5.8); além disso ($0$, 17.3.3), o homomorfismo canônico
+\begin{equation}
+  (\mathfrak m_x/\mathfrak m_x^2)\otimes_{\mathbf k(x)}\mathbf k(z)\longrightarrow\mathfrak m_z/\mathfrak m_z^2
+  \tag{19.4.11.1}\label{IV.19.4.11.1}
+\end{equation}
+é \emph{injetivo}. Deduz-se daí que o homomorfismo
+\[
+  (\mathscr E_x\otimes_{\sh{O}_{X,x}}\sh{O}_{P,z})\otimes_{\sh{O}_{P,z}}\mathbf k(z)\longrightarrow\mathfrak m_z/\mathfrak m_z^2
+\]
+deduzido de $p^*(u)$ é também injetivo, pois se escreve como o composto
+\[
+  (\mathscr E_x\otimes_{\sh{O}_{X,x}}\mathbf k(x))\otimes_{\mathbf k(x)}\mathbf k(z)\longrightarrow(\mathfrak m_x/\mathfrak m_x^2)\otimes_{\mathbf k(x)}\mathbf k(z)\longrightarrow\mathfrak m_z/\mathfrak m_z^2
+\]
+em que a primeira seta é injetiva por planitude e a segunda é o homomorfismo injetivo (19.4.11.1). Como $\mathscr H$ é (em uma vizinhança de $z$ em $P$) um fator direto de $\mathscr E\otimes_{\sh{O}_X}\sh{O}_P=p^*(\mathscr E)$, o homomorfismo $v_z\otimes1:\mathscr H_z\otimes_{\sh{O}_{P,z}}\mathbf k(z)\to\mathfrak m_z/\mathfrak m_z^2$ é também injetivo, o que estabelece a «regularidade» do homomorfismo $v$ no ponto $z$. Resta ver que a imagem por $j$ de $X'$ é idêntica ao subpré-esquema fechado $Z$. Para isso, bastará demonstrar, por um lado, que as imagens por $j$ dos pontos de $q^{-1}(x)$ (em que $q:X'\to X$ é o morfismo estrutural) são exatamente os pontos de $Z\cap p^{-1}(x)$ e, por outro, que, em cada um desses pontos $z=j(x')$, o homomorfismo sobrejetivo $\sh{O}_{Z,z}\to\sh{O}_{X',x'}$ é bijetivo. Mas, levando em conta a hipótese e (19.4.3), a restrição $Y'\to Y$ de $q$ é lisa e, como $\sh{O}_{Y,x}$ se supõe regular, o mesmo ocorre com $\sh{O}_{Y',x'}$ (17.5.8); além disso, a imersão $Y'\to X'$ é regular (19.4.2), de modo que $\sh{O}_{X',x'}$ é também um anel regular (19.1.1). A regularidade de $v$ e a de $P$ no ponto $z$ mostram, do mesmo modo, que $\sh{O}_{Z,z}$ é regular. Para demonstrar que o homomorfismo $\sh{O}_{Z,z}\to\sh{O}_{X',x'}$ é bijetivo, basta então provar que as
+
+\oldpage[IV-4]{204}
+
+dimensões desses dois anéis regulares são iguais ($0$, 17.1.9). Mas, em virtude de ($0$, 17.3.3), isso equivale também à igualdade das dimensões dos dois anéis $\sh{O}_{Z,z}\otimes_{\sh{O}_{X,x}}\mathbf k(x)$ e $\sh{O}_{X',x'}\otimes_{\sh{O}_{X,x}}\mathbf k(x)$, de modo que, finalmente, se podem substituir $X'$ e $Z$ pelas \emph{fibras} $q^{-1}(x)$ e $Z\cap p^{-1}(x)$, respectivamente, e reduzir-se a demonstrar que o morfismo $q^{-1}(x)\to Z\cap p^{-1}(x)$ deduzido de $j$ é um \emph{isomorfismo}. Ora, aqui se pode restringir ao caso em que $X=\Spec(B)$ com $B=\sh{O}_{X,x}$ e $E=B^m$, de onde $S=B[T_1,\ldots,T_m]$; além disso, a hipótese significa que existe um sistema regular de parâmetros $(t_i)_{1\leq i\leq n}$ de $B$ tal que $u(T_i)=t_i$ para $1\leq i\leq m$ ($0$, 17.1.7); seja $\mathfrak J$ a imagem de $u$; se $\mathfrak m$ é o ideal maximal de $B$, tem-se $\mathfrak J^n\otimes_B B/\mathfrak m=\mathfrak J^n/\mathfrak m\mathfrak J^n=(\mathfrak J^n/\mathfrak J^{n+1})\otimes_B(B/\mathfrak m)$ e, por conseguinte (16.9.4.1), $(\bigoplus_{n\geq0}\mathfrak J^n)\otimes_B\mathbf k(x)$ se identifica com $\mathbf k(x)[T_1,\ldots,T_m]$, de onde se deduz que a imersão $q^{-1}(x)\to p^{-1}(x)$ é aqui um \emph{isomorfismo}; isso implica \emph{a fortiori} que o subpré-esquema fechado $Z\cap p^{-1}(x)$ é idêntico à fibra $p^{-1}(x)$, e termina a demonstração de (19.4.11).
