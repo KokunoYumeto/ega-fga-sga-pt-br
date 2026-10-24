@@ -1,3 +1,18 @@
+# Fundamentos da geometria algébrica — português brasileiro
+
+Relatórios149,182,190,195,212,221,232,236 do Seminário Bourbaki, de Alexandre Grothendieck, com as erratas, os suplementos e os comentários de1962. Tradução, correções e composição em português brasileiro produzidas por AI; o responsável pela publicação não traduziu o texto.
+
+- [Volume integral — edição corrigida — PDF, 155 páginas](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/001_FGA_PTBR_CURRENT.pdf) · [fontes LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/tree/main/editions/FGA_PTBR_CURRENT/)
+- [Parte A — edição corrigida — PDF, 83 páginas](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/004_FGA_PTBR_A_CURRENT.pdf) · [fontes LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/tree/main/editions/FGA_PTBR_A_CURRENT/)
+- [Parte B — edição corrigida — PDF, 74 páginas](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/007_FGA_PTBR_B_CURRENT.pdf) · [fontes LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/tree/main/editions/FGA_PTBR_B_CURRENT/)
+- [Volume integral — edição diplomática — PDF, 153 páginas](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/010_FGA_PTBR_PRINTED.pdf) · [fontes LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/tree/main/editions/FGA_PTBR_PRINTED/)
+- [Parte A — edição diplomática — PDF, 83 páginas](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/013_FGA_PTBR_A_PRINTED.pdf) · [fontes LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/tree/main/editions/FGA_PTBR_A_PRINTED/)
+- [Parte B — edição diplomática — PDF, 72 páginas](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/016_FGA_PTBR_B_PRINTED.pdf) · [fontes LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/tree/main/editions/FGA_PTBR_B_PRINTED/)
+
+[Fontes e autoria](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/blob/main/editions/FGA_PTBR_CURRENT/SOURCES.md) · [Direitos](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/blob/main/editions/FGA_PTBR_CURRENT/RIGHTS_NOTICE.md).
+
+Cada leitor inclui o LaTeX direto e o pacote completo de fontes editáveis. A parte A reúne os relatórios149,182,190,195; a parte B reúne os relatórios212,221,232,236 e os comentários de1962.
+
 # EGA, FGA e SGA em português brasileiro
 
 ## EGA II: fontes editáveis
