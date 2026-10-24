@@ -1,0 +1,164 @@
+\subsection{Componentes conexas das fibras ao longo de uma seção}
+\label{subsection:IV.15.6}
+
+\begin{proposition}[15.6.1]
+\label{IV.15.6.1}
+Sejam $Y$ um pré-esquema localmente noetheriano, $f:X\to Y$ um morfismo localmente de tipo finito, $g:Y\to X$ uma $Y$-seção de $X$ (\textbf{I}, 2.5.5). Para todo $y\in Y$, denotemos por $X_y^0$ a componente conexa de $f^{-1}(y)$ que contém o ponto $g(y)$. Sejam $y$ um ponto de $Y$ e $y'$ uma generalização de $y$ em $Y$. Então:
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item Se existe uma componente irredutível $Z$ de $X_{y'}^0$, de dimensão igual a $\dim(X_{y'}^0)$ e que contém $g(y')$ (o que ocorrerá se $X_{y'}^0$ for irredutível), temos
+\begin{equation}
+\tag{15.6.1.1}
+\label{IV.15.6.1.1}
+  \dim(X_y^0)\geqslant\dim(X_{y'}^0).
+\end{equation}
+  \item Se, além disso, $X_y^0$ é irredutível e os dois membros de (15.6.1.1) são iguais, então $X_y^0\subset\overline{X_{y'}^0}$ (fecho em $X$).
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(i) Seja $\overline Z$ o fecho de $Z$ em $X$; como $y$ é aderente a $y'$ e $g$ é contínua, temos $g(y)\in\overline Z$. Como $Z=\overline Z\cap f^{-1}(y')$, resulta do teorema de semicontinuidade de Chevalley (13.1.3), aplicado à restrição de $f$ ao subpré-esquema fechado reduzido de $X$ que tem $\overline Z$ como espaço subjacente, que
+\[
+  \dim_{g(y)}(\overline Z\cap f^{-1}(y))\geqslant\dim(Z)~;
+\]
+mas as componentes irredutíveis de $\overline Z\cap f^{-1}(y)$ que contêm $g(y)$ estão evidentemente contidas em $X_y^0$, donde, \emph{a fortiori}, a desigualdade (15.6.1.1).
+
+(ii) O raciocínio de (i) mostra ainda que, se os dois membros de (15.6.1.1) são iguais, temos necessariamente
+\[
+  \dim_{g(y)}(\overline Z\cap f^{-1}(y))=\dim_{g(y)}(X_y^0)~;
+\]
+se $X_y^0$ é irredutível, isso implica $\overline Z\cap f^{-1}(y)=X_y^0$, de modo que $X_y^0$ está contido em $\overline Z$ e, \emph{a fortiori}, em $\overline{X_{y'}^0}$.
+\end{proof}
+
+\oldpage[IV-3]{237}
+\begin{corollary}[15.6.2]
+\label{IV.15.6.2}
+Com as notações de (15.6.1), suponhamos, além disso, que, para todo $y\in Y$, $X_y^0$ seja irredutível. Então a função $z\mapsto\dim(X_z^0)$ é semicontínua superiormente em $Y$. Se, além disso, essa função é constante em uma vizinhança de um ponto $y\in Y$, então temos $X_y^0\subset\overline{X_{y'}^0}$ para toda generalização $y'$ de $y$.
+\end{corollary}
+
+\begin{proof}
+Seja $y$ um ponto de $Y$, e seja $U$ uma vizinhança aberta afim de $g(y)$ em $X$; existe então uma vizinhança aberta $V$ de $y$ em $Y$ tal que $g(V)\subset U$ e, para todo $z\in V$, $U\cap X_z^0$ é denso em $X_z^0$, de modo que $\dim(X_z^0)=\dim(U\cap X_z^0)$ (4.1.1.3). Substituindo $X$ por $U$, podemos, portanto, supor que $f$ é um morfismo de tipo finito. Sabemos então (9.7.10) que a função $z\mapsto\dim(X_z^0)$ é localmente construtível, e as afirmações do corolário resultam, portanto, de (15.6.1) e de ($\mathbf{0}_{\mathrm{III}}$, 9.3.4).
+\end{proof}
+
+\begin{proposition}[15.6.3]
+\label{IV.15.6.3}
+Com as notações de (15.6.1), suponhamos que, para todo $y\in Y$, $X_y^0$ seja geometricamente irredutível (4.5.2). Então, para todo $y\in Y$ tal que a função $z\mapsto\dim(X_z^0)$ seja constante em uma vizinhança de $y$, $f$ é universalmente aberto nos pontos de $X_y^0$.
+\end{proposition}
+
+\begin{proof}
+Apliquemos o critério (14.3.7). Seja, pois, $h:Y'\to Y$ um morfismo, sendo $Y'$ o espectro de um anel de valoração discreta, cujo ponto fechado e cujo ponto genérico denotaremos, respectivamente, por $t$, $t'$, e suponhamos que $h(t)=y$, de modo que $y'=h(t')$ é uma generalização de $y$. Ponhamos $X'=X\times_Y Y'$, $f'=f_{(Y')}:X'\to Y'$, $g'=g_{(Y')}:Y'\to X'$. Com as mesmas notações de (15.6.1), a hipótese feita sobre os $X_y^0$ implica que
+\[
+  X_t^{\prime 0}=X_y^0\otimes_{\mathbf{k}(y)}\mathbf{k}(t)
+  \quad\text{e}\quad
+  X_{t'}^{\prime 0}=X_{y'}^0\otimes_{\mathbf{k}(y')}\mathbf{k}(t'),
+\]
+e que $X_t^{\prime 0}$ e $X_{t'}^{\prime 0}$ são irredutíveis (4.4.1); como $\dim(X_y^0)=\dim(X_t^{\prime 0})$ e $\dim(X_{y'}^0)=\dim(X_{t'}^{\prime 0})$ (4.1.4), vemos que nos reduzimos a provar a proposição para $f'$ e $X_t^{\prime 0}$; em outras palavras, podemos nos limitar ao caso em que $Y$ é o espectro de um anel de valoração discreta, $y$ seu ponto fechado e $y'$ seu ponto genérico; se $x'$ é o ponto genérico de $X_{y'}^0$, resulta então de (15.6.2) que todo ponto de $X_y^0$ é uma especialização de $x'$, donde a conclusão.
+\end{proof}
+
+\begin{proposition}[15.6.4]
+\label{IV.15.6.4}
+Sob as hipóteses gerais de (15.6.1), seja $X^0$ a união dos $X_y^0$ quando $y$ percorre $Y$. Se $y\in Y$ é tal que $X_y^0$ seja geometricamente reduzido sobre $\mathbf{k}(y)$ (4.6.2) e se $f$ é universalmente aberto em todo ponto de $X_y^0$, então $X^0$ é uma vizinhança de $X_y^0$ em $X$. Em particular, se $f$ é universalmente aberto e se, para todo $y\in Y$, $X_y^0$ é geometricamente reduzido sobre $\mathbf{k}(y)$, $X^0$ é aberto em $X$.
+\end{proposition}
+
+\begin{proof}
+Mostremos primeiro que podemos nos reduzir ao caso em que $f$ é um morfismo \emph{de tipo finito}. Seja $x$ um ponto de $X_y^0$; resulta de (5.10.8.1) (com $\mathfrak F=\{\varnothing\}$) que existe uma sequência finita $(Z_i)_{0\leqslant i\leqslant n}$ de componentes irredutíveis de $f^{-1}(y)$ tal que $g(y)\in Z_0$, $x\in Z_n$ e $Z_i\cap Z_{i+1}\ne\varnothing$ para $0\leqslant i\leqslant n-1$; sendo os $Z_i$ irredutíveis, existe uma sequência finita $(U_i)$ ($1\leqslant i\leqslant n$) de abertos afins em $f^{-1}(y)$ tais que $g(y)\in U_1$, $x\in U_n$, sendo $U_i$ uma vizinhança afim de um ponto $x_i$ de $Z_i\cap Z_{i-1}$ para $1\leqslant i\leqslant n$. Para cada $i$, existe um aberto quase compacto $W_i$ em $X$ tal que $U_i=f^{-1}(y)\cap W_i$; seja $W$ o aberto quase compacto de $X$ que é a união dos $W_i$. Como $g$ é contínua, existe uma vizinhança aberta afim $V$ de $y$ em $Y$ tal que $g(V)\subset W$; se $X'=W\cap g^{-1}(V)$, a restrição de $f$ a $X'$ é de tipo finito; além disso, se, para todo $z\in V$, $X_z^{\prime 0}$ é a componente conexa de $X'\cap f^{-1}(z)$ que contém $g(z)$, temos $X_z^{\prime 0}\subset X_z^0$, e $x$ pertence a $X_y^{\prime 0}$. Com efeito, cada um dos $U_i$ contém os dois conjuntos irredutíveis $U_i\cap Z_{i-1}$ e $U_i\cap Z_i$, que se intersectam, e os conjuntos irredutíveis $U_i\cap Z_{i-1}$ e $U_{i-1}\cap Z_{i-1}$
+\oldpage[IV-3]{238}
+se intersectam para $2\leqslant i\leqslant n$; a união dos $U_i\cap Z_{i-1}$ e dos $U_i\cap Z_i$ para $1\leqslant i\leqslant n$ é, portanto, conexa e contém $x$ e $g(y)$. Como $f|X'$ é universalmente aberto nos pontos de $X_y^{\prime 0}$, isso termina a demonstração de nossa afirmação, pois, se a proposição estiver provada quando $f$ é de tipo finito, a união $X^{\prime 0}$ dos $X_z^{\prime 0}$ para $z\in V$ será uma vizinhança de $x$, e o mesmo valerá para $X^0$.
+
+Suponhamos, portanto, $f$ de tipo finito. Então $X^0$ é localmente construtível (9.7.12); basta, por conseguinte, mostrar que $X^0$ contém toda generalização $x'$ de $x$ ($\mathbf{0}_{\mathrm{III}}$, 9.2.5). Ponhamos $y'=f(x')$; existem um anel de valoração discreta $A$ e um morfismo $u$ de $Y'=\operatorname{Spec}(A)$ em $X$ tais que, se $z$ é o ponto fechado e $z'$ o ponto genérico de $Y'$, temos $u(z)=x$ e $u(z')=x'$ (\textbf{II}, 7.1.9); se $h=f\circ u$, temos, pois, $h(z)=y$ e $h(z')=y'$. Ponhamos $X'=X\times_Y Y'$, $f'=f_{(Y')}:X'\to Y'$, que é um morfismo de tipo finito universalmente aberto nos pontos de $f'^{-1}(z)$, e $g'=g_{(Y')}$, que é uma $Y'$-seção de $X'$. Se $p_y:f'^{-1}(z)\to f^{-1}(y)$ (resp.\ $p_{y'}:f'^{-1}(z')\to f^{-1}(y')$) é a projeção canônica, $p_y^{-1}(X_y^0)$ (resp.\ $p_{y'}^{-1}(X_{y'}^0)$) é a componente conexa de $f'^{-1}(z)$ (resp.\ $f'^{-1}(z')$) que contém $g'(z)$ (resp.\ $g'(z')$), pois os $X_t^0$ são geometricamente conexos (4.5.13), e basta aplicar (4.4.1). Além disso, o morfismo $u$ corresponde a uma $Y'$-seção $v$ de $X'$ tal que $p_y(v(y))=x$, $p_{y'}(v(y'))=x'$, de modo que $v(y')$ é uma generalização de $v(y)$, e bastará, portanto, provar que $v(y')$ pertence a $p_{y'}^{-1}(X_{y'}^0)$. Por fim, é claro que $p_y^{-1}(X_y^0)$ é geometricamente reduzido sobre $\mathbf{k}(z)$.
+
+Em outras palavras, nos reduzimos ao caso em que $Y$ é o espectro de um anel de valoração discreta, $y$ seu ponto fechado e $y'$ seu ponto genérico. Como $f^{-1}(y)-X_y^0$ é então fechado em $X$, podemos, substituindo $X$ pelo aberto $X-(f^{-1}(y)-X_y^0)$, supor que $X_y^0=f^{-1}(y)$; do mesmo modo, podemos substituir $X$ pelo aberto que é a componente conexa de $X$ que contém $g(Y)$, sendo que essa componente conexa contém evidentemente $X^0$; em outras palavras, podemos supor $X$ conexo. A proposição estará então estabelecida se mostrarmos que $X^0=X$, ou ainda que $X_{y'}$ é conexo; mas $f^{-1}(y')$ é geometricamente reduzido sobre $\mathbf{k}(y')$ e, \emph{a fortiori}, reduzido; como, além disso, $f$ é aberto nos pontos de $f^{-1}(y)$, podemos aplicar o lema (15.5.6), donde a conclusão.
+\end{proof}
+
+\begin{corollary}[15.6.5]
+\label{IV.15.6.5}
+Sejam $f:X\to Y$ um morfismo plano de apresentação finita e $g$ uma $Y$-seção de $X$; para todo $y\in Y$, seja $X_y^0$ a componente conexa de $f^{-1}(y)$ que contém $g(y)$, e seja $X^0$ a união dos $X_y^0$ quando $y$ percorre $Y$. Então, para todo $y\in Y$ tal que $X_y^0$ seja geometricamente reduzido sobre $\mathbf{k}(y)$, $X^0$ é uma vizinhança de $X_y^0$ em $X$. Em particular, se $f$ é reduzido (6.8.1), $X^0$ é aberto em $X$.
+\end{corollary}
+
+\begin{proof}
+Sendo a questão local em $Y$, podemos supor $Y=\operatorname{Spec}(A)$ afim. Existem, portanto, um subanel noetheriano $A_0$ e um morfismo plano de tipo finito $f_0:X_0\to Y_0=\operatorname{Spec}(A_0)$ tais que $X=X_0\times_{Y_0}Y$ e $f=(f_0)_{(Y)}$ (8.9.1 e 11.2.7); além disso, podemos supor que existe uma $Y_0$-seção $g_0$ de $X_0$ tal que $g=(g_0)_{(Y)}$ (8.8.2). Para todo $y\in Y$, seja $y_0$ sua projeção em $Y_0$; resulta de (4.5.13) que $(X_0)_{y_0}^0$ é geometricamente conexo; portanto, se $p:f^{-1}(y)\to f_0^{-1}(y_0)$ é a projeção canônica, temos $X_y^0=p^{-1}((X_0)_{y_0}^0)$ (4.4.1); além disso, a hipótese de que $X_y^0$ seja geometricamente reduzido sobre $\mathbf{k}(y)$ implica que $(X_0)_{y_0}^0$ é geometricamente reduzido sobre $\mathbf{k}(y_0)$ (4.6.10). Reduzimo-nos assim ao caso em que supomos
+\oldpage[IV-3]{239}
+além disso $Y$ noetheriano; como $f$ é universalmente aberto (11.1.1), basta então aplicar (15.6.4).
+\end{proof}
+
+\begin{proposition}[15.6.6]
+\label{IV.15.6.6}
+Seja $f:X\to Y$ um morfismo tal que $Y$ seja localmente noetheriano e $f$ localmente de tipo finito, ou que $f$ seja de apresentação finita. Seja $g$ uma $Y$-seção de $X$; para todo $y\in Y$, seja $X_y^0$ a componente conexa de $f^{-1}(y)$ que contém $g(y)$; por fim, seja $X^0$ a união dos $X_y^0$ quando $y$ percorre $Y$.
+
+Suponhamos que, para todo $y\in Y$, $X_y^0$ seja geometricamente irredutível. Então:
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item A função $y\mapsto\dim(X_y^0)$ é semicontínua superiormente em $Y$.
+  \item Sejam $x_0\in X^0$, $y_0=f(x_0)$. Se a função $y\mapsto\dim(X_y^0)$ é constante em uma vizinhança de $y_0$, existe uma vizinhança aberta $U$ de $y_0$ tal que $f$ seja universalmente aberto nos pontos de $X^0\cap f^{-1}(U)$. Se, além disso, $Y$ é reduzido e $f^{-1}(y_0)$ é geometricamente reduzido sobre $\mathbf{k}(y_0)$ no ponto $x_0$, $f$ é plano no ponto $x_0$.
+  \item Reciprocamente, suponhamos que $f$ seja universalmente aberto no ponto genérico de $X_{y_0}^0$ e, além disso, que uma das seguintes condições seja satisfeita:
+  \begin{enumerate}
+    \item[$\alpha$)] A fibra $f^{-1}(y_0)$ é geometricamente reduzida sobre $\mathbf{k}(y_0)$ no ponto $g(y_0)$ e o anel $\sh{O}_{Y,y_0}$ é noetheriano.
+    \item[$\beta$)] Para todo ponto genérico $y'$ de uma componente irredutível de $Y$ que contém $y_0$, temos $\dim(f^{-1}(y'))=\dim(X_{y'}^0)$.
+  \end{enumerate}
+  Então a função $y\mapsto\dim(X_y^0)$ é constante em uma vizinhança de $y_0$.
+  \item O conjunto $W$ dos pontos $x\in X^0$ tais que a função $y\mapsto\dim(X_y^0)$ seja constante em uma vizinhança de $f(x)$ e que $X_{f(x)}^0$ seja geometricamente reduzido sobre $\mathbf{k}(f(x))$ é aberto em $X$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Sendo as questões locais em $Y$, podemos supor que $Y=\operatorname{Spec}(A)$ é afim. Quando $f$ é de apresentação finita, existem, portanto, um subanel noetheriano $A_1$ de $A$ e um morfismo de tipo finito $f_1:X_1\to Y_1=\operatorname{Spec}(A_1)$ tais que $X=X_1\times_{Y_1}Y$ e $f=(f_1)_{(Y)}$ (8.9.1); além disso, podemos supor que existe uma $Y_1$-seção $g_1$ de $X_1$ tal que $g=(g_1)_{(Y)}$ (8.8.2). Para todo $y\in Y$, seja $y_1$ sua projeção em $Y_1$; resulta de (4.5.13) que $(X_1)_{y_1}^0$ é geometricamente conexo; portanto, se $p:f^{-1}(y)\to f_1^{-1}(y_1)$ é a projeção canônica, temos $X_y^0=p^{-1}((X_1)_{y_1}^0)$ (4.4.1). Observemos, por outro lado, que podemos, em virtude de (9.7.11) e (9.7.12), aplicar (9.3.3) à propriedade de ser geometricamente irredutível; podemos, portanto, supor $A_1$ escolhido de modo que $(X_1)_{y_1}^0$ seja geometricamente irredutível para todo $y_1\in Y_1$. Temos $\dim(X_y^0)=\dim((X_1)_{y_1}^0)$ (4.1.4) e, aplicando novamente (9.3.3) à propriedade de ter uma dimensão dada (e usando (9.5.5) e (9.7.12)), podemos supor (restringindo, se necessário, $Y$ a uma vizinhança de $y_0$) que, se $\dim(X_y^0)$ é constante em $Y$, então $\dim((X_1)_{y_1}^0)$ é constante em $Y_1$. Se $Y$ é reduzido, o mesmo vale para $Y_1$, pois $A_1\subset A$; por outro lado, se $f^{-1}(y_0)$ é geometricamente reduzido no ponto $x_0$, $f_1^{-1}(y_{01})$ o é no ponto $x_{01}$ (sendo $x_{01}$ e $y_{01}$ as projeções respectivas de $x_0$ e $y_0$ em $X_1$ e $Y_1$) (4.6.10).
+
+Essas observações mostram que, para demonstrar (i) e (ii), podemos nos limitar ao caso em que $Y$ é noetheriano e $f$ localmente de tipo finito. Mas, nesse caso, a afirmação (i) resulta de (15.6.2), e a primeira afirmação de (ii), de (15.6.3). Por outro lado, se $Y$ é reduzido e $f^{-1}(y_0)$ é geometricamente reduzido sobre $\mathbf{k}(y_0)$ no ponto $x_0$ (supondo sempre $Y$
+\oldpage[IV-3]{240}
+noetheriano), como $X_y^0$ é a única componente irredutível de $f^{-1}(y)$ que contém $x$, deduzimos de (15.6.3) e (15.2.3) que, se $\dim(X_y^0)$ é constante em uma vizinhança de $y_0$, $f$ é plano no ponto $x_0$.
+
+Para provar (iii), observemos primeiro que o conjunto $X^0$ é localmente construtível em $X$ (9.7.12); portanto, por (9.5.5), o conjunto $E$ dos $y\in Y$ tais que $\dim(X_y^0)=\dim(X_{y_0}^0)$ é localmente construtível em $Y$. Apliquemos então (1.10.1) a $E$: basta provar (levando em conta (i)) que $\dim(X_{y'}^0)=\dim(X_{y_0}^0)$ para o ponto genérico $y'$ de uma componente irredutível de $Y$ que contém $y_0$; isso já permite supor que $Y=\operatorname{Spec}(\sh{O}_{Y,y_0})$.
+
+Se estamos no caso $\alpha$), reduzimo-nos imediatamente, em virtude de (\textbf{II}, 7.1.9), e usando (4.5.13) e (4.4.1) como em (15.6.4), ao caso em que $Y$ é o espectro de um anel de valoração discreta, $y_0$ seu ponto fechado e $y'$ seu ponto genérico. Mas então as hipóteses implicam, em virtude de (15.2.2.1), que $f$ é \emph{plano} no ponto $g(y_0)$ e, portanto, também em uma vizinhança $V$ desse ponto em $X$ (11.1.1). Para demonstrar nossa afirmação, podemos substituir $X$ por $V$, pois $V\cap X_{y'}^0$ não é vazio em virtude de (2.3.4); logo, é um aberto denso em toda parte em $X_{y'}^0$ e tem, por conseguinte, a mesma dimensão (4.1.1.3); além disso, como $X_{y'}^0$ também é a componente conexa de $f^{-1}(y')$ que contém $g(y')$, podemos supor $V$ escolhido de modo que $V$ não encontre nenhuma outra componente irredutível de $f^{-1}(y_0)$ nem de $f^{-1}(y')$; em outras palavras, podemos supor que $X^0=X$; mas então a conclusão resulta de (12.1.1, (i)), pois, por hipótese, $X_{y_0}^0$ é íntegro.
+
+Suponhamos agora que estamos no caso $\beta$). Apliquemos desta vez (\textbf{II}, 7.1.4) da mesma maneira que (\textbf{II}, 7.1.9) no caso $\alpha$): reduzimo-nos então ao caso em que $Y$ é o espectro de um anel de valoração (não necessariamente discreta), $y_0$ seu ponto fechado e $y'$ seu ponto genérico. Em virtude de (14.3.13), existe uma componente irredutível $Z$ de $X$ que contém $X_{y_0}^0$ e domina $Y$, e tal que $\dim(Z\cap f^{-1}(y'))=\dim(X_{y_0}^0)$; mas a hipótese $\beta$) e o fato de que $\dim(Z\cap f^{-1}(y'))\leqslant\dim(f^{-1}(y'))$ mostram que $\dim(X_{y_0}^0)\leqslant\dim(X_{y'}^0)$, donde $\dim(X_{y_0}^0)=\dim(X_{y'}^0)$ em virtude de (i).
+
+Resta provar (iv). Observemos primeiro que os conjuntos considerados não mudam quando substituímos $f$ por $f_{(Y_{\mathrm{red}})}:X\times_Y Y_{\mathrm{red}}\to Y_{\mathrm{red}}$, sendo a projeção $X\times_Y Y_{\mathrm{red}}\to X$ um homeomorfismo. Em outras palavras, podemos supor $Y$ reduzido, e então resulta de (ii) que $f$ é \emph{plano} nos pontos de $W$. Consideremos um ponto $x_0$ de $W$ e provemos que $W$ é uma vizinhança de $x_0$; procedendo como no início da demonstração, e usando também (11.2.7), podemos, além disso, supor $Y$ noetheriano; resulta então de (ii) e de (15.6.4) que $X^0$ é uma vizinhança de $x_0$ em $X$, e de (12.1.1, (vii)) que $W$ também é uma vizinhança de $x_0$ em $X$.
+\end{proof}
+
+\begin{corollary}[15.6.7]
+\label{IV.15.6.7}
+Suponhamos satisfeitas as condições preliminares de (15.6.6) sobre $f$, e suponhamos, além disso, que, para todo $y\in Y$, $X_y^0$ seja geometricamente íntegro sobre $\mathbf{k}(y)$. Então as seguintes condições são equivalentes:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item A função $y\mapsto\dim(X_y^0)$ é localmente constante em $Y$.
+  \item O morfismo $f_{(Y_{\mathrm{red}})}:X\times_Y Y_{\mathrm{red}}\to Y_{\mathrm{red}}$ deduzido de $f$ por mudança de base é plano nos pontos de $X^0$.
+\end{enumerate}
+\oldpage[IV-3]{241}
+Além disso, essas condições implicam que $X^0$ é aberto em $X$. Por fim, quando $Y$ é localmente noetheriano, a) e b) também são equivalentes a
+\begin{enumerate}
+  \item[\rm b$'$)] $f$ é universalmente aberto nos pontos de $X^0$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+O fato de que a) implica b) resulta de (15.6.6, (ii)), assim como o fato de que $X^0$ é então aberto em $X$. Se b) é satisfeita, podemos nos limitar ao caso em que $Y$ é reduzido e $f$ plano; então, reduzimo-nos, como no início de (15.6.6), e usando, além disso, (11.2.7), ao caso em que $Y$ é noetheriano, caso em que a conclusão resulta de (15.6.6, (iii), caso $\alpha$)). A equivalência de b) e b$'$) já foi provada quando $Y$ é localmente noetheriano (15.2.2.1), levando em conta que o morfismo $X\times_Y Y_{\mathrm{red}}\to X$ é um homeomorfismo universal.
+\end{proof}
+
+\begin{proposition}[15.6.8]
+\label{IV.15.6.8}
+Sejam $f:X\to Y$ um morfismo separado de apresentação finita e $g$ uma $Y$-seção de $X$; para todo $y\in Y$, seja $X_y^0$ a componente conexa de $f^{-1}(y)$ que contém $g(y)$, e seja $X^0$ a união dos $X_y^0$ quando $y$ percorre $Y$. Então, se $y\in Y$ é tal que $X_y^0$ seja próprio sobre $\mathbf{k}(y)$, $X^0$ é próprio sobre $Y$ no ponto $y$ (isto é, (15.7.1), existe uma vizinhança aberta $U$ de $y$ em $Y$ tal que $X^0\cap f^{-1}(U)$ seja fechado em $f^{-1}(U)$ e próprio sobre $U$).
+\end{proposition}
+
+\begin{proof}
+Procedendo como no início de (15.6.6) (onde usamos (8.10.5, (v)) e substituímos (9.7.11) por (9.6.7)), reduzimo-nos ao caso em que $Y$ é noetheriano e $f$ de tipo finito. Sabemos então (9.7.12) que $X^0$ é localmente construtível em $X$; por outro lado, os $X_z^0$ são geometricamente conexos (para todo $z\in Y$) em virtude de (4.5.13); por fim, como $g(Y)\subset X^0$, $X^0$ é universalmente submersivo sobre $Y$ (15.7.8). Basta então aplicar a $X^0$ o critério (15.7.9).
+\end{proof}
+
+\begin{corollary}[15.6.9]
+\label{IV.15.6.9}
+Seja $f:X\to Y$ um morfismo separado tal que $Y$ seja localmente noetheriano e $f$ localmente de tipo finito, ou que $f$ seja de apresentação finita. Seja $g$ uma $Y$-seção de $X$ e, para todo $y\in Y$, seja $X_y^0$ a componente conexa de $f^{-1}(y)$ que contém $g(y)$. Seja $y$ um ponto de $Y$ tal que $X_y^0$ seja próprio sobre $\mathbf{k}(y)$. Então, para toda generalização $y'$ de $y$, temos $\dim(X_y^0)\geqslant\dim(X_{y'}^0)$.
+\end{corollary}
+
+\begin{proof}
+Suponhamos primeiro $f$ de apresentação finita; então, substituindo, se necessário, $Y$ por uma vizinhança de $y$, podemos supor que $f|X^0$ é \emph{próprio} (15.6.8), e basta aplicar (13.1.5) a essa restrição. Se $Y$ é localmente noetheriano e $f$ localmente de tipo finito, $X$ é localmente noetheriano; além disso, a hipótese de que $X_y^0$ seja próprio sobre $\mathbf{k}(y)$ implica que $X_y^0$ é noetheriano; existe, portanto, um aberto noetheriano $V\subset X$ que contém $X_y^0$; por conseguinte, existe uma vizinhança aberta $W$ de $y$ em $Y$ tal que $g(W)\subset V$. Além disso, se $z$ é um ponto maximal de $X_{y'}^0$, podemos supor que $z\in V$. A restrição de $f$ a $V\cap f^{-1}(W)$ é então um morfismo de tipo finito, e $g|W$ uma $W$-seção; aplicando a esse morfismo o resultado já obtido, vemos que, se $Z$ é a componente irredutível de $X_{y'}^0$ de ponto genérico $z$, temos $\dim(Z)\leqslant\dim(X_y^0)$. Como $z$ é um ponto maximal qualquer de $X_{y'}^0$, temos de fato $\dim(X_{y'}^0)\leqslant\dim(X_y^0)$.
+\end{proof}
+
+\begin{remarks}[15.6.10]
+\label{IV.15.6.10}
+(i) A hipótese suplementar sobre a existência de uma componente irredutível de $X_{y'}^0$ que contém $g(y')$ e tem dimensão igual a $\dim(X_{y'}^0)$, feita em (15.6.1), não é supérflua, como mostra o exemplo seguinte. Sejam $A$ um anel de valoração discreta, $\pi$ um uniformizante de $A$, $K$ o corpo de frações de $A$, $k$ seu corpo residual. Tomemos $Y=\operatorname{Spec}(A)$, e denotemos por $y$ e $y'$ o ponto fechado e o ponto genérico de $Y$. Consideremos os dois $Y$-esquemas seguintes: $X_1=\operatorname{Spec}(A[t])$, $X_2=\operatorname{Spec}(K[u,v])$, onde $t,u,v$ são indeterminadas (observemos que a projeção de $X_2$ em $Y$ é, portanto, $\{y'\}$). No anel $A[t]$, o ideal principal $(\pi t-1)$ é \emph{maximal} e corresponde, portanto, a um ponto fechado $x_1$ de $X_1$, que se projeta no ponto genérico $y'$ de $Y$ e é tal que $\mathbf{k}(x_1)=K$.
+\oldpage[IV-3]{242}
+Consideremos, por outro lado, o ponto fechado $x_2$ de $X_2$ que corresponde ao ideal maximal $\left(u-\frac{1}{\pi}\right)+(v)$ de $K[u,v]$; temos também $\mathbf{k}(x_2)=K$. Como veremos no cap.~V, podemos, portanto, \emph{colar} $X_1$ e $X_2$ ao longo dos dois subpré-esquemas fechados $Z_1$, $Z_2$ de $X_1$, $X_2$ que têm, respectivamente, $\{x_1\}$ e $\{x_2\}$ como espaços subjacentes, segundo o único $Y$-isomorfismo de $Z_1$ sobre $Z_2$. Denotemos por $X$ o $Y$-pré-esquema assim obtido, e por $x$ o ponto de $X$ que é a imagem de $x_1$ e $x_2$. A ``seção nula'' $g$ de $X_1$ (\textbf{II}, 1.7.9) ainda é então uma $Y$-seção de $X$; $f^{-1}(y)$ é igual a $(X_1)_y$, enquanto $f^{-1}(y')$ tem duas componentes irredutíveis, respectivamente isomorfas a $(X_1)_{y'}^0$ e $(X_2)_{y'}^0$, que têm um único ponto comum $x$ e dimensões respectivas 1 e 2. Veja-se, contudo, a prop.~(15.6.9).
+
+(ii) Consideremos o morfismo $f$ definido em (12.2.3, (ii)), que é próprio e plano; além disso, a restrição de $f$ a $X_1\cap f_0^{-1}(Y)$ é um isomorfismo, de modo que o morfismo inverso $g:Y\to X$ é uma $Y$-seção de $X$. Temos então $\dim(X_{y_0})=1$, enquanto $\dim(X_y^0)=0$ para $y\ne y_0$, embora $X_y^0$ seja geometricamente irredutível para todo $y\in Y$ (mas $X_{y_0}^0$ não é reduzido); vemos, portanto, que, em (15.6.6, (iii)), não podemos suprimir as hipóteses $\alpha$) e $\beta$). Além disso, $X^0$ não é uma vizinhança de $X_{y_0}^{0}$, o que prova que, em (15.6.4), não podemos dispensar a hipótese de que $X_{y_0}^0$ seja reduzido.
+
+(iii) No cap.~VI, aplicaremos os resultados precedentes aos $Y$-pré-esquemas \emph{em grupos} localmente de tipo finito sobre um pré-esquema localmente noetheriano $Y$. Se $G$ é um tal pré-esquema, existe uma $Y$-seção canônica $g$, a ``seção unidade'', e mostra-se que $G_y^0$ é sempre geometricamente irredutível e que temos $\dim(G_y^0)=\dim(G_y)$, pondo $G_y=f^{-1}(y)$. Resultará, portanto, de (15.6.2) e (15.6.3) que a função $z\mapsto\dim(G_z)$ é semicontínua superiormente e que, se ela é constante na vizinhança de um ponto $y$, $f$ é universalmente aberto nos pontos de $G_y^0$. Se, além disso, $G_y$ é geometricamente reduzido sobre $\mathbf{k}(y)$ em um de seus pontos, mostra-se que $G_y$ é \emph{liso} (6.8.1) sobre $\mathbf{k}(y)$ em todos os seus pontos; resultará então de (15.6.6) que, se, além disso, $\sh{O}_y$ é reduzido, então $f$ é liso em todos os pontos de $G_y^0$ (mas não necessariamente em todos os pontos de $G_y$). Esses resultados se aplicarão, por exemplo, na teoria dos esquemas de Picard, onde disporemos de um teorema geral que assegura que, sob certas condições, a função $z\mapsto\dim(G_z)$ é localmente constante. Observemos que é em vista de aplicações dessa natureza que enunciados como (15.6.1) são dados para os morfismos \emph{localmente} de tipo finito, e não apenas para os morfismos de tipo finito.
+
+Observemos também que, no caso de um $Y$-pré-esquema em grupos $G$, a hipótese $\beta$) de (15.6.6) é sempre satisfeita.
+\end{remarks}

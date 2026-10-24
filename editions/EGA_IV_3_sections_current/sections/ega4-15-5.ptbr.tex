@@ -1,0 +1,154 @@
+\subsection{Posto separável das fibras de um morfismo quase-finito e universalmente aberto. Aplicação às componentes conexas geométricas das fibras de um morfismo próprio}
+\label{subsection:IV.15.5}
+
+\begin{proposition}[15.5.1]
+\label{IV.15.5.1}
+Sejam $Y$ um pré-esquema localmente noetheriano e $f:X\to Y$ um morfismo separado e quase-finito. Para todo $z\in Y$, seja $n(z)$ o número geométrico de pontos de $f^{-1}(z)$ (ou posto separável de $f^{-1}(z)$ sobre $\mathbf{k}(z)$, cf.\ \textbf{I}, 6.4.8). Valem as seguintes propriedades:
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item A função $z\mapsto n(z)$ é semicontínua inferiormente em todo ponto $y\in Y$ tal que $f$ seja universalmente aberto nos pontos de $f^{-1}(y)$.
+  \item Seja $y$ um ponto de $Y$ tal que $f$ seja universalmente aberto nos pontos de $f^{-1}(y)$; se a função $z\mapsto n(z)$ é constante em uma vizinhança de $y$, então $f$ é próprio no ponto $y$ (15.7.1).
+  \item Suponhamos que $f$ seja universalmente aberto e que todo ponto de $Y$ seja geometricamente unirramificado; então, se a função $z\mapsto n(z)$ é localmente constante em $Y$, as componentes irredutíveis de $X$ são duas a duas disjuntas.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+(i) Observemos que, como $f$ é quase-finito, o número $n(z)$ é o número geométrico de componentes conexas de $f^{-1}(z)$; sabemos que a função $z\mapsto n(z)$ é localmente construtível (9.7.9); levando em conta ($\mathbf{0}_{\mathrm{III}}$, 9.3.4), reduzimo-nos a provar o
+
+\begin{corollary}[15.5.2]
+\label{IV.15.5.2}
+Sob as hipóteses gerais de (15.5.1), seja $y$ um ponto de $Y$ tal que $f$ seja universalmente aberto nos pontos de $f^{-1}(y)$. Então, se $y'$ é uma generização de $y$, temos
+\begin{equation}
+\tag{15.5.2.1}
+\label{IV.15.5.2.1}
+  n(y)\leqslant n(y').
+\end{equation}
+\end{corollary}
+
+Para toda mudança de base $g:Z\to Y$, $f_{(Z)}:X_{(Z)}\to Z$ é separado, quase-finito e universalmente aberto nos pontos de $X_{(Z)}$ que se projetam em $f^{-1}(y)$; além disso, se $z,z'$ são dois pontos de $Z$ tais que $g(z)=y$, $g(z')=y'$ e $z'$ é uma generização de $z$, temos $n(z)=n(y)$ e $n(z')=n(y')$ (\textbf{I}, 6.4.12); basta, portanto, demonstrar (15.5.2.1) para um $g$ conveniente. Podemos evidentemente supor $y\ne y'$. Utilizaremos o lema seguinte:
+
+\begin{lemma}[15.5.2.2]
+\label{IV.15.5.2.2}
+Sob as hipóteses gerais de (15.5.1), se $y$ é um ponto de $Y$ e $y'$ uma generização de $y$ distinta de $y$, existem um espectro de anel de valoração discreta $Z$, de ponto fechado $z$ e ponto genérico $z'$, e um morfismo $g:Z\to Y$ tais que:
+\begin{enumerate}[label=\emph{\arabic*\textsuperscript{\textdegree}}]
+  \item $g(z)=y$, $g(z')=y'$;
+  \item se pusermos $f'=f_{(Z)}$, $n(y)$ é o número de pontos de $f'^{-1}(z)$ e $n(y')$ é o número de pontos de $f'^{-1}(z')$.
+\end{enumerate}
+\end{lemma}
+
+Com efeito, existem um anel de valoração discreta $A_1$ e um morfismo $g_1$ de $Z_1=\operatorname{Spec}(A_1)$ em $Y$ tais que, se $z_1$ e $z'_1$ são o ponto fechado e o ponto genérico de $Z_1$,
+\oldpage[IV-3]{232}
+temos $g_1(z_1)=y$ e $g_1(z'_1)=y'$ (\textbf{II}, 7.1.9); podemos, portanto, supor desde já que $Y$ é o espectro de um anel de valoração discreta $A$, $y$ seu ponto fechado e $y'$ seu ponto genérico. Para todo $x\in f^{-1}(y)$, $\mathbf{k}(x)$ é, por hipótese, uma extensão finita de $\mathbf{k}(y)$ (\textbf{II}, 6.2.2); deduzimos de (4.5.11) que existe uma extensão algébrica finita $k$ de $\mathbf{k}(y)$ tal que o número de pontos de $f^{-1}(y)\otimes_{\mathbf{k}(y)}k$ é igual a $n(y)$. Como existe um anel de valoração discreta $A_2$ que domina $A$ e cujo corpo residual é finito sobre $\mathbf{k}(y)$ e contém $k$ (\textbf{II}, 7.1.2), podemos, em segundo lugar, supor que $n(y)$ é o número de pontos de $f^{-1}(y)$. Por fim, o mesmo raciocínio mostra que existe uma extensão finita $K$ de $\mathbf{k}(y')$ tal que o número de pontos de $f^{-1}(y')\otimes_{\mathbf{k}(y')}K$ é igual a $n(y')$; se $w$ é uma valoração de $\mathbf{k}(y')$ associada a $A$, existe uma valoração discreta de $K$ que prolonga $w$, e o anel $A_3$ dessa valoração domina $A$, tem $K$ como corpo de frações e satisfaz as condições do lema.
+
+Podemos, portanto, supor doravante que $Y$ é o espectro de um anel de valoração discreta, $y$ seu ponto fechado, $y'$ seu ponto genérico, e que $n(y)$ e $n(y')$ são os números de pontos de $f^{-1}(y)$ e $f^{-1}(y')$, de modo que, para todo $x\in f^{-1}(y)$ (resp.\ todo $x'\in f^{-1}(y')$), temos $\mathbf{k}(x)=\mathbf{k}(y)$ (resp.\ $\mathbf{k}(x')=\mathbf{k}(y')$).
+
+Denotemos então por $X_i$ os subpré-esquemas reduzidos de $X$ cujos espaços subjacentes são as componentes irredutíveis de $X$ ($1\leqslant i\leqslant m$). Em virtude de (1.10.4), a restrição $X_i\to Y$ de $f$ a cada $X_i$ é um morfismo dominante e, como $f^{-1}(y')$ é discreto, cada interseção $X_i\cap f^{-1}(y')$ se reduz ao ponto genérico de $X_i$; daí, denotando por $n_i(z)$ o número geométrico de pontos de $X_i\cap f^{-1}(z)$ para todo $z\in Y$, temos $n_i(y')=1$ para todo $i$, e $n(y')=\sum_{i=1}^{m}n_i(y')=m$. Por outro lado, $f^{-1}(y)$ é a união dos $X_i\cap f^{-1}(y)$, donde
+\begin{equation}
+\tag{15.5.2.3}
+\label{IV.15.5.2.3}
+  n(y)\leqslant\sum_{i=1}^{m}n_i(y),
+\end{equation}
+e, para provar (15.5.2.1), basta estabelecer que $n_i(y)\leqslant 1$ para todo $i$. Em outras palavras, podemos supor $X$ integral e o morfismo $f$ birracional. Mas então, para todo $x\in f^{-1}(y)$, temos $\sh{O}_y\subset\sh{O}_x\subset K$, onde $K=\mathbf{k}(y')$ é o corpo de frações de $\sh{O}_y$. Como $\sh{O}_y$ é um anel de valoração e $\sh{O}_x$ domina $\sh{O}_y$, temos necessariamente $\sh{O}_y=\sh{O}_x$ (\textbf{II}, 7.1.1). Existe então uma $Y$-seção $h:Y\to X$ tal que $h(y)=x$ (\textbf{I}, 2.4.4); como $Y$ é reduzido e $X$ é separado sobre $Y$, tal seção é única (\textbf{I}, 7.2.2), logo o conjunto $f^{-1}(y)$ contém um único ponto, o que conclui a prova de (i).
+
+(ii) Como no início de (i), reduzimo-nos a mostrar que, se os dois membros de (15.5.2.1) são iguais para toda generização $y'$ de $y$, $f$ é próprio no ponto $y$. Graças ao critério local de morfismos próprios (15.7.5) e às observações iniciais, podemos ainda supor que $Y=\operatorname{Spec}(A)$ é o espectro de um anel de valoração discreta $A$, $y$ seu ponto fechado e $y'$ seu ponto genérico; trata-se então de mostrar que $f$ é próprio. Utilizemos (15.5.2.2) e observemos que, se $A'$ é um anel de valoração discreta que domina $A$, $A'$ é um $A$-módulo sem torção; portanto, o morfismo $\operatorname{Spec}(A')\to\operatorname{Spec}(A)$ é fielmente plano e quase-compacto, e dizer que $f$ é próprio equivale a dizer que o morfismo deduzido de $f$ pela mudança de base $\operatorname{Spec}(A')\to\operatorname{Spec}(A)$ é
+\oldpage[IV-3]{233}
+próprio (2.7.1, (vii)); podemos, portanto, supor que $n(y)$ e $n(y')$ são os números de pontos das fibras $f^{-1}(y)$ e $f'^{-1}(y')$, respectivamente. Com as notações de (i), temos então, por (15.5.2.3) e (15.5.2.1),
+\begin{equation}
+\tag{15.5.2.4}
+\label{IV.15.5.2.4}
+  n(y)\leqslant\sum_i n_i(y)\leqslant\sum_i n_i(y')=n(y').
+\end{equation}
+Para que os membros extremos sejam iguais, é necessário que $n_i(y)=n_i(y')=1$ para todo $i$. Como vimos em (i), se $n_i(y)=1$ para todo $i$, $X_i\cap f^{-1}(y)$ não é vazio e a restrição $X_i\to Y$ de $f$ é um isomorfismo; como os $X_i$ são subpré-esquemas fechados de $X$, isso implica que $f$ é próprio (\textbf{II}, 5.4.5).
+
+(iii) Podemos limitar-nos ao caso em que $Y$ é afim e reduzido e, como $Y$ é, por hipótese, localmente integral (\textbf{I}, 5.1.4), podemos supor $Y$ integral e a função $y\mapsto n(y)$ constante em $Y$. Sejam ainda $X_i$ ($1\leqslant i\leqslant m$) as componentes irredutíveis de $X$. Resulta de (1.10.4) que, se $y'$ é o ponto genérico de $Y$, cada $X_i\cap f^{-1}(y')$ se reduz a um único ponto; como a restrição $f_i:X_i\to Y$ de $f$ é um morfismo quase-finito e dominante e todo ponto de $Y$ é geometricamente unirramificado, resulta do critério de Chevalley (14.4.4) que $f_i$ é universalmente aberto. Se $y$ é então um ponto qualquer de $Y$, temos $n_i(y)\leqslant n_i(y')$; por outro lado, como os $X_i\cap f^{-1}(y)$ são dois a dois disjuntos, temos $\sum_i n_i(y')=n(y')$; valem, portanto, novamente as relações (15.5.2.4). Mas, por hipótese, os membros extremos são iguais, logo $n(y)=\sum_i n_i(y)$, o que implica que os $X_i\cap f^{-1}(y)$ são dois a dois disjuntos e conclui a demonstração.
+\end{proof}
+
+Combinando essa proposição com o teorema de conexão de Zariski e suas consequências (\textbf{III}, 4.3), obtemos os resultados seguintes, que completam (\textbf{III}, 4.3.7 e 4.3.10):
+
+\begin{proposition}[15.5.3]
+\label{IV.15.5.3}
+Sejam $Y$ um pré-esquema irredutível localmente noetheriano e $f:X\to Y$ um morfismo próprio; para todo $y\in Y$, seja $n(y)$ o número geométrico de componentes conexas (4.5.2) de $f^{-1}(y)$. Suponhamos que a restrição de $f$ a toda componente irredutível de $X$ seja um morfismo dominante em $Y$. Então, se $y_0$ é um ponto geometricamente unirramificado de $Y$, a função $y\mapsto n(y)$ é semicontínua inferiormente no ponto $y_0$.
+\end{proposition}
+
+\begin{proof}
+Consideremos a fatoração de Stein $f=g\circ f'$ de $f$ (\textbf{III}, 4.3.3), onde $g:Y'\to Y$ é um morfismo finito e $f':X\to Y$ é um morfismo sobrejetivo cujas fibras são geometricamente conexas (\textbf{III}, 4.3.4). Como $f'$ é sobrejetivo, a imagem inversa por $f'$ de toda componente irredutível de $Y'$ contém ao menos uma componente irredutível de $X$; portanto, cada componente irredutível de $Y'$ domina $Y$. Podemos, assim, aplicar o critério de Chevalley (14.4.4) às restrições de $g$ a cada uma dessas componentes irredutíveis, e concluímos que $g$ é universalmente aberto em todo ponto de $g^{-1}(y_0)$. A conclusão resulta então de (15.5.2) e do fato de que o número geométrico de componentes conexas de $f^{-1}(y)$ é igual ao número geométrico de pontos de $g^{-1}(y)$ (\textbf{III}, 4.3.4).
+\end{proof}
+
+\begin{corollary}[15.5.4]
+\label{IV.15.5.4}
+Sejam $Y$ um pré-esquema localmente noetheriano e $f:X\to Y$ um morfismo próprio; seja $y$ um ponto de $Y$ tal que $f$ seja universalmente aberto nos pontos de $f^{-1}(y)$;
+\oldpage[IV-3]{234}
+então, com as notações de (15.5.3), a função $z\mapsto n(z)$ é semicontínua inferiormente no ponto $y$.
+\end{corollary}
+
+\begin{proof}
+Com as notações de (15.5.3), observemos que, na fatoração de Stein $f=g\circ f'$, $f'$ é sobrejetivo; como $f$ é universalmente aberto nos pontos de $f^{-1}(y)$, $g$ é universalmente aberto nos pontos de $g^{-1}(y)$ (14.3.4, (i)); basta, portanto, aplicar a $g$ a proposição (15.5.1), (i), levando em conta (\textbf{III}, 4.3.4).
+\end{proof}
+
+\begin{remarks}[15.5.5]
+\label{IV.15.5.5}
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item Mesmo que $Y$ seja integral e normal, $X$ integral, e $f$ finito e sobrejetivo (portanto universalmente aberto pelo critério de Chevalley (14.4.4)), a função $y\mapsto n(y)$ não é necessariamente localmente constante. Obtemos um exemplo tomando $Y=\operatorname{Spec}(k[T])$, onde $k$ é algebricamente fechado, e $X=\operatorname{Spec}(A)$, onde $A=k[S,T]/(S^2+T^2-1)$; nos pontos $y',y''$ de $Y$ correspondentes aos ideais maximais $(T-1)$ e $(T+1)$, temos $n(y')=n(y'')=1$, mas $n(y)=2$ em todos os outros pontos de $Y$. Daremos abaixo uma condição suplementar que assegura que $y\mapsto n(y)$ seja localmente constante (15.5.7).
+  \item O exemplo (14.4.10, (ii)) mostra que, em (15.5.1, (iii)), não se pode suprimir a hipótese de que os pontos de $Y$ sejam geometricamente unirramificados.
+  \item O exemplo (11.7.5) mostra que a conclusão de (15.5.1, (i)) deixa de valer se supusermos apenas que o morfismo $f$ seja aberto (mesmo que, como ocorre no exemplo citado, $f$ seja finito e sobrejetivo).
+  \item Por fim, em (15.5.1), não se pode dispensar a hipótese de que o morfismo $f$ seja separado, como mostra o exemplo em que $X$ é a reta afim na qual se ``duplicou um ponto'' (\textbf{I}, 5.5.11) e $Y$ é a reta afim: aqui $f$ é um isomorfismo local (portanto é plano) e é quase-finito, mas $z\mapsto n(z)$ não é semicontínua inferiormente.
+\end{enumerate}
+\end{remarks}
+
+\begin{lemma}[15.5.6]
+\label{IV.15.5.6}
+Sejam $Y$ o espectro de um anel de valoração discreta, $a$ seu ponto fechado e $b$ seu ponto genérico. Seja $f:X\to Y$ um morfismo localmente de tipo finito e aberto. Suponhamos que $X$ seja conexo e que a fibra $f^{-1}(a)$ seja um pré-esquema reduzido. Então $f^{-1}(b)$ é conexo.
+\end{lemma}
+
+\begin{proof}
+Utilizaremos o seguinte lema puramente topológico (caso particular de um resultado mais geral do cap.\ III, 3.\textsuperscript{a} parte):
+\begin{lemma}[15.5.6.1]
+\label{IV.15.5.6.1}
+Seja $X$ um espaço localmente noetheriano no qual toda parte fechada irredutível admite um ponto genérico. Seja $Z$ uma parte fechada de interior vazio de $X$ com a seguinte propriedade: para todo $x\in Z$, se denotarmos por $T_x$ o conjunto das generizações de $x$ em $X$, então $T_x-\{x\}$ é conexo. Nessas condições, se $X$ é conexo, $X-Z$ é conexo.
+\end{lemma}
+
+\begin{proof}
+Demos uma demonstração independente. Raciocinando por absurdo, suponhamos que o aberto $U=X-Z$, denso em $X$, seja a união de dois abertos não vazios sem ponto comum, $U'$ e $U''$, e denotemos por $X'$ e $X''$ as aderências de $U'$ e $U''$ em $X$. Como $X=\overline{U}=X'\cup X''$ e $X$ é conexo, temos $X'\cap X''\ne\varnothing$, e é claro que $X'\cap X''\subset Z$. Seja $x$ um ponto genérico de uma componente irredutível de $X'\cap X''$. Como $X$ é localmente noetheriano, existe uma vizinhança aberta $V$ de $x$ em $X$ tal que $V\cap U'$ e $V\cap U''$ têm apenas um número finito de componentes irredutíveis; como $x$ é aderente a $U'$ e a $U''$, ele pertence necessariamente à aderência de uma componente irredutível $Z'$ de $V\cap U'$ e à aderência de uma componente irredutível $Z''$ de $V\cap U''$. Mas $\overline{Z'}$ (resp.\ $\overline{Z''}$) é fechado e irredutível em $X$, logo admite um ponto genérico $z'$ (resp.\ $z''$), e temos necessariamente $z'\in U'$ e $z''\in U''$. Isso prova que as interseções de $T_x-\{x\}$ com $U'$ e $U''$ não são vazias. Mas, por definição, $(X'\cap X'')\cap(T_x-\{x\})=\varnothing$; portanto, as interseções de $X'$ e de $X''$ com $T_x-\{x\}$ são dois fechados não vazios disjuntos em $T_x-\{x\}$ cuja união é $T_x-\{x\}$; isso contradiz a hipótese de que $T_x-\{x\}$ seja conexo. C.Q.D.
+\end{proof}
+\oldpage[IV-3]{235}
+Para provar (15.5.6), aplicaremos o lema (15.5.6.1) a $X$ e à sua parte fechada $Z=f^{-1}(a)$, que tem interior vazio porque $f$ é aberto. Observemos que a hipótese, levando em conta (15.2.2.1), implica que $f$ é plano nos pontos de $f^{-1}(a)$. Para tal ponto $x$, $\sh{O}_x$ é, portanto, um $\sh{O}_a$-módulo sem torção ($\mathbf{0}_{\mathrm I}$, 6.3.4) e, em particular, se $t$ é um uniformizante de $\sh{O}_a$, $t$ é $\sh{O}_x$-regular. Além disso, $\sh{O}_x/t\sh{O}_x$ é reduzido por hipótese; se tem profundidade $0$, é, portanto, um corpo ($\mathbf{0}$, 16.4.7), e, como $t\sh{O}_x$ é então o ideal maximal de $\sh{O}_x$, $\sh{O}_x$ é um anel de valoração discreta ($\mathbf{0}$, 17.1.4); logo $\operatorname{Spec}(\sh{O}_x)-\{x\}$ se reduz a um ponto e, a fortiori, é conexo. Se, ao contrário, $\operatorname{prof}(\sh{O}_x/t\sh{O}_x)\geqslant 1$, temos $\operatorname{prof}(\sh{O}_x)\geqslant 2$, pois $t$ é $\sh{O}_x$-regular ($\mathbf{0}$, 16.4.6); resulta então do teorema de Hartshorne (5.10.7) que $\operatorname{Spec}(\sh{O}_x)-\{x\}$ é conexo, o que conclui a demonstração.
+\end{proof}
+
+\begin{proposition}[15.5.7]
+\label{IV.15.5.7}
+Sejam $Y$ um pré-esquema localmente noetheriano e $f:X\to Y$ um morfismo próprio. Para todo $z\in Y$, seja $n(z)$ o número geométrico de componentes conexas de $f^{-1}(z)$. Seja $y$ um ponto de $Y$ tal que $f$ seja universalmente aberto nos pontos de $f^{-1}(y)$ e $f^{-1}(y)$ seja geometricamente reduzido sobre $\mathbf{k}(y)$ (4.6.2). Então a função $z\mapsto n(z)$ é constante em uma vizinhança de $y$.
+\end{proposition}
+
+\begin{proof}
+Já sabemos (15.5.4) que, sob as condições do enunciado, $z\mapsto n(z)$ é semicontínua inferiormente no ponto $y$; tudo se reduz a verificar que ela também é semicontínua superiormente e, pelo mesmo raciocínio do início da demonstração de (15.5.1, (i)), basta mostrar que, se $y'$ é uma generização de $y$, temos
+\begin{equation}
+\tag{15.5.7.1}
+\label{IV.15.5.7.1}
+  n(y')\leqslant n(y).
+\end{equation}
+
+Utilizando o raciocínio do início da demonstração de (15.5.2) e o lema (15.5.2.2), aplicado ao morfismo finito $g$ da fatoração de Stein $f=g\circ f'$ de $f$ (lembrando que o número geométrico de pontos de $g^{-1}(y)$ é igual ao de componentes conexas de $f^{-1}(y)$ (\textbf{III}, 4.3.4)), reduzimo-nos ao caso em que $n(y)$ e $n(y')$ são, respectivamente, os números de componentes conexas de $f^{-1}(y)$ e $f^{-1}(y')$, e em que $Y$ é o espectro de um anel de valoração discreta, $y$ o ponto fechado e $y'$ o ponto genérico de $Y$. Podemos ainda substituir $X$ por qualquer uma de suas componentes conexas, sendo estas abertas e fechadas em $X$ e próprias sobre $Y$. Suponhamos, portanto, $X$ conexo; a hipótese de que $f$ é aberto nos pontos de $f^{-1}(y)$ implica que, se $f^{-1}(y)\ne\varnothing$, temos também $f^{-1}(y')\ne\varnothing$ (1.10.3); a hipótese de que $f$ é fechado implica que, se $f^{-1}(y')\ne\varnothing$, temos também $f^{-1}(y)\ne\varnothing$ (\textbf{II}, 7.2.1). Portanto, se $X\ne\varnothing$ (o que podemos evidentemente supor, pois a proposição é trivial no caso contrário), $f^{-1}(y)$ e $f^{-1}(y')$ são ambos não vazios. Além disso, a hipótese implica que o pré-esquema $f^{-1}(y)$ é reduzido (4.6.1); como $f$ é aberto nos pontos de $f^{-1}(y)$, o lema (15.5.6) implica que $f^{-1}(y')$ é conexo, isto é, $n(y')=1$. Como $f^{-1}(y)$ não é vazio, isso prova (15.5.7.1).
+\end{proof}
+
+\begin{remark}[15.5.8]
+\label{IV.15.5.8}
+A relação (15.5.7.1) deixa de ser necessariamente válida se não supusermos $f$ próprio, mesmo que ele satisfaça as outras hipóteses de (15.5.7). Com as notações de (15.5.5, (i)), basta, para verificá-lo, considerar a restrição de $f$ a $X-\{x'\}$, onde $x'$ é um dos dois pontos de $X$ acima de um ponto $y$ distinto de $y'$ e $y''$; temos então $n(y)=1$, ao passo que, se $\eta$ é o ponto genérico de $Y$, $n(\eta)=2$.
+\end{remark}
+
+\oldpage[IV-3]{236}
+\begin{proposition}[15.5.9]
+\label{IV.15.5.9}
+Seja $f:X\to Y$ um morfismo plano e localmente de apresentação finita; para todo $y\in Y$, seja $n(y)$ o número geométrico de componentes conexas de $f^{-1}(y)$.
+\begin{enumerate}[label=\emph{(\roman*)}]
+  \item Se $f$ é separado e quase-finito, a função $y\mapsto n(y)$ (então igual ao número geométrico de pontos de $f^{-1}(y)$) é semicontínua inferiormente em $Y$; se ela é constante em uma vizinhança de $y_0$, $f$ é próprio no ponto $y_0$.
+  \item Se $f$ é próprio, a função $y\mapsto n(y)$ é semicontínua inferiormente em $Y$; se, além disso, $f^{-1}(y_0)$ é geometricamente reduzido sobre $\mathbf{k}(y_0)$, $n(y)$ é constante em uma vizinhança de $y_0$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+Em todos os casos, as questões são locais em $Y$, de modo que podemos supor $Y$ afim e $f$ de apresentação finita; utilizando (8.9.1), (8.10.5) e (11.2.7), reduzimo-nos ao caso em que $Y$ é noetheriano (utilizando ainda (8.2.11) para a segunda afirmação de (i)). Como, além disso, $f$ é então universalmente aberto (2.4.6), basta aplicar (15.5.1), (15.5.4) e (15.5.7) para concluir.
+\end{proof}
+
+\begin{remark}[15.5.10]
+\label{IV.15.5.10}
+Observemos que obtivemos assim outra demonstração de (12.2.4, (vi)). Reciprocamente, podemos deduzir (15.5.7) de (12.2.4, (vi)): com efeito, podemos limitar-nos ao caso em que $Y$ é reduzido (substituindo $f$ por $f_{\mathrm{red}}$), e resulta então das hipóteses de (15.5.7) e de (15.2.3) que $f$ é plano em uma vizinhança aberta de $f^{-1}(y)$; como, além disso, $f$ é próprio, podemos supor que essa vizinhança seja da forma $f^{-1}(U)$, onde $U$ é uma vizinhança aberta de $y$ em $Y$. Concluímos então por (12.2.4, (vi)). A demonstração de (15.5.7) dada acima tem a vantagem de evidenciar o resultado (15.5.6), que tem interesse independente.
+\end{remark}

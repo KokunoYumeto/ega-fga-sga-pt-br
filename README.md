@@ -81,7 +81,7 @@ A tradução para o português é produzida por IA. As correções, a edição e
 
 ## EGA IV, terceira parte
 
-[Fontes editáveis das seções 8–15](editions/EGA_IV_3_sections_current/README.md).
+[Fontes editáveis das seções 8–14 e das subseções 15.1–15.6](editions/EGA_IV_3_sections_current/README.md). A subseção 15.7, a bibliografia, os índices e a tabela de matérias original não estão incluídos.
 
 
 ## EGA IV, quarta parte: componente de fonte

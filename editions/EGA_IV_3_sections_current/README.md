@@ -1,7 +1,9 @@
-# EGA IV, terceira parte: seções 8–15
+# EGA IV, terceira parte
 
-Fontes editáveis das oito seções de Estudo local dos esquemas e dos morfismos de esquemas, com as páginas iniciais do volume. A bibliografia e os índices finais do volume não estão incluídos neste conjunto de fontes.
+Tradução para o português brasileiro das seções 8–14 e das subseções 15.1–15.6,
+até a Observação 15.6.10, com as páginas iniciais do volume. A subseção 15.7,
+a bibliografia, os índices e a tabela de matérias original ainda não estão incluídos.
 
-Documento principal: [EGA_IV3_PTBR.tex](EGA_IV3_PTBR.tex). Compile com pdfLaTeX a partir desta pasta, em três passos.
-
-[Fontes e autoria](SOURCES.md) · [Direitos e disponibilidade](RIGHTS_NOTICE.md).
+Documento principal: [EGA_IV3_PTBR.tex](EGA_IV3_PTBR.tex).
+Compile com pdfLaTeX a partir desta pasta até estabilizar as referências.
+[Fontes e autoria](SOURCES.md) · [Direitos](RIGHTS_NOTICE.md).
