@@ -1,0 +1,1565 @@
+\section{Propriedades construtíveis}
+\label{section:IV.9}
+
+Sejam $S$ um pré-esquema, $f:X\to S$ um morfismo de \emph{apresentação finita}~\sref{IV.1.6.1},
+e $\sh{F}$ um $\sh{O}_X$-Módulo quase-coerente de \emph{apresentação finita}.
+Propomo-nos, neste parágrafo, a fornecer critérios que assegurem, por exemplo, que o conjunto dos $s\in S$ tais que o $\mathbf{k}(s)$-pré-esquema $X_s=f^{-1}(s)=X\times_S\operatorname{Spec}(\mathbf{k}(s))$ possui certa propriedade, ou tais que o $\sh{O}_{X_s}$-Módulo $\sh{F}_s=\sh{F}\otimes_{\sh{O}_X}\mathbf{k}(s)$ possui certa propriedade, é \emph{localmente construtível}, ou ao menos \emph{ind-construtível}~\sref{IV.1.9.4}; veremos que esse é o caso para a maioria das propriedades que surgem na Geometria Algébrica.
+Supondo apenas que $f$ seja \emph{localmente de apresentação finita}, forneceremos também em~{\hyperlink{ega4.c04.subsec.9-9}{(9.9)}} critérios para que o conjunto dos pontos $x\in X$ nos quais a fibra $X_{f(x)}$ (ou o $\sh{O}_{X_{f(x)}}$-Módulo $\sh{F}_{f(x)}$) possui certa propriedade seja \emph{localmente construtível}.
+Veremos na \textsection12 que esses resultados, juntamente com a hipótese adicional de que $f$ seja \emph{plano} (resp.\ \emph{próprio e plano}), permitem demonstrar que os conjuntos considerados em $X$ (resp.\ em $S$) são até \emph{abertos} em numerosos casos.
+
+\subsection{O princípio da extensão finita}
+\label{subsection:IV.9.1}
+
+\begin{proposition}[9.1.1]
+\label{IV.9.1.1}
+\textnormal{(Princípio da extensão finita).}
+Sejam $k$ um corpo e $\mathcal{C}$ um conjunto de extensões de $k$.
+Suponhamos satisfeitas as condições seguintes:
+\begin{enumerate}[label=(\roman*)]
+  \item Se $K\in\mathcal{C}$ e existe um $k$-homomorfismo $K\to K'$ (onde $K'$ pertence ao universo no qual nos situamos), então $K'\in\mathcal{C}$.
+  \item Se $K\in\mathcal{C}$, existe uma subextensão $K'$ de $K$, de tipo finito sobre $k$, tal que $K'\in\mathcal{C}$.
+  \item Se $K\in\mathcal{C}$ é o corpo de frações de uma $k$-álgebra íntegra de tipo finito $A$, existe $f\in A-\{0\}$ tal que, para todo ideal maximal $\mathfrak{m}$ de $A$, tem-se $A_f/\mathfrak{m}\in\mathcal{C}$.
+\end{enumerate}
+
+\oldpage[IV-3]{55}
+
+Seja então $\Omega$ uma extensão algebricamente fechada de $k$ (no universo considerado).
+As condições seguintes são equivalentes:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item $\mathcal{C}$ não é vazio.
+  \item Existe $K'\in\mathcal{C}$ que é uma extensão finita de $k$.
+  \item Tem-se $\Omega\in\mathcal{C}$.
+\end{enumerate}
+\end{proposition}
+
+A condição~(i) implica evidentemente que \emph{b)} implica \emph{c)}, e \emph{c)} implica trivialmente \emph{a)};
+demonstremos que \emph{a)} implica \emph{b)}.
+Em virtude de~(ii) e~(iii), existe uma extensão $K'\in\mathcal{C}$ da forma $A/\mathfrak{m}$, onde $A$ é uma $k$-álgebra de tipo finito sobre $k$ e $\mathfrak{m}$ é um ideal maximal de $A$.
+Sabemos, pelo Nullstellensatz de Hilbert (Bourbaki, \emph{Alg.\ comm.}, cap.~V, \textsection3, n\textsuperscript{o}~1, cor.~2 do teo.~1), que $K'$ é uma extensão finita de $k$.
+
+\begin{corollary}[9.1.2]
+\label{IV.9.1.2}
+Sob as hipóteses~\emph{(i)}, \emph{(ii)}, \emph{(iii)} de~\sref{IV.9.1.1}, se $k$ é algebricamente fechado e se $\mathcal{C}$ não é vazio, $\mathcal{C}$ contém todas as extensões de $k$ no universo considerado.
+\end{corollary}
+
+Com efeito, como \emph{a)} implica \emph{c)}, tem-se $k\in\mathcal{C}$, e a conclusão decorre da hipótese~(i).
+
+\begin{remark}[9.1.3]
+\label{IV.9.1.3}
+Na prática, verificar-se-á a condição~(ii) de~\sref{IV.9.1.1} observando que $K$ é o limite indutivo de suas subextensões de tipo finito $K_\alpha$, e aplicando os resultados de \textsection8, levando eventualmente em conta que, para $K_\alpha\subset K_\beta$, $K_\beta$ é fielmente plano sobre $K_\alpha$.
+Frequentemente, o conjunto $\mathcal{C}$ é formado por \emph{corpos} pertencentes a um conjunto $\mathcal{C}'$ de $k$-álgebras que satisfaz a seguinte condição:
+\begin{enumerate}[label=(\roman*~bis)]
+  \item Se $A\in\mathcal{C}'$ e existe um homomorfismo de $k$-álgebras $A\to A'$ (onde $A'$ pertence ao universo em que nos situamos), então $A'\in\mathcal{C}'$.
+\end{enumerate}
+
+Quando isso ocorre, a condição~(i) é trivialmente satisfeita, e verificar-se-á em geral a condição~(iii) de~\sref{IV.9.1.1} observando que o corpo de frações $K$ de $A$ é o limite indutivo das álgebras $A_f$ (para a relação $D(f)\supset D(g)$), e aplicando os resultados de \textsection8, levando eventualmente em conta que os morfismos $D(g)\to D(f)$ são imersões abertas.
+
+Por outro lado, quando (i~bis) não é satisfeita, a demonstração de~(iii) é frequentemente mais delicada e está ligada a critérios de construtibilidade que serão desenvolvidos mais adiante.
+\end{remark}
+
+Eis alguns exemplos típicos de aplicação do princípio da extensão finita:
+
+\begin{proposition}[9.1.4]
+\label{IV.9.1.4}
+Seja $k$ um corpo, seja $\Omega$ uma extensão algebricamente fechada de $k$, e sejam $X$ e $Y$ dois pré-esquemas de tipo finito sobre $k$.
+As condições seguintes são equivalentes:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item Existe um $\Omega$-morfismo $X_{(\Omega)}\to Y_{(\Omega)}$ \textnormal{(}resp.\ um $\Omega$-morfismo que possui uma (determinada) das propriedades~\emph{(i)} a~\emph{(xiv)} de~\sref{IV.8.10.5}\textnormal{)}.
+  \item Existe uma extensão finita $k'$ de $k$ e um $k'$-morfismo $X_{(k')}\to Y_{(k')}$ \textnormal{(}resp.\ um $k'$-morfismo que possui a propriedade considerada\textnormal{)}.
+  \item Existe uma extensão $K$ de $k$ e um $K$-morfismo $X_{(K)}\to Y_{(K)}$ \textnormal{(}resp.\ um $K$-morfismo que possui a propriedade considerada\textnormal{)}.
+\end{enumerate}
+\end{proposition}
+
+Aplicamos a observação~\sref{IV.9.1.3} tomando como $\mathcal{C}'$ o conjunto de todas as $k$-álgebras $A$ (do universo em que nos situamos) tais que existe um $A$-morfismo $X\otimes_k A\to Y\otimes_k A$ (resp.\ um morfismo que possui a propriedade particular de~\sref{IV.8.10.5} considerada).
+A condição~(i~bis) de~\sref{IV.9.1.3} é então satisfeita graças ao fato de que as
+\oldpage[IV-3]{56}
+propriedades consideradas em~\sref{IV.8.10.5} são todas estáveis por mudança de base.
+A condição~(iii) de~\sref{IV.9.1.1} é assim satisfeita em virtude de~\sref{IV.8.8.2}[i] (resp.\ \sref{IV.8.10.5}), pois $\operatorname{Spec}(k)$ é quase-compacto e quase-separado.
+Resta verificar a condição~(ii) de~\sref{IV.9.1.1}, que também decorre de~\sref{IV.8.8.2}[i] e~\sref{IV.8.10.5}, considerando $K$ como limite indutivo de suas subextensões de tipo finito.
+Concluímos, portanto, por meio de~\sref{IV.9.1.1}.
+
+Em particular, se existe uma extensão $K$ de $k$ e um $K$-isomorfismo $X_{(K)}\xrightarrow{\sim} Y_{(K)}$, dizemos que $X$ e $Y$ são \emph{geometricamente isomorfos}.
+
+O corolário seguinte generaliza~(\textbf{II},~6.6.5):
+
+\begin{corollary}[9.1.5]
+\label{IV.9.1.5}
+Seja $k$ um corpo e seja $X$ um $k$-pré-esquema.
+Se existe uma extensão $K$ de $k$ tal que $X_{(K)}$ é projetivo \textnormal{(}resp.\ quase-projetivo\textnormal{)} sobre $K$, então $X$ é projetivo \textnormal{(}resp.\ quase-projetivo\textnormal{)} sobre $k$.
+\end{corollary}
+
+Como o morfismo $\operatorname{Spec}(K)\to\operatorname{Spec}(k)$ é fielmente plano e quase-compacto, já decorre de~\sref{IV.2.7.1}[v] que $X$ é de tipo finito sobre $k$.
+A hipótese significa que existe uma imersão fechada (resp.\ uma imersão) $X_{(K)}\to\mathbf{P}_K^r=\mathbf{P}_k^r\otimes_k K$ (\textbf{II},~5.5.4,~(ii) e~5.5.3); aplicando~\sref{IV.9.1.4} à propriedade~(iv) (resp.~(ii)) de~\sref{IV.8.10.5}, deduzimos que, para alguma extensão finita $k'$ de $k$, existe uma imersão fechada (resp.\ uma imersão) $X_{(k')}\to\mathbf{P}_{k'}^r$; em outras palavras, $X_{(k')}$ é projetivo (resp.\ quase-projetivo) sobre $k'$.
+Concluímos então por meio de~(\textbf{II},~6.6.5).
+
+\begin{proposition}[9.1.6]
+\label{IV.9.1.6}
+Seja $k$ um corpo, seja $\Omega$ uma extensão algebricamente fechada de $k$, seja $X$ um pré-esquema de tipo finito sobre $k$, e sejam $\sh{F}$, $\sh{G}$ dois $\sh{O}_X$-Módulos coerentes.
+Suponhamos que existe um isomorfismo $\sh{F}\otimes_k\Omega\xrightarrow{\sim}\sh{G}\otimes_k\Omega$.
+Então existe uma extensão finita $k'$ de $k$ e um isomorfismo $\sh{F}\otimes_k k'\xrightarrow{\sim}\sh{G}\otimes_k k'$.
+\end{proposition}
+
+O raciocínio é o mesmo que em~\sref{IV.9.1.4}, aplicando~\sref{IV.8.5.2}[i] (na demonstração da propriedade~(iii) de~\sref{IV.9.1.1}, utilizamos aqui o fato de que os morfismos $D(g)\to D(f)$ (com as notações de~\sref{IV.9.1.3}) são imersões abertas e, \emph{a fortiori}, morfismos planos).
+
+\subsection{Propriedades construtíveis e ind-construtíveis}
+\label{subsection:IV.9.2}
+\label{IV.9.2}
+
+\begin{definition}[9.2.1]
+\label{IV.9.2.1}
+Seja $\mathbf{P}(X,\sh{F},k)$ uma relação.
+Dizemos que $\mathbf{P}$ é uma propriedade \emph{construtível} (resp.\ \emph{ind-construtível}) de pré-esquemas algébricos se as duas condições seguintes forem satisfeitas:
+\begin{enumerate}[label=(\roman*)]
+  \item Se $k$ é um corpo, $X$ um pré-esquema algébrico sobre $k$, $\sh{F}$ um $\sh{O}_X$-Módulo coerente e $k'$ uma extensão de $k$, para que $\mathbf{P}(X,\sh{F},k)$ seja verdadeira, é necessário e suficiente que $\mathbf{P}(X_{(k')},\sh{F}\otimes_k k',k')$ seja verdadeira.
+  \item Seja $S$ um pré-esquema integral noetheriano, de ponto genérico $\eta$, seja $u:X\to S$ um morfismo de tipo finito e seja $\sh{F}$ um $\sh{O}_X$-Módulo coerente.
+Para todo $s\in S$, ponhamos $X_s=u^{-1}(s)=X\times_S\operatorname{Spec}(k(s))$, $\sh{F}_s=\sh{F}\otimes_{\sh{O}_S}k(s)$.
+Seja $E$ o conjunto dos $s\in S$ tais que $\mathbf{P}(X_s,\sh{F}_s,k(s))$ seja verdadeira.
+Então um dos dois conjuntos $E$, $S-E$ (resp.\ o conjunto $E$) contém um aberto não vazio (e, portanto, é uma vizinhança de $\eta$) (resp.\ contém um aberto não vazio se contém $\eta$).
+\end{enumerate}
+\end{definition}
+
+\oldpage[IV-3]{57}
+
+\begin{remarks}[9.2.2]
+\label{IV.9.2.2}
+\begin{enumerate}[label=(\roman*)]
+  \item Trata-se, naturalmente, de uma convenção de linguagem de natureza metamatemática e não de uma definição matemática propriamente dita.
+Temos ``definições'' análogas para relações entre $k$, um ou vários $k$-pré-esquemas algébricos, $k$-morfismos entre esses pré-esquemas, Módulos coerentes sobre esses pré-esquemas ou homomorfismos entre esses Módulos.
+  \item Também teremos de considerar relações em que figurem \emph{partes construtíveis} de pré-esquemas.
+Por exemplo, seja $\mathbf{P}(X,Z,k)$ uma relação; diremos (por abuso de linguagem) que $\mathbf{P}$ é uma propriedade construtível (resp.\ ind-construtível) da parte construtível $Z$ de $X$ se as duas condições seguintes forem satisfeitas:
+\begin{enumerate}[label=$\arabic*^{\mathrm{o}}$]
+  \item Se $k$ é um corpo, $X$ um pré-esquema algébrico sobre $k$, $Z$ uma \emph{parte construtível de $X$} e $k'$ uma extensão de $k$, para que $\mathbf{P}(X,Z,k)$ seja verdadeira, é necessário e suficiente que $\mathbf{P}(X_{(k')},p^{-1}(Z),k')$ seja verdadeira (sendo $p:X_{(k')}\to X$ a projeção canônica).
+  \item Seja $S$ um pré-esquema integral noetheriano, de ponto genérico $\eta$, seja $u:X\to S$ um morfismo de tipo finito e seja $Z$ uma \emph{parte construtível de $X$}.
+Para todo $s\in S$, ponhamos $X_s=u^{-1}(s)$, $Z_s=Z\cap X_s$.
+Seja $E$ o conjunto dos $s\in S$ tais que $\mathbf{P}(X_s,Z_s,k(s))$ seja verdadeira.
+Então um dos dois conjuntos $E$, $S-E$ (resp.\ o conjunto $E$) contém um aberto não vazio (resp.\ contém um aberto não vazio se contém $\eta$).
+\end{enumerate}
+
+Observemos que, na condição~$2^\circ$, é preciso supor que $Z$ seja uma parte construtível de $X$, e não somente que $Z_s$ seja uma parte construtível de $X_s$ para todo $s$; a primeira dessas duas propriedades implica a segunda~\sref{IV.1.8.2}, mas não reciprocamente.
+
+  \item Se $\mathbf{P}$ é uma propriedade construtível, é claro que o mesmo vale para ``não $\mathbf{P}$''.
+Se $\mathbf{P}$, $\mathbf{Q}$ são duas propriedades construtíveis (resp.\ ind-construtíveis), o mesmo vale para as propriedades ``$\mathbf{P}$ ou $\mathbf{Q}$'' e ``$\mathbf{P}$ e $\mathbf{Q}$''; de fato, sob as hipóteses de~\sref{IV.9.2.1}[ii], se $E$, $E'$ são duas partes de $S$ e $E$ contém um aberto não vazio, o mesmo vale para $E\cup E'$, e, se $S-E$ e $S-E'$ contêm, cada um, um aberto não vazio, o mesmo vale para $S-(E\cup E')=(S-E)\cap(S-E')$.
+
+  \item Seja $\mathbf{P}(X,\sh{F},k)$ uma relação que satisfaz a condição~\sref{IV.9.2.1}[i]; seja $S$ um pré-esquema e seja $u:X\to S$ um morfismo de tipo finito; com as notações de~\sref{IV.9.2.1}[ii], seja $E$ o conjunto dos $s\in S$ tais que $\mathbf{P}(X_s,\sh{F}_s,k(s))$ seja verdadeira.
+Seja, por outro lado, $g:S'\to S$ um morfismo qualquer, e ponhamos $X'=X_{(S')}$, $\sh{F}'=\sh{F}\otimes_{\sh{O}_S}\sh{O}_{S'}$; então, da transitividade das fibras~(\textbf{I},~3.6.4) e da condição~\sref{IV.9.2.1}[i], segue que \emph{o conjunto dos $s'\in S'$ tais que $\mathbf{P}(X'_{s'},\sh{F}'_{s'},k(s'))$ seja verdadeira é igual a $g^{-1}(E)$}.
+Isso se estende imediatamente ao caso em que figurem em $\mathbf{P}$ vários pré-esquemas, Módulos, morfismos de pré-esquemas ou homomorfismos de Módulos, bem como às propriedades do tipo considerado em~(ii).
+
+  \item Como veremos no restante deste parágrafo e no restante do cap.~IV, a maioria das propriedades $\mathbf{P}$ que satisfazem a condição~\sref{IV.9.2.1}[i] também satisfaz a condição~\sref{IV.9.2.1}[ii].
+Como possíveis exceções, assinalemos a propriedade de ser \emph{projetivo}, ou \emph{quase-projetivo}, ou \emph{afim}, ou \emph{quase-afim} sobre o corpo de base (para um pré-esquema algébrico); veremos em~\sref{IV.9.6.2} que essas propriedades são \emph{ind-construtíveis}, mas daremos mais adiante um exemplo em que $S$ é uma parte aberta não vazia de $\operatorname{Spec}(\mathbf{Z})$ (ou uma parte aberta de uma curva elíptica sobre um corpo finito) e em que todas as fibras $X_s$
+
+\oldpage[IV-3]{58}
+salvo a fibra genérica $X_\eta$, são projetivas sobre $k(s)$ (sendo todos os pré-esquemas $X_s$ de dimensão~2).
+\end{enumerate}
+\end{remarks}
+
+\begin{proposition}[9.2.3]
+\label{IV.9.2.3}
+Seja $\mathbf{P}$ uma propriedade construtível \textnormal{(}resp.\ ind-construtível\textnormal{)} de pré-esquemas algébricos, seja $S$ um pré-esquema, seja $X$ um pré-esquema de apresentação finita sobre $S$ e seja $\sh{F}$ um $\sh{O}_X$-Módulo quase-coerente de apresentação finita.
+Então o conjunto $E$ dos $s\in S$ tais que $\mathbf{P}(X_s,\sh{F}_s,k(s))$ seja verdadeira é localmente construtível \textnormal{(}resp.\ ind-construtível\textnormal{)}.
+Além disso, se $S$ é irreducível de ponto genérico $\eta$, um dos dois conjuntos $E$, $S-E$ é uma vizinhança de $\eta$ \textnormal{(}resp.\ $E$ é uma vizinhança de $\eta$ se contém esse ponto\textnormal{)}.
+\end{proposition}
+
+Para demonstrar essas afirmações, podemos reduzir-nos ao caso em que $S=\operatorname{Spec}(A)$ é afim.
+Sabemos então que existe um subanel $A_0$ de $A$ que é uma $\mathbf{Z}$-álgebra de tipo finito, um $A_0$-pré-esquema de tipo finito $X_0$ e um $\sh{O}_{X_0}$-Módulo coerente $\sh{F}_0$ tais que $X$ é isomorfo a $X_0\otimes_{A_0}A$ e $\sh{F}$ a $\sh{F}_0\otimes_{A_0}A$~\sref{IV.8.9.1}.
+Seja $p:S\to S_0=\operatorname{Spec}(A_0)$ o morfismo correspondente à injeção $A_0\to A$, e seja $E_0$ o conjunto dos $s_0\in S_0$ tais que
+\[
+  \mathbf{P}((X_0)_{s_0},(\sh{F}_0)_{s_0},k(s_0))
+\]
+seja verdadeira; então, em virtude de~\sref{IV.9.2.2}[iv], temos $E=p^{-1}(E_0)$; por~\sref{IV.1.8.2}, podemos, portanto, reduzir-nos ao caso em que $S$ é o espectro de uma $\mathbf{Z}$-álgebra de tipo finito e, portanto, um esquema noetheriano.
+Utilizemos o critério de construtibilidade~($\mathbf{0}_{\mathrm{III}}$,~9.2.3) (resp.\ o critério de ind-construtibilidade~\sref{IV.1.9.10}); utilizando~\sref{IV.9.2.2}[iv] como acima e substituindo $S$ por um subpré-esquema fechado integral de $S$, reduzimo-nos ao caso em que $S$ é noetheriano e integral e em que é preciso provar que $E$ não é denso em parte alguma de $S$ ou contém um subconjunto aberto não vazio de $S$ (resp.\ que $E$ contém um subconjunto aberto não vazio de $S$ se contém o ponto genérico); isso é garantido pela condição~\sref{IV.9.2.1}[ii].
+
+Observemos que utilizamos~\sref{IV.9.2.1}[ii] somente quando $S$ é o espectro de um anel integral de tipo finito sobre $\mathbf{Z}$.
+Por outro lado, é claro que o enunciado de~\sref{IV.9.2.3} também se aplica quando aparecem em $\mathbf{P}$ vários pré-esquemas, Módulos sobre esses pré-esquemas, morfismos de pré-esquemas ou homomorfismos de Módulos.
+Aplica-se também quando aparecem partes (em número finito) dos pré-esquemas considerados, desde que se exija que essas partes sejam \emph{localmente construtíveis}.
+Com efeito, a redução ao caso em que $S$ é afim mostra que podemos reduzir-nos ao caso em que essas partes são \emph{construtíveis}: aplica-se então~{\hyperlink{ega4.c04.thm.8-3-11}{(8.3.11)}}, que mostra (com a notação precedente) que uma parte construtível de $X$ é a imagem inversa de uma parte construtível de $X_0$ para uma escolha adequada de $A_0$.
+
+\begin{corollary}[9.2.4]
+\label{IV.9.2.4}
+Seja $\mathbf{P}$ uma propriedade construtível \textnormal{(}resp.\ ind-construtível\textnormal{)} de pré-esquemas algébricos, sejam $X$, $Y$ dois $S$-pré-esquemas de apresentação finita e seja $f:X\to Y$ um $S$-morfismo.
+Para todo $s\in S$, ponhamos $X_s=X\times_S\operatorname{Spec}(k(s))$, $Y_s=Y\times_S\operatorname{Spec}(k(s))$, $f_s=f\times 1:X_s\to Y_s$.
+Então o conjunto $E$ dos $s\in S$ tais que, para todo $y\in Y_s$, a propriedade $\mathbf{P}(f_s^{-1}(y),k(y))$ seja verdadeira, é localmente construtível \textnormal{(}resp.\ ind-construtível\textnormal{)}.
+\end{corollary}
+
+Com efeito, seja $Z$ o conjunto dos $y\in Y$ tais que $\mathbf{P}(f^{-1}(y),k(y))$ seja verdadeira.
+Como as fibras $f^{-1}(y)$ e $f_s^{-1}(y)$ são isomorfas, vemos que $E$ é o conjunto dos $s\in S$ tais que $Y_s\subset Z$; se $g:Y\to S$ é o morfismo estrutural, temos, portanto, $E=S-g(Y-Z)$.
+
+\oldpage[IV-3]{59}
+
+Ora, $f$ é de apresentação finita~\sref{IV.1.6.2}[v], logo se segue de~\sref{IV.9.2.3} que $Z$ é localmente construtível (resp.\ ind-construtível) em $Y$, e, portanto, $Y-Z$ é localmente construtível (resp.\ pro-construtível) em $Y$.
+Como $g$ é de apresentação finita, $g(Y-Z)$ é localmente construtível (resp.\ pro-construtível) em $S$, em virtude do teorema de Chevalley~\sref{IV.1.8.4} (resp.\ de~\sref{IV.1.9.5}[vii]); portanto, $E$ é localmente construtível (resp.\ ind-construtível) em $S$.
+
+\begin{remark}[9.2.5]
+\label{IV.9.2.5}
+Observemos que, se $\mathbf{P}$ é uma propriedade dos pré-esquemas algébricos para a qual a prop.~\sref{IV.9.2.3} é verdadeira, então $\mathbf{P}$ também satisfaz a condição~\sref{IV.9.2.1}[ii]: isto resulta, com efeito, do fato de que, em um espaço noetheriano irreducível, um conjunto construtível ou não é denso em parte alguma, ou contém um aberto não vazio~($\mathbf{0}_{\mathrm{III}}$,~9.2.3).
+\end{remark}
+
+\begin{proposition}[9.2.6]
+\label{IV.9.2.6}
+Seja $\mathbf{P}$ uma das propriedades seguintes de um $k$-pré-esquema algébrico $X$:
+\begin{enumerate}[label=(\roman*)]
+  \item $X$ é vazio.
+  \item $X$ é finito sobre $k$.
+  \item $X$ é radicial sobre $k$.
+  \item $\dim(X)$ pertence a uma parte dada $\Phi$ do conjunto $\overline{\mathbf{Z}}=\mathbf{Z}\cup\{-\infty\}$.
+\end{enumerate}
+Então $\mathbf{P}$ é construtível.
+\end{proposition}
+
+É claro que (i) e (ii) são casos particulares de (iv), tomando-se para $\Phi$, respectivamente, o conjunto $\{-\infty\}$ e o conjunto $\{-\infty,0\}$.
+Portanto, basta demonstrar (iii) e (iv).
+Em cada um desses dois casos, a condição~(i) de~\sref{IV.9.2.1} é satisfeita em virtude de~\sref{IV.2.7.1}[xv] e~\sref{IV.4.1.4}.
+Por outro lado, no caso (iii), a propriedade $\mathbf{P}$ satisfaz a conclusão de~\sref{IV.9.2.3} em virtude de~\sref{IV.1.8.7}; resta, portanto, verificar que o mesmo ocorre no caso (iv).
+Isso resultará da proposição mais precisa a seguir:
+
+\begin{proposition}[9.2.6.1]
+\label{IV.9.2.6.1}
+Se $f:X\to S$ é um morfismo de apresentação finita, a função $s\mapsto\dim(f^{-1}(s))$ é localmente construtível.
+\end{proposition}
+
+A questão é local sobre $S$, de modo que podemos supor que $S=\operatorname{Spec}(A)$ é afim e demonstrar que, para todo $n$, o conjunto $E$ dos $s\in S$ tais que $\dim(X_s)=n$ é construtível.
+O mesmo raciocínio que em~\sref{IV.9.2.3} reduz-nos ao caso em que $A$ é noetheriano e integral, e basta então demonstrar o corolário seguinte.
+
+\begin{corollary}[9.2.6.2]
+\label{IV.9.2.6.2}
+Seja $S$ um pré-esquema integral noetheriano de ponto genérico $\eta$, e seja $f:X\to S$ um morfismo de tipo finito.
+Então existe uma vizinhança de $\eta$ em $S$ tal que a função $s\mapsto\dim(X_s)$ é constante nessa vizinhança.
+\end{corollary}
+
+As imagens por $f$ das componentes irredutíveis (em número finito) de $X$ que não intersectam $X_\eta$ estão contidas em partes fechadas de $S$ que não contêm $\eta$ (pois $S$ é integral~($\mathbf{0}_{\mathrm{I}}$,~2.1.5)); portanto, depois de substituir $S$ por uma vizinhança aberta de $\eta$, podemos reduzir-nos ao caso em que todas as componentes irredutíveis $X_i$ de $X$ intersectam $X_\eta$.
+Denotemos novamente por $X_i$ o subpré-esquema fechado reduzido de $X$ que tem $X_i$ como espaço subjacente; como $\dim(X_s)=\sup_i\dim((X_i)_s)$~\sref{IV.4.1.1}, podemos reduzir-nos ao caso em que $X$ é irreducível.
+Existe então uma cobertura finita $(U_j)$ de $X$ por
+
+\oldpage[IV-3]{60}
+abertos afins densos, e os números $\dim((U_j)_\eta)$ são todos iguais a $n=\dim(X_\eta)$~\sref{IV.4.1.1.3}; podemos, portanto, reduzir-nos ao caso em que $X$ é afim e, por conseguinte, também $X_\eta$.
+Existe então, em virtude de~\sref{IV.4.1.2}, um aberto não vazio $W$ de $X$ tal que $W\supset X_\eta$, e um $\mathbf{k}(\eta)$-morfismo finito e sobrejetivo $h:W_\eta\to\mathbf{V}_{\mathbf{k}(\eta)}^n(=\operatorname{Spec}(\mathbf{k}(\eta)[T_1,\ldots,T_n]))$; aplicando~\sref{IV.8.8.2}[i] e o método de~\sref{IV.8.1.2}[a], deduzimos (depois de substituir $S$ por uma vizinhança de $\eta$, se necessário) que $h=g_\eta$, onde $g:W\to\mathbf{V}_A^n(=\operatorname{Spec}(A[T_1,\ldots,T_n]))$ é um $S$-morfismo, e podemos supor que esse morfismo é finito e sobrejetivo em virtude de~\sref{IV.8.10.5}[vi] e~\sref{IV.8.10.5}[x].
+Concluímos, portanto, que, para todo $s\in S$, o morfismo $g_s:W_s\to\mathbf{V}_{\mathbf{k}(s)}^n$ é finito e sobrejetivo e, por conseguinte, $\dim(W_s)=n$~\sref{IV.4.1.2}.
+
+\subsection{Propriedades construtíveis dos morfismos de pré-esquemas algébricos}
+\label{subsection:IV.9.3}
+
+\begin{proposition}[9.3.1]
+\label{IV.9.3.1}
+Seja $\mathbf{P}(X,k)$ uma propriedade construtível \textnormal{(}resp.\ ind-construtível\textnormal{)} dos pré-esquemas algébricos.
+Denotemos por $\mathbf{P}'(f,X,Y,k)$ a relação seguinte: $f:X\to Y$ é um $k$-morfismo de $k$-pré-esquemas algébricos tal que, para todo $y\in Y$, a propriedade $\mathbf{P}(f^{-1}(y),k(y))$ seja verdadeira.
+Então $\mathbf{P}'$ é uma propriedade construtível \textnormal{(}resp.\ ind-construtível\textnormal{)}.
+\end{proposition}
+
+Com efeito, como $\mathbf{P}$ satisfaz a condição~\sref{IV.9.2.1}[i], o mesmo ocorre com $\mathbf{P}'$ em virtude da transitividade das fibras~(\textbf{I},~3.6.4); além disso, o fato de que $\mathbf{P}'$ satisfaz a condição~\sref{IV.9.2.1}[ii] decorre de~\sref{IV.9.2.4}, em razão da observação~\sref{IV.9.2.5}.
+
+\begin{proposition}[9.3.2]
+\label{IV.9.3.2}
+Seja $\mathbf{P}$ uma das propriedades seguintes de um $k$-morfismo $f:X\to Y$ de $k$-pré-esquemas algébricos:
+\begin{enumerate}[label=(\roman*)]
+  \item $f$ é sobrejetivo.
+  \item $f$ é quase-finito.
+  \item $f$ é radicial.
+  \item Para todo $y\in Y$, $\dim(f^{-1}(y))$ pertence a $\Phi$ \textnormal{(}notação de~\sref{IV.9.2.6}\textnormal{)}.
+\end{enumerate}
+Então $\mathbf{P}$ é construtível.
+\end{proposition}
+
+Isto decorre imediatamente de~\sref{IV.9.3.1} e~\sref{IV.9.2.6}, levando em conta que $f$ é de tipo finito~\sref[I]{I.1.5.4}[v], a caracterização dos morfismos radiciais~\sref[I]{I.3.5.8} e a dos morfismos quase-finitos~\sref[II]{II.6.2.2}.
+
+\begin{proposition}[9.3.3]
+\label{IV.9.3.3}
+Suponhamos satisfeitas as hipóteses de~\sref{IV.8.8.1} e conservemos as mesmas notações; suponhamos, além disso, que $S_\alpha$ seja quase-compacto, que $X_\alpha$ e $Y_\alpha$ sejam de apresentação finita sobre $S_\alpha$, e seja $f_\alpha:X_\alpha\to Y_\alpha$ um $S_\alpha$-morfismo.
+Seja $\mathbf{P}$ uma propriedade ind-construtível dos morfismos de pré-esquemas algébricos.
+Para todo $s\in S$ \textnormal{(}resp.\ $s_\lambda\in S_\lambda$\textnormal{)}, ponhamos $X_s=X\times_S\operatorname{Spec}(k(s))$, $Y_s=Y\times_S\operatorname{Spec}(k(s))$, $f_s=f\times 1:X_s\to Y_s$ \textnormal{(}resp.\ $X_{\lambda,s_\lambda}=X_\lambda\times_{S_\lambda}\operatorname{Spec}(k(s_\lambda))$, $Y_{\lambda,s_\lambda}=Y_\lambda\times_{S_\lambda}\operatorname{Spec}(k(s_\lambda))$, $f_{\lambda,s_\lambda}=f_\lambda\times 1:X_{\lambda,s_\lambda}\to Y_{\lambda,s_\lambda}$\textnormal{)}.
+Então, para que, para todo $s\in S$, a propriedade $\mathbf{P}(f_s)$ seja verdadeira, é necessário e suficiente que exista $\lambda\geqslant\alpha$ tal que, para todo $s_\lambda\in S_\lambda$, se tenha $\mathbf{P}(f_{\lambda,s_\lambda})$.
+\end{proposition}
+
+Com efeito, seja $E$ \textnormal{(}resp.\ $E_\lambda$\textnormal{)} o conjunto dos $s\in S$ \textnormal{(}resp.\ $s_\lambda\in S_\lambda$\textnormal{)} tais que a propriedade $\mathbf{P}(f_s)$ \textnormal{(}resp.\ $\mathbf{P}(f_{\lambda,s_\lambda})$\textnormal{)} seja verdadeira; decorre de~\sref{IV.9.2.2}[iv] que $E_\mu=u_{\lambda\mu}^{-1}(E_\lambda)$ para $\lambda\leqslant\mu$, e que $E=u_\lambda^{-1}(E_\lambda)$; além disso, em virtude de~\sref{IV.9.2.3}, $E$ \textnormal{(}resp.\ $E_\lambda$\textnormal{)} é ind-construtível em $S$ \textnormal{(}resp.\ $S_\lambda$\textnormal{)}; a proposição decorre então de~\sref{IV.8.3.4} aplicado à parte ind-construtível $E$ de $S$.
+
+\oldpage[IV-3]{61}
+
+Este resultado generaliza-se sem dificuldade às propriedades $\mathbf{P}$ do tipo considerado em (9.2.3, (i) e (ii)).
+
+\begin{remark}[9.3.4]
+\label{IV.9.3.4}
+A conjunção de~\sref{IV.9.3.3} e~\sref{IV.9.3.2}[ii] demonstra a afirmação~\sref{IV.8.10.5}[xi].
+\end{remark}
+
+\begin{proposition}[9.3.5]
+\label{IV.9.3.5}
+Seja $\mathbf{P}(X,Y,k)$ a propriedade: ``$X$ e $Y$ são dois pré-esquemas de tipo finito sobre o corpo $k$, e existe uma extensão $k'$ de $k$ e um $k'$-morfismo $g:X_{(k')}\to Y_{(k')}$ que satisfaz $\mathbf{Q}(g)$'', onde $\mathbf{Q}$ é uma das propriedades~\emph{(i)} a~\emph{(xiv)} de~\sref{IV.8.10.5}.
+Então $\mathbf{P}$ é uma propriedade ind-construtível.
+\end{proposition}
+
+A definição de $\mathbf{P}$ mostra, com efeito, que a condição~\sref{IV.9.2.1}[i] é satisfeita, levando em conta que a propriedade $\mathbf{Q}(g)$ é estável por mudança de base e que duas extensões de $k$ sempre podem ser consideradas como subextensões de uma terceira extensão de $k$.
+Para verificar~\sref{IV.9.2.1}[ii], podemos reduzir-nos ao caso em que $S=\operatorname{Spec}(A)$ é afim; se $K=\mathbf{k}(\eta)$ é o corpo de frações de $A$, existem, por hipótese e em virtude de~\sref{IV.9.1.4}, uma extensão finita $K'$ de $K$ e um $K'$-morfismo $g':(X_\eta)_{(K')}\to(Y_\eta)_{(K')}$ que satisfaz $\mathbf{Q}(g')$, e $K'$ é evidentemente o corpo de frações de uma $A$-álgebra integral finita $A'$.
+Se pusermos $S'=\operatorname{Spec}(A')$, decorre então de~\sref{IV.8.10.5} que existe uma vizinhança $U'$ do ponto genérico $\eta'$ de $S'$ tal que, se pusermos $X'=X\otimes_A A'$ e $Y'=Y\otimes_A A'$, para todo $s'\in U'$ existe um morfismo $X'_{s'}\to Y'_{s'}$ que possui a propriedade $\mathbf{Q}$.
+Mas o morfismo $h:S'\to S$ é finito e, portanto, fechado; como $h^{-1}(\eta)=\{\eta'\}$, $h(U')$ contém uma vizinhança aberta $U$ de $\eta$ em $S$.
+Para todo $s\in U$ existe, portanto, $s'\in U'$ tal que $h(s')=s$, e como $X'_{s'}=X_s\otimes_{\mathbf{k}(s)}\mathbf{k}(s')$ e $Y'_{s'}=Y_s\otimes_{\mathbf{k}(s)}\mathbf{k}(s')$, a propriedade $\mathbf{P}(X_s,Y_s,\mathbf{k}(s))$ é verdadeira para todo $s\in U$.
+
+\begin{env}[9.3.6]
+\label{IV.9.3.6}
+\textbf{Exemplo.}
+Tomemos, por exemplo, para $\mathbf{Q}$ a propriedade de ser um isomorfismo.
+Combinando então~\sref{IV.9.3.5} e~\sref{IV.9.3.3}, obtemos a propriedade seguinte: com as notações e hipóteses de~\sref{IV.8.8.1}, sendo $S_\alpha$ quase-compacto e $X_\alpha$ e $Y_\alpha$ de apresentação finita sobre $S_\alpha$, para que, para todo $s\in S$, $X_s$ e $Y_s$ sejam \emph{geometricamente isomorfos}~\sref{IV.9.1.4}, é necessário e suficiente que exista $\lambda\geqslant\alpha$ tal que, para todo $s_\lambda\in S_\lambda$, $X_{\lambda,s_\lambda}$ e $Y_{\lambda,s_\lambda}$ sejam geometricamente isomorfos.
+\end{env}
+
+Temos um resultado análogo quando os pré-esquemas considerados são munidos de ``leis de composição'' de certa espécie~($\mathbf{0}_{\mathrm{III}}$,~8.2.1), por exemplo ``pré-esquemas em grupos'', ``pré-esquemas em anéis'', etc.~($\mathbf{0}_{\mathrm{III}}$,~8.2.3).
+O enunciado precedente continua válido quando por ``isomorfismo'' se entendem isomorfismos de pré-esquemas que são homomorfismos para as leis de composição consideradas~($\mathbf{0}_{\mathrm{III}}$,~8.2.2); basta utilizar aqui não apenas~\sref{IV.8.10.5}, mas também~\sref{IV.8.8.2}[i], observando que a noção de homomorfismo para uma lei de composição se exprime dizendo que certos diagramas de morfismos de pré-esquemas são comutativos (fica subentendido que os morfismos de transição $X_\mu\to X_\lambda$ e $Y_\mu\to Y_\lambda$ para $\lambda\leqslant\mu$ são homomorfismos para as leis de composição consideradas).
+
+Também se podem considerar, em vez de morfismos de pré-esquemas como em~\sref{IV.9.3.5}, homomorfismos de Módulos, utilizando~\sref{IV.9.1.6} em vez de~\sref{IV.9.1.5}.
+
+\oldpage[IV-3]{62}
+
+\subsection{Construtibilidade de certas propriedades dos módulos}
+\label{subsection:IV.9.4}
+
+\begin{env}[9.4.1]
+\label{IV.9.4.1}
+\textbf{Notações (9.4.1).}
+Neste número e nos seguintes até o fim de \textsection9, utilizaremos sistematicamente as notações seguintes: dado um morfismo $f:X\to S$, poremos, para todo $s\in S$, $X_s=f^{-1}(s)=X\times_S\operatorname{Spec}(\mathbf{k}(s))$; para todo $\sh{O}_X$-Módulo quase-coerente $\sh{F}$, $\sh{F}_s$ denotará o $\sh{O}_{X_s}$-Módulo quase-coerente $\sh{F}\otimes_{\sh{O}_S}\mathbf{k}(s)$, e para todo homomorfismo $u:\sh{F}\to\sh{G}$ de $\sh{F}$ em um $\sh{O}_X$-Módulo quase-coerente $\sh{G}$, $u_s:\sh{F}_s\to\sh{G}_s$ será o morfismo $p^*(u)$, designando por $p$ a projeção canônica $X_s\to X$.
+Para toda seção $g$ de $\sh{F}$ sobre $X$, denotaremos por $g_s$ a imagem de $g$ pelo homomorfismo canônico $\Gamma(X,\sh{F})\to\Gamma(X_s,\sh{F}_s)$.
+Para toda parte $Z$ de $X$, denotaremos por $Z_s$ a imagem inversa $p^{-1}(Z)=Z\cap X_s$~(\textbf{I},~3.6.1).
+Finalmente, se $Y$ é um segundo $S$-pré-esquema e $h:X\to Y$ um $S$-morfismo, denotaremos por $h_s$ o morfismo $h\times 1:X_s\to Y_s$.
+\end{env}
+
+\begin{proposition}[9.4.2]
+\label{IV.9.4.2}
+Seja $S$ um pré-esquema integral de ponto genérico $\eta$, seja $f:X\to S$ um morfismo de apresentação finita, e sejam $\sh{F}$, $\sh{G}$, $\sh{H}$ três $\sh{O}_X$-Módulos quase-coerentes de apresentação finita.
+Sejam $u:\sh{F}\to\sh{G}$, $v:\sh{G}\to\sh{H}$ dois homomorfismos de $\sh{O}_X$-Módulos, e suponhamos que a sequência $\sh{F}_\eta\xrightarrow{u_\eta}\sh{G}_\eta\xrightarrow{v_\eta}\sh{H}_\eta$ seja exata.
+Então existe uma vizinhança aberta $U$ de $\eta$ em $S$ tal que, para todo $s\in U$, a sequência $\sh{F}_s\xrightarrow{u_s}\sh{G}_s\xrightarrow{v_s}\sh{H}_s$ seja exata.
+\end{proposition}
+
+\begin{proof}
+Com as notações gerais de~\sref{IV.9.2.1}, trata-se aqui da relação $\mathbf{P}(X,\sh{F},\sh{G},\sh{H},u,v,k)$: ``$X$ é um pré-esquema algébrico sobre o corpo $k$, e $\sh{F}\xrightarrow{u}\sh{G}\xrightarrow{v}\sh{H}$ é uma sequência exata de $\sh{O}_X$-Módulos quase-coerentes''.
+Como, para toda extensão $k'$ de $k$, a projeção canônica $X_{(k')}\to X$ é um morfismo fielmente plano~\sref{IV.2.2.13}, a condição~\sref{IV.9.2.1}[i] é satisfeita~\sref{IV.2.2.7}.
+Em virtude de~\sref{IV.9.2.3}, podemos limitar-nos ao caso em que $S$ é integral e noetheriano, caso em que $X$ é noetheriano, e $\sh{F}$, $\sh{G}$, $\sh{H}$ são $\sh{O}_X$-Módulos coerentes.
+A hipótese implica que existe uma vizinhança aberta $U$ de $\eta$ em $S$ tal que $\sh{F}|f^{-1}(U)\to\sh{G}|f^{-1}(U)\to\sh{H}|f^{-1}(U)$ seja \emph{exata}, em virtude de~\sref{IV.8.5.8}[ii], aplicado segundo o método geral de~\sref{IV.8.1.2}[a], e podemos, portanto, supor desde já que $\sh{F}\xrightarrow{u}\sh{G}\xrightarrow{v}\sh{H}$ seja exata; basta evidentemente demonstrar que $\operatorname{Ker}(v_s)=(\operatorname{Ker} v)_s$ e $\operatorname{Im}(u_s)=(\operatorname{Im} u)_s$ para $s$ próximo de $\eta$ em $S$.
+Tendo em conta que os $\sh{O}_X$-Módulos $\sh{F}$, $\sh{G}$ e $\sh{H}$ são coerentes e~($\mathbf{0}_{\mathrm{I}}$,~5.3.4), reduzimo-nos a demonstrar a proposição no caso particular em que a sequência
+\[
+ 0\longrightarrow\sh{F}\xrightarrow{u}\sh{G}\xrightarrow{v}\sh{H}
+ \longrightarrow0
+\]
+é exata.
+Existe então uma vizinhança aberta $U$ de $\eta$ em $S$ tal que
+$\sh{H}|f^{-1}(U)$ seja plana sobre $U$~\sref{IV.6.9.1}; portanto, \sref{IV.2.1.8}
+mostra que, para todo $s\in U$, a sequência
+\[
+ 0\longrightarrow\sh{F}_s\longrightarrow\sh{G}_s\longrightarrow\sh{H}_s
+ \longrightarrow0
+\]
+é exata, o que conclui a demonstração.
+\end{proof}
+
+\begin{corollary}[9.4.3]
+\label{IV.9.4.3}
+Seja $S$ um pré-esquema integral, de ponto genérico $\eta$, e seja $f:X\to S$ um morfismo de apresentação finita.
+Seja $\sh{L}^\bullet=(\sh{L}^i)_{i\in\mathbf{Z}}$ um complexo cujos termos são $\sh{O}_X$-Módulos quase-coerentes de apresentação finita.
+Para todo $i$, existe uma vizinhança aberta $U$ de $\eta$ em $S$ tal que os homomorfismos canônicos
+\begin{equation}
+\label{IV.9.4.3.1}
+  (\sh{H}^i(\sh{L}^\bullet))_s\to\sh{H}^i(\sh{L}^\bullet_s) \tag{9.4.3.1}
+\end{equation}
+sejam bijetivos para todo $s\in U$.
+\end{corollary}
+
+\oldpage[IV-3]{63}
+
+\begin{proof}
+Basta considerar um complexo de três termos nos graus $-1$, $0$, $+1$,
+\[
+ \sh{M}\xrightarrow{u}\sh{N}\xrightarrow{v}\sh{P},
+\]
+e $i=0$.
+O homomorfismo canônico em questão é então
+\[
+ (\operatorname{Ker}v/\operatorname{Im}u)_s
+ \longrightarrow \operatorname{Ker}(v_s)/\operatorname{Im}(u_s).
+\]
+Utilizando~\sref{IV.8.9.1} e~\sref{IV.8.5.2}[i], podemos reduzir-nos ao caso
+em que $S$ (e, portanto, $X$) é noetheriano; os Módulos $\sh{M}$, $\sh{N}$ e
+$\sh{P}$ são então coerentes.
+Assim, $\operatorname{Im}u$ e $\operatorname{Ker}v$ são coerentes
+($\mathbf{0}_{\mathrm{I}}$,~5.3.4), e~\sref{IV.9.4.2} fornece uma vizinhança
+$U$ de $\eta$ na qual
+\[
+ \operatorname{Ker}(v_s)=(\operatorname{Ker}v)_s,
+ \qquad
+ \operatorname{Im}(u_s)=(\operatorname{Im}u)_s.
+\]
+A conclusão segue aplicando~\sref{IV.9.4.2} à sequência exata
+\[
+ 0\longrightarrow\operatorname{Im}u\longrightarrow\operatorname{Ker}v
+ \longrightarrow\operatorname{Ker}v/\operatorname{Im}u\longrightarrow0,
+\]
+uma vez que $\sh{O}_\eta=\mathbf{k}(\eta)$ (pois $S$ é integral) e, por conseguinte, a sequência
+\[
+ 0\longrightarrow(\operatorname{Im}u)_\eta\longrightarrow(\operatorname{Ker}v)_\eta
+ \longrightarrow(\operatorname{Ker}v/\operatorname{Im}u)_\eta\longrightarrow0
+\]
+é exata.
+\end{proof}
+
+\begin{proposition}[9.4.4]
+\label{IV.9.4.4}
+Seja $f:X\to S$ um morfismo de apresentação finita, e sejam $\sh{F}$, $\sh{G}$, $\sh{H}$ três $\sh{O}_X$-Módulos quase-coerentes de apresentação finita.
+Sejam $u:\sh{F}\to\sh{G}$, $v:\sh{G}\to\sh{H}$ dois homomorfismos de $\sh{O}_X$-Módulos.
+Então o conjunto $E$ dos $s\in S$ tais que a sequência $\sh{F}_s\xrightarrow{u_s}\sh{G}_s\xrightarrow{v_s}\sh{H}_s$ seja exata é localmente construtível.
+\end{proposition}
+
+Tendo em conta~\sref{IV.9.2.3}, basta estabelecer que a propriedade $\mathbf{P}$ considerada em~\sref{IV.9.4.2} é construtível.
+Já observamos na demonstração de~\sref{IV.9.4.2} que a condição~\sref{IV.9.2.1}[i] é satisfeita para essa propriedade, e resta verificar a condição~\sref{IV.9.2.1}[ii].
+Suponhamos, pois, que $S$ seja integral noetheriano, de ponto genérico $\eta$, e demonstremos que $E$ ou $S-E$ seja uma vizinhança de $\eta$.
+Se $\eta\in E$, nossa afirmação decorre de~\sref{IV.9.4.2}, e podemos, portanto, limitar-nos ao caso em que $\eta\notin E$, isto é, a sequência $\sh{F}_\eta\xrightarrow{u_\eta}\sh{G}_\eta\xrightarrow{v_\eta}\sh{H}_\eta$ não é exata.
+Distingamos então dois casos:
+
+$1^\circ$ Ponhamos $w=v\circ u$, e suponhamos primeiro que $w_\eta=v_\eta\circ u_\eta\neq 0$.
+Como $\sh{F}$, $\sh{G}$, $\sh{H}$ são coerentes, o mesmo vale para $\sh{N}=\operatorname{Ker}(w)$~($\mathbf{0}_{\mathrm{I}}$,~5.3.4); segue então de~\sref{IV.9.4.2}, aplicado à sequência exata $0\to\sh{N}\to\sh{F}\xrightarrow{w}\sh{H}$, que existe uma vizinhança $U$ de $\eta$ em $S$ tal que, para $s\in U$, $\operatorname{Ker}(w_s)=\sh{N}_s$; restringindo $S$, podemos, portanto, supor que essa relação se verifique para todo $s\in S$.
+Seja $j$ a injeção canônica $\sh{N}\to\sh{F}$, e ponhamos $\sh{M}=\operatorname{Coker}(j)$; a exatidão à direita do funtor $\sh{F}\mapsto\sh{F}_s$ implica que $\sh{M}_s=\operatorname{Coker}(j_s)$ para todo $s\in S$.
+A hipótese $w_\eta\neq 0$ significa que $\sh{M}_\eta\neq 0$; como $\sh{M}$ é coerente~($\mathbf{0}_{\mathrm{I}}$,~5.3.4), resulta de~\sref{IV.1.8.6} que existe uma vizinhança aberta $U$ de $\eta$ em $S$ tal que $\sh{M}_s\neq 0$ para todo $s\in U$, de onde $w_s\neq 0$ para todo $s\in U$, e \emph{a fortiori} $S-E$ é uma vizinhança de $\eta$.
+
+$2^\circ$ Suponhamos que $w_\eta=0$; em virtude de~\sref{IV.8.5.2}[i], aplicado segundo o método geral de~\sref{IV.8.1.2}[a], existe uma vizinhança aberta $U$ de $\eta$ tal que $w|f^{-1}(U)=0$; substituindo $S$ por $U$, podemos supor desde já que $w=0$ em $X$.
+Então $\sh{F}\xrightarrow{u}\sh{G}\xrightarrow{v}\sh{H}$ é um complexo de três termos $\sh{L}^\bullet$, ao qual podemos aplicar~\sref{IV.9.4.3}; por hipótese, temos $(\sh{H}^0(\sh{L}^\bullet))_\eta=\sh{H}^0(\sh{L}^\bullet_\eta)\neq 0$, e $\sh{H}^0(\sh{L}^\bullet)$ é coerente~($\mathbf{0}_{\mathrm{I}}$,~5.3.4 e~5.3.3); portanto, resulta de~\sref{IV.1.8.6} que existe uma vizinhança aberta $U$ de $\eta$ tal que $(\sh{H}^0(\sh{L}^\bullet))_s\neq 0$ para todo $s\in U$; mas, como podemos supor que $\sh{H}^0(\sh{L}^\bullet_s)=(\sh{H}^0(\sh{L}^\bullet))_s$ para todo $s\in U$ por~\sref{IV.9.4.3}, vemos novamente que $S-E$ é uma vizinhança de $\eta$ em $S$.
+
+\oldpage[IV-3]{64}
+
+\begin{corollary}[9.4.5]
+\label{IV.9.4.5}
+Seja $f:X\to S$ um morfismo de apresentação finita, sejam $\sh{F}$, $\sh{G}$ dois $\sh{O}_X$-Módulos quase-coerentes de apresentação finita, e seja $u:\sh{F}\to\sh{G}$ um homomorfismo de $\sh{O}_X$-Módulos.
+Então o conjunto dos $s\in S$ tais que $u_s$ seja injetivo \textnormal{(}resp.\ sobrejetivo, bijetivo, nulo\textnormal{)} é localmente construtível.
+\end{corollary}
+
+Basta aplicar~\sref{IV.9.4.4} às sequências $0\to\sh{F}\xrightarrow{u}\sh{G}$, $\sh{F}\xrightarrow{u}\sh{G}\to 0$, $0\to\sh{F}\xrightarrow{u}\sh{G}\to 0$, $\sh{F}\xrightarrow{u}\sh{G}\xrightarrow{1_\sh{G}}\sh{G}$.
+
+\begin{corollary}[9.4.6]
+\label{IV.9.4.6}
+Seja $f:X\to S$ um morfismo de apresentação finita, e seja $\sh{F}$ um $\sh{O}_X$-Módulo quase-coerente de apresentação finita.
+Seja $h$ uma seção de $\sh{F}$ sobre $X$; para todo $s\in S$, seja $h_s$ a seção correspondente de $\sh{F}_s$ sobre $X_s$ \textnormal{(}para o morfismo de projeção $X_s\to X$\textnormal{)}.
+Então o conjunto dos $s\in S$ tais que $h_s=0$ é localmente construtível.
+\end{corollary}
+
+Basta observar que $h$ corresponde a um homomorfismo $u:\sh{O}_X\to\sh{F}$~($\mathbf{0}_{\mathrm{I}}$,~5.1.1) e $h_s$ ao homomorfismo $u_s$.
+
+\begin{proposition}[9.4.7]
+\label{IV.9.4.7}
+Seja $f:X\to S$ um morfismo de apresentação finita, e seja $\sh{F}$ um $\sh{O}_X$-Módulo quase-coerente de apresentação finita.
+O conjunto $E$ \textnormal{(}resp.\ $E'$\textnormal{)} dos $s\in S$ tais que $\sh{F}_s$ seja um $\sh{O}_{X_s}$-Módulo localmente livre \textnormal{(}resp.\ localmente livre de posto $n$\textnormal{)} é localmente construtível.
+\end{proposition}
+
+Se $X$ é um pré-esquema algébrico sobre um corpo $k$, $\sh{F}$ um $\sh{O}_X$-Módulo coerente e $k'$ uma extensão de $k$, para que $\sh{F}$ seja localmente livre \textnormal{(}resp.\ localmente livre de posto $n$\textnormal{)}, é necessário e suficiente que o mesmo se dê para $\sh{F}\otimes_k k'$, uma vez que a projeção $X_{(k')}\to X$ é um morfismo fielmente plano~\sref{IV.2.2.7}.
+Em outras palavras, a condição~\sref{IV.9.2.1}[i] é satisfeita para as propriedades cuja construtibilidade queremos demonstrar, e resta verificar~\sref{IV.9.2.1}[ii]; podemos, portanto, supor ainda que $S$ seja afim, noetheriano e integral.
+Há então, novamente, quatro casos a considerar:
+
+$1^\circ$ $\eta\in E$.
+Em virtude de~\sref{IV.8.5.5}, aplicado segundo o método geral de~\sref{IV.8.1.2}[a], existe uma vizinhança aberta $U$ de $\eta$ em $S$ tal que $\sh{F}|f^{-1}(U)$ seja localmente livre; \emph{a fortiori}, $\sh{F}_s$ é localmente livre para todo $s\in U$.
+
+$2^\circ$ $\eta\in E'$.
+O mesmo raciocínio que no $1^\circ$.
+
+$3^\circ$ $\eta\in S-E$.
+Como $\sh{F}_\eta$ é um $\sh{O}_{X_\eta}$-Módulo coerente, dizer que não é localmente livre equivale a dizer que não é plano sobre $\sh{O}_{X_\eta}$ (Bourbaki, \emph{Alg.\ comm.}, cap.~II, \textsection5, n\textsuperscript{o}~2, cor.~2 do teorema~1).
+O fato de $S-E$ ser uma vizinhança de $\eta$ decorrerá então do lema mais geral seguinte, aplicado ao caso em que $g$ é a identidade:
+
+\begin{lemma}[9.4.7.1]
+\label{IV.9.4.7.1}
+Seja $S$ um pré-esquema integral noetheriano, de ponto genérico $\eta$, sejam $X$, $Y$ dois $S$-pré-esquemas de tipo finito sobre $S$, seja $g:X\to Y$ um $S$-morfismo e seja $\sh{F}$ um $\sh{O}_X$-Módulo coerente.
+Se $\sh{F}_\eta$ não for $g_\eta$-plano, então existe uma vizinhança aberta $U$ de $\eta$ em $S$ tal que, para todo $s\in U$, $\sh{F}_s$ não seja $g_s$-plano.
+\end{lemma}
+
+Tendo em conta~\sref{IV.2.1.2} e Bourbaki, \emph{Alg.\ comm.}, cap.~I\textsuperscript{er}, \textsection2, n\textsuperscript{o}~3, Remarque~1, a hipótese significa que existe um aberto não vazio $V$ de $Y_\eta$ e um homomorfismo injetivo $v:\sh{M}\to\sh{N}$ de $\sh{O}_V$-Módulos \emph{coerentes}, tal que o homomorfismo $1\otimes v:\sh{F}_\eta\otimes_{\sh{O}_V}\sh{M}\to\sh{F}_\eta\otimes_{\sh{O}_V}\sh{N}$ não é injetivo.
+Temos $V=Y_\eta\cap W$, onde $W$ é aberto em $Y$~(\textbf{I},~3.6.1), e resulta de~\sref{IV.8.5.2}[i] e~\sref{IV.8.5.2}[ii], aplicado segundo o método de~\sref{IV.8.1.2}[a], que existe uma vizinhança aberta $U_0$ de $\eta$ em $S$, dois $\sh{O}_Z$-Módulos
+\oldpage[IV-3]{65}
+coerentes $\sh{G}$, $\sh{H}$ (onde $Z=W\cap h^{-1}(U_0)$, sendo $h:Y\to S$ o morfismo estrutural) e um $\sh{O}_Z$-homomorfismo $u:\sh{G}\to\sh{H}$ tais que $\sh{M}=\sh{G}_\eta$, $\sh{N}=\sh{H}_\eta$ e $v=u_\eta$; podemos, portanto, tomar $U_0$ de modo que $u_s:\sh{G}_s\to\sh{H}_s$ seja injetivo para todo $s\in U_0$~\sref{IV.9.4.5}.
+Mas, para todo $s\in U_0$, o homomorfismo $1\otimes u_s:\sh{F}_s\otimes_{\sh{O}_{Z_s}}\sh{G}_s\to\sh{F}_s\otimes_{\sh{O}_{Z_s}}\sh{H}_s$ nada mais é que $(1\otimes u)_s$; a hipótese de que $(1\otimes u)_\eta$ não é injetivo implica, portanto, por~\sref{IV.9.4.5}, a existência de um aberto não vazio $U\subset U_0$ tal que, para todo $s\in U$, $(1\otimes u)_s$ não seja injetivo e, por conseguinte, $\sh{F}_s$ não seja $g_s$-plano para todo $s\in U$.
+
+$4^\circ$ $\eta\in S-E'$.
+É claro que $S-E\subset S-E'$ e, se $\eta\in S-E$, $S-E'$ é \emph{a fortiori} uma vizinhança de $\eta$ pelo $3^\circ$.
+Suponhamos, portanto, que $\eta\in E$, de onde $\sh{F}_\eta$ é localmente livre; essas hipóteses implicam que $X_\eta$ não é conexo e que os postos do $\sh{O}_{X_\eta}$-Módulo localmente livre $\sh{F}_\eta$ não são os mesmos sobre as diversas componentes conexas de $X_\eta$.
+Ora, resulta de~\sref{IV.8.4.2}, aplicado segundo o método de~\sref{IV.8.1.2}[a], que podemos supor (após substituir $S$ por uma vizinhança aberta de $\eta$) que $X$ e $X_\eta$ tenham o mesmo número de componentes conexas, sendo as componentes conexas de $X_\eta$ as interseções de $X_\eta$ com as componentes conexas de $X$.
+A conclusão decorre então do raciocínio feito no $2^\circ$, aplicado a cada uma das componentes conexas de $X$ (que são em número finito).
+
+\begin{remark}[9.4.7.2]
+\label{IV.9.4.7.2}
+O lema~\sref{IV.9.4.7.1} será mais tarde generalizado e liberto de hipóteses noetherianas~\sref{IV.11.2.8}.
+\end{remark}
+
+\begin{proposition}[9.4.8]
+\label{IV.9.4.8}
+Seja $S$ um pré-esquema localmente noetheriano, seja $f:X\to S$ um morfismo de tipo finito e seja $\sh{F}$ um $\sh{O}_X$-Módulo coerente.
+Suponhamos que, para todo $s\in S$, $X_s$ seja um pré-esquema localmente integral.
+Então o conjunto $E$ \textnormal{(}resp.\ $E'$\textnormal{)} dos $s\in S$ tais que $\sh{F}_s$ seja um $\sh{O}_{X_s}$-Módulo de torção \textnormal{(}resp.\ um $\sh{O}_{X_s}$-Módulo livre de torção\textnormal{)} é localmente construtível.
+\end{proposition}
+
+\begin{proof}
+Podemos evidentemente supor que $S=\operatorname{Spec}(A)$ seja afim e noetheriano e demonstrar que $E$ \textnormal{(}resp.\ $E'$\textnormal{)} é então construtível utilizando o critério~($\mathbf{0}_{\mathrm{III}}$,~9.2.3); substituindo $S$ pelo subpré-esquema fechado reduzido de $S$ cujo espaço subjacente é uma parte fechada irredutível $Y$ de $S$, e observando~(\textbf{I},~3.6.4) que, para $s\in Y$, a fibra $(X_{(Y)})_s$ se identifica canonicamente com $X_s$ e o feixe $(\sh{F}\otimes_{\sh{O}_S}\sh{O}_Y)_s$ com $\sh{F}_s$, vemos que estamos reduzidos ao caso em que $S$ é integral, de ponto genérico $\eta$, e a demonstrar que $E$ ou $S-E$ \textnormal{(}resp.\ $E'$ ou $S-E'$\textnormal{)} é uma vizinhança de $\eta$ em $S$.
+Além disso, $X$ é reunião finita de abertos afins $U_i$ de tipo finito sobre $S$, e cada $(U_i)_s$ é um subpré-esquema aberto de $X_s$, portanto localmente integral; se $(U_i)_\eta$ for vazio \textnormal{(}resp.\ não vazio\textnormal{)}, sabemos que $(U_i)_s$ também é vazio \textnormal{(}resp.\ não vazio\textnormal{)} em uma vizinhança de $\eta$~\sref{IV.9.2.6}.
+Podemos, portanto, supor que todos os $(U_i)_\eta$ sejam não vazios e integrais, e dizer que $\sh{F}_s$ é de torção \textnormal{(}resp.\ livre de torção\textnormal{)} equivale a dizer que cada uma das restrições $\sh{F}_s|_{(U_i)_s}$ é de torção \textnormal{(}resp.\ livre de torção\textnormal{)}.
+
+Estamos, assim, reduzidos ao caso em que $X=\operatorname{Spec}(B)$ é afim e $\sh{F}=\widetilde{M}$, onde $M$ é um $B$-módulo finito; ponhamos $B_s=B\otimes_A\mathbf{k}(s)$, $M_s=M\otimes_A\mathbf{k}(s)$ e suponhamos que $B_\eta$ seja integral.
+Há quatro casos a considerar:
+
+$1^\circ$ $\eta\in E$.
+Então $M_\eta$ é um $B_\eta$-módulo de torção finito, e existe, portanto, um $h\neq0$ em $B_\eta$ tal que $hM_\eta=0$; por~\sref{IV.8.5.2}[i], aplicado segundo o método de~\sref{IV.8.1.2}[a],
+
+\oldpage[IV-3]{66}
+
+podemos \textnormal{(}após substituir, se necessário, $S$ por uma vizinhança de $\eta$\textnormal{)} supor que $h\in\Gamma(X_\eta,\sh{O}_{X_\eta})$ seja da forma $g_\eta$, onde $g\in\Gamma(X,\sh{O}_X)$; seja $u:\sh{F}\to\sh{F}$ o endomorfismo de $\sh{F}$ definido pela multiplicação por $g$.
+Por hipótese, $u_\eta=0$; logo, por~\sref{IV.9.4.5}, o endomorfismo $u_s:\sh{F}_s\to\sh{F}_s$ definido pela multiplicação por $g_s$ é nulo em uma vizinhança de $\eta$.
+Por outro lado, seja $v:\sh{O}_X\to\sh{O}_X$ o endomorfismo definido pela multiplicação por $g$; como $B_\eta$ é integral e $h=g_\eta\neq0$, $v_\eta$ é injetivo e segue, portanto, de~\sref{IV.9.4.5} que $v_s$ é um endomorfismo injetivo de $\sh{O}_{X_s}$ para $s$ vizinho de $\eta$; dito de outro modo, $g_s$ é um elemento $\sh{O}_{X_s}$-regular para esses valores de $s$.
+Portanto, $\sh{F}_s$ é de torção em uma vizinhança de $\eta$.
+
+$2^\circ$ $\eta\in S-E$.
+Dizer que o $B_\eta$-módulo finito $M_\eta$ não é um módulo de torção significa que $M_\eta/T\neq0$, onde $T$ é seu submódulo de torção, e, como $M_\eta/T$ é um $B_\eta$-módulo finito livre de torção, ele é isomorfo a um submódulo de $B_\eta^n$; existe, portanto, um homomorfismo $w:M_\eta\to B_\eta$ com $w\neq0$.
+Aplicando~\sref{IV.8.5.2}[i] segundo o método de~\sref{IV.8.1.2}[a], deduzimos \textnormal{(}após substituir, se necessário, $S$ por uma vizinhança de $\eta$\textnormal{)} que existe um homomorfismo $v:\sh{F}\to\sh{O}_X$ tal que $v_\eta=\widetilde{w}$.
+A hipótese $v_\eta\neq0$ implica, portanto, por~\sref{IV.9.4.5}, que $v_s\neq0$ em uma vizinhança de $\eta$ e, como $X_s$ é localmente integral, $\sh{F}_s$ não é de torção para esses valores de $s$.
+
+$3^\circ$ $\eta\in E'$.
+Como $M_\eta$ é um $B_\eta$-módulo finito livre de torção, existe um homomorfismo injetivo $w:M_\eta\to B_\eta^n$.
+Utilizando~\sref{IV.8.5.2}[i] e~\sref{IV.9.4.5} como no $2^\circ$ \textnormal{(}restringindo $S$ se necessário\textnormal{)}, deduzimos que existe um homomorfismo $v:\sh{F}\to\sh{O}_X^n$ tal que $v_\eta=\widetilde{w}$ e que, para $s$ vizinho de $\eta$, $v_s:\sh{F}_s\to\sh{O}_{X_s}^n$ é injetivo; para esses valores de $s$, $\sh{F}_s$ é, portanto, livre de torção.
+
+$4^\circ$ $\eta\in S-E'$.
+Seja $T$ o submódulo de torção de $M_\eta$; por hipótese, $T\neq0$, e $T$ é finito, pois $M_\eta$ é noetheriano.
+Utilizando, desta vez, \sref{IV.8.5.2}[i] e~\sref{IV.8.5.2}[ii], vemos \textnormal{(}restringindo $S$ se necessário\textnormal{)} que existem um $\sh{O}_X$-Módulo coerente $\sh{G}$ e um homomorfismo injetivo $u:\sh{G}\to\sh{F}$ tais que $\sh{G}_\eta=\widetilde{T}$ e $u_\eta$ é a injeção canônica $\widetilde{T}\to\sh{F}_\eta$.
+Segue então do $1^\circ$ e de~\sref{IV.1.8.6} que, em uma vizinhança de $\eta$, $\sh{G}_s$ é um $\sh{O}_{X_s}$-Módulo de torção não nulo; por outro lado, segue de~\sref{IV.9.4.5} que, em uma vizinhança de $\eta$, $u_s$ é injetivo.
+Concluímos que, em uma vizinhança de $\eta$, o submódulo de torção de $\sh{F}_s$ não é nulo.
+\end{proof}
+
+\begin{remark}[9.4.9]
+\label{IV.9.4.9}
+A propriedade ``$X$ é um $k$-pré-esquema algébrico localmente integral'' não satisfaz a condição~\sref{IV.9.2.1}[i] e, portanto, não é certo que o enunciado de~\sref{IV.9.4.8} permaneça válido quando não se faz nenhuma hipótese sobre $S$ e se supõe apenas que $f$ seja um morfismo de apresentação finita e $\sh{F}$ um $\sh{O}_X$-Módulo de apresentação finita.
+Consideremos, contudo, o seguinte caso particular.
+Seja $S_0$ um pré-esquema localmente noetheriano, seja $f_0:X_0\to S_0$ um morfismo de tipo finito cujas fibras $(X_0)_{s_0}$ sejam localmente integrais para todo $s_0\in S_0$, e seja $\sh{F}_0$ um $\sh{O}_{X_0}$-Módulo coerente.
+Seja $g:S\to S_0$ um morfismo qualquer; ponhamos
+$X=X_0\times_{S_0}S$, $\sh{F}=\sh{F}_0\otimes_{\sh{O}_{S_0}}\sh{O}_S$ e $f=f_0\times 1_S:X\to S$, e suponhamos que, para todo $s\in S$, a fibra $X_s$ seja ainda localmente integral.
+Então o conjunto $E$ \textnormal{(}resp.\ $E'$\textnormal{)} dos $s\in S$ tais que $\sh{F}_s$ seja de torção \textnormal{(}resp.\ livre de
+
+\oldpage[IV-3]{67}
+
+torção\textnormal{)} é ainda localmente construtível.
+
+Com efeito, seja $s\in S$ e seja $s_0=g(s)$; bastará, tendo em conta~\sref{IV.1.8.2}, demonstrar que, para que $\sh{F}_s$ seja de torção \textnormal{(}resp.\ livre de torção\textnormal{)}, é necessário e suficiente que $(\sh{F}_0)_{s_0}$ o seja.
+Ora, $\operatorname{Supp}(\sh{F}_s)$ é a imagem inversa de $\operatorname{Supp}((\sh{F}_0)_{s_0})$ pela projeção $p:X_s\to(X_0)_{s_0}$~\sref[I]{I.9.1.13}; como $p$ é fielmente plano e quase-compacto, dizer que $\operatorname{Supp}(\sh{F}_s)$ contém um ponto maximal de $X_s$ equivale a dizer que $\operatorname{Supp}((\sh{F}_0)_{s_0})$ contém um ponto maximal de $(X_0)_{s_0}$~\sref{IV.1.1.5} e~\sref{IV.2.3.4}; disso decorre nossa afirmação quanto ao conjunto $E$~\sref[I]{I.7.4.6}.
+Se o submódulo de torção $\sh{T}$ de $(\sh{F}_0)_{s_0}$ não for nulo, $\sh{T}\otimes_{\boldsymbol{k}(s_0)}\boldsymbol{k}(s)$ \textnormal{(}que é de torção pelo que precede\textnormal{)} não será nulo e se identificará com um submódulo de $\sh{F}_s$~\sref{IV.2.2.7}; portanto, o submódulo de torção de $\sh{F}_s$ não será nulo.
+Finalmente, se $(\sh{F}_0)_{s_0}$ for livre de torção, podemos supor, considerando um aberto afim de $(X_0)_{s_0}$, que $(\sh{F}_0)_{s_0}$ seja isomorfo a um submódulo de algum $\sh{O}_{(X_0)_{s_0}}^n$; então $\sh{F}_s$ será isomorfo a um submódulo de $\sh{O}_{X_s}^n$~\sref{IV.2.2.7}, o que demonstra nossa afirmação quanto a $E'$.
+\end{remark}
+
+\subsection{Construtibilidade de propriedades topológicas}
+\label{subsection:IV.9.5}
+
+\begin{proposition}[9.5.1]
+\label{IV.9.5.1}
+Seja $f:X\to S$ um morfismo de apresentação finita e seja $Z$ uma parte localmente construtível de $X$.
+Então o conjunto $E$ dos $s\in S$ tais que $Z_s\neq\varnothing$ é localmente construtível.
+\end{proposition}
+
+\begin{proof}
+Com efeito, temos $E=f(Z)$, e basta aplicar o teorema de Chevalley~\sref{IV.1.8.4}.
+\end{proof}
+
+\begin{corollary}[9.5.2]
+\label{IV.9.5.2}
+Se $Z'$, $Z''$ são duas partes localmente construtíveis de $X$, o conjunto dos $s\in S$ tais que $Z'_s\subset Z''_s$ \textnormal{(}resp.\ $Z'_s=Z''_s$\textnormal{)} é localmente construtível.
+\end{corollary}
+
+\begin{proof}
+Com efeito, a relação $Z'_s\subset Z''_s$ equivale a $(Z'\cap(\complement Z''))_s=\varnothing$, e $Z'\cap\complement Z''$ é localmente construtível.
+\end{proof}
+
+\begin{proposition}[9.5.3]
+\label{IV.9.5.3}
+Seja $f:X\to S$ um morfismo de apresentação finita, e sejam $Z$, $Z'$ duas partes localmente construtíveis de $X$ tais que $Z\subset Z'$.
+Então o conjunto $E$ dos $s\in S$ tais que $Z_s$ seja denso em $Z'_s$ é localmente construtível em $S$.
+\end{proposition}
+
+\begin{proof}
+Devemos verificar as duas condições de \sref{IV.9.2.2},~(iii).
+Quanto à primeira, consideremos um pré-esquema $X$ algébrico sobre um corpo $k$, duas partes construtíveis $Z$, $Z'$ de $X$ tais que $Z\subset Z'$, e uma extensão $k'$ de $k$.
+Então a projeção canônica $p:X_{(k')}\to X$ é um morfismo fielmente plano e quase-compacto, e temos $p^{-1}(\overline{Z})=\overline{p^{-1}(Z)}$ e $p^{-1}(\overline{Z'})=\overline{p^{-1}(Z')}$ em virtude de \sref{IV.2.3.10}; como $p$ é sobrejetivo, a relação $\overline{Z}=\overline{Z'}$ equivale a $\overline{p^{-1}(Z)}=\overline{p^{-1}(Z')}$.
+
+Verifiquemos agora a segunda condição e suponhamos, portanto, que $S$ seja afim, noetheriano e integral, de ponto genérico $\eta$.
+Distingamos dois casos:
+\begin{enumerate}[label=\upshape{$\arabic{enumi}^\circ$}]
+  \item $\eta\in S-E$, ou seja, $Z_\eta$ não é denso em $Z'_\eta$; existe então em $X$ um aberto $V$ tal que $V\cap Z_\eta=\varnothing$ e $V\cap Z'_\eta\neq\varnothing$.
+  Como $X$ é noetheriano, $V$ é localmente construtível, e o mesmo ocorre, portanto, com $V\cap Z$; em virtude de \sref{IV.9.5.1}, existe uma vizinhança $U$ de $\eta$ em $S$ tal que, para todo $s\in U$, $(V\cap Z)_s=\varnothing$ e $(V\cap Z')_s\neq\varnothing$; isso implica que $Z_s$ não é denso em $Z'_s$ para $s\in U$, ou seja, $U\subset S-E$.
+
+\oldpage[IV-3]{68}
+
+  \item\label{IV.9.5.3.case2} $\eta\in E$, logo $Z_\eta$ é denso em $Z'_\eta$.
+  Mostremos primeiro que podemos supor $Z'$ \emph{fechado}.
+  Com efeito, $Z_\eta$ é denso em $\overline{Z'_\eta}$ (fecho tomado em $X_\eta$); ponhamos $V_\eta=X_\eta-\overline{Z_\eta}$, que é aberto em $X_\eta$ e não intersecta $Z'_\eta$; podemos supor que $V_\eta$ seja da forma $V\cap X_\eta$, onde $V$ é aberto (portanto, construtível) em $X$, e a hipótese $V_\eta\cap Z'_\eta=\varnothing$ implica então $V_s\cap Z'_s=\varnothing$ para todo $s$ em uma vizinhança de $\eta$ em $S$, em virtude de \sref{IV.9.5.1}.
+  Substituindo $S$ por uma vizinhança aberta de $\eta$, podemos, portanto, supor $V\cap Z'=\varnothing$, donde $V\cap\overline{Z'}=\varnothing$ (fecho tomado em $X$) e, por conseguinte, $(\overline{Z'})_\eta=\overline{Z'_\eta}$, o que demonstra nossa afirmação.
+  O conjunto $Z'$ é então reunião de suas componentes irredutíveis em número finito e, restringindo ainda $S$ a uma vizinhança de $\eta$, podemos supor que todas as componentes irredutíveis $Z'_i$ de $Z'$ intersectem $X_\eta$, donde resulta que $X_\eta$ contém os pontos genéricos dos $Z'_i$ \sref[0]{0.2.1.8}.
+  Dizer que $Z_s$ é denso em $Z'_s$ equivale então a dizer que cada um dos $(Z\cap Z'_i)_s$ é denso em $(Z'_i)_s$, e somos assim reduzidos ao caso em que $Z'$ é \emph{irredutível}.
+  Substituindo então, se necessário, $X$ pelo subpré-esquema reduzido cujo espaço subjacente é $Z'$, vemos que podemos supor $Z'=X$ e que $X$ seja \emph{integral} e domine $S$.
+  Finalmente, cobrindo $X$ por um número finito de abertos afins $W_j$ e substituindo $Z$ por $Z\cap W_j$, podemos supor $X=\operatorname{Spec}(A)$, onde $A$ é um anel noetheriano \emph{integral}.
+  Como $X_\eta$ é noetheriano integral e $Z_\eta$ é construtível em $X_\eta$ e denso em $X_\eta$, $Z_\eta$ contém um aberto não vazio de $X_\eta$~($\mathbf{0}_{\mathrm{III}}$,~9.2.2), que podemos supor da forma $(D(t))_\eta$, onde $t$ é um elemento não nulo de $A$.
+  Substituindo $S$ por uma vizinhança de $\eta$ em $S$, se necessário, podemos ainda, em virtude da relação $(D(t))_\eta\subset Z_\eta$, supor $D(t)\subset Z$ \sref{IV.9.5.2}.
+  Finalmente, como a homotetia de razão $t_\eta$ em $\sh{O}_{X_\eta}$ é injetiva, segue de \sref{IV.9.4.5} que, para $s$ vizinho de $\eta$, $t_s$ é $\sh{O}_{X_s}$-regular, de modo que $(X_s)_{t_s}$ é denso em $X_s$ e, \emph{a fortiori}, o mesmo ocorre com $Z_s$, que contém $(X_s)_{t_s}$.
+\end{enumerate}
+\end{proof}
+
+\begin{corollary}[9.5.4]
+\label{IV.9.5.4}
+Seja $f:X\to S$ um morfismo de apresentação finita e seja $Z$ uma parte localmente construtível de $X$.
+O conjunto $E$ dos $s\in S$ tais que $Z_s$ seja fechado \textnormal{(}resp.\ aberto, resp.\ localmente fechado\textnormal{)} em $X_s$ é localmente construtível em $S$.
+\end{corollary}
+
+\begin{proof}
+Dizer que $Z_s$ é aberto em $X_s$ significa que $(X-Z)_s=X_s-Z_s$ é fechado em $X_s$ e, como $X-Z$ é localmente construtível, podemos limitar-nos a considerar o conjunto dos $s\in S$ tais que $Z_s$ seja fechado e o conjunto dos $s\in S$ tais que $Z_s$ seja localmente fechado.
+
+Verifiquemos ainda, em cada caso, as duas condições de \sref{IV.9.2.2},~(ii).
+A primeira resulta do fato de que $p:X_{(k')}\to X$ é fielmente plano e quase-compacto, e de \sref{IV.2.3.12} e \sref{IV.2.3.14}.
+Verifiquemos, portanto, a segunda condição, supondo $S$ afim, noetheriano e integral, de ponto genérico $\eta$.
+Ponhamos $Z'=\overline{Z}$; o mesmo raciocínio que em \sref{IV.9.5.3} mostra que $Z'_\eta$ é igual ao fecho de $Z_\eta$ em $X_\eta$; em virtude de \sref{IV.9.5.3}, existe, portanto, uma vizinhança $U$ de $\eta$ tal que, para $s\in U$, $Z_s$ seja denso em $Z'_s$, sendo este último fechado em $X_s$.
+Dizer que $Z_s$ é fechado em $X_s$ significa que $Z''_s=\varnothing$, onde $Z''=Z'-Z$; segue, portanto, de \sref{IV.9.5.1} que o conjunto $E$ dos $s\in S$ para os quais $Z''_s=\varnothing$ é tal que $E$ ou $S-E$ contém uma vizinhança de $\eta$.
+Dizer que $Z_s$ é localmente fechado em $X_s$ significa que $Z''_s$ é fechado em $X_s$; basta, portanto, aplicar o resultado precedente substituindo $Z$ por $Z''$, que é localmente construtível em $X$.
+\end{proof}
+
+\oldpage[IV-3]{69}
+
+\begin{proposition}[9.5.5]
+\label{IV.9.5.5}
+Seja $f:X\to S$ um morfismo de apresentação finita e seja $Z$ uma parte localmente construtível de $X$ tal que, para todo $s\in S$, $Z_s$ seja localmente fechado em $X_s$.
+Para todo $s\in S$, seja $D(s)\subset\mathbf{Z}\cup\{-\infty\}$ o conjunto das dimensões das componentes irredutíveis de $Z_s$.
+Então a função $s\mapsto D(s)$ é localmente construtível em $S$.
+\end{proposition}
+
+\begin{proof}
+Seja $\Phi$ uma parte finita de $\mathbf{Z}\cup\{-\infty\}$; trata-se de demonstrar que o conjunto dos $s\in S$ tais que $D(s)=\Phi$ é localmente construtível; tendo em conta \sref{IV.9.2.3}, devemos verificar mais uma vez as duas condições de \sref{IV.9.2.2},~(ii).
+
+Quanto à primeira, trata-se de ver que, se $X$ é um pré-esquema algébrico sobre um corpo $k$, $Z$ uma parte localmente fechada de $X$, $k'$ uma extensão de $k$, e $p:X_{(k')}\to X$ a projeção canônica, então o conjunto das dimensões das componentes irredutíveis de $Z$ é o mesmo que o das dimensões das componentes irredutíveis de $p^{-1}(Z)$; tendo em conta a existência de um subpré-esquema de $X$ cujo espaço subjacente é $Z$ \sref[I]{I.5.2.1}, isso resulta de \sref{IV.4.2.8}.
+
+Para a segunda condição de \sref{IV.9.2.2},~(ii), estamos no caso em que $S$ é noetheriano e integral, de ponto genérico $\eta$, e $f:X\to S$ é um morfismo de tipo finito, de modo que $X$ é noetheriano.
+O subespaço $Z_\eta$ do espaço noetheriano $X_\eta$ é, por hipótese, localmente fechado, tendo, portanto, um número finito de componentes irredutíveis $Z_{i\eta}$, que são localmente fechadas em $X_\eta$.
+Segue-se, para cada índice $i$, que existe uma parte localmente fechada $Z_i$ de $X$ tal que $(Z_i)_\eta=Z_{i\eta}$; portanto, se $Z'=\bigcup_i Z_i$, temos $Z'_\eta=Z_\eta$.
+Mas, como $Z$ e $Z'$ são localmente construtíveis, podemos, substituindo $S$ por uma vizinhança de $\eta$, supor que $Z'=Z$ \sref{IV.9.5.1}.
+Além disso, para $i\neq j$, $Z_{i\eta}\cap Z_{j\eta}$ não é denso em parte alguma e é \emph{fechado} em $Z_{i\eta}$; portanto, por \sref{IV.9.5.3} e \sref{IV.9.5.4}, podemos ainda supor, restringindo $S$, que, para $j\neq i$, $(Z_i)_s\cap(Z_j)_s$ não seja denso em parte alguma e seja fechado em $(Z_i)_s$.
+Como $Z_i$ é localmente fechado em $X$, existe um subpré-esquema de $X$ cujo espaço subjacente é $Z_i$ (e que continuamos a denotar por $Z_i$), que é de tipo finito sobre $S$ \sref[I]{I.6.3.5}.
+Ponhamos $U_i=Z_i-\bigcup_{j\neq i}(Z_i\cap Z_j)$, que é aberto em $Z_i$ e tal que, para todo $s\in S$, $(U_i)_s$ seja aberto e denso em toda parte em $(Z_i)_s$; além disso, por construção, os $U_i$ não têm, dois a dois, ponto algum em comum.
+Como $(Z_i)_s$ é um $\boldsymbol{k}(s)$-pré-esquema algébrico, o conjunto das dimensões das componentes irredutíveis de $Z_s=\bigcup_i(Z_i)_s$ é o mesmo que o conjunto das dimensões das componentes irredutíveis da reunião dos $(U_i)_s$ \sref{IV.4.1.1.3}, sendo cada uma dessas componentes já uma componente irredutível de um dos $(U_i)_s$.
+Podemos, portanto, limitar-nos ao caso em que $Z=U_i$; além disso, como $Z_\eta$ é então irredutível, há apenas uma componente irredutível de $Z$ que intersecta $X_\eta$~\sref[0]{0.2.1.8}, e podemos evidentemente, restringindo $Z$, supor que $Z$ seja irredutível.
+Somos assim finalmente reduzidos a demonstrar o seguinte caso particular de \sref{IV.9.5.5}:
+\end{proof}
+
+\begin{corollary}[9.5.6]
+\label{IV.9.5.6}
+Sejam $S$ um pré-esquema noetheriano e irredutível, de ponto genérico $\eta$, e $X$ um pré-esquema irredutível; seja $f:X\to S$ um morfismo dominante de tipo finito.
+Então existe uma vizinhança $U$ de $\eta$ em $S$ tal que, para todo $s\in U$, todas as componentes irredutíveis de $X_s$ tenham dimensão $n=\dim(X_\eta)$.
+\end{corollary}
+
+\begin{proof}
+Podemos evidentemente limitar-nos ao caso em que $S=\operatorname{Spec}(A)$ seja afim, sendo, portanto, $A$ noetheriano; substituindo $f$ por $f_{\mathrm{red}}$, que é de tipo finito \sref{IV.1.5.4},~(vi),
+
+\oldpage[IV-3]{70}
+
+podemos supor $A$ integral e $X$ reduzido, logo integral, pois é irredutível.
+Sabemos por \sref{IV.4.1.2} que existe um aberto $W$ denso em $X_\eta$ e um $\boldsymbol{k}(\eta)$-morfismo \emph{finito e sobrejetivo} $h:W\to\mathbf{V}((\boldsymbol{k}(\eta))^n)=\operatorname{Spec}(B')$, onde $B'=\boldsymbol{k}(\eta)[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ \textnormal{(}$\mathrm{T}_i$ indeterminadas\textnormal{)}.
+Se $V$ é um aberto de $X$ tal que $V\cap X_\eta=W$, sabemos por \sref{IV.9.5.3} que, para $s$ vizinho de $\eta$ em $S$, $V_s$ é um aberto denso em $X_s$; podemos, portanto, por \sref{IV.4.1.1.3}, limitar-nos ao caso em que $V=X$ e $W=X_\eta$.
+Ponhamos $B=A[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ e $Y=\operatorname{Spec}(B)=\mathbf{V}_A^n$, de modo que $\operatorname{Spec}(B')=Y_\eta$; resulta de \sref{IV.8.8.2},~(i) e de \sref{IV.8.10.5},~(vi) e (x), aplicados segundo o método de \sref{IV.8.1.2},~\emph{a}), que, substituindo $S$ por uma vizinhança de $\eta$ se necessário, podemos supor que $h=g_\eta$, onde $g:X\to Y$ é um morfismo finito e sobrejetivo.
+Em outras palavras, temos $X=\operatorname{Spec}(C)$, onde $C$ é uma $B$-álgebra finita, e o homomorfismo $B\to C$ correspondente a $g$ é \emph{injetivo}; como $C$ é um anel integral, $C$ é, portanto, um $B$-módulo de tipo finito \emph{livre de torção}, e $C_\eta=C\otimes_A\boldsymbol{k}(\eta)$ é um módulo de tipo finito livre de torção sobre $B_\eta=B'=B\otimes_A\boldsymbol{k}(\eta)=\boldsymbol{k}(\eta)[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ \textnormal{(}pois é um módulo de frações cujos denominadores pertencem a $A-\{0\}\subset B-\{0\}$\textnormal{)}.
+Segue de \sref{IV.9.4.8} que existe uma vizinhança $U$ de $\eta$ em $S$ tal que, para $s\in U$, $C_s=C\otimes_A\boldsymbol{k}(s)$ seja um módulo de tipo finito \emph{livre de torção} sobre $B_s=B\otimes_A\boldsymbol{k}(s)=\boldsymbol{k}(s)[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ e, em particular, o homomorfismo $g_s:B_s\to C_s$ seja injetivo.
+Como nenhum elemento de $B_s$ é divisor de zero em $C_s$, para todo ideal primo minimal $\mathfrak{p}_i$ de $C_s$ \textnormal{(}cujos elementos são divisores de zero em $C_s$\textnormal{)}, temos necessariamente $\mathfrak{p}_i\cap B_s=0$; portanto, o homomorfismo canônico $B_s\to C_s/\mathfrak{p}_i$ é injetivo.
+Deduzimos que, para cada componente irredutível $Z_i=\operatorname{Spec}(C_s/\mathfrak{p}_i)$ de $X_s$, a restrição a $Z_i$ de $g$ é um morfismo finito e dominante $Z_i\to Y_s$, portanto \emph{sobrejetivo} \sref[II]{II.6.1.10}.
+Concluímos então de \sref{IV.4.1.2} que $\dim Z_i=n$, o que termina a demonstração.
+\end{proof}
+
+\begin{remark}[9.5.7]
+\label{IV.9.5.7}
+Convém observar que, sob as hipóteses de \sref{IV.9.5.6}, pode ocorrer que $X_s$ não seja irredutível para \emph{nenhum} $s\neq\eta$ numa vizinhança de $\eta$; em outras palavras, a propriedade ``$X$ é um $k$-pré-esquema algébrico irredutível'' \emph{não é construtível}.
+Tomemos, por exemplo, $S=\operatorname{Spec}(k[\mathrm{T}])$, onde $k$ é um corpo algebricamente fechado e $\mathrm{T}$ uma indeterminada; temos então $\boldsymbol{k}(\eta)=K=k(\mathrm{T})$.
+Seja $L$ uma extensão finita separável de $K$ de grau $>1$, e seja $X$ o \emph{fecho integral} de $S$ em $L$ \sref[II]{II.6.3.4}; temos então $X=\operatorname{Spec}(B)$, onde $B$ é o fecho integral de $k[\mathrm{T}]$ em $L$.
+Sabemos que $B$ é um anel de Dedekind e que todos os ideais maximais de $k[\mathrm{T}]$, com um número finito de exceções, não são ramificados em $B$.
+Além disso, o corpo residual de todo ideal maximal de $B$ é necessariamente $k$, pois é uma extensão finita do corpo algebricamente fechado $k$.
+Assim, para quase todos os ideais maximais $\mathfrak{j}_s$ de $k[\mathrm{T}]$, o anel $B_s=B/\mathfrak{j}_s B$ é um produto direto de $[L:K]$ corpos isomorfos a $k$; em particular, $X_s$ não é irredutível, embora $X_\eta=\operatorname{Spec}(L)$ o seja.
+O mesmo exemplo mostra que a propriedade ``$X$ é um $k$-pré-esquema algébrico integral'' não é construtível.
+Finalmente, o mesmo vale para a propriedade ``$X$ é um $k$-pré-esquema algébrico reduzido''.
+Para vê-lo, basta tomar novamente $S=\operatorname{Spec}(k[\mathrm{T}])$, onde, desta vez, $k$ é um corpo algebricamente fechado de característica $p>0$, e, para $X$, o fecho integral de $S$ em $L=K^{1/p}$ \textnormal{(}onde $K=k(\mathrm{T})$\textnormal{)}, de modo que $X=\operatorname{Spec}(B)$ com $B=k[\mathrm{T}^{1/p}]$ \textnormal{(}sendo $k$ perfeito\textnormal{)}; todo ideal maximal de $k[\mathrm{T}]$ é da forma $(\mathrm{T}-\alpha)$ com $\alpha\in k$; o único ideal de $B$ acima do ideal $(\mathrm{T}-\alpha)$ é o ideal principal $(\mathrm{T}^{1/p}-\alpha^{1/p})$, e é imediato
+
+\oldpage[IV-3]{71}
+
+que o anel quociente $B/(\mathrm{T}-\alpha)B$ possui elementos nilpotentes; em outras palavras, $X_s$ não é reduzido para nenhum $s\neq\eta$, enquanto $X_\eta=\operatorname{Spec}(L)$ é integral.
+
+Veremos um pouco mais adiante \sref{IV.9.7} que, em contrapartida, se obtêm propriedades construtíveis quando se consideram as noções ``geométricas'' correspondentes às noções de pré-esquema irredutível, reduzido ou integral \sref{IV.4.5} e \sref{IV.4.6}.
+\end{remark}
+
+\subsection{Construtibilidade de certas propriedades de morfismos}
+\label{subsection:IV.9.6}
+
+\begin{proposition}[9.6.1]
+\label{IV.9.6.1}
+Sejam $X$, $Y$ dois $S$-pré-esquemas de apresentação finita e seja $f:X\to Y$ um $S$-morfismo.
+Seja $E$ o conjunto dos $s\in S$ para os quais $f_s$ possui uma das propriedades seguintes: ser
+\begin{enumerate}[label=(\roman*),widest=xii]
+  \item sobrejetivo;
+  \item dominante;
+  \item separado;
+  \item próprio;
+  \item radicial;
+  \item finito;
+  \item quase-finito;
+  \item uma imersão;
+  \item uma imersão fechada;
+  \item uma imersão aberta;
+  \item um isomorfismo;
+  \item um monomorfismo.
+\end{enumerate}
+Então $E$ é localmente construtível em $S$.
+\end{proposition}
+
+\begin{proof}
+As afirmações relativas a (i), (v) e (vii) são inseridas apenas a título de referência, pois já foram estabelecidas em \sref{IV.9.3.2}.
+
+(ii): Observemos primeiro que $f$ é de apresentação finita \sref[I]{I.6.2},~(v); portanto, em virtude do teorema de Chevalley \sref[I]{I.8.4}, $f(X)$ é localmente construtível em $Y$.
+Além disso, temos $f_s(X_s)=(f(X))_s$ \sref[I]{I.3.6.1}; o conjunto dos $s$ tais que $f_s$ é dominante é o conjunto dos $s$ tais que $(f(X))_s$ é denso em $Y_s$; a conclusão decorre, portanto, de \sref{IV.9.5.3}.
+
+(iii): Como $f:X\to Y$ é de apresentação finita, a imersão diagonal $\Delta_f:X\to X\times_Y X$ é de apresentação finita \sref[I]{I.6.2},~(iv) e (v); decorre de \sref{IV.1.8.4.1} que $\Delta_f(X)=\Delta_X$ é uma parte localmente construtível de $X\times_Y X$.
+Dizer que $f_s$ é separado significa \textnormal{(}levando em conta \sref[I]{I.5.3.4}\textnormal{)} que $(\Delta_X)_s$ é fechado em $X_s\times_{Y_s} X_s=(X\times_Y X)_s$; a conclusão decorre de \sref{IV.9.5.4}.
+
+(iv): Demonstremos que a propriedade ``$X$ e $Y$ são pré-esquemas algébricos sobre um corpo $k$, e $f:X\to Y$ um $k$-morfismo próprio'' é construtível.
+A condição \sref{IV.9.2.1},~(i) é verificada em virtude de \sref{IV.2.7.1},~(vii).
+Podemos, portanto, limitar-nos ao caso em que $S$ é afim, noetheriano e integral, de ponto genérico $\eta$, e devemos demonstrar que $E$ ou $S-E$ é uma vizinhança de $\eta$.
+Suponhamos primeiro que $\eta\in E$; decorre de \sref{IV.8.10.5},~(xii), aplicado segundo o método de \sref{IV.8.1.2},~\emph{a}), que, substituindo $S$ por uma vizinhança de $\eta$, podemos
+
+\oldpage[IV-3]{72}
+
+supor que o próprio $f$ seja um morfismo próprio; sabemos então que o mesmo vale para $f_s$ para todo $s\in S$ \sref[II]{II.5.4.2},~(iii).
+
+Suponhamos, ao contrário, que $\eta\in S-E$, e distingamos dois casos:
+\begin{enumerate}[label=\upshape{$\arabic{enumi}^\circ$}]
+  \item Suponhamos que $f_\eta$ não seja separado; decorre então de (iii) que $f_s$ não é separado (e \emph{a fortiori} não é próprio) em uma vizinhança de $\eta$.
+
+  \item Suponhamos $f_\eta$ separado; $Y$ é reunião finita de abertos afins $V_i$, e, para que $f_s$ seja próprio, é necessário e suficiente que cada uma de suas restrições $f_s^{-1}((V_i)_s)\to(V_i)_s$ o seja \sref[II]{II.5.4.1}; podemos, portanto, limitar-nos ao caso em que $Y$ é \emph{afim}, portanto um esquema.
+  Dizer que $f_\eta$ não é próprio significa, por \sref[II]{II.5.6.3}, que existe um morfismo \emph{de tipo finito} $h:Z\to Y_\eta$ tal que o morfismo $(f_\eta)_{(Z)}:X_\eta\times_{Y_\eta} Z\to Z$ não é fechado.
+  Como $Y$ é um esquema, deduzimos de \sref{IV.8.8.2},~(i) e (ii) (restringindo, se necessário, $S$ a uma vizinhança de $\eta$) que existe um morfismo de tipo finito $g:Y'\to Y$ tal que $Z$ é isomorfo a $Y'_\eta$ e $g_\eta=h$;
+  se pusermos $X'=X\times_Y Y'$ e $f'=f_{(Y')}:X'\to Y'$, então $(f_\eta)_{(Z)}=f'_\eta$, e, por hipótese, existe portanto uma parte fechada $M'$ de $X'_\eta$ tal que $f'_\eta(M')$ não é fechado em $Y'_\eta$.
+  Ora, $M'$ é o traço sobre $X'_\eta$ de uma parte fechada $N'$ de $X'$; como $X'$ é noetheriano e $f'$ de tipo finito, $f'(N')$ é construtível em $Y'$ \sref[I]{I.8.4} e, por hipótese, $(f'(N'))_\eta=f'_\eta(N'_\eta)=f'_\eta(M')$ não é fechado em $Y'_\eta$.
+  Concluímos então de \sref{IV.9.5.4} que existe uma vizinhança $U$ de $\eta$ em $S$ tal que, para $s\in U$, $(f'(N'))_s=f'_s(N'_s)$ não é fechado em $Y'_s$; em outras palavras, o morfismo $f'_s$ não é fechado e, \emph{a fortiori}, o morfismo $f_s$ não é próprio.
+\end{enumerate}
+
+(vi): A propriedade é uma conjunção das propriedades (iv) e (vii) \sref{IV.8.11.1}; portanto, a proposição decorre do que já foi demonstrado.
+
+(ix): A verificação da condição \sref{IV.9.2.1},~(i) decorre de \sref{IV.2.7.1},~(xi).
+Podemos, portanto, limitar-nos ao caso em que $S$ é afim, noetheriano e integral, de ponto genérico $\eta$, e demonstrar que $E$ ou $S-E$ é uma vizinhança de $\eta$.
+Se $\eta\in E$, podemos (substituindo $S$ por uma vizinhança de $\eta$) supor que $f$ é uma imersão fechada em virtude de \sref{IV.8.10.5},~(iv), e então é claro que $f_s$ é uma imersão fechada para todo $s\in S$ \sref[I]{I.4.3.2}.
+Suponhamos, portanto, que $\eta\in S-E$, e distingamos dois casos:
+\begin{enumerate}[label=\upshape{$\arabic{enumi}^\circ$}]
+  \item $f_\eta$ não é um morfismo finito.
+  Decorre então de (vi) que, em uma vizinhança de $\eta$, $f_s$ não é finito, nem \emph{a fortiori} uma imersão fechada.
+
+  \item $f_\eta$ é finito; então, em virtude de \sref{IV.8.10.5},~(x), podemos supor (restringindo $S$ se necessário) que o próprio $f$ seja um morfismo \emph{finito}.
+  Neste caso, $\mathscr{A}=\mathscr{A}(X)=f_*(\sh{O}_X)$ é um $\sh{O}_Y$-módulo coerente \sref[II]{II.6.1.3} e $f=\mathscr{A}(u)$, onde $u:\sh{O}_Y\to\mathscr{A}$ é um homomorfismo de $\sh{O}_Y$-álgebras \sref[II]{II.1.1.2}; como $f_\eta$ não é uma imersão fechada por hipótese, $u_\eta$ não é sobrejetivo \sref[II]{II.1.4.10}; portanto, por \sref{IV.9.4.5}, existe uma vizinhança de $\eta$ na qual $u_s$ não é sobrejetivo e, por conseguinte, por \sref[I]{I.4.2.3}, $f_s$ não é uma imersão fechada.
+\end{enumerate}
+
+(viii): A verificação da condição \sref{IV.9.2.1},~(i) faz-se como em (ix), utilizando desta vez \sref{IV.2.7.1},~(x) e o fato de que toda imersão de um pré-esquema noetheriano em outro é quase-compacta.
+Ficamos, portanto, reduzidos ao caso em que $S$ é afim, noetheriano e integral, de ponto genérico $\eta$, e a demonstrar que $E$ ou $S-E$ é uma vizinhança de $\eta$.
+Se $\eta\in E$, concluímos como em (ix) com auxílio de \sref{IV.8.10.5},~(ii).
+Se $\eta\in S-E$, distinguimos novamente dois casos:
+
+\oldpage[IV-3]{73}
+
+\begin{enumerate}[label=\upshape{$\arabic{enumi}^\circ$}]
+  \item $f_\eta(X_\eta)$ não é uma parte localmente fechada de $Y_\eta$.
+  Como $f(X)$ é construtível em $Y$ \sref[I]{I.8.4} e $f_s(X_s)=(f(X))_s$, deduzimos de \sref{IV.9.5.4} que, para $s$ próximo de $\eta$, $f_s(X_s)$ não é localmente fechado em $Y_s$ e, \emph{a fortiori}, $f_s$ não é uma imersão.
+
+  \item $f_\eta(X_\eta)$ é localmente fechado em $Y_\eta$.
+  Como $f(X)$ é construtível em $Y$ \sref[I]{I.8.4}, e o mesmo vale para $\overline{f(X)}$, pois $Y$ é noetheriano, decorre de \sref{IV.8.3.11} que, restringindo $S$ se necessário, podemos supor que $f(X)$ é localmente fechado em $Y$.
+  Existe então um aberto $V$ de $Y$ que contém $f(X)$ e no qual $f(X)$ é fechado.
+  Como $Y$ é noetheriano, $V$ é de tipo finito sobre $S$; substituindo $Y$ por $V$, podemos, portanto, reduzir-nos ao caso em que $f(X)$ é fechado em $Y$.
+  Mas então $f_s(X_s)=(f(X))_s$ é fechado em $Y_s$ para todo $s\in S$, e dizer que $f_s$ é uma imersão equivale a dizer que é uma imersão fechada.
+  Ficamos, portanto, reduzidos ao caso~(ix).
+\end{enumerate}
+
+(x): Utilizando desta vez \sref{IV.2.7.1},~(ix) e \sref{IV.8.10.5},~(iii), reduzimo-nos ao caso em que $S$ é afim, noetheriano e integral, de ponto genérico $\eta$, e em que $\eta\in S-E$.
+Distinguimos três casos:
+\begin{enumerate}[label=\upshape{$\arabic{enumi}^\circ$}]
+  \item $f_\eta(X_\eta)$ não é aberto em $Y_\eta$.
+  Como $f(X)$ é construtível em $Y$ \sref[I]{I.8.4}, deduzimos de \sref{IV.9.5.4} que $f_s(X_s)$ não é aberto em $Y_s$ para $s$ próximo de $\eta$, e, \emph{a fortiori}, $f_s$ não é uma imersão aberta.
+
+  \item $f_\eta(X_\eta)$ é aberto em $Y_\eta$, mas $f_\eta$ não é uma imersão.
+  Decorre então de (viii) que, para $s$ próximo de $\eta$ em $S$, $f_s$ não é uma imersão, nem \emph{a fortiori} uma imersão aberta.
+
+  \item $f_\eta(X_\eta)$ é aberto em $Y_\eta$ e $f_\eta$ é uma imersão.
+  Como $f(X)$ é construtível em $Y$, decorre de \sref{IV.8.3.11} que, restringindo $S$ se necessário, podemos supor desde já que $f(X)$ é aberto em $Y$.
+  Como $Y$ é noetheriano, o subpré-esquema induzido em $f(X)$ é de tipo finito sobre $S$; podemos, portanto, reduzir-nos ao caso em que $f$ é \emph{sobrejetivo}, substituindo $Y$ por $f(X)$.
+  Por hipótese, $f_\eta$ é uma imersão fechada; portanto, como em (ix), podemos supor que $f$ é uma \emph{imersão fechada} e, por conseguinte, que $X$ é um subpré-esquema fechado de $Y$ definido por um ideal coerente $\mathscr{J}$ de $\sh{O}_Y$.
+  Por hipótese, $f_\eta$ não é um isomorfismo, donde $\mathscr{J}_\eta\neq 0$; concluímos de \sref{IV.9.4.5} que, em uma vizinhança de $\eta$, $\mathscr{J}_s\neq 0$ e, por conseguinte, a imersão fechada sobrejetiva $f_s$ não é aberta.
+\end{enumerate}
+
+(xi): A propriedade é uma conjunção das propriedades (i) e (x) e decorre, portanto, do que foi demonstrado.
+
+(xii): Em virtude de \sref[I]{I.5.3.8}, dizer que $f_s$ é um monomorfismo significa que $\Delta_{f_s}=(\Delta_f)_s:X_s\to X_s\times_{Y_s}X_s=(X\times_Y X)_s$ é um isomorfismo e, como $X\times_Y X$ é um $S$-pré-esquema de apresentação finita \sref[I]{I.6.2},~(iv), a conclusão decorre de (xi).
+\end{proof}
+
+\begin{proposition}[9.6.2]
+\label{IV.9.6.2}
+Sejam $X$, $Y$ dois $S$-pré-esquemas de apresentação finita e seja $f:X\to Y$ um $S$-morfismo.
+\begin{enumerate}[label=\upshape{I)}]
+  \item Seja $E$ o conjunto dos $s\in S$ para os quais $f_s$ possui uma das propriedades seguintes: ser
+  \begin{enumerate}[label=(\roman*)]
+    \item afim;
+    \item quase-afim;
+    \item projetivo;
+    \item quase-projetivo.
+  \end{enumerate}
+  Então $E$ é ind-construtível em $S$.
+\end{enumerate}
+
+\oldpage[IV-3]{74}
+
+\begin{enumerate}[label=\upshape{II)}]
+  \item Seja $\sh{L}$ um $\sh{O}_X$-Módulo invertível.
+  Então o conjunto $E'$ dos $s\in S$ tais que $\sh{L}_s$ é um $\sh{O}_{X_s}$-Módulo amplo (resp.\ muito amplo) relativamente a $f_s$ é ind-construtível em $S$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+I) Verifiquemos as condições (i) e (ii) de \sref{IV.9.2.1}.
+Quanto à condição \sref{IV.9.2.1},~(i), ela decorre, para as propriedades (i) e (ii), de \sref{IV.2.7.1},~(xiii) e (xiv); para as propriedades (iii) e (iv), decorre de \sref{IV.9.1.5}.
+Verifiquemos em seguida a condição \sref{IV.9.2.1},~(ii), supondo, portanto, $S$ noetheriano e integral, de ponto genérico $\eta$, e que $f_\eta:X_\eta\to Y_\eta$ possua uma das propriedades (i) a (iv) do enunciado.
+Aplicando \sref{IV.8.10.5},~(viii), (ix), (xiii) e (xiv) segundo o método de \sref{IV.8.1.2},~\emph{a}), vemos primeiro que existe uma vizinhança aberta $U$ de $\eta$ tal que, se $V$ e $W$ são as imagens inversas respectivas de $U$ em $X$ e $Y$ pelos morfismos estruturais, a restrição $V\to W$ de $f$ possui aquela das propriedades (i) a (iv) que se considera.
+A conclusão decorre então do fato de que todas as propriedades consideradas são estáveis por mudança de base.
+
+II) Procedemos da mesma maneira.
+Quanto à condição \sref{IV.9.2.1},~(i), ela decorre desta vez de \sref{IV.2.7.2}.
+Quanto à condição \sref{IV.9.2.1},~(ii), com as mesmas notações que em I), decorre de \sref{IV.8.10.5.2} que, para uma vizinhança $U$ de $\eta$ em $S$, a restrição $\sh{L}|V$ é ampla (resp.\ muito ampla) relativamente à restrição $V\to W$ de $f$.
+A conclusão decorre novamente da estabilidade das propriedades consideradas por mudança de base \sref[II]{II.4.6.13} e \sref[II]{II.4.4.10}.
+\end{proof}
+
+\begin{proposition}[9.6.3]
+\label{IV.9.6.3}
+Sejam $X$, $Y$ dois $S$-pré-esquemas de apresentação finita, seja $f:X\to Y$ um $S$-morfismo próprio e seja $\sh{L}$ um $\sh{O}_X$-Módulo invertível.
+Então o conjunto $E$ (resp.\ $E'$) dos $s\in S$ tais que $\sh{L}_s$ é um $\sh{O}_{X_s}$-Módulo amplo (resp.\ muito amplo) relativamente a $f_s:X_s\to Y_s$ é localmente construtível em $S$.
+\end{proposition}
+
+\begin{proof}
+Seja $k$ um corpo, sejam $Z$, $T$ dois pré-esquemas algébricos sobre $k$, seja $\mathscr{M}$ um $\sh{O}_Z$-Módulo invertível e seja $g:Z\to T$ um $k$-morfismo de tipo finito; então, se $\mathbf{P}(Z,T,\mathscr{M},g,k)$ denota a relação ``$\mathscr{M}$ é amplo (resp.\ muito amplo) relativamente a $g$'', já observamos em \sref{IV.9.6.2} que $\mathbf{P}(Z,T,\mathscr{M},g,k)$ satisfaz a condição \sref{IV.9.2.1},~(i) em virtude de \sref{IV.2.7.2}.
+Sabemos, por outro lado, que $E$ e $E'$ são ind-construtíveis.
+Resta, portanto, ver que, se $S$ é noetheriano e integral, de ponto genérico $\eta$, e se $\eta\in S-E$ (resp.\ $\eta\in S-E'$), então $S-E$ (resp.\ $S-E'$) contém uma vizinhança de $\eta$.
+Consideraremos separadamente o caso de $E'$ e o de $E$.
+
+I) \emph{Caso de $E'$.} --- Notemos que, como $f$ é separado e $Y$ quase-compacto, existe um inteiro $h$ tal que, para $q>h$, tem-se $R^qf_*(\sh{L})=0$ \sref[III]{III.1.4.12}; por outro lado, como $f$ é próprio e $Y$ noetheriano, os $R^qf_*(\sh{L})$ são todos $\sh{O}_Y$-Módulos coerentes \sref[III]{III.3.2.1}.
+Como se anulam salvo para um número finito de valores de $q$, o teorema da planicidade genérica \sref{IV.6.9.1} mostra que, restringindo $S$ a uma vizinhança de $\eta$, podemos supor que $\sh{L}$ e todos os $R^qf_*(\sh{L})$ são planos sobre $S$.
+Conclui-se então de \sref[III]{III.6.9.9} que o homomorfismo canônico
+\begin{equation}
+\label{IV.9.6.3.1}
+ f_*(\sh{L})\otimes_{\sh{O}_S}\boldsymbol{k}(s)
+ \longrightarrow (f_s)_*(\sh{L}_s)
+ \tag{9.6.3.1}
+\end{equation}
+é um isomorfismo.
+
+\oldpage[IV-3]{75}
+
+Isso posto, decorre de \sref[II]{II.4.4.4} que dizer que $\sh{L}_s$ não é muito amplo relativamente a $f_s$ significa que: \emph{ou bem} o homomorfismo canônico $(f_s)^*((f_s)_*(\sh{L}_s))\to\sh{L}_s$ não é sobrejetivo; \emph{ou bem} o homomorfismo precedente é sobrejetivo e o morfismo canônico $r:X_s\to\mathbf{P}((f_s)_*(\sh{L}_s))$ não é uma imersão.
+Levando em conta o isomorfismo \sref{IV.9.6.3.1}, essas condições se escrevem respectivamente sob a forma: $1^\circ$ o homomorfismo canônico $(f^*(f_*(\sh{L})))_s\to\sh{L}_s$ não é sobrejetivo; $2^\circ$ o homomorfismo precedente é sobrejetivo e o morfismo canônico $X_s\to\mathbf{P}((f_*(\sh{L}))_s)$ não é uma imersão.
+
+Suponhamos primeiro que o homomorfismo canônico $(f^*(f_*(\sh{L})))_\eta\to\sh{L}_\eta$ não seja sobrejetivo.
+Como $f_*(\sh{L})$ é coerente, o mesmo vale para $f^*(f_*(\sh{L}))$; decorre então de \sref{IV.9.4.5} que, para todo $s$ em uma vizinhança de $\eta$, o homomorfismo $(f^*(f_*(\sh{L})))_s\to\sh{L}_s$ não é sobrejetivo, o que demonstra, neste caso, que $S-E'$ é uma vizinhança de $\eta$.
+
+Suponhamos, em segundo lugar, que o homomorfismo canônico $(f^*(f_*(\sh{L})))_\eta\to\sh{L}_\eta$ seja sobrejetivo, mas que o morfismo $X_\eta\to\mathbf{P}((f_*(\sh{L}))_\eta)$ não seja uma imersão.
+Então o mesmo raciocínio acima mostra, primeiro, que, para todo $s$ suficientemente próximo de $\eta$, o homomorfismo $(f^*(f_*(\sh{L})))_s\to\sh{L}_s$ é sobrejetivo; por outro lado, em virtude de \sref{IV.9.6.1},~(viii), para $s$ suficientemente próximo de $\eta$, o morfismo $X_s\to\mathbf{P}((f_*(\sh{L}))_s)$ não é uma imersão, o que conclui a demonstração no caso de $E'$.
+
+II) \emph{Caso de $E$.} --- Consideremos primeiro o caso particular em que $Y=S$:
+
+\begin{corollary}[9.6.4]
+\label{IV.9.6.4}
+Seja $f:X\to S$ um morfismo próprio de apresentação finita e seja $\sh{L}$ um $\sh{O}_X$-Módulo invertível.
+Então o conjunto $E$ dos $s\in S$ tais que $\sh{L}_s$ é amplo (relativamente a $f_s$) é aberto em $S$, e $\sh{L}|f^{-1}(E)$ é amplo relativamente à restrição $f^{-1}(E)\to E$ de $f$.
+\end{corollary}
+
+Como a condição \sref{IV.9.2.1},~(i), é satisfeita pela propriedade $\mathbf{P}$ definida acima, o resultado de \sref{IV.9.2.2},~(iv), e o raciocínio de \sref{IV.9.2.3} mostram que basta nos restringirmos ao caso em que $S$ é \emph{noetheriano}; mas então o resultado decorre de \sref[III]{III.4.7.1} e da estabilidade da amplitude por mudança de base \sref[II]{II.4.6.13}.
+
+\begin{corollary}[9.6.5]
+\label{IV.9.6.5}
+Sob as hipóteses de \sref{IV.9.6.4}, para que $\sh{L}$ seja amplo relativamente a $f$, é necessário e suficiente que, para todo $s\in S$, $\sh{L}_s$ seja amplo relativamente a $f_s$.
+\end{corollary}
+
+\phantomsection\label{IV.9.6.6}%
+\textbf{(9.6.6) Fim da demonstração de \sref{IV.9.6.3}.} ---
+Voltemos ao caso geral, sendo $S$ noetheriano, integral, de ponto genérico $\eta\in S-E$.
+Como $f$ é próprio, decorre de \sref{IV.9.6.4} que o conjunto $V$ dos $y\in Y$ tais que $\sh{L}_y$ é um $\sh{O}_{X_y}$-Módulo amplo, relativamente ao morfismo $f_y:X_y\to\operatorname{Spec}(\boldsymbol{k}(y))$, é aberto, e portanto $F=Y-V$ é fechado em $Y$.
+Como $f_s$ é próprio e, para todo $y\in Y$ situado sobre $s\in S$, tem-se $\sh{L}_y=(\sh{L}_s)_y$, decorre de \sref{IV.9.6.5} que $s$ pertence a $S-E$ se e somente se $F_s\neq\varnothing$.
+Mas $F$ é fechado em $Y$ e $F_\eta\neq\varnothing$; portanto, \sref{IV.9.5.1} mostra que o conjunto dos $s\in S$ tais que $F_s\neq\varnothing$ é uma vizinhança de $\eta$ em $S$.
+\end{proof}
+
+\begin{remarks}[9.6.7]
+\label{IV.9.6.7}
+(i) Para cada uma das propriedades $\mathbf{P}$ consideradas em \sref{IV.9.6.1}, é aplicável a proposição \sref{IV.9.3.3}, e essas propriedades (para os morfismos $f_s$) são, portanto, ``estáveis'' ao passar do limite projetivo de um sistema projetivo essencialmente afim \sref{IV.8.13.4} de pré-esquemas $X_\lambda$ para um deles convenientemente escolhido.
+
+(ii) Seja $Z$ uma parte localmente construtível de $X$ tal que, para todo $s\in S$, $Z\cap X_s$ seja \emph{aberto} em $X_s$, e denotemos por $Z_s$ o subpré-esquema de $X_s$ induzido no aberto $Z\cap X_s$.
+\oldpage[IV-3]{76}
+Então, nas proposições \sref{IV.9.6.1} e \sref{IV.9.6.2},~(I), pode-se substituir em toda parte $f_s$ por sua restrição $f_s|Z_s:Z_s\to Y_s$ sem modificar as conclusões.
+De fato, a verificação de \sref{IV.9.2.1},~(i), é feita como em \sref{IV.9.6.1} e \sref{IV.9.6.2}.
+Por outro lado, na redução ao caso em que $S$ é noetheriano, feita em \sref{IV.9.2.3}, se $Z=q^{-1}(Z_0)$, onde $q:X\to X_0$ é a projeção canônica e $Z_0$ uma parte construtível de $X_0$ \sref{IV.8.3.11}, o fato de $(Z_0)_{s_0}$ ser aberto em $(X_0)_{s_0}$, para $s_0=p(s)$, decorre de \sref{IV.2.4.10} e do fato de que a projeção $X_s\to(X_0)_{s_0}$ é sobrejetiva.
+Ficamos, portanto, reduzidos a verificar \sref{IV.9.2.1},~(ii), sob as novas hipóteses.
+Ora, como $Z_\eta$ é aberto em $X_\eta$, existe um aberto $Z'\subset X$ tal que $Z_\eta=Z'\cap X_\eta$; como $X$ é então noetheriano, $Z'$ é construtível, e o mesmo vale para $Z$ por hipótese; conclui-se então de \sref{IV.9.5.2} e de ($\mathbf{0}_{\mathrm{III}}$,~9.2.2) que existe uma vizinhança $U$ de $\eta$ em $S$ tal que $Z_s=Z'_s$ para $s\in U$.
+Substituindo $S$ por $U$, podemos, portanto, restringir-nos ao caso em que $Z$ é aberto em $X$, e então recaímos no que foi demonstrado em \sref{IV.9.6.1} e \sref{IV.9.6.2}.
+\end{remarks}
+
+\subsection{Construtibilidade das propriedades de separabilidade, de irredutibilidade geométrica e de conexidade geométrica}
+\label{subsection:IV.9.7}
+\label{IV.9.7}
+
+\begin{lemma}[9.7.1]
+\label{IV.9.7.1}
+Seja $S$ um pré-esquema irredutível de ponto genérico $\eta$, e seja $f:X\to S$ um morfismo de apresentação finita.
+Se $X_\eta$ tem $n$ componentes irredutíveis (resp.\ $n'$ componentes conexas), existe uma vizinhança aberta $U$ de $\eta$ em $S$ tal que, para todo $s\in U$, $X_s$ tem pelo menos $n$ componentes irredutíveis (resp.\ $n'$ componentes conexas).
+\end{lemma}
+
+\begin{proof}
+Podemos reduzir-nos ao caso em que $S$ é afim, de modo que $X$ é quase-compacto e quase-separado.
+Sejam $V_i$ ($1\leqslant i\leqslant n$) os interiores das componentes irredutíveis de $X_\eta$, que são dois a dois disjuntos e quase-compactos, e cuja união é densa em $X_\eta$; em virtude de \sref{IV.8.2.11}, aplicado segundo o método de \sref{IV.8.1.2},~\emph{a}), existe, para cada $i$, um aberto quase-compacto $W_i$ em $X$ tal que $W_i\cap X_\eta=V_i$; como $X$ é quase-separado, as interseções $W_i\cap W_j$ são quase-compactas \sref{IV.1.2.7} e, portanto, substituindo $S$ por uma vizinhança de $\eta$, podemos supor que $W_i\cap W_j=\varnothing$ para $i\neq j$, em virtude de \sref{IV.8.3.3}.
+Além disso, como os $W_i$ são construtíveis, existe uma vizinhança $U$ de $\eta$ em $S$ tal que, para todo $s\in U$, os $(W_i)_s$ sejam não vazios \sref{IV.9.5.1} e \sref{IV.9.2.3}, e a união dos $(W_i)_s$ seja densa em $X_s$ \sref{IV.9.5.3} e \sref{IV.9.2.3}.
+Nessas condições, como as componentes irredutíveis de cada $(W_i)_s$ (que são em número finito) são também componentes irredutíveis da união dos $(W_i)_s$ \sref[0]{0.2.1.7}, os fechos em $X_s$ dessas componentes são as componentes irredutíveis de $X_s$ \sref[0]{0.2.1.6}, e seu número é evidentemente $\geqslant n$.
+
+Sejam agora $C_j$ ($1\leqslant j\leqslant n'$) as componentes conexas de $X_\eta$, que são abertos quase-compactos de $X_\eta$, dois a dois disjuntos.
+Se substituirmos os $V_i$ pelos $C_j$ no raciocínio precedente, vemos (utilizando duas vezes \sref{IV.8.3.3}) que podemos supor que $X$ seja a união de $n'$ abertos quase-compactos $M_j$ ($1\leqslant j\leqslant n'$), dois a dois disjuntos, e que, em uma vizinhança de $\eta$, os $(M_j)_s$ sejam não vazios.
+Como a união dos $(M_j)_s$ é $X_s$, as componentes conexas dos $(M_j)_s$ são as componentes conexas de $X_s$ e, portanto, seu número é $\geqslant n'$.
+\end{proof}
+
+\oldpage[IV-3]{77}
+
+\begin{lemma}[9.7.2]
+\label{IV.9.7.2}
+Seja $S$ um pré-esquema irredutível de ponto genérico $\eta$, e seja $f:X\to S$ um morfismo de apresentação finita.
+Se $X_\eta$ não é reduzido, existe uma vizinhança aberta $U$ de $\eta$ em $S$ tal que, para todo $s\in U$, $X_s$ não é reduzido.
+\end{lemma}
+
+\begin{proof}
+Com efeito, seja $\mathscr{N}$ o nilradical de $\sh{O}_X$; decorre de \sref{IV.8.2.13}, aplicado segundo o método de \sref{IV.8.1.2},~\emph{a}), que $\mathscr{N}_\eta$ é o nilradical de $\sh{O}_{X_\eta}$, e a hipótese é que $\mathscr{N}_\eta\neq 0$.
+Conclui-se de \sref{IV.9.4.5} e \sref{IV.9.2.3} que existe uma vizinhança $U$ de $\eta$ tal que, para todo $s\in U$, $\mathscr{N}_s$ se identifica com um ideal de $\sh{O}_{X_s}$ e $\mathscr{N}_s\neq 0$; como $\mathscr{N}_s$ está evidentemente contido no nilradical de $\sh{O}_{X_s}$, vê-se que $X_s$ não é reduzido para $s\in U$.
+\end{proof}
+
+\textbf{(9.7.3)}
+\label{IV.9.7.3}
+Dado um polinômio $F\in A[\mathrm{T}_1,\ldots,\mathrm{T}_n]$, onde $A$ é um anel e os $\mathrm{T}_i$ são indeterminadas, para todo homomorfismo de anéis $\rho:A\to B$, denotaremos por $F_{(\rho)}$ ou $F_{(B)}$ o polinômio de $B[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ obtido substituindo cada coeficiente de $F$ por sua imagem por $\rho$.
+Se $k$ é um corpo, $F\in k[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ um polinômio não constante e $X=\operatorname{Spec}(k[\mathrm{T}_1,\ldots,\mathrm{T}_n]/(F))$, dizer que $X$ é integral (ou que o ideal $(F)$ é primo) significa que $F$ é \emph{irredutível} (isto é, que, em toda fatoração $F=F_1F_2$ em polinômios de $k[\mathrm{T}_1,\ldots,\mathrm{T}_n]$, $F_1$ ou $F_2$ é de grau $0$); isso decorre do fato de que o anel $k[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ é fatorial.
+Deduz-se imediatamente de \sref{IV.4.6.2} e \sref{IV.4.5.2}:
+
+\begin{lemma}[9.7.4]
+\label{IV.9.7.4}
+Sejam $k$ um corpo, $\Omega$ uma extensão algebricamente fechada de $k$ e $F$ um polinômio não constante de $k[\mathrm{T}_1,\ldots,\mathrm{T}_n]$.
+As condições seguintes são equivalentes:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item $X=\operatorname{Spec}(k[\mathrm{T}_1,\ldots,\mathrm{T}_n]/(F))$ é geometricamente integral.
+  \item $F_{(K)}$ é irredutível para toda extensão $K$ de $k$.
+  \item $F_{(\Omega)}$ é irredutível.
+\end{enumerate}
+Diremos nesse caso que $F$ é \emph{geometricamente irredutível}.
+\end{lemma}
+
+\begin{lemma}[9.7.5]
+\label{IV.9.7.5}
+Sejam $A$ um domínio integral, $K$ seu corpo de frações e $F$ um polinômio não constante de $A[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ de grau $d$ tal que $F_{(K)}$ seja geometricamente irredutível.
+Então existe $f\neq 0$ em $A$ tal que, para todo $x\in D(f)$, $F_{(\boldsymbol{k}(x))}$ seja geometricamente irredutível.
+\end{lemma}
+
+\begin{proof}
+Ponhamos $F=\sum_\alpha c_\alpha \mathrm{T}^\alpha$ como de costume, com $c_\alpha=c_{\alpha_1\alpha_2\ldots\alpha_n}$, $\mathrm{T}^\alpha=\mathrm{T}_1^{\alpha_1}\mathrm{T}_2^{\alpha_2}\cdots\mathrm{T}_n^{\alpha_n}$, $|\alpha|=\alpha_1+\alpha_2+\cdots+\alpha_n\leqslant d$ (sendo não nulo pelo menos um dos $c_\alpha$ tais que $|\alpha|=d$).
+Como os $c_\alpha$ não nulos são inversíveis em $K$, podemos supor, substituindo $A$ por $A_g$ ($g\neq 0$ em $A$), que os $c_\alpha$ não nulos são inversíveis \emph{em} $A$.
+Segue-se então que, para todo $x\in\operatorname{Spec}(A)$, $F_{(\boldsymbol{k}(x))}$ tem grau $d$.
+
+Provaremos o lema por meio de um lema preliminar.
+
+\begin{lemma}[9.7.5.1]
+\label{IV.9.7.5.1}
+Sejam $A$ um domínio integral, $S=\operatorname{Spec}(A)$, $\eta$ o ponto genérico de $S$, $B$ o anel de polinômios $A[\mathrm{T}_1,\ldots,\mathrm{T}_m]$, $(P_i)_{i\in I}$ uma família finita de elementos de $B$ e $\mathfrak{a}$ o ideal de $B$ gerado pelos $P_i$.
+Para todo $s\in S$, seja $\mathfrak{a}_s$ o ideal de $\boldsymbol{k}(s)[\mathrm{T}_1,\ldots,\mathrm{T}_m]$ gerado pelos polinômios $(P_i)_{(\boldsymbol{k}(s))}$ ($i\in I$).
+Então, se $V(\mathfrak{a}_\eta)=\varnothing$, existe uma vizinhança $U$ de $\eta$ em $S$ tal que $V(\mathfrak{a}_s)=\varnothing$ para todo $s\in U$.
+\end{lemma}
+
+\begin{proof}
+Com efeito, seja $Y=\operatorname{Spec}(B)$, e seja $Z$ a parte fechada $V(\mathfrak{a})$ de $Y$; como $\mathfrak{a}$ é um ideal de tipo finito em $B$, $Z$ é construtível em $Y$ \sref[0]{0.9.1.5} e, com as notações introduzidas em \sref{IV.9.4.1}, temos $V(\mathfrak{a}_s)=Z_s$ para todo $s\in S$; como o morfismo estrutural $Y\to S$ é de apresentação finita, a conclusão do lema decorre de \sref{IV.9.5.1} e \sref{IV.9.2.3}.
+\end{proof}
+
+\oldpage[IV-3]{78}
+Seja $(p,q)$ um par de inteiros $>0$ tais que $p+q=d$; introduzamos indeterminadas $\mathrm{T}'_\beta$, $\mathrm{T}''_\gamma$ para todos os sistemas de inteiros $\beta$, $\gamma$ tais que $|\beta|\leqslant p$ e $|\gamma|\leqslant q$; para todo sistema de inteiros $\alpha$ tal que $|\alpha|\leqslant d$, consideremos, no anel $B=A[\mathrm{T}'_\beta, \mathrm{T}''_\gamma \mid |\beta|\leqslant p, |\gamma|\leqslant q]$, o polinômio $P_\alpha(\mathrm{T}'_\beta,\mathrm{T}''_\gamma)=\sum_{\beta+\gamma=\alpha}\mathrm{T}'_\beta \mathrm{T}''_\gamma-c_\alpha$.
+Seja $\Omega$ um fecho algébrico de $K$; dizer que existem dois polinômios $F_1$, $F_2$ de $\Omega[\mathrm{T}_1,\ldots,\mathrm{T}_n]$, de graus respectivos $p$ e $q$, e tais que $F_1F_2=F_{(\Omega)}$ significa que o sistema de equações $P_\alpha(t'_\beta,t''_\gamma)=0$ ($|\alpha|\leqslant d$) admite uma solução $(t'_\beta,t''_\gamma)$ ($|\beta|\leqslant p$, $|\gamma|\leqslant q$) formada por elementos de $\Omega$.
+Seja $\mathfrak{a}$ o ideal de $B$ gerado pelos $P_\alpha$; a interpretação precedente e o Nullstellensatz de Hilbert mostram que a hipótese sobre $F_{(K)}$ implica que $V(\mathfrak{a}_\eta)=\varnothing$, denotando $\eta$ o ponto genérico de $\operatorname{Spec}(A)$; o Lema \sref{IV.9.7.5.1} demonstra então que, em uma vizinhança de $\eta$, temos $V(\mathfrak{a}_x)=\varnothing$ e, por conseguinte, para esses pontos $x$, $F_{(\boldsymbol{k}(x))}$ não admite nenhuma fatoração $F_{(\boldsymbol{k}(x))}=G_1G_2$, em que $G_1$, $G_2$ são polinômios de graus respectivos $p$ e $q$, cujos coeficientes pertencem a um fecho algébrico de $\boldsymbol{k}(x)$.
+Basta aplicar esse resultado a todos os pares de inteiros $(p,q)$ tais que $p>0$, $q>0$ e $p+q=d$ para obter a conclusão do Lema \sref{IV.9.7.5}.
+\end{proof}
+
+\begin{proposition}[9.7.6]
+\label{IV.9.7.6}
+Sejam $S$ um pré-esquema integral noetheriano de ponto genérico $\eta$, $f:X\to S$ um morfismo de tipo finito e $\sh{F}$ um $\sh{O}_X$-Módulo coerente.
+Se $\sh{F}_\eta$ não possui nenhum ciclo primo associado imerso, existe uma vizinhança $U$ de $\eta$ em $S$ tal que, para todo $s\in U$, $\sh{F}_s$ não possua nenhum ciclo primo associado imerso.
+\end{proposition}
+
+\begin{proof}
+Como $X_\eta$ é noetheriano, existe um homomorfismo injetivo $v:\sh{F}_\eta\to\bigoplus_{i=1}^m\sh{G}_i$, onde cada $\sh{G}_i$ é irredondante e $\operatorname{Ass}(\sh{F}_\eta)$ é o conjunto dos $x_i$, com $\{x_i\}=\operatorname{Ass}(\sh{G}_i)$ \sref{IV.3.2.6}; se $Z_i$ é o fecho de $\{x_i\}$ em $X_\eta$, então $Z_i=\operatorname{Supp}(\sh{G}_i)$ \sref{IV.3.1.4}, e, por hipótese, os $Z_i$ são as componentes irredutíveis de $Z=\operatorname{Supp}(\sh{F}_\eta)$.
+Segue de \sref{IV.8.5.2},~(i) e (ii) (restringindo, se necessário, $S$ a uma vizinhança de $\eta$) e de \sref{IV.8.5.8} que existem $\sh{O}_X$-Módulos coerentes $\sh{F}_i$ e um homomorfismo injetivo $u:\sh{F}\to\bigoplus_{i=1}^m\sh{F}_i$ tais que $(\sh{F}_i)_\eta=\sh{G}_i$ para todo $i$ e $v=u_\eta$.
+Se $Y_i=\operatorname{Supp}(\sh{F}_i)$, temos $(Y_i)_s=\operatorname{Supp}((\sh{F}_i)_s)$ para todo $s\in S$ \sref[I]{I.9.1.13} e, em particular, $(Y_i)_\eta=Z_i$ para todo $i$.
+A hipótese implica que, para $i\neq j$, $Z_i-(Z_i\cap Z_j)$ é aberto e denso em $Z_i$; deduzimos, portanto, de \sref{IV.9.5.3} e \sref{IV.9.5.4} que, em uma vizinhança de $\eta$, $(Y_i)_s-((Y_i)_s\cap(Y_j)_s)$ é aberto e denso em $(Y_i)_s$.
+Suponhamos demonstrado que cada um dos $(\sh{F}_i)_s$ não possui ciclo primo associado imerso para $s\in U$.
+Então os elementos de $\operatorname{Ass}((\sh{F}_i)_s)$ são os pontos maximais de $(Y_i)_s$; nenhum deles pode, portanto, pertencer a um $(Y_j)_s$ para $i\neq j$, e a proposição estará demonstrada.
+Podemos, pois, supor que $\sh{F}_\eta$ seja \emph{irredondante}; além disso, podemos nos restringir ao caso em que $S=\operatorname{Spec}(A)$ seja afim.
+Então $X$ é a união de um número finito de abertos afins $V_j$ e, se $V_j\cap\operatorname{Supp}(\sh{F}_\eta)=\varnothing$, também temos $V_j\cap\operatorname{Supp}(\sh{F}_s)=\varnothing$ para $s$ próximo de $\eta$ \sref{IV.9.5.1}.
+Podemos, portanto, nos restringir ao caso em que $X=\operatorname{Spec}(B)$ também seja afim e $f:X\to S$ seja dominante.
+Assim, $A$ é um domínio integral noetheriano, subanel de uma $A$-álgebra $B$ de tipo finito, e $\sh{F}=\widetilde{M}$, onde $M$ é um $B$-módulo de tipo finito; por hipótese, se $K$ é o corpo de frações de $A$, o $B_{(K)}$-módulo $M_{(K)}$ é irredondante.
+Seja $\mathfrak{q}$ o único
+
+\oldpage[IV-3]{79}
+
+elemento de $\operatorname{Ass}(M_{(K)})$, e seja $\mathfrak{p}$ o ideal primo de $B$ que é a imagem inversa de $\mathfrak{q}$ pela aplicação canônica $B\to B_{(K)}$.
+Sabemos por \sref{IV.5.11.1.1} que existe uma filtração finita $(N_h)_{0\leqslant h\leqslant m}$ de $M_{(K)}$ tal que $N_0=M_{(K)}$, $N_m=0$ e $N_h/N_{h+1}$ seja isomorfo a um $B_{(K)}$-submódulo não nulo de $B_{(K)}/\mathfrak{q}$.
+Seja $M_h$ a imagem inversa de $N_h$ pela aplicação canônica $M\to M_{(K)}$.
+Segue de \sref{IV.9.4.4} que, para $s$ suficientemente próximo de $\eta$, $(M_h)_{(\boldsymbol{k}(s))}$ se identifica com um sub-$B_{(\boldsymbol{k}(s))}$-módulo de $M_{(\boldsymbol{k}(s))}$, e o quociente $(M_h)_{(\boldsymbol{k}(s))}/(M_{h+1})_{(\boldsymbol{k}(s))}$, com um $B_{(\boldsymbol{k}(s))}$-submódulo não nulo de $B_{(\boldsymbol{k}(s))}/\mathfrak{p}_{(\boldsymbol{k}(s))}=(B/\mathfrak{p})_{(\boldsymbol{k}(s))}$.
+Levando em conta \sref{IV.3.1.7}, vemos que estamos reduzidos a demonstrar, com as mesmas notações, que, se $B$ é um \emph{domínio integral}, então $B_{(\boldsymbol{k}(s))}$ não possui ideais primos associados imersos para $s$ próximo de $\eta$.
+Ora, substituindo, se necessário, $A$ por $A_g$ e $B$ por $B_g$ (onde $g$ é um elemento não nulo de $A$), podemos supor que $B$ contenha uma subálgebra de polinômios $C=A[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ tal que $B$ seja um $C$-módulo de tipo finito (Bourbaki, \emph{Alg.\ comm.}, cap.\ V, \S~3, n$^\circ$~1, cor.\ 1 do teorema~1).
+Como $B_{(K)}$ é um $C_{(K)}$-módulo livre de torção, podemos aplicar novamente o raciocínio precedente, substituindo $B$, $M$ e $\mathfrak{q}$ por $C$, $B$ e $(0)$, respectivamente; basta demonstrar que, para $s$ próximo de $\eta$, $C_{(\boldsymbol{k}(s))}$ não possui ideais primos associados imersos.
+Mas isso é evidente, pois $C_{(\boldsymbol{k}(s))}=\boldsymbol{k}(s)[\mathrm{T}_1,\ldots,\mathrm{T}_n]$ é um domínio integral.
+\end{proof}
+
+\begin{theorem}[9.7.7]
+\label{IV.9.7.7}
+Seja $f:X\to S$ um morfismo de apresentação finita, e seja $E$ o conjunto dos $s\in S$ para os quais $X_s$ possui uma das propriedades seguintes: ser
+\begin{enumerate}[label=(\roman*)]
+  \item geometricamente irredutível;
+  \item geometricamente conexo;
+  \item geometricamente reduzido;
+  \item geometricamente integral.
+\end{enumerate}
+Então $E$ é localmente construtível em $S$.
+\end{theorem}
+
+\begin{proof}
+Para ver que as propriedades consideradas são construtíveis, observemos primeiro que elas satisfazem trivialmente a condição \sref{IV.9.2.1},~(i), em virtude de \sref{IV.4.5.6},~(i) e \sref{IV.4.6.5},~(i).
+Resta, portanto, verificar \sref{IV.9.2.1},~(ii), de modo que podemos supor $S=\operatorname{Spec}(A)$ afim, noetheriano e integral, de ponto genérico $\eta$.
+Em virtude de \sref{IV.4.6.8}, existe uma extensão finita $K'$ de $K=\boldsymbol{k}(\eta)$ tal que as componentes irredutíveis (resp.\ componentes conexas) de $(X_\eta)_{(K')}$ são geometricamente irredutíveis (resp.\ geometricamente conexas) e $((X_\eta)_{(K')})_\mathrm{red}$ é geometricamente reduzido.
+Além disso, existe uma base de $K'$ sobre $K$ constituída de elementos integrais sobre $A$; o domínio integral $A'$ gerado por esses elementos é finito sobre $A$ e tem $K'$ como corpo de frações.
+Ponhamos $S'=\operatorname{Spec}(A')$; o morfismo $g:S'\to S$ é finito e dominante, portanto sobrejetivo \sref[II]{II.6.1.10}. Ponhamos $X'=X_{(S')}$, de modo que, se $\eta'$ é o ponto genérico de $S'$, então $X'_{\eta'}=(X_\eta)_{(K')}$. O conjunto $E'$ dos $s'\in S'$ tais que $X'_{s'}$ possui uma das propriedades (i), (ii), (iii) ou (iv) é igual a $g^{-1}(E)$ \sref{IV.9.2.2},~(iv), correspondendo, naturalmente, $E$ à mesma propriedade. Como $g$ é sobrejetivo, $E=g(E')$ e $S-E=g(S'-E')$. Além disso, $g$ é fechado e $g^{-1}(\eta)=\{\eta'\}$, pois $A'$ é integral e finito sobre $A$ (Bourbaki, \emph{Alg.\ comm.}, cap.\ V, \S~2, n$^\circ$~1, cor.\ 1 da prop.\ 1); portanto, a imagem por $g$ de toda vizinhança de $\eta'$ é uma vizinhança de $\eta$.
+O teorema estará, pois, demonstrado se provarmos que $E'$ ou $S'-E'$ é uma vizinhança de $\eta'$.
+Em outras palavras, podemos supor doravante que as componentes irredutíveis (resp.\ componentes conexas) de $X_\eta$ são geometricamente
+
+\oldpage[IV-3]{80}
+
+irredutíveis (resp.\ geometricamente conexas) e que $(X_\eta)_\mathrm{red}$ é geometricamente reduzido.
+
+Suponhamos primeiro que $\eta\in S-E$ para uma das propriedades (i) a (iv).
+Se $X_\eta$ não é geometricamente irredutível (resp.\ geometricamente conexo), não é irredutível (resp.\ conexo) em virtude da hipótese precedente e, portanto, o mesmo vale para $X_s$, para $s$ em uma vizinhança de $\eta$ \sref{IV.9.7.1}; \emph{a fortiori}, nessa vizinhança, $X_s$ não é geometricamente irredutível (resp.\ geometricamente conexo).
+Por outro lado, se $X_\eta$ não é geometricamente reduzido, não é reduzido (pois, de outro modo, seria igual a $(X_\eta)_\mathrm{red}$, que é geometricamente reduzido por hipótese); portanto, em uma vizinhança de $\eta$, $X_s$ não é reduzido \sref{IV.9.7.2} e, \emph{a fortiori}, não é geometricamente reduzido.
+Finalmente, se $X_\eta$ não é geometricamente integral, ou bem não é reduzido, caso em que acabamos de ver que $X_s$ não é reduzido (nem, \emph{a fortiori}, integral) em uma vizinhança de $\eta$; ou bem $X_\eta$ é reduzido (portanto geometricamente reduzido por hipótese), caso em que não é geometricamente irredutível, e vimos acima que o mesmo vale então para $X_s$, para $s$ próximo de $\eta$; \emph{a fortiori}, $X_s$ não é geometricamente integral para esses valores de $s$.
+
+Suponhamos agora que $\eta\in E$ e examinemos separadamente cada uma das propriedades consideradas.
+
+$1^\circ$ Suponhamos que $X_\eta$ seja geometricamente integral.
+Seja $L$ o corpo de funções racionais sobre $X_\eta$; a hipótese sobre $X_\eta$ implica que $L$ é uma extensão separável de $K$ \sref{IV.4.6.3}, portanto uma extensão finita separável da extensão puramente transcendente $K(\mathrm{T}_1,\ldots,\mathrm{T}_n)$ (sendo os $\mathrm{T}_i$ indeterminadas); existe, por conseguinte, um elemento $x\in L$, integral sobre o anel $K[\mathrm{T}_1,\ldots,\mathrm{T}_n]$, e tal que $L=K(\mathrm{T}_1,\ldots,\mathrm{T}_n)(x)$; seja $G\in K[\mathrm{T}_1,\ldots,\mathrm{T}_n,\mathrm{T}_{n+1}]$ seu polinômio minimal.
+Existe um elemento $g\neq 0$ de $A$ tal que todos os coeficientes $\neq 0$ de $G$ (que pertencem a $K$) pertencem a $A_g$; substituindo $A$ por $A_g$ (o que equivale a substituir $S$ por uma vizinhança de $\eta$), podemos, portanto, supor que $G$ tenha seus coeficientes em $A$; designando por $F$ o polinômio $G$ considerado como elemento de $A[\mathrm{T}_1,\ldots,\mathrm{T}_n,\mathrm{T}_{n+1}]$, temos então $G=F_{(\boldsymbol{k}(\eta))}$.
+Ponhamos $Y=\operatorname{Spec}(A[\mathrm{T}_1,\ldots,\mathrm{T}_{n+1}]/(F))$, de modo que $Y_\eta=\operatorname{Spec}(K[\mathrm{T}_1,\ldots,\mathrm{T}_{n+1}]/(G))$; $Y_\eta$ é um esquema integral cujo corpo de funções racionais é $L$.
+Como $X_\eta$ e $Y_\eta$ são noetherianos, existe um aberto não vazio $V\subset Y_\eta$ e uma imersão aberta (necessariamente dominante) $v:V\to X_\eta$ \sref[I]{I.6.5.1},~(ii) e \sref[I]{I.6.5.4},~(ii).
+Seja $W$ um aberto de $Y$ tal que $W\cap Y_\eta=V$; aplicando \sref{IV.8.8.2},~(i) e \sref{IV.8.10.5},~(iii) segundo o método de \sref{IV.8.1.2},~\emph{a}), substituindo $S$, se necessário, por uma vizinhança de $\eta$, podemos supor que $v=w_\eta$, onde $w:W\to X$ é uma imersão aberta.
+
+Isso posto, vimos em \sref{IV.4.6.3} que o critério para que um pré-esquema algébrico integral seja geometricamente integral depende apenas de seu corpo de funções racionais. Como $X_\eta$ é geometricamente integral por hipótese, o mesmo vale para $Y_\eta$, e a definição de $G$ implica, portanto, que esse polinômio é geometricamente irredutível \sref{IV.9.7.4}.
+Aplicando \sref{IV.9.7.5}, vemos que existe uma vizinhança $U$ de $\eta$ em $S$ tal que $F_{(\boldsymbol{k}(s))}$ é geometricamente irredutível para todo $s\in U$ e, portanto, $Y_s$ é geometricamente integral para $s\in U$ \sref{IV.9.7.4}; além disso, podemos também supor que, para $s\in U$, $W_s$ não seja vazio \sref{IV.9.5.1} e, por conseguinte, seja geometricamente integral \sref{IV.4.6.3}; finalmente, podemos também supor que
+
+\oldpage[IV-3]{81}
+
+para $s\in U$, $w_s:W_s\to X_s$ seja uma imersão aberta \sref{IV.9.6.1},~(x), e que sua imagem em $X_s$ seja densa em toda parte \sref{IV.9.5.3}.
+Em outras palavras, para $s\in U$, existe em $X_s$ um aberto denso em toda parte $W'_s$ que é geometricamente integral; o critério \sref{IV.4.5.9},~\emph{c}) mostra, portanto, que $X_s$ já é geometricamente irredutível para $s\in U$.
+Finalmente, como $X_\eta$ é reduzido e, por conseguinte, não possui nenhum ciclo primo associado imerso \sref{IV.3.2.1}, podemos também supor que, para $s\in U$, $X_s$ não possui nenhum ciclo primo associado imerso \sref{IV.9.7.6}; nessas condições (para $s\in U$ fixado), seja $\Omega$ uma extensão algebricamente fechada de $\boldsymbol{k}(s)$, e seja $p:(X_s)_{(\Omega)}\to X_s$ a projeção canônica; $p^{-1}(W'_s)$ é um aberto denso em $(X_s)_{(\Omega)}$ \sref{IV.2.3.10} e é integral por hipótese; além disso, $(X_s)_{(\Omega)}$ não possui nenhum ciclo primo associado imerso \sref{IV.4.2.7}; concluímos, portanto, de \sref{IV.3.2.1} que $(X_s)_{(\Omega)}$ é reduzido; isto termina de provar que $X_s$ é geometricamente integral \sref{IV.4.6.1}.
+
+$2^\circ$ Suponhamos que $X_\eta$ seja geometricamente irredutível; como $X_{\mathrm{red}}$ também é de tipo finito sobre $S$ \sref{IV.1.5.4},~(vi), podemos, levando em conta \sref[I]{I.5.1.8}, substituir $X$ por $X_{\mathrm{red}}$; então $X_\eta$ também é integral e, como por hipótese $X_\eta$ é geometricamente reduzido, é geometricamente integral. Estamos, assim, nas condições de $1^\circ$ e concluímos (voltando às hipóteses iniciais) que $X_s$ é geometricamente irredutível para $s$ próximo de $\eta$.
+
+$3^\circ$ Suponhamos $X_\eta$ geometricamente conexo, e sejam $Z_i$ ($1\leqslant i\leqslant n$) as componentes irredutíveis de $X_\eta$; existe (em virtude de \sref{IV.5.10.8.1} aplicado a $\mathfrak{T}=\{\varnothing\}$) uma aplicação \emph{sobrejetiva} $j\mapsto\nu(j)$ de um intervalo $[1,m]$ de $\mathbf{N}$ sobre $[1,n]$ tal que $Z_{\nu(j)}\cap Z_{\nu(j+1)}\neq\varnothing$ para $1\leqslant j\leqslant m$.
+Para todo $i$, seja $X_i$ o fecho de $Z_i$ em $X$, e seja $Y$ a união dos $X_i$; como $Y_\eta=X_\eta$ por definição, podemos, em virtude de \sref{IV.9.5.1}, supor que $Y_s=X_s$ para todo $s\in S$, de modo que $X_s$ seja a união dos $(X_i)_s$.
+Ora, considerando os subpré-esquemas fechados reduzidos de $X$ cujos espaços subjacentes são os $X_i$, vemos por $2^\circ$ que existe uma vizinhança $U$ de $\eta$ em $S$ tal que, para $s\in U$, os $(X_i)_s$ são \emph{geometricamente irredutíveis} (pois podemos supor os $(X_i)_\eta$ geometricamente irredutíveis, como vimos no início).
+Além disso, podemos também supor que, para $s\in U$, $(X_{\nu(j)})_s\cap(X_{\nu(j+1)})_s\neq\varnothing$ \sref{IV.9.5.1} para $1\leqslant j\leqslant m$; concluímos imediatamente que $X_s$ é conexo e, portanto, por \sref{IV.4.5.13.1}, geometricamente conexo para $s\in U$.
+
+$4^\circ$ Suponhamos $X_\eta$ geometricamente reduzido; sejam $Z_i$ as componentes irredutíveis de $X_\eta$, e seja $W_i$ o interior de $Z_i$ em $X_\eta$; existe para cada $i$ um aberto $V_i$ de $X$ tal que $W_i=V_i\cap X_\eta$ para todo $i$; como os $W_i$ são abertos, dois a dois disjuntos, e sua união é densa em $X_\eta$, \sref{IV.9.5.1},~\sref{IV.9.5.3} e \sref{IV.9.5.4} permitem-nos supor que, para $s$ próximo de $\eta$, os $(V_i)_s$ sejam abertos, dois a dois disjuntos, em $X_s$, e sua união seja densa em $X_s$.
+Além disso, como os $W_i$ são geometricamente reduzidos e foram supostos no início geometricamente irredutíveis, segue de $1^\circ$ que, para $s$ próximo de $\eta$, os $(V_i)_s$ são geometricamente integrais e, \emph{a fortiori}, reduzidos.
+Por outro lado, deduzimos de \sref{IV.9.7.6} que, para $s$ próximo de $\eta$, $X_s$ não possui nenhum ciclo primo associado imerso, pois o mesmo vale para o pré-esquema reduzido $X_\eta$ \sref{IV.3.2.1}; concluímos, portanto, de \sref{IV.3.2.1} que $X_s$ é reduzido, e de \sref{IV.4.6.1} que $X_s$ é geometricamente reduzido.
+\end{proof}
+
+\oldpage[IV-3]{82}
+
+As partes do enunciado de \sref{IV.9.7.7} relativas às propriedades (i) e (ii) generalizam-se como segue.
+
+\begin{proposition}[9.7.8]
+\label{IV.9.7.8}
+Seja $S$ um pré-esquema irredutível de ponto genérico $\eta$, e seja $f:X\to S$ um morfismo de apresentação finita. Seja $n$ (resp.\ $n'$) o número geométrico de componentes irredutíveis (resp.\ componentes conexas) de $X_\eta$ \sref{IV.4.5.2}. Então existe uma vizinhança $U$ de $\eta$ em $S$ tal que, para todo $s\in U$, o número geométrico de componentes irredutíveis (resp.\ componentes conexas) de $X_s$ é igual a $n$ (resp.\ $n'$).
+\end{proposition}
+
+\begin{proof}
+Levando em conta que o número geométrico de componentes irredutíveis (resp.\ componentes conexas) de um pré-esquema algébrico é invariante por extensão do corpo de base \sref{IV.4.5.6}, vemos, pelo método de \sref{IV.9.2.3}, que podemos reduzir-nos ao caso em que $S$ é afim, noetheriano e integral. Além disso, raciocinando como no início da demonstração de \sref{IV.9.7.7}, vemos que podemos supor que as componentes irredutíveis (resp.\ componentes conexas) de $X_\eta$ são geometricamente irredutíveis (resp.\ geometricamente conexas). Já sabemos por \sref{IV.9.7.1} que, para todo $s$ próximo de $\eta$, $X_s$ tem pelo menos $n$ componentes irredutíveis e $n'$ componentes conexas.
+
+Por outro lado, se $Z_i$ (resp.\ $Z'_j$) são as componentes irredutíveis (resp.\ componentes conexas) de $X_\eta$, seja $X_i$ (resp.\ $X'_j$) o subpré-esquema fechado reduzido de $X$ cujo espaço subjacente é o fecho de $Z_i$ (resp.\ $Z'_j$) em $X$. Segue de \sref{IV.9.5.1} que, em uma vizinhança de $\eta$, os $(X_i)_s$ (resp.\ $(X'_j)_s$) formam uma cobertura de $X_s$, e que os $(X'_j)_s$ são dois a dois disjuntos. Como os $(X_i)_s$ (resp.\ $(X'_j)_s$) são geometricamente irredutíveis (resp.\ geometricamente conexos) em virtude de \sref{IV.9.7.7} para $s$ próximo de $\eta$, segue que $X_s$ tem no máximo $n$ componentes irredutíveis e no máximo $n'$ componentes conexas, o que demonstra a proposição.
+\end{proof}
+
+\begin{corollary}[9.7.9]
+\label{IV.9.7.9}
+Seja $f:X\to S$ um morfismo de apresentação finita. Para todo $s\in S$, seja $n(s)$ (resp.\ $n'(s)$) o número geométrico de componentes irredutíveis (resp.\ componentes conexas) de $f^{-1}(s)$ \sref{IV.4.5.2}. Então a função $s\mapsto n(s)$ (resp.\ $s\mapsto n'(s)$) é localmente construtível em $S$.
+\end{corollary}
+
+\begin{proof}
+Basta demonstrar que a propriedade ``$X$ é um pré-esquema algébrico sobre um corpo $k$ e o número geométrico de componentes irredutíveis (resp.\ componentes conexas) de $X$ é igual a $n$ (resp.\ $n'$)'' é construtível. Segue de \sref{IV.4.5.6} que essa propriedade satisfaz a condição \sref{IV.9.2.1},~(i); reduzimo-nos, portanto, ao caso em que $S$ é afim, noetheriano e integral, de ponto genérico $\eta$, e a conclusão segue então de \sref{IV.9.7.8}.
+\end{proof}
+
+\begin{corollary}[9.7.10]
+\label{IV.9.7.10}
+Seja $X$ um pré-esquema localmente noetheriano tal que, se $X'$ é a normalização de $X_{\mathrm{red}}$, o morfismo canônico $f:X'\to X$ seja finito. Então o conjunto dos pontos $x\in X$ tais que $X$ seja geometricamente unirramificado no ponto $x$ é localmente construtível em $X$.
+\end{corollary}
+
+\begin{proof}
+Com efeito, esse conjunto é, por definição, o conjunto dos pontos $x\in X$ tais que o número de pontos geométricos de $f^{-1}(x)$ é igual a $1$. Mas, como $f$ é finito, esse número é também o número geométrico de componentes irredutíveis do espaço discreto $f^{-1}(x)$ (levando em conta a definição da normalização \sref[II]{II.6.3.8} e \sref{IV.4.5.11}); a conclusão segue, portanto, de \sref{IV.9.7.9}.
+\end{proof}
+
+\begin{remark}[9.7.11]
+\label{IV.9.7.11}
+Seja $Z$ um subconjunto localmente construtível de $X$ tal que, para todo $s\in S$, $Z\cap X_s$ seja aberto em $X_s$, e denotemos por $Z_s$ o subpré-esquema de $X_s$ induzido
+
+\oldpage[IV-3]{83}
+
+sobre o aberto $Z\cap X_s$. Então, em \sref{IV.9.7.7}, pode-se substituir em toda parte $X_s$ por $Z_s$ sem alterar a conclusão; isso decorre da repetição do argumento utilizado em \sref{IV.9.6.7},~(ii).
+\end{remark}
+
+\begin{proposition}[9.7.12]
+\label{IV.9.7.12}
+Sejam $f:X\to S$ um morfismo de apresentação finita e $g:S\to X$ uma $S$-seção de $X$ \sref[I]{I.2.5.5}. Para todo $s\in S$, seja $X_s^0$ a componente conexa de $f^{-1}(s)$ que contém $g(s)$. Então a união $X^0$ dos $X_s^0$, para $s\in S$, é um subconjunto localmente construtível de $X$.
+\end{proposition}
+
+\begin{proof}
+Mostremos primeiro que podemos reduzir-nos ao caso em que $S$ é afim e noetheriano. Podemos sempre supor que $S=\operatorname{Spec}(A)$ é afim; com as notações de \sref{IV.9.2.3}, temos $f=(f_0)_{(S)}$, onde $f_0:X_0\to S_0$ é um morfismo de tipo finito, e podemos ainda supor que existe uma $S_0$-seção $g_0:S_0\to X_0$ tal que $g=(g_0)_{(S)}$ \sref{IV.8.9.1}. Se $p:S\to S_0$ é o morfismo canônico, então, para todo $s_0\in S_0$, a componente conexa $(X_0)^0_{s_0}$ de $f_0^{-1}(s_0)$ que contém $g_0(s_0)$ é geometricamente conexa \sref{IV.4.5.13}; por conseguinte, se $s_0=p(s)$, temos $X_s^0=q^{-1}((X_0)^0_{s_0})$, onde $q:X_s\to (X_0)_{s_0}$ é a projeção canônica \sref{IV.4.5.8} e \sref{IV.4.4.1}. Nossa afirmação decorre, portanto, de \sref{IV.1.8.2}.
+
+Utilizemos agora o critério de construtibilidade \sref[0\textsubscript{III}]{0.9.2.3}. Seja $x$ um ponto de $X$, seja $Z$ o subpré-esquema reduzido de $X$ cujo espaço subjacente é $\overline{\{x\}}$, e seja $Y$ o subpré-esquema reduzido de $S$ cujo espaço subjacente é $\overline{f(Z)}$. Como a restrição de $f$ a $Z$ se fatora como $Z\to Y\to S$ \sref[I]{I.5.2.2}, podemos substituir $S$ por $Y$, ou seja, supor que $f(x)=\eta$, o ponto genérico do pré-esquema integral $S$.
+
+Por hipótese, $X_\eta$ é a soma de dois subpré-esquemas $X_\eta^0$ e $X_\eta^1$, induzidos em abertos complementares de $X_\eta$. Em virtude de \sref{IV.9.5.4} e \sref{IV.9.5.1}, podemos, substituindo $S$, se necessário, por uma vizinhança de $\eta$, supor que $X$ é a união de dois abertos disjuntos $X^0$ e $X^1$ tais que $(X^0)_\eta=X_\eta^0$ e $(X^1)_\eta=X_\eta^1$. Como $g:S\to X$ é contínuo e injetivo, $S$ é a união dos dois abertos disjuntos $g^{-1}(X^0)$ e $g^{-1}(X^1)$; mas, como $S$ é irreducível e, \emph{a fortiori}, conexo, um desses dois abertos é vazio. Como $g(\eta)\in X_\eta^0$ por definição, temos $g^{-1}(X^1)=\varnothing$.
+
+Em outras palavras, $g$ é uma $S$-seção de $X^0$. Por outro lado, como $(X^0)_\eta$ é geometricamente conexo \sref{IV.4.5.13}, o mesmo vale para $(X^0)_s$ para todo $s$ próximo de $\eta$, em virtude de \sref{IV.9.7.7}; e, como $g(s)\in (X^0)_s$, temos de fato $(X^0)_s=X_s^0$.
+\end{proof}
+
+\subsection{Decomposição primária em uma vizinhança de uma fibra genérica}
+\label{subsection:IV.9.8}
+\label{IV.9.8}
+
+\begin{proposition}[9.8.1]
+\label{IV.9.8.1}
+Sejam $f:X\to S$ um morfismo de apresentação finita e $\sh{F}$ um $\sh{O}_X$-Módulo quase-coerente de apresentação finita.
+Então o conjunto $E$ dos $s\in S$ tais que $\sh{F}_s$ seja um $\sh{O}_{X_s}$-Módulo sem ciclo primo associado imerso é localmente construtível.
+\end{proposition}
+
+\begin{proof}
+\label{IV.9.8.1-proof}
+Sabemos que, para os Módulos quase-coerentes sobre pré-esquemas algébricos, a propriedade de não possuir ciclo primo associado imerso é invariante por mudança do corpo de base \sref{IV.4.2.7}; podemos, portanto, reduzir-nos ao caso em que $S$ é afim, noetheriano e integral, de ponto genérico $\eta$, e a demonstrar que, nesse caso, $E$ ou $S-E$ é uma vizinhança de $\eta$.
+Vimos em \sref{IV.9.7.6} que, se $\eta\in E$, $E$ é uma vizinhança de $\eta$; resta, portanto, considerar o caso em que $\sh{F}_\eta$ possui ciclos primos associados imersos.
+Podemos reduzir-nos ao caso em que $X$ é afim e em que existe um sub-$\sh{O}_{X_\eta}$-Módulo coerente $\sh{H}$ de $\sh{F}_\eta$ cujo suporte $Z'$ é não vazio e não denso em parte alguma no suporte $Z$ de $\sh{F}$ \sref{IV.3.1.3}; então, em virtude de \sref{IV.8.5.2},~(i) e~(ii),
+\oldpage[IV-3]{84}
+e de \sref{IV.8.5.8}, aplicados segundo o método de \sref{IV.8.1.2},~$a$), existe um sub-$\sh{O}_X$-Módulo coerente $\sh{G}$ de $\sh{F}$ tal que $\sh{G}_\eta=\sh{H}$; se $Y=\operatorname{Supp}(\sh{F})$ e $Y'=\operatorname{Supp}(\sh{G})$, temos, portanto, $Y_s=\operatorname{Supp}(\sh{F}_s)$ e $Y'_s=\operatorname{Supp}(\sh{G}_s)$ para todo $s\in S$ \sref[I]{I.9.1.13}, e, em particular, $Z=Y_\eta$ e $Z'=Y'_\eta$; como $Z-Z'$ é denso em $Z$ e $Z'\neq\varnothing$, existe uma vizinhança $U$ de $\eta$ tal que, para $s\in U$, $Y_s-Y'_s$ seja denso em $Y_s$ e $Y'_s\neq\varnothing$ \sref{IV.9.5.1} e \sref{IV.9.5.3}; considerando um ponto genérico de uma componente irredutível de $Y'_s$ e uma vizinhança suficientemente pequena desse ponto em $X_s$, deduzimos imediatamente de \sref{IV.3.1.3} que $\sh{F}_s$ admite ciclos primos associados imersos.
+\end{proof}
+
+\medskip
+\noindent
+\emph{\sref{IV.9.8.2}}
+\label{IV.9.8.2}
+Seja $S$ um pré-esquema noetheriano, \emph{integral}, de ponto genérico $\eta$, seja $f:X\to S$ um morfismo de tipo finito e seja $\sh{F}$ um $\sh{O}_X$-Módulo coerente.
+Consideremos uma decomposição irredondante reduzida $(\sh{G}_i)_{i\in I}$ de $\sh{F}_\eta$ \sref{IV.3.2.6}; os $\sh{G}_i$ são, portanto, quocientes de $\sh{F}_\eta$ e existe um homomorfismo injetivo $h:\sh{F}_\eta\to\bigoplus_i\sh{G}_i$; além disso, $\operatorname{Ass}(\sh{G}_i)$ reduz-se a um ponto $x_i$.
+Seja $Z_i$ o fecho de $\{x_i\}$ em $X$, de modo que $(Z_i)_\eta=\operatorname{Supp}(\sh{G}_i)$.
+Denotemos por $\sh{J}_i$ o Ideal coerente de $\sh{O}_X$ que define o subpré-esquema fechado reduzido de $X$ cujo espaço subjacente é $Z_i$ (subpré-esquema que continuamos a denotar por $Z_i$).
+Em virtude de \sref{IV.8.5.2} e \sref{IV.8.5.8}, aplicados segundo o método de \sref{IV.8.1.2},~$a$), podemos (restringindo, se necessário, $S$ a uma vizinhança de $\eta$) supor que existem quocientes $\sh{F}_i$ de $\sh{F}$ ($i\in I$) tais que $\sh{G}_i=(\sh{F}_i)_\eta$ para todo $i$, e um homomorfismo $g:\sh{F}\to\bigoplus_i\sh{F}_i$ tal que $h=g_\eta$.
+Além disso, por \sref[I]{I.9.3.5}, existe um inteiro $m$ tal que $(\sh{J}_i^m\sh{F}_i)_\eta=(\sh{J}_i)_\eta^m\sh{G}_i=0$ e, restringindo novamente $S$, podemos supor que também se tenha $\sh{J}_i^m\sh{F}_i=0$ \sref{IV.8.5.2.5}, de modo que o suporte de $\sh{F}_i$ esteja contido em $Z_i$; mas, como é fechado e contém $x_i$, é necessariamente igual a $Z_i$.
+
+\begin{proposition}[9.8.3]
+\label{IV.9.8.3}
+Sob as condições de \emph{\sref{IV.9.8.2}}, para todo $s\in S$ e todo $i\in I$, denotemos por $x_{is\alpha}$ ($\alpha\in J_{s,i}$) os pontos maximais de $(Z_i)_s$.
+Existe uma vizinhança $U$ de $\eta$ em $S$ tal que, para todo $s\in U$, os $x_{is\alpha}$ (para $i\in I$ e, para cada $i$, $\alpha\in J_{s,i}$) sejam dois a dois distintos e $\operatorname{Ass}(\sh{F}_s)$ seja o conjunto dos $x_{is\alpha}$ (em outras palavras, os ciclos primos associados a $\sh{F}_s$ são as componentes irredutíveis dos $(Z_i)_s$).
+Além disso, pode-se tomar $U$ de modo que, para que o fecho de $\{x_{is\alpha}\}$ em $X_s$ seja um ciclo primo associado maximal de $\sh{F}_s$, seja necessário e suficiente que $(Z_i)_\eta$ (fecho de $\{x_i\}$ em $X_\eta$) seja um ciclo primo associado maximal de $\sh{F}_\eta$.
+\end{proposition}
+
+\begin{proof}
+\label{IV.9.8.3-proof}
+Decorre de \sref{IV.3.1.3},~$c'$) que, para cada $i$, existe um aberto $W_i$ em $X_\eta$ tal que $W_i\cap(Z_i)_\eta$ não seja vazio, e um $\sh{O}_{X_\eta}$-Módulo coerente $\sh{H}_i$, de suporte $W_i\cap(Z_i)_\eta$, tal que exista um homomorfismo injetivo $v_i:\sh{H}_i\to\sh{F}_\eta|W_i$.
+Seja $V_i$ um aberto de $X$ tal que $V_i\cap X_\eta=W_i$; aplicando, como em \sref{IV.9.8.2}, os resultados de \sref{IV.8.5.2} e \sref{IV.8.5.8}, podemos (restringindo $S$) supor que existam um Módulo coerente $\sh{F}'_i$, de suporte $V_i\cap Z_i$, e um homomorfismo $u_i:\sh{F}'_i\to\sh{F}|V_i$ tais que $\sh{H}_i=(\sh{F}'_i)_\eta$ e $v_i=(u_i)_\eta$.
+Mostraremos que existe uma vizinhança $U$ de $\eta$ tal que, para $s\in U$, sejam verificadas as seguintes propriedades:
+\begin{enumerate}[label=(\roman*)]
+  \item Os $(\sh{F}_i)_s$ não possuem ciclo primo associado imerso.
+  \item O homomorfismo $g_s:\sh{F}_s\to\bigoplus_i(\sh{F}_i)_s$ é injetivo.
+  \item $(Z_i)_s\cap(V_i)_s$ é denso em $(Z_i)_s$, $(\sh{F}'_i)_s$ tem por suporte $(Z_i)_s\cap(V_i)_s$, e $(u_i)_s:(\sh{F}'_i)_s\to\sh{F}_s|(V_i)_s$ é injetivo.
+\end{enumerate}
+\oldpage[IV-3]{85}
+
+\begin{enumerate}[label=(\roman*)]
+  \item[(iv)] Para $i\neq j$, toda componente irredutível de $(Z_i)_s$ é distinta de toda componente irredutível de $(Z_j)_s$.
+\end{enumerate}
+
+Ora, (i) já foi visto em \sref{IV.9.7.6}; (ii) é um caso particular de \sref{IV.9.4.5}; (iii) decorre igualmente de \sref{IV.9.5.3} e \sref{IV.9.4.5}.
+Finalmente, se $i\neq j$, $(Z_i)_\eta\cap(Z_j)_\eta=(Z_i\cap Z_j)_\eta$ é não denso em parte alguma em $(Z_i)_\eta$ \emph{ou} em $(Z_j)_\eta$; suponhamos, por exemplo, que $(Z_i\cap Z_j)_\eta$ seja não denso em parte alguma em $(Z_j)_\eta$; decorre então de \sref{IV.9.5.3} e \sref{IV.9.5.4} que, para $s$ em uma vizinhança de $\eta$, $(Z_i\cap Z_j)_s=(Z_i)_s\cap(Z_j)_s$ é não denso em parte alguma em $(Z_j)_s$, o que mostra que nenhuma componente irredutível de $(Z_j)_s$ pode estar contida em uma componente irredutível de $(Z_i)_s$, nem, \emph{a fortiori}, ser igual a ela.
+
+Nessas condições, decorre de (ii) e de \sref{IV.3.1.7} que, para $s\in U$, temos
+\[
+  \operatorname{Ass}(\sh{F}_s)\subset\bigcup_i\operatorname{Ass}((\sh{F}_i)_s),
+\]
+de (i), que $\operatorname{Ass}((\sh{F}_i)_s)$ é o conjunto dos $x_{is\alpha}$ ($\alpha\in J_{s,i}$).
+Por outro lado, em virtude de (iii) e do critério \sref{IV.3.1.3},~$c'$), cada um dos $x_{is\alpha}$ ($\alpha\in J_{s,i}$, $i\in I$) pertence a $\operatorname{Ass}(\sh{F}_s)$.
+Finalmente, (iv) significa que os $x_{is\alpha}$ são dois a dois distintos.
+
+Resta demonstrar a última afirmação do enunciado.
+Ora, decorre de (i) que, para $s$ e para um $i$ dado, nenhum dos conjuntos $\overline{\{x_{is\alpha}\}}$ pode estar contido em outro, para $\alpha\in J_{s,i}$.
+Por outro lado, se $(Z_j)_\eta\subset(Z_i)_\eta$, podemos supor $U$ tomado de modo que $(Z_j)_s\subset(Z_i)_s$ para $s\in U$ \sref{IV.9.5.1}; portanto, cada $x_{js\beta}$ pertence ao fecho de um $x_{is\alpha}$; ao contrário, se $(Z_j)_\eta\cap(Z_i)_\eta$ é não denso em parte alguma em $(Z_j)_\eta$, vimos, ao demonstrar (iv), que $(Z_j)_s\cap(Z_i)_s$ é não denso em parte alguma em $(Z_j)_s$; portanto, nenhum dos $x_{js\beta}$ pertence ao fecho de um $x_{is\alpha}$.
+Em particular, se $(Z_j)_\eta$ é maximal, o que equivale a dizer que $(Z_j)_\eta\cap(Z_i)_\eta$ é não denso em parte alguma em $(Z_j)_\eta$ para \emph{todo} $i\neq j$, concluímos que $(Z_j)_s\cap(Z_i)_s$ é não denso em parte alguma em $(Z_j)_s$ para todo $i\neq j$; portanto, todo $x_{js\alpha}$ ($\alpha\in J_{s,j}$) é \emph{maximal}.
+\end{proof}
+
+\begin{corollary}[9.8.4]
+\label{IV.9.8.4}
+Sendo as notações e hipóteses as de \emph{\sref{IV.9.8.2}}, existe uma vizinhança $U$ de $\eta$ em $S$ tal que, para todo $s\in U$, cada um dos $(\sh{F}_i)_s$ não possui ciclo primo associado imerso; além disso, se $(\sh{F}_{is\alpha})_{\alpha\in J_{s,i}}$ é a única decomposição irredondante reduzida de $(\sh{F}_i)_s$, então, para todo $s\in U$, a família $(\sh{F}_{is\alpha})_{i\in I,\,\alpha\in J_{s,i}}$ é uma decomposição irredondante reduzida de $\sh{F}_s$.
+\end{corollary}
+
+\begin{proof}
+\label{IV.9.8.4-proof}
+A primeira afirmação decorre de \sref{IV.9.8.1} e da definição de $\sh{F}_i$.
+Por outro lado, vimos em \sref{IV.9.8.3} que o homomorfismo $\sh{F}_s\to\bigoplus_i(\sh{F}_i)_s$ é injetivo e, por definição, o mesmo ocorre com cada um dos homomorfismos $(\sh{F}_i)_s\to\bigoplus_\alpha\sh{F}_{is\alpha}$, de modo que o homomorfismo $\sh{F}_s\to\bigoplus_{i,\alpha}\sh{F}_{is\alpha}$ é injetivo.
+Como podemos supor, por \sref{IV.9.4.5}, que, para $s\in U$, cada um dos $(\sh{F}_i)_s$ é um quociente de $\sh{F}_s$, os $\sh{F}_{is\alpha}$ são quocientes de $\sh{F}_s$, e resta verificar, por \sref{IV.3.2.5}, que os $x_{is\alpha}$ são dois a dois distintos e pertencem a $\operatorname{Ass}(\sh{F}_s)$, o que foi demonstrado em \sref{IV.9.8.3}.
+\end{proof}
+
+\begin{proposition}[9.8.5]
+\label{IV.9.8.5}
+Seja $f:X\to S$ um morfismo de apresentação finita e seja $\sh{F}$ um $\sh{O}_X$-Módulo quase-coerente de apresentação finita.
+Para todo $s\in S$, seja $E(s)$ (resp.~$E'(s)$) o conjunto (subconjunto finito de $\mathbf{Z}\cup\{-\infty\}$) das dimensões dos ciclos primos associados a $\sh{F}_s$ (resp.~dos ciclos primos associados maximais, isto é, as componentes irredutíveis de $\operatorname{Supp}(\sh{F}_s)$).
+Então as funções $s\mapsto E(s)$ e $s\mapsto E'(s)$ são localmente construtíveis em $S$.
+\end{proposition}
+
+\begin{proof}
+\label{IV.9.8.5-proof}
+\oldpage[IV-3]{86}
+Decorre de \sref{IV.4.2.7} e \sref{IV.4.2.8} que a condição \sref{IV.9.2.1},~(i) é satisfeita para as propriedades cuja construtibilidade queremos demonstrar.
+Ficamos, portanto, reduzidos ao caso em que $S$ é afim, noetheriano e integral, e a demonstrar que $E$ e $E'$ são constantes em uma vizinhança do ponto genérico $\eta$ de $S$; mas isso decorre de \sref{IV.9.8.3} e \sref{IV.9.5.5}.
+\end{proof}
+
+\begin{proposition}[9.8.6]
+\label{IV.9.8.6}
+Com as hipóteses e notações de \emph{\sref{IV.9.8.2}}, seja $i\in I$ tal que $(Z_i)_\eta$ seja maximal (em outras palavras, uma componente irredutível de $\operatorname{Supp}(\sh{F}_\eta)$).
+Então existe uma vizinhança $U$ de $\eta$ em $S$ tal que, para todo $s\in U$ e todo $\alpha\in J_{s,i}$, o comprimento geométrico de $\sh{F}_s$ em $x_{is\alpha}$ (relativo a $\mathbf{k}(s)$) \sref{IV.4.7.5} é igual ao comprimento geométrico de $\sh{F}_\eta$ em $x_i$ (relativo a $\mathbf{k}(\eta)$).
+\end{proposition}
+
+\begin{proof}
+\label{IV.9.8.6-proof}
+Podemos evidentemente limitar-nos ao caso em que $S=\operatorname{Spec}(A)$ é afim; demonstremos primeiro que podemos reduzir-nos ao caso em que o subpré-esquema $(Z_i)_\eta$ de $X_\eta$, que é reduzido, é \emph{geometricamente integral}.
+Com efeito, existe uma extensão finita $K'$ de $K=\mathbf{k}(\eta)$ tal que $(((Z_i)_\eta)_{(K')})_{\mathrm{red}}$ é geometricamente reduzido e as componentes irredutíveis de $((Z_i)_\eta)_{(K')}$ são geometricamente irredutíveis \sref{IV.4.6.8}.
+Procedemos como na demonstração de \sref{IV.9.7.7}, considerando uma sub-$A$-álgebra $A'$ de $K'$ que tem $K'$ como corpo de frações e é finita sobre $A$.
+Ponhamos $S'=\operatorname{Spec}(A')$ e consideremos o morfismo finito sobrejetivo $g:S'\to S$; sejam $X'=X_{(S')}$ e $\sh{F}'=\sh{F}\otimes_{\sh{O}_S}\sh{O}_{S'}$, e seja $\eta'$ o ponto genérico de $S'$.
+Para todo $s'\in S'$, ponhamos $s=g(s')$; se $T$ é uma componente irredutível de $\operatorname{Supp}(\sh{F}_s)$, as componentes irredutíveis $T'_j$ de $T_{(\mathbf{k}(s'))}$ são componentes irredutíveis de $\operatorname{Supp}(\sh{F}'_{s'})$ e dominam $T$ \sref{IV.4.2.7}, e as multiplicidades radiciais de $T$ em relação a $\sh{F}_s$ e de cada $T'_j$ em relação a $\sh{F}'_{s'}$ são as mesmas \sref{IV.4.7.9}.
+O raciocínio da primeira parte de \sref{IV.9.7.7} mostra, então, que podemos limitar-nos a demonstrar a proposição para $X'$ e $\sh{F}'$; e, em virtude da escolha de $K'$, os subpré-esquemas reduzidos que têm por espaços subjacentes as componentes irredutíveis de $((Z_i)_\eta)_{(K')}$ são geometricamente integrais \sref{IV.4.6.1}.
+
+Suponhamos agora que $(Z_i)_\eta$ é geometricamente integral; então, por \sref{IV.9.7.7}, o mesmo vale para $(Z_i)_s$, para $s$ em uma vizinhança de $\eta$; a definição \sref{IV.4.7.5} mostra que bastará, portanto, demonstrar que o comprimento do $\sh{O}_{X_\eta,x_i}$-módulo $(\sh{F}_\eta)_{x_i}$ é igual ao do $\sh{O}_{X_s,x_{is}}$-módulo $(\sh{F}_s)_{x_{is}}$ (onde suprimimos o índice $\alpha$, agora desnecessário por hipótese).
+Como a questão é evidentemente local sobre $X$, podemos supor (restringindo-nos a uma vizinhança de $x_i$) que $\sh{F}=\sh{F}_i$, de modo que $\sh{F}_\eta$ é \emph{irredondante} sobre $X=\operatorname{Spec}(B)$ afim, e escrevemos $Z$ em lugar de $Z_i$, e $x$ para o ponto genérico de $Z$ (e de $Z_\eta$).
+O anel noetheriano $B$ contém $A$ como subanel, e $\sh{F}=\widetilde{M}$, onde $M$ é um $B$-módulo de tipo finito; além disso, se $K$ é o corpo de frações de $A$, o $B_{(K)}$-módulo $M_{(K)}$ é $\neq 0$ e irredondante.
+Seja $q$ o único elemento de $\operatorname{Ass}(M_{(K)})$ e seja $\mathfrak{p}$ o ideal primo de $B$, imagem inversa de $q$.
+Utilizando \sref{IV.5.11.1.1} como na demonstração de \sref{IV.9.7.6}, reduzimo-nos ao caso em que $B$ é \emph{integral} e $M$ um submódulo $\neq 0$ de $B$; então $\sh{F}_\eta$ é um sub-$\sh{O}_{X_\eta}$-Módulo não nulo de $\sh{O}_{Z_\eta}$ e, em virtude de \sref{IV.9.4.5}, para $s$ em uma vizinhança de $\eta$, $\sh{F}_s$ é isomorfo a um sub-$\sh{O}_{X_s}$-Módulo não nulo de $\sh{O}_{Z_s}$; como $Z_s$ é geometricamente integral, os comprimentos de $(\sh{F}_\eta)_x$ e $(\sh{F}_s)_{x_s}$ são ambos iguais a $1$, o que termina a demonstração.
+\end{proof}
+
+\begin{corollary}[9.8.7]
+\label{IV.9.8.7}
+\oldpage[IV-3]{87}
+Seja $f:X\to S$ um morfismo de apresentação finita e seja $\sh{F}$ um $\sh{O}_X$-Módulo quase-coerente de apresentação finita.
+Para todo $s\in S$, seja $M(s)$ o conjunto dos pares $(d,m)$ tais que existe uma componente irredutível de $\operatorname{Supp}(\sh{F}_s)$ de dimensão $d$ e de multiplicidade radicial $m$ em relação a $\sh{F}_s$ \sref{IV.4.7.8}.
+Então a função $s\mapsto M(s)$ é localmente construtível em $S$.
+\end{corollary}
+
+\begin{proof}
+\label{IV.9.8.7-proof}
+Decorre de \sref{IV.4.2.7} e \sref{IV.4.7.9} que a condição \sref{IV.9.2.1},~(i) é satisfeita para a propriedade cuja construtibilidade queremos demonstrar.
+Ficamos, assim, reduzidos ao caso em que $S$ é afim, noetheriano e integral, e a demonstrar que $M$ é constante em uma vizinhança do ponto genérico de $S$; mas isso decorre da proposição, a saber, \sref{IV.9.8.3} e \sref{IV.9.8.6}.
+\end{proof}
+
+\begin{proposition}[9.8.8]
+\label{IV.9.8.8}
+Seja $f:X\to S$ um morfismo de apresentação finita e seja $\sh{F}$ um $\sh{O}_X$-Módulo quase-coerente de apresentação finita.
+Para todo $s\in S$, seja $l(s)$ a soma das multiplicidades totais para $\sh{F}_s$ (relativas a $\mathbf{k}(s)$) dos pontos genéricos das componentes irredutíveis de $\operatorname{Supp}(\sh{F}_s)$ \sref{IV.4.7.12}.
+Então a função $s\mapsto l(s)$ é localmente construtível em $S$.
+\end{proposition}
+
+\begin{proof}
+\label{IV.9.8.8-proof}
+Levando em conta \sref{IV.4.7.12}, a condição \sref{IV.9.2.1},~(i) é satisfeita para a propriedade cuja construtibilidade queremos demonstrar, e ficamos assim reduzidos ao caso em que $S$ é afim, noetheriano e integral, e a demonstrar que $l$ é constante em uma vizinhança do ponto genérico $\eta$.
+Utilizando as notações de \sref{IV.9.8.2}, isso decorre da definição \sref{IV.4.7.12}, do fato de que o número geométrico de componentes irredutíveis de cada $(Z_i)_s$ é constante em uma vizinhança de $\eta$ \sref{IV.9.7.8}, de que o comprimento geométrico de $\sh{F}_s$ em $x_{is\alpha}$ é também igual ao de $\sh{F}_\eta$ em $x_i$ para cada $i$ tal que $(Z_i)_\eta$ seja maximal \sref{IV.9.8.6}, e, finalmente, de que o fecho de $\{x_{is\alpha}\}$ é um ciclo primo associado maximal de $\sh{F}_s$ se e somente se $(Z_i)_\eta$ é um ciclo primo associado maximal de $\sh{F}_\eta$ \sref{IV.9.8.3}.
+\end{proof}
+
+\begin{remark}[9.8.9]
+\label{IV.9.8.9}
+Podem-se precisar de diversas maneiras as proposições precedentes; limitemo-nos a um enunciado a título de exemplo.
+Diremos que um subconjunto finito $P$ de um $k$-pré-esquema algébrico $X$ é \emph{saturado} se, para todo par de pontos $x$, $y$ de $P$, os pontos genéricos das componentes irredutíveis de $\overline{\{x\}}\cap\overline{\{y\}}$ também pertencem a $P$; para todo subconjunto finito $Q$ de $X$, existe um menor subconjunto finito $P$ de $X$ que contém $Q$ e é saturado; diremos que $P$ é a \emph{saturação} de $Q$.
+Para todo $\sh{O}_X$-Módulo coerente $\sh{F}$, chamaremos de \emph{esqueleto primário} de $\sh{F}$ o sistema $(P,Q,\omega,d,m)$ em que $Q=\operatorname{Ass}(\sh{F})$, $P$ é a saturação de $Q$, $\omega$ é a relação de ordem $\overline{\{x\}}\subset\overline{\{y\}}$ sobre $P$, $d$ é a função $x\mapsto\dim\overline{\{x\}}$ sobre $P$, e $m$ é a função $x\mapsto\operatorname{length}_{\sh{O}_x}\sh{F}_x$ definida sobre o conjunto dos elementos de $Q$ maximais para a relação $\omega$.
+Chamaremos de \emph{esqueleto virtual} todo sistema $(P,Q,\omega,d,m)$ em que $P$ é um conjunto, $Q$ um subconjunto de $P$, $\omega$ uma relação de ordem sobre $P$, $d$ uma aplicação de $P$ em $\mathbf{N}$, e $m$ uma aplicação do conjunto dos elementos maximais de $Q$ em $\mathbf{N}$; define-se de maneira evidente a noção de \emph{isomorfismo} de dois esqueletos virtuais.
+Finalmente, com as notações precedentes, chamaremos de \emph{tipo primário} de $\sh{F}$ a classe (para a relação de isomorfismo dos esqueletos virtuais) do esqueleto primário de $\sh{F}$.
+Segue de \sref{IV.4.2.6}, \sref{IV.4.2.7}, \sref{IV.4.2.8}, \sref{IV.4.5.1} e \sref{IV.4.7.9} que, se, para uma extensão algebricamente fechada $k'$ de $k$, pusermos $X'=X\otimes_k k'$ e $\sh{F}'=\sh{F}\otimes_k k'$, o \emph{tipo primário} de $\sh{F}'$ será independente da
+\oldpage[IV-3]{88}
+extensão algebricamente fechada $k'$ de $k$ considerada; diremos que esse é o \emph{tipo primário geométrico} de $\sh{F}$.
+Postas essas definições, o enunciado que temos em vista é o seguinte:
+
+\medskip
+\noindent
+\emph{\sref{IV.9.8.9.1}}
+\label{IV.9.8.9.1}
+Seja $f:X\to S$ um morfismo de apresentação finita e seja $\sh{F}$ um $\sh{O}_X$-Módulo quase-coerente de apresentação finita.
+Para todo $s\in S$, seja $T(s)$ o tipo primário geométrico de $\sh{F}_s$.
+Então a função $s\mapsto T(s)$ é localmente construtível em $S$.
+
+\medskip
+Levando em conta as observações precedentes, ficamos reduzidos, como de costume, a demonstrar que, se $S$ é afim, noetheriano e integral, com ponto genérico $\eta$, então $T(s)$ é constante em uma vizinhança de $\eta$.
+Raciocinando como no início de \sref{IV.9.7.7}, podemos supor que todas as partes irredutíveis de $X_\eta$ que intervêm são geometricamente irredutíveis, e então a proposição decorre de \sref{IV.9.5.1}, \sref{IV.9.5.5}, \sref{IV.9.8.3} e \sref{IV.9.8.6}; deixamos os detalhes ao leitor.
+Poder-se-ia generalizar considerando vários Módulos coerentes e definindo seu ``esqueleto primário simultâneo'', etc.
+A conclusão geral do que foi visto desde o início deste parágrafo é que, para todas as propriedades do tipo considerado (e para $S$ irredutível), \emph{as propriedades válidas sobre a ``fibra genérica'' continuam válidas sobre todas as fibras vizinhas}.
+\end{remark}
+
+\subsection{Construtibilidade das propriedades locais das fibras}
+\label{subsection:IV.9.9}
+\label{IV.9.9}
+
+\begin{proposition}[9.9.1]
+\label{IV.9.9.1}
+Sejam $f:X\to S$ um morfismo localmente de apresentação finita, $Z$ uma parte localmente construtível de $X$ tal que, para todo $s\in S$, $Z_s$ seja fechada em $X_s$, e $\Phi$ uma parte finita de $\mathbf{Z}\cup\{\pm\infty\}$.
+Então as partes seguintes de $X$ são localmente construtíveis:
+\begin{enumerate}[label=(\roman*)]
+  \item O conjunto dos $x\in X$ tais que $\dim_x(Z_{f(x)})$ pertence a $\Phi$.
+  \item O conjunto dos $x\in X$ tais que $\operatorname{codim}_x(Z_{f(x)},X_{f(x)})$ pertence a $\Phi$.
+  \item O conjunto dos $x\in X$ tais que o anel local $\sh{O}_{X_{f(x)},x}$ é equidimensional.
+\end{enumerate}
+\end{proposition}
+
+Observemos que as propriedades (i) e (ii) podem também ser expressas dizendo-se que as funções $x\mapsto\dim_x(Z_{f(x)})$ e $x\mapsto\operatorname{codim}_x(Z_{f(x)},X_{f(x)})$ são \emph{localmente construtíveis} em $X$ ($0_{\mathrm{III}}$, \sref{IV.9.3.1}).
+
+\begin{proof}
+\label{IV.9.9.1-proof}
+Sendo as questões locais sobre $X$, podemos limitar-nos ao caso em que $S=\operatorname{Spec}(A)$ e $X=\operatorname{Spec}(B)$ são afins e em que $f$ é um morfismo de apresentação finita; existe então um subanel $A_0$ de $A$ que é uma $\mathbf{Z}$-álgebra de tipo finito, um $A_0$-pré-esquema de tipo finito $X_0$ e uma parte construtível $Z_0$ de $X_0$ tais que $X=X_0\otimes_{A_0}A$ e $Z=h^{-1}(Z_0)$, onde $h:X\to X_0$ é a projeção canônica (\sref{IV.8.9.1} e \sref{IV.8.3.11}).
+Além disso, para todo $s\in S$, se $s_0$ é a projeção de $s$ em $S_0=\operatorname{Spec}(A_0)$, temos
+\[
+  X_s=(X_0)_{s_0}\otimes_{\mathbf{k}(s_0)}\mathbf{k}(s),
+\]
+e, se $h_s$ denota a projeção $X_s\to(X_0)_{s_0}$, temos $Z_s=h_s^{-1}((Z_0)_{s_0})$.
+Como o morfismo $h_s$ é fielmente plano e quase-compacto, a hipótese de que $Z_s$ é fechada em $X_s$ implica que $(Z_0)_{s_0}$ é fechada em $(X_0)_{s_0}$ \sref{IV.2.3.12}.
+
+Nessas condições, a transitividade das fibras \sref[I]{I.3.6.4} e a prop.~\sref{IV.4.2.7} implicam que o conjunto das dimensões das componentes irredutíveis de $Z_s$ que contêm $x$ é o mesmo que o conjunto das dimensões das componentes irredutíveis de $(Z_0)_{s_0}$ que contêm $x_0=h_s(x)$.
+Em particular, temos $\dim_x(Z_s)=\dim_{x_0}((Z_0)_{s_0})$.
+Por outro lado, se $Z_s^{(\beta)}$ são as componentes irredutíveis de $Z_s$ que contêm $x$ e $X_s^{(\alpha)}$ as componentes irredutíveis de $X_s$
+\oldpage[IV-3]{89}
+que contêm $x$, temos
+\[
+  \operatorname{codim}_x(Z_s,X_s)
+  =\inf_{\beta}\sup_{\alpha}\operatorname{codim}(Z_s^{(\beta)},X_s^{(\alpha)}),
+\]
+onde $(\alpha,\beta)$ percorre os pares tais que $x\in Z_s^{(\beta)}\subset X_s^{(\alpha)}$ ($0$, \sref{IV.14.2.6}).
+Como os pré-esquemas algébricos irredutíveis são biequidimensionais \sref{IV.5.2.1}, podemos escrever, em virtude de ($0$, \sref{IV.14.3.3.1}),
+\begin{equation}
+\tag{9.9.1.1}
+\label{IV.9.9.1.1}
+  \operatorname{codim}_x(Z_s,X_s)=\inf_{\beta}\sup_{\alpha}\bigl(\dim(X_s^{(\alpha)})-\dim(Z_s^{(\beta)})\bigr)
+\end{equation}
+com a mesma escolha de pares $(\alpha,\beta)$.
+Como $h_s$ é fielmente plano e quase-compacto, para todo par formado por uma componente irredutível $(X_0)_{s_0}^{(\lambda)}$ de $(X_0)_{s_0}$ que contém $x_0$ e uma componente irredutível $(Z_0)_{s_0}^{(\mu)}$ de $(Z_0)_{s_0}$ que contém $x_0$ e está contida em $(X_0)_{s_0}^{(\lambda)}$, existe um par $(X_s^{(\alpha)},Z_s^{(\beta)})$ do tipo descrito acima tal que $Z_s^{(\beta)}$ domina $(Z_0)_{s_0}^{(\mu)}$ e $X_s^{(\alpha)}$ domina $(X_0)_{s_0}^{(\lambda)}$ \sref{IV.2.3.5}.
+A fórmula \sref{IV.9.9.1.1} (e a fórmula análoga aplicada a $(X_0)_{s_0}$) mostra então, em virtude de \sref{IV.4.2.7}, que temos
+\[
+  \operatorname{codim}_x(Z_s,X_s)=\operatorname{codim}_{x_0}((Z_0)_{s_0},(X_0)_{s_0}).
+\]
+
+Vemos assim que, se $E$ (resp.~$E_0$) é o conjunto dos $x\in X$ (resp.~dos $x_0\in X_0$) que satisfazem uma das condições (i), (ii), (iii) do enunciado (resp.~a mesma condição), então $E=h^{-1}(E_0)$; por \sref{IV.1.8.2}, podemos, portanto, limitar-nos ao caso em que $A$, e por conseguinte também $B$, é noetheriano.
+Tendo em conta ($0_{\mathrm{III}}$, \sref{IV.9.2.3}) e \sref{IV.9.9.1.1}, resta demonstrar que, para todo $x\in X$, existe uma vizinhança $V$ de $x$ em $\overline{\{x\}}$ tal que, para todo $x'\in V$, os conjuntos das dimensões das componentes irredutíveis de $X_{f(x')}$ e de $Z_{f(x')}$ que contêm $x'$ são constantes, e o mesmo ocorre com o conjunto dos pares
+\[
+  \bigl(\dim Z_{f(x')}^{(\beta)},\dim X_{f(x')}^{(\alpha)}\bigr),
+\]
+onde $X_{f(x')}^{(\alpha)}$ é uma componente irredutível de $X_{f(x')}$ e $Z_{f(x')}^{(\beta)}$ é uma componente irredutível de $Z_{f(x')}$ contida nela e que contém $x'$.
+Para isso, podemos substituir $S$ pelo subpré-esquema fechado reduzido $S'$ cujo espaço subjacente é $\overline{\{f(x)\}}$, e $X$ por $X'=f^{-1}(S')$, uma vez que as fibras de $X$ e de $X'$ nos pontos de $S'$ são as mesmas.
+Assim, podemos supor que $S$ é integral e que $\eta=f(x)$ é seu ponto genérico.
+
+Por hipótese, $Z_\eta$ é fechada em $X_\eta$; como $Z$ é construtível, resulta de \sref{IV.8.3.11}, aplicado segundo o método de \sref{IV.8.1.2},~(a), que, depois de substituir $S$ por uma vizinhança aberta de $\eta$, podemos supor que $Z$ é \emph{fechada} em $X$.
+Sejam $X_i$ (resp.~$Z_j$) as componentes irredutíveis de $X$ (resp.~$Z$) que contêm $x$.
+Por ($0_I$, \sref{IV.2.1.8}), os $X_i\cap X_\eta$ (resp.~$Z_j\cap X_\eta$) são as componentes irredutíveis de $X_\eta$ (resp.~$Z_\eta$) que contêm $x$; por \sref{IV.9.5.1}, depois de restringir $S$ em torno de $\eta$, podemos supor ainda que os $X_i$ (resp.~$Z_j$) são exatamente as componentes irredutíveis de $X$ (resp.~$Z$) que encontram $\overline{\{x\}}$, e que $(X_i)_s\cap\overline{\{x\}}$ e $(Z_j)_s\cap\overline{\{x\}}$ são não vazios para todo $s\in S$.
+Nessas condições, resulta ainda de \sref{IV.9.7.1} que podemos supor, restringindo $S$, que os pares $(i,j)$ tais que $(Z_j)_s\subset(X_i)_s$ são os mesmos para todo $s\in S$.
+A conclusão resulta então de \sref{IV.9.5.6}: para todo $s$ suficientemente próximo de $\eta$, todas as componentes irredutíveis de $(X_i)_s$ (resp.~$(Z_j)_s$) têm a mesma dimensão, igual à de $(X_i)_\eta$ (resp.~$(Z_j)_\eta$).
+Além disso, se $(i,j)$ é um par tal que $Z_j\not\subset X_i$, $(X_i)_\eta$ não contém o
+\oldpage[IV-3]{90}
+ponto genérico de $(Z_j)_\eta$, de modo que $\dim((X_i\cap Z_j)_\eta)<\dim((Z_j)_\eta)$; por conseguinte, a dimensão comum das componentes irredutíveis de $(X_i)_s\cap(Z_j)_s$ é, para todo $s\in S$, estritamente menor que a dimensão comum das componentes irredutíveis de $(Z_j)_s$, o que prova que nenhuma das componentes irredutíveis de $(Z_j)_s$ está contida em uma componente irredutível de $(X_i)_s$ para $s\in S$.
+\end{proof}
+
+\begin{proposition}[9.9.2]
+\label{IV.9.9.2}
+Sejam $f:X\to S$ um morfismo localmente de apresentação finita, $\sh{F}$ um $\sh{O}_X$-Módulo quase-coerente de apresentação finita e $\Phi$ uma parte finita de $\mathbf{Z}\cup\{\pm\infty\}$.
+As partes seguintes de $X$ são localmente construtíveis:
+\begin{enumerate}[label=(\roman*)]
+  \item O conjunto dos $x\in X$ tais que $\sh{F}_{f(x)}$ seja equidimensional no ponto $x$ \sref{IV.5.1.12}.
+  \item O conjunto dos $x\in X$ tais que os comprimentos geométricos de $\sh{F}_{f(x)}$ relativos a $\mathbf{k}(f(x))$, nos pontos genéricos das componentes irredutíveis de $\operatorname{Supp}(\sh{F}_{f(x)})$ que contêm $x$ \sref{IV.4.7.5}, pertençam a $\Phi$.
+  \item O conjunto dos $x\in X$ tais que as dimensões dos ciclos primos associados a $\sh{F}_{f(x)}$ e que contêm $x$ pertençam a $\Phi$.
+  \item O conjunto dos $x\in X$ tais que $\sh{F}_{f(x)}$ seja geometricamente reduzido no ponto $x$ \sref{IV.4.6.17}.
+  \item O conjunto dos $x\in X$ tais que $\sh{F}_{f(x)}$ seja geometricamente integral no ponto $x$ \sref{IV.4.6.22}.
+  \item O conjunto dos $x\in X$ tais que $\dim.\operatorname{proj}((\sh{F}_{f(x)})_x)\in\Phi$.
+  \item O conjunto dos $x\in X$ tais que $\operatorname{coprof}((\sh{F}_{f(x)})_x)\in\Phi$.
+  \item O conjunto dos $x\in X$ tais que $\sh{F}_{f(x)}$ possua a propriedade ($S_k$) no ponto $x$ \sref{IV.5.7.2}.
+  \item O conjunto dos $x\in X$ tais que $\sh{F}_{f(x)}$ seja um $\sh{O}_{X_{f(x)}}$-Módulo de Cohen-Macaulay no ponto $x$ \sref{IV.5.7.1}.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\label{IV.9.9.2-proof}
+(i) O suporte $Z$ de $\sh{F}$ é localmente construtível e fechado em $X$ \sref{IV.8.9.1}; considerando um subpré-esquema de $X$ cujo espaço subjacente é $Z$ e que é de apresentação finita sobre $S$ \sref{IV.8.9.1}, vemos que a afirmação (i) é um caso particular de \sref{IV.9.9.1},~(iii).
+
+(ii) Todas as propriedades consideradas são locais sobre $X$; podemos, portanto, supor que $X=\operatorname{Spec}(B)$ e $S=\operatorname{Spec}(A)$ são afins e que $f$ é de apresentação finita.
+Conservamos as notações do início da demonstração de \sref{IV.9.9.1} e escolhemos $A_0$ de modo que exista um $\sh{O}_{X_0}$-Módulo coerente $\sh{F}_0$ tal que $\sh{F}\simeq\sh{F}_0\otimes_{A_0}A$.
+Então \sref{IV.4.2.7} e \sref{IV.4.7.9} mostram que o conjunto dos comprimentos geométricos de $(\sh{F}_0)_{f(x_0)}$ nos pontos genéricos das componentes irredutíveis de seu suporte que contêm $x_0$ é o mesmo que o conjunto correspondente para $\sh{F}_{f(x)}$ em $x$.
+Assim, se $E$ (resp.~$E_0$) denota o conjunto dos $x\in X$ (resp.~$x_0\in X_0$) que satisfazem a condição (ii), então $E=h^{-1}(E_0)$ e, por \sref{IV.1.8.2}, podemos limitar-nos ao caso em que $A$ é noetheriano.
+Como na demonstração de \sref{IV.9.9.1}, resta demonstrar que, para todo $x\in X$, existe uma vizinhança $V$ de $x$ em $\overline{\{x\}}$ na qual é constante o conjunto dos comprimentos geométricos de $\sh{F}_{f(x')}$ nos pontos genéricos das componentes irredutíveis de seu suporte que contêm $x'$.
+Se $S'$ é o subpré-esquema fechado reduzido de $S$ cujo espaço subjacente é $\overline{\{f(x)\}}$ e se $X'=f^{-1}(S')$, as fibras de $X$ e de $X'$ nos pontos de $S'$ são as mesmas,
+\oldpage[IV-3]{91}
+de modo que podemos substituir $S$ por $S'$ e $X$ por $X'$; em outras palavras, podemos supor que $S$ é integral e que $\eta=f(x)$ é seu ponto genérico.
+Se $Z=\operatorname{Supp}(\sh{F})$ e os $Z_i$ são as componentes irredutíveis de $Z$ que contêm $x$, o argumento de \sref{IV.9.9.1} permite-nos supor que estas são exatamente as componentes irredutíveis de $Z$ que encontram $\overline{\{x\}}$ e que $(Z_i)_s\cap\overline{\{x\}}\neq\varnothing$ para todo $s\in S$.
+A conclusão decorre de \sref{IV.9.8.3} e \sref{IV.9.8.6}.
+
+(iii) Utilizando \sref{IV.4.2.7}, reduzimo-nos, como em (ii), ao caso em que $S$ é noetheriano e integral e $\eta=f(x)$ é seu ponto genérico.
+Como na demonstração de \sref{IV.9.9.1}, resta encontrar uma vizinhança $V$ de $x$ em $\overline{\{x\}}$ na qual seja constante o conjunto das dimensões dos ciclos primos associados a $\sh{F}_{f(x')}$ e que contêm $x'$.
+Sejam $Z'_i$ os fechos em $X$ dos ciclos primos associados a $\sh{F}_\eta$ que contêm $x$ (cf.~\sref{IV.9.8.2}).
+Por \sref{IV.9.8.3} e \sref{IV.9.5.1}, para todo $s$ suficientemente próximo de $\eta$, os ciclos primos associados a $\sh{F}_s$ que encontram $\overline{\{x\}}$ são componentes irredutíveis dos $(Z'_i)_s$; por \sref{IV.9.5.6}, todas essas componentes têm dimensão $\dim((Z'_i)_\eta)$, o que demonstra a afirmação.
+
+(iv) Raciocinamos como em (iii), utilizando agora \sref{IV.4.7.11}.
+Com as mesmas notações, os ciclos primos associados a $\sh{F}_s$ que são componentes irredutíveis de $(Z'_i)_s$ são imersos se, e somente se, $(Z'_i)_\eta$ é um ciclo primo associado imerso de $\sh{F}_\eta$.
+Decorre daí que, conforme $x$ pertença a um ciclo primo associado imerso de $\sh{F}_\eta$ ou não pertença a nenhum, os pontos $x'\in\overline{\{x\}}$ que possuem a propriedade análoga para $\sh{F}_{f(x')}$ formam uma vizinhança de $x$ em $\overline{\{x\}}$.
+A conclusão decorre dessa observação, da caracterização dos Módulos geometricamente reduzidos em \sref{IV.4.7.10} e de (ii).
+
+(v) Levando em conta \sref{IV.4.7.11}, reduzimo-nos novamente ao caso em que $S$ é noetheriano e integral e em que $\eta=f(x)$ é seu ponto genérico.
+Seja $Y$ um subpré-esquema fechado de $X$ cujo espaço subjacente é $\operatorname{Supp}(\sh{F})$.
+Como no início da demonstração de \sref{IV.9.7.7}, existe uma $A$-álgebra integral finita $A'$ (de modo que, se $S'=\operatorname{Spec}(A')$, o morfismo $S'\to S$ é finito e sobrejetivo) tal que, se $Y'=Y_{(S')}$ e $\eta'$ é o ponto genérico de $S'$, as componentes irredutíveis de $Y'_{\eta'}$ são geometricamente irredutíveis.
+Se $X'=X_{(S')}$, a projeção $h:X'\to X$ é finita e sobrejetiva, portanto fechada; por conseguinte, para um ponto $x'$ situado sobre $x$, temos $h(\overline{\{x'\}})=\overline{\{x\}}$, e a imagem por $h$ de uma vizinhança de $x'$ em $\overline{\{x'\}}$ é uma vizinhança de $x$ em $\overline{\{x\}}$.
+Escrevendo $\sh{F}'=\sh{F}_{(S')}$ e utilizando \sref{IV.4.7.11}, ficamos reduzidos a demonstrar que, conforme $\sh{F}'_{\eta'}$ seja ou não geometricamente integral em $x'$, os pontos $y'\in\overline{\{x'\}}$ nos quais $\sh{F}'_{f'(y')}$ (onde $f'=f_{(S')}:X'\to S'$) é ou não geometricamente integral em $y'$ formam uma vizinhança de $x'$ em $\overline{\{x'\}}$.
+Podemos, portanto, supor que $X'=X$ e que as componentes irredutíveis de $Y_\eta$ são geometricamente irredutíveis.
+Escolhamos partes fechadas $Z_i$ de $X$ tais que os $Z_i\cap X_\eta$ sejam as
+  \oldpage[IV-3]{92}
+  componentes irredutíveis de $Y_\eta$.
+Por \sref{IV.9.7.7}, \sref{IV.9.7.8} e \sref{IV.9.5.3}, para todo $s$ próximo de $\eta$, os $(Z_i)_s$ são as componentes irredutíveis de $Y_s$ e são geometricamente irredutíveis.
+Em um ponto $y\in X_s$, o Módulo $\sh{F}_s$ é geometricamente integral exatamente quando é geometricamente reduzido nesse ponto e $y$ pertence a apenas um dos $(Z_i)_s$ \sref{IV.4.6.22}.
+A conclusão decorre de (iv) e de \sref{IV.9.5.1} aplicado a $\overline{\{x\}}\cap Z_i$ para cada $i$.
+
+(vi) Conservando as notações de (ii), \sref{IV.6.2.1} fornece
+\[
+  \dim.\operatorname{proj}((\sh{F}_s)_x)
+  =\dim.\operatorname{proj}(((\sh{F}_0)_{s_0})_{x_0}),
+\]
+de modo que podemos limitar-nos novamente ao caso em que $A$ é noetheriano. Resta demonstrar que, para todo $x\in X$, existe uma vizinhança $V$ de $x$ em $\overline{\{x\}}$ tal que
+\[
+  \dim.\operatorname{proj}((\sh{F}_{f(x')})_{x'})
+  =\dim.\operatorname{proj}((\sh{F}_{f(x)})_x)
+\]
+para todo $x'\in V$. Como acima, podemos supor que $S$ é integral e que $\eta=f(x)$ é seu ponto genérico, de modo que $(\sh{F}_\eta)_x=\sh{F}_x$. Pela planicidade genérica \sref{IV.6.9.1}, depois de substituir $S$ por uma vizinhança aberta de $\eta$, podemos supor que $f$ é plano e que $\sh{F}$ é $f$-plano. Então \sref{IV.6.2.3} fornece
+\[
+  \dim.\operatorname{proj}((\sh{F}_{f(x')})_{x'})
+  =\dim.\operatorname{proj}(\sh{F}_{x'})
+\]
+para todo $x'\in X$. Por \sref{IV.6.11.1}, depois de substituir $X$ por uma vizinhança aberta de $x$, podemos supor que
+\[
+  \dim.\operatorname{proj}(\sh{F}_{x'})
+  \leqslant\dim.\operatorname{proj}(\sh{F}_x)
+\]
+para todo $x'\in X$.
+
+Se $\dim.\operatorname{proj}(\sh{F}_x)=n$, existe um $\sh{O}_x$-módulo de tipo finito $M$ tal que $\operatorname{Ext}^n_{\sh{O}_x}(\sh{F}_x,M)\neq 0$ \sref[0]{0.17.2.4}.
+Depois de substituir $X$ por uma vizinhança aberta de $x$, existe um $\sh{O}_X$-módulo coerente $\sh{G}$ tal que $M=\sh{G}_x$ \sref[0]{0.5.3.8};
+em virtude de (T, \sref{IV.4.2.2}), temos $(\shExt^n_{\sh{O}_X}(\sh{F},\sh{G}))_x\neq 0$.
+Mas $\shExt^n_{\sh{O}_X}(\sh{F},\sh{G})$ é um $\sh{O}_X$-Módulo coerente ($0_{\mathrm{III}}$, \sref{IV.12.3.3}), portanto seu suporte $Y$ é fechado ($0_I$, \sref{IV.5.2.2}); como contém $x$, contém também $\overline{\{x\}}$, de onde concluímos (aplicando novamente (T, \sref{IV.4.2.2})) que $\dim.\operatorname{proj}(\sh{F}_{x'})\geqslant n$ para todo $x'\in\overline{\{x\}}$, o que conclui a demonstração da afirmação no caso (vi).
+
+(vii) Como $B$ é uma $A$-álgebra de tipo finito, $X$ é $S$-isomorfo a um \emph{subesquema fechado} de um $S$-esquema da forma $Y=\operatorname{Spec}(A[T_1,\ldots,T_r])$; se $j:X\to Y$ é a injeção canônica e $\sh{G}=j_*(\sh{F})$, então $\sh{G}_s=(j_s)_*(\sh{F}_s)$ para todo $s\in S$ e, em virtude de ($0$, \sref{IV.16.4.11}), podemos limitar-nos a demonstrar a afirmação para $Y$ e $\sh{G}$.
+Em outras palavras, podemos supor que $B=A[T_1,\ldots,T_r]$, de modo que os esquemas $X_s=\operatorname{Spec}(\mathbf{k}(s)[T_1,\ldots,T_r])$ são \emph{regulares} ($0$, \sref{IV.17.3.7}).
+Seja $W=\operatorname{Supp}(\sh{F})$ e seja $W_s=\operatorname{Supp}(\sh{F}_s)$ \sref[I]{I.9.1.13}; temos, por \sref{IV.6.11.2.1},
+\begin{equation}
+\tag{9.9.2.1}
+\label{IV.9.9.2.1}
+  \operatorname{coprof}((\sh{F}_{f(x)})_x)=\dim.\operatorname{proj}((\sh{F}_{f(x)})_x)-\operatorname{codim}_x(W_{f(x)},X_{f(x)}).
+\end{equation}
+
+Mas, como $W$ é construtível \sref{IV.8.9.1} e cada $W_s$ é fechado, decorre de (vi) e de \sref{IV.9.9.1},~(ii), que as duas funções do segundo membro de \sref{IV.9.9.2.1} são construtíveis; portanto, sua diferença também o é, o que demonstra a afirmação no caso (vii).
+
+(viii) Seja $U_n$ o conjunto dos $x\in X$ tais que $\operatorname{coprof}((\sh{F}_{f(x)})_x)\leqslant n$ e ponhamos $Z_n=X-U_n$; decorre de (vii) que os $Z_n$ são \emph{construtíveis}.
+\oldpage[IV-3]{93}
+Além disso, como a função $x\mapsto\dim_x(W_{f(x)})$ é construtível por \sref{IV.9.9.1},~(i), ela assume apenas um número finito de valores e, portanto, os números $\dim(W_{f(x)})$ têm uma cota superior finita $m$ quando $x$ percorre $X$.
+Como $\operatorname{coprof}((\sh{F}_{f(x)})_x)\leqslant\dim((\sh{F}_{f(x)})_x)\leqslant\dim(W_{f(x)})$, temos $Z_n=\varnothing$ para $n\geqslant m$.
+Finalmente, \sref{IV.6.11.2},~(i), mostra que $(Z_n)_s$ é fechado em $X_s$ para todo $n$ e todo $s\in S$.
+Por \sref{IV.5.7.4}, o conjunto dos $x\in X$ nos quais $(\sh{F}_{f(x)})_x$ possui a propriedade ($S_k$) é o conjunto dos $x\in X$ que satisfazem todas as relações
+\begin{equation}
+\tag{9.9.2.2}
+\label{IV.9.9.2.2}
+  \operatorname{codim}_x((Z_n)_{f(x)},W_{f(x)})>n+k
+\end{equation}
+para todo $n\geqslant 0$; como essa relação é automaticamente satisfeita para $n\geqslant m$, basta considerar as relações \sref{IV.9.9.2.2} para $0\leqslant n<m$.
+Mas, em virtude de \sref{IV.9.9.1},~(ii), o conjunto $V_{n,k}$ dos $x$ que satisfazem \sref{IV.9.9.2.2} é construtível, e o mesmo vale para a interseção desses conjuntos para $0\leqslant n<m$.
+
+(ix) A afirmação decorre imediatamente de (vii), pois o conjunto dos $x\in X$ nos quais $(\sh{F}_{f(x)})_x$ é um Módulo de Cohen-Macaulay é definido pela relação $\operatorname{coprof}((\sh{F}_{f(x)})_x)=0$.
+\end{proof}
+
+\begin{corollary}[9.9.3]
+\label{IV.9.9.3}
+Sejam $f:X\to S$ um morfismo de apresentação finita, $\sh{F}$ um $\sh{O}_X$-Módulo quase-coerente de apresentação finita e $\mathbf{P}$ uma das propriedades (i) a (ix) de \sref{IV.9.9.2}.
+Então o conjunto dos $s\in S$ tais que a propriedade $\mathbf{P}$ seja verdadeira em todos os pontos $x\in X_s$ é localmente construtível em $S$.
+\end{corollary}
+
+\begin{proof}
+\label{IV.9.9.3-proof}
+Com efeito, seu complementar é a imagem por $f$ do complementar do conjunto $E$ dos pontos em que $\mathbf{P}$ é verdadeira.
+Como $E$ é localmente construtível em $X$, o mesmo ocorre com $X-E$ e, portanto, $f(X-E)$ é localmente construtível em $S$ em virtude do teorema de Chevalley \sref{IV.1.8.4}.
+\end{proof}
+
+\begin{proposition}[9.9.4]
+\label{IV.9.9.4}
+Seja $f:X\to S$ um morfismo localmente de apresentação finita.
+O conjunto dos $x\in X$ tais que $X_{f(x)}$ possua, no ponto $x$, uma (determinada) das seguintes propriedades:
+\begin{enumerate}[label=(\roman*)]
+  \item ser geometricamente regular;
+  \item possuir a propriedade geométrica ($R_k$);
+  \item ser geometricamente normal;
+  \item ser geometricamente reduzido (isto é, separável);
+  \item ser geometricamente pontualmente integral;
+\end{enumerate}
+é uma parte localmente construtível de $X$.
+\end{proposition}
+
+\begin{proof}
+\label{IV.9.9.4-proof}
+Para as propriedades (iv) e (v), isso decorre de \sref{IV.9.9.2},~(iv) e~(v), aplicado a $\sh{F}=\sh{O}_X$.
+Para as demais propriedades, levando em conta \sref{IV.6.7.8}, reduzimo-nos, como no início de \sref{IV.9.9.2},~(ii), ao caso em que $S$ é noetheriano e integral e seu ponto genérico é $\eta=f(x)$.
+Além disso, em virtude do teorema da planicidade genérica \sref{IV.6.9.1}, podemos, substituindo $S$ por uma vizinhança aberta de $\eta$, supor que $f$ seja um morfismo \emph{plano}.
+Dizer que $X_{f(y)}$ é geometricamente regular no ponto $y$ significa, então, que $f$ é \emph{regular} no ponto $y$ \sref{IV.6.8.1}, e sabemos que o conjunto $L$ desses pontos é \emph{aberto} em $X$ \sref{IV.6.8.7}, o que demonstra a proposição no caso (i).
+
+Para demonstrar o caso (ii), ponhamos $F=X-L$, que é \emph{fechado} em $X$.
+Dizer que $X_s$
+\oldpage[IV-3]{94}
+satisfaz a propriedade geométrica ($R_k$) no ponto $y\in f^{-1}(s)$ significa ou que $y\in L$, ou que os pontos genéricos $z_i$ das componentes irredutíveis do conjunto fechado $F_s$ que contêm $y$ satisfazem a relação $\dim(\sh{O}_{X_s,z_i})\geqslant k+1$ (levando em conta \sref{IV.4.2.7} e \sref{IV.5.2.3}); em outras palavras, os pontos $y\in F_s$ nos quais $X_s$ satisfaz a propriedade geométrica ($R_k$) são aqueles tais que $\operatorname{codim}_y(F_s,X_s)\geqslant k+1$ \sref{IV.5.1.2}.
+A conclusão decorre, portanto, de (i) e de \sref{IV.9.9.1},~(ii).
+
+Finalmente, no caso (iii), a conclusão decorre de (ii), de \sref{IV.9.9.2},~(viii), do fato de que a propriedade ($S_k$) é estável por extensão do corpo de base \sref{IV.6.7.1} e, finalmente, do critério de Serre \sref{IV.5.8.6}.
+\end{proof}
+
+\begin{corollary}[9.9.5]
+\label{IV.9.9.5}
+Seja $f:X\to S$ um morfismo de apresentação finita, e denotemos por $\mathbf{P}$ uma das propriedades (i) a (v) de \sref{IV.9.9.4}.
+Então o conjunto dos $s\in S$ tais que a propriedade $\mathbf{P}$ seja verdadeira em todos os pontos $x\in X_s$ é localmente construtível em $S$.
+\end{corollary}
+
+\begin{proof}
+\label{IV.9.9.5-proof}
+A demonstração a partir de \sref{IV.9.9.4} é a mesma que a de \sref{IV.9.9.3} a partir de \sref{IV.9.9.2}.
+\end{proof}
+
+\begin{proposition}[9.9.6]
+\label{IV.9.9.6}
+Seja $f:X\to S$ um morfismo localmente de apresentação finita, e seja $\sh{L}_\bullet$ um complexo formado por $\sh{O}_X$-Módulos quase-coerentes de apresentação finita; para todo $s\in S$, seja $(\sh{L}_\bullet)_s$ o complexo $\sh{L}_\bullet\otimes_{\sh{O}_S}\mathbf{k}(s)$ de $\sh{O}_{X_s}$-Módulos coerentes de tipo finito.
+Então, para um inteiro dado $n$, o conjunto dos $x\in X$ tais que $(\sh{H}_n((\sh{L}_\bullet)_{f(x)}))_x=0$ é localmente construtível em $X$.
+\end{proposition}
+
+\begin{proof}
+\label{IV.9.9.6-proof}
+Podemos limitar-nos ao caso em que $\sh{L}_i=0$ salvo para $i=0$, $1$ ou $2$, e em que $n=1$.
+Além disso, sendo a questão local em $X$, podemos limitar-nos ao caso em que $S=\operatorname{Spec}(A)$ e $X=\operatorname{Spec}(B)$ são afins, sendo $B$ uma $A$-álgebra de apresentação finita.
+Existe, então, um subanel noetheriano $A_0$ de $A$, um $A_0$-pré-esquema de tipo finito $X_0$ e um complexo $\sh{L}_\bullet^{(0)}$ de $\sh{O}_{X_0}$-Módulos coerentes, nulos salvo nas dimensões $0$, $1$ e $2$, tais que $X=X_0\otimes_{A_0}A$ e $\sh{L}_\bullet=\sh{L}_\bullet^{(0)}\otimes_{A_0}A$.
+Para todo $s\in S$, se $s_0$ é a projeção de $s$ em $S_0=\operatorname{Spec}(A_0)$, então
+\[
+  X_s=(X_0)_{s_0}\otimes_{\mathbf{k}(s_0)}\mathbf{k}(s),
+\]
+e a projeção $X_s\to(X_0)_{s_0}$ é fielmente plana.
+Consequentemente,
+\[
+  \sh{H}_n((\sh{L}_\bullet)_s)
+  =\sh{H}_n((\sh{L}_\bullet^{(0)})_{s_0})\otimes_{\mathbf{k}(s_0)}\mathbf{k}(s).
+\]
+Se $E$ (resp.~$E_0$) é o conjunto dos $x\in X$ (resp.~$x_0\in X_0$) para os quais
+\[
+  \begin{aligned}
+  (\sh{H}_n((\sh{L}_\bullet)_{f(x)}))_x&=0\\
+  \bigl(\text{resp. }(\sh{H}_n((\sh{L}_\bullet^{(0)})_{f_0(x_0)}))_{x_0}&=0\bigr),
+  \end{aligned}
+\]
+então $E=h^{-1}(E_0)$, onde $h:X\to X_0$ é a projeção canônica.
+Em virtude de \sref{IV.1.8.2}, podemos, portanto, limitar-nos ao caso em que $A$ é noetheriano.
+Resta demonstrar ($0_{\mathrm{III}}$, \sref{IV.9.2.3}) que, se $x\in X$ é tal que $(\sh{H}_n((\sh{L}_\bullet)_{f(x)}))_x=0$ (resp.~$\neq 0$), existe uma vizinhança aberta $V$ de $x$ em $\overline{\{x\}}$ tal que, para todo $x'\in V$, temos $(\sh{H}_n((\sh{L}_\bullet)_{f(x')}))_{x'}=0$ (resp.~$\neq 0$).
+Substituindo $S$ pelo subpré-esquema fechado reduzido cujo espaço subjacente é $\overline{\{f(x)\}}$, podemos supor que $S$ é integral e que $f(x)=\eta$ é seu ponto genérico.
+Então, restringindo $S$ a uma vizinhança aberta de $\eta$, podemos supor que, para todo $s\in S$,
+$(\sh{H}_n(\sh{L}_\bullet))_s=\sh{H}_n((\sh{L}_\bullet)_s)$ \sref{IV.9.4.3}; consequentemente, se $Z$ é o suporte de $\sh{H}_n(\sh{L}_\bullet)$, o suporte de $\sh{H}_n((\sh{L}_\bullet)_s)$ é $Z_s=Z\cap X_s$ \sref[I]{I.9.1.13.1}.
+A hipótese é que $Z_\eta\cap\overline{\{x\}}=\varnothing$ (resp.~$\neq\varnothing$).
+Como $Z\cap\overline{\{x\}}$ é fechado no espaço noetheriano $X$, concluímos de \sref{IV.9.5.1} que existe uma vizinhança $U$ de $\eta$ em $S$ tal que, para todo $s\in U$, temos $Z_s\cap\overline{\{x\}}=\varnothing$ (resp.~$\neq\varnothing$).
+O conjunto $V=f^{-1}(U)\cap\overline{\{x\}}$ responde, portanto, à questão.
+\end{proof}

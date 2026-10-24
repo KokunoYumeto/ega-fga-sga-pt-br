@@ -62,3 +62,8 @@ A tradução para o português é produzida por IA. As correções, a edição e
 ## EGA I: capítulo I
 
 [Fontes da edição corrigida: §§1–10 e índices](editions/EGA_I_chapter_I_current/README.md).
+
+
+## EGA IV, terceira parte
+
+[Fontes editáveis das seções 8–15](editions/EGA_IV_3_sections_current/README.md).

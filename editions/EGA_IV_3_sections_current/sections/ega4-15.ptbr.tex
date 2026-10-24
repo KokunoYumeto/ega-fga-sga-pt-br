@@ -1,0 +1,268 @@
+\section{Estudo das fibras de um morfismo universalmente aberto}
+\label{section:IV.15}
+
+\subsection{Multiplicidades das fibras de um morfismo universalmente aberto}
+\label{subsection:IV.15.1}
+
+\begin{proposition}[15.1.1]
+\label{IV.15.1.1}
+\oldpage[IV-3]{223}
+Sejam $Y$ um pré-esquema irredutível localmente noetheriano, de ponto genérico $\eta$, $f:X\to Y$ um morfismo localmente de tipo finito, $y$ um ponto de $Y$ e $\sh{F}$ um $\sh{O}_X$-módulo coerente; ponhamos $\sh{F}_y=\sh{F}\otimes_{\sh{O}_Y}\mathbf{k}(y)$, feixe de módulos sobre a fibra $f^{-1}(y)$.
+Seja $z$ o ponto genérico de uma componente irredutível de $\operatorname{Supp}(\sh{F}_y)$, e sejam $X_i$ ($1\leqslant i\leqslant n$) aqueles subpré-esquemas fechados reduzidos de $X$ cujo espaço subjacente é uma componente irredutível de $\operatorname{Supp}(\sh{F})$ que contém $z$ e para os quais a restrição $X_i\to Y$ de $f$ é um morfismo universalmente aberto no ponto $z$; seja $z_i$ o ponto genérico de $X_i$ ($1\leqslant i\leqslant n$).
+Se $\lambda_x(\sh{F}_y)$ (resp. $\lambda_t(\sh{F}_\eta)$) denota o comprimento geométrico de $\sh{F}_y$ em um ponto $x\in f^{-1}(y)$ (resp. o de $\sh{F}_\eta$ em um ponto $t\in f^{-1}(\eta)$) \sref{IV.4.7.5}, temos
+\[
+\tag{15.1.1.1}
+\label{IV.15.1.1.1}
+  \lambda_z(\sh{F}_y)\geqslant\sum_{i=1}^{n}\lambda_{z_i}(\sh{F}_\eta).
+\]
+Se, além disso, o anel $\sh{O}_y$ é regular, temos
+\[
+\tag{15.1.1.2}
+\label{IV.15.1.1.2}
+  \operatorname{long}((\sh{F}_y)_z)\geqslant\sum_{i=1}^{n}\operatorname{long}((\sh{F}_\eta)_{z_i}).
+\]
+\end{proposition}
+
+\begin{proof}
+\oldpage[IV-3]{224}
+Como as fibras $f^{-1}(y')$ de $f$ (para todo $y'\in Y$) não se alteram quando se substitui $f$ por $f_{\mathrm{red}}$, podemos supor que $X$ e $Y$ são reduzidos (2.4.3, (vi)); portanto, $Y$ é integral. Ponhamos $K=\mathbf{k}(\eta)$. Podemos ainda substituir $f$ por sua restrição $\operatorname{Supp}(\sh{F})\to Y$ ao subpré-esquema fechado reduzido de $X$ cujo espaço subjacente é $\operatorname{Supp}(\sh{F})$, restringindo-nos assim ao caso $X=\operatorname{Supp}(\sh{F})$. Por fim, se $y=\eta$, há uma única componente irredutível $X_i$ de $X$ que contém $z$ ($\mathbf{0}_{\mathrm I}$, 2.1.8), e $z_i=z$; as desigualdades (15.1.1.1) e (15.1.1.2) são então triviais, sem hipótese alguma sobre $f$. Podemos, pois, restringir-nos ao caso $y\ne\eta$. Nesse caso, a hipótese e (1.10.3) mostram que os $z_i$ pertencem a $f^{-1}(\eta)$; portanto, os membros direitos de (15.1.1.1) e (15.1.1.2) estão definidos.
+
+Seja $Z_i$ o subpré-esquema fechado reduzido de $f^{-1}(\eta)$ cujo espaço subjacente é $X_i\cap f^{-1}(\eta)$. Sabemos por (4.6.6) que existe uma extensão radicial finita $K'/K$ tal que, para todo $i$, o $K'$-pré-esquema $(Z_i\otimes_K K')_{\mathrm{red}}$ é geometricamente reduzido sobre $K'$. Além disso, a projeção $f^{-1}(\eta)\otimes_K K'\to f^{-1}(\eta)$ é finita, dominante e radicial ($\textbf{I}$, 3.5.7), sendo, portanto, um homeomorfismo (2.4.5). Se $z_i'$ é o único ponto de $f^{-1}(\eta)\otimes_K K'$ situado sobre $z_i$, resulta de (4.7.9) e (4.7.5) que
+\[
+\tag{15.1.1.3}
+\label{IV.15.1.1.3}
+  \lambda_{z_i}(\sh{F}_\eta)
+  =\lambda_{z_i'}(\sh{F}_\eta\otimes_K K')
+  =\operatorname{long}((\sh{F}_\eta\otimes_K K')_{z_i'}).
+\]
+
+Seja $V$ um anel de valuação discreta, com corpo de frações $K'$, que domina $\sh{O}_y$ ($\textbf{II}$, 7.1.7); ponhamos $Y'=\operatorname{Spec}(V)$, $X'=X\times_Y Y'$, $\sh{F}'=\sh{F}\otimes_Y Y'$ e $f'=f_{(Y')}:X'\to Y'$. Se $g:Y'\to Y$ é o morfismo estrutural, $\eta'$ é o ponto genérico de $Y'$ e $y'$ seu ponto fechado, temos $g(y')=y$ e $g(\eta')=\eta$. Como o morfismo $\operatorname{Spec}(\mathbf{k}(y'))\to\operatorname{Spec}(\mathbf{k}(y))$ é fielmente plano, a projeção $g':f'^{-1}(y')\to f^{-1}(y)$ também o é (2.2.13); por (2.3.4), há, portanto, um ponto genérico $z'$ de uma componente irredutível de $f'^{-1}(y')$ tal que $g'(z')=z$. Por construção, $\mathbf{k}(\eta')=K'$, de modo que $f'^{-1}(\eta')=f^{-1}(\eta)\otimes_K K'$. Por outro lado, se pusermos $X_i'=X_i\times_Y Y'$, a restrição $X_i'\to Y'$ de $f'$ é universalmente aberta no ponto $z'$; logo, por (1.10.3), existe um ponto $z_i''\in f'^{-1}(\eta')$ que é uma generização de $z'$, e podemos evidentemente supor que $z_i''$ é o ponto genérico de uma componente irredutível de $X_i'\cap f'^{-1}(\eta')$. Como a projeção de $X_i'\cap f'^{-1}(\eta')$ em $f^{-1}(\eta)$ é $Z_i$, temos $z_i''=z_i'$. Em virtude de (4.7.9) e (4.7.5), temos
+\[
+\tag{15.1.1.4}
+\label{IV.15.1.1.4}
+  \lambda_z(\sh{F}_y)=\lambda_{z'}(\sh{F}'_{y'})
+  \geqslant\operatorname{long}((\sh{F}'_{y'})_{z'}),
+\]
+e dessa desigualdade e de (15.1.1.3) resulta que, para demonstrar (15.1.1.1), basta provar
+\[
+\tag{15.1.1.5}
+\label{IV.15.1.1.5}
+  \operatorname{long}((\sh{F}'_{y'})_{z'})\geqslant
+  \sum_{i=1}^{n}\operatorname{long}((\sh{F}'_{\eta'})_{z_i'}).
+\]
+
+Consideremos agora a segunda desigualdade, (15.1.1.2); utilizaremos o seguinte lema:
+
+\begin{lemma}[15.1.1.6]
+\label{IV.15.1.1.6}
+Sejam $A$ um anel local regular que não é um corpo, $K$ seu corpo de frações e $k$ seu corpo residual. Existe um anel de valuação discreta $V$ que domina $A$, tem $K$ como corpo de frações e cujo corpo residual é uma extensão puramente transcendente de $k$.
+\end{lemma}
+
+\oldpage[IV-3]{225}
+Ponhamos $S=\operatorname{Spec}(A)$ e consideremos o $S$-esquema $P$ obtido pela explosão do ponto fechado $s$ de $S$ ($\textbf{II}$, 8.1.3). Se $\mathfrak m$ é o ideal maximal de $A$, temos, portanto, por definição, $P=\operatorname{Proj}(B)$, onde $B$ é a $A$-álgebra graduada $\bigoplus_{n\geqslant0}\mathfrak m^n$. Se $h:P\to S$ é o morfismo estrutural, a fibra $h^{-1}(s)$ é isomorfa a $\operatorname{Proj}(B\otimes_A k)$ ($\textbf{II}$, 2.8.10), e, por definição, $B\otimes_A k$ é a $k$-álgebra graduada $\bigoplus_{n\geqslant0}\mathfrak m^n/\mathfrak m^{n+1}$. Como $A$ é regular, essa álgebra é isomorfa a uma álgebra de polinômios $k[t_1,\ldots,t_e]$, com $t_i$ indeterminadas ($\mathbf{0}_{\mathrm{IV}}$, 17.1.1); consequentemente, $h^{-1}(s)$ é isomorfa a $\mathbf P_k^{e-1}$.
+
+Seja $\zeta$ o ponto genérico de $h^{-1}(s)$. Se $t_i'$ ($1\leqslant i\leqslant e$) são os elementos de $\mathfrak m$ cujas classes módulo $\mathfrak m^2$ são os $t_i$, então $B_{(t_e')}$ é o anel de uma vizinhança aberta afim de $\zeta$ em $P$, e $\mathbf{k}(\zeta)=k(t_1,\ldots,t_{e-1})$. Por outro lado, como $A$ é integralmente fechado, verifica-se facilmente que $B$ também o é (Bourbaki, \emph{Alg. comm.}, cap.~V, \S~1, n\textsuperscript{o}~8, cor.~1 da prop.~21). Logo $B_{(t_e')}$ também é integralmente fechado e, por conseguinte, o mesmo vale para o anel local $\sh{O}_{P,\zeta}$. Finalmente, como $A=\sh{O}_s$ é regular e, portanto, um anel universalmente catenário (5.6.4), temos, por (5.6.5),
+$\dim(\sh{O}_{P,\zeta})=\dim(\sh{O}_s)-(e-1)$, pois $h$ é um morfismo birracional, $\dim(h^{-1}(s))=e-1$ e o anel local da fibra $h^{-1}(s)$ em seu ponto genérico $\zeta$ tem dimensão $0$. Mas $\dim(\sh{O}_s)=e$; portanto $\dim(\sh{O}_{P,\zeta})=1$, e $\sh{O}_{P,\zeta}=V$ é um anel de valuação discreta, por ser noetheriano, de dimensão $1$ e integralmente fechado ($\textbf{II}$, 7.1.6). Esse anel satisfaz, evidentemente, o que se pedia.
+
+Estabelecido o lema, podemos retomar o raciocínio empregado para (15.1.1.1) com $Y'=\operatorname{Spec}(V)$. Desta vez, $\mathbf{k}(y')$ é uma extensão \emph{separável} de $\mathbf{k}(y)$; logo, por (4.7.9), temos $\operatorname{long}((\sh{F}_y)_z)=\operatorname{long}((\sh{F}'_{y'})_{z'})$. Como, além disso, $f'^{-1}(\eta')=f^{-1}(\eta)$ e $\sh{F}'_{\eta'}=\sh{F}_\eta$, resta novamente demonstrar (15.1.1.5). Ora, se $t$ é um uniformizante de $\sh{O}_{y'}$, então $f'^{-1}(y')$ é o subpré-esquema fechado de $X'$ definido pelo ideal $t\sh{O}_{X'}$, e $\sh{F}'_{y'}=\sh{F}'/t\sh{F}'$. Por outro lado, verifica-se imediatamente ($\textbf{I}$, 9.1.12) que $(\sh{F}'_{\eta'})_{z_i'}=\sh{F}'_{z_i'}$; assim, a desigualdade (15.1.1.5) a demonstrar é precisamente um caso particular de (3.4.1.1).
+\end{proof}
+
+\begin{corollary}[15.1.2]
+\label{IV.15.1.2}
+Nas hipóteses de (15.1.1), suponhamos ainda que $\lambda_z(\sh{F}_y)=1$ (resp.\ que $\sh{O}_y$ é regular e $\operatorname{long}((\sh{F}_y)_z)=1$). Então existe no máximo uma componente irredutível $X_i$ de $\operatorname{Supp}(\sh{F})$ que contém $z$ e para a qual a restrição $X_i\to Y$ de $f$ é universalmente aberta no ponto $z$. Além disso, se $z_i$ é o ponto genérico dessa componente, temos $\lambda_{z_i}(\sh{F}_\eta)=1$ (resp.\ $\operatorname{long}((\sh{F}_\eta)_{z_i})=1$).
+\end{corollary}
+
+Isso decorre imediatamente de (15.1.1), pois, pela definição de $X_i$, temos necessariamente $(\sh{F}_\eta)_{z_i}\ne0$ ($\textbf{I}$, 9.1.13).
+
+\begin{corollary}[15.1.3]
+\label{IV.15.1.3}
+Sejam $Y$ um pré-esquema irredutível localmente noetheriano, de ponto genérico $\eta$, $f:X\to Y$ um morfismo localmente de tipo finito, $\sh{F}$ um $\sh{O}_X$-módulo coerente de suporte $X$, $x$ um ponto de $X$ e $y=f(x)$. Suponhamos que: $1^\circ$ $x$ pertence a uma única componente irredutível $Z$ de $f^{-1}(y)$; $2^\circ$ $\sh{F}_y=\sh{F}\otimes_{\sh{O}_Y}\mathbf{k}(y)$ é geometricamente reduzido sobre $\mathbf{k}(y)$, isto é, se $z$ é o ponto genérico de $Z$, $\lambda_z(\sh{F}_y)=1$ (resp.\ $\sh{O}_y$ é regular e $\operatorname{long}((\sh{F}_y)_z)=1$). Então existe no máximo uma componente irredutível $X'$ de $X$ que contém $x$ tal que $\dim_x(X'\cap f^{-1}(y))=\dim_x(f^{-1}(y))$ e tal que a restrição $X'\to Y$ de $f$ é universalmente aberta nos pontos genéricos das componentes irredutíveis de $X'\cap f^{-1}(y)$ que contêm $x$. Além disso, se tal componente $X'$ existe e $z'$ é seu ponto genérico, temos $\lambda_{z'}(\sh{F}_\eta)=1$ (resp.\ $\operatorname{long}((\sh{F}_\eta)_{z'})=1$).
+\end{corollary}
+
+\oldpage[IV-3]{226}
+Com efeito, uma componente irredutível $X'$ de $X$ que contém $x$ e satisfaz $\dim_x(X'\cap f^{-1}(y))=\dim_x(f^{-1}(y))$ contém necessariamente $Z$, pois uma componente irredutível de $X'\cap f^{-1}(y)$ que contém $x$ deve ter a mesma dimensão que a única componente irredutível $Z$ de $f^{-1}(y)$ que contém $x$. Podemos então aplicar (15.1.2) a $z$.
+
+\begin{remarks}[15.1.4]
+\label{IV.15.1.4}
+\begin{enumerate}[label=(\roman*)]
+  \item No enunciado de (15.1.1), não se pode substituir “universalmente aberto” por “equidimensional”, como mostra o exemplo (14.4.10, (ii)) em que se toma $\sh{F}=\sh{O}_X$. As fibras de $f$ são então esquemas artinianos reduzidos; portanto, com a notação introduzida \emph{loc. cit.}, temos $\lambda_{x'}(\sh{F}_y)=1$. Há, porém, duas componentes irredutíveis $X_1$ e $X_2$ de $X$ que contêm $x'$, de modo que o membro direito de (15.1.1.1) é igual a $2$, embora a restrição de $f$ a cada uma das componentes $X_1$ e $X_2$ seja um morfismo equidimensional em todo ponto. O mesmo exemplo também mostra que, em (15.1.2) e (15.1.3), não se pode substituir a hipótese “universalmente aberto” por “equidimensional”.
+  \item É plausível que, para a validade da desigualdade (15.1.1.2), não se possa suprimir a hipótese de que $\sh{O}_y$ seja \emph{regular}.
+\end{enumerate}
+\end{remarks}
+
+\subsection{Planicidade dos morfismos universalmente abertos com fibras geometricamente reduzidas}
+\label{subsection:IV.15.2}
+
+\begin{env}[15.2.1]
+\label{IV.15.2.1}
+Vimos em (2.4.6) que um morfismo \emph{plano} e localmente de apresentação finita é \emph{universalmente aberto}. Há uma recíproca parcial desse resultado sob hipóteses adicionais:
+\end{env}
+
+\begin{theorem}[15.2.2]
+\label{IV.15.2.2}
+Sejam $Y$ um pré-esquema localmente noetheriano, $f:X\to Y$ um morfismo localmente de tipo finito, $\sh{F}$ um $\sh{O}_X$-módulo coerente, $x$ um ponto de $X$ e $y=f(x)$. Suponhamos satisfeitas as seguintes condições:
+\begin{enumerate}[label=(\roman*)]
+  \item $\operatorname{Supp}(\sh{F})=X$.
+  \item $f$ é universalmente aberto nos pontos genéricos das componentes irredutíveis de $f^{-1}(y)$ que contêm $x$.
+  \item $\sh{F}_y=\sh{F}\otimes_{\sh{O}_Y}\mathbf{k}(y)$ é geometricamente reduzido no ponto $x$ (4.6.22).
+  \item O anel $\sh{O}_y$ é reduzido.
+\end{enumerate}
+Então $\sh{F}$ é $f$-plano no ponto $x$.
+\end{theorem}
+
+\begin{proof}
+\label{IV.15.2.2-proof}
+Como $\sh{O}_y$ é reduzido e noetheriano, aplicaremos o critério valuativo de planicidade (11.8.1). Consideremos, portanto, um homomorfismo local $\sh{O}_y\to A'$, onde $A'$ é um anel de valuação discreta; ponhamos $Y'=\operatorname{Spec}(A')$, $X'=X\times_Y Y'$ e $f'=f_{(Y')}:X'\to Y'$, e seja $x'$ um ponto de $X'$ cujas projeções em $X$ e $Y'$ são, respectivamente, $x$ e o ponto fechado $y'$ de $Y'$. Se pusermos $\sh{F}'=\sh{F}\otimes_Y Y'$, teremos $\operatorname{Supp}(\sh{F}')=X'$ por ($\textbf{I}$, 9.1.13). Todo ponto genérico $z'$ de uma componente irredutível de $f'^{-1}(y')$ que contém $x'$ se projeta em $f^{-1}(y)$ sobre um ponto genérico $z$ de uma componente irredutível de $f^{-1}(y)$ que contém $x$, em virtude de (4.2.6); logo, $f'$ é universalmente aberto no ponto $z'$. Por fim, decorre de (4.7.11) que $\sh{F}'_{y'}$ é geometricamente reduzido no ponto $x'$. Vemos, assim, que basta demonstrar o seguinte lema.
+
+\oldpage[IV-3]{227}
+\begin{lemma}[15.2.2.1]
+\label{IV.15.2.2.1}
+Sejam $Y=\operatorname{Spec}(A)$ o espectro de um anel de valuação discreta, $y$ seu ponto fechado, $f:X\to Y$ um morfismo localmente de tipo finito, $x$ um ponto de $f^{-1}(y)$ e $\sh{F}$ um $\sh{O}_X$-módulo coerente. Suponhamos satisfeitas as seguintes condições:
+\begin{enumerate}[label=(\roman*)]
+  \item $\operatorname{Supp}(\sh{F})=X$.
+  \item $f$ é aberto nos pontos genéricos das componentes irredutíveis de $f^{-1}(y)$ que contêm $x$.
+  \item $\sh{F}_y=\sh{F}\otimes_{\sh{O}_y}\mathbf{k}(y)$ é reduzido no ponto $x$ (3.2.2).
+\end{enumerate}
+Então $\sh{F}$ é $f$-plano no ponto $x$.
+\end{lemma}
+
+Seja $t$ um uniformizante de $A$; ponhamos $B=\sh{O}_x$ e $\sh{F}_x=M$. A condição (i) implica $\operatorname{Supp}(M)=\operatorname{Spec}(B)$ ($\textbf{I}$, 9.1.13). Pela condição (ii) e por (14.3.2), toda componente irredutível de $X$ que contém $x$ domina $Y$; em outras palavras, a imagem inversa em $A$ de cada ideal primo minimal $\mathfrak p_i$ de $B$ é $0$, o que também significa que $t\notin\mathfrak p_i$ para todo $i$. Finalmente, (iii) significa que $M/tM$ é um $(B/tB)$-módulo \emph{reduzido} (3.2.2). Devemos mostrar que, nessas condições, $M$ é um $A$-módulo \emph{livre de torção} ($\mathbf{0}_{\mathrm I}$, 6.3.4). Para isso, evidentemente basta mostrar que $t$ é um elemento $M$-\emph{regular}; mas isso decorre de (3.4.6.1).
+\end{proof}
+
+\begin{corollary}[15.2.3]
+\label{IV.15.2.3}
+Sejam $Y$ um pré-esquema localmente noetheriano, $f:X\to Y$ um morfismo localmente de tipo finito, $x$ um ponto de $X$ e $y=f(x)$. Suponhamos satisfeitas as seguintes condições:
+\begin{enumerate}[label=(\roman*)]
+  \item $f$ é universalmente aberto nos pontos genéricos das componentes irredutíveis de $f^{-1}(y)$ que contêm $x$.
+  \item $f^{-1}(y)$ é geometricamente reduzido sobre $\mathbf{k}(y)$ no ponto $x$ (4.6.9).
+  \item O anel $\sh{O}_y$ é reduzido.
+\end{enumerate}
+Nessas condições, $f$ é plano no ponto $x$.
+\end{corollary}
+
+Basta aplicar (15.2.2) a $\sh{F}=\sh{O}_X$ (4.6.22).
+
+\begin{remarks}[15.2.4]
+\label{IV.15.2.4}
+\begin{enumerate}[label=(\roman*)]
+  \item As três primeiras condições de (15.2.2) não se alteram quando se substitui $f$ por $f_{\mathrm{red}}$; mas, se $\mathfrak N$ é o nilradical de um anel local noetheriano $A$, então $A/\mathfrak N$ é plano sobre $A/\mathfrak N$, mas não sobre o próprio $A$ quando $\mathfrak N\ne0$ (Bourbaki, \emph{Alg. comm.}, cap.~II, \S~3, n\textsuperscript{o}~2, cor.~2 da prop.~5). Vemos, portanto, que não se pode suprimir a condição (iv) em (15.2.2).
+
+  \item Decorre de (2.4.6) que, se a conclusão de (15.2.2) e a hipótese (i) são verdadeiras, $f$ é universalmente aberto em uma vizinhança de $x$ e, em particular, nos pontos genéricos das componentes irredutíveis de $f^{-1}(y)$ que contêm $x$. Mesmo quando (i), (iii) e (iv) se verificam, não se pode substituir (ii) pela hipótese mais fraca de que $f$ seja universalmente aberto \emph{apenas no ponto $x$}. É o que mostra o exemplo (14.1.3, (i)), no qual $f$ é evidentemente universalmente aberto em todo ponto de $X_2$ e, portanto, no ponto $x$, interseção de $X_1$ e $X_2$; as condições (ii) e (iii) de (15.2.3) também se verificam nesse exemplo. Contudo, $\sh{O}_x$ não é um $\sh{O}_y$-módulo livre de torção: $\sh{O}_y$ identifica-se com um subanel de $\sh{O}_x$ que contém divisores de zero em $\sh{O}_x$. Logo, $f$ não é plano no ponto $x$.
+
+  \item Em (15.2.3), a conclusão já não é necessariamente válida quando se substitui a hipótese (ii) pela hipótese mais fraca de que $f^{-1}(y)$, considerado como $\mathbf{k}(y)$-pré-esquema, não tenha ciclos primos associados imersos. Um exemplo se obtém tomando para $Y$ uma curva com uma cúspide $y$, por exemplo $Y=\operatorname{Spec}(K[S,T]/(S^3-T^2))$, onde $K$ é um corpo algebricamente fechado, e para $X$ sua normalização ($\textbf{II}$, 6.3.8). Se $s$ e $t$ são as classes de $S$ e $T$ em $A=K[S,T]/(S^3-T^2)$, verifica-se imediatamente que $X=\operatorname{Spec}(B)$, onde $B=K[s,t,u]$ e $u=t/s$ no corpo de frações de $A$; como $s=u^2$ e $t=u^3$, temos também $B=K[u]$, isomorfo ao anel de polinômios em uma indeterminada sobre $K$. O único ponto $x$ de $X$ sobre o ponto $y$ correspondente ao ideal maximal $(s)+(t)$ corresponde ao ideal maximal $(u)$; mas, como a classe $\bar u$ de $u$ em $\sh{O}_x/\mathfrak m_y\sh{O}_x$ satisfaz $\bar u^2=0$, a fibra $f^{-1}(y)$ não é um $\mathbf{k}(y)$-pré-esquema reduzido. Aqui, $f$ é finito, sobrejetivo e radicial e, portanto, um homeomorfismo universal (2.4.5), mas não é plano no ponto $x$: se $\sh{O}_x$ fosse um $\sh{O}_y$-módulo plano, seria um $\sh{O}_y$-módulo
+  \oldpage[IV-3]{228}
+  livre de posto $1$, gerado pelo elemento $1$ de $\sh{O}_x$ (Bourbaki, \emph{Alg. comm.}, cap.~II, \S~3, n\textsuperscript{o}~2, prop.~5), o que é absurdo.
+
+  \item Mostremos, por fim, que em (15.2.2) ou (15.2.3) não se pode substituir “geometricamente reduzido” por “reduzido”. Para isso, construiremos dois anéis $A$ e $A'$ com as seguintes propriedades:
+  \begin{enumerate}[label=\arabic*)]
+    \item $A$ é um anel local noetheriano, de ideal maximal $\mathfrak m$, um domínio integral, completo, de dimensão $1$ e geometricamente unirramificado.
+    \item $A'$ é o fecho integral de $A$, uma $A$-álgebra finita cujo ideal maximal é $\mathfrak mA'$ e cujo corpo residual $k'$ é uma extensão radicial finita não trivial do corpo residual $k=A/\mathfrak m$ de $A$.
+  \end{enumerate}
+  Podemos então tomar $Y=\operatorname{Spec}(A)$, $X=\operatorname{Spec}(A')$, $\sh{F}=\sh{O}_X$, sendo $y$ e $x$ os pontos fechados de $Y$ e $X$, respectivamente. As hipóteses (i) e (iv) de (15.2.2) verificam-se trivialmente; como $A$ tem dimensão $1$, $f:X\to Y$ é radicial, finito e sobrejetivo, logo um homeomorfismo universal (2.4.5), o que prova a hipótese (i) de (15.2.3). Além disso, $f^{-1}(y)$ é reduzido. Contudo, $f$ não é plano no ponto $x$: se $A'$ fosse um $A$-módulo plano, seria um $A$-módulo livre de posto $1$, pois tem o mesmo corpo de frações de $A$, gerado pelo elemento $1$ de $A$ (Bourbaki, \emph{Alg. comm.}, cap.~II, \S~3, n\textsuperscript{o}~2, prop.~5), o que é absurdo.
+
+  Para construir $A$ e $A'$, partamos de um corpo imperfeito $k$ de característica $p>0$. Seja $K_0=k((T))$ o corpo das séries formais de Laurent em $T$ sobre $k$, e seja $A_0$ seu anel de valuação associado à valuação discreta dada pela \emph{ordem} dessas séries; o corpo residual de $A_0$ é $k$. Seja $\alpha\in k$ um elemento que não é uma potência $p$-ésima e ponhamos $k'=k(\alpha^{1/p})$. Então $K=k'((T))$ é uma extensão radicial finita de $K_0$, e $A'=A_0\otimes_k k'$ é o anel de valuação discreta de $K$ associado à ordem das séries formais sobre $K$. Se $\mathfrak m'$ é o ideal maximal de $A'$, as condições 1) e 2) são satisfeitas tomando-se $A=A_0+\mathfrak m'$. Com efeito, como $A_0$ é noetheriano e $A'$ é um $A_0$-módulo de tipo finito, $A$ é uma $A_0$-álgebra finita e, portanto, um anel noetheriano. Como $A'$ é finito sobre $A$, $\mathfrak m'$ é o único ideal maximal de $A$; assim, $A$ é um anel local completo, evidentemente de dimensão $1$ por ser finito sobre $A_0$, e geometricamente unirramificado, pois $A'$ é integralmente fechado e tem o mesmo corpo de frações $K$ de $A$.
+
+  \item A demonstração de (15.2.2) mostra, contudo, que se pode enfraquecer a condição (iii), substituindo “geometricamente reduzido” por “reduzido”, quando se pode aplicar o critério valuativo de planicidade (11.8.1) usando apenas anéis de valuação discreta $A'$ cujo corpo residual $k'$ é separável sobre $\mathbf{k}(y)$. Com efeito, se $x'$ e $z'$ têm os mesmos significados de (15.2.2), as multiplicidades radiciais $\mu_i(\mathbf{k}(z')\mid k')$ e $\mu_i(\mathbf{k}(z)\mid\mathbf{k}(y))$ são iguais, por (4.7.3); portanto, por (4.7.9), $\operatorname{long}((\sh{F}_y)_z)$ e $\operatorname{long}((\sh{F}'_{y'})_{z'})$ são iguais, e voltamos ao caso em que $Y$ é o espectro de um anel de valuação discreta e $y$ seu ponto fechado. Por exemplo, obtém-se esse resultado mais forte quando $\sh{O}_y$ é unirramificado e dominado por um anel de valuação discreta cujo corpo residual é uma extensão separável de $\mathbf{k}(y)$, em virtude de (11.6.2).\footnote{A impressão cita (11.6.4), referência inexistente em \S~11.6; o resultado aplicável de descida unirramificada é o Corolário (11.6.2).} Esse é o caso, em particular, quando $\sh{O}_y$ é um anel regular, por (15.1.1.6). Mas, como Hironaka nos assinalou, há anéis locais noetherianos integralmente fechados, de dimensão $2$, provenientes de esquemas algébricos sobre corpos imperfeitos, que não satisfazem a condição precedente.
+\end{enumerate}
+\end{remarks}
+
+\subsection{Aplicações: critérios de redução e irredutibilidade}
+\label{subsection:IV.15.3}
+
+\begin{proposition}[15.3.1]
+\label{IV.15.3.1}
+Sejam $Y$ um pré-esquema localmente noetheriano, $f:X\to Y$ um morfismo localmente de tipo finito, $\sh{F}$ um $\sh{O}_X$-módulo coerente, $x$ um ponto de $X$ e $y=f(x)$.
+Suponhamos satisfeitas as condições (i), (ii) e (iii) de (15.2.2). Então:
+\begin{enumerate}[label=(\roman*)]
+  \item Existe uma vizinhança $U$ de $x$ em $X$ tal que $f|U$ é universalmente aberto e, para todo $x'\in U$, $\sh{F}_{f(x')}$ é geometricamente reduzido sobre $\mathbf{k}(f(x'))$ no ponto $x'$.
+  \item Se, além disso, $Y$ é reduzido no ponto $y$, existe uma vizinhança $U_1\subset U$ de $x$ tal que $\sh{F}|U_1$ é $f$-plano e reduzido.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\label{IV.15.3.1-proof}
+Levando em conta (\textbf{I}, 5.1.8), (4.2.7) e (4.7.11), nem as hipóteses nem a conclusão (i) do enunciado se alteram quando se substitui $Y$ por $Y_{\mathrm{red}}$ e $X$ por $X\times_Y Y_{\mathrm{red}}$; podemos, portanto, supor que $Y$ seja \emph{reduzido}. Resulta então de (15.2.2) que $\sh{F}$ é $f$-plano no ponto $x$ e, por (11.1.1), também em uma vizinhança de $x$; \emph{a fortiori}, $f$ é universalmente aberto nessa vizinhança (2.4.6). O fato de que $\sh{F}_{f(x')}$ seja então geometricamente reduzido no ponto $x'$
+\oldpage[IV-3]{229}
+para todos os pontos de uma vizinhança de $x$ decorre de (12.1.1, (vii)). A afirmação (ii) decorre do que precede e de (3.3.4).
+\end{proof}
+
+\begin{proposition}[15.3.2]
+\label{IV.15.3.2}
+Mantendo-se as notações de (15.3.1), suponhamos satisfeitas as condições (i), (ii) e (iii) de (15.2.2) e, além disso, que $f^{-1}(y)$ seja equidimensional no ponto $x$. Então $f$ é equidimensional no ponto $x$.
+\end{proposition}
+
+\begin{proof}
+\label{IV.15.3.2-proof}
+Temos, para todo $y'\in Y$, $\operatorname{Supp}(\sh{F}_{y'})=f^{-1}(y')$. Por hipótese, $\sh{F}_y$ é reduzido (e, portanto, satisfaz $(S_1)$) e equidimensional no ponto $x$. Em virtude de (12.1.1, (ii)), podemos, pois, supor que $\sh{F}_{f(x')}$ seja equidimensional e de dimensão constante $e=\dim_x(f^{-1}(y))$ no ponto $x'$ para todos os $x'\in U$; isso significa que $f^{-1}(f(x'))$ é equidimensional e de dimensão $e$ no ponto $x'$. Como, além disso, $\sh{F}|U$ é $f$-plano, resulta de (2.3.4) e (13.3.1, $a$) que $f$ é equidimensional no ponto $x$.
+\end{proof}
+
+\begin{corollary}[15.3.3]
+\label{IV.15.3.3}
+Mantendo-se as notações de (15.3.1), suponhamos satisfeitas as seguintes condições:
+\begin{enumerate}[label=(\roman*)]
+  \item $\operatorname{Supp}(\sh{F})=X$.
+  \item $f$ é universalmente aberto nos pontos genéricos das componentes irredutíveis de $f^{-1}(y)$ que contêm $x$.
+  \item $\sh{F}_y$ é geometricamente pontualmente integral sobre $\mathbf{k}(y)$ no ponto $x$ (4.6.22).
+  \item $Y$ é geometricamente unirramificado no ponto $y$.
+\end{enumerate}
+Então $x$ pertence a uma única componente irredutível de $X$.
+
+Se, além disso, $Y$ é integral no ponto $y$ e $\sh{F}=\sh{O}_X$, então $X$ é integral no ponto $x$ e $f$ é plano no ponto $x$.
+\end{corollary}
+
+\begin{proof}
+\label{IV.15.3.3-proof}
+Observemos primeiro que (i) e (iii) implicam que $x$ pertence a uma única componente irredutível $Z$ de $f^{-1}(y)$. Resulta, portanto, de (14.4.7) e (15.3.2) que, para toda componente irredutível $X_i$ de $X$ que contém $x$ (e, portanto, $Z$), a restrição $f_i$ de $f$ a $X_i$ é equidimensional no ponto $x$ e universalmente aberta no ponto genérico de $Z$. A primeira afirmação do enunciado decorre então de (15.1.3), e a segunda de (15.3.1).
+\end{proof}
+
+\begin{remarks}[15.3.4]
+\label{IV.15.3.4}
+\begin{enumerate}[label=(\roman*)]
+  \item O exemplo (14.4.10, (ii)) mostra que, em (15.3.3), não se pode suprimir a hipótese de que $Y$ seja geometricamente unirramificado no ponto $y$.
+  \item A observação (15.2.4, (v))\footnote{A impressão remete a (15.2.4, (vi)), mas a lista tem apenas os itens (i)--(v); o item (v) trata do enfraquecimento sob a regularidade de $\sh{O}_y$.} mostra que a conclusão de (15.3.3) permanece válida sob as seguintes hipóteses: $\sh{O}_y$ é regular, $\operatorname{Supp}(\sh{F})=X$ e $\sh{F}_y$ é integral no ponto $x$. Ignora-se se, nesse enunciado, se pode substituir a hipótese de que $\sh{O}_y$ seja regular pela de que seja geometricamente unirramificado, ou mesmo integral e integralmente fechado.
+\end{enumerate}
+\end{remarks}
+
+\subsection{Complementos sobre os morfismos de Cohen--Macaulay}
+\label{subsection:IV.15.4}
+
+\begin{proposition}[15.4.1]
+\label{IV.15.4.1}
+Sejam $Y$ um pré-esquema localmente noetheriano, $f:X\to Y$ um morfismo localmente de tipo finito, $\sh{F}$ um $\sh{O}_X$-módulo coerente tal que $\operatorname{Supp}(\sh{F})=X$, $x$ um ponto de $X$ e $y=f(x)$. Para todo $z\in X$, ponhamos $X_{f(z)}=f^{-1}(f(z))$ e $\sh{F}_{f(z)}=\sh{F}\otimes_{\sh{O}_{f(z)}}\mathbf{k}(f(z))$. Suponhamos que $\sh{F}$ seja $f$-plano no ponto $x$ e que $\sh{F}_y$ seja um $\sh{O}_{X_y}$-módulo de Cohen--Macaulay no ponto $x$. Então $f$ é
+\oldpage[IV-3]{230}
+equidimensional no ponto $x$.
+
+Com efeito, por (11.1.1) e (12.1.1, (vi)), existe uma vizinhança $U$ de $x$ tal que $\sh{F}|U$ é $f$-plano e, para todo $x'\in U$, $\sh{F}_{f(x')}$ é um $\sh{O}_{X_{f(x')}}$-módulo de Cohen--Macaulay no ponto $x'$; esta última propriedade implica que $\sh{F}_{f(x')}$ é equidimensional no ponto $x'$ e que $x'$ não pertence a nenhum ciclo primo associado imerso de $\sh{F}_{f(x')}$ ($\mathbf{0}_{\mathrm{IV}}$, 16.5.4). Além disso, em virtude de (12.1.1, (ii)), podemos supor que as dimensões das componentes irredutíveis de $\operatorname{Supp}(\sh{F}_{f(x')})|_{U\cap X_{f(x')}}$ tenham um mesmo valor independente de $x'$. Como $\operatorname{Supp}(\sh{F}_{f(x')})=X_{f(x')}$ por hipótese, resulta de (2.3.4) e (13.3.1, $a$) que $f$ é equidimensional no ponto $x$.
+\end{proposition}
+
+\begin{proposition}[15.4.2]
+\label{IV.15.4.2}
+Sejam $Y$ um pré-esquema localmente noetheriano, $f:X\to Y$ um morfismo localmente de tipo finito, $\sh{F}$ um $\sh{O}_X$-módulo coerente tal que $\operatorname{Supp}(\sh{F})=X$, $x$ um ponto de $X$ e $y=f(x)$. Suponhamos que $\sh{O}_y$ seja regular e que $\sh{F}$ seja um $\sh{O}_X$-módulo de Cohen--Macaulay no ponto $x$. Então, com as notações de (15.4.1), as seguintes condições são equivalentes:
+\begin{enumerate}[label=\emph{\alph*})]
+  \item $\sh{F}$ é $f$-plano no ponto $x$ e $\sh{F}_y$ é um $\sh{O}_{X_y}$-módulo de Cohen--Macaulay no ponto $x$.
+  \item $\sh{F}$ é $f$-plano no ponto $x$.
+  \item $f$ é universalmente aberto em uma vizinhança de $x$.
+  \item $f$ é aberto nos pontos genéricos das componentes irredutíveis de $X_y$ que contêm $x$.
+  \item $\dim(\sh{F}_x)=\dim(\sh{O}_y)+\dim((\sh{F}_y)_x)$.
+  \item[\emph{e}$'$)] $\dim(\sh{O}_{X,x})=\dim(\sh{O}_y)+\dim(\sh{O}_{X,x}\otimes_{\sh{O}_y}\mathbf{k}(y))$.
+\end{enumerate}
+Como $\operatorname{Supp}(\sh{F})=X$, as condições $e)$ e $e')$ são equivalentes por definição (5.1.12). A condição $a)$ implica trivialmente $b)$; $b)$ implica que $\sh{F}$ é $f$-plano nos pontos de uma vizinhança de $x$ (11.1.1), logo $b)$ implica $c)$ (2.4.6); $c)$ implica trivialmente $d)$, e $d)$ implica $e')$ por (14.2.1). Por fim, como $\sh{O}_y$ é regular e $\sh{F}_x$ é um $\sh{O}_{X,x}$-módulo de Cohen--Macaulay, resulta de (6.1.4) que $e)$ implica $a)$.
+\end{proposition}
+
+\begin{proposition}[15.4.3]
+\label{IV.15.4.3}
+Sejam $f:X\to Y$ um morfismo localmente de apresentação finita, $\sh{F}$ um $\sh{O}_X$-módulo de apresentação finita tal que $\operatorname{Supp}(\sh{F})=X$, $x$ um ponto de $X$ e $y=f(x)$. Então, com as notações de (15.4.1), as seguintes condições são equivalentes:
+\begin{enumerate}[label=\emph{\alph*})]
+  \item $\sh{F}$ é $f$-plano no ponto $x$ e $\sh{F}_y$ é um $\sh{O}_{X_y}$-módulo de Cohen--Macaulay no ponto $x$.
+  \item Existe uma vizinhança aberta $U$ de $x$ em $X$ e um $Y$-morfismo quase-finito $g:U\to Y'=Y[T_1,\ldots,T_n]$, com os $T_i$ indeterminados, tais que $\sh{F}|U$ é $g$-plano no ponto $x$.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+\label{IV.15.4.3-proof}
+Mostremos primeiro que $b)$ implica $a)$. Ponhamos $h:Y'\to Y$; o $\mathbf{k}(y)$-pré-esquema $Y_y'=h^{-1}(y)$ é regular ($\mathbf{0}_{\mathrm{IV}}$, 17.3.7). Sejam $A$ o anel local desse pré-esquema no ponto $y'=g(x)$, $k$ seu corpo residual e $B$ o anel local de $X_y$ no ponto $x$; ponhamos também $(\sh{F}_y)_x=M$, que é um $B$-módulo de tipo finito. A hipótese de que $g$ é quase-finito implica que $g_y:U_y\to Y_y'$\footnote{A impressão escreve $g_y:X_y\to Y_y'$, embora $g$ seja definido apenas em $U$; no ponto $x$, $U_y$ e $X_y$ têm o mesmo anel local.} também o é (\textbf{II}, 6.2.4); portanto, $M\otimes_A k$ é um $(B\otimes_A k)$-módulo de comprimento finito (\textbf{II}, 6.2.2). Como $M$ é um $A$-módulo plano por hipótese e $A$ é um anel de Cohen--Macaulay, $M$ é um $B$-módulo de Cohen--Macaulay (6.3.3). A planicidade de $\sh{F}$ em relação a $f$ no ponto $x$ decorre de sua planicidade em relação a $g$ e da planicidade de $h$ (2.1.6).
+
+Mostremos agora que $a)$ implica $b)$. Como a questão é local em $X$ e $Y$, podemos supor $X$ e $Y$ afins; usando (8.9.1) e (11.2.7), reduzimo-nos ao caso em que $X$ e $Y$ são noetherianos, levando em conta (6.7.1). A hipótese implica que $f$ é
+\oldpage[IV-3]{231}
+equidimensional no ponto $x$ (15.4.1), donde existe um morfismo quase-finito $g:U\to Y'$ tal que toda componente irredutível de $U$ domina $Y'$ (13.3.1, $b$) e tal que $g_y:U_y\to Y_y'$ é finito e sobrejetivo (13.3.1.1). Por outro lado, para provar que $\sh{F}|U$ é $g$-plano no ponto $x$, basta, como $h:Y'\to Y$ é plano, mostrar pelo critério de planicidade por fibras (11.3.10) que $\sh{F}_y$ é $g_y$-plano no ponto $x$. Mas, por hipótese, $\sh{F}_y$ é um $\sh{O}_{X_y}$-módulo de Cohen--Macaulay no ponto $x$, e $Y_y'$ é um pré-esquema \emph{regular}; além disso, como $g_y$ é finito e sobrejetivo, satisfaz a condição $e')$ de (15.4.2) em virtude de (5.6.10). Para concluir, basta então aplicar (15.4.2) a $g_y$ e $\sh{F}_y$.
+\end{proof}
