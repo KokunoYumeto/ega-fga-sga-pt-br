@@ -1,6 +1,6 @@
 # Direitos e disponibilidade
 
-Os direitos sobre as obras originais e sobre as contribuições protegidas a estas traduções e transcrições derivadas permanecem com seus respectivos titulares. Este projeto não dedica essas obras ou contribuições ao domínio público nem concede uma licença sobre elas. Os avisos de direitos de terceiros e as autorizações já concedidas continuam aplicáveis.
+Os direitos sobre as obras originais e sobre as contribuições protegidas a estas traduções e transcrições derivadas permanecem com seus respectivos titulares. Na medida em que o editor detenha direitos sobre a tradução, a transcrição, as correções e a composição produzidas por IA, ele os dedica ao domínio público sob CC0 1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/deed.pt-br); isso não afeta os direitos sobre as obras originais nem concede permissão para usá-las. Os avisos de direitos de terceiros e as autorizações já concedidas continuam aplicáveis.
 
 Estas edições são disponibilizadas gratuitamente, para fins não comerciais e exclusivamente educativos, sob a presunção de que os respectivos titulares dos direitos não se oporiam à disponibilidade gratuita destas traduções e transcrições, ao lado dos originais franceses no [NUMDAM](https://www.numdam.org/). Essa presunção não significa que uma autorização tenha sido obtida; o acesso gratuito aos originais não autoriza, por si só, sua tradução, adaptação ou republicação.
 
