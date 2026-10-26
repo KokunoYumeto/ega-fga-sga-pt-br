@@ -1,0 +1,154 @@
+\subsection{Apêndice: critérios valuativos de propriedade local}
+\label{subsection:IV.15.7}
+
+Este número dá complementos ao critério valuativo de propriedade demonstrado em (\textbf{II}, 7.3.10); ele é independente do restante do \S~15.
+
+\begin{definition}[15.7.1]
+\label{IV.15.7.1}
+Sejam $f:X\to Y$ um morfismo de pré-esquemas, $y$ um ponto de $Y$. Diz-se que $f$ é próprio no ponto $y$ se existe uma vizinhança aberta $U$ de $y$ em $Y$ tal que a restrição $f^{-1}(U)\to U$ de $f$ seja um morfismo próprio. Diz-se que uma parte $Z$ de $X$ é própria sobre $Y$ no ponto $y$ se existe uma vizinhança aberta $U$ de $y$ tal que $Z\cap f^{-1}(U)$ seja fechada em $f^{-1}(U)$ e própria sobre $U$ (\textbf{II}, 5.4.10) (o que equivale a dizer que, para todo subpré-esquema fechado de $X$ que tenha $Z$ como espaço subjacente, a restrição $Z\to Y$ de $f$ a $Z$ é própria no ponto $y$).
+\end{definition}
+
+Seja $g:Y'\to Y$ um morfismo qualquer; ponhamos $X'=X\times_Y Y'$, $f'=f_{(Y')}$ e, se $p:X'\to X$ é a projeção canônica, $Z'=p^{-1}(Z)$. Então, se $Z$ é própria sobre $Y$ no ponto $y$, $Z'$ é própria sobre $Y'$ em todo ponto $y'$ acima de $y$ (\textbf{II}, 5.4.2).
+
+\begin{proposition}[15.7.2]
+\label{IV.15.7.2}
+Sejam $Y$ um pré-esquema íntegro localmente noetheriano, $X$ um pré-esquema íntegro, $f:X\to Y$ um morfismo separado, dominante e de tipo finito, $y$ um ponto de $Y$. As condições seguintes são equivalentes:
+\begin{enumerate}[label=\emph{\alph*)}]
+  \item $f$ é próprio no ponto $y$.
+  \item Se $Y_1=\operatorname{Spec}(\sh{O}_y)$, $X_1=X\times_Y Y_1$, o morfismo $f_1=f_{(Y_1)}:X_1\to Y_1$ é próprio.
+  \item Todo anel de valoração discreta que tenha $R(X)$ como corpo de frações e domine $\sh{O}$ domina um anel local $\sh{O}_x$ de $X$ (caso em que se tem necessariamente $f(x)=y$).
+\end{enumerate}
+\end{proposition}
+
+\oldpage[IV-3]{243}
+\begin{proof}
+O fato de que a) implica b) resulta de (\textbf{II}, 5.4.2), e a implicação b) $\Rightarrow$ c) resulta de (\textbf{II}, 7.3.10). Resta, portanto, mostrar que c) acarreta a). Sendo a questão local sobre $Y$, podemos supor $Y$ afim, logo noetheriano. Em virtude do lema de Chow (\textbf{II}, 5.6.1), existem um pré-esquema íntegro $X'$, um morfismo projetivo $p:P\to Y$, uma imersão aberta dominante $j:X'\to P$ e um morfismo projetivo e birracional (logo sobrejetivo) $g:X'\to X$ tais que o diagrama
+\[
+\xymatrix{
+P\ar[d]_-{p} & X'\ar[l]_-{j}\ar[d]^-{g}\\
+Y & X\ar[l]^-{f}
+}
+\]
+seja comutativo. Como $X'$ é íntegro e $j$ dominante, $P$ é irredutível, e podemos, substituindo $P$ por $P_{\mathrm{red}}$, supor $P$ íntegro (\textbf{I}, 5.2.2 e \textbf{II}, 5.5.5, (vi)). Tudo se reduz a provar que existe uma vizinhança aberta $U$ de $y$ tal que $p^{-1}(U)\subset j(X')$, pois então a restrição de $j$ a
+\[
+j^{-1}\bigl(p^{-1}(U)\bigr)=g^{-1}\bigl(f^{-1}(U)\bigr)=V
+\]
+será um isomorfismo sobre $p^{-1}(U)$, logo a restrição $V\to U$ de $f\circ g$ será própria e, como a restrição $V\to f^{-1}(U)$ de $g$ é sobrejetiva, a restrição $f^{-1}(U)\to U$ de $f$ será própria (\textbf{II}, 5.4.3). Como $T=P-j(X')$ é fechado em $P$, $p(T)$ é fechado em $Y$, e basta mostrar que $y\notin p(T)$, ou ainda que todo $z'\in P$ tal que $p(z')=y$ \emph{pertence a} $j(X')$. Ora, o corpo das frações racionais $R(P)$ é igual a $R(X')$, logo a $R(X)$ por construção; como podemos nos limitar ao caso em que $z'$ não é o ponto genérico de $P$, existe um anel de valoração discreta $A$ que tem $R(X)$ como corpo de frações e domina $\sh{O}_{z'}$ (\textbf{II}, 7.1.7); como $p(z')=y$, $A$ domina também $\sh{O}_y$, logo, por hipótese, existe um $x\in X$ tal que $f(x)=y$ e que $A$ domine $\sh{O}_x$. Como $g$ é próprio, existe $x'\in X'$ tal que $g(x')=x$ e que $A$ domine $\sh{O}_{x'}$ (\textbf{II}, 7.3.10); logo $z'$ e $j(x')$ são dois pontos de $P$ cujos anéis locais $\sh{O}_z$ e $\sh{O}_{j(x')}=\sh{O}_{x'}$ são aparentados (\textbf{I}, 8.1.4); como $P$ é um esquema, isso acarreta $z'=j(x')$ (\textbf{I}, 8.2.2), o que conclui a demonstração.
+\end{proof}
+
+\begin{remark}[15.7.3]
+\label{IV.15.7.3}
+Podemos, em (15.7.2), suprimir a hipótese de que $Y$ é localmente noetheriano, substituindo, na condição c), os anéis de valoração discreta por anéis de valoração quaisquer; a demonstração permanece então inalterada, levando em conta (\textbf{II}, 7.3.10).
+\end{remark}
+
+\begin{corollary}[15.7.4]
+\label{IV.15.7.4}
+Sejam $Y$ um pré-esquema noetheriano, $f:X\to Y$ um morfismo separado de tipo finito, $Z$ uma parte de $X$ tal que os pontos maximais de seu fecho $\overline Z$ pertençam a $Z$ (o que ocorre quando $Z$ é finita, ou quando $Z$ é construtível ($\mathbf{0}_{\mathrm{III}}$, 9.2.2)). Seja $y$ um ponto de $Y$. As condições seguintes são equivalentes:
+\begin{enumerate}
+  \item[\rm a)] O conjunto $\overline Z$ é próprio sobre $Y$ no ponto $y$.
+  \item[\rm b)] Se $Y_1=\operatorname{Spec}(\sh{O}_y)$, $X_1=X\times_Y Y_1$, e se $g_1:X_1\to X$ é a projeção canônica e $Z_1=g_1^{-1}(Z)$, o fecho $\overline Z_1$ de $Z_1$ em $X_1$ é próprio sobre $Y_1$.
+  \item[\rm c)] Para todo esquema $Y'=\operatorname{Spec}(A')$, onde $A'$ é um anel de valoração discreta, e todo morfismo $g:Y'\to Y$ tal que a imagem $g(y')$ do ponto fechado $y'$ de $Y'$ seja $y$, tem-se a seguinte propriedade: pondo $X'=X\times_Y Y'$, $f'=f_{(Y')}:X'\to Y'$, $g'=g_{(X)}:X'\to X$, $Z'=g'^{-1}(Z)$, e designando por $\eta'$
+\oldpage[IV-3]{244}
+o ponto genérico de $Y'$, então, para todo ponto $x'\in Z'\cap f'^{-1}(\eta')$ racional sobre $\mathbf k(\eta')$, existe uma $Y'$-seção de $X'$ que contém $x'$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+O fato de que a) acarreta b) resulta de que $\overline Z_1\subset g_1^{-1}(\overline Z)$ e de que $g_1^{-1}(\overline Z)$ é próprio sobre $Y_1$ (15.7.1). O fato de que b) acarreta c) resulta de (\textbf{II}, 7.3.3). Resta, portanto, ver que c) implica a). Basta evidentemente provar que toda componente irredutível de $\overline Z$ é própria sobre $Y$ no ponto $y$, e a hipótese permite, portanto, limitar-se ao caso em que $Z$ se reduz a um só ponto $z$. Podemos evidentemente também, levando em conta (\textbf{I}, 5.2.2) e (\textbf{II}, 5.4.6), supor que $X$ e $Y$ são reduzidos, e depois (pela definição de uma parte própria (\textbf{II}, 5.4.10)) supor que $\overline Z=X=\overline{\{z\}}$ e (aplicando ainda (\textbf{I}, 5.2.2)) que $f$ é dominante, logo $X$ e $Y$ íntegros e noetherianos; deve-se então provar que $f$ é próprio no ponto $y$ de $Y$. Mostremos, para isso, que $f$ verifica a condição c) de (15.7.2). Seja $A'$ um anel de valoração discreta que tem $R(X)=\mathbf k(z)$ como corpo de frações e domina $\sh{O}_y$; com as notações de c), tem-se, portanto, $g(y')=y$, e $g(\eta')$ é o ponto genérico $\eta=f(z)$ de $Y$. Como, por definição, $\mathbf k(\eta')=\mathbf k(z)$, existe um $\mathbf k(\eta)$-morfismo $\operatorname{Spec}(\mathbf k(\eta'))\to\operatorname{Spec}(\mathbf k(z))$ que transforma $\eta'$ em $z$, logo uma $\mathbf k(\eta')$-seção de $f'^{-1}(\eta')$ (\textbf{I}, 3.3.14); se $z'$ é a imagem de $\eta'$ por essa seção, $z'$ é, portanto, racional sobre $\mathbf k(\eta')$ e $g'(z')=z$. Conclui-se, pois, da hipótese c) que existe uma $Y'$-seção $h'$ de $X'$ tal que $h'(\eta')=z'$; seja $h=g'\circ h':Y'\to X$ o $Y$-morfismo correspondente, e seja $x=h(y')$; é claro que $f(x)=y$ e que $A'=\sh{O}_{y'}$ domina $\sh{O}_x$, o que conclui a demonstração.
+\end{proof}
+
+\begin{corollary}[15.7.5]
+\label{IV.15.7.5}
+Sejam $Y$ um pré-esquema localmente noetheriano, $f:X\to Y$ um morfismo separado de tipo finito, $y$ um ponto de $Y$. As condições seguintes são equivalentes:
+\begin{enumerate}
+  \item[\rm a)] $f$ é próprio no ponto $y$.
+  \item[\rm b)] Se $Y_1=\operatorname{Spec}(\sh{O}_y)$, $X_1=X\times_Y Y_1$, o morfismo $f_1=f_{(Y_1)}:X_1\to Y_1$ é próprio.
+  \item[\rm c)] Para todo esquema $Y'=\operatorname{Spec}(A')$, onde $A'$ é um anel de valoração discreta, e todo morfismo $g:Y'\to Y$ tal que a imagem $g(y')$ do ponto fechado $y'$ de $Y'$ seja $y$, tem-se a seguinte propriedade: pondo $X'=X\times_Y Y'$, $f'=f_{(Y')}:X'\to Y'$ e designando por $\eta'$ o ponto genérico de $Y'$, então, para todo $x'\in f'^{-1}(\eta')$ racional sobre $\mathbf k(\eta')$, existe uma $Y'$-seção de $X'$ que contém $x'$.
+\end{enumerate}
+\end{corollary}
+
+\begin{corollary}[15.7.6]
+\label{IV.15.7.6}
+Sejam $Y$ um pré-esquema localmente noetheriano, $f:X\to Y$ um morfismo de tipo finito. As condições seguintes são equivalentes:
+\begin{enumerate}
+  \item[\rm a)] Existem um morfismo próprio $g:X\to Z$ e uma imersão $h:Z\to Y$ tais que $f=h\circ g$.
+  \item[\rm b)] O subespaço $f(X)$ é localmente fechado em $Y$ e, se $Z'$ é o subpré-esquema de $Y$ imagem fechada de $X$ por $f$ (\textbf{I}, 9.5.3 e 9.5.1) e $Z''$ o pré-esquema induzido por $Z'$ sobre o aberto $f(X)$ de $Z'$, de modo que $f$ se fatora de maneira única como $f=j\circ g$ (onde $j:Z''\to Y$ é a injeção canônica), então $g:X\to Z''$ é próprio.
+  \item[\rm c)] Para todo $y\in f(X)$, $f$ é próprio no ponto $y$.
+  \item[\rm d)] Para todo esquema $Y'=\operatorname{Spec}(A')$, onde $A'$ é um anel de valoração discreta, e todo morfismo $g:Y'\to Y$ tal que $g(Y')\subset f(X)$, toda $Y'$-seção racional (\textbf{I}, 7.1.2) de $X'=X\times_Y Y'$ se prolonga de maneira única a uma $Y'$-seção de $X'$.
+\end{enumerate}
+\end{corollary}
+
+\begin{proof}
+É claro que b) acarreta a). Para ver que a) acarreta c), observemos primeiro que a) acarreta que $h(Z)$ é localmente fechado em $Y$ e $g(X)$ fechado em $Z$, logo $f(X)$ é localmente fechado em $Y$; para todo $y\in f(X)$ existe, por conseguinte, uma vizinhança aberta $U$
+\oldpage[IV-3]{245}
+de $y$ em $Y$ tal que $f(X)\cap U$ seja fechado em $U$; então a restrição $h^{-1}(U)\to U$ de $h$ é uma imersão fechada, e a restrição $f^{-1}(U)=g^{-1}(h^{-1}(U))\to h^{-1}(U)$ de $g$ é própria, logo a restrição $f^{-1}(U)\to U$ de $f$ é própria (\textbf{II}, 5.4.2). Para ver que c) acarreta b), notemos primeiro que, para todo $y\in f(X)$, existe, em virtude de c), uma vizinhança aberta $U$ de $y$ em $Y$ tal que $f(X)\cap U$ seja fechado em $U$, logo $f(X)$ é localmente fechado e, por conseguinte, aberto em seu fecho. Como este último é o espaço subjacente a $Z'$, e $f$ se fatora como $f=j_0\circ g_0$, onde $j_0:Z'\to Y$ é a injeção canônica e $g_0$ é um morfismo de $X$ em $Z'$, o fato de que $g_0(X)=Z''$ (que é aberto em $Z'$) acarreta a fatoração do enunciado de b); o fato de que $g$ é próprio resulta então do caráter local (sobre $Z''$) dessa propriedade e de (\textbf{II}, 5.4.3). É claro que c) implica d) em virtude de (15.7.5), resultando a unicidade do prolongamento de uma $Y'$-seção racional da hipótese de que $f$ é separado (\textbf{I}, 7.2.2). Provemos enfim que d) acarreta c); em primeiro lugar, resulta de d), levando em conta (\textbf{II}, 7.2.3 e 7.2.4), que $f$ é separado; podemos então aplicar o critério (15.7.5, c)), que mostra que $f$ é próprio em todo ponto de $f(X)$.
+\end{proof}
+
+\begin{remarks}[15.7.7]
+\label{IV.15.7.7}
+(i) Em (15.7.4, c)), (15.7.5, c)) e (15.7.6, d)), podemos restringir-nos ao caso em que o anel de valoração discreta $A'$ é \emph{completo} e tem corpo residual \emph{algebricamente fechado}. Com efeito, na demonstração de (15.7.4), se se considera um anel de valoração discreta completo $A''$ que domina $A'$ e tem corpo residual algebricamente fechado ($\mathbf{0}_{\mathrm{III}}$, 10.3.1), a hipótese c) é então verificada para $Y''=\operatorname{Spec}(A'')$, $X''=X\times_Y Y''$ e $f''=f_{(Y'')}$; mas $X''=X'\times_{Y'}Y''$, e resulta então da observação (\textbf{II}, 7.3.9, (i)) que $f'$ é próprio; por conseguinte, $Y'$, $X'$ e $f'$ verificam também a hipótese c) (\textbf{II}, 7.3.8).
+
+(ii) Levando em conta (\textbf{II}, 7.3.8), a condição c) de (15.7.5) pode ser substituída pela condição de que $f'$ seja \emph{próprio}.
+\end{remarks}
+
+\begin{env}[15.7.8]
+\label{IV.15.7.8}
+Diz-se que um morfismo de pré-esquemas $f:X\to Y$ é \emph{submersivo} se é sobrejetivo e se a topologia de $Y$ é igual ao quociente da topologia de $X$ pela relação de equivalência definida por $f$. Diz-se que $f$ é \emph{universalmente submersivo} se, para toda mudança de base $Y'\to Y$, o morfismo $f'=f_{(Y')}:X\times_Y Y'\to Y'$ é submersivo. Todo morfismo sobrejetivo \emph{universalmente aberto}, ou \emph{universalmente fechado}, ou \emph{fielmente plano e quase-compacto} é universalmente submersivo (2.3.12). Dado um morfismo $f:X\to Y$, diz-se que um subconjunto $Z$ de $X$ é \emph{submersivo sobre $f(Z)$} se a topologia do subespaço $f(Z)$ de $Y$ é quociente da topologia do subespaço $Z$ de $X$ pela relação de equivalência definida por $f|Z$. Diz-se que $Z$ é \emph{universalmente submersivo sobre $f(Z)$} se, para toda mudança de base $g:Y'\to Y$, a imagem recíproca $Z'=p^{-1}(Z)$ de $Z$ pela projeção $p:X\times_Y Y'\to Y'$ é um conjunto submersivo sobre $f'(Z')=g^{-1}(f(Z))$. Note-se que, se o morfismo $f$ admite uma $Y$-seção $h:Y\to X$, todo conjunto $Z$ que contém $h(Y)$ é \emph{universalmente submersivo sobre $Y$}.
+\end{env}
+
+\begin{proposition}[15.7.9]
+\label{IV.15.7.9}
+Sejam $Y$ um pré-esquema localmente noetheriano, $y$ um ponto de $Y$, $f:X\to Y$ um morfismo separado de tipo finito. Seja $Z$ uma parte localmente construtível de $X$ com as seguintes propriedades:
+\begin{enumerate}
+  \item[\rm (i)] Para toda generalização $y'$ de $y$, $Z_{y'}=Z\cap f^{-1}(y')$ é uma componente conexa de $f^{-1}(y')$ e é geometricamente conexa sobre $\mathbf k(y')$ (4.5.2).
+\oldpage[IV-3]{246}
+  \item[\rm (ii)] $Z_y$ é própria sobre $\operatorname{Spec}(\mathbf k(y))$.
+  \item[\rm (iii)] $Z$ é universalmente submersiva sobre $f(Z)$ (15.7.8).
+\end{enumerate}
+Então $Z$ é própria sobre $Y$ no ponto $y$ (em outras palavras (15.7.1), existe uma vizinhança aberta $U$ de $y$ tal que $Z\cap f^{-1}(U)$ seja fechada em $f^{-1}(U)$ e própria sobre $U$).
+\end{proposition}
+
+\begin{proof}
+Utilizando o método de (8.1.2, a)) e (8.10.5, (xii)), somos reconduzidos a provar que, quando $Y=\operatorname{Spec}(A)$ é o espectro de um anel \emph{local} noetheriano, as hipóteses (i), (ii) e (iii) acarretam que $Z$ é \emph{própria} sobre $Y$.
+
+Notemos primeiro que, se $A'$ é um anel local noetheriano, $\varphi:A\to A'$ um homomorfismo local, $Y'=\operatorname{Spec}(A')$ e $g:Y'\to Y$ o morfismo correspondente a $\varphi$, a imagem recíproca $Z'$ de $Z$ pela projeção canônica $p:X\times_Y Y'\to X$ tem, relativamente a $Y'$, as propriedades (i), (ii), (iii) do enunciado, levando em conta (1.8.2); utilizando (2.7.1, (vii)), é, portanto, a mesma coisa demonstrar que $Z'$ é própria sobre $Y'$, contanto que $A'$ seja um $A$-módulo \emph{fielmente plano}. Vamos utilizar esta observação tomando $A'=\widehat A$ ($\mathbf{0}_{\mathrm{I}}$, 7.3.5); em outras palavras, podemos limitar-nos ao caso em que $A$ é \emph{completo}. Como $Z_y$ é uma componente conexa de $f^{-1}(y)$, própria sobre $\mathbf k(y)$, resulta de (\textbf{III}, 5.5.2) que $X$ é \emph{soma} de dois subpré-esquemas $X_0$, $X_1$ induzidos sobre partes abertas e fechadas de $X$, tais que $X_0$ seja próprio sobre $Y$ e que $X_0\cap f^{-1}(y)=Z_y$. Ponhamos $Z_0=X_0\cap Z$, $Z_1=X_1\cap Z$, de modo que esses conjuntos formam uma partição de $Z$ em duas partes abertas e fechadas em $Z$. Como os $Z_{y'}$ são conexos, tem-se necessariamente $Z_{y'}\subset Z_0$ ou $Z_{y'}\subset Z_1$, logo $f(Z_0)\cap f(Z_1)=\varnothing$. Mas, como $Z_0$ e $Z_1$ são saturados para a relação de equivalência definida por $f|Z$, resulta de (iii) que $f(Z_0)$ e $f(Z_1)$ são abertos em $f(Z)$. Mas $f(Z_0)$ contém $y$, e toda vizinhança de $y$ em $Y$ é igual a $Y$, logo $f(Z_0)=f(Z)$ e, por conseguinte, $f(Z_1)=\varnothing$, logo $Z_1=\varnothing$ e $Z\subset X_0$.
+
+Podemos, portanto, doravante supor além disso que $f$ é \emph{próprio}, e resta provar que $Z$ é fechada em $X$. Em outras palavras, bastará provar que uma parte \emph{construtível} $Z$ de um pré-esquema $X$ \emph{próprio} sobre $Y$ que satisfaz \emph{apenas as duas condições} (i) e (iii) é \emph{fechada} em $X$. Em virtude de ($\mathbf{0}_{\mathrm{III}}$, 9.2.5), basta, portanto, provar que, para todo $x'\in Z$ e toda especialização $x$ de $x'$ em $X$, tem-se $x\in Z$. Sejam $A_1$ um anel de valoração discreta \emph{completo}, $u$ um morfismo de $Y_1=\operatorname{Spec}(A_1)$ em $X$ tal que, se $y_1$ e $y_1'$ são o ponto fechado e o ponto genérico de $Y_1$, se tenha $u(y_1)=x$, $u(y_1')=x'$ (\textbf{II}, 7.1.7); ponhamos $g=f\circ u:Y_1\to Y$ e $X_1=X\times_Y Y_1$; existe uma $Y_1$-seção $u_1:Y_1\to X_1$ de $f_1=f_{(Y_1)}$ tal que $u=p\circ u_1$, onde $p:X_1\to X$ é a projeção canônica. Se $x_1=u_1(y_1)$, $x_1'=u_1(y_1')$, tem-se, portanto, $p(x_1)=x$ e $p(x_1')=x'$, e $x_1$ é uma especialização de $x_1'$. Além disso, tem-se $x_1'\in Z_1=p^{-1}(Z)$; como observamos que as condições (i) e (iii) são estáveis por \emph{toda} mudança de base, assim como a propriedade de ser construtível, vê-se que somos reconduzidos à seguinte situação: $Y$ é o espectro de um anel de valoração discreta completo, $X$ é próprio sobre $Y$, $f(x)=y$ é o ponto fechado de $Y$, $y'=f(x')$ seu ponto genérico, existe uma $Y$-seção $h$ de $X$ tal que $h(y)=x$, $h(y')=x'$ e, enfim, tem-se $x'\in Z$; deve-se provar que $x\in Z$. Ora, $Z_y$ é uma componente conexa de $f^{-1}(y)$, \emph{própria} sobre $\operatorname{Spec}(\mathbf k(y))$, visto que $X$ é próprio sobre $Y$. Aplicando novamente (\textbf{III}, 5.5.2), vê-se, como acima, que há uma parte aberta e fechada $X'$ de $X$ tal que $X'\cap f^{-1}(y)=Z_y$; como $Z_y$ é conexa,
+\oldpage[IV-3]{247}
+podemos supor $X'$ conexa (substituindo, se necessário, $X'$ por aquela de suas componentes conexas que contém $Z_y$). Mas então o mesmo raciocínio do início prova que se tem necessariamente $Z\subset X'$; como $h(Y)$ é conexo e contém $x'$, ele está necessariamente contido em $X'$, logo $x=h(y)\in X'\cap f^{-1}(y)=Z_y$. C.Q.D.
+\end{proof}
+
+\begin{corollary}[15.7.10]
+\label{IV.15.7.10}
+Sejam $Y$ um pré-esquema localmente noetheriano, $f:X\to Y$ um morfismo separado de tipo finito, universalmente submersivo (15.7.8) e tal que todas as fibras $X_y=f^{-1}(y)$ sejam geometricamente conexas. Então, se $y\in Y$ é tal que $X_y$ seja próprio sobre $\mathbf k(y)$, $f$ é próprio no ponto $y$.
+\end{corollary}
+
+\begin{proof}
+Levando em conta (15.7.5), somos reconduzidos ao caso em que $Y=\operatorname{Spec}(\sh{O}_y)$, visto que as hipóteses são estáveis por mudança de base. Mas, nesse caso, basta aplicar (15.7.9) a $Z=X$.
+\end{proof}
+
+\begin{corollary}[15.7.11]
+\label{IV.15.7.11}
+Seja $f:X\to Y$ um morfismo separado de apresentação finita; suponhamos que exista um morfismo sobrejetivo de apresentação finita $g:Y'\to Y$, que seja além disso próprio ou plano, e tal que, pondo $X'=X\times_Y Y'$, exista uma $Y'$-seção de $X'$ (ou ainda um $Y$-morfismo $Y'\to X$ (\textbf{I}, 3.3.14)). Suponhamos, enfim, que as fibras $X_y=f^{-1}(y)$ sejam geometricamente conexas. Então o conjunto $U$ dos $y\in Y$ tais que $X_y$ seja próprio sobre $\mathbf k(y)$ é aberto em $Y$, e a restrição $f^{-1}(U)\to U$ de $f$ é própria.
+\end{corollary}
+
+\begin{proof}
+Sendo a questão local sobre $Y$, podemos supor $Y=\operatorname{Spec}(A)$ afim. Aplicando (8.9.1) a $f$ e a $g$, vê-se que existem um subanel noetheriano $A_0$ de $A$ e dois morfismos de tipo finito $f_0:X_0\to Y_0=\operatorname{Spec}(A_0)$, $g_0:Y_0'\to Y_0$ tais que $X=X_0\times_{Y_0}Y$, $Y'=Y_0'\times_{Y_0}Y$, $f=(f_0)_{(Y)}$ e $g=(g_0)_{(Y)}$; além disso, utilizando (8.10.5, (v), (vi) e (xii)) e (11.2.7), podemos supor $f_0$ separado, $g_0$ sobrejetivo e próprio (resp. plano) se $g$ é próprio (resp. plano); utilizando (8.8.2), podemos ainda supor que existe uma $Y_0'$-seção de $X_0$. Por outro lado, utilizando (9.7.7), podemos aplicar (9.3.3) à propriedade de ser geometricamente conexo, e podemos, portanto, supor $A_0$ escolhido de modo que os $f_0^{-1}(y_0)$ sejam geometricamente conexos para todo $y_0\in Y_0$. Enfim, utilizando (2.7.1, (vii)), é a mesma coisa dizer que $f^{-1}(y)$ é próprio sobre $\mathbf k(y)$ ou que $f_0^{-1}(y_0)$ é próprio sobre $\mathbf k(y_0)$, onde $y_0$ é a projeção de $y$ em $Y_0$. Essas observações mostram que somos reconduzidos a demonstrar o corolário quando $Y$ é \emph{noetheriano}. Notemos agora o
+
+\begin{lemma}[15.7.11.1]
+\label{IV.15.7.11.1}
+Sejam $f:X\to Y$ um morfismo, $g:Y'\to Y$ um morfismo sobrejetivo, que é além disso próprio ou plano e quase-compacto. Ponhamos $X'=X\times_Y Y'$, $f'=f_{(Y')}:X'\to Y'$. Então, se $f'$ é submersivo (resp. universalmente submersivo), o mesmo ocorre com $f$.
+\end{lemma}
+
+\begin{proof}
+Podemos limitar-nos ao caso em que $f'$ é submersivo. Com efeito, suponhamos o lema provado nesse caso e mostremos que, se $f'$ é universalmente submersivo, $f$ também o é. Seja, pois, $Y_1\to Y$ um morfismo qualquer, e ponhamos $Y_1'=Y'\times_Y Y_1$; se $X_1'=X'\times_{Y'}Y_1'$ e $f_1'=(f')_{(Y_1')}:X_1'\to Y_1'$, $f_1'$ é submersivo por hipótese; além disso, o morfismo $g_1:Y_1'\to Y_1$ é sobrejetivo, e próprio (resp. plano e quase-compacto) se $g$ o é. Logo, pondo $X_1=X\times_Y Y_1$, $f_1=f_{(Y_1)}$, resulta da hipótese e do fato de que $X_1'=X_1\times_{Y_1}Y_1'$ que $f_1$ é submersivo, logo $f$ é universalmente submersivo. Suponhamos, pois, somente que $f'$ seja submersivo. É claro, antes de tudo, que $f$ é sobrejetivo. Seja $E$ uma parte de $Y$ tal que $f^{-1}(E)$ seja fechada em $X$; então, se $p:X'\to X$ é a projeção canônica,
+\oldpage[IV-3]{248}
+$p^{-1}(f^{-1}(E))=f'^{-1}(g^{-1}(E))$ é fechada em $X'$, logo, como $f'$ é submersivo, $g^{-1}(E)$ é fechada em $Y'$; mas, como $g$ é também universalmente submersivo (15.7.8), $E$ é fechada em $Y$, o que prova o lema.
+\end{proof}
+
+Isto posto, como existe por hipótese uma $Y'$-seção de $X'$, $f'$ é universalmente submersivo (15.7.8), logo o mesmo ocorre com $f$, segundo o lema (15.7.11.1). Basta então aplicar (15.7.10), observando que o conjunto dos $y\in Y$ tais que $f$ seja próprio em $y$ é, por definição, aberto em $Y$.
+\end{proof}
+
+\begin{center}
+\emph{(Continua.)}
+\end{center}
