@@ -1,10 +1,5 @@
-# Purpose and use
+# Finalidade e uso
 
-This is an independent, non-commercial, educational edition. It was made and paid for privately by its
-maintainer, so that people can read the works of Alexander Grothendieck and his collaborators in their own
-language. Nothing here is sold, and no revenue is collected. The aim is to turn this material into open teaching
-resources, including public lesson plans.
+Esta é uma edição independente, sem fins comerciais e educativa. Seu responsável a realizou e a custeou por conta própria, para que as pessoas possam ler as obras de Alexander Grothendieck e de seus colaboradores na própria língua. Nada aqui é vendido e nenhuma receita é obtida. O objetivo é transformar este material em recursos abertos de ensino, inclusive planos de aula públicos.
 
-The original works remain their authors' work, and the rights in them remain with their holders; this edition
-claims no ownership of the originals. The original texts are freely readable elsewhere, for example on Numdam and
-arXiv.
+As obras originais continuam sendo de seus autores, e os direitos sobre elas continuam com seus titulares; esta edição não reivindica a propriedade dos originais. Os textos originais podem ser lidos gratuitamente em outros lugares, por exemplo no Numdam e no arXiv.

@@ -1,89 +1,136 @@
-# Fundamentos da geometria algébrica — português brasileiro
+# EGA, FGA e SGA em português brasileiro: traduções de obras de Grothendieck
 
-Relatórios149,182,190,195,212,221,232,236 do Seminário Bourbaki, de Alexandre Grothendieck, com as erratas, os suplementos e os comentários de1962. Tradução, correções e composição em português brasileiro produzidas por AI; o responsável pela publicação não traduziu o texto.
+Traduções para o português brasileiro de obras de Alexander Grothendieck e de seus colaboradores: os *Fondements de
+la géométrie algébrique* (FGA), completos; partes dos *Éléments de géométrie algébrique* (EGA, redigidos com a
+colaboração de Jean Dieudonné): EGA III, primeira parte, e EGA IV, terceira parte, completas, EGA II e o capítulo I
+de EGA I em fontes LaTeX, e seções isoladas de outras partes; e partes do *Séminaire de géométrie algébrique du Bois
+Marie* (SGA): SGA 4½ (*Cohomologie étale*, de Pierre Deligne) completo, as exposições VIII e IX de SGA 3 e as
+exposições III, III B, X e XV de SGA 5.
 
-- [Volume integral — edição corrigida — PDF, 155 páginas](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/001_FGA_PTBR_CURRENT.pdf) · [fontes LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/tree/main/editions/FGA_PTBR_CURRENT/)
-- [Parte A — edição corrigida — PDF, 83 páginas](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/004_FGA_PTBR_A_CURRENT.pdf) · [fontes LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/tree/main/editions/FGA_PTBR_A_CURRENT/)
-- [Parte B — edição corrigida — PDF, 74 páginas](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/007_FGA_PTBR_B_CURRENT.pdf) · [fontes LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/tree/main/editions/FGA_PTBR_B_CURRENT/)
-- [Volume integral — edição diplomática — PDF, 153 páginas](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/010_FGA_PTBR_PRINTED.pdf) · [fontes LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/tree/main/editions/FGA_PTBR_PRINTED/)
-- [Parte A — edição diplomática — PDF, 83 páginas](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/013_FGA_PTBR_A_PRINTED.pdf) · [fontes LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/tree/main/editions/FGA_PTBR_A_PRINTED/)
-- [Parte B — edição diplomática — PDF, 72 páginas](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/016_FGA_PTBR_B_PRINTED.pdf) · [fontes LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/tree/main/editions/FGA_PTBR_B_PRINTED/)
+## Como foi feito
 
-[Fontes e autoria](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/blob/main/editions/FGA_PTBR_CURRENT/SOURCES.md) · [Direitos](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/blob/main/editions/FGA_PTBR_CURRENT/RIGHTS_NOTICE.md).
+A tradução, as correções e a composição são produzidas por IA. Os trabalhos documentados são de OpenAI Codex:
+GPT-6 Astra (esforço Ultra) nas correções, e GPT-5.6 Sol (esforço Ultra) na tradução de SGA 4½ e na montagem e
+revisão das edições de EGA III, primeira parte. Para trabalhos anteriores, os registros não indicam o modelo.
 
-Cada leitor inclui o LaTeX direto e o pacote completo de fontes editáveis. A parte A reúne os relatórios149,182,190,195; a parte B reúne os relatórios212,221,232,236 e os comentários de1962.
+Textos de referência: para EGA II, a tradução inglesa humana do projeto ryankeleti/ega; para FGA, a tradução inglesa
+de Tim Hosgood; para SGA 3, o texto francês da reedição de Philippe Gille e Patrick Polo; para SGA 4½, a edição
+francesa impressa de 1977, com a edição espanhola como testemunho de tradução (veja «Fontes e créditos»).
 
-# EGA, FGA e SGA em português brasileiro
+Várias obras têm duas edições separadas: a edição corrigida (ou atual), com as correções registradas, e a edição
+diplomática, que segue o texto impresso. Os leitores de EGA III, primeira parte, foram compilados de forma reproduzível e
+inspecionados página por página; os de SGA 4½ foram reproduzidos byte a byte.
 
-## EGA II: fontes editáveis
+## Estado
 
-[Texto da edição corrigida](editions/EGA_II_current/README.md) · [tradução diplomática](editions/EGA_II_diplomatic/README.md). [Fontes e contribuições](ATTRIBUTION_EGA_II.md).
+A coleção é parcial: FGA e SGA 4½ estão completos; EGA e as outras partes de SGA, em parte (veja «Conteúdo»). Pode
+haver erros.
 
-Traduções matemáticas independentes, em uma coleção de cobertura parcial. Os arquivos de fonte e os registros de correção acompanham os leitores; a coleção não se apresenta como tradução completa de todos os volumes.
+## Outras edições de EGA, FGA e SGA
 
-## EGA IV-2: começar a leitura
+EGA:
 
-- [Leitor corrente: seções 2.1 e 2.8](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-09-07-preview.1/EGA_IV2_PTBR_CURRENT.pdf).
-- [Leitor diplomático: seções 2.1 e 2.8](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-09-07-preview.1/EGA_IV2_PTBR_DIPLOMATIC.pdf).
+- Francês: [ega-fr](https://github.com/KokunoYumeto/ega-fr): transcrição completa do texto impresso, em edição
+  diplomática e edição corrigida.
+- Inglês: [ega-en](https://github.com/KokunoYumeto/ega-en): tradução completa (introdução, capítulos 0–IV).
+- Espanhol: [ega-fga-es](https://github.com/KokunoYumeto/ega-fga-es): EGA II, EGA III e EGA IV, partes 3 e 4; da
+  parte 1 de EGA IV, só o capítulo 0.
+- Vietnamita: [ega-fga-sga-vi](https://github.com/KokunoYumeto/ega-fga-sga-vi): EGA II, EGA III, primeira parte, e o
+  capítulo I de EGA I; outras partes só em seções isoladas.
+- Coreano: [ega-ko](https://github.com/KokunoYumeto/ega-ko): EGA I–III; da parte 1 de EGA IV, o capítulo 0,
+  §§14–23, e o capítulo IV, §1.
+- Chinês simplificado: [ega-zh-hans-cn](https://github.com/KokunoYumeto/ega-zh-hans-cn): EGA I–III; da parte 1 de
+  EGA IV, o capítulo 0, §§14–23, e o capítulo IV, §1.
 
-Cada leitor tem seis páginas, reúne as duas seções completas e conserva a numeração original. As seções 2.2 a 2.7 não estão incluídas. Os marcadores do PDF levam diretamente a cada seção. Os PDFs independentes de §2.1 e §2.8 também estão disponíveis.
+FGA: [fga-fr](https://github.com/KokunoYumeto/fga-fr) (francês, transcrição completa),
+[fga-en](https://github.com/KokunoYumeto/fga-en) (inglês), [ega-fga-es](https://github.com/KokunoYumeto/ega-fga-es)
+(espanhol), [ega-fga-sga-vi](https://github.com/KokunoYumeto/ega-fga-sga-vi) (vietnamita),
+[fga-ko](https://github.com/KokunoYumeto/fga-ko) (coreano) e
+[fga-zh-hans-cn](https://github.com/KokunoYumeto/fga-zh-hans-cn) (chinês simplificado): todas completas.
 
-A leitura corrente incorpora correções documentadas. A leitura diplomática preserva as leituras impressas traduzidas. Em §2.8, a única diferença entre os textos é a remissão (2.8.4.1), corrente, ou (2.8.3.1), impressa. O pacote R2 preserva as fontes e os controles da seção; o suplemento R3 modifica apenas a apresentação das capas vietnamitas, sem alterar o texto matemático.
+SGA:
 
-## Outros textos disponíveis
+- Inglês: [sga-en](https://github.com/KokunoYumeto/sga-en): completa (SGA 1–7 e SGA 4½); de SGA 6, só a última parte
+  foi conferida integralmente com o texto francês.
+- Espanhol: [sga-es](https://github.com/KokunoYumeto/sga-es): completa (SGA 1–7 e SGA 4½, treze livros).
+- Vietnamita: [ega-fga-sga-vi](https://github.com/KokunoYumeto/ega-fga-sga-vi): ainda sem volumes de SGA.
 
-- SGA 5: leitor de 323 páginas, `SGA5_PTBR_R4_20260829.pdf`.
-- FGA: exposés 212, 221, 232, 236 e comentários; leitores corrente e diplomático.
-- EGA III-1: `EGA_III_1_PTBR_FIRST_PUBLIC_CHECKPOINT.pdf`.
-- EGA IV-1: Capítulo 0, §14.
-- EGA I: §§7.3.1–7.3.7, nos leitores e suplementos identificados no manifesto.
+Todas as edições de EGA, FGA e SGA deste projeto estão listadas em
+[ega-fga-sga](https://github.com/KokunoYumeto/ega-fga-sga).
 
-Esses leitores, pacotes de fontes e controles anteriormente publicados permanecem disponíveis nesta versão, sem alteração. `CONTENT_MANIFEST.json` e `SHA256SUMS.txt` identificam exatamente todos os arquivos.
+## Conteúdo
 
-## Autoria e tradução
+### FGA
 
-EGA é de Alexander Grothendieck, redigido com a colaboração de Jean Dieudonné. Os textos FGA aqui reunidos são de Alexander Grothendieck. SGA 5 foi dirigido por Alexander Grothendieck, com a colaboração de Ion Bucur, Charles Houzel, Luc Illusie, Jean-Pierre Jouanolou e Jean-Pierre Serre; Luc Illusie editou o volume. Esses créditos dizem respeito às obras originais, não à aprovação destas traduções.
+Edição de 24 de outubro de 2026; cada leitor tem o LaTeX direto e o pacote completo de fontes editáveis.
 
-Tradução independente produzida por IA, mantida pelo projeto Interlanguage. Não é uma edição oficial nem endossada pelos autores ou pelas instituições de origem. As leituras originais e as intervenções editoriais são distinguidas nos materiais de proveniência.
+| Volume | Edição corrigida | Edição diplomática |
+|---|---|---|
+| Volume integral: oito exposições, erratas e comentários de 1962 | [PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/001_FGA_PTBR_CURRENT.pdf) · [fontes](editions/FGA_PTBR_CURRENT/) | [PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/010_FGA_PTBR_PRINTED.pdf) · [fontes](editions/FGA_PTBR_PRINTED/) |
+| Parte A: exposições 149, 182, 190 e 195 | [PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/004_FGA_PTBR_A_CURRENT.pdf) · [fontes](editions/FGA_PTBR_A_CURRENT/) | [PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/013_FGA_PTBR_A_PRINTED.pdf) · [fontes](editions/FGA_PTBR_A_PRINTED/) |
+| Parte B: exposições 212, 221, 232 e 236 e comentários de 1962 | [PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/007_FGA_PTBR_B_CURRENT.pdf) · [fontes](editions/FGA_PTBR_B_CURRENT/) | [PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-24-fga.1/016_FGA_PTBR_B_PRINTED.pdf) · [fontes](editions/FGA_PTBR_B_PRINTED/) |
 
-## Outras edições e fontes
+A edição anterior, de 15 de outubro de 2026, está em [editions/FGA_current](editions/FGA_current/README.md) e
+[editions/FGA_diplomatic](editions/FGA_diplomatic/README.md).
 
-- [Coleção em português brasileiro: DOI permanente](https://doi.org/10.5281/zenodo.22132458).
-- [Coleção em vietnamita](https://doi.org/10.5281/zenodo.22134809).
-- [EGA em francês](https://github.com/KokunoYumeto/ega-fr) · [EGA em inglês](https://github.com/KokunoYumeto/ega-en).
-- [EGA IV-2: fonte impressa, NUMDAM](https://www.numdam.org/item/PMIHES_1965__24__5_0/).
+### EGA
 
-Todos os arquivos podem ser lidos e baixados publicamente, sem autenticação.
+- EGA III, primeira parte (capítulo 0, §§8–13; capítulo III, §§1–5; bibliografia e índices): edição atual
+  ([PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-09-23-preview.2/019_EGA_III1_PTBR_CURRENT_READER.pdf) ·
+  [LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-09-23-preview.2/020_EGA_III1_PTBR_CURRENT_READER.tex) ·
+  [fontes](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-09-23-preview.2/021_EGA_III1_PTBR_CURRENT_READER_SOURCE.zip))
+  e edição diplomática
+  ([PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-09-23-preview.2/022_EGA_III1_PTBR_DIPLOMATIC_READER.pdf) ·
+  [LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-09-23-preview.2/023_EGA_III1_PTBR_DIPLOMATIC_READER.tex) ·
+  [fontes](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-09-23-preview.2/024_EGA_III1_PTBR_DIPLOMATIC_READER_SOURCE.zip)).
+- EGA IV, terceira parte (seções 8–15, bibliografia, índices e sumário):
+  [PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-26-ega-iv3/EGA_IV3_PTBR.pdf) ·
+  [fontes](editions/EGA_IV_3_sections_current/README.md).
+- EGA II (§§1–8, bibliografia, índices e erratas), fontes LaTeX: [edição corrigida](editions/EGA_II_current/README.md)
+  · [edição diplomática](editions/EGA_II_diplomatic/README.md).
+- EGA I, capítulo I (§§1–10 e índices), fontes LaTeX: [edição corrigida](editions/EGA_I_chapter_I_current/README.md).
+- Seções isoladas: EGA I, §§7.3.1–7.3.7; EGA IV, seções 2.1 e 2.8, e capítulo 0, §14, na
+  [publicação de 7 de setembro de 2026](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/tag/v2026-09-07-preview.1);
+  EGA IV, quarta parte, §19.4, em [source_components](source_components/EGA_IV4_section_19_4/README.md).
 
-## Fontes, direitos e autoria
+### SGA
 
-Os direitos sobre as obras originais e sobre as contribuições protegidas a estas traduções e transcrições derivadas permanecem com seus respectivos titulares. Tudo aquilo sobre o qual o editor detenha direitos nestas edições é dedicado ao domínio público sob CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/deed.pt-br). Os avisos de direitos de terceiros e as autorizações já concedidas continuam aplicáveis.
+- SGA 4½ (*Cohomologie étale*), completo, edição atual e edição diplomática:
+  [publicação de 23 de setembro de 2026](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/tag/v2026-09-23-preview.3)
+  ([PDF da edição atual](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-09-23-preview.3/01_SGA4half_PTBR_Atual.pdf)).
+- SGA 3, tomo II, exposições VIII (grupos diagonalizáveis) e IX (grupos de tipo multiplicativo), com a matéria
+  preliminar e o índice de notações do tomo:
+  [PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-26-sga3.1/SGA3_TOMO_II_PTBR_ATUAL.pdf) ·
+  [LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-26-sga3.1/SGA3_TOMO_II_PTBR_ATUAL.tex) ·
+  [fontes](sources/SGA_3_Tome_II).
+- SGA 5, exposições III, III B, X e XV, com a matéria preliminar e os índices:
+  [PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-09-07-preview.1/SGA5_PTBR_R4_20260829.pdf) ·
+  [fontes](sources/SGA_5).
 
-Estas edições são disponibilizadas gratuitamente, para fins não comerciais e exclusivamente educativos, sob a presunção de que os respectivos titulares dos direitos não se oporiam à disponibilidade gratuita destas traduções e transcrições, ao lado dos originais franceses no [NUMDAM](https://www.numdam.org/). Essa presunção não significa que uma autorização tenha sido obtida; o acesso gratuito aos originais não autoriza, por si só, sua tradução, adaptação ou republicação.
+As versões anteriores estão nas [publicações do GitHub](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases).
 
-Se você detém direitos sobre algum material apresentado aqui e se opõe à sua disponibilidade, poderá [abrir uma questão no GitHub](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/issues). O responsável pela publicação retirará o material afetado a pedido do titular dos direitos.
+## Fontes e créditos
 
+- EGA: Alexander Grothendieck, com a colaboração de Jean Dieudonné, *Éléments de géométrie algébrique*,
+  *Publications mathématiques de l'IHÉS* (1960–1967), no [NUMDAM](https://www.numdam.org/journals/PMIHES/).
+- EGA II: a referência inglesa e a estrutura TeX vêm da tradução humana
+  [ryankeleti/ega](https://github.com/ryankeleti/ega/tree/3d7afe28c99d1887ccdb85acf2ca1afd93fb1971) (versão 3d7afe2),
+  cujos colaboradores são Mateo Carmona, Tim Holzschuh, Tim Hosgood, Ryan Keleti, Thiago Solovera & Nery e Wayne Yang
+  ([ATTRIBUTION_EGA_II.md](ATTRIBUTION_EGA_II.md)).
+- FGA: Alexander Grothendieck, *Fondements de la géométrie algébrique*; a tradução inglesa de
+  [Tim Hosgood](https://github.com/thosgood/fga/tree/9976dd5f8e2ddcb388f0a07f3aa334f120d1019f) (versão 9976dd5), que
+  agradece as correções de Steve Hnizdur e o apoio técnico de Jon Sterling ([ATTRIBUTION_FGA.md](ATTRIBUTION_FGA.md)).
+- SGA 3: dirigido por Michel Demazure e Alexander Grothendieck (Lecture Notes in Mathematics 152, Springer, 1970); o
+  texto francês de referência é o da reedição de Philippe Gille e Patrick Polo. As notas «Nota do tradutor» são desta
+  tradução; as notas «Nota do editor» são dos editores da reedição.
+- SGA 4½: Pierre Deligne, *Cohomologie étale* (1977).
+- SGA 5: dirigido por Alexander Grothendieck, com a colaboração de Ion Bucur, Charles Houzel, Luc Illusie,
+  Jean-Pierre Jouanolou e Jean-Pierre Serre; editado por Luc Illusie.
+- As traduções para o português não são atribuídas aos tradutores citados.
 
-A tradução para o português é produzida por IA. As correções, a edição e a composição também são produzidas por IA. O responsável pela publicação não traduziu o texto. A autoria e as atribuições das obras originais e das contribuições herdadas são preservadas; não são atribuídas à IA. As correções documentadas desta edição incluem OpenAI Codex, GPT-6 Astra, esforço Ultra.
+## Direitos
 
-
-## FGA: fontes editáveis
-
-[Oito exposições e erratas: edição corrigida](editions/FGA_current/README.md) · [tradução segundo o impresso](editions/FGA_diplomatic/README.md). [Fontes e autoria](ATTRIBUTION_FGA.md).
-
-[Leitores PDF da edição de 15 de outubro de 2026](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/tag/v2026-10-15-fga.1).
-
-
-## EGA I: capítulo I
-
-[Fontes da edição corrigida: §§1–10 e índices](editions/EGA_I_chapter_I_current/README.md).
-
-
-## EGA IV, terceira parte
-
-Volume completo: seções 8–15, bibliografia (continuação), índices e sumário original. [Leitor PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/tag/v2026-10-26-ega-iv3) · [fontes editáveis](editions/EGA_IV_3_sections_current/README.md).
-
-
-## EGA IV, quarta parte: componente de fonte
-
-[Seção 19.4, leitura corrigida](source_components/EGA_IV4_section_19_4/README.md).
+Na medida em que o editor detenha direitos sobre as traduções, as correções e a composição produzidas por IA, eles
+são dedicados ao domínio público sob [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.pt-br). Isso
+não afeta os direitos sobre as obras originais nem sobre as traduções humanas citadas, e não concede permissão para
+usá-las. Aviso completo: [RIGHTS_NOTICE.md](RIGHTS_NOTICE.md).

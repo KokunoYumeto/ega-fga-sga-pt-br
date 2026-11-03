@@ -25,7 +25,6 @@ references:
 - type: generic
   title: Fundamentos da geometria algébrica — edição portuguesa de 15 de outubro de
     2026
-  doi: 10.5281/zenodo.23389950
   url: https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/tag/v2026-10-15-fga.1
   authors:
   - given-names: Alexandre
