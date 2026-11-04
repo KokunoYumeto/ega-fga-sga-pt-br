@@ -4,4 +4,4 @@ Na medida em que o editor detenha direitos sobre as traduções, as correções 
 
 Estas edições são disponibilizadas gratuitamente, para fins não comerciais e educativos, ao lado dos originais franceses no [NUMDAM](https://www.numdam.org/), na presunção de que os titulares dos direitos não se oporiam; essa presunção não significa que uma autorização tenha sido obtida. Se você detém direitos sobre algum material apresentado aqui e se opõe à sua disponibilidade, abra uma [questão no GitHub](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/issues); o material será retirado.
 
-A tradução para o português, as correções, a edição e a composição são produzidas por IA. A autoria das obras originais e das contribuições herdadas é preservada. As correções documentadas desta edição incluem OpenAI Codex, GPT-6 Astra, esforço Ultra.
+A tradução para o português, as correções, a edição e a composição são produzidas por IA. A autoria das obras originais e das contribuições herdadas é preservada. A tradução foi feita por modelos de OpenAI Codex (GPT-5.6 Sol e GPT-6.1 Sol); as correções documentadas são de GPT-6 Astra, esforço Ultra.

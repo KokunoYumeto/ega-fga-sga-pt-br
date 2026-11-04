@@ -9,9 +9,10 @@ exposições III, III B, X e XV de SGA 5.
 
 ## Como foi feito
 
-A tradução, as correções e a composição são produzidas por IA. Os trabalhos documentados são de OpenAI Codex:
-GPT-6 Astra (esforço Ultra) nas correções, e GPT-5.6 Sol (esforço Ultra) na tradução de SGA 4½ e na montagem e
-revisão das edições de EGA III, primeira parte. Para trabalhos anteriores, os registros não indicam o modelo.
+A tradução, as correções e a composição são produzidas por IA. A tradução foi feita por modelos de OpenAI Codex
+(GPT-5.6 Sol e GPT-6.1 Sol, esforço Ultra); GPT-6 Astra (esforço Ultra) fez verificações, correções e a montagem. Os
+registros nomeiam GPT-5.6 Sol para a tradução de SGA 4½ e para a montagem e revisão das edições de EGA III, primeira
+parte.
 
 Textos de referência: para EGA II, a tradução inglesa humana do projeto ryankeleti/ega; para FGA, a tradução inglesa
 de Tim Hosgood; para SGA 3, o texto francês da reedição de Philippe Gille e Patrick Polo; para SGA 4½, a edição

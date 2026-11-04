@@ -2,7 +2,7 @@
 
 A obra original é de Alexandre Grothendieck, com a colaboração de Jean Dieudonné: EGA II, Publications Mathématiques de l’IHÉS 8 (1961), pp. 5–222, [NUMDAM](https://numdam.org/item/PMIHES_1961__8__5_0/). A referência inglesa e a estrutura TeX utilizadas procedem da tradução humana de [ryankeleti/ega](https://github.com/ryankeleti/ega/tree/3d7afe28c99d1887ccdb85acf2ca1afd93fb1971), versão 3d7afe28c99d1887ccdb85acf2ca1afd93fb1971. Os colaboradores nomeados são Mateo Carmona, Tim Holzschuh, Tim Hosgood, Ryan Keleti, Thiago Solovera & Nery, Wayne Yang. Os [créditos por seção](https://github.com/ryankeleti/ega/blob/3d7afe28c99d1887ccdb85acf2ca1afd93fb1971/README.md) especificam suas contribuições. A tradução inglesa herdada mantém essa autoria; a tradução brasileira e suas adições produzidas por IA não são atribuídas a esses colaboradores. A atribuição não constitui autorização ou endosso.
 
-A tradução para o português é produzida por IA. As correções, a edição e a composição também são produzidas por IA. A autoria e as atribuições das obras originais e das contribuições herdadas são preservadas; não são atribuídas à IA. As correções documentadas desta edição incluem OpenAI Codex, GPT-6 Astra, esforço Ultra.
+A tradução para o português é produzida por IA. As correções, a edição e a composição também são produzidas por IA. A autoria e as atribuições das obras originais e das contribuições herdadas são preservadas; não são atribuídas à IA. A tradução foi feita por modelos de OpenAI Codex (GPT-5.6 Sol e GPT-6.1 Sol); as correções documentadas são de GPT-6 Astra, esforço Ultra.
 
 | Módulo | SHA-256 da versão utilizada |
 | --- | --- |
