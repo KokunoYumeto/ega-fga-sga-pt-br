@@ -1,0 +1,39 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7293--7329 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{prooftext}[Demonstração]
+$(i)\Rightarrow(ii)$ deduz-se da expressão de $F^pX_n/F^{p+1}X_n$ dada em (4.1.1).
+
+$(ii)\Rightarrow(iii)$. Seja $r$ um inteiro tal que, para todo $s>r$ e todo $p$, o morfismo canônico
+\[
+\gr^p(X_{p+s})\longrightarrow \gr^p(X_{p+r})
+\]
+seja um isomorfismo. Veremos que, para todo par $(m,n)$ de inteiros com $m\ge n+r$, se verifica, para todo inteiro $p$, a igualdade que aparece a seguir:
+\[
+\Im(\gr^p(X_m)\to\gr^p(X_n))=
+\Im(\gr^p(X_{n+r})\to\gr^p(X_n)).
+\]
+De facto:
+
+(a) Se $p\ge n+1$, $\gr^p(X_n)=0$,
+
+(b) se $p\le n$, a sucessão de desigualdades $m\ge n+r\ge p+r$ mostra que o morfismo canônico
+\[
+\gr^p(X_m)\longrightarrow\gr^p(X_{n+r})
+\]
+é um isomorfismo, de onde segue-se a afirmação.
+
+$(iii)\Rightarrow(i)$. Denotando por $Y$ o sistema projetivo de (iii), seja $r$ um inteiro tal que
+\[
+\Im(Y[s]\to Y)=\Im(Y[r]\to Y)\qquad(s\ge r).
+\]
+Se $n$ e $\ell$ forem dois inteiros, com $\ell\ge n$, a filtração induzida sobre $\Im(X_\ell\to X_n)$ pela de $X_n$ é também a filtração cociente da de $X_\ell$ e, portanto, dotando $\Im(X_\ell\to X_n)$ desta filtração, verifica-se a igualdade que se apresenta a seguir:
+\[
+\gr^p(\Im(X_\ell\to X_n))=
+\Im(\gr^p(X_\ell)\to\gr^p(X_n)).
+\]
+Em particular, a condição (iii) é expressa dizendo que, sempre que $\ell\ge n+r$, o monomorfismo canônico
+\[
+j:\Im(X_\ell\to X_n)\longrightarrow\Im(X_{n+r}\to X_n)
+\]
+induz um isomorfismo sobre os graduados. Como as graduações são finitas, deduz-se que o próprio $j$ é um isomorfismo, de onde segue-se (i).
+\end{prooftext}

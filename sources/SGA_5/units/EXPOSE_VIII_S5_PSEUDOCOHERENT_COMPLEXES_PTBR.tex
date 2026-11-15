@@ -1,0 +1,42 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 11894--11933 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{5. Complexos pseudocoherentes}
+
+Sejam $\cC$ uma categoria abeliana e $\cC_o$ uma subcategoria plena de $\cC$ que satisfaça as condições (A), (B), (C). Denotaremos por $D_o^-(\cC)_{\coh}$ a imagem essencial de $D_o^-(\cC)$ pelo funtor canônico
+\[
+D_o^-(\cC)\longrightarrow D(\cC).
+\]
+Os objetos de $D_o^-(\cC)_{\coh}$ serão chamados complexos $\cC_o$-pseudocoerentes. Assim, um complexo de $\cC$ é $\cC_o$-pseudocoerente se for isomorfo em $D(\cC)$ a um complexo limitado superiormente cujas componentes são objetos de $\cC_o$.
+
+A categoria $D_o^-(\cC)_{\coh}$ é uma subcategoria triangulada de $D(\cC)$, no sentido de que todo triângulo distinguido de $D(\cC)$ do qual dois vértices são objetos da subcategoria $D_o^-(\cC)_{\coh}$ é isomorfo a um triângulo cujos três objetos são objetos da subcategoria $D_o^-(\cC)_{\coh}$.
+
+Em primeiro lugar, é claro que a subcategoria $D_o^-(\cC)_{\coh}$ é estável sob o automorfismo de translação $T:D(\cC)\to D(\cC)$. Para demonstrar, pois, que $D_o^-(\cC)_{\coh}$ é uma subcategoria triangulada de $D(\cC)$, basta verificar que, se $U^\bullet$, $V^\bullet$ são objetos de $D_o^-(\cC)_{\coh}$ e se o triângulo
+\[
+\begin{tikzcd}[column sep=small,row sep=small]
+& W^\bullet \arrow[dl,"w"']\\
+U^\bullet \arrow[rr,"u"']&& V^\bullet \arrow[ul,"v"']
+\end{tikzcd}
+\]
+é distinguido (para a estrutura de categoria triangulada de $D(\cC)$), então $W^\bullet$ também é um objeto de $D_o^-(\cC)_{\coh}$. Por hipótese, existem complexos $X^\bullet$, $Y^\bullet$, isomorfos em $D(\cC)$ a $U^\bullet$ e $V^\bullet$, respectivamente, cujas componentes são objetos de $\cC_o$. Obtém-se o quadrado comutativo (em $D(\cC)$):
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+U^\bullet \arrow[r,"u"] \arrow[d,"\sim"']&V^\bullet \arrow[d,"\sim"]\\
+X^\bullet \arrow[r,"f"']&Y^\bullet .
+\end{tikzcd}
+\]
+Mas, substituindo, se necessário, $X^\bullet$ por outro complexo isomorfo, podemos supor, graças ao fato de que o funtor de inclusão
+\[
+D_o^-(\cC)\longrightarrow D^-(\cC)
+\]
+é completamente fiel (prop. 4.1), que $f$ é um verdadeiro morfismo de complexos. Seja $Z^\bullet$ o «cilindro da aplicação» de $f$, e seja $g:Y^\bullet\to Z^\bullet$ o morfismo canônico. Por construção, as componentes de $Z^\bullet$ são objetos de $\cC_o$ (condição (A)). Por outro lado, como
+\[
+\begin{tikzcd}[column sep=small,row sep=small]
+&Z^\bullet \arrow[dl,"h"']\\
+X^\bullet \arrow[rr]&&Y^\bullet \arrow[ul,"g"']
+\end{tikzcd}
+\]
+é um triângulo distinguido em $D(\cC)$, resulta que $Z^\bullet$ é isomorfo a $W^\bullet$.
+
+A categoria $D_o^-(\cC)_{\coh}$ possui, portanto, uma estrutura de categoria triangulada: um triângulo de $D_o^-(\cC)_{\coh}$ será distinguido se, e somente se, for distinguido na categoria triangulada $D(\cC)$.
+
+A intersecção de $D_o^-(\cC)_{\coh}$ com $D^b(\cC)_{\coh}$ denotar-se-á por $D_o^b(\cC)_{\coh}$.

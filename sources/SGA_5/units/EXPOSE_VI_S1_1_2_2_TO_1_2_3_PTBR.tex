@@ -1,0 +1,53 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 8288--8338 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Chama-se categoria dos \(\mathbb Z_\ell\)-feixes constantes torcidos a subcategoria plena de \(\mathbb Z_\ell\text{-}\fc(X)\) engendrada pelos \(\mathbb Z_\ell\)-feixes constantes torcidos construtíveis.
+
+\begin{statement}{Exemplo 1.2.2}
+O \(\mathbb Z_\ell\)-feixe \(\mathbb Z_\ell(1)\).
+\end{statement}
+
+Suponhamos que o inteiro \(\ell\) é primo com as características residuais de \(X\). Para todo inteiro \(n\), a elevação à potência \(\ell\) define um morfismo de feixes localmente constantes:
+\[
+\mu_{\ell^{n+1}}\longrightarrow \mu_{\ell^n}.
+\]
+Isto define claramente um sistema projetivo:
+\[
+\mathbb Z_\ell(1)=(\mu_{\ell^{n+1}})_{n\in\mathbb N}.
+\]
+Reduzindo-se, para cada inteiro \(n\), ao caso em que \(\mu_{\ell^n}\) e \(\mu_{\ell^{n+1}}\) são constantes, verifica-se que o sistema projetivo \(\mathbb Z_\ell(1)\) é \(\ell\)-ádico.
+
+Quando \(X=\Spec(K)\), com \(K\) um corpo de tipo finito sobre o corpo primo, o \(\mathbb Z_\ell\)-feixe \(\mathbb Z_\ell(1)\) é um exemplo de feixe \(\ell\)-ádico constante torcido construtível (1.2.1) para o qual não existe nenhuma extensão finita étale \(K'\) de \(K\) tal que as imagens inversas dos \(F_n\) sobre \(X'=\Spec(K')\) sejam constantes. Com efeito, \(K'\) conteria, para todo inteiro \(n\), uma raiz primitiva \(\ell^n\)-ésima da unidade, o que não é possível para uma extensão de tipo finito do corpo primo.
+
+\begin{statement}{Recordatorios 1.2.3}
+(SGA 1 V 7). Sabe-se que a categoria dos feixes abelianos de torção construtíveis localmente constantes sobre um pré-esquema \(T\) é equivalente à categoria dos recobrimentos étale de \(T\) dotados de uma estrutura de \(T\)-grupo abeliano.
+\end{statement}
+
+Seja agora \(X\) um pré-esquema localmente noetheriano conexo. Denotemos por \(R_X\) a categoria dos recobrimentos étale de \(X\) e por \(\Ensf\) a dos conjuntos finitos. Se \(a\) é um ponto geométrico de \(X\), seja \(F_a\) o funtor
+\[
+F_a:R_X\longrightarrow \Ensf,
+\]
+que a todo recobrimento étale de \(X\) associa sua fibra geométrica no ponto \(a\). Como o grupo fundamental
+\[
+\pi_1(X)=\pi_1(X,a)
+\]
+de \(X\) no ponto \(a\) é, por definição, o grupo de automorfismos de \(F_a\), convenientemente topologizado, o funtor \(F_a\) pode ser interpretado como um funtor
+\[
+R_X\longrightarrow \Ensf(\pi_1)
+\]
+da categoria \(R_X\) na categoria dos conjuntos finitos dotados de uma ação contínua de \(\pi_1=\pi_1(X,a)\).
+
+Recorde-se a seguinte proposição:
+
+\begin{statement}{Proposição 1.2.3.1}
+O funtor
+\[
+F_a:R_X\longrightarrow \Ensf(\pi_1)
+\]
+é uma equivalência de categorias. Comuta com os limites indutivos e com os limites projetivos finitos.
+\end{statement}
+
+Sejam agora \(\operatorname{Lc}(X)\) e \(\Abf(\pi_1)\), respectivamente, a categoria dos feixes abelianos de torção localmente constantes construtíveis e a dos grupos abelianos finitos dotados de uma ação contínua do grupo fundamental. O funtor \(F_a\) induz um funtor exato, denotado também por \(F_a\),
+\[
+F_a:\operatorname{Lc}(X)\longrightarrow \Abf(\pi_1),
+\]
+que é uma equivalência de categorias.

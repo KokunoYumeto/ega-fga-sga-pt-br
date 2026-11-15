@@ -1,0 +1,30 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7059--7086 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{2.5. Caracterização dos sistemas projetivos que verificam a condição de Mittag-Leffler-Artin-Rees}
+\begin{statement}{Proposição 2.5.1}
+As seguintes afirmações para um objeto $X$ de $P$ são equivalentes:
+\begin{enumerate}[label=(\roman*)]
+\item $X$ verifica (MLAR) (2.1.1).
+\item Existe um sistema projetivo estrito $Y$ e um AR-isomorfismo $u:Y\to X$ (2.4.5).
+\item Existe um sistema projetivo estrito $Y$ tal que $X$ e $Y$ sejam isomorfos na categoria $P_{AR}$.
+\item $X$ verifica a condição de Mittag-Leffler e, denotando por $X'$ o sistema projetivo das imagens universais de $X$, o sistema projetivo $X/X'$ é AR-nulo.
+\end{enumerate}
+\end{statement}
+
+\begin{prooftext}[Demonstração]
+Demonstraremos a sucessão de implicações
+\[
+(i)\Rightarrow(iv)\Rightarrow(iii)\Rightarrow(ii)\Rightarrow(i).
+\]
+$(i)\Rightarrow(iv)$. Existe um inteiro $m$ tal que o morfismo canônico $w_{mX}$ de $X[m]$ em $X$ se fatora através da inclusão canônica $i$ de $X'$ em $X$. Daí se deduz que $p_{AR}(i)$ é um epimorfismo cindido e, portanto, como $p_{AR}$ é exato, que $p_{AR}(X/X')=0$. Conclui-se por (2.4.4) (iii).
+
+$(iv)\Rightarrow(iii)$. A condição (iv) significa, com a notação anterior, que $p_{AR}(i)$ é um epimorfismo. Mas, devido à exatidão de $p_{AR}$, é também um monomorfismo e, portanto, um isomorfismo. Tomaremos como objeto $Y$ o sistema projetivo $X'$.
+
+$(iii)\Rightarrow(ii)$. O $P_{AR}$-isomorfismo de $Y$ em $X$ cuja existência se supõe é a imagem por $p_{AR}$ de um $P$-morfismo $Y[r]\to X$, onde $r$ designa um inteiro positivo ou nulo. Conclui-se graças ao fato de que $Y[r]$ é estrito.
+
+$(ii)\Rightarrow(i)$. Pode-se supor que $Y$ esteja contido em $X$ e que $u$ seja a injeção canônica. Seja $T$ o conúcleo de $u$. A hipótese significa que $T$ é AR-nulo, de modo que existe um inteiro $r$ tal que, para todo $s$ maior ou igual a $r$, o morfismo canônico de $T[s]$ em $T$ seja nulo. Conclui-se que, para $s\ge r$, a imagem de $X[s]$ em $X$ está contida em $Y$; como, por outro lado, contém evidentemente a imagem, igual a $Y$, de $Y[s]$ em $Y$, ela é igual a $Y$. Conclui-se que $Y$ é a imagem de $X[s]$ para $s$ suficientemente grande, de modo que $X$ verifica (MLAR), e que $Y$ é o sistema projetivo das imagens universais de $X$.
+\end{prooftext}
+
+\begin{statement}{Corolário 2.5.2}
+Seja $u:Y\to X$ um AR-isomorfismo, sendo $Y$ estrito. Nestas condições, $X$ verifica a condição (MLAR) e $u(Y)$ é o sistema projetivo das imagens universais de $X$.
+\end{statement}

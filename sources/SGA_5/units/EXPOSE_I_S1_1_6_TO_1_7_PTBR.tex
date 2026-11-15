@@ -1,0 +1,24 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 408--430 (LF-normalized unit).
+\subsection*{Proposição 1.6}
+Sejam $f : X \to Y$ um morfismo quase-finito e separado de esquemas noetherianos, e $K \in \ob \D^{+}(Y)$. Então, para $N \in \Z$, tem-se
+\[
+\dim.\,q.\,inj(K) \leqslant N \quad \Longrightarrow \quad \dim.\,q.\,inj(\R^{!}f(K)) \leqslant N.
+\]
+
+\emph{Demonstração.} Segundo o ``teorema principal'' (EGA~IV~8.12.6), existe uma fatoração de $f$ da forma $f = uf'$, onde $f'$ é uma imersão aberta e $u$ um morfismo finito. Tem-se $\R^{!}f = \R^{!}f' \, \R^{!}u$, o que reduz a questão a examinar separadamente o caso de uma imersão aberta e o de um morfismo finito. Se $f$ é uma imersão aberta, a afirmação é imediata (pois todo feixe construtível sobre $X$ é induzido por um feixe construtível sobre $Y$). Suponhamos, portanto, que $f$ é um morfismo finito, e seja $F$ um $A_X$-módulo construtível. Têm-se então os isomorfismos de dualidade (SGA~A~XVIII~3.1.9.6)
+\[
+f_{*}\underline{\Ext}^i(F, \R^{!}f(K)) \xrightarrow{\sim} \underline{\Ext}^i(f_{*}F, K).
+\]
+Como $f_{*}(F)$ é construtível (SGA~A~IX~2.14), segue-se que, se $\dim.\,q.\,inj(K) \leqslant N$, então $f_{*}\underline{\Ext}^i(F, \R^{!}f(K)) = 0$ para $i > N$ e, consequentemente, $\underline{\Ext}^i(F, \R^{!}f(K)) = 0$ para $i > N$ (SGA~A~VIII~5.5), como queria demonstrar.
+
+Sejam agora $X$ um esquema e $K \in \ob \D^{+}(X)$. Denotemos por $\underline{D}_K$ o funtor $\R\,\underline{\Hom}(\quad, K)$. Para $F \in \ob \D(X)$, vamos definir um homomorfismo funtorial $F \to \underline{D}_K \underline{D}_K F$ (cf.~[H]~V.1.2). A construção seguinte é válida, mais geralmente, sobre um topos anelado. Podemos supor primeiro que $K$ é formado por injetivos, o que permite ``suprimir os $\R$''. O morfismo identidade $\underline{\Hom}(F,K) \to \underline{\Hom}(F,K)$ define, mediante a fórmula tão cara a Cartan, um homomorfismo $F \otimes \underline{\Hom}(F,K) \to K$; uma segunda aplicação da mesma fórmula dá então um homomorfismo $F \to \underline{\Hom}(\underline{\Hom}(F,K), K)$. Este é o homomorfismo anunciado, que chamamos de \emph{homomorfismo canônico}. Diz-se que o par $(F,K)$ é \emph{bidualizante}, que \emph{satisfaz a bidualidade}, ou também que $F$ é \emph{reflexivo} com respeito a $K$, se o homomorfismo canônico $F \to \underline{D}_K \underline{D}_K F$ é um isomorfismo.
+
+\textbf{\uline{A partir de agora, salvo menção expressa em contrário, todos os esquemas considerados serão localmente noetherianos.}}
+
+\subsection*{Definição 1.7}
+Seja $X$ um esquema. Diz-se que um complexo $K \in \ob \D^{+}(X)$ é \emph{dualizante} se as seguintes condições forem cumpridas:
+\begin{enumerate}[label=(\roman*)]
+\item $K$ tem dimensão quase-injetiva finita;
+\item para todo $F \in \ob \D_c^{-}(X)$, tem-se $\underline{D}_K(F) \in \ob \D_c^{+}(X)$;
+\item todo $F \in \ob \D_c^{b}(X)$ é reflexivo com respeito a $K$.
+\end{enumerate}

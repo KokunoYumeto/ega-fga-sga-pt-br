@@ -1,0 +1,32 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 8557--8586 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{1.4. Diversas categorias construídas a partir da categoria dos \(\mathbb Z_\ell\)-feixes construtíveis}
+
+\paragraph{1.4.1. \(A\)-feixes construtíveis (\(A\), \(\mathbb Z_\ell\)-álgebra finita).}
+Seja \(A\) uma \(\mathbb Z_\ell\)-álgebra finita. Define-se uma categoria, denotada por
+\[
+A\text{-}\fc(X),
+\]
+cujos objetos são chamados \(A\)-feixes construtíveis, da seguinte forma.
+
+\begin{enumerate}[label=(\roman*)]
+\item Um objeto de \(A\text{-}\fc(X)\) é um par \((F,u)\) formado por um \(\mathbb Z_\ell\)-feixe construtível \(F\) e um morfismo de \(\mathbb Z_\ell\)-álgebras:
+\[
+u:A\longrightarrow \End(F).
+\]
+\item Se \((F,u)\) e \((F',u')\) são dois \(A\)-feixes construtíveis, uma flecha \((F,u)\to(F',u')\) é um morfismo de \(\mathbb Z_\ell\)-feixes
+\[
+f:F\longrightarrow F'
+\]
+De modo que, para cada elemento \(a\) de \(A\), o diagrama que se segue seja comutativo:
+\[
+\begin{tikzcd}
+F \arrow[r,"f"] \arrow[d,"u(a)"'] & F' \arrow[d,"u'(a)"]\\
+F \arrow[r,"f"] & F'.
+\end{tikzcd}
+\]
+\end{enumerate}
+
+Chamar-se-á \(A\)-feixe constante torcido construtível um \(A\)-feixe construtível cujo \(\mathbb Z_\ell\)-feixe construtível subjacente seja constante torcido, e categoria dos \(A\)-feixes constantes torcidos construtíveis a subcategoria plena da categoria dos \(A\)-feixes construtíveis engendrada pelos \(A\)-feixes constantes torcidos construtíveis.
+
+Segue-se imediatamente de (1.2.4) que, se \(X\) é conexo, a categoria dos \(A\)-feixes constantes torcidos construtíveis é equivalente à categoria dos \(A\)-módulos de tipo finito dotados de uma ação contínua e \(A\)-linear de \(\pi_1(X)\) sobre o \(\mathbb Z_\ell\)-módulo de tipo finito subjacente (1.2.4).

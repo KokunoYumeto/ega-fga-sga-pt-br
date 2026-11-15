@@ -1,0 +1,46 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 13952--13994 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Por outro lado, tem-se
+\begin{equation}
+\tag{6.3.6}
+\RG_X((u,f)_{U,X})\simeq \R\Gamma^G\RG_{X'}((u',f')_{U',X'}),\quad (u'=p^*(u)),
+\end{equation}
+\begin{equation}
+\tag{6.3.7}
+F_{U',X'}\simeq \La_{n,U',X'}\otimes_{\La_n}M,
+\qquad
+(u',f')_{U',X'}=f'_{\La_{n,U',X'}}\otimes_{\La_n}M,
+\end{equation}
+de onde, pela fórmula de Künneth:
+\begin{equation}
+\tag{6.3.8}
+\RG_{X'}(u',f')_{U',X'}\simeq
+\RG_{X'}(f'_{\La_{n,U',X'}})\otimes_{\La_n}^{\mathbb L}u_M.
+\end{equation}
+Conclui-se de (6.3.8):
+\begin{equation}
+\tag{6.3.9}
+\RG_{X'}((u',f')_{U',X'})^\vee\simeq
+(\RG_{X'}(f'_{\La_{n,U',X'}})^\vee\otimes_{\La_n}^{\mathbb L}A)\otimes_A^{\mathbb L}u_M^\vee.
+\end{equation}
+Graças à fórmula 6.3.6, obtém-se:
+\begin{equation}
+\tag{6.3.10}
+\RG_X((u,f)_{U,X})=\RG_{X'}(f'_{\La_{n,U',X'}})\otimes_{A[G]}^{\mathbb L}u_M^\vee,
+\end{equation}
+de onde, levando em conta a fórmula geral (cf. Exp. XI, 7.5.9):
+\begin{equation}
+\tag{6.3.11}
+\Tr_A((u,f)_{U,X})=
+\sum_{g\in G_{\natural,\varphi}}\Tr_{\La_n[G],\varphi}(f'{}^\vee_{H_{n,U',X'}})(g)\Tr_A(g^{-1}u_M^\vee).
+\end{equation}
+Mas o traço $\Tr_{\La_n[G],\varphi}(f'{}^\vee_{H_{n,U',X'}})$ é calculado pela fórmula de Nielsen--Wecken (cf. Proposição 5.1 b)), evidentemente reduzindo módulo $\ell^n\mathbb Z$.
+
+Levando em conta a relação $X^f=Y^f$, obtém-se:
+
+\begin{equation}\tag{6.3.12}
+\Tr_{\La_n[G],\varphi}(f'{}^\vee_{H_{n,U',X'}})(g)=\sum_{x\in X^f}S_{x,\ell^n}(f',f,G,\varphi)(g).
+\end{equation}
+
+Combinando as relações 6.3.12, 6.3.11, 6.3.5 e 6.3.4, obtém-se a fórmula do enunciado.
+\end{prooftext}

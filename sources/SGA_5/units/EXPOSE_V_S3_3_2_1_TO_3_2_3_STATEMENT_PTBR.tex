@@ -1,0 +1,29 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7132--7158 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{3.2. Sistemas projetivos AR-$J$-ádicos}
+\begin{statement}{Proposição 3.2.1}
+As seguintes afirmações, para um objeto $X$ de $P$ tal que $J^{n+1}X_n=0$ para todo $n\ge0$, são equivalentes:
+\begin{enumerate}[label=(\roman*)]
+\item Existe um sistema projetivo $J$-ádico $Y$ e um AR-isomorfismo $u:Y\to X$ (2.4.5).
+\item Existe um sistema projetivo $J$-ádico $Y$, isomorfo a $X$ na categoria $P_{AR}$.
+\end{enumerate}
+\end{statement}
+
+\begin{prooftext}[Demonstração]
+É preciso demonstrar que (ii) implica (i). Um $P_{AR}$-isomorfismo de $Y$ em $X$ é representado, para certo inteiro $r$, por um AR-isomorfismo $v:Y[r]\to X$. Como $J^{n+1}X_n=0$ para todo $n\ge0$ e $Y$ é $J$-ádico, $v$ é a composta de um $P$-morfismo $u:Y\to X$ e do morfismo canônico de $Y[r]$ em $Y$. Então é claro que $u$ é um AR-isomorfismo, de onde segue a afirmação.
+\end{prooftext}
+
+\begin{statement}{Definição 3.2.2}
+Um sistema projetivo indexado por $\NN$ com valores em $\cC$ chama-se AR-$J$-ádico se:
+\begin{enumerate}[label=(\alph*)]
+\item $J^{n+1}X_n=0$ para todo $n\ge0$;
+\item Verifica as condições equivalentes (i) e (ii) da proposição (3.2.1).
+\end{enumerate}
+\end{statement}
+
+\begin{statement}{Proposição 3.2.3}
+Seja $X$ um sistema projetivo indexado por $\NN$ com valores em $\cC$. Supõe-se que $J^{n+1}X_n=0$ para todo $n\ge0$. Então, para que $X$ seja AR-$J$-ádico, é necessário e suficiente que verifique a propriedade (MLAR) e que, denotando por $X'$ seu sistema projetivo das imagens universais, exista um inteiro $r\ge0$ tal que, para todo par $(m,n)$ de inteiros com $m\ge n+r$, o morfismo de transição que aparece a seguir seja um isomorfismo:
+\[
+X'_m/J^{n+1}X'_m\longrightarrow X'_{n+r}/J^{n+1}X'_{n+r}.
+\]
+\end{statement}

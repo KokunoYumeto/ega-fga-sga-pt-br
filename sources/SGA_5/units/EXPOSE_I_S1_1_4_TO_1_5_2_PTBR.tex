@@ -1,0 +1,38 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 370--406 (LF-normalized unit).
+\subsection*{Definição 1.4}
+Chama-se \emph{dimensão quase-injetiva} de $K$, e denota-se por $\dim.\,q.\,inj(K)$, o ínfimo (em $\overline{\mathbb R}$) dos inteiros $N$ que satisfazem as condições equivalentes de (1.3).
+
+Se $K$ tiver dimensão quase-injetiva finita, o funtor $\R\,\underline{\Hom}(\quad,K) : \D(X) \to \D(X)$ induz um funtor $\D_c^{b}(X) \to \D^{b}(X)$.
+
+Vamos ver mais adiante que, se $X$ é suave de dimensão $d$ sobre um corpo $k$ e $n$ é primo com a característica de $k$, então $\dim.\,q.\,inj(A_X) = 2d$.
+
+O exemplo de (1.2~a)) mostra que um complexo de dimensão quase-injetiva finita não tem necessariamente dimensão injetiva finita. No entanto, tem-se o resultado seguinte.
+
+\subsection*{Proposição 1.5}
+Sejam $X$ um esquema localmente noetheriano e $K \in \ob \D^{+}(X)$. Suponhamos que exista um inteiro $N$ tal que $\cd_{\mathbf{n}}(X) \leqslant N$, onde $\mathbf{n}$ é o conjunto dos primos divisores de $n$ (notação de SGA~A~X~1). Então, para $N' \in \Z$,
+\[
+\dim.\,q.\,inj(K) \leqslant N' \quad \Longrightarrow \quad \dim.\,inj(K) \leqslant N + N'.
+\]
+
+Na demonstração utilizaremos o seguinte lema.
+
+\subsection*{Lema 1.5.1}
+Seja $C$ uma categoria abeliana que satisfaça (AB5) e possua uma família de geradores $(U_i)_{i \in I}$. Sejam $K \in \ob \D^{+}(C)$ e $N \in \Z$. São equivalentes as condições seguintes:
+\begin{enumerate}[label=(\roman*)]
+\item $\dim.\,inj(K) \leqslant N$;
+\item para todo $i \in I$ e todo quociente $F$ de $U_i$, tem-se
+\[
+\Ext^n(F,K) = 0 \qquad \text{para } n > N.
+\]
+\end{enumerate}
+
+\emph{Demonstração.} Basta provar $(ii) \Rightarrow (i)$. Mediante um argumento bem conhecido (cf., por exemplo, [H]~1.7.6), a questão se reduz a demonstrar que, se $K' \in \ob(C)$ é tal que $\Ext^1(F,K') = 0$ sempre que $F$ é quociente de algum $U_i$, então $K'$ é injetivo. Em outros termos, trata-se de provar que, se todo morfismo de um subobjeto $V$ de um $U_i$ para $K'$ se prolonga a $U_i$, então $K'$ é injetivo. Isto se deduz imediatamente da demonstração do lema~1, p.~136, de (Tohoku).
+
+\emph{Demonstração de (1.5).} Suponhamos $\dim.\,q.\,inj(K) \leqslant N'$ e demonstremos $\dim.\,inj(K) \leqslant N + N'$. Como a categoria dos $A_X$-módulos admite como geradores os $A_{U,X}$, onde $U$ é étale e de tipo finito sobre $X$, basta, em virtude de (1.5.1), provar que $\Ext^i(X; F,K) = 0$ para $i > N + N'$ quando $F$ é quociente de um desses $A_{U,X}$ e, portanto, construtível (SGA~A~IX~2.9). Consideremos a sucessão espectral
+\[
+\E_2^{pq} = \H^p(X; \underline{\Ext}^q(F,K)) \Rightarrow \Ext^{*}(X; F,K).
+\]
+A hipótese $\cd_{\mathbf{n}}(X) \leqslant N$ (respectivamente, $\dim.\,q.\,inj(K) \leqslant N'$) implica $\E_2^{pq} = 0$ para $p > N$ (respectivamente, $q > N'$). Por conseguinte, $\E_2^{pq} = 0$ para $p+q > N+N'$, de onde segue a conclusão.
+
+\subsection*{Observação 1.5.2}
+A hipótese de (1.5) é satisfeita (com $N = 2d$) se $X$ é um esquema de tipo finito e dimensão $d$ sobre um corpo separavelmente fechado $k$, sendo $n$ primo com $\car(k)$ (SGA~A~X~4).

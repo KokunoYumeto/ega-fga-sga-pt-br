@@ -1,0 +1,29 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 13521--13547 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+É claro que a condição a) implica $f'_R(x) - x \in \fm^r$ qualquer que seja $x \in R$, o que dá sentido à condição 2).
+
+Esta observação permite também definir um homomorfismo de grupos abelianos:
+\[
+\fm \longrightarrow \fm^r/\fm^{r+1}
+\]
+\[
+x \longmapsto (f'_R(x) - x) \bmod \fm^{r+1}
+\]
+
+Este homomorfismo se anula sobre $\fm^2$. De fato, se $x_1, x_2 \in \fm$, então $f'_R(x_1x_2) - x_1x_2 \in \fm^{r+1}$, pois, graças à condição a), tem-se:
+\[
+f'_R(x_1) = x_1 + \alpha_1 \; , \; \alpha_1 \in \fm^r \quad ,
+\]
+\[
+f'_R(x_2) = x_2 + \alpha_2 \; , \; \alpha_2 \in \fm^r \quad ,
+\]
+e, consequentemente:
+\[
+f'_R(x_1x_2) = f'_R(x_1)f'_R(x_2) = (x_1 + \alpha_1)(x_2 + \alpha_2) = x_1x_2 + x_1\alpha_2 + x_2\alpha_1 + \alpha_1\alpha_2 \quad ,
+\]
+e evidentemente $x_1\alpha_2 + x_2\alpha_1 + \alpha_1\alpha_2 \in \fm^{r+1}$.
+
+Resulta, pois, por passagem ao quociente, um homomorfismo de grupos abelianos:
+\[
+u(f'_R) : \fm/\fm^2 \longrightarrow \fm^r/\fm^{r+1} \quad .
+\]

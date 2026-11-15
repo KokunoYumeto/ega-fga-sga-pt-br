@@ -1,0 +1,27 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 8232--8256 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Proposição 1.1.3}
+A categoria \(\ell\text{-}\adc(X)\) dos feixes \(\ell\)-ádicos construtíveis de \(X\) é abeliana. É noetheriana quando \(X\) é noetheriano.
+\end{statement}
+
+\begin{prooftext}[Demonstração]
+Quando \(X\) é noetheriano, as duas afirmações são consequências de (V 5.2.3). No caso geral, é preciso ver que todo morfismo
+\[
+u:F\longrightarrow G
+\]
+de feixes \(\ell\)-ádicos construtíveis sobre \(X\) possui um núcleo e um conúcleo.
+
+Quanto ao conúcleo, isto segue-se de (V 3.1.3). Demonstremos a existência do núcleo de \(u\). Para todo aberto noetheriano \(V\) de \(X\), sabe-se que a restrição de \(u\) a \(V\),
+\[
+u_V:F_V\longrightarrow G_V,
+\]
+admite um núcleo na categoria \(\ell\text{-}\adc(V)\), que possui a seguinte descrição simples. Se \(K\) é o núcleo de \(u_V\) na categoria \(\Hom(\mathbb N^\circ,\Ab(V))\), \(K\) verifica a condição de Mittag-Leffler-Artin-Rees e, denotando por \(K'\) seu sistema projetivo das imagens universais, existe um inteiro \(r\) tal que o sistema projetivo
+\[
+m_r(K')=\bigl(K'_{n+r}/\ell^{\,n+1}K'_{n+r}\bigr)_{n\in\mathbb N}
+\]
+(com os morfismos de transição evidentes) seja \(\ell\)-ádico construtível. O composto evidente que aparece a seguir é um núcleo de \(u_V\) na categoria \(\ell\text{-}\adc(V)\):
+\[
+m_r(K')\longrightarrow K'\longrightarrow K.
+\]
+A construção anterior mostra, em particular, que, se \(W\) é um aberto contido em \(V\), a restrição a \(W\) de um núcleo de \(u_V\) é um núcleo de \(u_W\). Seja então \((V_i)_{i\in I}\) um recobrimento de \(X\) por abertos noetherianos. Se \(i\) e \(j\) são dois elementos de \(I\), as restrições a \(V_i\cap V_j\) dos núcleos de \(u_{V_i}\) e \(u_{V_j}\) são canonicamente isomorfas, o que permite construir por colagem um núcleo de \(u\).
+\end{prooftext}

@@ -1,0 +1,48 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9201--9246 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Corolário 1.5 (sequência exata de Gysin)}
+A sucessão espectral de Leray
+\[
+H^i(S,\R^j q_*(q^*L))\Rightarrow H^{i+j}(U,q^*L)
+\]
+define uma longa sequência exata, chamada sequência exata de Gysin,
+\[
+\cdots\longrightarrow H^i(S,L)\longrightarrow H^i(U,q^*L)\longrightarrow
+H^{i-2r+1}(S,L\otimes\mu_S^{\otimes -r})\longrightarrow H^{i+1}(S,L)\longrightarrow\cdots.
+\]
+\end{statement}
+
+\emph{Demonstração.} Lema das duas linhas.
+
+\subsection*{2. Esquemas projetivos}
+
+No que segue, o modo de exposição adotado baseia-se numa sugestão de L. Illusie, e o método seguido é próximo de um método de P. Deligne para demonstrar a degeneração de certas sucessões espectrais [6].
+
+\subsubsection*{2.1}
+Sejam $X$ e $Y$ dois esquemas e $f:X\to Y$ um morfismo. Vamos definir uma flecha
+\[
+\R f_*(A_X)\otimes^L \R f_*(A_X)\longrightarrow \R f_*(A_X)
+\tag{2.1.1}
+\]
+de $D(Y)$, que possui as propriedades usuais de associatividade e comutatividade e que, portanto, dota $\R f_*(A_X)$ de uma estrutura de ``álgebra generalizada''. Denotemos, para isso, por
+\[
+C^*(X,A_X)
+\]
+a resolução de Godement de $A_X$ (SGA 4 XVII). Procedendo como em (TF 6.6), define-se um morfismo de resoluções
+\[
+C^{\bullet}(X,A_X)\otimes C^{\bullet}(X,A_X)\longrightarrow C^{\bullet}(X,A_X\otimes A_X).
+\]
+Compondo-o com o morfismo
+\[
+C^{\bullet}(X,A_X\otimes A_X)\longrightarrow C^{\bullet}(X,A_X)
+\]
+deduzido da multiplicação de $A_X$, obtém-se finalmente um morfismo
+\[
+C^{\bullet}(X,A_X)\otimes C^{\bullet}(X,A_X)\longrightarrow C^{\bullet}(X,A_X).
+\tag{2.1.2}
+\]
+Aplicando o funtor $f_*$, deduz-se sem dificuldade um morfismo de complexos de $A_Y$-módulos
+\[
+f_*C^{\bullet}(X,A_X)\otimes f_*C^{\bullet}(X,A_X)\longrightarrow f_*C^{\bullet}(X,A_X),
+\]
+de onde se obtém imediatamente (2.1.1) utilizando resoluções planas dos componentes da expressão à esquerda.

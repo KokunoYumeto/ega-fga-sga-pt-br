@@ -1,0 +1,90 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 1495--1583 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{Apêndice}
+\begin{center}
+por L.~ILLUSIE
+\end{center}
+
+A teoria precedente estende-se facilmente a anéis de base mais gerais que o anel constante $\Z/n\Z$. Indicaremos brevemente como se formula a teoria para anéis de base localmente constantes, anulados por $n>0$, e cujas fibras geométricas são anéis noetherianos. De resto, trata-se apenas de um quadro provisório\footnote{Segundo Grothendieck!}: cedo ou tarde será preciso globalizar, tomando como ``coeficientes'' sobre um esquema $X$ esquemas relativos sobre o sítio $(X_{\mathrm{\acute et}},\Z/n\Z)$.
+
+\subsection*{1. Feixes construtíveis}
+
+1.1. Seja $X$ um esquema, e seja $A_X$ um feixe de anéis sobre $X$ (para a topologia étale), localmente constante, com anéis noetherianos à esquerda como fibras geométricas. Denotamos por ${}_A X$ a categoria dos $A_X$-módulos à esquerda, e por $\D({}_A X)$ (ou $\D(X)$ se não houver risco de confusão) a categoria derivada correspondente. A noção de $A_X$-módulo (à esquerda) construtível define-se como em (SGAA IX 2.3), substituindo a expressão ``localmente constante de valor de apresentação finita'' por ``de apresentação finita como $A_{U_i}$-módulo''.
+
+Denotamos por $\D_c(X)$ a subcategoria plena de $\D(X)$ formada pelos complexos $E$ tais que $\uH^i(E)$ seja um $A_X$-módulo construtível para todo $i$. É uma subcategoria triangulada de $\D(X)$.
+
+1.2. Seja $E\in\ob\D(X)$. Diz-se (cf. Exp.~II 3.11) que $E$ é pseudocoerente se, para todo $i$, $\uH^i(E)$ é um $A_X$-módulo de apresentação finita (ou localmente constante construtível, se se preferir). Denotamos por $\D(X)_{\mathrm{coh}}$ (ou $\D_{\mathrm{coh}}(X)$) a subcategoria plena de $\D(X)$ formada pelos objetos pseudocoerentes. Deduz-se de (SGAA IX 2.1) que é uma subcategoria triangulada de $\D_c(X)$.
+
+\textbf{Proposição 1.3} (lema de devissage). Seja $X$ um esquema quase-compacto e quase-separado (resp. noetheriano), e seja $C$ uma subcategoria estritamente plena da categoria $\Cons(X)$ dos $A_X$-módulos à esquerda construtíveis. Suponhamos que $C$ é estável por extensões. São equivalentes as condições seguintes:
+\begin{enumerate}[label=(\roman*)]
+\item $C=\Cons(X)$;
+\item $C$ contém os feixes do tipo $i_!(F)$, onde $i:Y\to X$ é um subesquema de apresentação finita (resp. um subesquema integral), e $F$ é localmente constante construtível sobre $Y$.
+\end{enumerate}
+Se $A_X$ for constante de valor $A$, um anel noetheriano à esquerda anulado por um inteiro $n>0$, as condições anteriores são equivalentes a:
+\begin{enumerate}[label=(\roman*),start=3]
+\item $C$ é estável por somandos diretos e contém os feixes do tipo $f_*i_!(M_U)$, onde $i:U\to Y$ é uma imersão aberta (resp. um aberto de um esquema integral), $f:Y\to X$ um morfismo finito (resp. finito e tal que o ponto genérico de $Y$ seja separável sobre sua imagem), e $M_U$ um $A_U$-módulo à esquerda constante de valor um $A$-módulo cíclico anulado por um divisor primo de $n$.
+\end{enumerate}
+Finalmente, se $X$ é noetheriano e satisfaz a condição (reg) (I 3.1.1), a condição (ii) (resp. (iii)) equivale à condição análoga na qual se supõe, além disso, que $Y$ (resp. $U$) seja regular.
+
+\emph{Demonstração.} A equivalência das condições (i) e (ii) demonstra-se como no caso em que $A_X$ é constante; veja-se (SGAA IX 2.4 e 2.5).
+
+Suponhamos que $A_X$ é constante de valor $A$ anulado por $n$, e demonstremos que (iii) implica (ii). Seja $E\in\ob\Cons(X)$; demonstremos que $E\in\ob C$. Pela equivalência (i)$\Leftrightarrow$(ii), podemos supor que $E=j_!(F)$, onde $j:Z\to X$ é a imersão de um subesquema de apresentação finita (resp. integral), e $F$ um $A_Z$-módulo construtível localmente constante, que podemos até supor (após um devissage um pouco mais fino) trivializado por um recobrimento étale $g:Z'\to Z$ de grupo $G$. O feixe $F$ é, pois, definido por um $A$-módulo de tipo finito $M$ sobre o qual atua $G$. Se $\ell$ é um divisor primo de $n$, o subgrupo de $\ell$-torção de $M$ é um sub-$G$-$A$-módulo $M_\ell$ de $M$, e tem-se
+\[
+        M=\bigoplus M_\ell,
+\]
+onde $\ell$ percorre o conjunto dos divisores primos de $n$. Dada a estabilidade de $C$ por somandos diretos, ficamos reduzidos ao caso em que $M$ é de $\ell$-torção. Seja $H$ um $\ell$-subgrupo de Sylow de $G$, e seja $h:U=Z'/H\to Z$ o recobrimento intermediário correspondente a $H$. Como o grau de $h$ é primo com $\ell$, o ``método do traço'' (SGAA IX 5.1) mostra que a seta de adjunção
+\[
+        F\longrightarrow h_*h^*(F)
+\]
+identifica sua fonte com um somando direto; basta, pois, demonstrar que $j_!h_*h^*(F)\in\ob C$. Em virtude do ``teorema principal'' (EGA IV 8.12.6), existe um diagrama comutativo
+\[
+\begin{tikzcd}
+U \arrow[r,"i"] \arrow[d,"h"'] & Y \arrow[d,"f"]\\
+Z \arrow[r,"j"] & X,
+\end{tikzcd}
+\]
+onde $i$ é uma imersão aberta, e $f$ um morfismo finito. Tem-se
+\[
+        j_!h_*h^*(F) \simeq f_* i_! h^*(F).
+\]
+Agora, $h^*(F)$ é definido por $M$ considerado como $H$-$A$-módulo. A implicação (iii) $\Rightarrow$(ii) será, portanto, deduzida do seguinte lema.
+
+\textbf{Lema 1.3.1.} Sejam $A$ um anel noetheriano à esquerda, $\ell$ um número primo, $H$ um $\ell$-grupo finito, $M$ um $H$-$A$-módulo à esquerda de tipo finito anulado por $\ell^\nu$ ($\nu\geq 1$). Existe uma filtração finita de $M$ por sub-$H$-$A$-módulos tal que os quocientes sucessivos sejam $A$-módulos cíclicos anulados por $\ell$, e sobre os quais $H$ age trivialmente.
+
+\emph{Demonstração.} A sequência exata (de $H$-$A$-módulos)
+\[
+        0\longrightarrow \ell M\longrightarrow M\longrightarrow M/\ell M\longrightarrow 0
+\]
+reduz, por indução sobre $\nu$, ao caso em que $M$ está anulado por $\ell$. Demonstremos que então $M$ admite uma filtração finita por sub-$H$-$A$-módulos tal que $H$ age trivialmente sobre os quocientes sucessivos. Raciocinando por indução noetheriana sobre o conjunto dos sub-$H$-$A$-módulos de $M$ que possuem a propriedade enunciada, ficamos reduzidos a demonstrar que $M\neq0$ implica $M^H\neq0$. Ora, verifica-se trivialmente que o núcleo do homomorfismo de aumento $\F_\ell[H]\to\F_\ell$ é um ideal nilpotente, e o lema de Nakayama implica que todo $H$-$\F_\ell$-módulo não reduzido a $0$ possui um vetor invariante não nulo, o que demonstra nossa afirmação. Portanto, $M$ admite uma filtração finita tal que os quocientes sucessivos sejam $A$-módulos de tipo finito anulados por $\ell$ e sobre os quais $H$ age trivialmente. Por indução noetheriana pode-se conseguir ainda que os quocientes sucessivos sejam $A$-módulos cíclicos, o que conclui a demonstração de (1.3.1).
+
+A última afirmação de (1.3) é imediata e é deixada ao leitor.
+
+\subsection*{2. Dimensão quase-injetiva}
+
+Com as notações de (1.1), definem-se, como em (I 1.1 e 1.4), as noções de $A_X$-módulo quase-injetivo e de dimensão quase-injetiva de um objeto de $\D(X)$. As proposições (I 1.3, 1.5 e 1.6) estendem-se sem modificação.
+
+Às vezes é conveniente introduzir uma noção de dimensão quase-injetiva pontual. Seja $x\in X$, e seja $K\in\ob \D^+(X)$. Diz-se que $K$ tem dimensão quase-injetiva $\leq N$ em $\bar{x}$ se, para todo $A_X$-módulo construtível $F$, tem-se
+\[
+        \underline{\Ext}^{i}(F,K)_{\bar{x}}=0\qquad\hbox{para }i>N.
+\]
+Chama-se dimensão quase-injetiva de $K$ em $\bar{x}$, e denota-se por $\dim.\mathrm{q.inj}_{\bar{x}}(K)$, o ínfimo dos $N$ que verificam a condição anterior. Naturalmente, tem-se
+\[
+        \dim.\mathrm{q.inj}(K)=\sup_{\bar{x}}\dim.\mathrm{q.inj}_{\bar{x}}(K),
+\]
+onde $\bar{x}$ percorre o conjunto dos pontos geométricos de $X$.
+
+É interessante comparar a noção anterior com a noção de dimensão topológica estrita introduzida por VERDIER em [1]. Diz-se que $K\in\ob \D^+(X)$ tem dimensão topológica estrita $\leq N$ em um ponto geométrico $\bar{x}$ de $X$ se, para todo subesquema $Y$ de $X$, tem-se
+\[
+        \underline{\Ext}^{i}(A_Y,K)_{\bar{x}}=\uH^i_Y(K)_{\bar{x}}=0\qquad\hbox{para }i>N.
+\]
+Chama-se dimensão topológica estrita de $K$ em $\bar{x}$, e denota-se por $\dim.\mathrm{top}_{\bar{x}}(K)$, o ínfimo dos $N$ que verificam a condição anterior. Enquanto a dimensão quase-injetiva depende a priori do anel de base, a dimensão topológica estrita depende apenas do complexo subjacente de feixes abelianos.
+
+Tem-se evidentemente
+\[
+        \dim.\mathrm{top}_{\bar{x}}(K)\leq \dim.\mathrm{q.inj}_{\bar{x}}(K).
+\]
+Mais adiante veremos exemplos de igualdade.
+
+\subsection*{3. Complexos dualizantes: definição e propriedades formais}
+
+Conservemos as notações anteriores, mas suponhamos que $A_X$ é comutativo. As noções de par bidualizante e de complexo dualizante definem-se como em (I 1.7). Os enunciados (I 1.9, 1.11, 1.14) são válidos sem modificação. Os enunciados (I 1.12, 1.13, 1.15) também são válidos, mas sob a condição de supor que $A$ esteja anulado por um inteiro $n>0$ primo com as características residuais de $Y$. Finalmente, o teorema de unicidade (I 2.1) é válido sempre que se suponha que $\Spec(A_{\bar{x}})$ é conexo para todo ponto geométrico $\bar{x}$ de $X$.

@@ -1,0 +1,34 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 11403--11434 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Lema 9.8.7}
+A aplicação $v_*$ é injetiva.
+\end{statement}
+
+\emph{Demonstração.} Seja $Z''$ o esquema obtido pela explosão de $Z'$ ao longo de $W'$ ou, o que é equivalente, ao longo de $\widehat N\cup W'=f_1^{-1}(Y\times\mathbb P^1)$. A transformação estrita $X''$ de $X$ em $Z''$ é também a transformação estrita de $X'$ em $Z''$. As notações são determinadas pelo diagrama canônico
+\[
+\begin{tikzcd}
+X''\arrow[r,"v''"]\arrow[d,"f'"',"\wr"]&Z''\arrow[d,"f'_1"]\\
+X'\arrow[r,"v"]&Z'.
+\end{tikzcd}
+\]
+Como $X'\cap W'=\emptyset$, o morfismo $f'_1$ é um isomorfismo sobre uma vizinhança aberta de $X'$ e, em particular, $f'$ é um isomorfismo. Além disso, como $f'_1$ é transversal a $v$, tem-se a igualdade
+\[
+(f'_1)^*\circ v_*=v''_*\circ(f')^*,
+\tag{9.8.8}
+\]
+de modo que basta demonstrar que $v''_*$ é injetiva. Mas, pela propriedade de comutatividade das explosões (veja-se, por exemplo, Hironaka: Smoothing of algebraic cycles, Amer. Journal of Math. (1968), lema 4.1), $Z''$ também pode ser obtido explodindo primeiro $X\times\mathbb P^1$ ao longo de $Y\times\mathbb P^1$, de onde resulta um esquema $Z'_1$, e depois $Z'_1$ ao longo da imagem inversa de $Y$. É claro que $Z'_1=X'\times\mathbb P^1$, sendo a projeção $Z'_1\to X\times\mathbb P^1$ o produto $f\times\operatorname{id}_{\mathbb P^1}$, de onde se obtém o diagrama cartesiano evidente
+\[
+\begin{tikzcd}[column sep=huge,row sep=large]
+H\arrow[r,hook,"{t\mapsto(t,0)}"]\arrow[d,"g"']&H\times\mathbb P^1\arrow[r,hook,"{j\times\operatorname{id}}"]\arrow[d,"{g\times\operatorname{id}}"]&X'\times\mathbb P^1=Z'_1\arrow[d,"{f\times\operatorname{id}}"]\\
+Y\arrow[r,hook,"\gamma"]&Y\times\mathbb P^1\arrow[r,hook,"{i\times\operatorname{id}}"]&X\times\mathbb P^1
+\end{tikzcd}
+\]
+A transformada estrita de $X\times0$ por $f\times\operatorname{id}$ identifica-se com $X'\times0$, que contém $H=H\times0=(f\times\operatorname{id})^{-1}(Y)$. Se agora se explode $Z'_1$ ao longo de $H$, como $H$ é de codimensão pura $1$ em $X'$, a transformada estrita de $X'$ é canonicamente isomorfa a $X'$ (o que já sabíamos), de onde resulta um diagrama comutativo canônico
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+&X'\arrow[r,hook,"v''"]\arrow[d,"f''"']&Z''\arrow[d,"f''_1"]\\
+H\arrow[r,hook]&X'\arrow[r,hook,"v'"]&X'\times\mathbb P^1\\
+&t\arrow[r,mapsto]&{(t,0)}
+\end{tikzcd}
+\]
+Recordemos que queremos ver que $v''_*$ é injetiva. Comparando com $(D_2)$, vê-se que isto equivale a demonstrar que $v_*$ é injetiva quando, além disso, $Y$ é de codimensão $1$ em $X$, o que faremos agora. Mas então a igualdade $(f_1)_*\circ v_*=u_*\circ f_*$ permite concluir, pois $f_*$ é um isomorfismo e $u_*$ um monomorfismo cindido, já que $u$ admite uma retração.

@@ -1,0 +1,47 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 471--510 (LF-normalized unit).
+\subsection*{Notação 1.10}
+Se $X$ é um esquema, denotaremos por $\D^{b}(X)_{\mathrm{torf}}$ (respectivamente, $\D^{b}(X)_{\mathrm{qinjf}}$) a subcategoria plena de $\D(X)$ formada pelos objetos de dimensão Tor finita (respectivamente, de dimensão quase-injetiva finita).
+
+\subsection*{Proposição 1.11 (cf. [H] V 2.6)}
+Sejam $X$ um esquema e $K \in \ob \D^{+}(X)$.
+\begin{enumerate}
+\item[a)] Para $F \in \ob \D^{-}(X)$ e $G \in \ob \D^{-}(X)$ (respectivamente, $F \in \ob \D(X)$ e $G \in \ob \D^{b}(X)_{\mathrm{torf}}$), existe um isomorfismo funtorial
+\[
+\underline{D}_K(F \mathop{\otimes}\limits^{\mathrm{L}} G) \xrightarrow{\sim} \R\,\underline{\Hom}(F, \underline{D}_K(G)).
+\]
+\item[b)] Se $K$ satisfaz as condições (i) e (ii) de (1.7), tem-se a implicação
+\[
+\begin{aligned}
+G \in \ob \D_c^{b}(X)_{\mathrm{torf}} \quad \Longrightarrow \quad
+&\underline{D}_K(G) \in \ob \D_c^{b}(X)_{\mathrm{qinjf}} \\
+&\text{e } \underline{D}_K(G) \text{ satisface (1.7.(ii)).}
+\end{aligned}
+\]
+\item[c)] Se $K$ é dualizante, para $F \in \ob \D_c^{-}(X)$ e $G \in \ob \D_c^{b}(X)$ (respectivamente, $F \in \ob \D(X)$, $G \in \ob \D_c^{b}(X)$ e $\underline{D}_K(G) \in \ob \D_c^{b}(X)_{\mathrm{torf}}$) existe um isomorfismo funtorial
+\[
+\underline{D}_K(F \mathop{\otimes}\limits^{\mathrm{L}} \underline{D}_K(G)) \xrightarrow{\sim} \R\,\underline{\Hom}(F, G).
+\]
+Além disso, há a implicação
+\[
+\begin{aligned}
+\underline{D}_K(G) \in \ob \D_c^{b}(X)_{\mathrm{torf}} \quad \Longrightarrow \quad
+&G \in \ob \D_c^{b}(X)_{\mathrm{qinjf}} \\
+&\text{e } G \text{ satisface (1.7.(ii)).}
+\end{aligned}
+\]
+\item[d)] Se $K$ é dualizante e tem dimensão injetiva finita, as implicações de b) e c) são equivalências.
+\end{enumerate}
+
+\emph{Demonstração.} a) é apenas a fórmula de adjunção tão querida por Cartan (SGA~6~I~7.4).
+
+b) Seja $G \in \ob \D_c^{b}(X)_{\mathrm{torf}}$. Se $F$ é um $A_X$-módulo construtível variável, os objetos de cohomologia de $F \mathop{\otimes}\limits^{\mathrm{L}} G$ são construtíveis (1.9) e nulos salvo entre duas cotas fixas independentes de $F$. Portanto, o mesmo vale para os objetos de cohomologia de $\underline{D}_K(F \mathop{\otimes}\limits^{\mathrm{L}} G)$, e a conclusão segue de a).
+
+c) A primeira afirmação deduz-se da fórmula a), aplicada a $\underline{D}_K(G)$ em vez de $G$, e da reflexividade de $G$. A segunda deduz-se dela por um raciocínio análogo ao de b).
+
+d) Demonstremos, por exemplo, a implicação recíproca de b). Suponhamos que $\underline{D}_K(G) \in \ob \D_c^{b}(X)_{\mathrm{qinjf}}$ e que $\underline{D}_K(G)$ satisfaça (1.7.(ii)). Então, para $F$ construtível variável, os objetos de cohomologia de $\underline{D}_K(F \mathop{\otimes}\limits^{\mathrm{L}} G)$ são construtíveis e nulos salvo entre duas cotas fixas. Portanto, o mesmo vale para os objetos de cohomologia de $\underline{D}_K \underline{D}_K(F \mathop{\otimes}\limits^{\mathrm{L}} G)$; mas $F \mathop{\otimes}\limits^{\mathrm{L}} G \xrightarrow{\sim} \underline{D}_K \underline{D}_K(F \mathop{\otimes}\limits^{\mathrm{L}} G)$, já que $K$ é dualizante e tem dimensão injetiva finita (1.8~d)). Consequentemente, $G$ tem dimensão Tor finita. A implicação recíproca de c) demonstra-se de maneira análoga.
+
+\subsection*{Observações 1.11.1}
+\begin{enumerate}
+\item[a)] O redator ignora se a afirmação d) de (1.11) é válida sob a única hipótese de que $K$ seja dualizante.
+\item[b)] A proposição anterior exprime-se graficamente dizendo que o funtor dualizante $\underline{D}_K$ permuta os funtores $\mathop{\otimes}\limits^{\mathrm{L}}$ e $\R\,\underline{\Hom}$, bem como as noções de dimensão Tor finita e dimensão quase-injetiva finita (embora a troca só seja plenamente satisfatória quando $K$ tem dimensão injetiva finita).
+\end{enumerate}

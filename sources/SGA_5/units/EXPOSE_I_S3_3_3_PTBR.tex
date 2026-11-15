@@ -1,0 +1,74 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 825--899 (LF-normalized unit).
+\subsubsection*{3.3. Construtibilidade dos $\underline{\Ext}^i(F, A_X)$.}
+
+\subsection*{Proposição 3.3.1}
+Seja $X$ um esquema.
+\begin{enumerate}
+\item[a)] As seguintes condições são equivalentes:
+\begin{enumerate}
+\item[(i)] para $F \in \ob \D_c^{-}(X)$ e $G \in \ob \D_c^{+}(X)$, $\R\,\underline{\Hom}(F,G) \in \ob \D_c^{+}(X)$;
+\item[(i~bis)] para todo par $(F,G)$ de $A_X$-módulos construtíveis, $\R\,\underline{\Hom}(F,G) \in \ob \D_c^{+}(X)$, ou seja, os $\underline{\Ext}^i(F,G)$ são construtíveis para todo $i$;
+\item[(ii)] para toda imersão aberta $i : U \to X$ e todo $A_U$-módulo construtível $F$, $\R^p i_{*}(F)$ é construtível para todo $p$;
+\item[(ii~bis)] para toda imersão $i : Y \to X$ e todo $A_Y$-módulo construtível $F$, $\R^p i_{*}(F)$ é construtível para todo $p$;
+\item[(ii~ter)] para toda imersão $i : Y \to X$ e todo $A_Y$-módulo localmente constante construtível $F$, $\R^p i_{*}(F)$ é construtível para todo $p$;
+\item[(iii)] para todo morfismo finito (resp.~toda imersão fechada) $f : Y \to X$, e todo $F \in \ob \D_c^{+}(X)$, $\R^{!}f(F) \in \ob \D_c^{+}(Y)$.
+\end{enumerate}
+\item[b)] Estas condições são verificadas nos dois casos seguintes:
+\begin{enumerate}
+\item[(i)] $\dim(X) \leqslant 1$;
+\item[(ii)] \textquotedblleft dispõe-se, sobre $X$, da resolução de singularidades e da pureza\textquotedblright{} (cf.~3.1.6~b)).
+\end{enumerate}
+\end{enumerate}
+
+\emph{Demonstração.} A equivalência de (i) e (i~bis) resulta da sucessão espectral padrão dos $\underline{\Ext}$ para os hiper-$\underline{\Ext}$.
+
+$(\text{i~bis}) \Rightarrow (\text{ii})$. Seja $\ol{F}$ um $A_X$-módulo construtível que prolonga $F$, por exemplo $\ol{F} = i_{!}(F)$. Por dualidade (SGAA~XVIII~3.1.10), tem-se
+\[
+\R i_{*}(F) = \R i_{*} \R\,\underline{\Hom}(A_U, i^{!}(\ol{F})) \simeq \R\,\underline{\Hom}(i_{!}(A_U), \ol{F}), \text{ e conclui-se.}
+\]
+
+$(ii) \Rightarrow (ii\text{~bis})$. Fatore-se $i$ como uma imersão fechada seguida de uma imersão aberta.
+
+$(ii\text{~bis}) \Rightarrow (i\text{~bis})$. Como a questão é local, podemos supor que $X$ é afim e, pelo devissage habitual (SGAA~IX~2.5), podemos limitar-nos a verificar (ii) para $F = i_{!}(M)$, onde $i : Y \to X$ é a imersão de um subesquema e $M$ é um $A_Y$-módulo localmente constante (construtível). Pela fórmula de projeção (SGAA~XVIII),
+\[
+\R\,\underline{\Hom}(i_{!}(M), G) \simeq \R i_{*} \R\,\underline{\Hom}(M, \R i^{!}(G)),
+\]
+e uma sucessão espectral, ficamos reduzidos a provar que $\R\,\underline{\Hom}(M, \R i^{!}(G)) \in \ob \D_c^{+}(Y)$. Demonstremos primeiro que $\R i^{!}(G) \in \ob \D_c^{+}(Y)$. Depois de fatorar $i$, se necessário, podemos supor que $Y$ é fechado. Seja $j : U = X - Y \to X$ a imersão complementar.
+
+Aplicando o funtor $\R\,\underline{\Hom}(\quad, G)$ à sequência exata
+\[
+0 \longrightarrow A_{U,X} \longrightarrow A_X \longrightarrow A_Y \longrightarrow 0,
+\]
+obtém-se um triângulo distinguido
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+& \R\,\underline{\Hom}(A_{U,X}, G) \arrow[dl] & \\
+\R\,\underline{\Hom}(A_Y, G) \arrow[rr] & & \R\,\underline{\Hom}(A_X, G) \arrow[ul]
+\end{tikzcd}
+\]
+Ora, tem-se $\R\,\underline{\Hom}(A_X, G) = G$. Por outro lado, $\R\,\underline{\Hom}(A_{U,X}, G) \simeq \R j_{*} j^{!}(G)$ pertence a $\D_c^{+}(X)$ por hipótese. Portanto, $\R\,\underline{\Hom}(A_Y, G) \simeq i_{*} \R i^{!}(G)$ pertence a $\D_c^{+}(X)$. Resolvendo $M$ pela esquerda, localmente para a topologia étale, por $A_Y$-módulos livres, deduz-se, por novo devissage, que $\R\,\underline{\Hom}(M, \R i^{!}(G)) \in \ob \D_c^{+}(X)$, c.q.d.
+
+$(ii\text{~bis}) \Rightarrow (ii\text{~ter})$ é trivial.
+
+$(ii\text{~ter}) \Rightarrow (ii)$. Sejam $i : U \to X$ uma imersão aberta e $F$ um $A_U$-módulo construtível. Devemos demonstrar que $\R i_{*}(F) \in \ob \D_c^{+}(X)$. Como a questão é local, podemos supor que $X$ é noetheriano, e procedemos por indução noetheriana sobre $X$. Podemos supor que $U \neq \emptyset$; existe, portanto, um aberto não vazio $j : V \to U$ de $U$ tal que $j^{*}(F)$ seja localmente constante (SGAA~IX~2.4). Seja $M$ o cilindro da aplicação $F \to \R j_{*}j^{*}(F)$. Aplicando $\R i_{*}$, obtém-se um triângulo distinguido
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+& \R i_{*}(M) \arrow[dl,"{(+1)}"'] & \\
+\R i_{*}(F) \arrow[rr] & & \R i_{*}\R j_{*}j^{*}(F) \arrow[ul]
+\end{tikzcd}
+\]
+A condição (ii~ter) implica que se tem
+\[
+\R i_{*} \R j_{*} j^{*}(F) \simeq \R(ij)_{*} j^{*}(F) \in \ob \D_c^{+}(X).
+\]
+Consequentemente, há
+\[
+\R j_{*}j^{*}(F) \simeq i^{*} \R(ij)_{*} j^{*}(F) \in \ob \D_c^{+}(U).
+\]
+Assim, $M \in \ob \D_c^{+}(U)$, já que $F \in \ob \D_c^{+}(U)$. Além disso, a cohomologia de $M$ tem suporte em um fechado $Z$ de $U$ diferente de $U$. Aplicando a hipótese de indução a $U \cap \ol{Z} \to \ol{Z}$, deduz-se que $\R i_{*}(M) \in \ob \D_c^{+}(X)$ e, consequentemente, que $\R i_{*}(F) \in \ob \D_c^{+}(X)$.
+
+A equivalência das condições (i)--(ii~ter) com a condição (iii) é deixada ao leitor (utilize-se 1.14).
+
+b) (i) Por normalização, reduzimo-nos ao caso em que $X$ é regular e usamos a pureza (que será demonstrada em (5.1)).
+
+b) (ii) Veja 3.1.6~b).

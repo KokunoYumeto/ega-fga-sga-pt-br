@@ -1,0 +1,24 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 545--571 (LF-normalized unit).
+\subsection*{Corolário 1.13}
+Sob as hipóteses de 1.12, suponhamos ainda que $f$ é próprio, e seja $F \in \ob \D^{-}(X)$. Se $(F, K_X)$ é bidualizante, então $(\R f_{*}F, K_Y)$ é bidualizante. Reciprocamente, se $f$ é finito e $(\R f_{*}F, K_Y)$ é bidualizante, então $(F, K_X)$ é bidualizante.
+
+\emph{Demonstração.} Suponhamos que $(F, K_X)$ é bidualizante. Aplicando $\R f_{*}$ ao isomorfismo canônico $F \xrightarrow{\sim} \underline{D}_X^{2} F$, obtém-se
+\begin{align*}
+\R f_{*} F &\xrightarrow{\sim} \R f_{*} \underline{D}_X \underline{D}_X F \\
+&\xrightarrow{\sim} \underline{D}_Y \R f_{*} \underline{D}_X F \qquad \text{(por a) (i))} \\
+&\xrightarrow{\sim} \underline{D}_Y \underline{D}_Y \R f_{*} F \qquad \text{(por a) (i)).}
+\end{align*}
+O leitor valente convencer-se-á de que o isomorfismo obtido é o canônico, o que demonstra(rá) a primeira afirmação.
+
+Suponhamos agora que $f$ é finito e que $(f_{*}F, K_Y)$ é bidualizante ($\R f_{*} = f_{*}$, pois $f$ é finito), e demonstremos que o morfismo canônico $F \to \underline{D}_X^{2} F$ é um isomorfismo. Em virtude do lema 1.14~a) seguinte, basta demonstrar que o morfismo induzido $f_{*}F \to f_{*}\underline{D}_X^{2} F$ é um isomorfismo. Ora, mediante uma dupla aplicação de a) (i), \textquotedblleft convencemo-nos\textquotedblright{} de que este último não é senão o isomorfismo canônico $f_{*}F \to \underline{D}_Y^{2} f_{*}F$, o que conclui a demonstração.
+
+\subsection*{Lema 1.14}
+Seja $f : X \to Y$ um morfismo finito de esquemas.
+\begin{enumerate}
+\item[a)] Seja $u : F \to G$ uma seta de $\D(X)$. Para que $u$ seja um isomorfismo, é necessário e suficiente que $f_{*}u$ o seja.
+\item[b)] Seja $F \in \ob \D(X)$. Para que $F \in \ob \D_c(X)$, é necessário e suficiente que $f_{*}F \in \ob \D_c(Y)$.
+\end{enumerate}
+
+\emph{Demonstração.} a) Como o funtor $f_{*}$ é exato, podemos reduzir-nos ao caso em que $F$ e $G$ são concentrados em grau zero. A afirmação deduz-se então imediatamente do cálculo das fibras de $f_{*}F$ (respectivamente, $f_{*}G$) (SGA~A~VIII~5.5).
+
+b) Do mesmo modo, podemos reduzir-nos ao caso em que $F$ está concentrado em grau zero. A necessidade é conhecida (SGA~A~IX~2.14); demonstremos a suficiência, isto é, que, se $f_{*}F$ é construtível, então $F$ é construtível. Como a questão é local (em cima e, portanto, \emph{a fortiori}, em baixo), podemos supor que $Y$ e, por conseguinte, $X$ são afins. Existe então (EGA~IV~17.16.6) uma família finita $(Y_i)$ de subesquemas afins de $Y$, disjuntos dois a dois e cuja união é $Y$, tal que, se $X_i = X \times_Y Y_i$, o morfismo induzido $f_i : X_i \to Y_i$ se decompõe como $X_i \xrightarrow{u_i} X'_i \xrightarrow{v_i} Y_i$, onde $u_i$ é um morfismo finito, radicial e sobrejetivo, e $v_i$ um morfismo finito étale. Ponhamos $F|X_i = F_i$. Pelo teorema de mudança de base para um morfismo finito (SGA~A~VIII~5.5), tem-se $f_{i*}(F_i) \to (f_{*}F)|Y_i$, e a questão se reduz (SGA~A~IX~2.8) a demonstrar a afirmação para $(f_i, F_i)$. Ponhamos $F'_i = u_{i*}(F_i)$, de modo que $f_{i*}(F_i) = v_{i*}(F'_i)$. Da definição de construtibilidade deduz-se imediatamente que $F_i$ é construtível se e somente se $F'_i$ o é; do mesmo modo, por SGA~A~VIII~1.1, $F'_i$ é construtível se e somente se $v_{i*}(F'_i)$ o é. Daí segue a conclusão procurada.

@@ -1,0 +1,31 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 512--543 (LF-normalized unit).
+\subsection*{Proposição 1.12}
+Sejam $Y$ um esquema noetheriano, $f : X \to Y$ um morfismo de tipo finito e $K_Y \in \ob \D^{+}(Y)$. Suponhamos que $n$ é primo com as características residuais de $Y$, e ponhamos $K_X = \R^{!}f(K_Y)$ (SGA~A~XVIII~3.1), $\underline{D}_X = \underline{D}_{K_X}$ e $\underline{D}_Y = \underline{D}_{K_Y}$.
+\begin{enumerate}
+\item[a)] Para $F \in \ob \D^{-}(X)$ existe um isomorfismo funtorial
+\[
+(i) \qquad \R f_{*} \underline{D}_X(F) \xrightarrow{\sim} \underline{D}_Y \R_{!}f(F).
+\]
+Se, além disso, $K_X$ e $K_Y$ são dualizantes\footnote{Veremos mais adiante que, sob condições bastante gerais, se $K_Y$ é dualizante, então $K_X$ é dualizante.}, para $F \in \ob \D_c^{b}(X)$ existe um isomorfismo funtorial
+\[
+(ii) \qquad \R_{!}f \, \underline{D}_X(F) \xrightarrow{\sim} \underline{D}_Y \R f_{*}(F).
+\]
+\item[b)] Para $F \in \D_c^{-}(Y)$ existe um isomorfismo funtorial\footnote{Se o funtor $\R^{!}f$ tem dimensão cohomológica finita, como ocorre, por exemplo, quando $Y$ é de tipo finito sobre um corpo (SGA~A~X~4.3 e XVIII~3.1.7), o isomorfismo b)(i) é válido para $F \in \ob \D_c(Y)$.}
+\[
+(i) \qquad \R^{!}f \, \underline{D}_Y(F) \xrightarrow{\sim} \underline{D}_X f^{*}(F).
+\]
+Se, além disso, $K_X$ e $K_Y$ são dualizantes\footnotemark[3], para $F \in \D_c^{b}(Y)$ existe um isomorfismo funtorial
+\[
+(ii) \qquad f^{*} \underline{D}_Y F \xrightarrow{\sim} \underline{D}_X \R^{!}f \, F.
+\]
+\end{enumerate}
+
+\emph{Demonstração.} a) (i) não é senão o isomorfismo de dualidade (SGA~A~XVIII~3.1.9.6).
+
+a) (ii) obtém-se aplicando $\underline{D}_Y$ a ambos os membros de a) (i), escrita para o argumento $\underline{D}_X F$, e utilizando o \textquotedblleft teorema de finitude\textquotedblright{} (SGA~A~XVII~5.3.6), que assegura que $\R_{!}f(\underline{D}_X(F)) \in \ob \D_c(Y)$.
+
+b) (i) não é senão a \textquotedblleft fórmula de indução\textquotedblright{} (SGA~A~XVIII~3.1.12.2).
+
+b) (ii) obtém-se aplicando $\underline{D}_X$ a ambos os membros de b) (i), escrita para o argumento $\underline{D}_Y F$, e utilizando (1.9.~b)).
+
+\textbf{Escólio:} Pode-se dizer, graficamente, que os funtores dualizantes $\underline{D}_X$ e $\underline{D}_Y$ trocam as noções de imagem direta (respectivamente, inversa) ordinária e extraordinária: $\R f_{*}$ e $\R_{!}f$ (respectivamente, $f^{*}$ e $\R^{!}f$).

@@ -1,0 +1,129 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 1584--1712 (LF-normalized unit; frozen source SHA256 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28).
+\subsection*{4. Pureza absoluta}
+
+Voltemos à situação da pureza cohomológica absoluta (I 3.1.4). Seja $X$ um esquema localmente noetheriano regular, e seja $n>0$ um inteiro primo com as características residuais de $X$. Seja $i:Y\to X$ um subesquema regular de codimensão $d>0$ em todo ponto. Dizer que o par $(Y,X)$ satisfaz a pureza cohomológica absoluta significa, recordemos, que o homomorfismo ``classe fundamental local'' (SGA $4^{1/2}$ Ciclo 2.2)
+\begin{equation}\tag{4.1}
+        (\mu_n^{\otimes -d})_Y[-2d]\longrightarrow \R i^!(\Z/n\Z)_X
+\end{equation}
+é um isomorfismo.
+
+Fixemos agora sobre $X$ um feixe de anéis $A_X$ anulado por $n$. Ponhamos por um momento $G=(\Z/n\Z)_X$. Então, para todo $F\in\ob\D_A^+(X)$, pode-se definir uma seta canônica em $\D^+({}_A X)$:
+\begin{equation}\tag{4.2}
+        i^*(F)\otimes^L_{\Z/n\Z} \R i^!(G)\longrightarrow \R i^!\bigl(F\otimes^L_{\Z/n\Z}G\bigr).
+\end{equation}
+De fato, por dualidade (SGAA XVIII 3.1.6), equivale a definir uma seta
+\[
+        i_!\bigl(i^*(F)\otimes^L_{\Z/n\Z}\R i^!(G)\bigr)\longrightarrow F\otimes^L_{\Z/n\Z}G;
+\]
+para ela se escolherá a composta da seta de Künneth (SGAA XVII 5.4.2.2)
+\[
+        i_!\bigl(i^*(F)\otimes^L_{\Z/n\Z}\R i^!(G)\bigr)\longrightarrow F\otimes^L_{\Z/n\Z}i_!\R i^!(G),
+\]
+e da seta deduzida do homomorfismo de traço (SGAA XVIII 3.1.6)
+\[
+        F\otimes^L_{\Z/n\Z}i_!\R i^!(G)\longrightarrow F\otimes^L_{\Z/n\Z}G.
+\]
+Observe-se que na definição de (4.2) só se utilizou o fato de que $G$ e $\R i^!(G)$ eram de dimensão Tor finita sobre $\Z/n\Z$. Suponhamos, por outro lado, que o funtor $i^!$ seja de dimensão cohomológica finita na categoria dos $(\Z/n\Z)_X$-módulos: este é o caso, por exemplo, se $X$ é de tipo finito sobre um corpo (SGAA XIV 3.1), ou, mais geralmente, se $X$ é excelente de igual característica (SGAA XIX 6.1) quando se dispõe da resolução de singularidades, ou também se $X$ é de tipo finito sobre $\Spec(\Z)$ (SGAA X 6). Então, a seta (4.2) define-se para todo $F\in\ob\D({}_A X)$.
+
+Compondo (4.1) e (4.2), tem-se, pois, para $F\in\ob\D_A^+(X)$, uma seta canônica
+\begin{equation}\tag{4.3}
+        i^*(F)\otimes^L_{\Z/n\Z}(\mu_n^{\otimes -d})_Y[-2d]\longrightarrow \R i^!(F).
+\end{equation}
+Suponhamos que $A_X$ é localmente constante, e seja $F\in\ob\D_A^+(X)$ tal que, para todo $i$, $\uH^i(F)$ seja um $A_X$-módulo localmente constante. Então, se $i^!$ é de dimensão cohomológica finita, a seta (4.2) (e, portanto, a seta (4.3) se $(Y,X)$ satisfaz a pureza) é um isomorfismo.
+
+De fato, por devissage, reduzimo-nos primeiro ao caso em que $F$ está concentrado em grau $0$. Como a questão é local, pode-se supor que $X$ é afim, e que $A_X$ e $F$ são constantes. Resolvendo $F$ pela esquerda mediante $A_X$-módulos livres, e aplicando a hipótese de que $i^!$ tem dimensão cohomológica finita, reduzimo-nos ao caso em que $F$ é livre. Mediante uma passagem imediata ao limite, reduzimo-nos a $F$ livre de tipo finito, e finalmente a $F=A_X$. Basta, pois, provar a afirmação no caso $A_X=(\Z/n\Z)_X$. Mas o devissage precedente reduz ao caso $F=(\Z/n\Z)_X$, e neste caso a seta (4.2) reduz-se à identidade.
+
+\textbf{Definição 4.4.} Dado o anel $A_X$ (localmente constante, anulado por $n$), diremos que o par $(Y,X)$ satisfaz a pureza cohomológica em sentido forte se, para todo $F\in\ob\D_A^+(X)$ tal que os $\uH^i(F)$ sejam localmente constantes, a seta canônica (4.3) é um isomorfismo.
+
+Diremos que o teorema de pureza é válido em sentido forte sobre $X$ se, localmente (para a topologia étale), todo par $(Y,X)$ como o anterior satisfaz a pureza em sentido forte. Pelo que se viu, para que $(Y,X)$ satisfaça a pureza no sentido forte basta, pois, que $(Y,X)$ satisfaça a pureza no sentido ordinário (I 3.1.) e que o funtor $i^!$ seja de dimensão cohomológica finita.
+
+\subsection*{5. Limitação da dimensão quase-injetiva}
+
+\textbf{Proposição 5.1.} Seja $X$ um esquema localmente noetheriano regular, provido de um feixe de anéis $A_X$ localmente constante, anulado por um inteiro $n>0$ primo com as características residuais de $X$, e cujas fibras geométricas são anéis noetherianos à esquerda. Supõe-se que $X$ satisfaz as condições (reg) (I 3.1.1) e $(\mathrm{cdloc})_n$ (I 3.1.3), e que o teorema de pureza em sentido forte é válido sobre $X$ (4.4) (condições todas satisfeitas se $X$ é suave sobre um corpo perfeito, ou se $X$ é excelente de característica nula).
+
+Seja $F\in\ob\D_A^+(X)$ tal que os $\uH^i(F)$ sejam localmente constantes, e seja $x$ um ponto de $X$ tal que $F_{\bar{x}}\neq0$ e $\dim.\mathrm{inj}_{A_{\bar{x}}}(F_{\bar{x}})<+\infty$. Nessas condições, tem-se:
+\[
+        \dim.\mathrm{q.inj}_{\bar{x}}(F)=2\dim(\mathcal{O}_{X,x})+\dim.\mathrm{inj}(F_{\bar{x}}),
+\]
+com as notações do n\textsuperscript{o}~2.
+
+\emph{Demonstração.} Basta retomar passo a passo a demonstração de (I 3.2.1). Vamos primeiro demonstrar a desigualdade
+\[
+        \dim.\mathrm{q.inj}_{\bar{x}}(F)\leq 2\dim(\mathcal{O}_{X,x})+\dim.\mathrm{inj}(F_{\bar{x}})=N,
+\]
+isto é, a relação
+\begin{equation}\tag{*}
+        \underline{\Ext}^{i}(E,F)_{\bar{x}}=0\quad\hbox{para } i>N\hbox{ e todo }A_X\hbox{-módulo construtível }E.
+\end{equation}
+Como a questão é local, podemos, por devissage (1.3), limitar-nos a verificar $(*)$ para $E=i_!(M)$, onde $i:Y\to X$ é um subesquema integral regular fechado em um aberto $D(f)$, (onde $f\in\Gamma(X,\mathcal{O}_X)$), de codimensão $d$ em todo ponto de $D(f)$, e $M$ um $A_Y$-módulo localmente constante construtível ($A_Y=i^*A_X$).
+
+Agora, temos o isomorfismo de dualidade (SGAA XVIII)
+\[
+        \R\underline{\Hom}(i_!(M),F)\simeq \R i_*\R\underline{\Hom}(M,\R i^!F).
+\]
+Por outro lado, pelo teorema de pureza temos o isomorfismo (4.3)
+\[
+        i^*(F)\otimes^L_{\Z/n\Z}(\mu_n^{\otimes -d})_Y[-2d]\xrightarrow{\sim}\R i^!(F).
+\]
+Seja $\bar{y}$ um ponto geométrico de $Y$. Como $M$ é localmente constante construtível, tem-se canonicamente
+\[
+        \R\underline{\Hom}(M,\R i^!F)_{\bar{y}}\simeq \R\underline{\Hom}(M_{\bar{y}},(\R i^!F)_{\bar{y}}),
+\]
+Por conseguinte, graças a (4.3),
+\[
+        \R\underline{\Hom}(M,\R i^!F)_{\bar{y}}\simeq \R\underline{\Hom}(M_{\bar{y}},F_{\bar{y}})[-2d].
+\]
+Por outro lado, pode-se supor que nos situamos em uma vizinhança conexa de $x$. Tem-se então $F_{\bar{x}}\simeq F_{\bar{y}}$, $A_{\bar{x}}\simeq A_{\bar{y}}$, pois $A_X$ e os $\uH^i(F)$ são localmente constantes, de onde
+\[
+        \underline{\Ext}^i(M_{\bar{y}},F_{\bar{y}})=0\quad\hbox{para }i>\dim.\mathrm{inj}(F_{\bar{x}}),
+\]
+Isto é, finalmente,
+\[
+        \underline{\Ext}^{q}(M,\R i^!F)=0\quad\hbox{para }q>2d+\dim.\mathrm{inj}(F_{\bar{x}}).
+\]
+Ponhamos $G=\R\underline{\Hom}(M,\R i^!F)$, e calculemos agora $\R i_*(G)_{\bar{x}}$. Para isso, introduzamos, como em (I 3.2.1), o fecho esquemático $Z$ de $Y$ em $X$, com o que se obtém um diagrama cartesiano de imersões
+\[
+\begin{tikzcd}
+Y \arrow[r] \arrow[d,"j"'] & D(f) \arrow[d]\\
+Z \arrow[r,"k"] & X.
+\end{tikzcd}
+\]
+Tem-se, pois, $\R i_*(G)\simeq k_*\R j_*(G)$. Suponhamos, é claro, que $x\in Z$, pois, do contrário, ter-se-ia trivialmente $\R i_*(G)=0$. Introduzamos então a localização estrita $\bar{Z}=\Spec(\mathcal{O}_{Z,\bar{x}})$ de $Z$ em $\bar{x}$, e denotemos por $\bar{f}$ a imagem de $f$ em $\mathcal{O}_{Z,\bar{x}}$, por $\bar{Y}=\bar{Z}\times_ZY=\bar{Z}\cap D(\bar{f})$, e por $\bar{G}$ a imagem inversa de $G$ sobre $\bar{Y}$. Segundo (SGAA VIII 5.2), tem-se
+\[
+        \R i_*(G)_{\bar{x}}=\R j_*(G)_{\bar{x}}\simeq \R\Gamma(\bar{Y},\bar{G}).
+\]
+A condição $(\mathrm{cdloc})_n$ implica, pois, mediante um argumento de sucessão espectral, que se tem
+\[
+        \R^p i_*(G)_{\bar{x}}=0\quad\hbox{para }p>2d+\dim.\mathrm{inj}(F_{\bar{x}})+\dim(\mathcal{O}_{Z,x}).
+\]
+Mas tem-se (cf. I 3.2.1 demonstração)
+\[
+        \dim(\mathcal{O}_{Z,x})=\dim(\mathcal{O}_{X,x})-d\geq0,
+\]
+portanto
+\[
+        \R^p i_*(G)_{\bar{x}}=0\quad\hbox{para }p>d+\dim(\mathcal{O}_{X,x})+\dim.\mathrm{inj}(F_{\bar{x}}),
+\]
+portanto, a fortiori, para $p>2\dim(\mathcal{O}_{X,x})+\dim.\mathrm{inj}(F_{\bar{x}})$, o que demonstra $(*)$.
+
+Resta provar que a limitação $(*)$ é a melhor possível. Ponhamos $f=\dim.\mathrm{inj}(F_{\bar{x}})$, e seja $M'$ um $A_{\bar{x}}$-módulo de tipo finito tal que
+\[
+        \underline{\Ext}^f(M',F_{\bar{x}})\neq0.
+\]
+Seja $Z$ o subesquema fechado integral de $X$ que é o fecho de $x$, e seja $Y=U\cap Z$ um aberto regular de $Z$ que contém $x$ e de codimensão $d=\dim(\mathcal{O}_{X,x})$ em todo ponto. Restringindo $Y$, se necessário, existe um $A_Y$-módulo localmente constante construtível $M$ tal que $M_{\bar{x}}=M'$. Aplicando o teorema de pureza, obtém-se então
+\[
+        \underline{\Ext}^{2d+f}(M,F|U)_{\bar{x}}\simeq \underline{\Ext}^f(M',F_{\bar{x}})\neq0,
+\]
+o que termina a demonstração.
+
+Observe-se que, se $F$ é um $A_X$-módulo tal que $F_{\bar{x}}$ seja injetivo, na última parte da demonstração pode-se escolher $M=A_Y$; obtém-se, pois:
+
+\textbf{Corolário 5.1.1.} Sob as hipóteses de (5.1), suponhamos que $F$ é um $A_X$-módulo localmente constante tal que $F_{\bar{x}}$ seja injetivo. Então, tem-se
+\[
+        \dim.\mathrm{q.inj}_{\bar{x}}(F)=\dim.\mathrm{top}_{\bar{x}}(F)=2\dim(\mathcal{O}_{X,x}),
+\]
+com as notações do n\textsuperscript{o}~2.
+
+\textbf{Observações 5.1.2.} a) Com as notações de (5.1), se $F_{\bar{x}}=0$, então $F=0$ em uma vizinhança de $x$; portanto, $\R\underline{\Hom}(E,F)_{\bar{x}}=0$ para todo $E\in\ob\D^{-}(X)$.
+
+b) Se $\dim.\mathrm{inj}(F_{\bar{x}})=+\infty$, então $\dim.\mathrm{q.inj}_{\bar{x}}(F)=+\infty$; de fato, para todo $p$, existe um $A_{\bar{x}}$-módulo de tipo finito $M'$ tal que $\underline{\Ext}^p(M',F_{\bar{x}})\neq0$, e portanto um $A_X$-módulo construtível $M$, localmente constante em uma vizinhança de $x$, tal que $\underline{\Ext}^p(M,F)_{\bar{x}}\neq0$.

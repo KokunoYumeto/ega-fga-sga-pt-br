@@ -1,0 +1,43 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 13399--13439 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{4. Generalidades sobre os termos locais}
+
+Suponhamos que $X'$ seja liso sobre $k$ e, além disso, que o número de pontos fixos de $f$ seja finito. Daí resulta, em particular, que o número de pontos fixos de $g^{-1}f^{\prime}$ é finito para cada $g \in G$.
+
+Para cada ponto fixo $x \in X$ de $f$, introduz-se a função $\varphi$-central
+\[
+S_x(f',f,G,\varphi) : G \longrightarrow \bQ \quad ,
+\]
+com valores racionais, definida pela fórmula:
+
+\begin{equation}\tag{4.1}
+S_x(f',f,G,\varphi)(g) = \frac{1}{c^\varphi(g)} \sum_{x' \in {X'_x}^{g^{-1}f'}} (\nu_{x'}(g^{-1}f'_R) - 1) \quad .
+\end{equation}
+
+As seguintes notações foram utilizadas:
+
+\begin{equation}\tag{4.2}
+c^\varphi(g) = \card G_g^\varphi \quad , \quad G_g^\varphi = \{ x \in G / \varphi(x)gx^{-1} = g \} \quad ,
+\end{equation}
+
+\begin{equation}\tag{4.3}
+{X'_x}^{g^{-1}f'} = \{ x' \in X' / p(x') = x \; , \; (g^{-1}f^{\prime})(x') = x' \} \quad .
+\end{equation}
+
+\begin{equation}\tag{4.4}
+\nu_{x'}(g^{-1}f') = \text{a multiplicidade do ponto fixo } x' \text{ de } g^{-1}f^{\prime} \quad .
+\end{equation}
+
+Por composição com as inclusões canônicas
+\[
+\bQ \hookrightarrow \bQ_\ell
+\]
+A função $S_x(f',f,G,\varphi)$ dá origem a funções $\varphi$-centrais $S_{x,\ell}(f',f,G,\varphi)$ sobre $G$ com valores no corpo $\bQ_\ell$ dos números $\ell$-ádicos.
+
+\medskip
+\noindent
+\textbf{Conjectura 4.5.} \emph{Para todo $\ell \neq \car(k)$, os valores da função $S_{x,\ell}(f',f,G,\varphi)$ são inteiros $\ell$-ádicos.}
+
+\medskip
+
+A seguir, demonstraremos que a conjectura 4.5 é verdadeira quando a dimensão de $X$ é igual a 1.

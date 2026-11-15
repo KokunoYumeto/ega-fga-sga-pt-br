@@ -1,0 +1,28 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10316--10341 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Corolário 6.5}
+Sejam $S$ um esquema, $G$ um $S$-esquema em grupos redutivo e $H$ um sub-$S$-esquema em grupos redutivo de $G$, tais que o feixe quociente de $G$ por $H$ para a topologia fielmente plana quase compacta seja representável. Então, denotando por
+\[
+p:G/H\to S
+\]
+o morfismo canônico, as conclusões de (6.2) são válidas para todo $A_S$-módulo localmente constante construtível $M$.
+\end{statement}
+
+\emph{Demonstração.} Seja $f:G\to G/H$ o morfismo canônico, que é liso e, portanto, de descida para os feixes étale (SGA 4 VIII 9.1). Para todo inteiro $r\ge0$, ponhamos
+\[
+G_r=G\times_{G/H}G\times_{G/H}\cdots\times_{G/H}G
+\quad(r+1\text{ veces}),
+\]
+que, segundo SGA 3 V 1.5, se identifica canonicamente com
+\[
+G\times_S H\times_S\cdots\times_S H,
+\]
+onde $H$ aparece $r$ vezes, e denotemos por $f_r:G_r\to G/H$ e $g_r:G_r\to S$ os morfismos canônicos, de modo que, em particular, $f_0=f$. Finalmente, para todo inteiro $q\ge0$, denotemos por $\mathcal H^q(M)$ o complexo
+\[
+\R^q(g_0)_*(f_0^*M)\to \R^q(g_1)_*(f_1^*M)\rightrightarrows\cdots\to \R^q(g_r)_*(f_r^*M)\cdots .
+\]
+Segundo (SGA), há uma sequência espectral de descida (ou de Čech)
+\[
+E(M):E_2^{pq}=H^p(H^q(M))\Rightarrow E^n=\R^np_*(M).
+\]
+Como os esquemas $G_r$ são esquemas em grupos redutivos, de 6.2 deduz-se que os termos $E_2^{pq}$ são localmente constantes construtíveis e compatíveis com toda mudança de base. Conclui-se imediatamente que o mesmo vale para os $E^n$.

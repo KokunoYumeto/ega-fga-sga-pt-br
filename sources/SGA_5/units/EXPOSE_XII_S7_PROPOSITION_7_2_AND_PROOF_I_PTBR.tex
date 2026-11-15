@@ -1,0 +1,50 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 14145--14192 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Proposição 7.2}
+Sejam $X$ um esquema suave de dimensão $1$, $F$ construtível e
+\[
+(u,f):(X,F)\longrightarrow (X,F)
+\]
+um endomorfismo tal que o morfismo de feixes
+\[
+u:f^*(F)\longrightarrow F
+\]
+seja um isomorfismo. Nestas condições existem $U,U',G,f',\varphi$ que satisfazem as condições de 5.1, 6.1, 6.2.
+\end{statement}
+
+\begin{prooftext}[Demonstração]
+Seja $U$ o maior aberto de $X$ tal que $F$ seja localmente constante em $U$, e denotemos por $Y$ seu complemento. O conjunto $Y$ é estável por $f$:
+\[
+f(Y)\subset Y.
+\]
+Com efeito, suponhamos, por redução ao absurdo, que exista $y\in Y$ tal que $f(y)\in U$. O feixe $f^*(F)$ é então localmente constante em uma vizinhança de $y$ e, usando o isomorfismo $u$, resulta que $F$ é localmente constante em uma vizinhança de $y$, o que é absurdo.
+
+Se $f$ é constante, a demonstração da proposição é trivial. Suporemos, pois, que $f$ não é constante. Se $\eta$ é o ponto genérico de $X$, ter-se-á então $f(\eta)=\eta$.
+
+Sejam $i_\eta:\Spec(k(\eta))\hookrightarrow X$ a inclusão canônica, $F_\eta=i_\eta^*(F)$ e
+\[
+u_\eta:f_\eta^*(F_\eta)\longrightarrow F_\eta
+\]
+o morfismo, com efeito um isomorfismo, de feixes induzido por $u$, sendo $f_\eta$, naturalmente, a restrição de $f$ a $\Spec(k(\eta))$.
+
+Traduzindo tudo em termos de $H$-módulos:
+\[
+H=\Gal(k(\eta)_s/k(\eta)),\qquad k(\eta)_s=\text{um fecho separável de }k(\eta),
+\]
+obtêm-se os isomorfismos
+\[
+\begin{tikzcd}[column sep=large]
+H \arrow[r,"\Psi"] & H
+\end{tikzcd}
+\qquad
+\begin{tikzcd}[column sep=large]
+F_{\bar\eta} \arrow[r,"u_{\bar\eta}"] & F_{\bar\eta},
+\end{tikzcd}
+\]
+onde $F_{\bar\eta}$ tem uma estrutura de $H$-módulo e verifica-se a seguinte relação:
+\[
+u_{\bar\eta}(gx)=\Psi(g)\,u_{\bar\eta} x,
+\qquad g\in H,
+\quad x\in F_{\bar\eta}.
+\]
+Se $H_1$ é o maior subgrupo distinguido de $H$ de índice finito tal que $F_{\bar\eta}^{H_1}=F_{\bar\eta}$, temos $\Psi(H_1)=H_1$. Existe tal subgrupo porque o feixe $F_\eta$ é construtível.

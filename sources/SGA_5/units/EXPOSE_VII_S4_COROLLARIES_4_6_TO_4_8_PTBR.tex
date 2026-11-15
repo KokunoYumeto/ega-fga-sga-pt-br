@@ -1,0 +1,45 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9903--9945 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Corolário 4.6}
+Sejam $S$ um esquema, $E$ um $\mathcal O_S$-módulo localmente livre de posto constante $r$ e $g:X=\V(\check E)\to S$ o fibrado vetorial cujo feixe de seções é $E$. Para toda seção $f$ de $X$ sobre $S$, tem-se
+\[
+f_*(1_S)=g^*(c_r(E))
+\]
+em $H^{2r}(X,\mu_X^{\otimes r})$.
+\end{statement}
+
+\emph{Demonstração.} Como $g^*$ é um isomorfismo (1.2) e $g\circ f=\mathrm{id}$, $f^*$ é bijetivo. Basta, portanto, ver que
+\[
+f^*f_*(1_S)=f^*g^*(c_r(E)).
+\]
+Ora, denotando por $N$ o feixe normal de $f$, esta última igualdade equivale, por 4.1, a
+\[
+c_r(\check N)=c_r(E).
+\]
+De fato, tem-se até mesmo um isomorfismo $\check N\simeq E$, pois a sequência exata de (EGA IV 17.2.5), aplicada à situação
+\[
+S\xrightarrow{f} X\xrightarrow{g} S,
+\]
+fornece um isomorfismo $N\simeq f^*\Omega^1_{X/S}$ e, por outro lado, $\Omega^1_{X/S}\simeq g^*\check E$ (EGA IV 16.4.8).
+
+\begin{statement}{Corolário 4.7}
+Sob as hipóteses de 4.6, supõe-se, além disso, que $S$ é suave e quase projetivo sobre um corpo separadamente fechado. Então, denotando por $\sigma_X$ o ciclo da seção nula de $X$ e por $Y=f^{-1}(\sigma_X)$ o ciclo de zeros de $f$, tem-se
+\[
+\cl_S(Y)=c_r(E)
+\]
+em $H^{2r}(S,\mu_S^{\otimes r})$.
+\end{statement}
+
+\emph{Demonstração.} Por IV,
+\[
+\cl_S(Y)=f^*\cl_X(\sigma_X).
+\]
+Denotando por $s_0$ o morfismo da seção nula de $X$, tem-se
+\[
+\cl_X(\sigma_X)\stackrel{\mathrm{dfn}}{=}(s_0)_*(1_S)\stackrel{(4.6)}{=}g^*(c_r(E)),
+\]
+de onde segue-se a afirmação aplicando o homomorfismo $f^*$ aos termos extremos.
+
+\begin{statement}{Observação 4.8}
+Seja $\ell$ um número primo distinto das características residuais de $S$. Por uma simples passagem ao limite projetivo, deduzem-se de 4.6 e 4.7 os enunciados correspondentes em cohomologia $\ell$-ádica.
+\end{statement}

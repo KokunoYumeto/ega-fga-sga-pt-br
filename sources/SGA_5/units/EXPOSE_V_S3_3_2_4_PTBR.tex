@@ -1,0 +1,51 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7179--7227 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Proposição 3.2.4 (Estabilidade por sequências exatas)}
+Seja
+\[
+0\longrightarrow X\stackrel{u}{\longrightarrow}Y\stackrel{v}{\longrightarrow}Z\longrightarrow0
+\]
+uma sucessão exata de $P$, sendo os sistemas projetivos $X$, $Y$ e $Z$ tais que
+\[
+J^{n+1}X_n=J^{n+1}Y_n=J^{n+1}Z_n=0\qquad(n\ge0).
+\]
+\begin{enumerate}[label=(\roman*)]
+\item Se $X$ verifica (MLAR) e $Y$ é AR-$J$-ádico, $Z$ é AR-$J$-ádico.
+\item Se $Y$ verifica (MLAR) e $Z$ é AR-$J$-ádico, $X$ verifica (MLAR).
+\end{enumerate}
+\end{statement}
+
+\begin{prooftext}[Demonstração]
+Usaremos livremente, para todo sistema projetivo $X$ e todo inteiro $r$, a notação $\ell_r(X)$ já explicitada.
+
+Demonstração de (i). Se $X'$ e $Y'$ designam os sistemas projetivos das imagens universais de $X$ e $Y$, $u$ envia $X'$ em $Y'$, de onde se obtém o diagrama comutativo exato que aparece a seguir, no qual as flechas são evidentes:
+\[
+\begin{tikzcd}
+0 \arrow[r] & X' \arrow[r] \arrow[d] & Y' \arrow[r] \arrow[d] & \widetilde{Z'} \arrow[r] \arrow[d] & 0\\
+0 \arrow[r] & X \arrow[r] & Y \arrow[r] & Z \arrow[r] & 0 .
+\end{tikzcd}
+\]
+Como a categoria $P_{AR}$ é abeliana e o funtor $P_{AR}\colon P\to P_{AR}$ é exato, deduz-se deste diagrama e do fato de que as inclusões de $X'$ e $Y'$ em $X$ e $Y$, respectivamente, são AR-isomorfismos (2.5.1), que o morfismo $\widetilde Z\to Z$ é um AR-isomorfismo.
+
+Isso permite reduzir-se ao caso em que $X$ e $Y$, e portanto $Z$, são estritos. Existe então um inteiro $r$ tal que o sistema projetivo $\ell_r(Y)$ seja $J$-ádico. O funtor $\ell_r$ é evidentemente exato à direita, de onde se obtém uma sucessão exata
+\[
+\ell_r(X)\stackrel{\ell_r(u)}{\longrightarrow}\ell_r(Y)\stackrel{\ell_r(v)}{\longrightarrow}\ell_r(Z)\longrightarrow0.
+\]
+Substituindo se necessário $\ell_r(X)$ pela sua imagem por $\ell_r(u)$, são cumpridas as condições de aplicação de (3.1.3 (i)), que mostra que $\ell_r(Z)$ é $J$-ádico, de onde segue-se a afirmação.
+
+(ii) Sejam $Y'$ e $Z'$ os sistemas projetivos das imagens universais de $Y$ e $Z$. Consideremos o diagrama comutativo exato e evidente que aparece abaixo, no qual as duas flechas verticais à direita são as inclusões canônicas:
+\[
+\begin{tikzcd}
+0 \arrow[r] & \widetilde X \arrow[r] \arrow[d] & Y' \arrow[r] \arrow[d] & Z' \arrow[r] \arrow[d] & 0\\
+0 \arrow[r] & X \arrow[r,"u"'] & Y \arrow[r,"v"'] & Z \arrow[r] & 0 .
+\end{tikzcd}
+\]
+Isso mostra que o morfismo $\widetilde X\to X$ é um AR-isomorfismo, o que permite reduzir-se ao caso em que $Y$ e $Z$ são estritos. Neste caso, como $Z$ é estrito e AR-$J$-ádico, deduz-se de (3.2.3) que existe um inteiro $r$ tal que $\ell_r(Z)$ seja $J$-ádico. A consideração do diagrama comutativo exato
+\[
+\begin{tikzcd}
+0 \arrow[r] & \widetilde{\widetilde X} \arrow[r] \arrow[d] & \ell_r(Y) \arrow[r] \arrow[d] & \ell_r(Z) \arrow[r] \arrow[d] & 0\\
+0 \arrow[r] & X \arrow[r,"u"'] & Y \arrow[r,"v"'] & Z \arrow[r] & 0,
+\end{tikzcd}
+\]
+no qual, como antes, $\widetilde{\widetilde X}\to X$ é um AR-isomorfismo, permite reduzir-se ao caso em que $Y$ é estrito e $Z$ é $J$-ádico. Então (3.1.3 (ii)) permite concluir.
+\end{prooftext}

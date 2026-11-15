@@ -1,0 +1,46 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 11582--11625 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{1. Caso das categorias abelianas}
+
+Seja $\cC$ uma categoria abeliana e seja $\cD$ uma subcategoria plena de $\cC$. Diz-se que uma função $f$ de $\cD$ em um grupo abeliano $G$ é aditiva se, para toda sequência exata de $\cC$
+\[
+0\longrightarrow E'\longrightarrow E\longrightarrow E''\longrightarrow 0,
+\]
+tal que $E'$, $E''$, $E$ sejam objetos de $\cD$, tem-se
+\[
+f(E)=f(E')+f(E'').
+\]
+Seja $f$ uma função aditiva de $\cD$ em um grupo abeliano $G$. As seguintes propriedades são consequências imediatas da definição:
+\[
+\alpha)\quad f(0)=0,\qquad
+\beta)\quad f(X)=f(Y)\quad\text{se }X\text{ e }Y\text{ são isomorfos,}
+\]
+\[
+\gamma)\quad f(X\oplus Y)=f(X)+f(Y).
+\]
+
+\[
+\delta)\quad
+\text{Seja }E=(E^i,d^i)\text{ um complexo finito de }\cD
+\]
+tal que os objetos $B^{i+1}=\operatorname{Im}(d^i)$, $Z^i=\operatorname{Ker}(d^i)$ e $H^i(E)=Z^i/B^i$ pertençam a $\cD$. Então, tem-se
+\[
+\sum_i (-1)^i f(E^i)=\sum_i (-1)^i f(H^i(E)).
+\]
+
+\[
+\varepsilon)\quad
+\text{Se }F\in\Ob \cD\text{ possui uma filtração finita}
+\]
+\[
+0=F_0\subset F_1\subset\cdots\subset F_n=F,
+\]
+e se se supõe que, para $0<i\le n$, $F_i$ e $F_i/F_{i-1}$ são objetos de $\cD$, então
+\[
+f(F)=\sum_{i=1}^n f(F_i/F_{i-1}).
+\]
+
+\[
+\varphi)\quad
+\text{Se }\cD\text{ é estável sob sumas directas infinitas, então }f=0.
+\]

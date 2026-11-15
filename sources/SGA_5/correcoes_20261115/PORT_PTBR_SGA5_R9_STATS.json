@@ -1,0 +1,16 @@
+{
+ "tag": "PTBR_SGA5_R9",
+ "tree": "sga\\ptbr_sga5_r9\\fixed",
+ "french": "french\\sga-fr\\volumes\\sga5\\current",
+ "files": 377,
+ "two_branches": false,
+ "items": 3770,
+ "outcomes": {
+  "hand": 2910,
+  "applied": 595,
+  "outside": 131,
+  "not_applicable": 108,
+  "already": 26
+ },
+ "files_changed": 200
+}

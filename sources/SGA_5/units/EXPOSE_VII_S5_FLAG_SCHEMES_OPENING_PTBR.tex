@@ -1,0 +1,42 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9994--10033 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{5. Esquemas de banderas}
+
+Sejam $S$ um esquema, $E$, uma $\mathcal O_S$-módulo localmente livre de posto $r$ e $(p_i)_{1\le i\le m}$ $m$ inteiros $>0$ que verificam a igualdade
+\[
+p_1+p_2+\cdots+p_m=r.
+\]
+Lembre-se que chama-se bandeira tipo $(p_1,\ldots,p_m)$ de $E$ para uma filtração finita
+\[
+0=E_m\subset E_{m-1}\subset\cdots\subset E_0=E
+\]
+de $E$ tal que, para todo inteiro $i\in[1,m]$, o coeficiente $E_{i-1}/E_i$ seja localmente livre de posto $p_i$.
+
+Define-se um funtor $(\operatorname{Sch}/S)^\circ\to(\operatorname{Ens})$ associando a todo $S$-esquema $u:T\to S$ o conjunto das bandeiras de tipo $(p_1,\ldots,p_m)$ de $u^*(E)$ e, a todo morfismo de $S$-esquemas, a imagem inversa, no sentido evidente, das bandeiras. É demonstrado (EGA I, 2.a edição) que este funtor é representável, e chama-se $S$-esquema das bandeiras de tipo $(p_1,\ldots,p_m)$ de $E$ a qualquer representante.
+
+Os seguintes: denotar-se-á por $f:X\to S$ o $S$-esquema das bandeiras de tipo $(p_1,\ldots,p_m)$ de $E$. Além disso, o esquema das bandeiras de tipo $(1,1,\ldots,1)$ de $E$ denotar-se-á por $D$ e será chamado de esquema das bandeiras de $E$, sem mais precisão se não houver risco de confusão.
+
+Por definição, é claro que o $\mathcal O_X$-módulo $f^*(E)$ admite uma filtração finita canônica
+\[
+0=F_m\subset F_{m-1}\subset\cdots\subset F_0=f^*(E),
+\]
+Para o qual o coeficiente $E_i=F_{i-1}/F_i$ $(1\le i\le m)$ é localmente livre de posto $p_i$. Indicando, para todo inteiro $i\in[1,m]$, por
+\[
+g_i:D_i\to X
+\]
+O $X$-esquema das bandeiras de $E_i$ e por $g:D_1\times_X\cdots\times_X D_m\to X$ o produto fibrado dos $X$-esquemas $D_i$, é claro que o composto
+\[
+h=f\circ g:\prod_iD_i\to S
+\tag{5.1}
+\]
+é $S$-isomórfico à $S$-esquema das bandeiras de $E$; exceto $S$-isomorfismo, pode ser escrito, portanto,
+\[
+D=\prod_iD_i.
+\]
+
+\begin{statement}{Proposição 5.2}
+Temos, em $D^b(S,A)$, um isomorfismo
+\[
+\R f_*(A)\simeq\bigoplus_i \R^{2i}f_*(A)[-2i].
+\]
+\end{statement}

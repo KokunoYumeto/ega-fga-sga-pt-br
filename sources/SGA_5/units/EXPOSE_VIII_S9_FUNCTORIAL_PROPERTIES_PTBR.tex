@@ -1,0 +1,38 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 12133--12168 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{9. Propriedades funtoriais}
+
+a) Sejam $A$ e $B$ dois anéis (não necessariamente comutativos), e seja $u:A\to B$ um homomorfismo. Todo $B$-módulo à esquerda (resp. à direita) $M$ pode ser dotado de uma estrutura de $A$-módulo à esquerda (resp. à direita), que se denotará por $M_{[u]}$. Em particular, $B_{[u]}$ é um $A$-módulo à direita.
+
+O funtor
+\[
+E\longmapsto B_{[u]}\otimes_A E
+\]
+permite definir o funtor exato
+\[
+D(A)_{\parf}\longrightarrow D(B)_{\parf}
+\]
+e, consequentemente, o homomorfismo:
+\[
+K^{\bullet}(A)\xrightarrow{u^*}K^{\bullet}(B).
+\]
+Obtém-se, de fato, um funtor covariante da categoria dos anéis (resp. dos anéis comutativos) para a categoria dos grupos abelianos (resp. dos anéis comutativos).
+
+b) Suponhamos agora que o $A$-módulo à esquerda $B_{[u]}$ seja pseudocoerente. Resulta, portanto, que o funtor
+\[
+F\longmapsto F_{[u]}
+\]
+transforma um $B$-módulo livre finitamente gerado em um $A$-módulo pseudocoerente. Utilizando a proposição 5.1, obtém-se um funtor exato:
+\[
+D^b(B)_{\coh}\longrightarrow D^b(A)_{\coh}
+\]
+e, consequentemente, um homomorfismo canônico
+\[
+K_\bullet(B)\xrightarrow{u_*}K_\bullet(A).
+\]
+Os homomorfismos $u_*$, $u^*$ verificam a seguinte identidade (a fórmula de projeção):
+\[
+u_*(u^*(\alpha)\cdot \beta)=\alpha\,(u_*(\beta))
+\quad\text{para }\alpha\in K^{\bullet}(A),\ \beta\in K_\bullet(B).
+\]
+Esta fórmula simples será demonstrada de forma mais geral nas exposições do seminário sobre Riemann--Roch (SGA 6 IV 2.11.1.2).

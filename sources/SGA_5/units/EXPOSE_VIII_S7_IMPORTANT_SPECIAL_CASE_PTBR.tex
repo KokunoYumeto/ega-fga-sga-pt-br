@@ -1,0 +1,48 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 11953--11998 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{7. Caso particular importante}
+
+Seja $A$ um anel e $\cC$ a categoria dos $A$-módulos (à esquerda, por exemplo). Denotemos por $\cC_o$ a subcategoria plena de $\cC$ gerada pelos $A$-módulos projetivos finitamente gerados. A subcategoria $\cC_o$ satisfaz as condições (A), (B), (C). Neste caso, utilizamos as notações seguintes:
+\[
+D^-(A)_{\coh}=D_o^-(\cC)_{\coh},\qquad
+D^b(A)_{\coh}=D_o^b(\cC)_{\coh},
+\]
+\[
+D(A)_{\parf}=D_o(\cC)_{\parf}.
+\]
+Os complexos de $D(\cC)$ que são $\cC_o$-pseudocoerentes (resp. $\cC_o$-perfeitos) serão chamados simplesmente complexos pseudocoerentes (resp. perfeitos).
+
+Será interessante considerar os seguintes grupos:
+\[
+K_\bullet(A)=K(D^b(A)_{\coh}),
+\]
+\[
+K^\bullet(A)=K(D(A)_{\parf}).
+\]
+No que diz respeito ao grupo $K^\bullet(A)$, tem-se (prop. 4.1, corolário):
+\[
+K^\bullet(A)=K(D(A)_{\parf})\simeq K(D_o^b(\cC))\simeq K_{\cC_o}(\cC),
+\]
+o que mostra que ele é também o clássico «grupo das classes de módulos projetivos finitamente gerados» de $A$.
+
+No caso particular de um anel noetheriano $A$, o grupo $K_\bullet(A)$ também admite uma descrição clássica. Seja, para esse fim, $\cC_1$ a categoria abeliana dos módulos finitamente gerados. Tem-se então
+\[
+K_\bullet(A)\simeq K(\cC_1).
+\]
+Com efeito, utilizando a proposição 4.1, tem-se
+\[
+K(\cC_1)\simeq K(D^b(\cC_1))\simeq K(D^b_{\cC_1}(\cC)),
+\]
+visto que se tem imediatamente $D^b(\cC_1)\simeq D^b_{\cC_1}(\cC)$.
+
+De fato, se $A$ é noetheriano e $L^\bullet\in D^-(A)$, resulta da proposição 5.1 que $L^\bullet$ é pseudocoerente se, e somente se, os $H^i(L^\bullet)$ são finitamente gerados.
+
+Para qualquer anel $A$, temos um homomorfismo
+\[
+K^{\bullet}(A)\xrightarrow{\widetilde\gamma_A}K_\bullet(A),
+\]
+que procede do funtor de inclusão
+\[
+(*)\qquad D(A)_{\parf}\longrightarrow D^b(A)_{\coh}.
+\]
+Em geral, o homomorfismo $\widetilde\gamma_A$ não é nem injetivo nem sobrejetivo. No caso particular de um anel regular $A$, todo $A$-módulo $M$ finitamente gerado tem dimensão projetiva finita e resulta, graças a 5.1, que o funtor de inclusão $(*)$ é, de fato, uma equivalência entre ambas as categorias. Neste caso, o homomorfismo $\widetilde\gamma_A$ é, portanto, um isomorfismo.

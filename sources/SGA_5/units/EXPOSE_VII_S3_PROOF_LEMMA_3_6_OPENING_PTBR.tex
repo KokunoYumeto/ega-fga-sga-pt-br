@@ -1,0 +1,44 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9522--9565 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Demonstremos o lema 3.6. Para o argumento anterior, basta ver a relação analógica
+\[
+c(p^*E)=\prod_i c(p^*(L_i)),
+\]
+onde, lembremos, $p:P=P_S(\check E)\to S$ é a projeção canônica. Para todo $i\in[1,r]$, o monomorfismo $E_i\to E$ define por dualidade um epimorfismo $\check E\to\check E_i$; colocando $Y_i=P_S(\check E_i)$, obtém-se uma sucessão de subesquemas fechados de $P$:
+\[
+S\simeq Y_1\subset Y_2\cdots Y_i\subset\cdots\subset Y_r=P.
+\]
+Também denotamos, para toda par $(i,j)$ de inteiros com $1\le i\le j\le r$, por
+\[
+\alpha_{ji}:Y_i\to Y_j
+\]
+a imersão fechada canonicamente, e colocamos $\alpha_i=\alpha_{r,i}$. Para todo inteiro $i\in[1,r-1]$, segue-se do lema evidente (3.6.1) que aparece abaixo que $Y_i$ é definido em $Y_{i+1}$ por um ideal inversível isomórfico a
+\[
+\alpha_{i+1}^*(p^*(\check L_{i+1})\otimes\mathcal O_P(-1)).
+\]
+
+\begin{statement}{Lema 3.6.1}
+Seja $0\to L\to E\to F\to0$ uma sequência exata de $\mathcal O_S$-módulos localmente livres. Então a sucessão
+\[
+0\to L\otimes_S S(E)\xrightarrow{u}S(E)\xrightarrow{v}S(F)\to0,
+\]
+No que se refere à $v$, morfismo é evidente e $u$ é o morfismo de grau um correspondente à inclusão de $L$ em $E$, é um sequência exata de $\mathcal O_S$-módulos graduados.
+\end{statement}
+
+Por outro lado, $Y_1$ identifica-se com $S$ e temos um isomorfismo
+\[
+\alpha_1^*(p^*(\check L_1))\simeq\mathcal O_{Y_1}(1),
+\]
+Isto é,
+\[
+\alpha_1^*(p^*(\check L_1)\otimes\mathcal O_P(-1))\simeq \mathcal O_{Y_1}.
+\tag{3.6.2}
+\]
+Podemos concluir usando as duas propriedades seguintes do homomorfismo de Gysin (SGA 4 XVIII) associado a um imersão fechado $u:Z\to X$ de $S$-esquemas suaves definido por um ideal $J$ de $\mathcal O_X$. Satisfaz a fórmula de projeção
+\[
+u_*(x\,u^*(y))=u_*(x)y.
+\]
+Se o ideal $J$ é inversível, temos a relação
+\[
+u_*(1_Z)=-[J]=[\check J].
+\]

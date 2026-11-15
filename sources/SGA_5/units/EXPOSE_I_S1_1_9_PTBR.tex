@@ -1,0 +1,16 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 453--469 (LF-normalized unit).
+Abordemos agora as ``\emph{fórmulas de intercâmbio}''.
+
+Não voltaremos à noção de dimensão Tor de um complexo (SGA~A~XVII~4.1.9)~(*)\footnote{(*) Veja-se também (SGA~6~I~5).}. Reteremos somente que, se $X$ é um esquema e $G \in \ob \D^{-}(X)$, a relação $\underline{\Tor}_i(F,G) = 0$ para $i > N$ e todo $A_X$-módulo $F$ equivale à mesma relação com $F$ construtível (graças a SGA~A~IX~2.9 e à comutatividade de $\mathop{\otimes}\limits^{\mathrm{L}}$ com os limites indutivos); portanto, não é necessário introduzir uma noção de ``quase-dimensão Tor''.
+
+\subsection*{Lema 1.9 (cf. [H] II 4.3)}
+\begin{enumerate}
+\item[a)] Sejam $X$ um esquema, $F \in \ob \D_c(X)$ e $G \in \ob \D_c^{-}(X)$. Tem-se $F \mathop{\otimes}\limits^{\mathrm{L}} G \in \ob \D_c(X)$ se $F \in \ob \D_c^{-}(X)$ ou se $G$ tem dimensão Tor finita.
+\item[b)] Sejam $f : X \to Y$ um morfismo de esquemas e $G \in \ob \D_c(Y)$. Então $f^{*}(G) \in \ob \D_c(X)$.
+\end{enumerate}
+
+\emph{Demonstração.} A afirmação b) deduz-se imediatamente de (SGA~A~IX~2.4). Demonstremos a). Qualquer uma das duas hipóteses sobre $(F,G)$ implica que a sucessão espectral
+\[
+\E_2^{pq} = \sum_{q_1+q_2=q} \underline{\Tor}_{-p}(\H^{q_1}(F), \H^{q_2}(G)) \Rightarrow \H^{*}(F \mathop{\otimes}\limits^{\mathrm{L}} G)
+\]
+é birregular. Portanto, basta demonstrar a) quando $F$ e $G$ estão concentrados em grau $0$, isto é, são $A_X$-módulos construtíveis. Como a questão é local, podemos supor que $X$ é noetheriano. Então $F$ admite (SGA~A~IX~2.7) uma resolução pela esquerda $F'$, cujos termos $F'^i$ são da forma $A_{U,X}$, com $U$ étale e de tipo finito sobre $X$. Tem-se $F \mathop{\otimes}\limits^{\mathrm{L}} G \simeq F' \otimes G$, e a conclusão segue de que os $A_{U,X} \otimes G$ são construtíveis.

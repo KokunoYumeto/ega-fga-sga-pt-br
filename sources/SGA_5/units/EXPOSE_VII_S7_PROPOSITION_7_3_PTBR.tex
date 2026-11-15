@@ -1,0 +1,32 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10486--10515 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+A partir das hipóteses anteriores, pode-se ver que o conhecimento dos grupos de cohomologia de $X$ com coeficientes em $\mathbb Q_\ell$ implica o conhecimento dos de $Y$, exceto na dimensão $n-1$. Nestas condições, o cálculo do último se reduz imediatamente ao cálculo da característica de Euler-Poincaré de $Y$. Vamos agora tratar este cálculo num quadro mais geral.
+
+\begin{statement}{Proposição 7.3}
+Sejam $X$ um $k$-esquema próprio, liso, conexo, de dimensão $n$, $E$ um $\mathcal O_X$-módulo localmente livre de posto constante $r$, e $Y$ o lugar dos zeros de uma seção de $V(\check E)$ transversal à seção zero. Denotando por $p:X\to k$ o morfismo canônico e por $p_*$ o morfismo de Gysin correspondente, tem-se a igualdade
+\[
+\operatorname{EP}(Y)=p_*\bigl(c(\check\Omega_X^1)c(E)^{-1}c_r(E)\bigr)
+\]
+em $H^0(k,\mathbb Q_\ell)=\mathbb Q_\ell$.
+\end{statement}
+
+\emph{Demonstração.} Segundo (EGA IV 17.13.2), $Y$ é liso de dimensão pura $n-r$ e, denotando por $i:Y\to X$ a imersão canônica, o feixe conormal de $i$ é a imagem inversa por $i$ do feixe conormal $\check E$ da seção zero de $V(\check E)$. Tem-se, portanto, uma sequência exata
+\[
+0\to i^*(\check E)\to i^*(\Omega_X^1)\to\Omega_Y^1\to0,
+\tag{7.3.1}
+\]
+de onde resulta imediatamente a igualdade
+\[
+c(\check\Omega_Y^1)=i^*\bigl(c(\check\Omega_X^1)c(E)^{-1}\bigr).
+\tag{7.3.2}
+\]
+% source check 2026-06-11: scan p322 prints reference (3.10) exactly; left unchanged.
+De aí deduz-se por (3.10) a seguinte expressão para $\operatorname{EP}(Y)$:
+\[
+\operatorname{EP}(Y)=p_*i_*i^*\bigl(c(\check\Omega_X^1)c(E)^{-1}\bigr),
+\]
+Isto é, tendo em conta a fórmula de projeção para o morfismo $i$,
+\[
+\operatorname{EP}(Y)=p_*\bigl(c(\check\Omega_X^1)c(E)^{-1}i_*(1_Y)\bigr).
+\]
+A fórmula do enunciado deduz-se imediatamente graças a (4.7).

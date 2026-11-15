@@ -1,0 +1,40 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7229--7266 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{4. Filtrações e graduações}
+\subsubsection*{4.1. Generalidades}
+\subsubsection*{4.1.1}
+Sejam $\cC$ uma categoria abeliana e $X=(X_n)_{n\in\ZZ}$ um sistema projetivo indexado por $\ZZ$ com valores em $\cC$. Supõe-se
+\[
+X_i=0\quad(i<0).
+\]
+Para cada elemento $p$ de $\ZZ$, define-se um subobjeto $F^pX$ de $X$ na categoria $P_1=\Hom(\ZZ^\circ,\cC)$ colocando
+\[
+(F^pX)_n=F^pX_n=
+\begin{cases}
+\Ker(X_n\to X_{p-1}),& n\ge p-1,\\
+0,& n<p-1,
+\end{cases}
+\]
+com morfismos de transição claramente definidos. Assim, obtém-se uma filtração decrescente $(F^pX)_{p\in\ZZ}$ de $X$ que verifica:
+\begin{equation}\tag{a}
+F^pX=X\quad\text{se }p\le0,
+\end{equation}
+\begin{equation}\tag{b}
+(F^pX)_{p-1}=0\quad\text{para todo }p.
+\end{equation}
+Além disso, o lema da serpente aplicado ao diagrama comutativo exato $(D)$ que aparece a seguir demonstra que, sempre que $n\ge p$, o morfismo canônico
+\[
+F^pX_n/F^{p+1}X_n\longrightarrow \Im(X_n\to X_p)\cap\Ker(X_p\to X_{p-1})
+\]
+é um isomorfismo:
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+0 \arrow[r] & \Ker(X_n\to X_p) \arrow[r] \arrow[d] & X_n \arrow[r] \arrow[d] & \Im(X_n\to X_p) \arrow[r] \arrow[d] & 0\\
+0 \arrow[r] & 0 \arrow[r] & X_{p-1} \arrow[r,"\sim"] & X_{p-1} \arrow[r] & 0 .
+\end{tikzcd}
+\]
+Se agora $X$ é um sistema projetivo indexado por $\NN$ com valores em $\cC$, ele se prolonga a um sistema projetivo indexado por $\ZZ$ pondo $X_n=0$ $(n<0)$, com os morfismos de transição evidentes, o que permite aplicar-lhe as construções anteriores. Isso nos permite considerar igualmente a categoria
+\[
+P=\underline{\Hom}(\NN^\circ,\cC)
+\]
+como uma subcategoria plena de $P_1$.

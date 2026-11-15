@@ -1,0 +1,63 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10035--10095 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\emph{Demonstração.} Como o morfismo $h$ é uma composição de um número finito de morfismos do tipo
+\[
+P_T(F)\to T\qquad (F\text{ }\mathcal O_T\text{-módulo localmente livre}),
+\tag{Q}
+\]
+de (2.2.1) segue-se que
+\[
+\R h_*(A)\simeq\bigoplus_j \R^jh_*(A)[-j].
+\]
+Por esta mesma razão, também há
+\[
+\R g_*(A)\simeq\bigoplus_j \R^jg_*(A)[-j].
+\]
+Usando ([6] 2.16), deduz-se um isomorfismo
+\[
+\R f_*(g_*A)\simeq\bigoplus_j \R^j f_*(g_*A)[-j].
+\]
+Como $g$ é suave com fibras geometricamente ligadas, $A_X\simeq g_*(A_D)$, então fica a provar que
+\[
+\R^{2i+1}f_*(A)=0\qquad (i\in\mathbb N).
+\tag{5.2.1}
+\]
+Para isso, pela conservatividade do sistema de fibra funtores (SGA 4 VIII 3.5), é imediatamente reduzido ao caso em que $S$ é o espectro de um corpo separadamente fechado $k$. Então, como o morfismo $g$ é uma composição de fibrados projetivos, de (2.2.4) segue-se que a imagem inversa
+\[
+H^{2i+1}(X,A_X)\to H^{2i+1}(D,A_D)
+\]
+é um monomorfismo, então podemos supor que $X=D$. Neste caso, como o morfismo de projeção $D\to k$ é por sua vez uma composição de fibrados projetivos, a afirmação segue-se por indução de (2.2.4).
+
+\begin{statement}{Corolário 5.3}
+Para todo morfismo de esquemas $u:S\to T$, a sucessão espectral de Leray
+\[
+E_2^{pq}=\R^p u_*\,\R^q f_*(A)\Rightarrow \R^{p+q}(u\circ f)_*(A)
+\]
+Ela está degenerada.
+\end{statement}
+
+\emph{Demonstração.} cf. [6] 1.2.
+
+Precisemos agora da estrutura multiplicativa do cohomologia de $X$, examinando primeiro um caso particular. Com as notações anteriores, obtém-se um morfismo de anéis
+\[
+\alpha:A^*(S)[T_{ij_i}]_{1\le i\le m,\,1\le j_i\le p_i}\to A^*(X)
+\]
+enviando $A^*(S)$ na $A^*(X)$ pela imagem inversa $f^*$ e, para todo par $(i,j)$ como antes, o elemento $T_{ij_i}$ na $j_i$-ésima classe de Chern $c_{j_i}(E_i)$. Para todo inteiro $p$, é dado, por (3.4 (iii)),
+\[
+c_p(f^*E)=\sum_{i_1+i_2+\cdots+i_m=p}c_{i_1}(E_1)\cdots c_{i_m}(E_m),
+\]
+Assim, pela funcionalidade das classes de Chern, a morfismo é anulada sobre o ideal $J_X$ gerado pelos elementos
+\[
+c_p(E)-\sum_{i_1+\cdots i_m=p}T_{1,i_1}\cdots T_{m,i_m}
+\]
+para a variável $p$. Isto é um morfismo de anéis
+\[
+\varphi_X:\bigl(A^{\bullet}(S)[T_{ij_i}]_{(i,j_i)}\bigr)/J_X\to A^{\bullet}(X).
+\]
+
+\begin{statement}{Proposição 5.4}
+O morfismo do anéis $\varphi_X$ anterior é um isomorfismo. O $A^*(S)$-módulo $A^*(X)$ é livre de posto
+\[
+(r!)/(p_1!p_2!\cdots p_m!).
+\]
+\end{statement}

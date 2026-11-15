@@ -1,0 +1,65 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9107--9169 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Corolário 1.2}
+Seja $L$ um $A_S$-módulo. Para todo inteiro $i$, o morfismo de imagem inversa
+\[
+H^i(S,L)\longrightarrow H^i(X,p^*L)
+\]
+é um isomorfismo.
+\end{statement}
+
+\emph{Demonstração.} Por (1.1), o morfismo de adjunção $L\to \R p_*(p^*L)$ é um isomorfismo. Como $H^*(X,p^*L)\simeq H^*(S,\R p_*p^*(L))$, segue-se a afirmação.
+
+\begin{statement}{Proposição 1.3}
+Suponhamos que $E$ tem posto constante $r$. Para todo $A_S$-módulo $L$, verificam-se as seguintes propriedades.
+\begin{enumerate}[label=(\roman*)]
+\item
+\begin{enumerate}[label=\alph*)]
+\item
+\[
+\R^i q_*(q^*L)=0\quad\text{se }i\ne 0,2r-1.
+\]
+\item O morfismo de adjunção
+\[
+L\longrightarrow q_*q^*(L)
+\]
+é um isomorfismo.
+\item Denotando por $Y$ O complementar de $U$ em $X$, o morfismo
+\[
+\R^{2r-1}q_*(q^*L)\longrightarrow L\otimes\mu_S^{\otimes -r}
+\]
+Composto do morfismo de borda
+\[
+\R^{2r-1}q_*(q^*L)\longrightarrow \R_Y^{2r}p_*(p^*L)
+\tag{1}
+\]
+e isomorfismo de pureza (SGA 4 XVIII)
+\[
+\R_Y^{2r}p_*(p^*L)\longrightarrow L\otimes\mu_S^{\otimes -r}
+\]
+é um isomorfismo.
+\end{enumerate}
+\item
+\begin{enumerate}[label=\alph*)]
+\item
+\[
+\R_!^i q(q^*L)=0\quad\text{se }i\ne 1,2r.
+\]
+\item O morfismo de borda
+\[
+L\longrightarrow \R_!^1 q(q^*L)
+\]
+proveniente da longa sequência exata, onde $f:Y\to S$ é a canónica projeção,
+\[
+\cdots\longrightarrow \R_!^i q(q^*L)\longrightarrow \R_!^i p(p^*L)
+\longrightarrow \R^i f_*(f^*L)\longrightarrow \R_!^{i+1}q(q^*L)\longrightarrow\cdots
+\]
+é um isomorfismo.
+\item O morfismo de traço
+\[
+\R_!^{2r}q(q^*L)\longrightarrow L\otimes\mu_S^{\otimes -r}
+\]
+é um isomorfismo.
+\end{enumerate}
+\end{enumerate}
+\end{statement}

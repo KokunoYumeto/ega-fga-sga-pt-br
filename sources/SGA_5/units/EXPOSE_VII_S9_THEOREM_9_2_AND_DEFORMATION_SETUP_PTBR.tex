@@ -1,0 +1,46 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 11057--11100 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Enunciemos agora a «fórmula de autointerseção» no anel de Chow.
+
+\begin{statement}{Teorema 9.2 (Mumford)}
+Sejam $k$ um corpo separadamente fechado e $i:Y\hookrightarrow X$ uma imersão fechada, de codimensão pura $d$, de $k$-esquemas quase projetivos e lisos. Então, denotando por $N$ o feixe normal de $i$, tem-se, para todo $y\in C^*(Y)$, a igualdade
+\[
+i^*i_*(y)=y\,c_d(\check N)
+\]
+em $C^*(Y)$.
+\end{statement}
+
+Para a demonstração precisaremos de certo número de notações e esquemas auxiliares. Mergulhemos $X$ em $Z=X\times_k\mathbb P^1_k$ mediante o morfismo $u:t\mapsto(t,0)$, de modo que se tem um diagrama cartesiano
+\[
+\begin{tikzcd}
+\widehat N \arrow[r,"j_1"] \arrow[d,"g_1"'] & Z' \arrow[d,"f_1"]\\
+Y \arrow[r,"i_1"'] & Z ,
+\end{tikzcd}
+\]
+onde $Z'$ denota o esquema obtido pela explosão de $Z$ ao longo de $Y$, e $\widehat N=\mathbb P_Y(N\oplus\mathcal O_Y)$ é a completação projetiva do fibrado vetorial $V(N)$. Como no enunciado de 9.1, denota-se por $s:Y\hookrightarrow\widehat N$ o morfismo obtido compondo a seção zero de $V(N)$ com a inclusão canônica $V(N)\subset\widehat N$.
+
+A inclusão $Y\subset X$ permite identificar $Y\times\mathbb P^1$ com um subesquema fechado de $X\times\mathbb P^1$. Denota-se por $W'$ a «transformada estrita de $Y\times\mathbb P^1$ por $f_1$», isto é, o subesquema de $Z'$ obtido pela explosão de $Y\times\mathbb P^1$ ao longo de $Y=Y\times0$. É claro que $W'\cap\widehat N$ se identifica com a seção zero de $\widehat N$ e que, como $Y$ é de codimensão $1$ em $Y\times\mathbb P^1$, o morfismo canônico $f_2:W'\to Y\times\mathbb P^1$ é um isomorfismo. As demais notações relativas a $W'$ ficam fixadas pelo diagrama canônico $(D_1)$.
+\[
+\begin{tikzcd}[column sep=3.2em,row sep=2.4em,cells={nodes={inner sep=1pt}}]
+\text{(D}_1\text{)}\arrow[from=1-3,to=5-2,"g_1"']
+& & \widehat N \arrow[rr,"j_1"] & & Z' \arrow[ddd,"f_1"] \\
+& Y \arrow[ur,"s"] \arrow[rr,"\delta"'] \arrow[ddd,"\mathrm{id}"'] & &
+W' \arrow[ur,"\beta"'] \arrow[ddd,"\wr"',"f_2"] & \\
+& & & & \\
+& & & & X\times\mathbb P^1=Z \\
+& Y \arrow[rr,"\gamma"'] & & Y\times\mathbb P^1 \arrow[ur,"\alpha"'] &
+\end{tikzcd}
+\]
+
+Da mesma forma, denotando por $X'$ o subesquema fechado de $Z'$ obtido pela explosão de $X=X\times0$ ao longo de $Y$, é claro que $\mathbb P(N)=X'\cap\widehat N$ identifica-se com o hiperplano no infinito $H$ de $\widehat N$. As outras notações relativas a $X'$ são fixadas pelo diagrama canônico $(D_2)$.
+\[
+\begin{tikzcd}[column sep=3.2em,row sep=2.4em,cells={nodes={inner sep=1pt}}]
+\text{(D}_2\text{)}\arrow[from=1-3,to=5-2,"g_1"']
+& & \widehat N \arrow[rr,"j_1"] & & Z' \arrow[ddd,"f_1"] \\
+& H \arrow[ur,"k"] \arrow[rr,"j"'] \arrow[ddd,"g"'] & &
+X' \arrow[ur,"v"'] \arrow[ddd,"f"] & \\
+& & & & \\
+& & & & X\times\mathbb P^1=Z \\
+& Y \arrow[rr,"i"'] & & X \arrow[ur,"u"'] &
+\end{tikzcd}
+\]

@@ -1,0 +1,44 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10841--10882 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\emph{Demonstração.} Demostremos a). Tendo em conta 4.2 ($f_*f^*=\operatorname{id}$), para ver que
+\[
+\begin{pmatrix}
+f_*&-i_*\\
+-\gamma&g^*(\cdot)c_{d-1}(\check F)
+\end{pmatrix}
+\circ
+\begin{pmatrix}
+f^*&j_*\\
+0&g_*
+\end{pmatrix}
+=\operatorname{id},
+\]
+Basta provar que
+\[
+\gamma j_*+\operatorname{id}=g^*(g_*(\cdot))c_{d-1}(\check F),
+\tag{8.5.4}
+\]
+e
+\[
+\gamma f^*=0.
+\tag{8.5.5}
+\]
+De (8.5.1) deduz-se que
+\[
+f^*f_*f^*=j_*\gamma f^*+f^*,
+\]
+de onde, por (4.2), $j_*\gamma f^*=0$, o que dá (8.5.5), já que $j_*$ é um isomorfismo. Demostremos (8.5.4). De (8.5.1) resulta que
+\[
+f^*f_*j_*=j_*\gamma j_*+j_*,
+\]
+ou, dado que $f_*j_*=i_*g_*$ e tendo em conta (8.4.3),
+\[
+j_*g^*(g_*(\cdot))c_{d-1}(\check F)=j_*\gamma j_*+j_*.
+\]
+A relação (8.5.4) resulta compondo pela esquerda com o inverso de $j_*$. Finalmente, (8.5.2) é obtido expressando que o produto das duas matrizes na outra ordem é a identidade.
+
+Demonstremos b). De 8.4.3 e 8.4.1, respectivamente, resulta que $\mu\circ\lambda=0$ e $\lambda'\circ\lambda=\operatorname{id}$. Por outro lado, a aplicação $\mu$ é sobrejetiva por (8.3). Resta, pois, ver que $\Ker(\mu)\subset\operatorname{Im}(\lambda)$. Mas $\mu\circ(\lambda\circ\lambda')=0$ e $\lambda'\circ(\lambda\circ\lambda')=\lambda'$, de modo que $\mu(x)=0$ implica
+\[
+(\mu\oplus\lambda')(\lambda\circ\lambda'(x))=(\mu\oplus\lambda')(x),
+\]
+de onde $x=\lambda\circ\lambda'(x)$ por 8.3.

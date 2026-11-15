@@ -1,0 +1,45 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10984--11026 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{9. Anel de Chow de uma variedade obtida por explosão e fórmula de autointerseção no anel de Chow}
+
+Neste parágrafo propomo-nos dar a demonstração, devida a MUMFORD, do enunciado análogo a 4.1 no anel de Chow. Mostraremos depois como dele se pode deduzir a «fórmula-chave» (8.4.3) e, por conseguinte, determinar a estrutura do anel de Chow de uma variedade obtida por explosão.
+
+De acordo com as convenções de 3.9, denota-se por $C^*(X)$ o anel de Chow de um esquema $X$ quase-projetivo e suave sobre um corpo $k$. A teoria de classes de Chern usada é a de [1]. Vamos usar o seguinte lema várias vezes.
+
+\begin{statement}{Lema 9.1}
+Sejam $S$ um esquema quase-projetivo e liso sobre um corpo separavelmente fechado $k$, $E$ um $\mathcal O_S$-módulo localmente livre de posto constante $r+1$, e $p:P=\mathbb P_S(E)\to S$ o fibrado projetivo associado. Denota-se por $F$ o $\mathcal O_P$-módulo definido pela sequência exata canônica
+\[
+0\to F\to p^*(E)\to\mathcal O_P(1)\to0,
+\tag{9.1.0}
+\]
+e põe-se $\xi=c_1(\mathcal O_P(1))$. Então:
+\begin{enumerate}[label=(\roman*)]
+\item para todo $y\in C^*(S)$, tem-se
+\[
+y=p_*\bigl(p^*(y)c_r(\check F)\bigr);
+\tag{9.1.1}
+\]
+\item suponhamos que $E=N\oplus\mathcal O_S$, com $N$ um $\mathcal O_S$-módulo localmente livre de posto $r$, de modo que $P$ se identifica com a completação projetiva $\widehat N$ de $V(N)$, e denotemos por
+\[
+s:S\to\mathbb P_S(E)
+\]
+a seção obtida compondo a seção zero de $V(N)$ com a inclusão canônica $V(N)\hookrightarrow\widehat N$. Então:
+\begin{enumerate}[label=(\alph*)]
+\item para todo $y\in C^*(S)$, têm-se as relações
+\[
+s_*(y)=p^*(y)c_r(\check F)=p^*(y)\left(\sum_{i=0}^r p^*(c_i(\check N))\xi^{r-i}\right)
+\quad\text{em }C^*(\widehat N),
+\tag{9.1.2}
+\]
+\[
+s^*s_*(y)=y\,c_r(\check N)\quad\text{em }C^*(S);
+\tag{9.1.3}
+\]
+\item para todo $z\in C^*(\widehat N)$, tem-se
+\[
+s^*(z)=p_*(z\,c_r(\check F))\quad\text{em }C^*(S).
+\tag{9.1.4}
+\]
+\end{enumerate}
+\end{enumerate}
+\end{statement}

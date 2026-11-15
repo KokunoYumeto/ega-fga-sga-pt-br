@@ -1,0 +1,36 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6998--7031 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{2.4.3}
+Vimos (2.4.1) que o subconjunto $AR$ de $\Fl(P)$ permite um cálculo de frações pela direita. Isso nos permite (2.3.3) considerar a categoria
+\[
+P'_{AR}=P(AR^{-1})
+\]
+que, lembremos, tem os mesmos objetos que $P$. Sejam $X$ e $Y$ dois objetos de $P$, e denotemos por $\Hom'_{AR}(X,Y)$ o conjunto dos isomorfismos de $X$ em $Y$ em $P'_{AR}$. Um elemento de $\Hom_{AR}(X,Y)$ define de maneira evidente um elemento de $\Hom'_{AR}(X,Y)$. Mais precisamente, define-se assim um funtor
+\[
+m:P_{AR}\longrightarrow P'_{AR}.
+\]
+
+\begin{statement}{Proposição 2.4.3}
+O funtor $m$ é um isomorfismo de categorias.
+\end{statement}
+
+\begin{prooftext}[Demonstração]
+A questão é ver que, para cada par $(X,Y)$ de objetos de $P$, a correspondente aplicação
+\[
+m_{XY}:\Hom_{AR}(X,Y)\longrightarrow\Hom'_{AR}(X,Y)
+\]
+é uma bijeção. Evidentemente, é uma sobrejeção. Para ver a injetividade, reduzimo-nos imediatamente a verificar que, para todo diagrama comutativo do tipo que aparece a seguir, existe um inteiro $t$ maior ou igual a $r$ e $s$ tal que a composição de $\rho$ e do morfismo canônico de $X[t]$ em $X[s]$ seja o morfismo canônico de $X[t]$ em $X[r]$:
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X[r] \arrow[d,"{v_{rX}}"'] & X[s] \arrow[l,"\rho"'] \arrow[dl,"{v_{sX}}"]\\
+X & {}
+\end{tikzcd}
+\]
+Ora, isso se deduz da comutatividade do diagrama que aparece a seguir, no qual se designaram pela letra $c$ todos os morfismos canônicos que intervêm:
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X[r+s] \arrow[d,"c"'] & X[2s] \arrow[l,"\rho(s)"] \arrow[d,"c"] \arrow[dl,"c" description]\\
+X[r] & X[s] \arrow[l,"\rho"]
+\end{tikzcd}
+\]
+\end{prooftext}

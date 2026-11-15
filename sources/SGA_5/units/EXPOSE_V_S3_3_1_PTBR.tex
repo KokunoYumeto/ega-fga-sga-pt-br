@@ -1,0 +1,45 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7088--7130 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{3. Sistemas projetivos $J$-ádicos e AR-$J$-ádicos}
+Sejam $A$ um anel comutativo com unidade, $J$ um ideal de $A$ e $(\cC,\rho)$ uma $A$-categoria abeliana. Supõe-se ou bem que $J$ é de tipo finito, ou bem que $\cC$ possui somas diretas infinitas. As notações são as mesmas que no número anterior. Em particular, os símbolos $P$ e $P_{AR}$ designam respectivamente as categorias $\Hom(\NN^\circ,\cC)$ e $\Hom_{AR}(\NN^\circ,\cC)$.
+
+\subsubsection*{3.1. Sistemas projetivos $J$-ádicos}
+\begin{statement}{Definição 3.1.1}
+Seja $X$ um objeto de $P$. Diz-se que $X$ é $J$-ádico se verifica as seguintes condições:
+\begin{enumerate}[label=(\roman*)]
+\item para todo inteiro $n\ge0$, $J^{n+1}X_n=0$;
+\item Para cada par $(m,n)$ de inteiros com $m\ge n\ge0$, o morfismo
+\[
+A/J^{n+1}\otimes_A X_m\longrightarrow X_n
+\]
+deduzido do morfismo de transição $X_m\to X_n$ é um isomorfismo.
+\end{enumerate}
+\end{statement}
+Denotar-se-á por $J$-ad$(\cC)$ a subcategoria plena de $P$ engendrada pelos sistemas projetivos $J$-ádicos.
+
+\subsubsection*{Observação 3.1.2}
+Sejam $I$ e $J$ dois ideais de $A$ e suponhamos que $I$ e $J$ sejam de tipo finito, ou que $\cC$ admite somas diretas infinitas. Então pode ser demonstrado que, se $I$ e $J$ definem a mesma topologia sobre $A$, as categorias $I$-ad$(\cC)$ e $J$-ad$(\cC)$ são equivalentes.
+
+\begin{statement}{Proposição 3.1.3 (Estabilidade por sequências exatas)}
+Seja
+\[
+0\longrightarrow X\stackrel{u}{\longrightarrow}Y\stackrel{v}{\longrightarrow}Z\longrightarrow0
+\]
+uma sequência exata de $P$.
+\begin{enumerate}[label=(\roman*)]
+\item Se $X$ é estrito e $Y$ é $J$-ádico, então $Z$ é $J$-ádico.
+\item Se $Y$ é estrito e $Z$ é $J$-ádico, então $X$ é estrito.
+\item Se $X$ e $Z$ são $J$-ádicos, $Y$ é $J$-ádico.
+\end{enumerate}
+\end{statement}
+
+\begin{prooftext}[Demonstração]
+Se $m\ge n$, é claro que o diagrama $(T)$ que aparece a seguir, no qual as flechas verticais designam os morfismos de transição, é comutativo e é exato:
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+{} & A/J^{n+1}\otimes_A X_m \arrow[r,"\id\otimes u_m"] \arrow[d,"f_{nm}"'] & A/J^{n+1}\otimes_A Y_m \arrow[r,"\id\otimes v_m"] \arrow[d,"g_{nm}"] & A/J^{n+1}\otimes_A Z_m \arrow[r] \arrow[d,"h_{nm}"] & 0\\
+0 \arrow[r] & X_n \arrow[r] & Y_n \arrow[r] & Z_n \arrow[r] & 0 .
+\end{tikzcd}
+\]
+No caso (i), $f_{nm}$ é um epimorfismo e $g_{nm}$ é um isomorfismo. No caso (ii), $g_{nm}$ é um epimorfismo e $h_{nm}$ um isomorfismo. No caso (iii), $f_{nm}$ e $h_{nm}$ são isomorfismos. Em todos os casos, o lema da serpente aplicado ao diagrama $(T)$ permite concluir.
+\end{prooftext}

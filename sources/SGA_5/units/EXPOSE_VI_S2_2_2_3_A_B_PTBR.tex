@@ -1,0 +1,46 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 8903--8946 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{2.2.3. Outras propriedades}
+
+\paragraph{A) Dimensão cohomológica.}
+Seja \(f:X\to Y\) um morfismo separado de tipo finito de pré-esquemas localmente noetherianos. Supõe-se que a dimensão relativa de \(f\) é menor ou igual a um inteiro \(d\). Então, para todo \((AR,\mathbb Z_\ell)\)-feixe construtível \(F\),
+\[
+\R^i_!f(F)=0\qquad\text{para }i>2d.
+\]
+Isso se segue da afirmação análoga para as componentes de \(F\) (SGA 4 X 4.1 e 5.2).
+
+\paragraph{B) Mudança de base própria.}
+Consideremos um quadrado cartesiano
+\[
+\begin{tikzcd}
+X' \arrow[r,"g'"] \arrow[d,"f'"'] & X \arrow[d,"f"]\\
+Y' \arrow[r,"g"] & Y .
+\end{tikzcd}
+\]
+Sejam \(f:X\to Y\) e \(g:Y'\to Y\) morfismos de pré-esquemas localmente noetherianos, com \(f\) separado do tipo finito. Seja \(X'=X\times_Y Y'\), que é localmente noetheriano já que \(f\) é do tipo finito, e sejam
+\[
+f':X'\to Y',\qquad g':X'\to X
+\]
+os morfismos canônicos. Para todo inteiro \(i\) e todo \(\mathbb Z_\ell\)-feixe construtível \(F\), existe um isomorfismo funtorial em \(F\) em \(\mathbb Z_\ell\text{-}\fc(Y')\):
+\[
+w_i:g^*(\R^i_!f(F))\longrightarrow \R^i_!f'(g'^*F).
+\]
+Além disso, se
+\[
+0\longrightarrow F'\longrightarrow F\longrightarrow F''\longrightarrow 0
+\]
+é uma sucessão exata de \(\mathbb Z_\ell\text{-}\fc(X)\) (resp. \((AR,\mathbb Z_\ell)\text{-}\fc(X)\)), os \((w_i)_{i\in\mathbb N}\) comutam com os operadores de bordo; em outras palavras, os diagramas que aparecem a seguir são comutativos:
+\[
+\begin{tikzcd}[column sep=huge]
+g^*(\R^i_!f(F'')) \arrow[r,"w_i"] \arrow[d,"g^*(\delta)"']
+&
+\R^i_!f'(g'^*F'') \arrow[d,"\delta"]\\
+g^*(\R^{i+1}_!f(F')) \arrow[r,"w_{i+1}"]
+&
+\R^{i+1}_!f'(g'^*F').
+\end{tikzcd}
+\]
+
+\begin{prooftext}[Demonstração]
+Basta demonstrar a afirmação análoga para os \((AR,\mathbb Z_\ell)\)-feixes construtíveis. Ora, ela se deduz, por passagem ao quociente, da afirmação análoga para os sistemas projetivos de feixes de torção, que é consequência imediata do teorema de mudança de base própria (cf. SGA 4 XII 5.1 no caso próprio e SGA 4 XVII no caso geral).
+\end{prooftext}

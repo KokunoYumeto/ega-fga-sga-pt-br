@@ -1,0 +1,47 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 11799--11843 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{4. Comparação com o caso das categorias abelianas}
+
+Seja $\cC$ uma categoria abeliana e $D(\cC)$ a categoria derivada de $\cC$; denota-se, como de costume, por $D^b(\cC)$ a subcategoria plena de $D(\cC)$ gerada pelos complexos limitados. Associando a cada objeto $X$ de $\cC$ o complexo cujas componentes são todas nulas, salvo a de grau zero, que é igual a $X$, obtém-se um homomorfismo
+\[
+K(\cC)\xrightarrow{\mu}K(D^b(\cC)).
+\]
+Este homomorfismo é, de fato, um isomorfismo. Com efeito, podemos utilizar a proposição 3.1 para construir um inverso de $\mu$, levando em conta que
+\[
+D^b(\cC)\simeq K^{b,b}(\cC)/K^{b,\phi}(\cC),
+\]
+sendo $K^{b,\phi}(\cC)$ a subcategoria espessa de $K^{b,b}(\cC)$ dos complexos acíclicos. Seja $X^\bullet=(X_i)\in\Ob(K^{b,b}(\cC))$. Pondo-se
+\[
+f(X^\bullet)=\sum_i(-1)^i\operatorname{cl}_{\cC}(X_i),
+\]
+obtém-se uma função aditiva de $K^{b,b}(\cC)$ com valores em $K(\cC)$. Com efeito, observa-se primeiro que, se $X^\bullet$ e $Y^\bullet$ são homotópicos, então $f(X^\bullet)=f(Y^\bullet)$, visto que $f(X^\bullet)=f(H(X^\bullet))$. Resulta, portanto, um homomorfismo
+\[
+K(D^b(\cC))\xrightarrow{\nu}K(\cC),
+\]
+e é imediato verificar que ele é o inverso de $\mu$.
+
+Como o invariante $K(\cC)$ muitas vezes carece de interesse quando $\cC$ é «grande demais», convém relativizá-lo com respeito a uma subcategoria $\cC_o$ de $\cC$. Seja, pois, $\cC_o$ uma subcategoria plena de $\cC$. Podemos definir, por um lado, o grupo
+\[
+K_o(\cC)=K_{\cC_o}(\cC).
+\]
+Por outro lado, suponha-se que se cumpra a seguinte condição:
+\[
+(A)\qquad \cC_o\text{ é estável sob somas directas finitas.}
+\]
+É então fácil definir a categoria triangulada $D_o^b(\cC)$ utilizando os complexos (de cohomologia limitada) de $\cC$ cujas componentes são objetos da subcategoria $\cC_o$, e passando ao quociente pelos quase-isomorfismos desses complexos. Resulta, como antes, um homomorfismo
+\[
+(*)\qquad K_o(\cC)\longrightarrow K(D_o^b(\cC)).
+\]
+Suponha que a subcategoria $\cC_o$ satisfaça, além disso, a seguinte condição (B):
+\[
+(B)\qquad
+\text{Se }X,Y\in\Ob\cC_o\text{ e }X\xrightarrow{u}Y
+\text{ é um epimorfismo (em }\cC\text{, naturalmente)},
+\]
+então $\operatorname{Ker}u\in\Ob\cC_o$. Raciocinando como antes, pode-se demonstrar que o homomorfismo $(*)$ é um isomorfismo.
+
+O funtor canônico de inclusão
+\[
+D_o^b(\cC)\longrightarrow D^b(\cC)
+\]
+Não é, em geral, completamente fiel. No entanto:

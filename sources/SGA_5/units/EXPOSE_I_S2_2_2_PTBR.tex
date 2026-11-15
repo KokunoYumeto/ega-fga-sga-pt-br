@@ -1,0 +1,48 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 631--679 (SHA256 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28; LF-normalized unit).
+\subsection*{Lema 2.2 (cf. [H] V 3.3)}
+Seja $X$ um esquema localmente noetheriano e conexo, e sejam $P, P' \in \ob \D_c^{-}(X)$ tais que $P \mathop{\otimes}\limits^{\mathrm{L}} P' \simeq A_X$. Existem então um $A_X$-módulo inversível $L$ e um inteiro $r$ tais que
+\[
+P \simeq L[r], \quad P' \simeq L^{\vee}[-r].
+\]
+
+A demonstração será feita em dois passos.
+
+\textbf{1) Caso particular:} $X = \Spec(k)$, com $k$ um corpo separavelmente fechado. Basta reproduzir a demonstração (aliás simples) dada em [H] (loc.~cit.). O ponto importante é que (EGA~$\underline{\underline 0}_{\mathrm{I}}$~5.4.3), se $M$ e $M'$ são dois $A$-módulos de tipo finito tais que $M \otimes M' \simeq A$, então $M$ e $M'$ são inversíveis e $M' \simeq M^{\vee}$; é aqui que intervém a hipótese de que $A$ seja local.
+
+\textbf{2) Caso geral.}
+
+Em virtude do caso particular precedente, para todo $x \in X$ existe um inteiro $r(x)$ tal que $P_{\ol{x}} \simeq A_{\ol{x}}[r(x)]$, $P'_{\ol{x}} \simeq A_{\ol{x}}[-r(x)]$, isto é, $\uH^i(P_{\ol{x}}) = 0$ (respectivamente, $\uH^i(P'_{\ol{x}}) = 0$) para $i \neq -r(x)$ (respectivamente, $+r(x)$), e $\uH^{-r(x)}(P_{\ol{x}}) \simeq A_{\ol{x}}$, $\uH^{+r(x)}(P'_{\ol{x}}) \simeq A_{\ol{x}}$. Trata-se de demonstrar que a função $x \mapsto r(x)$ é localmente constante. De fato, suponhamos demonstrado este ponto. Como $X$ é conexo, $r$ é constante, digamos de valor $r_0$. Tem-se então $\uH^i(P) = 0$ para $i \neq -r_0$, $\uH^i(P') = 0$ para $i \neq r_0$, e $\uH^{-r_0}(P) \otimes \uH^{r_0}(P') \simeq A$. Ponhamos $\uH^{-r_0}(P) = L$, $\uH^{r_0}(P') = L'$.
+
+Seja $u : \ol{x} \to \ol{y}$ uma seta de especialização (SGAA~VIII~7.2), e sejam $u^{*} : L_{\ol{y}} \to L_{\ol{x}}$, $u'^{*} : L'_{\ol{y}} \to L'_{\ol{x}}$ os morfismos de especialização correspondentes (SGAA~VIII~7.7). Tem-se um diagrama comutativo
+\begin{equation}
+\begin{tikzcd}
+L_{\ol{y}} \otimes L'_{\ol{y}} \arrow[r,"\sim"] \arrow[d,"u^{*} \otimes u'^{*}"'] & A_{\ol{y}} \arrow[d] \\
+L_{\ol{x}} \otimes L'_{\ol{x}} \arrow[r,"\sim"] & A_{\ol{x}}
+\end{tikzcd}
+\tag{*}
+\end{equation}
+Escolhamos uma base $e$ (respectivamente, $f$) de $L_{\ol{x}}$ (respectivamente, $L_{\ol{y}}$) sobre $A_{\ol{x}}$ (respectivamente, $A_{\ol{y}}$), e denotemos por $e'$ (respectivamente, $f'$) a base ``dual'' de $L'_{\ol{x}}$ (respectivamente, $L'_{\ol{y}}$), isto é, aquela para a qual a imagem de $e \otimes e'$ (respectivamente, $f \otimes f'$) em $A_{\ol{x}}$ (respectivamente, $A_{\ol{y}}$) é igual a 1. Tem-se $u^{*}(f) = \lambda e$, $u'^{*}(f') = \lambda' e'$, e a comutatividade de $(*)$ implica $\lambda\lambda' = 1$; portanto, $u^{*}$ é um isomorfismo (e $u'^{*}$ o isomorfismo ``contragrediente''). Em virtude de (SGAA~IX~2.13), isto implica que $L$ e $L'$ são localmente constantes e, portanto, de apresentação finita como $A_X$-módulos. Por conseguinte, se $x \in X$, a seta canônica $\underline{\Hom}(L,F)_{\ol{x}} \to \Hom(L_{\ol{x}}, F_{\ol{x}})$ é um isomorfismo para todo $A_X$-módulo $F$. Como as fibras geométricas de $L$ são inversíveis, segue-se que $L$ é inversível. Do mesmo modo, $L'$ é inversível e $L' \simeq L^{\vee}$. Portanto, tem-se $P \simeq L[r_0]$, $P' \simeq L^{\vee}[-r_0]$.
+
+Tudo se reduz, pois, a demonstrar que a função $r$ é localmente constante. Para $m \in \Z$, tem-se $r(x) = m$ se e somente se $\uH^{m}(P')_{\ol{x}} \neq 0$; portanto, em virtude de (SGAA~IX~2.4), $r$ é localmente construtível. Por conseguinte, para verificar que é localmente constante, podemos, por (EGA~IV~1.10.1), supor que $X$ é local. Seja $x$ o ponto fechado de $X$, e seja $U$ o aberto complementar.
+
+Vamos demonstrar que $r$ é constante. Raciocinando por indução sobre a dimensão de $X$, podemos supor que $r(y)$ já é constante e igual a $r_0$ para $y \in U$, e trata-se de provar que $r(x) = r_0$.
+
+Suponhamos que não seja assim, isto é, que $r(x) \neq r_0$, e demonstremos que se chega a uma contradição. Por hipótese, tem-se $P|U \simeq L[r_0]$, onde $L$ é um $A_U$-módulo inversível. Transladando os graus, se necessário, podemos supor que $r_0 = 0$. Por outro lado, tem-se $r(x) \neq 0$, digamos $r(x) = a > 0$. Denotemos por $i : U \to X$ e $j : x \to X$ as inclusões canônicas.
+
+Escrevamos a sequência exata:
+\[
+(**) \quad 0 \longrightarrow i_{!}(P|U) \longrightarrow P \longrightarrow j_{*}j^{*}P \longrightarrow 0.
+\]
+Por hipótese, os únicos objetos de cohomologia não nulos de $P$ são $\uH^{0}(P)$ e $\uH^{-a}(P)$, e tem-se $\uH^{0}(P) \simeq i_{!}(L)$. Daí segue que $(**)$ se cinde naturalmente (graças à seta $P \to \uH^{0}(P)$), de modo que se tem
+\[
+P \simeq i_{!}(P|U) + j_{*}j^{*}P.
+\]
+Deduz-se daí
+\begin{align*}
+P \mathop{\otimes}\limits^{\mathrm{L}} P' &\simeq i_{!}(P|U) \mathop{\otimes}\limits^{\mathrm{L}} P' + j_{*}j^{*}(P) \mathop{\otimes}\limits^{\mathrm{L}} P' \\
+&\simeq i_{!}(P|U \mathop{\otimes}\limits^{\mathrm{L}} P'|U) + j_{*}(j^{*}P \mathop{\otimes}\limits^{\mathrm{L}} j^{*}P') \\
+&\simeq i_{!}(A_U) + j_{*}(A_x),
+\end{align*}
+o que é absurdo, pois $i_{!}(A_U) + j_{*}(A_x)$ manifestamente não é isomorfo a $A_X$ (já os $\uH^{0}$ não são isomorfos!).
+
+Isto conclui a demonstração do lema 2.2.

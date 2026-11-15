@@ -1,0 +1,48 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9947--9992 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Sejam Agora $\ell$ um número primo e $X$ um esquema próprio sobre um corpo separadamente fechado $k$ de característica prima com $\ell$. Lembre-se (IV) que chama-se característica de Euler--Poincaré $\ell$-ádica de $X$ para inteiro
+\[
+\operatorname{EP}_\ell(X)=\sum_i(-1)^i\dim H^i(X,\mathbb Q_\ell).
+\]
+
+\begin{statement}{Corolário 4.9}
+Seja $X$ um esquema suave, próprio, conexo, de dimensão $n$ sobre um corpo separadamente fechado $k$, com $\operatorname{car}(k)\ne\ell$. Denotando por $p:X\to k$ a projeção canônica, você tem
+\[
+\operatorname{EP}_\ell(X)=p_*c_n(\check\Omega^1_X)
+\]
+em $\mathbb Q_\ell=H^0(k,\mathbb Q_\ell)$.
+\end{statement}
+
+\emph{Demonstração.} Sejam $j:X\to X\times X$ a diagonal imersão de $X$ e $q:X\times X\to k$ a canônica projeção. De 4.1, aplicado a morfismo $j$, segue-se que
+\[
+c_n(\check\Omega^1_X)=j^*j_*(1_X),
+\]
+de onde
+\[
+p_*(c_n(\check\Omega^1_X))=p_*j^*j_*(1_X)=q_*j_*j^*j_*(1_X).
+\]
+Utilizando a fórmula de projeção para o morfismo $j$, deduz-se a igualdade
+\[
+p_*(c_n(\check\Omega^1_X))=q_*(j_*(1_X)\cup j_*(1_X)),
+\]
+onde, por IV, o segundo membro é igual à característica de Euler--Poincaré $\ell$-ádica de $X$.
+
+\subsubsection*{4.10}
+Quando $X$ é projetivo sobre $k$, o resultado lembrado de IV mostra que $\operatorname{EP}_\ell(X)$ é, no anel de Chow de $X\times X$, a autointersecção do ciclo diagonal e, portanto, não depende do número primo $\ell\ne\operatorname{car}(k)$. Isto nos permitirá falar da característica de Euler-Poincaré $\operatorname{EP}(X)$ de $X$, sem referência a inteiro $\ell$.
+
+\begin{statement}{Proposição 4.11}
+Seja $X$ um esquema suave, projetivo, ligada, de dimensão $n$ sobre uma corpo separadamente fechado $k$. Então, temos
+\[
+\operatorname{EP}(X)=\sum_{p,q}(-1)^{p+q}\dim H^p(X,\Omega_X^q).
+\]
+\end{statement}
+
+\emph{Demonstração.} Retomemos as notações da demonstração de 4.9, e denotemos por $J$ o ideal da imersão diagonal de $X$. Como foi indicado em 4.10, $\operatorname{EP}(X)$ é, no anel de Chow de $X\times X$, o produto da intersecção $\Delta\cdot\Delta$ do ciclo diagonal $\Delta$ com si mesmo. Para calcular, pode-se desprezar a torção e, consequentemente, situar-se em $\operatorname{Gr}_{\mathrm{top}}^\bullet(X)$. Isto mostra que $\operatorname{EP}(X)$ é a imagem por morfismo de imagem direta
+\[
+q_*:K(X\times X)\to K(k)=\mathbb Z
+\]
+de quadrado da classe $\mathcal O_{X\times X}/J$. Agora, de acordo com (SGA 6 VII 2.5), este último quadrado é igual a
+\[
+\sum_i(-1)^i\lambda^i([\Omega_X^1]),
+\]
+de onde segue-se imediatamente a fórmula desejada, por definição de $q_*$.

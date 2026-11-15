@@ -1,0 +1,86 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 680--766 (LF-normalized unit).
+\subsection*{3. Existência de complexos dualizantes}
+
+\subsubsection*{3.1. Preliminares.}
+
+Como se indicou na introdução, o objetivo deste parágrafo é demonstrar que, sobre um esquema regular 
+\textquotedblleft bom\textquotedblright{} $X$, o feixe $A_X$ é dualizante, supondo que $n$ é primo com as características residuais.
+
+Na realidade, seria desejável que assim fosse para os esquemas excelentes regulares de igual característica; mas não há dúvida de que a demonstração dada mais adiante se estenderá a eles quando se dispuser, nesse caso, da resolução de singularidades e do teorema de pureza.
+
+Primeiro, apresentamos os diversos ingredientes que teremos de usar.
+
+\textbf{3.1.1. Lugar singular.} Seja $X$ um esquema (localmente noetheriano). Diremos que $X$ satisfaz a \emph{condição (reg)} se satisfizer as seguintes propriedades equivalentes (EGA~IV~6.12.3):
+\begin{enumerate}
+\item[(i)] para todo subesquema $Y$ de $X$, o conjunto $\Reg(Y)$ dos pontos regulares de $Y$ é aberto em $Y$;
+\item[(ii)] para todo subesquema fechado integral $Y$ de $X$, $\Reg(Y)$ contém um aberto não vazio de $Y$.
+\end{enumerate}
+
+A condição (reg) verifica-se se $X$ é localmente de tipo finito sobre um anel local noetheriano completo (por exemplo, um corpo) (EGA~IV~6.12.8), ou sobre um anel de Dedekind cujo corpo de frações seja de car.~0 (por exemplo, $\Z$) (EGA~IV~6.12.6); mais geralmente, se $X$ é excelente (EGA~IV~7.8.6).
+
+\textbf{3.1.2. Devissage de feixes construtíveis.} Seja $X$ um esquema noetheriano, e seja $C$ uma subcategoria estritamente plena da categoria $\Cons(X)$ dos $A_X$-módulos construtíveis. Suponhamos que $C$ é estável por somandos diretos e extensões. São equivalentes as seguintes condições:
+\begin{enumerate}
+\item[(i)] $C = \Cons(X)$;
+\item[(ii)] $C$ contém os feixes do tipo $i_{!}(F)$, onde $i : Y \to X$ é a imersão de um subesquema integral e $F$ é localmente constante sobre $Y$;
+\item[(iii)] $C$ contém os feixes do tipo $f_{*}i_{!}(A'_U)$, onde $i : U \to Y$ é um aberto de um esquema integral, $f : Y \to X$ é um morfismo finito tal que o ponto genérico de $Y$ seja separável sobre sua imagem, e $A' = \Z/\ell\Z$, para $\ell$ divisor primo de $n$.
+\end{enumerate}
+Se $X$ verifica (reg) (3.1.1), estas condições continuam a ser equivalentes às seguintes:
+\begin{enumerate}
+\item[(ii~bis)] análoga a (ii), sendo ainda $Y$ regular;
+\item[(iii~bis)] análoga a (iii), com $U$ regular.
+\end{enumerate}
+Se, além disso, $X$ é afim, em (ii) (resp.~(ii~bis)) pode-se supor que $Y$ é fechado em um aberto do tipo $D(f)$, $f \in \Gamma(X; \cO_X)$.
+
+\emph{Demonstração.} A equivalência de (i)--(iii) foi demonstrada em (SGAA~IX~2.5 e 5.8). As demais afirmações deduzem-se dela por indução noetheriana.
+
+\textbf{3.1.3. Dimensão cohomológica.} Seja $X$ um esquema (localmente noetheriano). A condição seguinte será indicada por $(\mathrm{cdloc})_n$:
+
+Para todo subesquema $Y$ de $X$, todo ponto geométrico $\ol{y}$ de $Y$ e todo $f \in \Gamma(\ol{Y}(\ol{y}); \cO_{Y,\ol{y}})$ (onde $\ol{Y}(\ol{y})$ denota (cf.~SGAA~VIII~7.1) a localização estrita de $Y$ em $\ol{y}$), tem-se
+\[
+\cd_{\mathbf{n}}(\ol{Y}(\ol{y}) - V(f)) \leqslant \dim \cO_{Y,\ol{y}} \quad (= \dim \cO_{Y,y} \text{ por EGA~IV~6.1.3}),
+\]
+onde $\mathbf{n}$ é o conjunto dos números primos que dividem $n$.
+
+A condição $(\mathrm{cdloc})_n$ verifica-se se $X$ é localmente de tipo finito sobre um corpo (SGAA~XIV~3.5), ou é um esquema excelente de característica zero (SGAA~XIX~6.2).(*)\footnote{(*) (acrescentado em 1977) ou, de acordo com um resultado recente de G.~Ofer, se $X$ é excelente, regular e de dimensão~2.}
+
+\textbf{3.1.4. Pureza cohomológica absoluta.} Seja $X$ um esquema regular, e seja $Y$ um subesquema fechado regular de $X$, de codimensão $d$ em todo ponto. Diz-se que o par $(X,Y)$ satisfaz o teorema de pureza cohomológica absoluta (com relação a $n$) se se tem:
+\[
+\underline{\H}^i_Y(A_X) = 0 \qquad \text{para } i \neq 2d, \text{ e}
+\]
+se o homomorfismo \textquotedblleft classe fundamental local\textquotedblright{} (SGAA~$4^{1/2}$~Ciclo~2.2)
+\[
+A_Y \longrightarrow \underline{\H}^{2d}_Y((\mu_n)^{\otimes d}_X)
+\]
+é um isomorfismo.
+
+Diz-se que o teorema de pureza (cohomológica) absoluta é válido sobre $X$ se todo par $(U,Y)$ como o anterior o satisfaz, onde $U$ é um aberto de $X$.
+
+O teorema de pureza absoluta é válido sobre $X$ se $X$ é suave sobre um corpo perfeito de característica prima com $n$ (SGAA~XVI~3.9), ou é um esquema excelente de característica zero (SGAA~XIX~3.2), ou é um esquema regular de dimensão~1 (cf.~5.1).(*)\footnote{(*) (acrescentado em 1977) ou, de acordo com um resultado recente de G.~Ofer, se $X$ é excelente, regular e de dimensão~2.}
+
+\textbf{3.1.5. Resolução de singularidades à maneira de Hironaka.}
+
+a) Seja $X$ um esquema regular, e seja $D$ um divisor $\geqslant 0$ sobre $X$. Diz-se que $D$ é \emph{de cruzamentos normais estritos} se existe uma família finita $(f_i)_{i \in I}$ de elementos de $\Gamma(X; \cO_X)$ tal que $D = \sum_{i \in I} \Div(f_i)$ (EGA~IV~21) e se, para todo $x \in \Supp(D)$, os $(f_i)_x$ tais que $(f_i)_x \in \fm_x$ formarem parte de um sistema de parâmetros regulares. Diz-se que $D$ é \emph{de cruzamentos normais} se $D$ for, localmente para a topologia étale, de cruzamentos normais estritos.
+
+O exemplo típico de divisor de cruzamentos normais é dado por uma união localmente finita de hiperplanos coordenados no espaço afim padrão.
+
+b) Seja $X$ um esquema localmente noetheriano. Diremos que $X$ é \emph{fortemente desingularizável} se se verificar a seguinte condição:
+
+Para todo morfismo finito $f : Y \to X$, onde $Y$ é integral e seu ponto genérico é separável sobre sua imagem, e para todo aberto regular $U$ de $Y$, existe um morfismo próprio e birracional $h : Y' \to Y$, onde $Y'$ é regular, $h$ induz um isomorfismo de $U' = h^{-1}(U)$ sobre $U$, e $Y' - U'$ é um divisor de cruzamentos normais.
+
+Aqui estão alguns casos em que $X$ é fortemente desingularizável:
+\begin{enumerate}
+\item[a)] $X$ é excelente, de característica zero ([2]);
+\item[b)] $X$ é localmente noetheriano, regular e de dimensão $\leqslant 1$;
+\item[c)] $X$ é de tipo finito sobre $\Z$ ou sobre um corpo perfeito, e de dimensão $\leqslant 2$ ([1]).(*)\footnote{(*) (acrescentado em 1977) mais geralmente, se $X$ é excelente noetheriano de dimensão $\leqslant 2$, segundo H.~Hironaka, \emph{Desingularization of excellent surfaces}, notas de B.~Bennett, Bowdoin College, 1967 (completado eventualmente com H.~Hironaka, \emph{Certain numerical characters of singularities}, J.~of Math of Kyoto Univ., 10, 1970, pp.~151--187).}
+\end{enumerate}
+
+\textbf{3.1.6. Finitude cohomológica.} Seja $f : X \to Y$ um morfismo de esquemas, e seja $F \in \ob \D_c^{+}(X)$. Tem-se $\R f_{*}(F) \in \ob \D_c^{+}(Y)$ nos seguintes casos:
+\begin{enumerate}
+\item[a)] $f$ é próprio e de apresentação finita (SGAA~XIV~1.1);
+\item[b)] \textquotedblleft quando se dispõe da resolução de singularidades e do teorema de pureza\textquotedblright{}, em particular
+\begin{enumerate}
+\item[(i)] se $X$ e $Y$ são localmente de tipo finito sobre um corpo $k$ de característica~0 e $f$ um $k$-morfismo de tipo finito (SGAA~XVI~5.1);
+\item[(ii)] se $Y$ é excelente de característica zero e $f$ de tipo finito (SGAA~XIX~5.1);
+\item[(iii)] se $X$ é localmente de tipo finito sobre um corpo e $\dim(X) \leqslant 2$ (SGAA~XIX~5.1).
+\end{enumerate}
+\end{enumerate}

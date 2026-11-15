@@ -1,0 +1,61 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 1193--1252 (LF-normalized unit; line 1194 comment hazard restored from scan semantics).
+\subsection*{4.7}
+Seja $X$ um esquema estritamente local noetheriano (SGAA~VIII~4.2), de ponto fechado $x$. Seja $Y$ um fechado não vazio de $X$, e consideremos as imersões canônicas
+\[
+U=X-Y\xrightarrow{i}V=X-\{x\}\xrightarrow{j}X.
+\]
+Por último, seja $K_X$ um complexo dualizante normalizado em $x$ (4.1), de onde se obtêm complexos dualizantes \textquotedblleft correspondentes\textquotedblright{} sobre $U,V,Y,x$ (e, por hipótese, $\underline{D}_x=\R\Hom(\ ,A)$):
+\[
+K_V=j^*K_X,
+\qquad K_U=i^*K_V,
+\qquad K_Y=\R\Gamma_Y(K_X).
+\]
+Seja $G\in\ob\D_c^b(U)$, e ponhamos $G'=\underline{D}_U(G)$. Propomo-nos definir um emparelhamento natural
+\[
+(4.7.1)\qquad \R\Gamma(U,G)\times \R\Gamma(V,i_!G')[-1]\longrightarrow A,
+\]
+isto é, um homomorfismo funtorial
+\[
+(4.7.1)'\qquad \R\Gamma(U,G)\overset{\mathbf L}{\otimes}_A\R\Gamma(V,i_!G')[-1]\longrightarrow A.
+\]
+(Como o anel $A=\Z/\ell\Z$ tem uma dimensão cohomológica infinita para $\nu\geqslant2$, só se sabe definir os produtos tensoriais
+\[
+\overset{\mathbf L}{\otimes}:\D^-(A)\times\D^-(A)\longrightarrow\D^-(A)
+\]
+e
+\[
+\overset{\mathrm L}{\otimes}:\D(A)\times\D^b(A)_{\mathrm{torf}}\longrightarrow\D(A)\quad(*).
+\]
+Deixa-se, pois, ao leitor a tarefa de formular hipóteses convenientes que assegurem que os dois fatores de $\overset{\mathrm L}{\otimes}$ que figuram em (4.7.1)' estejam em $\D^b(A)$, ou que um deles tenha dimensão Tor finita.)
+
+Observemos primeiro que, pela fórmula de dualidade complementar (1.12 a) (ii), temos um isomorfismo canônico
+\[
+(4.7.2)\qquad i_!(G')\xrightarrow{\sim}\underline{D}_V(\R i_*G).
+\]
+Por outro lado, temos o isomorfismo de dualidade ordinária
+\[
+(4.7.3)\qquad \R\Hom(A_U,G)\xrightarrow{\sim}\R\Hom(A_V,\R i_*G).
+\]
+Por definição de $\underline{D}_V$ (e independentemente de que $K_V$ seja dualizante), tem-se uma seta canônica
+\[
+(4.7.4)\qquad \R i_*G\overset{\mathrm L}{\otimes}\underline{D}_V(\R i_*G)\longrightarrow K_V.
+\]
+De (4.7.2), (4.7.3) e (4.7.4) deduz-se uma flecha (canônica)
+\[
+(4.7.5)\qquad \R\Gamma(U,G)\overset{\mathbf L}{\otimes}_A\R\Gamma(V,i_!G')\longrightarrow \R\Hom(A_V,K_V).
+\]
+Mas $K_V=j^{!}K_X$, e temos o isomorfismo de dualidade (SGAA~XVIII~3.1.10):
+\[
+(4.7.6)\qquad \R\Hom(A_V,K_V)\xrightarrow{\sim}\R\Hom(A_{V,X},K_X).
+\]
+Por último, a sequência exata
+\[
+(4.7.7)\qquad 0\longrightarrow A_{V,X}\longrightarrow A_X\longrightarrow A_x\longrightarrow 0
+\]
+dá um homomorfismo de grau $+1$:
+\[
+(4.7.8)\qquad \R\Hom(A_{V,X},K_X)\longrightarrow \R\Hom(A_x,K_X)\simeq A.
+\]
+Compondo (4.7.5), (4.7.6) e (4.7.8), obtém-se a seta anunciada (4.7.1)'.
+
+\emph{(*) (acrescentado em 1977) Inexato: na realidade, é fácil prolongar $\overset{\mathbf L}{\otimes}:\D^-(A)\times\D^-(A)\to\D^-(A)$ a $\overset{\mathbf L}{\otimes}:\D^-(A)\times\D(A)\to\D(A)$.}

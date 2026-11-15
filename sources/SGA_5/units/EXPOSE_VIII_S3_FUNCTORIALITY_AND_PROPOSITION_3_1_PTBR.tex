@@ -1,0 +1,43 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 11729--11769 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{3. Caráter funtorial}
+
+Sejam $\cC$ e $\cC'$ duas categorias trianguladas, e seja $T:\cC\to\cC'$ um funtor exato de $\cC$ em $\cC'$, isto é, um funtor aditivo, «graduado» e que transforma os triângulos distinguidos em triângulos distinguidos. Denotemos, como antes, por
+\[
+A,A':\Ab\longrightarrow\Ab
+\]
+os funtores associados às categorias $\cC$ e $\cC'$. Resulta um morfismo funtorial $A'\to A$ de «composição com $T$» e, portanto, um homomorfismo
+\[
+K(T):K(\cC)\longrightarrow K(\cC')
+\]
+único tal que o diagrama
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+\Ob\cC \arrow[r,"T"] \arrow[d,"\operatorname{cl}_{\cC}"']&
+\Ob\cC' \arrow[d,"\operatorname{cl}_{\cC'}"]\\
+K(\cC) \arrow[r,"K(T)"']& K(\cC')
+\end{tikzcd}
+\]
+seja comutativo. Resulta que, se os funtores $T,T_1:\cC\to\cC'$ são isomorfos, então $K(T)=K(T_1)$. Em particular, se o funtor $T$ é uma equivalência de categorias, então $K(T)$ é um isomorfismo.
+
+Se $\cC''$ é uma terceira categoria triangulada e
+\[
+F:\cC\times\cC'\longrightarrow \cC''
+\]
+um bifuntor exato em cada variável, então é claro que resulta uma aplicação bilinear
+\[
+K(F):K(\cC)\times K(\cC')\longrightarrow K(\cC''),
+\]
+tal que se verifica a relação seguinte:
+\[
+K(F)(\operatorname{cl}_{\cC}(X),\operatorname{cl}_{\cC'}(X'))
+=
+\operatorname{cl}_{\cC''}(F(X,X')).
+\]
+
+\begin{statement}{Proposição 3.1}
+Seja $\cA$ uma categoria triangulada, $\cB$ uma subcategoria triangulada espessa de $\cA$, $\cA/\cB$ a categoria quociente de $\cA$ por $\cB$, $Q:\cA\to\cA/\cB$ o funtor canônico de passagem ao quociente, e $i:\cB\to\cA$ o funtor de inclusão. Então a sequência seguinte é exata:
+\[
+K(\cB)\xrightarrow{K(i)}K(\cA)\xrightarrow{K(Q)}K(\cA/\cB)\longrightarrow 0.
+\]
+\end{statement}

@@ -1,0 +1,37 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 13441--13475 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\medskip
+\noindent
+\textbf{Proposição 4.6.} \emph{Sejam $R$ um anel de valoração discreta, $\fm$ seu ideal maximal, $\pi$ um uniformizante, $k = R/\fm$ seu corpo residual, que se supõe algebricamente fechado, $v$ sua valoração, $f'_R : R \to R$ um endomorfismo de $R$, e $G$ um grupo finito de automorfismos de $R$. Suponha-se que o endomorfismo $f'_R$ e os automorfismos $g_R$ induzam a identidade sobre $k$, e que seja dado ainda um endomorfismo de $G$:
+\[
+\varphi : G \longrightarrow G \quad ,
+\]
+tal que se verifique a relação seguinte:
+\[
+f'_R \circ g_R = \varphi(g)_R \circ f'_R \quad .
+\]
+Se denotarmos, para cada $g \in G$,
+\[
+\nu(g_R^{-1}f'_R) = v(g_R^{-1}f'_R(\pi) - \pi) \quad ,
+\]
+e se descompõe $c^\varphi(g)$ (cf. 4.2) na forma
+\[
+c^\varphi(g) = p^s q \quad , \quad (p,q) = 1 \quad , \quad p = \car(k) \quad ,
+\]
+então $q \mid (\nu(g_R^{-1}f'_R) - 1)$.}
+
+\medskip
+
+Para demonstrar a proposição 4.6, basta reduzir ao caso $g = e$ e $\varphi = \id_G$. Com efeito, primeiro podemos reduzir ao caso $g = e$ associando à situação $(f'_R, G, g, \varphi)$ a situação $(f''_R = g_R^{-1}f'_R \; , \; G, e, \varphi' = \mathrm{int}(g) \circ \varphi)$ ($\varphi'(a) = g^{-1}\varphi(a)g$), e observando facilmente que:
+\[
+\nu(g_R^{-1}f'_R) - 1 = \nu(f''_R) - 1
+\]
+e
+\[
+c^\varphi(g) = c^{\varphi'}(e) \quad (G_g^\varphi = G_e^{\varphi'}) \quad (\text{cf. 4.2})
+\]
+
+Para nos reduzirmos simultaneamente ao caso $g = e$, $\varphi = \id_G$, observe-se que podemos associar à situação $(f''_R, G, e, \varphi')$ a situação $(f''_R, G_e^{\varphi'}, e, \id_{G_e^{\varphi'}})$ e que se tem:
+\[
+G_e^{\varphi'} = (G_e^{\varphi'})_e^{\id_{G_e^{\varphi'}}}
+\]

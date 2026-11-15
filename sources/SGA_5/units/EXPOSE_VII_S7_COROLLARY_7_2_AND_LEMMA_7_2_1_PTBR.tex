@@ -1,0 +1,56 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10410--10463 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Corolário 7.2}
+Sejam $X$ um $k$-esquema projetivo liso, conexo, de dimensão $n$, $Y$ um subesquema de $X$ que é interseção de $d$ seções hiperplanas de $X$, e $L$ um $\mathbb Z_\ell$-feixe constante torcido construtível $(\ell\ne\operatorname{car}(k))$. Então:
+\begin{enumerate}[label=(\roman*)]
+\item O homomorfismo de imagem inversa
+\[
+\alpha_i:H^i(X,L)\to H^i(Y,L|Y)
+\]
+é um isomorfismo para $i\le n-d-1$, e um monomorfismo para $i=n-d$. Se, além disso, $L$ é localmente livre construtível, o conúcleo de $\alpha_{n-d}$ é livre de torção.
+\item Suponhamos que $Y$ é suave sobre $k$, de dimensão $n-d$. Então o homomorfismo de Gysin
+\[
+\beta_i:H^i(Y,(L|Y)(-d))\to H^{i+2d}(X,L)
+\]
+é um isomorfismo para $i\ge n-d+1$ e um epimorfismo para $i=n-d$. Se, além disso, $L$ é localmente livre construtível, o epimorfismo $\beta_{n-d}$ é cindido e seu núcleo é livre de torção.
+\end{enumerate}
+\end{statement}
+
+\emph{Demonstração.} Demonstremos (i); a afirmação (ii) deduz-se por dualidade de Poincaré. No caso geral, basta uma simples passagem ao limite a partir de 7.1 (i). Quando $L$ é um $\mathbb Z_\ell$-feixe localmente livre, aplica-se o lema seguinte ao morfismo de imagem inversa
+\[
+\R\Gamma(X,L)\to \R\Gamma(Y,L|Y)
+\]
+de $D(\mathbb Z_\ell)$; a hipótese (iii) verifica-se graças a 7.1 (i).
+
+\begin{statement}{Lema 7.2.1}
+Sejam $V$ um anel de valoração discreta, $k_V$ seu corpo residual e $u:K\to L$ um morfismo de $D(V)$. Supõe-se que $K$ e $L$ têm cohomologia de tipo finito, e denota-se por $M$ o cilindro da aplicação $u$. Então, para todo $m\in\mathbb Z$, as condições seguintes são equivalentes:
+\begin{enumerate}[label=(\roman*)]
+\item $H^p(M)=0$ para $p\le m-1$, e $H^m(M)$ é livre de torção.
+\item para todo $V$-módulo $N$, o morfismo
+\[
+H^p(u\otimes^L\operatorname{id}_N):H^p(K\otimes^L N)\to H^p(L\otimes^L N)
+\]
+é um isomorfismo para $p\le m-1$ e um monomorfismo para $p=m$;
+\item[(ii bis)] para todo $V$-módulo $N$, tem-se
+\[
+H^p(M\otimes^L N)=0\qquad(p\le m-1);
+\]
+\item o morfismo
+\[
+H^p(u\otimes^L\operatorname{id}):H^p(K\otimes^L k_V)\to H^p(L\otimes^L k_V)
+\]
+é um isomorfismo para $p\le m-1$ e um monomorfismo para $p=m$;
+\item[(iii bis)] tem-se
+\[
+H^p(M\otimes^L k_V)=0\qquad(p\le m-1).
+\]
+\end{enumerate}
+Além disso, estas condições equivalentes implicam:
+\begin{enumerate}[label=(\roman* bis)]
+\item o morfismo
+\[
+H^p(u):H^p(K)\to H^p(L)
+\]
+é um isomorfismo para $p\le m-1$, e um monomorfismo de conúcleo livre para $p=m$.
+\end{enumerate}
+\end{statement}

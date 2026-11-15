@@ -1,0 +1,29 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 11771--11797 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\emph{Demonstração.} É claro que existe um homomorfismo natural.
+\[
+\operatorname{Coker}(K(i))\xrightarrow{\alpha}K(\cA/\cB).
+\]
+Por outro lado, há uma aplicação evidente
+\[
+\Ob(\cA/\cB)\xrightarrow{\gamma}\operatorname{Coker}(K(i)),
+\]
+visto que $\Ob(\cA/\cB)=\Ob(\cA)$. Sejam $X,Y\in\Ob(\cA/\cB)$, e suponhamos que sejam isomorfos. Queremos demonstrar que $\gamma(X)=\gamma(Y)$. A categoria $\cA/\cB$ é obtida mediante um cálculo de frações à direita ou à esquerda, sendo o sistema multiplicativo $S$ o conjunto dos morfismos $f$ contidos em um triângulo distinguido $(X',Y',Z',f,g,h)$, onde $Z'$ é um objeto de $\cB$. ($S$ é um sistema multiplicativo saturado.) Resulta então que existem $X_1$ e
+\[
+X_1\xrightarrow{s}X,\qquad X_1\xrightarrow{t}Y,
+\]
+tais que $s,t\in S$. Basta, portanto, demonstrar que $\gamma(X)=\gamma(X_1)$, o que decorre do fato de existir um triângulo distinguido da forma
+\[
+(X_1,X,Z,s,\ldots),
+\]
+com $Z\in\Ob\cB$.
+
+A aplicação $\gamma$ é uma função aditiva. Com efeito, sendo $(X,Y,Z,f,g,h)$ um triângulo distinguido de $\cA/\cB$, deve-se demonstrar que
+\[
+\gamma(X)+\gamma(Z)=\gamma(Y).
+\]
+Mas a relação segue agora porque o triângulo $(X,Y,Z,f,g,h)$ é isomorfo a um triângulo distinguido de $\cA$. Por conseguinte, obtém-se
+\[
+\beta:K(\cA/\cB)\longrightarrow \operatorname{Coker}(K(i)),
+\]
+e é imediato verificar que $\beta$ é a inversa de $\alpha$.

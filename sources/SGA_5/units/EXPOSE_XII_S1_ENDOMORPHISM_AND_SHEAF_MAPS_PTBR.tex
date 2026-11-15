@@ -1,0 +1,31 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 13271--13299 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Suponham-se agora dados um endomorfismo $f' : X' \to X'$ do esquema $X'$ e um endomorfismo $\varphi : G \to G$ do grupo $G$, tais que se verificam as duas condições seguintes:
+
+\begin{equation}\tag{1.1}
+f' g_{X'} = \varphi(g)_{X'} f' \qquad \forall g \in G \quad .
+\end{equation}
+
+\begin{equation}\tag{1.2}
+\text{O complemento } Y' = X' - U' \text{ é estável por } f' \quad .
+\end{equation}
+
+(Sob as hipóteses já formuladas, $Y'$ é estável por $G$. \emph{Em geral, não se exige que o aberto $U'$ seja estável por $f'$}).
+
+Obtêm-se, portanto, os homomorfismos de feixes:
+\begin{align*}
+f'_{\La_{n,X'}} &: \La_{n,X'} \longrightarrow \La_{n,X'} \\
+f'_{\La_{n,Y'}} &: \La_{n,Y'} \longrightarrow \La_{n,Y'} \\
+f'_{\La_{n,U',X'}} &: \La_{n,U',X'} \longrightarrow \La_{n,U',X'} \\
+g_{\La_{n,U',X'}} &: \La_{n,U',X'} \longrightarrow \La_{n,U',X'}
+\end{align*}
+
+O diagrama seguinte, cujas linhas são exatas, é comutativo:
+
+\[
+\begin{tikzcd}
+0 \arrow[r] & \La_{n,U',X'} \arrow[r] \arrow[d, "f'_{\La_{n,U',X'}}"] & \La_{n,X'} \arrow[r] \arrow[d, "f'_{\La_{n,X'}}"] & \La_{n,Y'} \arrow[r] \arrow[d, "f'_{\La_{n,Y'}}"] & 0 \\
+0 \arrow[r] & \La_{n,U',X'} \arrow[r] & \La_{n,X'} \arrow[r] & \La_{n,Y'} \arrow[r] & 0 \quad .
+\end{tikzcd}
+\tag{1.3}
+\]

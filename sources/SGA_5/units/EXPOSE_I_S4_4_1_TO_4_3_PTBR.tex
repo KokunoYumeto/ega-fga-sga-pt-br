@@ -1,0 +1,97 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 956--1058 (SHA256 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28; LF-normalized unit).
+\section*{4. Dualidad local}
+
+O objeto deste número é apresentar a noção de ``bidualidade'' desenvolvida nos números anteriores de uma forma mais próxima da intuição geométrica.
+
+\subsection*{4.1}
+Sejam $X$ um esquema, $i : x \to X$ um ponto fechado de corpo residual separavelmente fechado e $K_X$ um complexo dualizante sobre $X$ (1.7). Sabemos por (1.15) que $K_{\{x\}} = \R^{!}i(K_X)$ é um complexo dualizante sobre $x$ e, portanto, em virtude de (2.1) e (3.4.4), isomorfo a $A[r]$ para algum $r \in \Z$ (se $A$ é local). Diremos que $K_X$ está \emph{normalizado em $x$} se $r = 0$ e se foi fixado um isomorfismo $K_{\{x\}} \xrightarrow{\sim} A$.
+
+Por exemplo, se $X$ é suave de dimensão relativa $d$ sobre o espectro de um corpo separavelmente fechado, o complexo $(\mu_n)_X^{\otimes d}[2d]$ está, em virtude do teorema de pureza (SGA~XVI~3, SGA~$4^{1/2}$~Ciclo~2.3), canonicamente normalizado em todo ponto fechado de $X$.
+
+\subsection*{4.2}
+Sejam $X$ um esquema, $i : Y \to X$ um subesquema fechado e $K_X$ um complexo dualizante sobre $X$. Então, por (1.15), $K_Y = \R^{!}i(K_X)$ é um complexo dualizante sobre $Y$, e tem-se a \emph{fórmula de indução complementar} (1.12~b)(ii)), para $F \in \ob \D_c^b(X)$,
+\[
+(4.2.1)\qquad i^*\underline{D}_X(F)\simeq\underline{D}_Y\R^{!}i(F),
+\]
+onde colocamos $\underline{D}_X = \R\,\underline{\Hom}(\ ,K_X)$, $\underline{D}_Y = \R\,\underline{\Hom}(\ ,K_Y)$.
+
+Apliquemos em particular (4.2.1) ao caso em que $Y = \{x\}$ é um ponto fechado de $X$ com corpo residual separavelmente fechado, estando $K_X$ normalizado em $x$ (4.1). Levando em conta que $A_x$ é injetivo, (4.2.1) escreve-se então
+\[
+(4.2.2)\qquad \underline{D}_X(F)_x\simeq\underline{\Hom}^{\bullet}(\R^{!}i(F),A).
+\]
+Observando que $\R^{!}i(F)$ também se escreve, por definição, $\R\Gamma_x(F)$, tem-se, portanto, um emparelhamento perfeito em $\D(A)$:
+\[
+(4.2.2)'\qquad \underline{D}_X(F)_x\times \R\Gamma_x(F)\longrightarrow A,
+\]
+que dá lugar a emparelhamentos perfeitos entre grupos finitos:
+\[
+(4.2.2)''\qquad \uH^i(\underline{D}_X(F))_x\times \uH_x^{-i}(F)\longrightarrow A.
+\]
+Por exemplo, seja $X$ um esquema suave de dimensão $d$ sobre um corpo separavelmente fechado, e seja $x \in X$ um ponto fechado. Então, para $F \in \ob \D_c^b(X)$, tem-se uma dualidade perfeita canônica entre grupos finitos:
+\[
+(4.2.2)'''\qquad \underline{\Ext}^{2d-i}(F,(\mu_n)_X^{\otimes d})_x\times \uH_x^i(F)\longrightarrow A.
+\]
+
+\subsection*{Exercício 4.2.3}
+Seja $X$ um esquema estritamente local (SGAA~VIII~4.2), de ponto fechado $x$, e seja $i : x \to X$ o morfismo canônico. Seja $K$ um complexo dualizante sobre $X$, normalizado em $x$. Denotemos por
+\[
+\underline{\underline L}\, i_? : \D^b(A)\longrightarrow \D^-(X)
+\]
+o funtor definido por
+\[
+\underline{\underline L}\, i_?(M)=M\overset{\mathrm L}{\otimes}_A K.
+\]
+(Se $K$ tem dimensão Tor finita sobre $A$, $\underline{\underline L}\, i_?$ se estende a um funtor de $\D^+(A)$ a $\D(X)$).
+
+Demonstrar que existe, para $L \in \D^-(X)$ e $M \in \D^b(A)$, um isomorfismo funtorial canônico
+\[
+(*)\qquad \R\Hom(L,\underline{\underline L}\, i_?(M))\xrightarrow{\sim}\R\Hom(\R^{!}i(L),M),
+\]
+(supõe-se, é claro, que $\R^{!}i : \D^-(X) \to \D^-(A)$ é definido \dots).
+
+\emph{Indicação:} Definir primeiro um morfismo de ``traço'' $\R^{!}i\,\underline{\underline L}\, i_?(M) \to M$; depois, para verificar que $(*)$ é um isomorfismo, reduzir-se, por devissage, ao caso em que $L \in \ob \D_c^b(X)$ e $M = A$, e aplicar (4.2.2). Observar que, para $M = A$, $(*)$ se reduz ao emparelhamento perfeito (``dualidade local'', cf.~[H]~V~6.2)
+\[
+\R\Gamma_x(L)\times \R\Hom(L,K)\longrightarrow A,
+\]
+ou
+\[
+\H_x^i(L)\times \Ext^{-i}(L,K)\longrightarrow A.
+\]
+
+\subsection*{4.3}
+Vamos agora generalizar (4.2.2) para o caso de um ponto geométrico $\ol{x}$ de $X$ situado sobre um ponto $x$ não necessariamente fechado. Para isso, precisamos de alguns preliminares.
+
+\subsection*{Lema 4.3}
+Sejam $X$ um esquema, $X'$ a localização estrita de $X$ em um ponto geométrico $\ol{x}$ e $f : X' \to X$ a seta canônica. Então, para $F \in \ob \D_c^-(X)$ e $G \in \ob \D^+(X)$, o homomorfismo funtorial canônico (SGAA~VI~I~3.7)
+\[
+f^*\R\,\underline{\Hom}(F,G)\longrightarrow \R\,\underline{\Hom}(f^*F,f^*G)
+\]
+é um isomorfismo.
+
+\emph{Demonstração.} Reduzimo-nos, como de costume, ao caso em que $F$ e $G$ estão concentrados em grau $0$. Como a questão é local em uma vizinhança de $x$, podemos supor que $X$ é afim. Então $F$ admite (SGAA~IX~2.7) uma resolução pela esquerda mediante feixes da forma $i_!(A_U)$, onde $i : U \to X$ é étale e de apresentação finita; assim, por devissage, ficamos reduzidos ao caso $F = i_!(A_U)$. Formemos o quadrado cartesiano
+\[
+\begin{tikzcd}
+U \arrow[d,"i"'] & U' \arrow[l,"g"'] \arrow[d,"i'"] \\
+X & X' \arrow[l,"f"']
+\end{tikzcd}
+\]
+Têm-se isomorfismos canônicos, casos particulares triviais da dualidade (SGAA~XVIII~3.1.10):
+\[
+\R\,\underline{\Hom}(F,G)\xleftarrow{\sim}\R i_* i^*G,
+\qquad
+\R\,\underline{\Hom}(f^*F,f^*G)\xleftarrow{\sim}\R i'_* g^*i^*G.
+\]
+Por meio destes isomorfismos, a seta canônica
+\[
+f^*\R\,\underline{\Hom}(F,G)\longrightarrow \R\,\underline{\Hom}(f^*F,f^*G)
+\]
+identifica-se com a flecha de mudança de base (SGAA~XVII)
+\[
+f^*\R i_*i^*(G)\longrightarrow \R i'_*g^*i^*(G).
+\]
+Agora, a última é um isomorfismo, como se vê imediatamente passando ao limite (SGAA~VII~5.11).
+
+\subsection*{Lema 4.4}
+Seja $X$ um esquema, e seja $K \in \ob \D_c^+(X)$ um complexo que satisfaça as condições (i) e (ii) de (1.7). Para que $K$ seja dualizante, é necessário e suficiente que, para toda localização estrita $f : \ol{X}(\ol{x}) \to X$, $f^*K$ seja dualizante.
+
+\emph{Demonstração.} Utilize-se o fato de que todo feixe construtível sobre uma localização estrita $\ol{X}(\ol{x})$ é induzido por um feixe construtível sobre um esquema étale provido de um levantamento de $\ol{x}$ sobre $X$ (SGAA~IX~2.7.4), e aplique-se (4.3).

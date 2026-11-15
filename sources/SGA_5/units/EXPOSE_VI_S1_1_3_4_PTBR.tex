@@ -1,0 +1,36 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 8522--8555 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{1.3.4. Generalidades sobre os feixes \(\ell\)-ádicos invertíveis. Aplicação aos feixes \(\mathbb Z_\ell(r)\) (\(r\in\mathbb Z\))}
+
+Seja \(L\) um \(\mathbb Z_\ell\)-feixe construtível. Diremos que é invertível se, para todo inteiro \(n\), sua componente \(n\)-ésima \(L_n\) é um \((\mathbb Z/\ell^{\,n+1}\mathbb Z)_X\)-módulo invertível, isto é, localmente livre de posto um. Isso equivale a dizer que \(L\) é localmente livre no sentido do número anterior e que as fibras geométricas dos \(L_n\) são grupos abelianos cíclicos não nulos.
+
+Se \(L\) é um \(\mathbb Z_\ell\)-feixe inversível, convém definir
+\[
+L^{-1}=\cHom(L,\mathbb Z_\ell).
+\]
+É claro que se tem um isomorfismo
+\[
+L\otimes L^{-1}\xrightarrow{\sim}\mathbb Z_\ell,
+\]
+deduzido do isomorfismo análogo componente a componente (EGA \(0_I\) 5.4.3.1). Seguindo então (EGA \(0_I\) 5.4.4), convém definir \(L^{\otimes0}=\mathbb Z_\ell\) e, para \(n\ge1\),
+\[
+L^{\otimes -n}=(L^{-1})^{\otimes n}.
+\]
+Com esta notação, existe um isomorfismo funtorial canônico
+\[
+L^{\otimes m}\otimes L^{\otimes n}\xrightarrow{\sim}L^{\otimes(m+n)}
+\]
+para quaisquer inteiros racionais \(m\) e \(n\). Além disso, este isomorfismo possui as propriedades de associatividade habituais.
+
+Em particular, os objetos graduados
+\[
+(L^{\otimes i})_{i\in\mathbb N}\quad\text{e}\quad(L^{\otimes i})_{i\in\mathbb Z}
+\]
+são \(\mathbb Z_\ell\)-álgebras, graduadas por \(\mathbb N\) e \(\mathbb Z\), respectivamente.
+
+\begin{statement}{Exemplo}
+O \(\mathbb Z_\ell\)-feixe \(\mathbb Z_\ell(1)\) definido em (1.2.2) é invertível, e conviremos doravante em definir
+\[
+\mathbb Z_\ell(r)=\bigl(\mathbb Z_\ell(1)\bigr)^{\otimes r}\qquad (r\in\mathbb Z).
+\]
+\end{statement}

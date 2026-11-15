@@ -1,0 +1,36 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7661--7694 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Corolário 5.1.5}
+Suponhamos ainda que a categoria \(\mathcal C\) tenha somas diretas numeráveis. Então, para todo objeto \(M\) de tipo finito (resp. noetheriano) de \(\mathcal C\) e toda \(A\)-álgebra de tipo finito \(B\), o \((B,\mathcal C)\)-módulo \(B\otimes_A M\) é de tipo finito (resp. noetheriano).
+\end{statement}
+
+\begin{prooftext}
+Reduzimo-nos ao caso em que \(B=A[T]\). Seja \(N\) um sub-\((A[T],\mathcal C)\)-módulo de \(A[T]\otimes_A M\), considerado como objeto de \(\mathcal C\). Denotaremos por \(\gr(N)\) o graduado de \(N\) para a filtração induzida pela filtração natural como objeto graduado de \(A[T]\otimes_A M\): \(\gr(N)\) é um sub-\((A[T],\mathcal C)\)-módulo graduado do \((A[T],\mathcal C)\)-módulo graduado \(A[T]\otimes_A M\).
+
+Seja agora
+\[
+N^0\subset N^1\subset\cdots\subset N^p\subset\cdots
+\]
+uma sucessão crescente de sub-\((A[T],\mathcal C)\)-módulos de \(A[T]\otimes_A M\), cuja união é \(A[T]\otimes_A M\) na primeira hipótese. Na primeira hipótese (\(M\) tipo finito), existe um inteiro \(i\) tal que \(\gr(N^i)=A[T]\otimes_A M\), de onde
+\[
+N^i=A[T]\otimes_A M.
+\]
+Na segunda hipótese (\(M\) noetheriano), a sucessão dos \(\gr(N^i)\) é estacionária e, portanto, também é a sucessão dos \(N^i\).
+
+No que segue, o teorema de Hilbert será útil principalmente por meio da seguinte proposição.
+\end{prooftext}
+
+\begin{statement}{Proposição 5.1.6}
+Sejam \(A\) um anel comutativo noetheriano, \(J\) um ideal de \(A\) e \(\mathcal C\) uma \(A\)-categoria abeliana. Para todo sistema projetivo \(J\)-ádico noetheriano (5.1.1) \(X\), o graduado \(\grs(X)\) é um \((\gr_J(A),\mathcal C)\)-módulo noetheriano.
+\end{statement}
+
+\begin{prooftext}
+Como \(\gr_J(A)\) é uma \(A\)-álgebra de tipo finito, deduz-se do teorema de Hilbert (5.1.4) que
+\[
+\gr_J(A)\otimes_A X_0
+\]
+é um \((\gr_J(A),\mathcal C)\)-módulo graduado noetheriano. A afirmação deduz-se então da existência do epimorfismo (4.2.4):
+\[
+\gr_J(A)\otimes_A X_0\longrightarrow \grs(X).
+\]
+\end{prooftext}

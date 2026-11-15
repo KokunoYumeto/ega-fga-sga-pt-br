@@ -1,0 +1,62 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 13847--13904 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{6.2. Definição dos termos locais}
+Suponha-se que $X'$ seja irredutível de dimensão um e que a restrição do feixe $F'=p^*(F)$ a $U'$ seja constante.
+
+Se o número de pontos fixos de $f'$ for finito, hipótese que manteremos doravante, podemos sempre supor que $X^f \subset Y^f$.
+
+O feixe $F'|_{U'}$ é definido, portanto, por um $A$-módulo $M$ sobre o qual opera $G$:
+\[
+F'|_{U'} \simeq M_{U'} .
+\]
+Com efeito, se denotarmos por $\eta$ (resp. $\eta'$) o ponto genérico de $X$ (resp. $X'$) e por $\bar\eta$ (resp. $\bar\eta'$) um ponto geométrico sobre $\eta$ (resp. $\eta'$), tem-se:
+\[
+p(\eta')=\eta,\qquad F_{\bar\eta} \simeq F'_{\bar\eta'} .
+\]
+O complexo $F'$ é isomorfo a $M$ e, portanto, $M$ é um $A$-módulo perfeito.
+
+Por outro lado, se o morfismo $f'$ não for constante, ele fixa o ponto genérico de $X'$. Por conseguinte, o morfismo $(p^*(u),f')$ do par $(X',F')$ induz um morfismo na fibra $F'_{\bar\eta'}$:
+\[
+u'_{\bar\eta'}:F'_{\bar\eta'}\longrightarrow F'_{\bar\eta'} ,
+\]
+de onde se obtém evidentemente um morfismo de $A$-módulos:
+\[
+u_M:M\longrightarrow M .
+\]
+Vê-se facilmente que se verifica a relação seguinte:
+\begin{equation}\tag{6.2.1}
+u_M(\varphi(g)m)=g u_M(m) \qquad \forall m\in M,\quad \forall g\in G .
+\end{equation}
+O dual $\check M$ de $M$ com respeito a $A$ é, portanto, munido de uma estrutura de $A[G]$-módulo e de um endomorfismo
+\[
+u_M^\vee:\check M\longrightarrow \check M ,
+\]
+tal que se verifique a relação seguinte:
+\[
+u_M^\vee(gx)=\varphi(g)u_M^\vee(x) \qquad \forall g\in G,\quad \forall x\in \check M .
+\]
+Além disso, $\check M$ é um $A$-módulo perfeito e, por conseguinte, o traço $\Tr_A(g^{-1}u_M^\vee)$ está definido para cada $g\in G$.
+
+Seja $x\in X^f$ um ponto fixo fechado de $f$. O morfismo $u$ induz um endomorfismo do módulo $F_x$, a fibra do feixe $F$ no ponto $x$. (Os pontos fechados de $X$ são identificados com os pontos de $X(k)$):
+% SOURCE_ANOMALY_PRESERVED: source and scan print X(x), although over the algebraically closed base field k the set of closed points is X(k).
+\[
+u_x:F_x\longrightarrow F_x .
+\]
+O traço $\Tr_A(u_x)$ fornece um primeiro invariante local associado ao ponto fixo $x$.
+
+Introduz-se outro invariante local $\alpha_x(f,u,f',G,\varphi)$, elemento do anel $A$, mediante a fórmula:
+% SOURCE_ANOMALY_PRESERVED: source and scan use the order (f,f') throughout (6.2.2) and the reduction below, reversing the defining order (f',f) in section 4.
+\begin{equation}\tag{6.2.2}
+\alpha_x(f,u,f',G,\varphi)=
+\sum_{g\in G_{\natural,\varphi}}
+S_{x,\ell^n}(f',f,G,\varphi)(g)\Tr_A(g^{-1}u_M^\vee),
+\end{equation}
+onde a função
+\[
+S_{x,\ell^n}(f',f,G,\varphi):G\longrightarrow\La_n
+\]
+obtém-se a partir da função $i_\ell\circ S_x(f',f,G,\varphi)$ (cf. 4) por redução módulo $\ell^n\bZ$, isto é:% SOURCE_ANOMALY_PRESERVED: source and scan print capital F' here, although the morphism f' is intended.
+\[
+S_{x,\ell^n}(f',f,G,\varphi)(g)=
+(i_\ell\circ S_x(f',f,G,\varphi))(g)\bmod \ell^n\bZ.
+\]

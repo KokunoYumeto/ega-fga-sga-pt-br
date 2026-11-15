@@ -1,0 +1,33 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 13367--13397 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{3. O invariante local de Nielsen--Wecken (cf. [1])}
+Suponha, além das hipóteses descritas no número 1, que toda órbita de $G$ esteja contida em um aberto afim. Existe então um quociente $X = X'/G$ e, graças à fórmula 1.1, o endomorfismo $f'$ de $X'$ passa ao quociente:
+\[
+f : X \longrightarrow X \quad .
+\]
+
+No que segue, utilizaremos as seguintes notações:
+\begin{align*}
+p &: X' \longrightarrow X = X'/G \quad \text{para a projeção canônica,} \\
+Y &= p(Y') = Y'/G \quad , \\
+U &= X - Y
+\end{align*}
+
+$U'$ é um recobrimento principal com grupo estrutural $G$. Seja $x \in U$ um ponto fixo de $f$. A ele associaremos uma classe de $\varphi$-conjugação (XI, 7.1), $\mathrm{NW}_{f}^{G,\varphi}(x)$, da seguinte forma:
+
+Seja $x' \in U'$ tal que $p(x') = x$. Como $U'$ é um recobrimento principal com grupo estrutural $G$ e o ponto $x$ é fixo por $f$, existe um único elemento $g \in G$ tal que $f'(x') = gx'$. A classe de $\varphi$-conjugação de $g$ depende apenas de $x$. De fato, se $p(x'') = x$, existe $h \in G$ tal que $hx'' = x'$. Consequentemente, se $f'(x'') = g'x''$, tem-se:
+\begin{align*}
+gx' &= f'(x') = f'(hx'') = \varphi(h)f'(x'') = (\varphi(h)g'h^{-1})x' \quad , \\
+g &= \varphi(h)g'h^{-1} \quad ,
+\end{align*}
+Isto é, $g$ e $g'$ são $\varphi$-conjugados. Obtém-se, portanto, uma classe bem determinada de $\varphi$-conjugação, \emph{o invariante local de Nielsen--Wecken} associado ao ponto fixo $x \in U$ de $f$, que denotaremos por $\mathrm{NW}_{f}^{G,\varphi}(x)$.
+
+A classe de $\varphi$-conjugação $\mathrm{NW}_{f}^{G,\varphi}(x)$ define uma função $\varphi$-central (cf. XI, 7.1):
+\[
+\mathrm{NW}_{f}^{G,\varphi}(x) : G \longrightarrow \bZ
+\]
+com valores inteiros, caracterizada pelas seguintes relações:
+
+\begin{equation}\tag{3.1}
+\mathrm{NW}_{f}^{G,\varphi}(x)(g) = \begin{cases} 1 & \text{se existe } x' \in X' \text{ tal que } (g^{-1}f^{\prime})(x') = x' \\ & \qquad \text{e } p(x') = x \\ 0 & \text{caso contrário.} \end{cases}
+\end{equation}

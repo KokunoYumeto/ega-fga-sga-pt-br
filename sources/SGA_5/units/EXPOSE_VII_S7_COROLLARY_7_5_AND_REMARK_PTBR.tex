@@ -1,0 +1,48 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10540--10585 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Corolário 7.5}
+Seja $X$ um subesquema liso, conexo e de dimensão $n$ de $\mathbb P_k^{\,n+r}$, interseção completa global de $r$ divisores de $\mathbb P_k^{\,n+r}$, a saber, $X_1,X_2,\ldots,X_r$. Para todo inteiro $i\in\{1,\ldots,r\}$, denota-se por $d_i$ o grau de $X_i$. Então:
+\begin{enumerate}[label=(\roman*)]
+\item Os grupos de cohomologia $H^p(X,\mathbb Z_\ell)$ são $\mathbb Z_\ell$-módulos livres de tipo finito;
+\item Se $p$ é um inteiro $\le 2n$ e $\ne n$, então
+\[
+H^p(X,\mathbb Z_\ell)\simeq
+\begin{cases}
+0,&\text{se }p\text{ é ímpar},\\
+\mathbb Z_\ell,&\text{se }p\text{ é par};
+\end{cases}
+\]
+\item A característica de Euler-Poincaré de $X$ é dada pela fórmula
+\[
+\operatorname{EP}(X)
+=d_1\cdots d_r
+\sum_{\substack{0\le i\le n\\ j_1+\cdots+j_r=n-i}}
+(-1)^{\,n-i}\binom{n+r+1}{i}
+d_1^{j_1}\cdots d_r^{j_r}.
+\]
+\end{enumerate}
+\end{statement}
+
+\emph{Demonstração.} A afirmação (i) deduz-se imediatamente de (7.2). O mesmo vale para (ii), levando-se em conta a cohomologia dos espaços projetivos (n$^\circ$ 2). Demonstremos a parte (iii). Denotemos por $P$ o espaço projetivo ambiente, por $p:P\to k$ a projeção canônica, por $p_*$ o morfismo de Gysin correspondente e por $\xi$ a classe de $\mathcal O_P(1)$. Para todo $i\in\{1,\ldots,r\}$, o esquema $X_i$ é definido por uma seção de um $\mathcal O_P$-módulo inversível $L_i$, de modo que $X$ é o lugar dos zeros de uma seção de $V(\check L_1\oplus\cdots\oplus\check L_r)$ transversal à seção zero. Por outro lado, sabe-se que se tem uma sequência exata
+\[
+0\to\Omega_P^1\otimes\mathcal O_P(1)\to\mathcal O_P^{\,n+r+1}\to\mathcal O_P(1)\to0,
+\]
+de onde
+\[
+c(\check\Omega_P^1)=(1+\xi)^{\,n+r+1}.
+\]
+Deduz-se então de (7.3) a expressão seguinte para $\operatorname{EP}(X)$:
+\[
+\operatorname{EP}(X)
+=p_*\bigl(c(\check\Omega_P^1)c(\check L_1\oplus\cdots\oplus\check L_r)^{-1}
+c_1(\check L_1)\cdots c_1(\check L_r)\bigr)
+\]
+\[
+=p_*\bigl(d_1\cdots d_r\,\xi^r(1+\xi)^{\,n+r+1}
+(1+d_1\xi)^{-1}\cdots(1+d_r\xi)^{-1}\bigr).
+\]
+Utilizando o fato de que $p_*(\xi^{n+r})=1$ (2.2.2 c)), obtém-se sem dificuldade a fórmula do enunciado.
+
+\begin{statement}{Observação 7.6}
+Também se pode obter a expressão da característica de Euler-Poincaré utilizando (4.11) e transcrevendo os cálculos de Hirzebruch ([3], pp. 160--161), que utilizam o teorema de Riemann-Roch. Para um cálculo mais completo e a determinação da cohomologia de Hodge das interseções completas, remete-se o leitor a (SGA 7 XI).
+\end{statement}

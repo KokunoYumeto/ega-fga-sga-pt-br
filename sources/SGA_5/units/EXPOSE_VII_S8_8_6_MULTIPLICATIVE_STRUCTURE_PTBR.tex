@@ -1,0 +1,29 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10884--10910 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{8.6}
+
+Vamos agora determinar a estrutura multiplicativa da coomologia de $X'$. Para isso, ponhamos, para todo $p\in\mathbb Z$ e todo $A_X$-módulo $M$ localmente constante construtível em uma vizinhança de $Y$,
+\[
+\nabla^p(X',M)=H^{p-2}(Y',M(-1))\oplus H^p(X,M).
+\]
+Para $p,q\in\mathbb Z$ e $M,N$ dois $A_X$-módulos localmente constantes construtíveis em uma vizinhança de $Y$, define-se uma lei de composição
+\[
+\cup:\nabla^p(X',M)\otimes_A\nabla^q(X',N)\to
+\nabla^{p+q}(X',M\otimes_A N)
+\tag{8.6.1}
+\]
+através da fórmula
+\[
+(y_1',x_1)\cup(y_2',x_2)=
+\bigl(-y_1'y_2'\xi+y_1'g^*i^*(x_2)+(-1)^{pq}y_2'g^*i^*(x_1),\,x_1x_2\bigr).
+\tag{8.6.2}
+\]
+Esta lei de composição é claramente anticomutativa, e um cálculo simples, mas laborioso mostra que é associativa. Em particular,
+\[
+\nabla^*(X',A)=\bigoplus_{p\in\mathbb Z}\nabla^p(X',A)
+\]
+está igualmente dotado de uma estrutura de $A$-álgebra graduada comutativa (no sentido das álgebras graduadas por $\mathbb Z$), e
+\[
+\nabla^*(X',M)=\bigoplus_{p\in\mathbb Z}\nabla^p(X',M)
+\]
+está dotado de uma estrutura de módulo graduado sobre o anel graduado $\nabla^*(X',A)$.

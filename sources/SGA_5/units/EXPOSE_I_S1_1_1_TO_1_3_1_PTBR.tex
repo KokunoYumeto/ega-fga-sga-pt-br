@@ -1,0 +1,43 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 327--368 (LF-normalized unit).
+\section{Definição e propriedades formais dos complexos dualizantes}
+
+Fixemos um anel de coeficientes $A = \Z/n\Z$. Se $X$ é um esquema, denotamos por $A_X$ o feixe constante sobre $X_{\mathrm{\acute{e}t}}$ de valor $A$, e por $\D(X)$ a categoria derivada da categoria dos $A_X$-módulos. Denotamos também por $\D_c(X)$ a subcategoria triangulada plena de $\D(X)$ formada pelos complexos $F$ tais que $\H^i(F)$ seja um $A_X$-módulo construtível para todo $i$. Pomos $\D_c^{*}(X) = \D^{*}(X) \cap \D_c(X)$, onde $* = \varnothing$, $+$, $-$ ou $b$.
+
+\subsection*{Definição 1.1}
+Diz-se que um $A_X$-módulo $I$ é \emph{quase-injetivo} se
+\[
+\underline{\Ext}^i(F,I) = 0
+\]
+para todo $A_X$-módulo \emph{construtível} $F$ e todo $i > 0$.
+
+\subsection*{Observações 1.2}
+\begin{enumerate}[label=\alph*)]
+\item Ao contrário do que ocorre no caso dos coeficientes ``contínuos'' (cf.~[H]~II.7.17), um feixe quase-injetivo não é, em geral, injetivo. Seja, por exemplo, $X = \Spec(\mathbb R)$ e $A = \Z/2\Z$: o feixe $A_X$ é quase-injetivo, mas não é injetivo, nem sequer tem dimensão injetiva finita, pois $\H^{*}(X; A_X) = \H^{*}(\Z/2\Z; \Z/2\Z)$ é uma álgebra de polinômios em um gerador de dimensão~1.
+
+\item Seja $I$ um $A_X$-módulo quase-injetivo. Em geral, é falso que a relação $\underline{\Ext}^i(F,I) = 0$ para $i > 0$, válida quando $F$ é construtível, continue válida para todo $F$. De fato, tomemos $A = \F_{\ell}$. Sejam $k$ um corpo, $\ol{k}$ um fecho separável de $k$ e $f : \ol{x} = \Spec(\ol{k}) \to X = \Spec(k)$ o morfismo canônico; suponhamos ainda que, para todo recobrimento étale conexo $X' \to X$, exista um recobrimento étale conexo $X'' \to X'$ tal que $[X'':X']$ seja divisível por $\ell$ (tome-se, por exemplo, $k = \Q$). Consideremos a sequência exata
+\[
+(*) \qquad 0 \longrightarrow A_X \xrightarrow{\;\varepsilon\;} f_{*}f^{*}A_X \longrightarrow F \longrightarrow 0
+\]
+definida pela seta de adjunção $\varepsilon$. Em virtude da hipótese, a seção de $\underline{\Ext}^1(F,A_X)$ definida por $(*)$ não se anula sobre nenhum $U$ étale sobre $X$; portanto, $\underline{\Ext}^1(F,A_X)_{\ol{x}} \neq 0$. Ora, verifica-se imediatamente que $A_X$ é quase-injetivo.
+\end{enumerate}
+
+\subsection*{Proposição 1.3 {\normalfont (Cf.~[H]~1.7.6)}}
+Sejam $X$ um esquema e $N \in \Z$. As seguintes condições são equivalentes para $K \in \ob \D^{+}(X)$:
+\begin{enumerate}[label=(\roman*)]
+\item $K$ é isomorfo, em $\D(X)$, a um complexo $I$ com graus limitados tal que $I^i$ é quase-injetivo para todo $i$ e nulo para $i > N$;
+\item para todo $F \in \ob \D_c^{b}(X)$ tal que $\H^i(F) = 0$ para $i < 0$, tem-se $\underline{\Ext}^i(F,K) = 0$ para $i > N$;
+\item para todo $A_X$-módulo construtível $F$, tem-se $\underline{\Ext}^i(F,K) = 0$ para $i > N$.
+\end{enumerate}
+
+\emph{Demonstração.} $(i) \Rightarrow (ii)$. Sejam $F \in \ob \D_c^{b}(X)$ tal que $\H^i(F) = 0$ para $i < 0$, e $I \in \ob \D^{+}(X)$ com graus limitados, tal que $I^i$ é quase-injetivo para todo $i$ e nulo para $i > N$; demonstremos que $\underline{\Ext}^i(F,I) = 0$ para $i > N$. Raciocinando por indução sobre o número de índices $i$ tais que $I^i \neq 0$, uma redução sucessiva nos leva ao caso em que $N = 0$ e $I$ está concentrado em grau $0$. Tem-se então uma sucessão espectral birregular
+\[
+\E_2^{pq} = \underline{\Ext}^p(\H^{-q}(F),I) \Rightarrow \underline{\Ext}^{*}(F,I).
+\]
+Como $I$ é quase-injetivo, $\E_2^{pq} = 0$ para $p > 0$ e todo $q$; portanto, $\E_2^{0i} = \underline{\Hom}(\H^{-i}(F),I) \xrightarrow{\sim} \underline{\Ext}^i(F,I)$, de onde segue a conclusão.
+
+$(ii) \Rightarrow (iii)$ é imediato.
+
+$(iii) \Rightarrow (i)$. Podemos supor que $K$ é limitado inferiormente e tem componentes injetivas. A hipótese, aplicada a $F = A_X$, implica que $\H^i(K) = 0$ para $i > N$. Portanto, podemos substituir $K$ por um complexo isomorfo $K'$, com graus limitados, tal que $K'^i$ é injetivo para $i < N$ e nulo para $i > N$. Verifica-se então que $K'^N$ é quase-injetivo, o que conclui a demonstração.
+
+\subsection*{Observação 1.3.1}
+O redator ignora se (1.3) continua sendo verdade quando, na condição (ii), a hipótese ``$F \in \ob \D_c^{b}(X)$'' é substituída por ``$F \in \ob \D_c^{+}(X)$''.

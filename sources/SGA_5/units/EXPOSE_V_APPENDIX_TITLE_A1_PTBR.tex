@@ -1,0 +1,40 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7902--7939 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{Apêndice: Teorema de SHIH}
+
+O objetivo do presente apêndice é dar uma demonstração do teorema de SHIH na forma usada na demonstração de (5.3.1). Como esta forma é mais geral do que a do EGA \(0_{\mathrm{III}}\), foi necessária uma demonstração direta, adaptada da de loc. cit.
+
+\paragraph{Terminologia.}
+Seja \(r_0\) um inteiro \(\ge1\). Um dado, para todo inteiro \(r\ge r_0\), de um objeto bigraduado
+\[
+E_r=\bigl(E_r^{pq}\bigr)_{p\in\mathbb Z,\ q\in\mathbb Z},
+\]
+dotado de um diferencial \(d_r\) de bigrau \((r,1-r)\), e, para todo \(r\), de um isomorfismo
+\[
+H(E_r)\xrightarrow{\sim}E_{r+1},
+\]
+será denominado, no que segue, filtro espectral. Define-se de maneira evidente a noção de morfismo de filtros espectrais.
+
+\subsubsection*{A.1. Lembretes sobre as sucessões espectrais associadas aos \(\delta\)-funtores}
+
+Seja \(\mathcal C\) uma categoria abeliana e \(X\) um objeto de \(\mathcal C\), dotado de uma filtração decrescente \((F^pX)_{p\in\mathbb Z}\). Para todo \(\delta\)-funtor exato \(T\) de \(\mathcal C\) em uma categoria abeliana \(\mathcal D\), o método denominado «dos pares exatos» (cf., por exemplo, Maclane, Homology, p. 336) permite descrever uma sucessão espectral:
+\[
+E(X):\quad E_1^{pq}=T^{p+q}(F^pX/F^{p+1}X)\Rightarrow E^n=T^n(X),
+\]
+para a qual a filtração de \(E^n\) se define do seguinte modo:
+\[
+F^p(E^n)=\Im\bigl(T^n(F^pX)\longrightarrow T^n(X)\bigr)
+=\Ker\bigl(T^n(X)\longrightarrow T^n(X/F^pX)\bigr).
+\]
+Além disso, se a filtração de \(X\) for finita, a sucessão espectral assim obtida é fracamente convergente (EGA \(0_{\mathrm{III}}\) 11.1.3).
+
+\paragraph{Funtorialidad.}
+Se \(f:X\to Y\) é um morfismo de objetos filtrados de \(\mathcal C\), constrói-se, de maneira funtorial, um morfismo de sucessões espectrais:
+\[
+\mathbb E(f):\mathbb E(X)\longrightarrow \mathbb E(Y),
+\]
+que corresponde a \(T^{p+q}(\gr^p f)\) (resp. \(T^n(f)\)) em \(E_1^{pq}(X)\) (resp. \(E^n(X)\)). Em particular, se \(u:X\to X\) é um endomorfismo de \(X\) tal que
+\[
+u(F^pX)\subset F^{p+h}(X)
+\]
+Para um inteiro \(h\) independente de \(p\), \(\mathbb E(u)\) é um endomorfismo de bigrado \((h,-h)\) do filtro espectral associado a \(E(X)\) e comuta com os diferenciais.

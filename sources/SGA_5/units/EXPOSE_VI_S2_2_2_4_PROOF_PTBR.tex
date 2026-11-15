@@ -1,0 +1,39 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 8865--8901 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{prooftext}[Demonstração]
+Pela equivalência de categorias (1.5.5) e pela maneira como se definem as imagens diretas superiores para os \(\mathbb Z_\ell\)-feixes construtíveis, basta demonstrar o enunciado análogo para os \((AR,\mathbb Z_\ell)\)-feixes construtíveis. Para toda categoria abeliana \(C\), convenhamos em denotar por \(\Sp(C)\) a categoria das sucessões espectrais que começam em grau \(2\) e tomam valores em \(C\). Associando a todo objeto \(F\) de \(\Hom(\mathbb N^\circ,\Ab(X))\) a sucessão espectral de LERAY ordinária, obtida por prolongamento aos sistemas projetivos,
+\[
+\R^i_! g(\R^j_! f(F))\Longrightarrow \R^{i+j}_!(g\circ f)(F),
+\tag{S}
+\]
+É claro que se obtém um funtor
+\[
+\Hom(\mathbb N^\circ,\Ab(X))\longrightarrow \Sp(\Hom(\mathbb N^\circ,\Ab(Z))),
+\]
+que, por restrição, fornece, em virtude de (2.2.1) e do fato de \(U(Z)\) ser espessa em \(\Hom(\mathbb N^\circ,\Ab(Z))\), um funtor
+\[
+U(X)\longrightarrow \Sp(U(Z)).
+\tag{1}
+\]
+Como o funtor canônico
+\[
+U(Z)\longrightarrow (AR,\mathbb Z_\ell)\text{-}\fc(Z)
+\]
+é exato, deduz-se de (1) um funtor aditivo
+\[
+E:U(X)\longrightarrow \Sp((AR,\mathbb Z_\ell)\text{-}\fc(Z)).
+\tag{2}
+\]
+Para todo objeto \(F\) de \(\Hom(\mathbb N^\circ,\Ab(X))\), a sucessão espectral \((S)\) associada é birregular: isso se segue da afirmação análoga para as componentes do sistema projetivo \(F\) e do fato de que a sucessão espectral considerada está suportada no primeiro quadrante. Isso mostra que, para todo objeto de \(U(X)\), a sucessão espectral correspondente é birregular.
+
+Além disso, se \(u:F\to G\) é um morfismo de \(U(X)\) cujo núcleo e conúcleo são localmente \(AR\)-nulos, do fato de que as imagens diretas superiores transformam um sistema projetivo localmente \(AR\)-nulo em um sistema projetivo localmente \(AR\)-nulo segue-se que \(E(u)\) é um isomorfismo sobre os termos \(E_2^{pq}\); é, portanto, um isomorfismo, já que as sucessões espectrais consideradas são birregulares. Deduz-se que (2) define, por passagem ao quociente, um funtor
+\[
+(AR,\mathbb Z_\ell)\text{-}\fc(X)
+\longrightarrow \Sp((AR,\mathbb Z_\ell)\text{-}\fc(Z)),
+\tag{3}
+\]
+que associa de forma precisa a todo \((AR,\mathbb Z_\ell)\)-feixe construtível \(F\) uma sucessão espectral birregular:
+\[
+\R^i_!g(\R^j_!f(F))\Longrightarrow \R^{i+j}_!(g\circ f)(F).
+\]
+\end{prooftext}

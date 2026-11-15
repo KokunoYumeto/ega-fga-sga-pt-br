@@ -1,0 +1,49 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10746--10792 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Lema 8.4.3}
+Denota-se por $F$ o $\mathcal O_{Y'}$-módulo localmente livre definido pela sequência exata canônica
+\[
+0\to F\to g^*(N)\to\mathcal O_{Y'}(1)\to0.
+\]
+Sejam $M$ um $A_X$-módulo localmente constante construtível em uma vizinhança de $Y$, e $p$ um inteiro $\ge0$. Para todo $y\in H^p(Y,M)$, tem-se a relação
+\[
+f^*(i_*(y))=j_*(g^*(y)c_{d-1}(\check F))
+\]
+em $H_{Y'}^{p+2d}(X',M\otimes\mu^{\otimes d})$.
+\end{statement}
+
+\emph{Demonstração.} Ponhamos
+\[
+z=f^*(i_*(y))-j_*(g^*(y)c_{d-1}(\check F)).
+\]
+Tem-se
+\[
+j^*(z)=g^*i^*i_*(y)-j^*j_*(g^*(y)c_{d-1}(\check F)),
+\]
+de onde, graças a (4.1) e ao lema de linearidade de (SGA 4 XVIII),
+\[
+j^*(z)=g^*(y)\bigl[c_d(g^*\check N)-c_{d-1}(\check F)c_1(\mathcal O_{Y'}(-1))\bigr]=0.
+\tag{8.4.4}
+\]
+Colocando $U=X-Y$ e $U'=X'-Y'$, temos o diagrama exato comutativo evidente
+\[
+\begin{array}{ccccc}
+H^{p+2d-1}(U')&\xrightarrow{\partial}&H^{p+2d}_{Y'}(X')&\xrightarrow{j^*}&H^{p+2d}(Y')\\
+\uparrow\wr&&\uparrow f^*&&\uparrow g^*\\
+H^{p+2d-1}(U)&\xrightarrow{\partial}&H_Y^{p+2d}(X)&\xrightarrow{i^*}&H^{p+2d}(Y),
+\end{array}
+\tag{8.4.5}
+\]
+com as simplificações de notação evidentes. A consideração de (8.4.5) e (8.4.4) mostra então que $z$ é da forma
+\[
+z=f^*(t),
+\]
+com $t\in H_Y^{p+2d}(X,M\otimes\mu^{\otimes d})$. Por (4.2), tem-se $t=f_*(z)$, de modo que basta ver que $f_*(z)=0$. Ora,
+\[
+f_*(z)=f_*f^*(i_*(y))-f_*j_*(g^*(y)c_{d-1}(\check F)),
+\]
+de onde, utilizando (4.2),
+\[
+f_*(z)=i_*(y)-i_*g_*(g^*(y)c_{d-1}(\check F)).
+\]
+Conclui-se utilizando a fórmula de projeção para o morfismo $g$ e (8.4.2).

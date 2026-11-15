@@ -1,0 +1,54 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 8469--8520 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Proposição 1.3.2}
+Se \(F\) e \(G\) forem dois \(\mathbb Z_\ell\)-feixes construtíveis, o produto tensorial \(F\otimes G\) é um \(\mathbb Z_\ell\)-feixe construtível.
+\end{statement}
+
+\begin{prooftext}[Demonstração]
+A \(\ell\)-adicidade é clara. Por outro lado, segue-se imediatamente da definição dos feixes construtíveis (SGA 4 IX 2.3) que o produto tensorial de dois feixes construtíveis é construtível.
+\end{prooftext}
+
+Por restrição define-se, portanto, um bifuntor aditivo exato à direita, também chamado produto tensorial:
+\[
+\otimes:\mathbb Z_\ell\text{-}\fc(X)\times \mathbb Z_\ell\text{-}\fc(X)
+\longrightarrow \mathbb Z_\ell\text{-}\fc(X).
+\]
+
+\subsubsection*{1.3.3. Feixe de homomorfismos}
+
+Sejam \(F=(F_n)_{n\in\mathbb N}\) e \(G=(G_n)_{n\in\mathbb N}\) dois \(\mathbb Z_\ell\)-feixes construtíveis. Supõe-se que \(F\) é localmente livre, entendendo por isso que, para todo inteiro \(n\), o feixe \(F_n\) é localmente livre sobre o feixe constante
+\[
+(\mathbb Z/\ell^{\,n+1}\mathbb Z)_X.
+\]
+Para todo inteiro \(n\), a sequência exata estrutural
+\[
+G_{n+1}\xrightarrow{\ell^{\,n+1}}G_{n+1}\longrightarrow G_n\longrightarrow 0
+\]
+fornece, como \(F_{n+1}\) é localmente livre sobre \((\mathbb Z/\ell^{\,n+1}\mathbb Z)_X\), uma sucessão exata
+\[
+\cHom(F_{n+1},G_{n+1})
+ \xrightarrow{\ell^{\,n+1}}
+\cHom(F_{n+1},G_{n+1})
+ \longrightarrow
+\cHom(F_{n+1},G_n)
+ \longrightarrow 0.
+\tag{1}
+\]
+Como \(\ell^{\,n+1}G_n=0\), a sequência exata estrutural
+\[
+F_{n+1}\xrightarrow{\ell^{\,n+1}}F_{n+1}\longrightarrow F_n\longrightarrow 0
+\]
+define claramente um isomorfismo
+\[
+\cHom(F_{n+1},G_n)\xleftarrow{\sim}\cHom(F_n,G_n).
+\tag{2}
+\]
+Combinando (1) e (2), obtém-se, para todo inteiro \(n\), um morfismo
+\[
+\cHom(F_{n+1},G_{n+1})\longrightarrow \cHom(F_n,G_n).
+\]
+Por isso, um sistema projetivo
+\[
+\cHom(F,G)=\bigl(\cHom(F_n,G_n)\bigr)_{n\in\mathbb N},
+\]
+que é claramente um \(\mathbb Z_\ell\)-feixe.

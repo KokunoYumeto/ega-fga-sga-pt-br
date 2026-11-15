@@ -1,0 +1,58 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10179--10234 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Vamos agora dar uma variante relativa de (5.4) e (5.5). Com as notações anteriores, seja $u:S\to T$ um morfismo de esquemas. Ele se põe
+\[
+A^\bullet(X/T)=\bigoplus_i \R^{2i}(u\circ f)_*(A_X)
+\]
+e, igualmente,
+\[
+A^\bullet(S/T)=\bigoplus_i \R^{2i}u_*(A_S).
+\]
+Finalmente, para tudo $A_S$-módulo $L$, é colocado
+\[
+Q(S/T,L)=\bigoplus_{n,i}\R^n u_*(L\otimes\mu_S^{\otimes i})
+\]
+e
+\[
+Q(X/T,f^*L)=\bigoplus_{n,i}\R^n(u\circ f)_*(f^*L\otimes\mu_X^{\otimes i}).
+\]
+
+Para todo par $(i,j)$ de inteiros, com $1\le i\le m$, $1\le j\le p_i$, a imagem da classe de Chern $c_j(E_i)$ pelo canônico morfismo
+\[
+H^{2j}(X,\mu_X^{\otimes j})
+\to H^0(T,\R^{2j}(u\circ f)_*(\mu_X^{\otimes j}))
+\]
+define um $A_T$-morfismo
+\[
+c_{ij}:A_T\to \R^{2j}(u\circ f)_*(\mu_X^{\otimes j}).
+\]
+A data de $c_{ij}$ e a imagem inversa $f^*$ permitem definir um morfismo de $A^*(S/T)$-álgebra
+\[
+\theta_1:A^\bullet(S/T)[T_{i,j_i}]_{(i,j_i)}\to A^\bullet(X/T).
+\]
+Denotando por $c_i$ as seções de $A^*(S/T)$ definidas pelas classes de Chern $c_i(E)$, se vê, como em (5.4), que $\theta_1$ é anulada sobre o ideal $J$ gerado localmente pelas relações
+\[
+\sum_{i_1+\cdots+i_m=p}T_{1,i_1}\cdots T_{m,i_m}=c_p\qquad(p\in\mathbb N).
+\]
+Daí um morfismo de $A^*(S/T)$-álgebra
+\[
+\theta:A^\bullet(S/T)[T_{i,j_i}]_{(i,j_i)}/J\to A^\bullet(X/T).
+\]
+
+\begin{statement}{Proposição 5.6}
+Com as notações anteriores:
+\begin{enumerate}[label=\alph*)]
+\item O morfismo de $A^*(S/T)$-álgebra
+\[
+\theta:A^\bullet(S/T)[T_{i,j_i}]_{(i,j_i)}/J\to A^\bullet(X/T)
+\]
+é um isomorfismo.
+\item Para todo $A_S$-módulo $L$, o canônico morfismo de $A^*(X/T)$-módulos
+\[
+A^\bullet(X/T)\otimes_{A^\bullet(S/T)}Q(S/T,L)\to Q(X/T,f^*L)
+\]
+é um isomorfismo.
+\end{enumerate}
+\end{statement}
+
+\emph{Demonstração.} Basta fazer (5.4) e (5.5), respectivamente.

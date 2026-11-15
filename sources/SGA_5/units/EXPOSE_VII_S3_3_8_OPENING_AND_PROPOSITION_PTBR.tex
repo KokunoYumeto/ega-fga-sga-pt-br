@@ -1,0 +1,45 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9612--9654 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{3.8}
+Dado um esquema $X$ localmente de tipo finito sobre $\operatorname{spec}(\mathbb C)$, o conjunto $X(\mathbb C)$ de seus pontos racionais é canonicamente dotado de uma estrutura de espaço topológico localmente compacto. Assim, por meio da topologia algébrica, dispõe-se de uma teoria de classes de Chern [3] que associa a todo $\mathbb C$-fibrado vetorial contínuo $V$ sobre $X(\mathbb C)$ classes $c_i(V)\in H^{2i}(X(\mathbb C),\mathbb Z)$. Sejam agora $\mathcal O_\mathbb C$ o feixe das funções contínuas com valores complexos sobre $X(\mathbb C)$ e $\mathcal E$ um $\mathcal O_\mathbb C$-módulo localmente livre de tipo finito; definem-se classes de Chern
+\[
+c_i(\mathcal E)\in H^{2i}(X(\mathbb C),\mathbb Z),
+\]
+a saber, as do $\mathbb C$-fibrado vetorial cujo feixe de seções contínuas é $\mathcal E$. Finalmente, utilizando a aplicação evidente $\mathbb Z\to\mathbb Z/\nu\mathbb Z$, deduzem-se classes de Chern, denotadas da mesma forma se não houver risco de confusão,
+\[
+c_i(\mathcal E)\in H^{2i}(X(\mathbb C),\mathbb Z/\nu\mathbb Z).
+\tag{3.8.1}
+\]
+Por outro lado, quando se dota $X_{\mathrm{\acute et}}$ de seu feixe estrutural $\mathcal O_a$ e $X(\mathbb C)$ do anel $\mathcal O_c$, tem-se um morfismo de topoi anelados (SGA 4 XI)
+\[
+\varepsilon:X(\mathbb C)\to X_{\mathrm{\acute et}},
+\]
+de onde o morfismo estrutural de anéis
+\[
+\varepsilon^*(\mathcal O_a)\to\mathcal O_c
+\tag{3.8.2}
+\]
+decorre do fato de que toda função algébrica é contínua. O morfismo $\varepsilon$ induz um morfismo de feixes abelianos
+\[
+\varepsilon^*(\mu_{X_{\mathrm{\acute et}}})\to \mu_{X(\mathbb C)},
+\tag{3.8.3}
+\]
+onde a letra $\mu$ denota, em cada um dos dois contextos, o feixe das raízes $\nu$-ésimas da unidade. Finalmente, identificaremos canonicamente $(\mathbb Z/\nu\mathbb Z)_{X(\mathbb C)}$ e $\mu_{X(\mathbb C)}$ por meio do isomorfismo
+\[
+(\mathbb Z/\nu\mathbb Z)_{X(\mathbb C)}
+ \xrightarrow{\sim}\mu_{X(\mathbb C)}
+\tag{3.8.4}
+\]
+que envia a seção $1$ para a seção ``$e^{\frac{2i\pi}{\nu}}$''.
+
+\begin{statement}{Proposição 3.8.5}
+Seja $E$ um $\mathcal O_X$-módulo localmente livre. Denotando, para todo inteiro $i\ge0$, por
+\[
+\varepsilon^*:H^{2i}(X_{\mathrm{\acute et}},\mu_X^{\otimes i})
+\to H^{2i}(X(\mathbb C),\mathbb Z/\nu\mathbb Z)
+\]
+o morfismo de imagem inversa deduzido de 3.8.3 e 3.8.4, tem-se a igualdade
+\[
+c_i(\varepsilon^*E)=\varepsilon^*c_i(E).
+\]
+\end{statement}

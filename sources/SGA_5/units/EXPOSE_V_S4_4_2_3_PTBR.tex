@@ -1,0 +1,45 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7390--7432 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{4.2.3. Graduado de um sistema projetivo adaptado a \(J\)}
+Seja \(X\) um sistema projetivo adaptado a \(J\). Como a filtração de \(X\) é compatível com \(J\), é claro que o objeto graduado
+\[
+\gr^p(X)_{p\in\mathbb N}
+\]
+é canonicamente dotado de uma estrutura de \(\gr_J(A)\)-módulo graduado. Em particular, passando ao limite deduz-se que, quando \(X\) verifica a condição (ML), o objeto graduado
+\[
+\grs(X)=\bigl(\grs^p(X)\bigr)_{p\in\mathbb N}
+\]
+é canonicamente dotado de uma estrutura de \(\gr_J(A)\)-módulo graduado.
+
+Explicitemos brevemente como se definem, quando além disso \(X\) é estrito, os morfismos correspondentes:
+\[
+\omega_{pq}: J^p/J^{p+1}\otimes_A F^q(X_q)\longrightarrow F^{p+q}(X_{p+q}).
+\]
+Como o sistema projetivo \(X\) é estrito, sabemos (4.1.1 e 4.1.2) que o morfismo canônico que aparece a seguir é um isomorfismo:
+\[
+\varphi:F^q(X_{p+q})/F^{q+1}(X_{p+q})\longrightarrow F^q(X_q).
+\]
+Além disso, o fato da filtração de \(X\) ser adaptada a \(J\) permite exibir um morfismo
+\[
+J^p\otimes_A F^q(X_{p+q})\longrightarrow F^{p+q}(X_{p+q})
+\]
+que se fatora, uma vez que
+\[
+J^{p+1}F^q(X_{p+q})\subset F^{p+q+1}(X_{p+q})=0,\qquad
+J^pF^{q+1}(X_{p+q})\subset F^{p+q+1}(X_{p+q})=0,
+\]
+através de
+\[
+(J^p/J^{p+1})\otimes_A
+\bigl(F^q(X_{p+q})/F^{q+1}(X_{p+q})\bigr)
+\]
+em um morfismo
+\[
+\beta:(J^p/J^{p+1})\otimes_A
+\bigl(F^q(X_{p+q})/F^{q+1}(X_{p+q})\bigr)
+\longrightarrow F^{p+q}(X_{p+q}).
+\]
+O morfismo \(\omega_{pq}\) é então dado pela seguinte expressão:
+\[
+\omega_{pq}=\beta\circ(\id_{J^p/J^{p+1}}\otimes_A\varphi)^{-1}.
+\]

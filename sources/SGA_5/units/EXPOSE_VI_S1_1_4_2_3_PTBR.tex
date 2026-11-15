@@ -1,0 +1,44 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 8588--8629 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\paragraph{1.4.2. \(\mathbb Q_\ell\)-feixes construtíveis.}
+É claro que a subcategoria plena de \(\mathbb Z_\ell\text{-}\fc(X)\) gerada pelos \(\mathbb Z_\ell\)-feixes construtíveis de torção, ou seja, anulada por uma potência de \(\ell\), é espessa.
+
+\begin{statement}{Definição 1.4.3}
+Chama-se categoria de \(\mathbb Q_\ell\)-feixes construtíveis sobre \(X\), e denota-se por
+\[
+\mathbb Q_\ell\text{-}\fc(X),
+\]
+a categoria abeliana quociente (cf. tese de Gabriel) de \(\mathbb Z_\ell\text{-}\fc(X)\) pela subcategoria abeliana espessa dos \(\mathbb Z_\ell\)-feixes de torção. Um objeto de \(\mathbb Q_\ell\text{-}\fc(X)\) chama-se \(\mathbb Q_\ell\)-feixe construtível.
+\end{statement}
+
+A categoria \(\mathbb Q_\ell\text{-}\fc(X)\) admite a seguinte descrição simples. Tem o mesmo conjunto de objetos que \(\mathbb Z_\ell\text{-}\fc(X)\) e, se \(F\) e \(G\) são dois destes objetos,
+\[
+\Hom_{\mathbb Q_\ell}(F,G)
+=\mathbb Q_\ell\otimes_{\mathbb Z_\ell}\Hom_{\mathbb Z_\ell}(F,G),
+\]
+onde \(\Hom_{\mathbb Z_\ell}(F,G)\) e \(\Hom_{\mathbb Q_\ell}(F,G)\) denotam, respectivamente, os morfismos em \(\mathbb Z_\ell\text{-}\fc(X)\) e \(\mathbb Q_\ell\text{-}\fc(X)\). Com efeito, se
+\[
+u:\mathbb Z_\ell\text{-}\fc(X)\longrightarrow D
+\]
+denota um funtor exato de \(\mathbb Z_\ell\text{-}\fc(X)\) em uma categoria abeliana \(D\), equivale a dizer que \(u\) torna invertíveis as multiplicações por elementos de \(\mathbb Z_\ell\), ou que se anula sobre os objetos de torção, o que mostra imediatamente que a categoria abeliana descrita anteriormente por objetos e morfismos é solução do problema universal de passagem ao quociente.
+
+Diz-se que um \(\mathbb Q_\ell\)-feixe construtível é constante torcido se é imagem de um \(\mathbb Z_\ell\)-feixe constante torcido construtível. Chama-se categoria dos \(\mathbb Q_\ell\)-feixes constantes torcidos construtíveis a subcategoria plena de
+\[
+\mathbb Q_\ell\text{-}\fc(X)
+\]
+engendrada pelos \(\mathbb Q_\ell\)-feixes constantes torcidos construtíveis.
+
+De (1.2.4) segue-se que, se \(X\) é conexo, a categoria dos \(\mathbb Q_\ell\)-feixes constantes torcidos construtíveis é equivalente à categoria dos \(\mathbb Q_\ell\)-espaços vetoriais \(V\) de dimensão finita, dotados de uma ação contínua de \(\pi_1(X)\), isto é, de uma aplicação contínua
+\[
+u:\pi_1(X)\times V\longrightarrow V
+\]
+que verifica as propriedades explicadas em (1.2.4), o que implica, em particular, que \(u(g,v)\) é \(\mathbb Q_\ell\)-linear em \(v\) para todo \(g\in\pi_1(X)\).
+
+É imediato ver que é equivalente a dar um morfismo de grupos topológicos
+\[
+\pi_1(X)\longrightarrow \GL(V),
+\]
+onde este último está dotado de sua topologia natural de grupo analítico \(\ell\)-ádico.
+
+\paragraph{1.4.3. \(L\)-feixes construtíveis (\(L\) uma \(\mathbb Q_\ell\)-álgebra finita).}
+Seja \(L\) uma \(\mathbb Q_\ell\)-álgebra finita. De maneira análoga ao que se fez em (1.4.1) a partir dos \(\mathbb Z_\ell\)-feixes construtíveis, define-se, a partir da categoria dos \(\mathbb Q_\ell\)-feixes construtíveis, a dos \(L\)-feixes construtíveis e depois a dos \(L\)-feixes constantes torcidos construtíveis. Se \(X\) é conexo, a categoria dos \(L\)-feixes constantes torcidos construtíveis é equivalente à categoria dos \(L\)-espaços vetoriais de dimensão finita dotados de uma ação contínua de \(\pi_1(X)\), isto é, de uma ação contínua de \(\pi_1(X)\) sobre o \(\mathbb Q_\ell\)-espaço vetorial subjacente que comuta com a ação de \(L\).

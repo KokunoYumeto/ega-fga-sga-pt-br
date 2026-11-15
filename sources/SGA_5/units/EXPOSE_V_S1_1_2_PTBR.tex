@@ -1,0 +1,50 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6677--6724 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{1.2. Produto tensorial externo}
+Seja $(\cC,\rho)$ uma $A$-categoria abeliana. Se $M$ é um $A$-módulo direito e $X$ um objeto de $\cC$, chama-se produto tensorial externo de $X$ por $M$, e denota-se por $M\otimes_A X$, o funtor covariante de $\cC$ na categoria dos conjuntos, definido sobre os objetos $Y$ de $\cC$ pela seguinte equação e de forma evidente sobre as flechas:
+\[
+(M\otimes_A X)(Y)=\Hom_A(M,\Hom_{\cC}(X,Y)),
+\]
+onde $\Hom_{\cC}(X,Y)$ é considerado como um $A$-módulo direito graças à ação de $A$ sobre $X$. Interpretando $M\otimes_AX$ e $Y$ como objetos da categoria $\widehat{\cC}=\underline{\Hom}(\cC,\Ens)^{\circ}$, a igualdade anterior assume a forma mais familiar seguinte:
+\[
+\Hom_{\widehat{\cC}}(M\otimes_A X,Y)=\uHom_A(M,\Hom_{\cC}(X,Y)).
+\]
+Se o funtor $M\otimes_A X$ for representável, será denotado e denominado da mesma maneira um representante.
+
+Se $u:M\to M'$ e $v:X\to X'$ são dois morfismos de $(A\text{-mod})$ e $\cC$, respectivamente, define-se de forma habitual um $\cC$-morfismo
+\[
+u\otimes_A v:M\otimes_A X\longrightarrow M'\otimes_A X',
+\]
+O que nos permitirá falar do bifuntor, covariante em ambas as variáveis, produto tensorial externo. As suas propriedades são resumidas na seguinte proposição.
+
+\begin{statement}{Proposição 1.2.1}
+O bifuntor produto tensorial é aditivo e comuta com os limites indutivos.
+\end{statement}
+A demonstração, clássica no caso dos módulos sobre um anel, é imediata.
+
+\begin{statement}{Proposição 1.2.2 (Critérios de representabilidade)}
+\begin{enumerate}[label=(\alph*)]
+\item Para todo objeto $X$ de $\cC$, $A\otimes_AX$ é representado por $X$.
+\item Para todo $A$-módulo $M$ de apresentação finita e todo objeto $X$ de $\cC$, o funtor $M\otimes_AX$ é representável.
+\item Se a categoria $\cC$ possui somas diretas arbitrárias, o funtor $M\otimes_A X$ é representável para todo par $(M,X)$.
+\end{enumerate}
+\end{statement}
+
+\begin{prooftext}[Demonstração]
+A afirmação (a) é clara. As outras duas afirmações deduzem-se então do lema seguinte, cuja demonstração é imediata.
+\end{prooftext}
+
+\begin{statement}{Lema 1.2.3}
+Sejam $M\to N\to P\to0$ uma sucessão exata de $A$-módulos e $X$ um objeto de $\cC$. Se os funtores $M\otimes_A X$ e $N\otimes_A X$ forem representados por objetos $Y$ e $Z$ de $\cC$, o funtor $P\otimes_A X$ é representado pelo conúcleo do morfismo $Y\to Z$ correspondente a $\alpha\otimes_A\id_X$.
+\end{statement}
+
+\subsubsection*{Observação 1.2.4}
+Seja $\cG$ um ideal de tipo finito de $A$. Para todo objeto $X$ de $\cC$, o funtor $(A/\cG)\otimes_A X$ é representável, e a flecha
+\[
+p_X:X\longrightarrow (A/\cG)\otimes_A X
+\]
+procedente do epimorfismo canônico de $A$ sobre $A/\cG$ e da parte (a) de 1.2.2 é um epimorfismo. A mesma afirmação é válida quando já não se supõe que o ideal $\cG$ seja de tipo finito, mas $\cC$ possui somas diretas arbitrárias. Ponhamos $\cG X=\Ker(p_X)$. Quando a categoria possui limites indutivos filtrantes, é claro que
+\[
+\cG X=\sum_{a\in\cG}aX.
+\]
+Se $u:X\to Y$ é um epimorfismo, $u$ envia epimorficamente $\cG X$ sobre $\cG Y$. Por último, para que um objeto $X$ seja anulado por todo elemento de $\cG$, é necessário e suficiente que $\cG X=0$. Então, todo morfismo de um objeto $Z$ em $X$ se fatora, por meio de $p_Z$, através de um morfismo de $(A/\cG)\otimes_A Z$ em $X$.

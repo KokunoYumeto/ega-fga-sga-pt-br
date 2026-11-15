@@ -1,0 +1,28 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 11845--11870 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Proposição 4.1}
+Suponhamos que a subcategoria $\cC_o$ satisfaça as condições (A), (B), bem como a condição (C) seguinte:
+\[
+(C)\qquad
+\text{Todo diagrama }
+\begin{tikzcd}[column sep=large,row sep=large]
+A \arrow[r,"u"]&B\\
+&L \arrow[u,"v"']
+\end{tikzcd}
+\]
+onde $u$ é um epimorfismo e $L\in\Ob\cC_o$, pode ser completado em um diagrama comutativo
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+A \arrow[r,"u"]&B\\
+L_1 \arrow[u] \arrow[r,"w"']&L \arrow[u,"v"']
+\end{tikzcd}
+\]
+que $L_1\in\Ob\cC_o$ e $w$ é um epimorfismo. Nestas condições, os funtores canônicos
+\[
+D_o^b(\cC)\longrightarrow D^b(\cC),\qquad
+D_o^-(\cC)\longrightarrow D^-(\cC)
+\]
+são completamente fiéis. Além disso, a imagem essencial de $D_o^b(\cC)$ (resp. $D_o^-(\cC)$) é estável por somandos diretos.
+\end{statement}
+
+A demonstração desta proposição utiliza essencialmente um critério de Verdier ([2], 4--2 Teorema) e será dada na primeira exposição do seminário sobre Riemann--Roch (SGA 6 I 2.7).

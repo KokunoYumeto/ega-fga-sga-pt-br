@@ -1,0 +1,91 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 1059--1152 (SHA256 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28; LF-normalized unit).
+\subsection*{4.5}
+Sejam $X$ um esquema e $\ol{x}$ um ponto geométrico de $X$, e seja $f:X'=\ol{X}(\ol{x})\to X$ a localização estrita correspondente.
+
+Seja $Y$ o subesquema fechado integral que é o fecho de $x$ em $X$; denotemos por $g:\ol{x}\to Y$ e $i:Y\to X$ as setas canônicas, e formemos o quadrado cartesiano
+\[
+\begin{tikzcd}
+Y \arrow[r,"i"] & X \\
+\ol{x} \arrow[u,"g"] \arrow[r,"i'"] & X' \arrow[u,"f"']
+\end{tikzcd}
+\]
+($\ol{x}$ é ao mesmo tempo o ponto fechado de $X'$ e a localização estrita de $Y$ em $\ol{x}$).
+
+Vamos denotar por
+\[
+\R\Gamma_{\ol{x}}:\D^+(X)\longrightarrow \D^+(\ol{x})
+\]
+o funtor definido por
+\[
+(4.5.1)\qquad \R\Gamma_{\ol{x}}=g^*\R^{!}i.
+\]
+Usando a relação bem conhecida entre os funtores $\R^{!}i$ e $\R j_*j^*$, onde $j:U\to X$ é o aberto complementar de $Y$, e aplicando o passo ao limite (SGAA~VII~5.11), obtém-se um isomorfismo canônico
+\[
+(4.5.2)\qquad \R\Gamma_{\ol{x}}\simeq\R^{!}i' f^*.
+\]
+Quando $x$ é um ponto fechado de corpo residual separavelmente fechado, o funtor $\R\Gamma_{\ol{x}}$ coincide com o funtor $\R\Gamma_x$ habitual (SGAA~V~4.3), o que justifica a notação.
+
+Seja $K_X\in\ob\D^+(X)$, e ponhamos $K_Y=\R^{!}i(K_X)$, $K_{X'}=f^*K_X$, $K_{\ol{x}}=\R\Gamma_{\ol{x}}(K_X)$ (atenção: $K_{\ol{x}}$ não é a fibra de $K_X$ em $\ol{x}$!). Suponhamos que $K_X$ é dualizante. Então, em virtude de (1.15) e (4.4), o mesmo ocorre com $K_{X'}$, $K_Y$ e $K_{\ol{x}}$. Portanto, por (2.1), tem-se $K_{\ol{x}}\simeq A[d]$ para um $d\in\Z$.
+
+Diremos que $K_X$ está \emph{normalizado em $\ol{x}$} se $d=0$ e se foi fixado um isomorfismo $K_{\ol{x}}\simeq A$. Quando $x$ é fechado e seu corpo residual é separavelmente fechado, recupera-se a noção introduzida em (4.1).
+
+Seja $K_X$ um complexo dualizante, e ponhamos $\underline{D}_X=\R\underline{\Hom}(\ ,K_X)$; $\underline{D}_Y=\R\underline{\Hom}(\ ,K_Y)$, etc. Seja $F\in\ob\D_c^b(X)$; calculemos $(\underline{D}_XF)_{\ol{x}}$. Tem-se:
+\[
+\begin{aligned}
+(\underline{D}_XF)_{\ol{x}}&\simeq g^*i^*\underline{D}_X F\\
+&\xrightarrow{\sim}g^*\underline{D}_Y\R^{!}iF\qquad\text{(de acordo com a fórmula de indução complementar (4.2.1))}\\
+&\xrightarrow{\sim}\underline{D}_{\ol{x}}g^*\R^{!}i(F)\qquad\text{(segundo (4.3)), ou seja,}
+\end{aligned}
+\]
+\[
+(4.5.3)\qquad (\underline{D}_X F)_{\ol{x}}\xrightarrow{\sim}\underline{D}_{\ol{x}}\R\Gamma_{\ol{x}}(F).
+\]
+Naturalmente, poderia ter sido efetuado um cálculo análogo passando por $X'$ em vez de por $Y$; ter-se-ia obtido então um isomorfismo canônico
+\[
+(\underline{D}_XF)_{\ol{x}}\xrightarrow{\sim}\underline{D}_{\ol{x}}\R^{!}i'f^*(F),
+\]
+compatível com (4.5.3) mediante a identificação (4.5.2).
+
+Se, além disso, $K_X$ estiver normalizado em $\ol{x}$, obtêm-se emparelhamentos perfeitos que generalizam (4.2.2)' e (4.2.2)'':
+\[
+(4.5.3)'\qquad \underline{D}_X(F)_{\ol{x}}\times \R\Gamma_{\ol{x}}(F)\longrightarrow A,
+\]
+\[
+(4.5.3)''\qquad \uH^i(\underline{D}_X(F)_{\ol{x}})\times \uH_{\ol{x}}^{-i}(F)\longrightarrow A,
+\]
+(onde se pôs $\uH_{\ol{x}}^i=\uH^i\R\Gamma_{\ol{x}}$).
+
+Reciprocamente, seja $K_X\in\ob\D^+(X)$ um complexo que satisfaça as condições (i) e (ii) de (1.7) e tal que $K_{\ol{x}}=\R\Gamma_{\ol{x}}(K_X)$ seja dualizante para todo ponto geométrico $\ol{x}$ de $X$. Então, para todo $\ol{x}$, pode-se definir (cf.~1.12 b) (ii)) uma seta canônica
+\[
+(4.5.3)^{\mathrm{bis}}\qquad \underline{D}_X(F)_{\ol{x}}\longrightarrow \underline{D}_{\ol{x}}\R\Gamma_{\ol{x}}(F)\qquad (F\in\ob\D_c^b(X)).
+\]
+Se esta seta é um isomorfismo para todo $\ol{x}$ e todo $F$, então $K_X$ é dualizante. Trata-se de verificar que a seta canônica
+\[
+F\longrightarrow \underline{D}_X\underline{D}_X(F)
+\]
+é um isomorfismo para todo $F\in\ob\D_c^b(X)$. Ora, em um ponto geométrico arbitrário $\ol{x}$, tem-se
+\[
+\begin{aligned}
+F_{\ol{x}}&\xrightarrow{\sim}\underline{D}_{\ol{x}}\underline{D}_{\ol{x}}(F_{\ol{x}})\qquad\text{(pois $K_{\ol{x}}$ é dualizante)}\\
+&\xrightarrow{\sim}\underline{D}_{\ol{x}}\R\Gamma_{\ol{x}}\underline{D}_X(F)\qquad\text{(por (4.3) e a fórmula de indução 1.12 b) (i))}\\
+&\xrightarrow{\sim}\underline{D}_X\underline{D}_X(F)_{\ol{x}}\qquad\text{(por hipótese)},
+\end{aligned}
+\]
+Assim, após uma verificação de compatibilidade, $(F,K_X)$ é bidualizante, o que demonstra a nossa afirmação. Em resumo:
+
+\subsection*{Proposição 4.5.4}
+Sejam $X$ um esquema e $K_X\in\ob\D^+(X)$ um complexo que satisfaz as condições (i) e (ii) de (1.7). Para que $K_X$ seja dualizante, é necessário e suficiente que, para todo ponto geométrico $\ol{x}$ de $X$, o complexo $K_{\ol{x}}$ seja dualizante e a seta canônica (4.5.3)$^{\mathrm{bis}}$ seja um isomorfismo para todo $F\in\ob\D_c^b(X)$.
+
+\subsection*{Observação 4.5.5}
+A existência de complexos dualizantes deve ser considerada, em certo sentido, como um complemento importante do teorema de dualidade global. Este último exprime que, para um morfismo separado de tipo finito $f:X\to Y$ (sendo $Y$ quase-compacto), tem-se um isomorfismo canônico
+\[
+\underline{D}_Y\R_!f(F)\xrightarrow{\sim}\R f_*\underline{D}_X(F)
+\]
+(com as notações de 1.12). Sua utilização para o cálculo de $\R_!f(F)$ (quando $F\in\ob\D_c^b(X)$) requer dados sobre $\underline{D}_X(F)$. Quando $K_X$ é dualizante, estes são fornecidos pelo isomorfismo (4.5.3), que permite, pelo menos teoricamente, calcular as fibras de $\underline{D}_X(F)$ como invariantes de cohomologia ``puramente espaciais''.
+
+\subsection*{Exercício 4.5.6}
+Seja $X$ um esquema provido de um complexo dualizante (1.7). A família de funtores (cf.~(4.5.3)'')
+\[
+\underline{\H}_{\ol{x}}^i:\D_c^b(X)\longrightarrow (A\text{-módulos})
+\]
+(onde $i$ percorre $\Z$ e $\ol{x}$ percorre o conjunto dos pontos geométricos de $X$) é ``conservadora'', isto é, todo morfismo $F\to G$ em $\D_c^b(X)$ tal que os $\underline{\mathrm H}_{\ol{x}}^i(F)\to\H_{\ol{x}}^i(G)$ sejam isomorfismos é um isomorfismo.

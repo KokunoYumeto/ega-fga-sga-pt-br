@@ -1,0 +1,18 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 8435--8450 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Proposição 1.2.6}
+Sejam \(X\) um pré-esquema localmente noetheriano e \(F\) um sistema projetivo indexado por \(\mathbb N\) de feixes abelianos sobre \(X_{\mathrm{\acute et}}\). As seguintes afirmações são equivalentes:
+\begin{enumerate}[label=(\roman*)]
+\item \(F\) é um \(\mathbb Z_\ell\)-feixe construtível;
+\item todo aberto noetheriano \(U\) de \(X\) é união de um número finito de partes localmente fechadas \((Z_i)_{1\le i\le q}\) sobre as quais a imagem inversa de \(F\) é um \(\mathbb Z_\ell\)-feixe constante torcido construtível;
+\item \(X\) admite um recobrimento por abertos, uniões de um número finito de partes localmente fechadas, sobre as quais a imagem inversa de \(F\) é um \(\mathbb Z_\ell\)-feixe constante torcido construtível.
+\end{enumerate}
+\end{statement}
+
+\begin{prooftext}[Demonstração]
+É claro que (ii) implica (iii).
+
+(iii) \(\Longrightarrow\) (i): Se \(F\) verifica (iii), suas fibras geométricas são \(\ell\)-ádicas, então \(F\) é \(\ell\)-ádico por (SGA 4 VIII 3.6). Por outro lado, os seus componentes são construtíveis (SGA 4 IX 2.8).
+
+Para ver que (i) implica (ii), reduz-se imediatamente ao caso em que \(X\) é noetheriano. Se \(F\) é \(\ell\)-ádico construtível, seu graduado estrito \(\operatorname{gr}^s(F)\) é um \((\operatorname{gr}_\ell\mathbb Z,\Ab(X))\)-módulo noetheriano (V 5.1.6). Por conseguinte (SGA 4 IX 2.9), \(X\) é união de um número finito de partes localmente fechadas \((Z_i)_{1\le i\le q}\) sobre as quais a imagem inversa de \(\operatorname{gr}^s(F)\) é um feixe localmente constante. Como a propriedade de um feixe de fibras finitas de ser localmente constante é estável por extensões, deduz-se que, para todo inteiro \(n\), as imagens inversas sobre cada \(Z_i\) da componente \(F_n\) de \(F\) são feixes localmente constantes.
+\end{prooftext}

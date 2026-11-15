@@ -1,0 +1,31 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9359--9387 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+O lema implica a parte a) de 2.2.1. Agora vamos provar que $\theta$ é um isomorfismo. O morfismo $\theta$ pode ser interpretado como um morfismo de anéis
+\[
+A[T]/(T^{r+1})\longrightarrow\bigoplus_i H^{2i}(P,\mu^{\otimes i}).
+\]
+
+
+Assim, por (2.2.3), a afirmação estará demonstrada se se provar que, para todo $i\in[0,r]$, $\xi^i$ é um elemento livre do $A$-módulo $H^{2i}(P,\mu^{\otimes i})$. Para isso, basta verificá-lo para $\xi^r$, o que será uma consequência imediata de 2.2.2 c).
+
+Demonstremos, pois, a parte c). Na prática, esta é a definição do morfismo de traço nesta situação; em todo caso, ela expressa a compatibilidade do morfismo de traço e da classe fundamental no diagrama seguinte
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+x_0 \arrow[r,hook,"\mathrm{inj}"] \arrow[dr] & \mathbb P^r_k \arrow[d,"p"]\\
+& k ,
+\end{tikzcd}
+\]
+onde $\mathrm{inj}:x_0\to \mathbb P^r_k$ é a inclusão de um ponto fechado de $\mathbb P^r_k$.
+
+\begin{statement}{Corolário 2.2.4}
+Seja $L$ um complexo de $A_S$-módulos. A flecha
+\[
+\R\Gamma(S,\gamma\lten_A\mathrm{id}(L)):
+\bigoplus_{i=0}^r \R\Gamma(S,L\otimes\mu_S^{\otimes -i})[-2i]
+\longrightarrow
+\R\Gamma(P,p^*(L))
+\]
+é um isomorfismo.
+\end{statement}
+
+Com efeito, basta aplicar o funtor $\R\Gamma_S$ ao isomorfismo $\gamma\lten_A\mathrm{id}_L$.

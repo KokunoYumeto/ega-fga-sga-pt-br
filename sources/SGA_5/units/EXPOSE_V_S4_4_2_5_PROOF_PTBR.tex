@@ -1,0 +1,33 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7466--7496 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{prooftext}
+A equivalência de (ii) e (iii) é clara, pois \(X\) e \(J^mX\) são estritos. Demonstremos a equivalência de (i) e (ii). Sabe-se (3.2.3) que (i) equivale à existência de um inteiro \(r\) tal que, para todo par \((m,n)\) de inteiros com \(m\ge n+r\), o morfismo de transição que aparece a seguir é um isomorfismo:
+\[
+X_{m+1}/J^{n+1}X_{m+1}\longrightarrow X_m/J^{n+1}X_m.
+\]
+Consideremos então o diagrama comutativo exato que aparece a seguir:
+\[
+\begin{array}{ccccccccccc}
+&&0&&0\\
+&&\downarrow&&\downarrow\\
+&&J^{n+1}X_{m+1}&\longrightarrow&J^{n+1}X_m&\longrightarrow&0\\
+&&\downarrow&&\downarrow\\
+0&\longrightarrow&F^{m+1}(X_{m+1})&\longrightarrow&X_{m+1}&\longrightarrow&X_m&\longrightarrow&0\\
+&&\downarrow&&\downarrow\\
+&&X_{m+1}/J^{n+1}X_{m+1}&\longrightarrow&X_m/J^{n+1}X_m&\longrightarrow&0\\
+&&\downarrow&&\downarrow\\
+&&0&&0 .
+\end{array}
+\]
+Este mostra a existência de um isomorfismo canônico entre
+\[
+\Ker\bigl(X_{m+1}/J^{n+1}X_{m+1}
+       \longrightarrow X_m/J^{n+1}X_m\bigr)
+\]
+e
+\[
+F^{m+1}(X_{m+1})/
+\bigl(F^{m+1}(X_{m+1})\cap J^{n+1}X_{m+1}\bigr).
+\]
+Em particular, para que o morfismo de transição após a redução módulo \(J^{n+1}\) seja um isomorfismo, é necessário e suficiente que \(F^{m+1}(X_{m+1})\) esteja contido em \(J^{n+1}X_{m+1}\), o que é precisamente a afirmação (ii).
+\end{prooftext}

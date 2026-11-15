@@ -1,0 +1,40 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 1153--1192 (LF-normalized unit).
+\subsection*{4.6}
+Sejam $X$ um esquema, $j:Y\to X$ um subesquema fechado e $i:\ol{x}\to Y$ um ponto geométrico de $Y$. Seja, por outro lado, $K_X$ um complexo dualizante sobre $X$, normalizado em $\ol{x}$ (cf.~(4.5)). Vimos em (4.5) que, se $Y$ é o fecho de $x$, tem-se, para $F\in\ob\D_c^b(X)$, um emparelhamento perfeito
+\[
+\R^{!}j(F)_{\ol{x}}\times \underline{D}_X(F)_{\ol{x}}\longrightarrow A.
+\]
+Não é difícil definir um emparelhamento análogo no caso geral. Introduzamos a fatoração de $i$ em
+\[
+\ol{x}\xrightarrow{i'}\ol{\{x\}}\xrightarrow{i''}Y.
+\]
+Para $F\in\ob\D_c^b(X)$, têm-se isomorfismos canônicos:
+\[
+\begin{aligned}
+\R\Gamma_{\ol{x}}j^*\underline{D}_X(F)&\xrightarrow{\sim}\R\Gamma_{\ol{x}}\underline{D}_Y\R^{!}j(F)\qquad\text{(fórmula de indução complementar (4.2.1))}\\
+&\xrightarrow{\sim}i'^*\R^{!}i''\underline{D}_Y\R^{!}j(F)\qquad\text{(definição de $\R\Gamma_{\ol{x}}$ (4.5.1))}\\
+&\xrightarrow{\sim}i'^*\underline{D}_{\ol{x}}i''^*\R^{!}j(F)\qquad\text{(indução ordinária (1.12. b) (i)) )}\\
+&\xrightarrow{\sim}\underline{D}_{\ol{x}}i^*\R^{!}j(F)\qquad\text{(por 4.3)), ou seja, finalmente um}
+\end{aligned}
+\]
+isomorfismo canônico
+\[
+(4.6.1)\qquad \R^{!}j(F)_{\ol{x}}\xrightarrow{\sim}\underline{D}_{\ol{x}}\R\Gamma_{\ol{x}}j^*\underline{D}_X(F),
+\]
+de onde se obtêm os emparelhamentos perfeitos
+\[
+(4.6.1)'\qquad \R^{!}j(F)_{\ol{x}}\times \R\Gamma_{\ol{x}}j^*\underline{D}_X(F)\longrightarrow A,
+\]
+\[
+(4.6.1)''\qquad \uH_Y^i(F)_{\ol{x}}\times \uH_{\ol{x}}^{-i}(\underline{D}_X(F)|Y)\longrightarrow A.
+\]
+
+\begin{statement}{Exemplo 4.6.2}
+Sejam $X$ um esquema regular, $\ol{x}$ um ponto geométrico de $X$, e $d=\dim(\cO_{X,x})$. Ponhamos $K_X=(\mu_n)_X^{\otimes d}[2d]$. Se $X$ satisfaz a condição (reg) (3.1.1) e o teorema de pureza (3.1.4), então $K_X$ está canonicamente normalizado em $\ol{x}$. Portanto, se $K_X$ é dualizante, têm-se emparelhamentos perfeitos
+\[
+\uH_Y^i(F)_{\ol{x}}\times \uH_{\ol{x}}^{2d-i}(F'|Y)\longrightarrow A,
+\]
+para todo fechado $Y$ que contenha $x$ e todo $F\in\ob\D_c^b(X)$, com $F'=\R\underline{\Hom}(F,(\mu_n)_X^{\otimes d})$.
+\end{statement}
+
+Para terminar, demos uma variante estritamente local de (4.6.1).

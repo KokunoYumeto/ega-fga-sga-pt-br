@@ -1,0 +1,34 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10716--10744 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{8.4}
+
+Vamos agora explicitar o isomorfismo inverso de (8.3.2), para o qual precisaremos de alguns lemas.
+
+\begin{statement}{Lema 8.4.1}
+Sejam $S$ um esquema, $E$ um $\mathcal O_S$-módulo localmente livre de posto constante $d$, e $p:P=\mathbb P_S(E)\to S$ o fibrado projetivo associado. Denotando por $F$ o $\mathcal O_P$-módulo definido pela sequência exata canônica
+\[
+0\to F\to p^*(E)\to\mathcal O_P(1)\to0,
+\]
+tem-se a relação
+\[
+p_*(c_{d-1}(\check F))=1.
+\]
+\end{statement}
+
+\emph{Demonstração.} Denotemos por $c_i$ as classes de Chern de $E$, e ponhamos $\xi=c_1(\mathcal O_P(1))$. Da igualdade
+\[
+p^*(c(E))=c(F)(1+\xi)
+\]
+resulta que
+\[
+c(F)=p^*(c(E))(1+\xi)^{-1},
+\]
+de onde
+\[
+c_{d-1}(F)=\sum_{0\le i\le d-1}(-1)^{d-1-i}c_i\,\xi^{d-1-i}.
+\tag{8.4.2}
+\]
+\[
+c_{d-1}(\check F)=(-1)^{d-1}c_{d-1}(F).
+\]
+Ora, o homomorfismo $p_*$ diminui os graus em $2d-2$ e tem-se $p_*(\xi^{d-1})=1$ (2.2.2). O lema obtém-se então aplicando o homomorfismo $p_*$ a ambos os membros de (8.4.2) e utilizando a fórmula de projeção.

@@ -1,0 +1,117 @@
+\subsection*{6. Construtibilidade de $\R\underline{\Hom}$}
+
+A equivalência das condições a) de (I 3.3.1) continua válida quando o anel $(\Z/n\Z)_X$ é substituído por um anel comutativo, localmente constante e cujas fibras geométricas sejam anéis noetherianos: nada deve ser modificado na demonstração.
+
+As condições anteriores verificam-se quando se dispõe da resolução de singularidades e da pureza em sentido forte (4.4), em particular se $X$ é de dimensão $\leq1$, se $X$ é excelente de característica zero, ou se é localmente de tipo finito sobre um corpo e de dimensão $\leq2$.
+
+\subsection*{7. Existência de complexos dualizantes}
+
+Neste número, $X$ designa um esquema provido de um feixe de anéis $A_X$ comutativo, localmente constante e cujas fibras geométricas são anéis noetherianos.
+
+\textbf{Lema 7.1.} Sejam $F\in\ob\D^{-}_{\mathrm{coh}}(X)$ e $G\in\ob\D^{+}_{\mathrm{coh}}(X)$; então $\R\underline{\Hom}(F,G)\in\ob\D^{+}_{\mathrm{coh}}(X)$ (notações de (1.2)).
+
+\emph{Demonstração.} É padrão. Por meio de uma sucessão espectral, reduz-se ao caso em que $F$ e $G$ são concentrados em grau $0$, e depois procede-se como em (EGA $0_{\mathrm{III}}$ 12.3.3).
+
+\textbf{Lema 7.2.} Seja $g:X'\to X$ um morfismo de esquemas, e dotemos $X'$ do feixe de anéis $A_{X'}=g^*(A_X)$. Então, para $F\in\ob\D^{-}_{\mathrm{coh}}(X)$ e $G\in\ob\D^{+}(X)$, a seta canônica
+\[
+        g^*\R\underline{\Hom}(F,G)\longrightarrow \R\underline{\Hom}(g^*F,g^*G)
+\]
+é um isomorfismo.
+
+\emph{Demonstração.} Também é padrão: por devissage, reduz-se ao caso $F=A_X$ (cf.~EGA $0_{\mathrm{III}}$ 12.3.5).
+
+\textbf{Observação 7.2.1.} Os lemas anteriores são casos particulares de enunciados mais gerais que figuram em (SGA 6 I).
+
+\textbf{Lema 7.3.} Suponhamos que $X$ é quase-compacto, e seja $K\in\ob\D^{+}_{\mathrm{coh}}(X)$ tal que, para todo ponto geométrico $\bar{x}$ de $X$, $K_{\bar{x}}$ seja um complexo dualizante no sentido de [H] V 2.1. Então, para todo $F\in\ob\D^{b}_{\mathrm{coh}}(X)$, tem-se $\R\underline{\Hom}(F,K)\in\ob\D^{b}_{\mathrm{coh}}(X)$, e $F$ é reflexivo com respeito a $K$.
+
+\emph{Demonstração.} Naturalmente, basta efetuar a verificação quando $F$ está concentrado em grau $0$. Por (7.1), tem-se $\R\underline{\Hom}(F,K)\in\ob\D^{+}_{\mathrm{coh}}(X)$. Demonstremos que $\R\underline{\Hom}(F,K)\in\ob\D^{b}_{\mathrm{coh}}(X)$. Seja $\bar{x}$ um ponto geométrico de $X$. Por (7.2), tem-se
+\[
+        \R\underline{\Hom}(F,K)_{\bar{x}}\simeq \R\underline{\Hom}(F_{\bar{x}},K_{\bar{x}}).
+\]
+Se colocarmos $\dim.\mathrm{inj}(K_{\bar{x}})=N(\bar{x})$, temos, portanto,
+\[
+        \underline{\Ext}^i(F,K)_{\bar{x}}=0\quad\hbox{para }i>N(\bar{x}).
+\]
+Como os $\underline{\Ext}^{i}(F,K)$ são localmente constantes, existe uma vizinhança aberta $U$ de $x$ tal que $\underline{\Ext}^{i}(F,K)|U=0$ para $i>N(\bar{x})$, e conclui-se graças à hipótese de quase-compacidade de $X$. Resta verificar que a seta canônica
+\[
+        F\longrightarrow \R\underline{\Hom}(\R\underline{\Hom}(F,K),K)
+\]
+é um isomorfismo. Para isso basta situar-se num ponto geométrico $\bar{x}$ de $X$. No diagrama comutativo
+\[
+\begin{tikzcd}
+F_{\bar{x}} \arrow[r] \arrow[d,"\mathrm{Id}"'] & \R\underline{\Hom}(\R\underline{\Hom}(F,K),K)_{\bar{x}} \arrow[d]\\
+F_{\bar{x}} \arrow[r] & \R\underline{\Hom}(\R\underline{\Hom}(F_{\bar{x}},K_{\bar{x}}),K_{\bar{x}}),
+\end{tikzcd}
+\]
+A seta vertical da direita é um isomorfismo por (7.2), e a seta horizontal inferior é um isomorfismo porque $K_{\bar{x}}$ é dualizante; portanto, a seta horizontal superior é um isomorfismo, c.q.d.
+
+\textbf{Lema 7.4.} Suponhamos que $X$ é um esquema noetheriano regular, que $A_X$ é anulado por um inteiro $n>0$ primo com as características residuais de $X$, e que o teorema de pureza em sentido forte (4.4) é válido sobre $X$.
+
+Seja $D$ um divisor de cruzamentos normais sobre $X$ (I 3.1.5 a)); denotemos por $j:Y=V(D)\to X$ e $i:X-Y=U\to X$ as inclusões canônicas. Seja $K\in\ob\D^{+}_{\mathrm{coh}}(X)$ tal que, para todo ponto geométrico $\bar{x}$ de $X$, $K_{\bar{x}}$ seja um complexo dualizante para o anel $A_{\bar{x}}$ (no sentido de [H] V 2.1). Então, para todo $E\in\ob\D^{b}_{\mathrm{coh}}(X)$, tem-se $\R\underline{\Hom}(i_!i^*(E),K)\in\ob\D^{b}_{c}(X)$, e o par $(i_!i^*(E),K)$ é bidualizante.
+
+\emph{Demonstração.} Podemos supor que $E$ é concentrado em grau $0$, ou seja, que é um $A_X$-módulo localmente constante construtível. Além disso, como a questão é local sobre $X$ para a topologia étale, podemos supor que
+\begin{enumerate}[label=(\alph*)]
+\item $A_X$ é constante de valor $A$, e $E$ é constante de valor também denotado por $E$, por abuso de linguagem; isto é, $E=E_X$;
+\item $D$ é de cruzamentos normais estritos, isto é, $D=\sum_{i\in I}\mathrm{div}(s_i)$, onde $s_i\in\Gamma(X,\mathcal{O}_X)$.
+\end{enumerate}
+Raciocinemos por indução sobre $p=\operatorname{card}(I)$. Para $p=0$, as afirmações são consequências de (7.3). Suponhamos que $I=\{1,\ldots,p\}$, ponhamos $Y_i=V(s_i)$, $Y'=V(\sum_{1\leq i\leq p-1}\mathrm{div}(s_i))$, $U'=X-Y'$; obtém-se assim um diagrama cartesiano de imersões
+\[
+\begin{tikzcd}
+\varnothing \arrow[r] \arrow[d] & U'\cap Y_p \arrow[r,"i'_p"] \arrow[d,"j'_p"'] & Y_p \arrow[d,"j_p"]\\
+U \arrow[r] & U' \arrow[r,"i'"] & X.
+\end{tikzcd}
+\]
+Consideremos a sequência exata
+\[
+        0\longrightarrow E_{U,X}\longrightarrow E_{U',X}\longrightarrow E_{U'\cap Y_p,X}\longrightarrow0.
+\]
+Por hipótese de indução, o teorema é válido para o par $(E_{U',X},K)$. Como, para $K$ fixo, o conjunto dos $F$ tais que $\R\underline{\Hom}(F,K)\in\ob\D_c^b(X)$ e que $(F,K)$ seja bidualizante forma uma subcategoria triangulada de $\D_c(X)$, ficamos reduzidos a provar o teorema para o par $(E_{U'\cap Y_p,X},K)$. Mas tem-se
+\[
+        E_{U'\cap Y_p,X}=j_{p*}i'_{p!}(E_{U'\cap Y_p}),
+\]
+e, por (I 1.13), equivale a provar o teorema para o par $(i'_{p!}(E_{U'\cap Y_p}),\R j_p^!(K))$ em $Y_p$. Mas, pelo teorema de pureza, tem-se (4.3)
+\[
+        \R j_p^!(K)\simeq j_p^*(K)\overset{\mathrm L}{\otimes}_{\Z/n\Z}(\mu_n)_{Y_p}^{\otimes -1}[-2].
+\]
+Assim, $\R j_p^!(K)\in\ob\D^{+}_{\mathrm{coh}}(Y_p)$ e, para todo ponto geométrico $\bar{y}$ de $Y_p$, $(\R j_p^!(K))_{\bar{y}}$ é dualizante; conclui-se então pela hipótese de indução.
+
+\textbf{Teorema 7.5.} Façamos as seguintes hipóteses: $X$ é um esquema noetheriano regular; $A_X$ está anulado por um inteiro $n>0$ primo com as características residuais de $X$; $X$ é fortemente desingularizável (I 3.1.5.), satisfaz as condições (reg) (I 3.1.1) e $(\mathrm{cdloc})_n$ (I 3.1.3); o teorema de pureza em sentido forte (4.4) é válido sobre todo esquema suave sobre $X$ (condições que são satisfeitas se $X$ é excelente de característica zero, ou se é de dimensão $\leq2$ e suave sobre um corpo perfeito).
+
+Então, se $K\in\ob\D^{+}_{\mathrm{coh}}(X)$ é tal que $K_{\bar{x}}$ seja dualizante (no sentido de [H] V 2.1) para todo ponto geométrico $\bar{x}$ de $X$, $K$ é dualizante.
+
+\emph{Demonstração.} Trata-se de demonstrar que $K$ satisfaz as condições (i) a (iii) de (I 1.7). Para todo ponto geométrico $\bar{x}$ de $X$, $K_{\bar{x}}$ tem dimensão injetiva finita e, como $K\in\ob\D^{+}_{\mathrm{coh}}(X)$, a função $x\mapsto \dim.\mathrm{inj}(K_{\bar{x}})$ é localmente constante e, portanto, limitada, pois $X$ é noetheriano. Deduz-se então de (5.1) que $K$ tem dimensão quase-injetiva finita.
+
+Pelo que se viu no n\textsuperscript{o}~6, verifica-se também a condição (ii) de loc.~cit.
+
+Resta demonstrar a condição (iii), isto é, que todo $F\in\ob\D_c^b(X)$ é reflexivo com respeito a $K$. Por devissage, podemos supor que $F$ está concentrado em grau $0$. Por outro lado, como a questão é local sobre $X$ para a topologia étale, podemos supor que $A_X$ é constante de valor $A$. O devissage (1.3) reduz-nos então a $F=f_*i_!(E_U)$, onde $f:Y\to X$ é um morfismo finito, com $Y$ integral e seu ponto genérico separável sobre sua imagem, $i:U\to Y$ é um aberto regular não vazio, e $E_U$ é um $A_U$-módulo constante de valor $E$, um $A$-módulo de tipo finito. Como $X$ é fortemente desingularizável, existe (I 3.1.5) um morfismo projetivo e birracional $h:Y'\to Y$ tal que $Y'$ seja regular, que $h$ induza um isomorfismo $h^{-1}(U)\to U$, e que $h^{-1}(U)$ seja o complementar de um divisor de cruzamentos normais em $Y'$. Identificando $h^{-1}(U)$ com $U$ mediante $h$, tem-se o diagrama comutativo
+\[
+\begin{tikzcd}
+& Y' \arrow[d,"h"] \arrow[dr,"g"] & \\
+U \arrow[ur,"i'"] \arrow[r,"i"] & Y \arrow[r,"f"] & X.
+\end{tikzcd}
+\]
+Tem-se, por conseguinte,
+\[
+        f_*i_!(E_U)\simeq f_*\R h_* i'_!(E_U)\simeq \R g_* i'_!(E_U)\simeq \R g_* i'_! i'^*(E_{Y'}).
+\]
+Em virtude de (I 1.13), basta demonstrar a bidualidade para o par $(i'_!i'^*(E_{Y'}),\R ^!g(K))$. Mas, embebendo localmente $Y'$ em um esquema $X'$ suave sobre $X$ e aplicando a pureza em sentido forte sobre $X'$ (4.4), vê-se que $\R ^!g(K)$ é localmente isomorfo (salvo translação dos graus) a $g^*(K)$; portanto, $\R ^!g(K)\in\ob\D^{+}_{\mathrm{coh}}(Y')$ e $\R ^!g(K)_{\bar{x}}$ é dualizante para todo ponto geométrico $\bar{x}$ de $Y'$. Basta então aplicar (7.4).
+
+A demonstração anterior prova, além disso, que $\R\underline{\Hom}(F,K)\in\ob\D_c^b(X)$ (suposto o teorema de finitude para um morfismo próprio (SGAA XIV)), o que tranquilizará o leitor que não tivesse confiado na peroração do n\textsuperscript{o}~6.
+
+Isto conclui a demonstração.
+
+\begin{center}
+$-:\!-:\!-$
+\end{center}
+
+\section*{Bibliografia}
+
+\begin{enumerate}[label={[\arabic*]}]
+\item VERDIER, J-L., Dimension des espaces localement compacts, Note aux C.R. Ac. Sc. Paris, 261, p.~5293-5296 (1965). Veja também: VERDIER, J-L. Dualité dans la cohomologie des espaces localement compacts, Séminaire Bourbaki, n\textsuperscript{o}~300, 1965-66.
+\end{enumerate}
+
+SGA A = SGA 4.
+
+\begin{center}
+$-:\!-:\!-$
+\end{center}

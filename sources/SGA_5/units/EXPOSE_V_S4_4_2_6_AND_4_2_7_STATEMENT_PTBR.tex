@@ -1,0 +1,36 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7498--7531 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Teorema 4.2.6}
+Lema de Artin-Rees. Seja \(X\) um sistema projetivo indexado por \(\mathbb N\), com valores em \(\mathcal C\). Supõe-se que:
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item \(X\) verifica (MLAR);
+\item \(X\) é adaptado a \(J\);
+\item \(\grs(X)\) é um \((\gr_J(A),\mathcal C)\)-módulo graduado de tipo finito, ou seja, para toda sucessão crescente \((M_n)_{n\in\mathbb N}\) de sub-\((\gr_J(A))\)-módulos graduados de \(\grs(X)\) cuja união é \(\grs(X)\), existe um inteiro \(p\) tal que
+\[
+\grs(X)=M_p.
+\]
+\end{enumerate}
+Então \(X\) é AR-\(J\)-ádico.
+\end{statement}
+
+\begin{prooftext}
+Recordemos que, se \(X'\) é o sistema projetivo das imagens universais de \(X\), pôs-se
+\[
+\grs(X)=\gr(X').
+\]
+Por outro lado, \(X'\) é adaptado a \(J\), de modo que nos reduzimos a demonstrar que \(X'\) é AR-\(J\)-ádico. Suponhamos demonstrado o lema seguinte.
+\end{prooftext}
+
+\begin{statement}{Lema 4.2.7}
+Seja \(X\) um sistema projetivo estrito adaptado a \(J\). Para todo inteiro \(s\), o subobjeto graduado \([(M_s)_n]_{n\in\mathbb N}\) de \(\grs(X)\) definido pelas igualdades que aparecem a seguir:
+\[
+(M_s)_n=J^{\,n-s}X_n\cap F^n(X_n)\qquad(J^i=A\text{ se }i<0),
+\]
+é um sub-\(\gr_J(A)\)-módulo graduado de \(\grs(X)\).
+\end{statement}
+
+Para demonstrar o teorema, pode-se supor que \(X\) é estrito. Então \(\grs(X)\) é a união da sucessão crescente dos \(M_s\), de modo que é igual a um deles. Isso significa que existe um inteiro \(s_0\) tal que
+\[
+F^n(X_n)\subset J^{\,n-s_0}X_n
+\]
+Para todo inteiro \(n\). Conclui-se por (4.2.5).

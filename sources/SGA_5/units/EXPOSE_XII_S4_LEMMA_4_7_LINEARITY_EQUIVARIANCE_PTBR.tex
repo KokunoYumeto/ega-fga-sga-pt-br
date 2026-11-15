@@ -1,0 +1,30 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 13549--13576 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+O homomorfismo $u(f'_R)$ é, de fato, um homomorfismo de espaços vetoriais sobre $k$. Para vê-lo, é preciso provar que, quaisquer que sejam $x \in \fm$, $\alpha \in R$,
+\[
+f'_R(\alpha x) - \alpha x \equiv \alpha(f'_R(x) - x) \bmod \fm^{r+1} \quad ,
+\]
+Isto é,
+\begin{equation}
+\tag{4.7.1}
+f'_R(\alpha x)-\alpha f'_R(x)\in\fm^{r+1}.
+\end{equation}
+Mas
+\[
+f'_R(\alpha x)-\alpha f'_R(x)=(f'_R(\alpha)-\alpha)f'_R(x),
+\]
+o que fornece a relação (4.7.1), porque
+\[
+f'_R(\alpha)-\alpha\in\fm^r\quad\hbox{(condição a))},
+\qquad
+f'_R(x)\in\fm\quad (x\in\fm).
+\]
+O homomorfismo $u(f'_R)$ é um homomorfismo de $k[G]$-módulos. De fato, para $x\in\fm$, tem-se:
+\[
+\begin{aligned}
+u(f'_R)(g(x\bmod\fm^2))
+&=(f'_R(gx)-gx)\bmod\fm^{r+1}\\
+&=g(f'_R(x)-x)\bmod\fm^{r+1}
+=gu(f'_R)(x\bmod\fm^2).
+\end{aligned}
+\]

@@ -1,0 +1,41 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7801--7839 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{prooftext}
+Para demonstrar o lema, vamos primeiro ver que, para todo inteiro \(n\), o sistema projetivo evidente
+\[
+\bigl(Y_{n+k}/J^{n+1}Y_{n+k}\bigr)_{k\in\mathbb N}
+\]
+É essencialmente constante. Denotando por \(S_n^k\) o núcleo do morfismo evidente
+\[
+X_{n+k}/J^{n+1}X_{n+k}\longrightarrow
+Y_{n+k}/J^{n+1}Y_{n+k},
+\]
+Consideremos o diagrama comutativo exato evidente que aparece a seguir:
+\[
+\begin{tikzcd}[column sep=1.35em,row sep=large]
+0 \arrow[r] & S_n^k \arrow[r] \arrow[d] & X_{n+k}/J^{n+1}X_{n+k} \arrow[r] \arrow[d,"\sim"'] & Y_{n+k}/J^{n+1}Y_{n+k} \arrow[r] \arrow[d] & Z_{n+k}/J^{n+1}Z_{n+k} \arrow[r] \arrow[d,"\sim"'] & 0\\
+0 \arrow[r] & T_n \arrow[r] & X_n \arrow[r] & Y_n \arrow[r] & Z_n \arrow[r] & 0 .
+\end{tikzcd}
+\]
+Se o inteiro \(n\) for fixado, os objetos \(S_n^k\) se identificam com subobjetos de \(T_n\) e formam uma sucessão decrescente. Como \(T_n\) é artiniano, existe, portanto, um inteiro \(k_0\) tal que \(S_n^k=S_n^{k_0}\) para todo inteiro \(k\ge k_0\), de onde deduz-se imediatamente que os morfismos canônicos
+\[
+Y_{n+k}/J^{n+1}Y_{n+k}
+\longrightarrow
+Y_{n+k_0}/J^{n+1}Y_{n+k_0}
+\]
+são isomorfismos.
+
+Dito isto, denotemos por \(Y'\) o sistema projetivo definido por
+\[
+Y'_n=\varprojlim_r Y_{n+r}/J^{n+1}Y_{n+r}
+\]
+nos objetos e de maneira evidente nos morfismos. O sistema projetivo \(Y'\) é \(J\)-ádico. Além disso, passando ao limite, obtém-se um diagrama comutativo exato do tipo que aparece a seguir:
+\[
+\begin{array}{ccccc}
+0\to S\to X\to Y'\to Z\to0\\
+\downarrow\quad\downarrow\id\quad\downarrow\quad\downarrow\id\\
+0\to T\to X\to Y\to Z\to0 .
+\end{array}
+\]
+Como \(T\) é AR-nulo, o lema da serpente aplicado a este diagrama mostra que o morfismo evidente \(Y'\to Y\) é um AR-isomorfismo, de onde segue-se que \(Y\) é AR-\(J\)-ádico.
+\end{prooftext}

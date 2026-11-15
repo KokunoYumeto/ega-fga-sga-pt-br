@@ -1,0 +1,46 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10343--10386 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{7. Interseções completas}
+
+No presente ponto supõe-se dado um corpo separavelmente fechado $k$. Se $\ell$ é um número primo $\ne\operatorname{car}(k)$, para todo $k$-esquema próprio $X$ e todo inteiro $i\ge0$, denota-se por
+\[
+b_\ell^i(X)\quad\text{ou}\quad b^i(X)
+\]
+se não houver possibilidade de confusão, o $i$-ésimo número de Betti de $X$ com coeficientes em $\mathbb Z_\ell$. Se $X$ é projetivo sobre $k$, chama-se seção hiperplana de $X$ o lugar dos zeros de uma seção transversal à seção zero de um fibrado vetorial $V(\check{\mathcal L})$, onde $\mathcal L$ é um $\mathcal O_X$-módulo inversível amplo.
+
+\begin{statement}{Teorema 7.1}
+(Teorema de Lefschetz.) Sejam $X$ um $k$-esquema projetivo liso, conexo, de dimensão $n$, $Y$ um subesquema de $X$ que é interseção de $d$ seções hiperplanas de $X$, e $L$ um $A_X$-módulo localmente constante construtível. Então:
+\begin{enumerate}[label=(\roman*)]
+\item O homomorfismo de imagem inversa
+\[
+H^i(X,L)\to H^i(Y,L|Y)
+\]
+é um isomorfismo para $i\le n-d-1$, e um monomorfismo para $i=n-d$.
+\item Suponhamos que $Y$ é suave sobre $k$, de dimensão $n-d$. Então o homomorfismo de Gysin
+\[
+H^i(Y,(L|Y)\otimes\mu_Y^{\otimes -d})\to H^{i+2d}(X,L)
+\]
+é um isomorfismo para $i\ge n-d+1$ e um epimorfismo para $i=n-d$.
+\end{enumerate}
+\end{statement}
+
+\emph{Demonstração.} É bem conhecido que o complementar de uma seção hiperplana é um aberto afim e, portanto, $U=X-Y$ é união de $d$ abertos afins. A afirmação (i) deduz-se imediatamente da sequência exata de cohomologia
+\[
+\cdots\to H_!^i(U,L|U)\to H^i(X,L)\to H^i(Y,L|Y)
+\xrightarrow{\partial} H_!^{i+1}(U,L|U)\to\cdots
+\]
+e do lema seguinte.
+
+\begin{statement}{Lema 7.1.1}
+Seja $U$ um $k$-esquema de tipo finito de dimensão $n$, união de $d$ abertos afins, e $F$ um $A_U$-módulo. Então:
+\begin{enumerate}[label=\alph*)]
+\item se $F$ é construtível,
+\[
+H^i(U,F)=0\qquad\text{para }i\ge n+d;
+\]
+\item Se $F$ for localmente constante e $U$ for suave sobre $k$,
+\[
+H^i_c(U,F)=0\qquad\text{para }i\le n-d.
+\]
+\end{enumerate}
+\end{statement}

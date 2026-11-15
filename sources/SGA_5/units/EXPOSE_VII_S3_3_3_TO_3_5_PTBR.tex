@@ -1,0 +1,40 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9438--9475 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{3.3}
+É evidente que, qualquer que sejam $S$ e $E$, $c_0(E)=1$, e que, se o posto de $E$ é encoberto por $d$, então $c_i(E)=0$ para $i>d$.
+
+\begin{statement}{Proposição 3.4}
+Os classes de Chern definidos anteriormente satisfazem as seguintes propriedades.
+\begin{enumerate}[label=(\roman*)]
+\item \emph{Normalização.} Seja $L$ um $\mathcal O_S$-módulo inversível. Denotando por $[L]$ a imagem da classe de $L$ pela borda morfismo
+\[
+H^1(S,\mathbb G_m)\longrightarrow H^2(S,\mu),
+\]
+Tem
+\[
+c(L)=1+[L].
+\]
+\item \emph{Estabilidade por mudança de base.} Sejam $f:S'\to S$ um morfismo de esquemas e $E$ um $\mathcal O_S$-módulo localmente livre. Para todo inteiro $i$, temos
+\[
+f^*(c_i(E))=c_i(f^*E).
+\]
+\item \emph{Aditividad.} Seja
+\[
+0\to E'\to E\to E''\to0
+\]
+uma sequência exata de $\mathcal O_S$-módulos localmente livres. Para todo inteiro $n$, temos a relação
+\[
+c_n(E)=\sum_{i+j=n}c_i(E')c_j(E'').
+\]
+\end{enumerate}
+\end{statement}
+
+Antes de abordar demonstração, extraímos o seguinte corolário.
+
+\begin{statement}{Corolário 3.5}
+Para toda sequência exata $0\to E'\to E\to E''\to0$ de $\mathcal O_S$-módulos localmente livres, temos
+\[
+c(E)=c(E')\cdot c(E'')
+\]
+em $\widehat A^{\bullet}(S)$.
+\end{statement}

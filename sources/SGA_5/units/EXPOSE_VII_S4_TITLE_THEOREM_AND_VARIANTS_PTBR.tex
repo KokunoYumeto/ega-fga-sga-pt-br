@@ -1,0 +1,39 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9723--9759 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{4. Fórmula de autointersecção e aplicações}
+
+Sejam $S$ um esquema, $X$ um $S$-esquema e $Y$ um subesquema fechado de $X$, suave sobre $S$ e de codimensão $d$ em todo ponto. Supõe-se, finalmente, que $X$ é suave sobre $S$ em uma vizinhança de $Y$. Denota-se por $i:Y\to X$ a imersão fechada canônica e por $J$ o ideal de $\mathcal O_X$ que define $Y$. Recordemos (SGA $4^{1/2}$ Cycle) que, neste caso, se dispõe de isomorfismos de Gysin
+\[
+i_*:H^{2p}(Y,\mu_Y^{\otimes p})
+\to H_Y^{2p+2d}(X,\mu_X^{\otimes(p+d)}),
+\]
+a saber, os produtos cup pela classe fundamental. Se não houver risco de confusão, serão denotados da mesma maneira os morfismos de Gysin
+\[
+i_*:H^{2p}(Y,\mu_Y^{\otimes p})
+\to H^{2p+2d}(X,\mu_X^{\otimes(p+d)})
+\]
+obtidos dos anteriores esquecendo os suportes.
+
+\begin{statement}{Teorema 4.1}
+Na situação anterior, denotando por
+\[
+N=J/J^2
+\]
+o feixe normal de $i$, tem-se, para todo $y\in A^{\bullet}(Y)$, a igualdade
+\[
+i^*i_*(y)=y\,c_d(\check N).
+\]
+\end{statement}
+
+Antes de abordar a demonstração deste teorema, indiquemos algumas variantes que se demonstram exatamente da mesma maneira.
+
+a) Se $\ell$ é um número primo com as características residuais de $S$, a fórmula análoga é verdadeira em $H^*(Y,\mathbb Z_\ell(*))$.
+
+b) Podem-se introduzir suportes. Se, por exemplo, $T$ é um fechado de $Y$ e $y\in H_T^{2p}(Y,\mu_Y^{\otimes p})$, a fórmula 4.1 continua verdadeira em $H_T^{2p+2d}(Y,\mu_Y^{\otimes(p+d)})$. Naturalmente, $i_*$ denota então o morfismo de Gysin
+\[
+H_T^{2p}(Y,\mu_Y^{\otimes p})
+\to H_T^{2p+2d}(X,\mu_X^{\otimes(p+d)}),
+\]
+que continua a ser um isomorfismo (SGA $4^{1/2}$ Cycle).
+
+c) Finalmente, os dois casos podem ser combinados\dots

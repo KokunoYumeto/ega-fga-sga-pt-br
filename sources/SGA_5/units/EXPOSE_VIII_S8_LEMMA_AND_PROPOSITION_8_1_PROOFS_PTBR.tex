@@ -1,0 +1,46 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 12072--12115 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\emph{Demonstração do lema.} Seja $u:F\to F'$ um epimorfismo. Temos de provar que
+\[
+\Hom_A(E,F)\longrightarrow\Hom_A(E,F')
+\]
+é um epimorfismo. Basta provar que, para todo grupo divisível $G$,
+\[
+\Hom_{\mathbb Z}(\Hom_A(E,F'),G)\longrightarrow
+\Hom_{\mathbb Z}(\Hom_A(E,F),G)
+\]
+é um monomorfismo. Ora, o diagrama
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+\Hom_{\mathbb Z}(\Hom_A(E,F'),G)
+ \arrow[r]\arrow[d,"\sim"']&
+\Hom_{\mathbb Z}(\Hom_A(E,F),G)\arrow[d,"\sim"]\\
+\Hom_{\mathbb Z}(F',G)\otimes_A E
+ \arrow[r]&
+\Hom_{\mathbb Z}(F,G)\otimes_A E
+\end{tikzcd}
+\]
+é comutativo, e as flechas verticais são isomorfismos graças à hipótese feita sobre $E$.
+
+\emph{Demonstração da proposição 8.1.} A implicação a) $\Rightarrow$ b) é imediata. Para demonstrar b) $\Rightarrow$ a), seja
+\[
+\cdots\longrightarrow P_n\xrightarrow{d_n}\cdots\longrightarrow P_i\longrightarrow 0\longrightarrow\cdots
+\]
+um complexo isomorfo a $L^\bullet$ em $D(\cC)$, sendo os $P_j$ $A$-módulos projetivos finitamente gerados. Como o complexo $L^\bullet$ tem dimensão Tor finita e sua cohomologia é limitada, resulta que existe $n_o\in\mathbb Z$ tal que:
+
+I) A sequência
+\[
+\cdots\longrightarrow P_{n_o-p}\xrightarrow{d_{n_o-p}}\cdots\longrightarrow
+P_{n_o}\longrightarrow \Ker d_{n_o+1}\longrightarrow0
+\]
+é exata.
+
+II) $\Ker d_{n_o+1}$ é plano.
+
+III) O complexo
+\[
+0\longrightarrow \Ker d_{n_o+1}\longrightarrow P_{n_o+1}\longrightarrow\cdots\longrightarrow P_i\longrightarrow0\longrightarrow\cdots
+\]
+é isomorfo a $L^\bullet$ em $D(\cC)$.
+
+Ora, $\Ker d_{n_o+1}$ é de apresentação finita e, portanto, projetivo finitamente gerado graças ao lema, o que demonstra 8.1.

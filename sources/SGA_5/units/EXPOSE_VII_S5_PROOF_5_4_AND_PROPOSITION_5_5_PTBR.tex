@@ -1,0 +1,56 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10124--10177 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Vejamos como (5.4.1) implica (5.4). Situemo-nos primeiro no caso em que $X$ é o esquema $D$ das bandeiras de $E$, e ponhamos, para simplificar, $T_{i1}=U_i$. Como a projeção canônica $D\to S$ é uma composição de $r-1$ morfismos da forma
+\[
+P_{Y_i}(M_i)\to Y_i\quad(1\le i\le r-1),
+\]
+com $M_i$ um $\mathcal O_{Y_i}$-módulo localmente livre de posto $r-i+1$, de (2.2.6) deduz-se que $A^*(D)$ é um $A^*(S)$-módulo livre de posto $r!$, e que o morfismo $\varphi_D$ é sobrejetivo. Mas o lema 5.4.1 a) mostra que a fonte de $\varphi_D$ é também um $A^*(S)$-módulo livre de posto $r!$; daí segue-se a afirmação no caso $X=D$.
+
+No caso geral, é claro que o diagrama
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+A^{\bullet}(X) \arrow[r,"g^*"] & A^{\bullet}(D)\\
+C=A^{\bullet}(S)[T_{i,j_i}]/J_X \arrow[u,"\varphi_X"] \arrow[r,"\gamma"] &
+A^{\bullet}(S)[U_k]/J_D \arrow[u,"\varphi_D"']
+\end{tikzcd}
+\]
+no qual a aplicação $\gamma$ é obtida por passagem ao quociente a partir do morfismo de $A^{\bullet}(S)$-álgebras
+\[
+A^*(S)[T_{i,j_i}]\to A^*(S)[U_k]
+\]
+definido enviando $T_{i,j_i}$ para a $j_i$-ésima função simétrica elementar dos elementos
+\[
+(U_{p_1+\cdots+p_{i-1}+s})_{1\le s\le p_i},
+\]
+é comutativo. Como $\varphi_D$ é um isomorfismo, de 5.4.1 b) segue-se que $A^*(D)$ é um $C$-módulo livre de posto $p_1!\cdots p_m!$. Por outro lado, a expressão de $g$ como produto fibrado de $X$-esquemas de bandeiras mostra que $A^*(D)$ é também um $A^*(X)$-módulo livre de posto $p_1!\cdots p_m!$. Daí segue-se imediatamente que $\varphi_X$ é um isomorfismo.
+
+No enunciado da proposição seguinte, convenciona-se pôr, para todo esquema $Y$ e todo $A_Y$-módulo $M$,
+\[
+Q(Y,M)=\bigoplus_{n,i}H^n(Y,M\otimes\mu_Y^{\otimes i}).
+\]
+O $A$-módulo $Q(Y,M)$ é canonicamente dotado de uma estrutura de $A^*(Y)$-módulo proveniente do produto cup. Se $u:Z\to Y$ é um morfismo de esquemas, o morfismo de imagem inversa
+\[
+u^*:Q(Y,M)\to Q(Z,u^*M)
+\]
+é compatível com as estruturas de $A^*(Y)$-módulo de $Q(Y,M)$ e de $A^*(Z)$-módulo de $Q(Z,u^*M)$. Deduz-se um morfismo de $A^*(Z)$-módulos, chamado canônico,
+\[
+A^\bullet(Z)\otimes_{A^\bullet(Y)}Q(Y,M)\to Q(Z,u^*M).
+\]
+
+\begin{statement}{Proposição 5.5}
+Sejam $S$ um esquema e $E$ um $\mathcal O_S$-módulo localmente livre de posto $r$. Denota-se por $f:X\to S$ o $S$-esquema das bandeiras do tipo $(p_1,\ldots,p_m)$ de $E$. Então, para todo $A_S$-módulo $L$, o morfismo canônico
+\[
+\alpha:A^\bullet(X)\otimes_{A^\bullet(S)}Q(S,L)\to Q(X,f^*L)
+\]
+é um isomorfismo.
+\end{statement}
+
+\emph{Demonstração.} Quando $X=P_S(E)$, é uma consequência imediata de (2.2.4) e (2.2.6). Daí se conclui que a afirmação é válida para $X=D$. No caso geral, como os morfismos canônicos $g:D\to X$ e $h:D\to S$ são composições de fibrados projetivos, os morfismos canônicos
+\[
+A^\bullet(D)\otimes_{A^\bullet(S)}Q(S,L)\to Q(D,h^*L)
+\]
+e
+\[
+A^\bullet(D)\otimes_{A^\bullet(X)}Q(X,f^*L)\to Q(D,g^*f^*L)
+\]
+são isomorfismos. Portanto, $\mathrm{id}_{A^*(D)}\otimes\alpha$ é um isomorfismo, de onde se segue o resultado, pois $A^*(D)$ é livre sobre $A^*(X)$.

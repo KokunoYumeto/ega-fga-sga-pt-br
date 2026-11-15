@@ -1,0 +1,46 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6726--6769 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{2. Condição Mittag-Leffler-Artin-Rees}
+Em todo este número, a letra $\cC$ designa uma categoria abeliana e põe-se
+\[
+P=\Hom(\NN^\circ,\cC),
+\]
+categoria dos sistemas projetivos indexados pelo conjunto ordenado $\NN$ dos inteiros positivos e com valores em $\cC$.
+
+\subsubsection*{2.1. Condição Mittag-Leffler-Artin-Rees}
+Seja $X=(X_n,u_n)_{n\ge0}$ um objeto da categoria $P$. Se $r$ designa um inteiro $\ge0$, convém denotar por $X[r]$ o sistema projetivo $(X_{n+r},u_{n+r})_{n\ge0}$. Um morfismo $h:X\to Y$ de $P$ define claramente um morfismo, denotado por $h[r]$, de $X[r]$ em $Y[r]$, e isso funcionalmente. Se agora $r$ e $s$ são dois inteiros que verificam as desigualdades $s\ge r\ge0$, os morfismos de transição $X_{n+s}\to X_{n+r}$ $(n\ge0)$ definem um morfismo
+\[
+w_{sr}:X[s]\longrightarrow X[r],
+\]
+E é claro que, se $t$ é um terceiro inteiro com $t\ge s\ge r$, verifica-se a seguinte equação:
+\[
+w_{sr}\circ w_{ts}=w_{tr}.
+\]
+Em outras palavras, foi assim associado a $X$ um objeto $\overline X$ da categoria $\Hom(\NN^\circ,P)$. Além disso, se $h:X\to Y$ é um morfismo de $P$, corresponde-lhe claramente um morfismo $\overline h$ de $\overline X$ em $\overline Y$, e isso funcionalmente. Por fim, se
+\[
+0\longrightarrow X\stackrel{u}{\longrightarrow}Y\stackrel{v}{\longrightarrow}Z\longrightarrow0
+\]
+é uma sequência exata de $P$, a sequência correspondente que aparece a seguir em $\overline P=\Hom(\NN^\circ,P)$ é exata:
+\[
+0\longrightarrow\overline X\stackrel{\overline u}{\longrightarrow}\overline Y\stackrel{\overline v}{\longrightarrow}\overline Z\longrightarrow0.
+\]
+
+\begin{statement}{Definição 2.1.1}
+Seja um objeto da categoria $P$. Diz-se que ele verifica a condição de Mittag-Leffler-Artin-Rees (abreviadamente, MLAR) se existe um inteiro $r$ tal que, para todo inteiro $s\ge r$, se verifique a igualdade seguinte:
+\[
+\Im(X[s]\xrightarrow{w_{s0}}X)=\Im(X[r]\xrightarrow{w_{r0}}X).
+\]
+\end{statement}
+Equivalentemente, para todo inteiro $n\ge0$, as imagens de $X_{n+r}$ e $X_{n+s}$ em $X_n$ pelos morfismos de transição são as mesmas. Por último, uma terceira interpretação consiste em dizer que o sistema projetivo associado $\overline X$ verifica a condição de Mittag-Leffler (abreviadamente, ML) (EGA $0_{\mathrm{III}}$ 13.1.2). Daí se deduz a proposição seguinte graças a (EGA $0_{\mathrm{III}}$ 13.2.1).
+
+\begin{statement}{Proposição 2.1.2}
+Seja
+\[
+0\longrightarrow X\longrightarrow Y\longrightarrow Z\longrightarrow0
+\]
+uma sequência exata de $P$.
+\begin{enumerate}[label=(\roman*)]
+\item Se $Y$ verifica (MLAR), $Z$ verifica (MLAR).
+\item Se $X$ e $Z$ verificam (MLAR), então $Y$ verifica (MLAR).
+\end{enumerate}
+\end{statement}

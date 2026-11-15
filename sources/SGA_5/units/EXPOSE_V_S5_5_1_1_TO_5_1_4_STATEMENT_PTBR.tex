@@ -1,0 +1,57 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7578--7632 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{5. Sistemas projetivos \(J\)-ádicos e AR-\(J\)-ádicos noetherianos}
+
+Em todo este número, são dados um anel comutativo noetheriano \(A\), um ideal \(J\) de \(A\) e uma \(A\)-categoria abeliana \(\mathcal C\).
+
+\subsubsection*{5.1. Generalidades}
+
+\begin{statement}{Definição 5.1.1}
+Um objeto \(X\) da categoria \(\Hom(\mathbb N^\circ,\mathcal C)\) diz-se \(J\)-ádico noetheriano (resp. artiniano) se é \(J\)-ádico e seus componentes são objetos noetherianos (resp. artinianos) da categoria \(\mathcal C\).
+\end{statement}
+
+Denotar-se-á por \(J\)-adn\((\mathcal C)\) (resp. \(J\)-adf\((\mathcal C)\)) a subcategoria plena de
+\(P=\Hom(\mathbb N^\circ,\mathcal C)\) cujos objetos são os sistemas projetivos \(J\)-ádicos noetherianos (resp. artinianos). É claro (3.1.3) que uma extensão de sistemas projetivos \(J\)-ádicos noetherianos (resp. artinianos) é do mesmo tipo.
+
+\begin{statement}{Proposição 5.1.2}
+Seja \(X\) um objeto \(J\)-ádico de \(P\). Para que \(X\) seja \(J\)-ádico noetheriano (resp. artiniano), é necessário e suficiente que seja \(J\)-ádico e que \(X_0\) seja noetheriano (resp. artiniano).
+\end{statement}
+
+\begin{prooftext}
+Seja, com efeito, \(X\) um sistema projetivo \(J\)-ádico tal que \(X_0\) seja noetheriano (resp. artiniano). Consideremos então o epimorfismo canônico (4.2.4):
+\[
+\gr_J(A)\otimes_A X_0\longrightarrow \grs(X).
+\]
+Como \(X_0\) é noetheriano (resp. artiniano) e \(J^n\) é de tipo finito para todo \(n\), a existência deste epimorfismo mostra que, para todo inteiro \(n\), o núcleo do morfismo canônico
+\[
+X_n\longrightarrow X_{n-1}
+\]
+É noetheriano (resp. artiniano). Deduz-se imediatamente por indução sobre \(n\) que os \(X_n\) são noetherianos (resp. artinianos).
+\end{prooftext}
+
+\begin{statement}{Definição 5.1.3}
+Seja \(X\) um sistema projetivo indexado por \(\mathbb N\) com valores em \(\mathcal C\). Diz-se que é AR-\(J\)-ádico noetheriano (resp. artiniano) se é AR-\(J\)-ádico e seus componentes são objetos noetherianos (resp. artinianos).
+\end{statement}
+
+Denotar-se-á por AR-\(J\)-adn\((\mathcal C)\) (resp. AR-\(J\)-adf\((\mathcal C)\)) a subcategoria plena de \(\underline{\Hom}_{\mathrm{AR}}(\mathbb N^\circ,\mathcal C)\) (2.4) engendrada pelas imagens dos sistemas projetivos AR-\(J\)-ádicos noetherianos (resp. artinianos).
+
+Então é claro que os funtores canônicos
+\[
+p^n_{\mathrm{AR}}:J\text{-adn}(\mathcal C)\longrightarrow \mathrm{AR}\text{-}J\text{-adn}(\mathcal C),
+\]
+\[
+p^f_{\mathrm{AR}}:J\text{-adf}(\mathcal C)\longrightarrow \mathrm{AR}\text{-}J\text{-adf}(\mathcal C),
+\]
+obtidos por restrição de \(p_{\mathrm{AR}}\) (2.4) são equivalências de categorias.
+
+Recordemos brevemente o enunciado e a demonstração do teorema de Hilbert.
+
+\begin{statement}{Teorema 5.1.4}
+Teorema de Hilbert. Sejam \(A\) um anel comutativo, \(\mathcal C\) uma \(A\)-categoria abeliana e \(M\) um objeto de tipo finito (resp. noetheriano) de \(\mathcal C\). Para toda \(A\)-álgebra de tipo finito \(B\), graduada por \(\mathbb N\), o \((B,\mathcal C)\)-módulo graduado
+\[
+B\otimes_A M
+\]
+É de tipo finito (resp. noetheriano).
+
+N.B. Se \(B=\bigoplus_{n\ge0}B_n\), \(B\otimes_A M\) designa o objeto graduado \(\bigl(B_n\otimes_A M\bigr)_{n\in\mathbb N}\).
+\end{statement}

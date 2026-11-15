@@ -1,0 +1,38 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9322--9357 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\emph{Demonstração.} Como os dados são estáveis por mudança de base, o teorema de mudança de base próprio (SGA 4 XII 5.1) e a compatibilidade do morfismo de traço com a mudança de base (SGA 4 XVIII) permitem reduzir-se à verificação da afirmação análoga para as fibras de $p$. Em outras palavras, pode-se supor que $S$ é o espectro de um corpo separadamente fechado $k$ e que $p$ é o morfismo canônico $\mathbb P^r_k\to k$. Nesse caso, a demonstração utiliza o lema seguinte.
+
+\begin{statement}{Lema 2.2.3}
+Sejam $k$ um corpo separadamente fechado e $p:\mathbb P_k^r\to k$ a projeção canônica. Então:
+\begin{enumerate}[label=\alph*)]
+\item
+\[
+\R^{2i+1}p_*(A_P)=0\quad\text{para todo }i.
+\]
+\item
+\[
+\R^{2i}p_*(A_P)\simeq A_k\quad\text{para }i\in[0,r],
+\qquad
+\R^{2i}p_*(A_P)=0\quad\text{se }i>r.
+\]
+\end{enumerate}
+\end{statement}
+
+O lema, manifestamente verdadeiro para $r=0$, demonstra-se por indução sobre $r$. Suponhamos, pois, que seja verdadeiro para $r-1$ e demonstremo-lo para $r$. O espaço projetivo $\mathbb P_k^{r-1}$ imerge como fechado em $\mathbb P_k^r$, tendo como complemento o aberto $\mathbb E_k^r$, de onde se obtém uma sequência exata de cohomologia com suportes próprios
+\[
+\cdots\longrightarrow H_!^i(\mathbb E_k^r)\longrightarrow H^i(\mathbb P_k^r)
+\longrightarrow H^i(\mathbb P_k^{r-1})\longrightarrow H_!^{i+1}(\mathbb E_k^r)\longrightarrow\cdots.
+\]
+O cálculo da cohomologia com suportes próprios de $\mathbb E_k^r$ (1.1) mostra que, se $i\ne(2r,2r-1)$, a imagem inversa
+\[
+H^i(\mathbb P_k^r)\longrightarrow H^i(\mathbb P_k^{r-1})
+\]
+é um isomorfismo, de onde se segue a afirmação neste caso. Se $i=2r-1$, também se vê que $H^{2r-1}(\mathbb P_k^r)$ está contido em $H^{2r-1}(\mathbb P_k^{r-1})$ e, portanto, é nulo por hipótese de indução. Finalmente, se $i=2r$, as relações
+\[
+H^{2r-1}(\mathbb P_k^{r-1})=H^{2r}(\mathbb P_k^{r-1})=0
+\]
+mostram que
+\[
+H_!^{2r}(\mathbb E_k^r)\xrightarrow{\sim}H^{2r}(\mathbb P_k^r),
+\]
+de onde se segue a afirmação por (1.1).

@@ -1,0 +1,50 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6925--6972 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+
+Demonstremos (c'). Observemos antes de tudo que, se $Y$ designa um objeto de $P$ e $r$ um inteiro positivo, existe um objeto $T$ de $P$ tal que $Y=T[r]$ e tal que, para todo objeto $X$ de $P$, o homomorfismo de translação por $r$
+\[
+\Hom_P(X,T)\longrightarrow\Hom_P(X[r],Y)
+\]
+seja uma bijeção. O sistema projetivo $(T_n,w_n)$ definido do modo seguinte serve evidentemente:
+Se $Y=(Y_n,u_n)_{n\ge 0}$, $T_n$ é o objeto nulo de $\cC$ para $n\ge r-1$ e $Y_{n-r}$, caso contrário,
+\[
+w_n=0\quad\text{para } n\ge r-1,\quad w_n=u_{n-r}.
+\]
+
+Dito isso, suponhamos dado um diagrama do tipo que aparece a seguir e demonstremos que ele pode ser completado como indicado no enunciado de (c)':
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X[r] \arrow[r,"u'"] \arrow[d,"{v_{rX}}"'] & Y'\\
+X .
+\end{tikzcd}
+\]
+Para isso, seja $Y$ um sistema projetivo tal que $Y'=Y[r]$ e que a aplicação canônica
+\[
+\Hom_P(X,Y)\longrightarrow\Hom_P(X[r],Y')
+\]
+seja uma bijeção. Então é claro que o diagrama que aparece a seguir é comutativo, onde $u$ designa o único morfismo de $X$ em $Y$ tal que $u'=u[r]$:
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X[r] \arrow[r,"u'"] \arrow[d,"{v_{rX}}"'] & Y'=Y[r] \arrow[d,"{v_{rY}}"]\\
+X \arrow[r,"u"'] & Y .
+\end{tikzcd}
+\]
+
+Demonstremos (d)'. Consideremos o diagrama que aparece a seguir, suposto comutativo, e demonstremos que existe um morfismo $w$ de fonte $Y$ tal que $w\circ f=w\circ g$:
+\[
+\begin{tikzcd}[column sep=large]
+X[r] \arrow[r,"{v_{rX}}"] & X \arrow[r,shift left,"f"] \arrow[r,shift right,"g"'] & Y .
+\end{tikzcd}
+\]
+Em primeiro lugar, é claro que o diagrama que aparece a seguir é comutativo:
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X[r] \arrow[r,shift left,"{f[r]}"] \arrow[r,shift right,"{g[r]}"'] \arrow[d,"{v_{rX}}"'] & Y[r] \arrow[d,"{v_{rY}}"]\\
+X \arrow[r,shift left,"f"] \arrow[r,shift right,"g"'] & Y .
+\end{tikzcd}
+\]
+Em particular, $v_{rY}\circ f[r]=v_{rY}\circ g[r]$. Seja agora $T$ o sistema associado a $Y$ e $r$ como no início da demonstração de (c)', de modo que, em particular, $Y=T[r]$. Os transladados por $r$ dos morfismos $v_{rT}\circ f$ e $v_{rT}\circ g$ são iguais, respectivamente, a $v_{rY}\circ f$ e $v_{rY}\circ g[r]$, e, portanto, são iguais. Do fato de que a translação por $r$ é uma injeção sobre os morfismos de $X$ em $T$ deduz-se então que se verifica a igualdade que aparece a seguir, de onde segue a afirmação:
+\[
+v_{rT}\circ f=v_{rT}\circ g.
+\]
+\end{prooftext}

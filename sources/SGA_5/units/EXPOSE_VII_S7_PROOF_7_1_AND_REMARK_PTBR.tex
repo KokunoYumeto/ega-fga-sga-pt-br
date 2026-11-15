@@ -1,0 +1,23 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10388--10408 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Para $d=1$, a afirmação a) é apenas (SGA 4 XIV 3.2). No caso geral, denotando por $\mathcal U$ um recobrimento de $U$ por $d$ abertos afins, deduz-se a afirmação a) graças à sucessão espectral de Čech
+\[
+H^p(\mathcal U,\mathcal H^q(F))\Rightarrow H^{p+q}(U,F).
+\]
+Demonstremos b). Como os funtores $H_c^i(U,\cdot)$ comutam com os limites indutivos filtrantes (SGA 4 VII 3.3), pode-se supor que $F$ é construtível; então a afirmação deduz-se de a), graças à dualidade de Poincaré (SGA 4 XVIII).
+
+Finalmente, levando-se em conta a definição do morfismo de Gysin mediante o isomorfismo canônico
+\[
+H^{i-2d}(Y,(L|Y)\otimes\mu_Y^{\otimes -d})\xrightarrow{\sim} H^i_Y(X,L),
+\tag{7.1.2}
+\]
+a afirmação (ii) deduz-se de 7.1.1 a) e da sequência exata de coomologia associada a um aberto e ao seu complementar
+\[
+\cdots\to H^{i-1}(U,L|U)\xrightarrow{\partial}H^i_Y(X,L)\to H^i(X,L)\to H^i(U,L|U)\to\cdots .
+\]
+
+\begin{statement}{Observação 7.1.3}
+Na realidade, da propriedade de cisão deduz-se que o isomorfismo canônico (7.1.2) se generaliza ao caso em que a hipótese de que $X$ seja liso e a de que $L$ seja localmente constante construtível se verificam unicamente em uma vizinhança de $Y$, de modo que 7.1 (ii) se generaliza nesse contexto.
+
+Para formulações muito mais gerais, veja-se (SGA 2 XIV 4.6), que, no entanto, se demonstra unicamente mediante a resolução de singularidades e, portanto, provisoriamente em característica $0$.
+\end{statement}

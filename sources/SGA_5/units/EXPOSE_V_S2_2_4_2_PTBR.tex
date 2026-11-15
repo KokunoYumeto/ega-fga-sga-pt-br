@@ -1,0 +1,25 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6974--6996 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Definição 2.4.2}
+Seja $\cC$ uma categoria abeliana. Chama-se categoria dos sistemas projetivos de $\cC$ salvo translações, e denota-se por $\Hom_{AR}(\NN^\circ,\cC)$, a categoria descrita a seguir:
+\begin{enumerate}[label=(\roman*)]
+\item Os objetos de $\Hom_{AR}(\NN^\circ,\cC)$ são os objetos de $\Hom(\NN^\circ,\cC)$.
+\item Se $X$ e $Y$ são dois objetos de $\Hom(\NN^\circ,\cC)$, um morfismo de $X$ em $Y$ na categoria $\Hom_{AR}(\NN^\circ,\cC)$ é um elemento do conjunto
+\[
+\Hom_{AR}(X,Y)=\varinjlim_r\Hom(X[r],Y),
+\]
+onde, para cada par $(r,s)$ de inteiros com $s\ge r$, a aplicação
+\[
+\Hom(X[r],Y)\longrightarrow\Hom(X[s],Y)
+\]
+proveniente do morfismo canônico
+\[
+X[s]\longrightarrow X[r].
+\]
+\end{enumerate}
+A composição dos morfismos define-se de forma evidente.
+\end{statement}
+No que segue, fixada a categoria $\cC$, poremos, para abreviar,
+\[
+P=\underline{\Hom}(\NN^\circ,\cC),\qquad P_{AR}=\underline{\Hom}_{AR}(\NN^\circ,\cC).
+\]

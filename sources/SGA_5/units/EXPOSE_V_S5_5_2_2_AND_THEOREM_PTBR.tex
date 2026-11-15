@@ -1,0 +1,40 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7737--7774 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Proposição 5.2.2}
+Os objetos da categoria abeliana AR-\(J\)-adn\((\mathcal C)\) são noetherianos.
+\end{statement}
+
+\begin{prooftext}
+Reduzimo-nos imediatamente a verificar que, se se têm um objeto \(J\)-ádico noetheriano \(X\), uma sucessão de objetos \(J\)-ádicos noetherianos \((Y^n)_{n\in\mathbb N}\) e morfismos de \(\Hom(\mathbb N^\circ,\mathcal C)\)
+\[
+v_n:Y^n\longrightarrow X
+\]
+tais que
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item Os \(v_n\) se tornam monomorfismos em AR-\(J\)-adn\((\mathcal C)\);
+\item para todo inteiro \(n\), \(v_n\) se fatora através de \(v_{n+1}\) em AR-\(J\)-adn\((\mathcal C)\),
+\end{enumerate}
+então os \(v_n\) se estabilizam, salvo isomorfismo, para \(n\) suficientemente grande, em AR-\(J\)-adn\((\mathcal C)\).
+
+Ora, dizer que \(v_n\) se fatora através de \(v_{n+1}\) em AR-\(J\)-adn\((\mathcal C)\) significa que existem um inteiro \(r\) e um morfismo
+\[
+f:Y^n[r]\longrightarrow Y^{n+1}
+\]
+que, se \(a\) designa o morfismo canônico
+\[
+Y^n[r]\longrightarrow Y^n,
+\]
+verifica-se a igualdade que se segue:
+\[
+v_n\circ a=v_{n+1}\circ f .
+\]
+Como o morfismo \(a\) é estrito, deduz-se em particular que a imagem de \(v_n\) está contida na de \(v_{n+1}\). Substituindo cada \(Y^n\) por \(\Im(v_n)\), reduzimo-nos a verificar que toda sucessão crescente de subsistemas projetivos estritos de \(X\) é estacionária. Ora, se \((Z^n)_{n\in\mathbb N}\) é tal sucessão, como \(\grs(X)\) é noetheriano, a sucessão crescente dos \(\grs(Z^n)\) é estacionária e, portanto, também o é a dos \(Z^n\).
+\end{prooftext}
+
+Resumamos:
+
+\begin{statement}{Teorema 5.2.3}
+As categorias \(J\)-adn\((\mathcal C)\) e AR-\(J\)-adn\((\mathcal C)\) são abelianas e noetherianas.
+\end{statement}
+
+Quanto à AR-\(J\)-adn\((\mathcal C)\), é o que acabamos de ver. Quanto a \(J\)-adn\((\mathcal C)\), é equivalente a essa.

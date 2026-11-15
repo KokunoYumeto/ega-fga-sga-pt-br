@@ -1,0 +1,36 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 7355--7388 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{statement}{Lema 4.2.2}
+Seja \(X\) um objeto da categoria \(P\). As seguintes afirmações são equivalentes:
+\begin{enumerate}[label=\textup{(\roman*)}]
+\item \(X\) é adaptado a \(J\).
+\item Para todo par \((n,p)\) de inteiros positivos ou nulos com \(p\le n+1\), tem-se
+\[
+J^pF^{\,n-p+1}(X_n)=0 .
+\]
+\end{enumerate}
+\end{statement}
+
+\begin{prooftext}
+\((i)\Rightarrow(ii)\): então
+\[
+J^pF^{\,n-p+1}(X_n)\subset F^{n+1}(X_n)=0.
+\]
+
+\((ii)\Rightarrow(i)\): fixemos inteiros \(p,q\ge0\). Se \(p=q=0\), a inclusão é imediata. Se \(q>n+1\), tem-se \(F^q(X_n)=0\) e a inclusão também é imediata. Podemos, portanto, supor que \(p+q>0\) e \(q\le n+1\). Se \(n<p+q\), \(F^{p+q}(X_n)=0\) por definição. Por outro lado,
+\[
+J^pF^q(X_n)
+\]
+está contido em \(J^{\,n+1-q}F^q(X_n)\), e este último é nulo por hipótese. Se \(n\ge p+q\), a imagem de \(J^pF^q(X_n)\) em \(X_{p+q-1}\) pelo morfismo de transição está contida em \(J^pF^q(X_{p+q-1})\), que é igual a zero por hipótese. A inclusão
+\[
+J^pF^q(X_n)\subset F^{p+q}(X_n)
+\]
+segue-se disso por definição da filtração de sistema projetivo.
+
+Em particular, de (4.2.2) deduz-se que todo subsistema projetivo de um sistema projetivo adaptado a \(J\) é adaptado a \(J\).
+\end{prooftext}
+
+\paragraph{Ejemplos.}
+a) Um sistema projetivo \(J\)-ádico é adaptado a \(J\). Daí deduz-se que todo subsistema projetivo de um sistema projetivo \(J\)-ádico é adaptado a \(J\).
+
+b) Se um sistema projetivo \(X\) verifica a condição (ML) e é adaptado a \(J\), seu sistema projetivo de imagens universais também é adaptado a \(J\).

@@ -1,0 +1,61 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 11669--11727 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{2. Caso de categorias trianguladas}
+
+Seja $\cC$ uma categoria triangulada e $G$ um grupo abeliano. Diz-se que uma função $f$ de $\cC$ em $G$ é aditiva se, para todo triângulo distinguido
+\[
+\begin{tikzcd}[column sep=small,row sep=small]
+& Z \arrow[dl,"w"']\\
+X \arrow[rr,"u"'] && Y \arrow[ul,"v"']
+\end{tikzcd}
+\]
+tem-se
+\[
+f(Y)=f(X)+f(Z).
+\]
+
+Dada uma função aditiva $f$, as seguintes relações são consequências imediatas da definição:
+\[
+\text{a) } f(0)=0,\qquad
+\text{b) } f(X[n])=(-1)^n f(X),
+\]
+\[
+\text{c) } f(X)=f(Y)\text{ se }X\text{ e }Y\text{ são isomorfos,}
+\qquad
+\text{d) } f(X\oplus Y)=f(X)+f(Y).
+\]
+Os triângulos seguintes são distinguidos:
+\[
+\begin{tikzcd}[column sep=small,row sep=small]
+&0 \arrow[dl]\\ X \arrow[rr,"1_X"']&&X\arrow[ul]
+\end{tikzcd}
+\qquad
+\begin{tikzcd}[column sep=small,row sep=small]
+&X[1]\arrow[dl]\\ X\arrow[rr]&&0\arrow[ul]
+\end{tikzcd}
+\]
+\[
+\begin{tikzcd}[column sep=small,row sep=small]
+&0\arrow[dl]\\ X\arrow[rr,"u"']&&Y\arrow[ul]
+\end{tikzcd}
+\qquad
+\begin{tikzcd}[column sep=small,row sep=small]
+&Y[1]\arrow[dl]\\ X\oplus Y\arrow[rr]&&X\arrow[ul]
+\end{tikzcd}
+\]
+($u$ isomorfismo). Para formar o último triângulo, utilizamos o fato de que a soma de dois triângulos distinguidos é distinguida.
+
+Como no caso das categorias abelianas, obtém-se evidentemente um funtor
+\[
+A:\Ab\longrightarrow\Ab,
+\]
+que associa a cada grupo abeliano $G$ o grupo abeliano $A(G)$ das funções aditivas sobre $\cC$ com valores em $G$. Este funtor é representável e é fácil construir um par de representação $(K(\cC),\operatorname{cl}_{\cC})$. Com efeito, considera-se primeiro o grupo abeliano livre $\mathbb Z^{(\Ob\cC)}$ gerado pelos objetos de $\cC$ e, depois, o subgrupo $R$ gerado pelos elementos da forma $X-Y-Z$, onde
+\[
+\begin{tikzcd}[column sep=small,row sep=small]
+&Z\arrow[dl]\\ Y\arrow[rr]&&X\arrow[ul]
+\end{tikzcd}
+\]
+é um triângulo distinguido. O grupo quociente $\mathbb Z^{(\Ob\cC)}/R$ será $K(\cC)$, e $\operatorname{cl}_{\cC}$ é obtido compondo as duas aplicações canônicas:
+\[
+\Ob\cC\longrightarrow \mathbb Z^{(\Ob\cC)}\longrightarrow K(\cC).
+\]

@@ -1,0 +1,47 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 901--955 (LF-normalized unit).
+\subsubsection*{3.4. O teorema de bidualidade sobre esquemas regulares.}
+
+\subsection*{Teorema 3.4.1 (cf. [H] V 2.2)}
+Seja $X$ um esquema (localmente noetheriano) regular de dimensão finita. Suponhamos que $X$ seja fortemente desingularizável (3.1.5), satisfaça as condições (reg) (3.1.1) e $(\mathrm{cdloc})_n$ (3.1.3), e que o teorema de pureza absoluta (3.1.4) seja válido sobre todo esquema suave sobre $X$. Então $A_X$ é dualizante (1.6).
+
+\emph{Demonstração.} Trata-se de demonstrar que $A_X$ satisfaz as condições (i) a (iii) de (1.6). A condição (i) verifica-se em virtude de (3.2.1). Além disso, $A_X$ satisfaz (ii) em virtude de (3.3.1~b)). Resta a condição (iii). Em outras palavras, resta demonstrar, segundo (1.7), que, para todo $A_X$-módulo construtível $F$, o homomorfismo canônico $F \to \underline{D}_X \underline{D}_X F$ (onde pusemos $\underline{D}_X = \R\,\underline{\Hom}(\quad, A_X)$) é um isomorfismo. Como a questão é local, podemos supor que $X$ é noetheriano e, por devissage (3.1.2 (iii~bis)), podemos limitar-nos aos $F$ da forma $F = f_{*}i_{!}(A'_U)$, onde $i : U \to Y$ é a inclusão de um aberto regular em um esquema integral, $f : Y \to X$ é um morfismo finito tal que o ponto genérico de $Y$ seja separável sobre sua imagem, $A' = \Z/\ell\Z$, e $\ell$ é divisor primo de $n$.
+
+Como $X$ é fortemente desingularizável, existe então (3.1.6) um morfismo próprio e birracional $h : Y' \to Y$, onde $Y'$ é regular, $h$ induz um isomorfismo de $U' = h^{-1}(U)$ sobre $U$, e $Y' - U'$ é um divisor de cruzamentos normais (3.1.6). Graças ao teorema de mudança de base (cf.~SGAA~XVII), tem-se $i_{!}(A'_U) \simeq \R h_{*} i'_{!}(A'_{U'})$ (onde $i'$ é a inclusão $U' \to Y'$), de onde
+\[
+f_{*} i_{!}(A'_U) \simeq f_{*} \R h_{*} i'_{!}(A'_{U'}) \simeq \R g_{*} i'_{!}(A'_{U'}),
+\]
+com $g = fh$. Em virtude de (1.11), basta provar que o par $(i'_{!}(A'_{U'}), \R^{!}g(A_X))$ é bidualizante. Embebendo localmente $Y'$ em um esquema $X'$ suave sobre $X$, e aplicando o teorema de pureza sobre $X'$, vê-se que $\R^{!}g(A_X)$ é localmente isomorfo a $A_{Y'}$, salvo translação. Assim, ficamos reduzidos a demonstrar o seguinte caso particular de (3.4.1):
+
+\subsection*{Lema 3.4.2}
+Seja $X$ um esquema localmente noetheriano regular sobre o qual seja válido o teorema de pureza absoluta (3.1.4). Seja $Y = Y_1 \cup \cdots \cup Y_p$ um divisor de cruzamentos normais estritos sobre $X$ (3.1.6), e seja $U = X - Y$. Então o par $(A'_{U,X}, A_X)$ é bidualizante (1.4).
+
+\emph{Demonstração.} Graças à sequência exata $0 \to A'_{U,X} \to A'_X \to A'_Y \to 0$, é equivalente verificar que o par $(A'_Y, A_X)$ é bidualizante. Raciocinamos por indução sobre $p$.
+
+a) $p = 1$. Denotemos por $i$ a imersão $Y \to X$. Por (1.11), basta verificar que $(A'_Y, \R^{!}i(A_X))$ é bidualizante. Ora, em virtude do teorema de pureza, $\R^{!}i(A_X) \simeq (\mu_n)^{\otimes -1}_Y[-2]$. Portanto, o homomorfismo canônico $A'_Y \to \underline{D}_Y \underline{D}_Y(A'_Y)$ é um isomorfismo, como se verifica trivialmente fibra por fibra (dualidade de Pontryagin para os $A$-módulos).
+
+b) $p \geqslant 2$. Ponhamos $Y' = Y_1 \cup \cdots \cup Y_{p-1}$. Tem-se a sequência exata
+\[
+0 \longrightarrow A'_{(Y-Y'),X} \longrightarrow A'_Y \longrightarrow A'_{Y'} \longrightarrow 0.
+\]
+Como o par $(A'_{Y'}, A_X)$ é bidualizante por hipótese de indução, pelo lema dos cinco ficamos reduzidos a verificar a bidualidade para $(A'_{(Y-Y'),X}, A_X)$. Ora, tem-se novamente uma sequência exata:
+\[
+0 \longrightarrow A'_{(Y-Y'),X} \longrightarrow A'_{Y_p} \longrightarrow A'_{Y_p \cap Y'} \longrightarrow 0.
+\]
+Como $(A'_{Y_p}, A_X)$ é bidualizante, devemos verificar que o mesmo acontece com $(A'_{Y_p \cap Y'}, A_X)$. Aplicando novamente (1.11) e a pureza, ficamos finalmente reduzidos a verificar a bidualidade para $(A'_{Y_p \cap Y'}, A_{Y_p})$ sobre $Y_p$, e conclui-se por hipótese de indução.
+
+\subsection*{Corolário 3.4.3}
+Seja $S$ um esquema noetheriano regular excelente de característica nula. Então $A_S$ é dualizante. Além disso, se $f : X \to S$ é um morfismo de tipo finito, $\R^{!}f(A_S)$ é dualizante.
+
+\emph{Demonstração.} A primeira afirmação resulta de que $S$ verifica as hipóteses de (3.4.1) (ver 3.1). Para a segunda, primeiro é preciso verificar que $\R^{!}f(A_S)$ tem dimensão quase-injetiva finita. Para isso, recobrimos $S$ por um número finito de abertos afins $S_i$ tais que $X_i = f^{-1}(S_i)$ seja união finita de abertos afins $X_{ij}$ embutidos como fechados em certos $X'_{ij}$ suaves de dimensão finita sobre $S_i$. De (3.2.3) e (1.6) deduz-se então que $\dim.\,q.\,inj(\R^{!}f(A_S)) \leqslant 2\sup(\dim X'_{ij})$. Resta verificar as condições (ii) e (iii) de (1.7). Como estas são de natureza local sobre $X$ para a topologia étale, podemos supor que $f$ se fatora como $f = f'i$, onde $f' : X' \to S$ é um morfismo suave de dimensão relativa $d$ e $i : X \to X'$ uma imersão fechada. Tem-se $\R^{!}f(A_S) \simeq \R^{!}i \, \R^{!}f'(A_S)$.
+
+Ora, $\R^{!}f'(A_S)$ é localmente isomorfo a $A_{X'}$ (salvo translação por $2d$), e, portanto, é dualizante em virtude da primeira afirmação. Por conseguinte, em virtude de (1.15), $\R^{!}f(A_S)$ é dualizante e, em particular, verifica as condições (ii) e (iii) de (1.7), c.q.d.
+
+\subsection*{Corolário 3.4.4}
+Seja $k$ um corpo, e seja $f : X \to S = \Spec(k)$ um morfismo localmente de tipo finito, com $\dim(X) \leqslant 2$.
+
+Então $\R^{!}f(A_S)$ é dualizante.
+
+\emph{Demonstração.} Substituindo, se necessário, $k$ por seu fecho perfeito, operação inócua para a topologia étale (VIII~1.1), podemos supor que $k$ é perfeito. Recobrimos $X$ por abertos afins $X_i$ de tipo finito sobre $k$. Como $\dim(X_i) \leqslant 2$, $X_i$ é finito sobre um $X'_i$ suave sobre $S$ e de dimensão $\leqslant 2$ (lema de normalização). Por (1.15) ficamos então reduzidos ao caso em que $f$ é suave, e portanto $f^{!}(A_S) \simeq A_X[2d]$ (localmente), isto é, a demonstrar que neste caso $A_X$ é dualizante; mas isto resulta de (3.4.1), pois as hipóteses se verificam (ver 3.1).
+
+\subsection*{Observação 3.4.5}
+Vamos ver mais adiante que, se $X$ é regular de dimensão $\leqslant 1$, $A_X$ é dualizante.

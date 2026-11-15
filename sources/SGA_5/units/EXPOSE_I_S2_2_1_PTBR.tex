@@ -1,0 +1,50 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 580--630 (SHA256 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28; LF-normalized unit).
+\subsection*{2. Unicidade do complexo dualizante}
+
+Neste número, supomos que $A$ é local, isto é, que $A = \Z/\ell^{\nu}\Z$, com $\ell$ primo.
+
+\subsection*{Teorema 2.1 (cf. [H] V 3.1)}
+Seja $X$ um esquema (localmente noetheriano) conexo, e seja $K$ um complexo dualizante sobre $X$ (1.6).
+
+Seja, por outro lado, $K' \in \ob \D_c^{+}(X)$. Para que $K'$ seja dualizante, é necessário e suficiente que existam um $A_X$-módulo inversível $L$ e um inteiro $r$ (que ficam então determinados a menos de isomorfismo único) tais que:
+\[
+K' \simeq K \mathop{\otimes}\limits^{\mathrm{L}} L[r].
+\]
+
+\emph{Demonstração.} Sejam $L$ um $A_X$-módulo inversível e $r$ um inteiro, e ponhamos $L^{\vee} = \underline{\Hom}(L, A_X)$. Existem, para $F \in \ob \D(X)$ e $G \in \ob \D^{+}(X)$, isomorfismos canônicos:
+\[
+(*) \quad \R\,\underline{\Hom}(F \mathop{\otimes}\limits^{\mathrm{L}} L^{\vee}[-r], G) \simeq \R\,\underline{\Hom}(F, G \mathop{\otimes}\limits^{\mathrm{L}} L[r]) \simeq \R\,\underline{\Hom}(F,G) \mathop{\otimes}\limits^{\mathrm{L}} L[r].
+\]
+Daí se deduz facilmente que, se $K' \simeq K \mathop{\otimes}\limits^{\mathrm{L}} L[r]$, então $K'$ é dualizante.
+
+Além disso, se colocarmos $\underline{D}_K = \underline{D}$, $\underline{D}_{K'} = \underline{D}'$, temos, para $F \in \ob \D(X)$, $\underline{D}'F \simeq \underline{D} F \mathop{\otimes}\limits^{\mathrm{L}} L[r]$ por $(*)$; portanto, como $\underline{D} K \simeq A_X$, temos
+\[
+\underline{D}' K \simeq L[r],
+\]
+O que mostra que $L[r]$, e portanto $L$ e $r$, são determinados de forma essencialmente única por $K'$.
+
+Reciprocamente, suponhamos que $K'$ é dualizante, e ponhamos
+\[
+P = \underline{D}'K = \underline{D}'\underline{D} A_X = \R\,\underline{\Hom}(K,K').
+\]
+Vamos demonstrar que se tem
+\begin{align*}
+\text{a)} \qquad K' &\simeq K \mathop{\otimes}\limits^{\mathrm{L}} P, \\
+\text{b)} \qquad P &\simeq L[r], \text{ para um $A_X$-módulo inversível $L$, e assim terminará a demonstração do teorema.}
+\end{align*}
+
+Observemos primeiro que, em virtude de 1.9~b)(ii), tem-se, para $F \in \ob \D_c(X)$,
+\[
+(**) \qquad F \mathop{\otimes}\limits^{\mathrm{L}} P \simeq \underline{D}'\underline{D} F.
+\]
+
+Aplicando $(**)$ a $F = K$, obtém-se
+\[
+K \mathop{\otimes}\limits^{\mathrm{L}} P \simeq \underline{D}'\underline{D} K \simeq \underline{D}' A_X = K', \text{ que demonstra a).}
+\]
+
+Aplicando $(**)$ a $F = P' = \underline{D}\underline{D}'A_X$, obtém-se
+\[
+P' \mathop{\otimes}\limits^{\mathrm{L}} P = \underline{D}'\underline{D}\underline{D}\underline{D}'A_X \simeq \underline{D}'\underline{D}'A_X \simeq A_X.
+\]
+Portanto, b) será consequência do lema seguinte:

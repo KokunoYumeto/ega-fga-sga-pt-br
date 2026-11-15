@@ -1,0 +1,46 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9477--9520 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\emph{Demonstração de 3.4.} (de acordo com A. Grothendieck: \emph{A teoria das classes de Chern}. Bull. S.M.F. (1958), pp. 137-154).
+
+(i) Seja $E$ um $\mathcal O_S$-módulo localmente livre; é colocado $P=P_S(\check E)$ e denota-se por $p:P\to S$ o canônico projeção. Lembre-se que existe um homomorfismo canônico sobrejetivo
+\[
+p^*(\check E)\longrightarrow \mathcal O_P(1).
+\]
+Em particular, se $E$ é inversível, colocando $E=L$ de acordo com as notações de (i), temos $P=S$ e um isomorfismo
+\[
+L\xrightarrow{\sim}\mathcal O_P(1).
+\]
+Portanto, $\xi+[L]=0$ e a afirmação segue-se da definição das classes de Chern.
+
+- Verificação imediata que é deixada ao leitor.
+
+(iii) Usando uma partição de $S$ em abertos sobre as quais os módulos considerados têm posto constante, pode-se supor que $E,E',E''$ tem posto constante igual a $r,r',r''$, respectivamente. Então, vamos dizer que o seguinte lema foi demonstrado e vamos ver como a afirmação implica.
+
+\begin{statement}{Lema 3.6}
+Seja $E$ Uma $\mathcal O_S$-módulo localmente livre dotada de filtração finita
+\[
+0=E_0\subset E_1\subset\cdots E_i\subset\cdots E_r=E
+\]
+cujos coeficientes consecutivos $L_i=E_i/E_{i-1}$ $(1\le i\le r)$ são inversos. Então verifica-se a seguinte equação:
+\[
+c(E)=(1+[L_1])(1+[L_2])\cdots(1+[L_r]).
+\]
+\end{statement}
+
+Seja $h:Z\to S$ O produto fibrado das bandeiras esquemas de $E'$ e $E''$. Por definição dos esquemas de bandeiras, é claro que $h^*(E')$ e $h^*(E'')$ admitem filtrações finitas com coeficientes inversos $(L'_i)$ $(1\le i\le r')$ e $(L''_j)$ $(1\le j\le r'')$, respectivamente. O Segue-se que $h^*(E)$ admite uma filtração cujos coeficientes consecutivos são os $L'_i$ e os $L''_j$. A aplicação do lema 3.6 mostra então que
+\[
+c(h^*(E))=
+\prod_{1\le i\le r'}c(L'_i)\prod_{1\le j\le r''}c(L''_j)
+=c(h^*(E'))c(h^*(E'')),
+\]
+Isto é, graças a (ii),
+\[
+h^*(c(E))=h^*(c(E')\cdot c(E'')).
+\tag{3.5.1}
+\]
+Mas o morfismo $h$ é uma composição de morfismos do tipo
+\[
+P_T(F)\longrightarrow T
+\qquad (F\text{ }\mathcal O_T\text{-módulo localmente livre}),
+\]
+Assim, segundo o corolário (2.2.6), o homomorfismo de imagem inversa $h^*:A^{\bullet}(S)\to A^{\bullet}(Z)$ é injetivo. Daí segue-se a afirmação desejada graças a (3.5.1).

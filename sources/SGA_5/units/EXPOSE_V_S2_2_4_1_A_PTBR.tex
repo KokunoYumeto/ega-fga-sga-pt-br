@@ -1,0 +1,49 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6878--6924 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{2.4. A categoria $P_{AR}=\underline{\Hom}_{AR}(\NN^\circ,\cC)$}
+Retomando as notações de (2.1), seja $AR$ o conjunto das flechas canônicas (cf. 2.1)
+\[
+v_{rX}:X[r]\longrightarrow X,
+\]
+onde $X$ percorre o conjunto de objetos de $P$ e $r$ o conjunto de inteiros $\ge0$.
+
+\begin{statement}{Proposição 2.4.1}
+O subconjunto $AR$ de $\Fl(P)$ permite simultaneamente um cálculo de frações pela direita e um cálculo de frações pela esquerda.
+\end{statement}
+
+\begin{prooftext}[Demonstração]
+As implicações (a) $\Rightarrow$ (a)' e (b) $\Rightarrow$ (b)' de (2.3.1) e (2.3.2) são claras.
+
+Demonstremos (c). Seja, pois, $(D_1)$ o diagrama comutativo que aparece a seguir, no qual $v_{rY}$ designa a flecha canônica de $Y[r]$ em $Y$:
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+& Y[r] \arrow[d,"{v_{rY}}"]\\
+X \arrow[r] & Y .
+\end{tikzcd}
+\]
+O diagrama $(D_2)$ que aparece a seguir é comutativo e $v_{rX}$, morfismo canônico de $X[r]$ em $X$, pertence a $AR$, de onde segue a afirmação:
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X[r] \arrow[r,"{u[r]}"] \arrow[d,"{v_{rX}}"'] & Y[r] \arrow[d,"{v_{rY}}"]\\
+X \arrow[r,"u"'] & Y .
+\end{tikzcd}
+\]
+Demonstremos (d). Seja um diagrama comutativo:
+\[
+\begin{tikzcd}[column sep=large]
+X \arrow[r,shift left,"f"] \arrow[r,shift right,"g"'] & Z[r] \arrow[r,"{v_{rZ}}"] & Z .
+\end{tikzcd}
+\]
+Aplicando a translação por $r$, deduz-se um diagrama comutativo
+\[
+\begin{tikzcd}[column sep=large]
+X[r] \arrow[r,shift left,"{f[r]}"] \arrow[r,shift right,"{g[r]}"'] & Z[2r] \arrow[r,"{v_{rZ}[r]}"] & Z[r].
+\end{tikzcd}
+\]
+É claro que o diagrama que aparece a seguir é comutativo, de modo que $f\circ v_{rX}=g\circ v_{rX}$:
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+X[r] \arrow[r,shift left,"{f[r]}"] \arrow[r,shift right,"{g[r]}"'] \arrow[d,"{v_{rX}}"'] & Z[2r] \arrow[d,"{v_{rZ}[r]}"]\\
+X \arrow[r,shift left,"f"] \arrow[r,shift right,"g"'] & Z[r] .
+\end{tikzcd}
+\]

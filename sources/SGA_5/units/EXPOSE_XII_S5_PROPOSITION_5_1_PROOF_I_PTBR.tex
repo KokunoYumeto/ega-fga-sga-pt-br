@@ -1,0 +1,31 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 13752--13780 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\begin{prooftext}[Demonstração]
+É claro que, se demonstrarmos a igualdade b) considerando todos os termos como funções com valores em $\Q_\ell$, obteremos também a afirmação a), pois $\mathrm{NW}^{G,\varphi}_{f'}(x)$ e $\Tr_{\bZ_\ell[G],\varphi}(f'^\vee_{H_{U',X'}(\ell)})$ são funções com valores em $\bZ_\ell$.
+
+Em primeiro lugar, reduzindo módulo $\ell^n$ para todo $n \geq 1$ e utilizando (XI, 7.2.3.6), vê-se que, para cada $g \in G$:
+
+\begin{equation}\tag{5.2}
+\begin{aligned}
+c^\varphi(g) \, \Tr_{\bZ_\ell[G],\varphi}(f'^\vee_{H_{U',X'}(\ell)})(g)
+&= \Tr_{\bZ_\ell}(g_{X'}^{-1}f')_{H^\vee_{U',X'}(\ell)}\\
+&= \Tr_{\bZ_\ell}(g_{X'}^{-1}f')_{H^\vee_{U',X'}(\ell)} \quad .
+\end{aligned}
+\end{equation}
+
+O diagrama comutativo (1.3), cujas linhas são exatas, dá (XI, \S4):
+
+\begin{equation}\tag{5.3}
+\Tr_{\bZ_\ell}(g_{X'}^{-1}f')_{H^\vee_{U',X'}(\ell)} = \Tr_{\bZ_\ell}(g_{X'}^{-1}f')_{\R\Gamma_{X'}(\bZ_{\ell,X'})} - \Tr^*_{\bZ_\ell}(g_{Y'}^{-1}f'_{Y'})_{\R\Gamma_{Y'}(\bZ_{\ell,Y'})}
+\end{equation}
+
+% SOURCE_ANOMALY_PRESERVED: the certified scan leaves the Lefschetz citation blank.
+Os dois termos do segundo membro da relação (5.3) podem ser calculados pela fórmula clássica de Lefschetz (cf. III, 4.8 e 4.10). (Na verdade, para o último termo trata-se de uma fórmula de Lefschetz trivial):
+
+\begin{equation}\tag{5.4}
+\Tr_{\bZ_\ell}(g_{X'}^{-1}f')_{\R\Gamma_{X'}(\bZ_{\ell,X'})} = \sum_{x \in X^f} \sum_{x' \in {X'_x}^{g_{X'}^{-1}f'}} \nu_{x'}(g_{X'}^{-1}f')
+\end{equation}
+
+\begin{equation}\tag{5.5}
+\Tr^*_{\bZ_\ell}(g_{Y'}^{-1}f'_{Y'})_{\R\Gamma_{Y'}(\bZ_{\ell,Y'})} = \text{número de pontos fixos de } g_{Y'}^{-1}f'_{Y'}
+\end{equation}

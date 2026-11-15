@@ -1,0 +1,63 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9045--9105 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{Exposição VII}
+
+\begin{center}
+\textbf{COHOMOLOGIA DE ALGUNOS ESQUEMAS CLÁSSICOS}\\[0.5em]
+\textbf{E}\\[0.5em]
+\textbf{TEORIA COHOMOLÓGICA das CLASSES DE CHERN}\\[1em]
+por\\[0.5em]
+J. P. JOUANOLOU
+\end{center}
+
+Em todo o texto supõe-se dado um inteiro $\nu>0$ e define-se
+\[
+A=\mathbb Z/\nu\mathbb Z;
+\]
+As características residuais de todos os esquemas considerados são primas com o inteiro $\nu$. Se $X$ é tal esquema, denota-se por $\mu_X$ o feixe das raízes $\nu$-ésimas da unidade e por $A^{\bullet}(X)$ o anel de cohomologia
+\[
+\bigoplus_i H^{2i}(X,\mu_X^{\otimes i})
+\]
+cujo produto é o produto cup.
+
+\subsection*{1. Fibrados vetoriais}
+
+Sejam $S$ um esquema e $E$ uma $\mathcal O_S$-módulo localmente livre, entendido de tipo finito. Define-se $X=\V(E)$, $U=\V(E)^*$, complementar à seção nula, e são denotados por
+\[
+p:X\to S,
+\qquad
+q:U\to S
+\]
+as projeções canônicas.
+
+\begin{statement}{Proposição 1.1}
+Seja $L$ um $A$-módulo.
+\begin{enumerate}[label=(\roman*)]
+\item
+\begin{enumerate}[label=\alph*)]
+\item Para todo inteiro $j>0$, temos
+\[
+\R^j p_*(p^*L)=0.
+\]
+\item O morfismo de adjunção
+\[
+L\longrightarrow p_*p^*(L)
+\]
+é um isomorfismo.
+\end{enumerate}
+\item Supõe-se que $E$ tem posto constante $r$.
+\begin{enumerate}[label=\alph*)]
+\item
+\[
+\R_!^i p(p^*L)=0\quad\text{se }i\ne 2r.
+\]
+\item O morfismo de traço (SGA 4 XVIII)
+\[
+\R_!^{2r}p(p^*L)\longrightarrow L\otimes\mu_S^{\otimes -r}
+\]
+é um isomorfismo.
+\end{enumerate}
+\end{enumerate}
+\end{statement}
+
+\emph{Demonstração.} A parte (i) segue-se imediatamente, por localização para a topologia de Zariski, de (SGA 4 XV 2.2). A afirmação (ii) está essencialmente contida em (SGA 4 XVIII).

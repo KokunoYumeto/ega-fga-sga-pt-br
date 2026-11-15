@@ -1,0 +1,71 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 8351--8419 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Seja agora \(F=(F_n)_{n\in\mathbb N}\) um objeto da categoria
+\[
+(\ell\mathbb Z)\text{-}\ad(\Abf(\pi_1)).
+\]
+Seu limite projetivo
+\[
+\varprojlim_{\mathbb N}(F_n)
+\]
+está naturalmente dotado de uma estrutura de \(\mathbb Z_\ell\)-módulo de tipo finito sobre a qual \(\pi_1\) atua continuamente para a topologia \(\ell\)-ádica. Recordemos que, se \(G\) e \(M\) denotam, respectivamente, um grupo profinito e um \(\mathbb Z_\ell\)-módulo de tipo finito, chama-se ação contínua de \(G\) sobre \(M\) uma aplicação contínua
+\[
+G\times M\longrightarrow M,\qquad (g,m)\longmapsto g\cdot m,
+\]
+tal que
+\[
+\text{(i)}\quad g\cdot(m+n)=g\cdot m+g\cdot n\quad (g\in G,\ m,n\in M),
+\]
+e
+\[
+\text{(ii)}\quad (gh)\cdot m=g\cdot(h\cdot m)\quad (g,h\in G,\ m\in M).
+\]
+É então claro que, para todo inteiro \(\ell\)-ádico \(a\),
+\[
+g\cdot(am)=a(g\cdot m)\qquad (g\in G,\ m\in M).
+\]
+Por outro lado, o grupo das aplicações \(\mathbb Z_\ell\)-lineares invertíveis de \(M\) em \(M\), denotado por \(\GL(M)\), identifica-se com o limite projetivo dos grupos \(\GL(M/\ell^{n+1}M)\). Como estes últimos grupos são finitos, o grupo \(\GL(M)\) fica assim dotado, de maneira natural, de uma estrutura de grupo profinito e, em particular, de uma estrutura de grupo topológico compacto. Verifica-se facilmente que dar uma ação contínua do grupo profinito \(G\) sobre \(M\) equivale a dar um morfismo de grupos topológicos:
+\[
+G\longrightarrow \GL(M),
+\]
+onde este último grupo está dotado da topologia descrita anteriormente. Dito isso, define-se de maneira evidente um funtor
+\[
+\varprojlim_{\mathbb N}:(\ell\mathbb Z)\text{-}\ad(\Abf(\pi_1))\longrightarrow
+\mathbb Z_\ell\text{-}\modn(\pi_1),
+\]
+onde \(\mathbb Z_\ell\text{-}\modn(\pi_1)\) denota a categoria dos \(\mathbb Z_\ell\)-módulos de tipo finito com ação contínua de \(\pi_1\).
+
+Isso permite enunciar o lema seguinte:
+
+\begin{statement}{Lema 1.2.4.2}
+O funtor anterior
+\[
+\varprojlim_{\mathbb N}:(\ell\mathbb Z)\text{-}\ad(\Abf(\pi_1))
+\longrightarrow \mathbb Z_\ell\text{-}\modn(\pi_1)
+\]
+é uma equivalência de categorias.
+\end{statement}
+
+\begin{prooftext}[Demonstração]
+É claro que é sobrejetivo sobre os objetos: um \(\mathbb Z_\ell\)-módulo tipo finito \(E\) sobre o qual \(\pi_1\) atua continuamente é a imagem do sistema projetivo
+\[
+(E/\ell^{n+1}E)_{n\in\mathbb N},
+\]
+com as ações evidentes de \(\pi_1\). Sejam agora
+\[
+F=(F_n)_{n\in\mathbb N},\qquad G=(G_n)_{n\in\mathbb N}
+\]
+dois objetos da categoria \(\ell\mathbb Z\text{-}\ad(\Abf(\pi_1))\), e denotemos, para simplificar, por \(\Hom_{\pi_1}(F,G)\) o conjunto dos morfismos de \(F\) em \(G\) nesta categoria. Esquecendo a ação de \(\pi_1\), podem-se considerar \(F\) e \(G\) como objetos da categoria dos sistemas projetivos \(\ell\)-ádicos de grupos abelianos finitos, e denotar-se-á por \(\Hom_0(F,G)\) o conjunto dos morfismos de \(F\) em \(G\) nesta categoria. O grupo \(\pi_1\) atua sobre \(\Hom_0(F,G)\) do modo seguinte: um elemento \(s\) de \(\pi_1\) define claramente dois automorfismos, denotados da mesma maneira, de \(F\) e \(G\), respectivamente, na categoria dos sistemas projetivos \(\ell\)-ádicos de grupos abelianos finitos e, se \(u\) pertence a \(\Hom_0(F,G)\), define-se
+\[
+s\cdot u=sus^{-1}.
+\]
+Nestas condições, é claro que \(\Hom_{\pi_1}(F,G)\) identifica-se canonicamente com o conjunto de invariantes de \(\pi_1\) em \(\Hom_0(F,G)\), e também \(\Hom_{\pi_1}(F_n,G_n)\) identifica-se, para todo \(n\), com
+\[
+\Hom_{\mathbb Z}(F_n,G_n)^{\pi_1},
+\]
+onde a ação de \(\pi_1\) se define de maneira análoga. Segue, por exemplo, de (SERRE, Groupes proalgébriques, Prop. 12) que, denotando por \(M\) e \(N\) os limites projetivos de \(F\) e \(G\), respectivamente, tem-se
+\[
+\Hom_{\mathbb Z_\ell}(M,N)=\varprojlim_n\Hom_{\mathbb Z}(F_n,G_n).
+\]
+Tomando os invariantes de ambos os membros por \(\pi_1\) e utilizando que essa operação, por corresponder a um limite projetivo, comuta com os limites projetivos, deduz-se a afirmação.
+\end{prooftext}

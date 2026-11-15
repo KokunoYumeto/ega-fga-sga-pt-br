@@ -1,0 +1,43 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9761--9801 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+Como a ferramenta fundamental na demonstração de 4.1 é a teoria dos esquemas obtidos por explosão, lembremos agora alguns fatos sobre isso. Denotando por
+\[
+f:X'\to X
+\]
+O $X$-esquema obtido pela explosão de $Y$, seja
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+Y' \arrow[r,"j"] \arrow[d,"g"'] & X' \arrow[d,"f"]\\
+Y \arrow[r,"i"] & X
+\end{tikzcd}
+\]
+O diagrama cartesiano construído a partir de $f$ e $i$. Recordemos (cf. SGA 6 VII 3.1, cujas notações adotamos) que $j$ é um imersão regular de codimensionamento $1$ definido por um ideal
+\[
+J'\simeq\mathcal O_{X'}(1)
+\]
+e que $Y'\simeq P_Y(N)$. Por outro lado, temos um sequência exata de $\mathcal O_{Y'}$-módulos
+\[
+0\to F\to g^*(N)\to \mathcal O_{Y'}(1)\to0.
+\]
+
+\begin{statement}{Lema 4.2}
+Para tudo $A_X$-módulo $M$, os homomorfismos
+\[
+f^*:H_Y^*(X,M)\to H_{Y'}^*(X',f^*(M))
+\]
+e
+\[
+f_*:H_{Y'}^*(X',f^*(M))\to H_Y^*(X,M)
+\]
+são ligadas pela relação $f_*f^*=\mathrm{id}$. Além disso, $f_*$ é de grau $0$.
+\end{statement}
+
+\emph{Demonstração.} Como o morfismo $f$ é de interseção completa relativa de dimensão relativa nula (SGA 6 VII 1.8), a última afirmação segue-se do definição do homomorfismo de Gysin (SGA $4^{1/2}$ Ciclo). Para a primeira, a fórmula de projeção para o morfismo $f$
+\[
+f_*(x\cdot f^*(x'))=f_*(x)\cdot x',
+\]
+onde $x\in H^*(X,A)$ e $x'\in H_Y^*(X,M)$, permite reduzir-se a demonstrar que $f_*(1)=1$. Para isso basta verificar a afirmação analógica sobre $U=X-Y$, que é evidente, pois $f$ induz um isomorfismo de $U'=X'-Y'$ sobre $U$.
+
+\begin{statement}{Observação 4.3}
+A declaração analógica de 4.2 obtida eliminando os suportes é também verdadeira e é demonstrada da mesma forma.
+\end{statement}

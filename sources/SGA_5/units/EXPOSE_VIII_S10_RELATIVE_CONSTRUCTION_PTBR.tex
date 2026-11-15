@@ -1,0 +1,48 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 12170--12215 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{10. Construção relativa\footnote{cf. (SGA 6 III, IV).}}
+
+Seja $u:A\to B$ um homomorfismo de anéis, e seja
+\[
+D(B)\longrightarrow D(A)
+\]
+o funtor exato associado. Podemos considerar em $D(B)$ os complexos pseudocoerentes relativamente a $A$, os de dimensão Tor finita relativamente a $A$, e também os complexos perfeitos relativamente a $A$. Em particular, convém considerar as subcategorias trianguladas
+\[
+D(B)_{A-\parf},\qquad D^b(B)_{A-\coh}
+\]
+de $D(B)$, geradas pelos complexos perfeitos (resp. pseudocoerentes e limitados) relativamente a $A$. Essas duas categorias trianguladas permitem definir os grupos seguintes:
+\[
+K^{\bullet}(B\operatorname{\,rel\,}A)=K(D(B)_{A-\parf}),
+\]
+\[
+K_\bullet(B\operatorname{\,rel\,}A)=K(D^b(B)_{A-\coh}).
+\]
+
+\emph{Exemplos.} Sejam $G$ um grupo e $\Lambda$ um anel comutativo. O homomorfismo
+\[
+\Lambda\xrightarrow{\varepsilon}\Lambda[G]
+\]
+permite, portanto, definir os grupos
+\[
+K^{\bullet}(\Lambda[G]\operatorname{\,rel\,}\Lambda),\qquad
+K_\bullet(\Lambda[G]\operatorname{\,rel\,}\Lambda),
+\]
+que serão denotados por
+\[
+R^{\bullet}_\Lambda(G),\qquad R^\Lambda_\bullet(G).
+\]
+De fato, $R^{\bullet}_\Lambda(G)$ é um anel comutativo e $R^\Lambda_\bullet(G)$ um módulo sobre este último.
+
+\emph{Observações.}
+
+a) Se o anel $\Lambda$ não for necessariamente comutativo, pode-se pôr, por definição,
+\[
+\Lambda[G]=\Lambda\otimes_{\mathbb Z}\mathbb ZG
+\]
+e, consequentemente, obtém-se um homomorfismo
+\[
+\Lambda\xrightarrow{\varepsilon}\Lambda[G].
+\]
+Os grupos $R^{\bullet}_\Lambda(G)$, $R^\Lambda_\bullet(G)$ podem assim ser entendidos, mesmo no caso de um anel $\Lambda$ não comutativo.
+
+b) A construção anterior pode ser generalizada ao caso de um pré-esquema em grupos (ou de um pro-pré-esquema em grupos) $G$ sobre $\Spec\Lambda$, partindo da categoria abeliana dos $\Lambda$-módulos sobre os quais $G$ atua ---que já não se explicita em termos de módulos sobre um anel--- e do funtor natural de inclusão na categoria dos $\Lambda$-módulos. (Se $\Lambda$ é um corpo, pode-se explicitá-la em termos de módulos sobre um proanel e, no caso geral, em termos de comódulos, ao menos se $G$ é afim sobre $\Lambda$, cf. SGA 3 I 4.7.2).

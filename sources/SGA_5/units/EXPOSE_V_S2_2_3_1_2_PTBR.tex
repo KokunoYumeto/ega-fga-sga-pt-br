@@ -1,0 +1,68 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6794--6859 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{2.3. Lembretes sobre o cálculo de frações e aplicações}
+Sejam $\cE$ uma categoria e $S$ um subconjunto de $\Fl(\cE)$. Chama-se categoria de frações de $\cE$ em relação a $S$ um par $(p,\cE(S^{-1}))$ formado por uma categoria $\cE(S^{-1})$ e um funtor $p:\cE\to\cE(S^{-1})$ que verifica a seguinte propriedade universal: para que um funtor $u$ de $\cE$ em uma categoria $\cF$ se fatore através de $p$, é necessário e suficiente que torne invertíveis as flechas pertencentes a $S$, e então a fatoração é única. A unicidade de tal par salvo isomorfismo é clara. Remetemos o leitor à exposição I do Seminário Homotópico de Estrasburgo para a demonstração da existência, bem como para a maioria dos resultados enunciados sem demonstração no que segue do número. Veja-se também P. Gabriel e M. Zisman, \emph{Calculus of fractions and homotopy theory}, Erg. der Math., 35, Springer-Verlag, 1967.
+
+As propriedades do subconjunto multiplicativo $S$ fornecem uma descrição simples da categoria $\cE(S^{-1})$.
+
+\begin{statement}{Definição 2.3.1}
+Diz-se que um subconjunto $S$ de $\Fl(\cE)$ permite um cálculo de frações pela direita se as condições seguintes forem satisfeitas:
+\begin{enumerate}[label=(\alph*)]
+\item As flechas identidade de $\cE$ pertencem a $S$.
+\item Se $u:X\to Y$ e $v:Y\to Z$ pertencem a $S$, a composição $v\circ u$ pertence a $S$.
+\item Qualquer diagrama do tipo $(D_1)$ que aparece a seguir, em que $t$ pertence a $S$, pode ser completado em um diagrama do tipo $(D_2)$, em que $s$ pertence a $S$:
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+(D_1)& & Y' \arrow[d,"t"]\\
+& X \arrow[r,"u"'] & Y
+\end{tikzcd}
+\qquad
+\begin{tikzcd}[column sep=large,row sep=large]
+(D_2)& X' \arrow[r,"u'"] \arrow[d,"s"'] & Y' \arrow[d,"t"]\\
+& X \arrow[r,"u"'] & Y .
+\end{tikzcd}
+\]
+\item Para todo diagrama comutativo
+\[
+\begin{tikzcd}[column sep=large]
+X \arrow[r,shift left,"f"] \arrow[r,shift right,"g"'] & Y \arrow[r,"s"] & Z,
+\end{tikzcd}
+\]
+onde $s$ pertence a $S$, existe um diagrama comutativo
+\[
+\begin{tikzcd}[column sep=large]
+T \arrow[r,"t"'] & X \arrow[r,shift left,"f"] \arrow[r,shift right,"g"'] & Y,
+\end{tikzcd}
+\]
+onde $t$ pertence a $S$.
+\end{enumerate}
+\end{statement}
+
+De maneira dual, define-se a noção seguinte.
+
+\begin{statement}{Definição 2.3.2}
+Diz-se que um subconjunto $S$ de $\Fl(\cE)$ permite um cálculo de frações pela esquerda se as condições seguintes forem satisfeitas:
+\begin{enumerate}[label=(\alph*)]
+\item[(a')] As flechas identidade de $\cE$ pertencem a $S$.
+\item[(b')] A composição de duas flechas pertencentes a $S$ pertence a $S$.
+\item[(c')] Qualquer diagrama do tipo $(D_1)'$ que aparece a seguir, em que $s$ pertence a $S$, pode ser completado em um diagrama do tipo $(D_2)'$, em que $t$ pertence a $S$:
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+(D_1)'& X' \arrow[r,"u'"] \arrow[d,"s"'] & Y'\\
+& X
+\end{tikzcd}
+\qquad
+\begin{tikzcd}[column sep=large,row sep=large]
+(D_2)'& X' \arrow[r,"u'"] \arrow[d,"s"'] & Y' \arrow[d,"t"]\\
+& X \arrow[r,"u"'] & Y .
+\end{tikzcd}
+\]
+\item[(d)'] Para todo diagrama comutativo $\Delta$ da forma que se apresenta a seguir, no qual $s$ pertence a $S$, existe um morfismo $t$ com fonte $Y$ e pertencente a $S$ tal que $t\circ f=t\circ g$:
+\[
+(\Delta)\quad
+\begin{tikzcd}[column sep=large]
+X' \arrow[r] & X \arrow[r,shift left,"f"] \arrow[r,shift right,"g"'] & Y .
+\end{tikzcd}
+\]
+\end{enumerate}
+\end{statement}

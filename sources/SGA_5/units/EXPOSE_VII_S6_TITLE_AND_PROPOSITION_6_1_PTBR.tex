@@ -1,0 +1,46 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10236--10279 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{6. Esquemas em grupos}
+
+Comecemos por uma propriedade geral dos objetos torcidos por torsores.
+
+\begin{statement}{Proposição 6.1}
+Sejam $S$ um esquema, $G$ um $S$-esquema em grupos quase compacto, liso e de fibras conexas, e $X$ um $S$-esquema provido de uma ação à esquerda de $G$. Se $f:E\to S$ é um $S$-torsor (à direita) sob $G$, denota-se por $X_E$ o $S$-esquema obtido a partir de $X$ por torção mediante $E$ e a ação de $G$ sobre $X$. Denotam-se por $p:X\to S$ e $q:X_E\to S$ as projeções canônicas. Nessas condições, para todo $A_S$-módulo $M$ e todo inteiro $i$, o $A_S$-módulo $\R^iq_*(q^*M)$ é canonicamente isomorfo a $\R^ip_*(p^*M)$.
+\end{statement}
+
+\emph{Demonstração.}
+\[
+\begin{tikzcd}[column sep=large,row sep=large]
+E\times_S X \arrow[r,"\varphi"] \arrow[d,"\pr_1"'] & X_E \arrow[d,"q"]\\
+E \arrow[r,"f"] & S
+\end{tikzcd}
+\qquad
+\begin{tikzcd}[column sep=large,row sep=large]
+E\times_S X \arrow[r,"\pr_2"] \arrow[d,"\pr_1"'] & X \arrow[d,"p"]\\
+E \arrow[r,"f"] & S .
+\end{tikzcd}
+\]
+\[
+(D_1)\qquad\qquad\qquad\qquad(D_2)
+\]
+Sabe-se que o diagrama $(D_1)$, no qual $\varphi$ designa a aplicação canônica de passagem ao quociente, é cartesiano. Como o morfismo $f$ é liso, o teorema de mudança de base lisa fornece um isomorfismo
+\[
+u:f^*\R^iq_*(q^*M)\xrightarrow{\sim}\R^i(\pr_1)_*(\varphi^*q^*M).
+\]
+Da mesma forma, do diagrama cartesiano $(D_2)$ deduz-se um isomorfismo
+\[
+v:f^*\R^ip_*(p^*M)\xrightarrow{\sim}\R^i(\pr_1)_*((\pr_2)^*p^*M).
+\]
+Mas $p\circ\pr_2=q\circ\varphi$; portanto, identificando claramente $\varphi^*\circ q^*$ e $(\pr_2)^*\circ p^*$, define-se um isomorfismo
+\[
+v^{-1}\circ u:f^*\R^iq_*(q^*M)\xrightarrow{\sim} f^*\R^ip_*(p^*M).
+\]
+Como o morfismo $f$ tem fibras geométricas não vazias e conexas, deduz-se de (SGA 4 XII 6.5 (i)) que o morfismo de adjunção
+\[
+\operatorname{adj}:\mathrm{id}\to f_*f^*
+\]
+é um isomorfismo, de modo que
+\[
+(\operatorname{adj})^{-1}\circ f_*(v^{-1}\circ u)\circ(\operatorname{adj})
+\]
+É o isomorfismo procurado.

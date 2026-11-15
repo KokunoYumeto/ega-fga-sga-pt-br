@@ -1,0 +1,53 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 11518--11568 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsection*{9.10}
+
+Com as notações de (9.9), a aplicação
+\[
+\omega=\lambda\circ\lambda'
+\]
+é um projetor que verifica $\operatorname{Im}(\omega)=\operatorname{Im}(\lambda)$. Por conseguinte, $\mu$ induz um isomorfismo
+\[
+\bar\mu:\Ker(\omega)\xrightarrow{\sim}C^p(X').
+\]
+Mas
+\[
+\Ker(\omega)=\Ker(g_*)\oplus C^p(X)\hookrightarrow C^{p-1}(Y')\oplus C^p(X).
+\tag{9.10.1}
+\]
+De fato, um elemento $(x,y)$ de $C^{p-1}(Y')\oplus C^p(X)$ pertence a $\Ker(\omega)$ se e apenas se
+\[
+g^*g_*(x)\cdot c_{d-1}(\check F)=-i_*g_*(x)=0,
+\]
+Isto é, tendo em conta (9.1.1), $g_*(x)=0$. Por outro lado, a estrutura do anel de Chow de um fibrado projetivo e, em particular, as relações
+\[
+g_*(\xi^i)=0\quad\text{para }i<d-1,\qquad g_*(\xi^{d-1})=1,
+\]
+mostram que
+\[
+\Ker(g_*)=g^*C^{p-1}(Y)\oplus g^*C^{p-2}(Y)\xi\oplus\cdots\oplus g^*C^{p-d+1}(Y)\xi^{d-2}.
+\]
+Em outras palavras, $\bar\mu$ pode ser interpretado como um isomorfismo
+\[
+C^{p-1}(Y)\oplus C^{p-2}(Y)\oplus\cdots\oplus C^{p-d+1}(Y)\oplus C^p(X)
+\xrightarrow{\sim}C^p(X'),
+\tag{9.10.2}
+\]
+cujo isomorfismo inverso é fácil de explicitar.
+
+Como MURRE me assinalou, o enunciado (9.10.2) foi demonstrado para $d=2$ por Samuel, em \emph{Relations d'équivalence}, Proceedings of the International Congress, Edinburgh 1958.
+
+Naturalmente, no âmbito da coomologia étale ou $\ell$-ádica tem-se um enunciado análogo a (9.10.2), que desta vez se deduz de (8.5).
+
+\subsection*{Bibliografia}
+
+\begin{enumerate}[label={[\arabic*]}]
+\item GROTHENDIECK \emph{La théorie des classes de Chern}, Bull. Soc. Math. de France \emph{86} (1958), pp. 137-154.
+\item HODGE \emph{The theory and applications of harmonic integrals}, Cambridge University Press, 1952.
+\item HIRZEBRUCH \emph{Topological Methods in Algebraic Geometry}, Springer Verlag.
+\item LEFSCHETZ \emph{Algebraic Geometry}, Princeton University Press, 1953.
+\item Sra. RAYNAUD \emph{Modules projectifs universels}, Inventiones Mathematicae vol. 6. fasc. 1 (1968), pp. 1 a 26.
+\item[{[TF]}] GODEMENT \emph{Théorie des faisceaux}.
+\item[{[CH]}] \emph{Anneaux de Chow et applications}, Séminaire Chevalley 1958.
+\item[{[6]}] \emph{Théorème de Lefschetz et critères de dégénérescence}, Pub. I.H.E.S. n$^\circ$ 35.
+\end{enumerate}

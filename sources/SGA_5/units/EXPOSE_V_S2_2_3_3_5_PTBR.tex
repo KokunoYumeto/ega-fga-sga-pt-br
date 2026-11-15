@@ -1,0 +1,18 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6861--6876 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{2.3.3}
+Suponhamos que $S$ é um subconjunto de $\Fl(\cE)$ que permite um cálculo de frações pela direita. Deduz-se então da parte (d) de (2.3.1) que, para todo objeto $X$ de $\cE$, a categoria $(S/X)^\circ$, oposta à categoria das flechas sobre $X$ pertencentes a $S$, é filtrante (SGA 4 I 2.7). Consideremos então a categoria $\cE_S$ descrita da seguinte forma:
+\begin{itemize}
+\item Os objetos de $\cE_S$ são os objetos de $\cE$;
+\item Se $X$ e $Y$ forem dois objetos de $\cE$,
+\[
+\Hom_{\cE_S}(X,Y)=\varinjlim_{(S/X)^\circ}\Hom_{\cE}(\source(\cdot),Y).
+\]
+\end{itemize}
+Se $P_S$ designa o funtor evidente de $\cE$ em $\cE_S$, o par $(P_S,\cE_S)$ é solução do problema universal descrito no início do número. Neste caso, conviremos em denotar por $\cE(S^{-1})$ esta solução particular.
+
+\subsubsection*{2.3.4}
+Seja agora $S$ um subconjunto de $\Fl(\cE)$ que permite um cálculo de frações pela esquerda. Então o funtor $p_S:\cE\to\cE(S^{-1})$ comuta com os limites indutivos finitos. Em particular, se $\cE$ é aditiva, $\cE(S^{-1})$ é aditiva e $P_S$ é um funtor aditivo.
+
+\subsubsection*{2.3.5}
+Se a categoria $\cE$ é abeliana e $S$ é um subconjunto de $\Fl(\cE)$ que permite simultaneamente um cálculo de frações pela direita e um cálculo de frações pela esquerda, a categoria $\cE(S^{-1})$ é abeliana e o funtor $P_S$ é exato. Além disso, o par $(P_S,\cE(S^{-1}))$ é um quociente de $\cE$ pela subcategoria abeliana espessa $p_S^{-1}(0)$.

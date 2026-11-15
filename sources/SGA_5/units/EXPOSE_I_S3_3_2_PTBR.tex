@@ -1,0 +1,50 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 767--824 (LF-normalized unit).
+\subsubsection*{3.2. Dimensão quase-injetiva de $A_X$.}
+
+\subsection*{Proposição 3.2.1}
+Seja $X$ um esquema regular, de características residuais primas com $n$. Suponhamos que $X$ satisfaça as condições (reg) (3.1.1) e $(\mathrm{cdloc})_n$ (3.1.3), e que o teorema de pureza absoluta seja válido sobre $X$ (3.1.4). Então, para todo $A_X$-módulo construtível $F$ e todo $x \in X$, tem-se
+\[
+(*) \qquad \underline{\Ext}^i(F, A_X)_x = 0 \quad \text{para } i > 2\dim \cO_{X,x}.
+\]
+
+\emph{Demonstração.} Como a questão é local, podemos supor que $X$ é afim. Por devissage (3.1.2), podemos limitar-nos a verificar $(*)$ para $F = i_{!}(G)$, onde $i : Y \to X$ é a imersão de um subesquema integral regular, fechado em um aberto $D(f)$ ($f \in A(X)$), e $G$ é um feixe localmente constante construtível sobre $Y$. Trata-se de calcular $\underline{\Ext}^q(F, A_X) = \H^q(\R\,\underline{\Hom}(F, A_X))$.
+
+A fórmula de projeção para $i$ (SGAA~XVIII) dá $\R\,\underline{\Hom}(i_{!}(G), A_X) \simeq \R i_{*} \R\,\underline{\Hom}(G, \R^{!}iA_X)$. Pelo teorema de pureza, temos $\R^{!}i(A_X) \simeq (\mu_n)^{\otimes -d}_Y[-2d]$, onde $d = \codim(Y,X)$.
+
+Ponhamos $(\mu_n)^{\otimes -d}_Y = T$. Como $G$ é localmente constante construtível, tem-se $\underline{\Ext}^p(G,T)_{\ol{y}} \simeq \Ext^p(G_{\ol{y}}, T_{\ol{y}})$ para todo ponto geométrico $\ol{y}$ de $Y$ e todo $p$. Ora, $T_{\ol{y}}$ é injetivo, pois é isomorfo a $A = \Z/n\Z$. Por conseguinte, $\underline{\Ext}^p(G,T) = 0$ para $p \neq 0$, e portanto $\R\,\underline{\Hom}(G,T) \simeq \underline{\Hom}(G,T)$, de onde finalmente
+\[
+\R\,\underline{\Hom}(F, A_X) \simeq \R i_{*}(\H)[-2d], \quad \text{com } \H = \underline{\Hom}(G,T).
+\]
+Seja $Z$ o fecho esquemático de $Y$ em $X$ (EGA~I~9.5.10). Tem-se $Y = Z \cap D(f)$ (EGA~$0_{\mathrm{I}}$~2.1.6). Denotemos por $j : Y \to Z$ e $k : Z \to X$ as imersões canônicas. Tem-se $\R i_{*} = k_{*} \R j_{*}$, de modo que ficamos reduzidos a calcular $\R j_{*}(\H)$. Sejam $\ol{x}$ um ponto geométrico de $Z$, $\wt{Z} = \Spec(\cO_{Z,\ol{x}})$ a localização estrita de $Z$ em $\ol{x}$, $\wt{f}$ a imagem de $f$ em $\cO_{Z,\ol{x}}$, $\wt{Y} = \wt{Z} \times_X Y = \wt{Z} - V(\wt{f})$, e $\wt{\H}$ a imagem inversa de $\H$ sobre $\wt{Y}$. Segundo (SGAA~VIII~5.2), tem-se $\R^q j_{*}(\H)_{\ol{x}} \simeq \H^q(\ol{Y}, \ol{\H})$, de onde $\underline{\Ext}^q(F, A_X)_{\ol{x}} \simeq \H^{q-2d}(\ol{Y}, \ol{\H})$. A condição $(\mathrm{cdloc})_n$ implica então $\underline{\Ext}^q(F, A_X)_{\ol{x}} = 0$ para $q - 2d > \dim \cO_{Z,x}$. Das relações $d = \codim_{x}(Z,X) \leqslant \dim \cO_{X,x}$ (EGA~IV~5.1.3) e $\dim \cO_{Z,x} = \dim \cO_{X,x} - \codim_{x}(Z,X)$ (EGA~$0_{\mathrm{IV}}$~16.5.12 e IV~5.1.9), deduz-se $\underline{\Ext}^q(F, A_X)_x = 0$ para $q > 2\dim \cO_{X,x}$, c.q.d.
+
+\subsection*{Observação 3.2.2}
+A cota obtida em (3.2.1) é a melhor possível. De fato, sejam $x$ um ponto de $X$ e $Y$ o subesquema fechado integral de $X$ cujo ponto genérico é $x$. Como $X$ satisfaz a condição (reg), existe um aberto regular $U$ de $Y$ que contém $x$. E, pelo teorema de pureza, tem-se $\underline{\Ext}^{2d}(A_U, A_X)|U = (\mu_n)^{\otimes d}_U$, onde $d = \dim \cO_{X,x} = \codim(Y,X)$.
+
+\subsection*{Corolário 3.2.3}
+Seja $X$ um esquema regular de dimensão $d$. Se $X$ é suave sobre um corpo $k$ de característica prima com $n$, ou é excelente de característica nula, então $X$ verifica a conclusão de (3.2.1) e, consequentemente, tem-se
+\[
+\dim.\,q.\,inj(A_X) \leqslant 2d.
+\]
+
+\emph{Demonstração.} Quando $X$ é excelente de car.~0, ou quando $k$ é perfeito de característica prima com $n$ e $X$ é suave sobre $k$, as hipóteses de (3.2.1) são verificadas em virtude de (3.1.1), (3.1.3) e (3.1.4). A conclusão continua válida se $X$ é suave sobre um corpo $k$ arbitrário, como se vê imediatamente pela mudança de base $\Spec(k') \to \Spec(k)$, onde $k'$ é um fecho perfeito de $k$ (SGAA~VIII~1.1).
+
+\subsection*{Lema 3.2.4}
+Seja $X$ um esquema que satisfaça a conclusão de (3.2.1) e de dimensão $\leqslant d$. Se existe um inteiro $N$ tal que $X$ seja de dimensão cohomológica $\leqslant N$, temos
+\[
+\dim.\,inj(A_X) \leqslant 2d + N.
+\]
+Se, além disso, para todo fechado $Y$ de $X$, $\codim(Y,X) \geqslant p$ implica $\cd_{\mathbf{n}}(Y) \leqslant N - 2p$, temos então
+\[
+\dim.\,inj(A_X) \leqslant N.
+\]
+
+\emph{Demonstração.} A primeira afirmação deduz-se imediatamente de (1.5). Para a segunda, nós raciocinamos como em (1.5). Ficamos reduzidos a demonstrar, para $F$ construtível sobre $X$, a relação $\Ext^i(X; F, A_X) = 0$ para $i > N$. Para isso, consideramos a sucessão espectral
+\[
+\E_2^{pq} = \H^p(X; \underline{\Ext}^q(F, A_X)) \Rightarrow \Ext^{*}(X; F, A_X).
+\]
+Segundo (3.2.1), os feixes $\underline{\Ext}^{2i}(F, A_X)$ e $\underline{\Ext}^{2i-1}(F, A_X)$ estão concentrados em codimensão $\geqslant i$. Assim, $\E_2^{p,2i} = \E_2^{p,2i-1} = 0$ para $p > N - 2i$ por hipótese. Portanto, $\E_2^{pq} = 0$ para $p+q > N$, de onde se segue a afirmação.
+
+\subsection*{Corolário 3.2.5}
+Se $X$ é um esquema suave de dimensão $d$ sobre um corpo $k$ separavelmente fechado de característica prima com $n$, tem-se $\dim.\,inj(A_X) = 2d$.
+
+\emph{Demonstração.} Por (3.2.3) e (SGAA~X~4.2), estamos, de fato, nas condições de aplicação de (3.2.4) (observe que as hipóteses de (SGAA~X~4.2) são verificadas em virtude de (SGAA~X~2.1 e 3.2)), que implica $\dim.\,inj\, A_X \leqslant 2d$. A relação $\dim.\,inj(A_X) = 2d$ vem do teorema de pureza (cf.~3.2.2): se $x$ é um ponto fechado de codim.~$d$ de $X$, tem-se, de fato, $\Ext^{2d}(X, A_x, A_X) = \H^{2d}_x(A_X) \simeq \mu_n^{\otimes d}(k) \neq 0$.

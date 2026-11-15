@@ -1,0 +1,51 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 10633--10681 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{8. Variedades obtidas por explosão}
+
+Neste parágrafo damos uma variante cohomológica dos cálculos para o grupo $K$ e o «grupo das classes de ciclos» de um esquema obtido por explosão, dados em SGA 6 VII 3.7 e 4.8. As hipóteses e as notações são as do início do parágrafo 4 (4.1 a 4.3). Nessas condições, o morfismo «classe fundamental»
+\[
+\gamma:j_*(\mu_{Y'}^{\otimes -1})[-2]\to A_{X'}
+\]
+fornece, após aplicar o funtor $\R f_*$, um morfismo
+\[
+\R f_*(\gamma):i_*\R g_*(\mu_{Y'}^{\otimes -1})[-2]\to \R f_*(A_{X'}).
+\]
+
+\begin{statement}{Teorema 8.1}
+O morfismo de $D^+(X,A)$
+\[
+A_X\oplus i_*\R g_*(\mu_{Y'}^{\otimes -1})[-2]\to
+\R f_*(A_{X'})\oplus i_*(\mu_Y^{\otimes -d})[-2d]
+\tag{8.1.1}
+\]
+definido pela matriz
+\[
+\begin{pmatrix}
+\operatorname{adj}&\R f_*(\gamma)\\
+0&i_*(\operatorname{trace})
+\end{pmatrix}
+\]
+é um isomorfismo.
+\end{statement}
+
+\emph{Demonstração.} Graças à conservatividade do sistema de funtores fibra, basta verificar a afirmação em cada ponto $x$ de $X$. Ela é evidente sobre $U=X-Y$. Para $x$ pertencente a $Y$, o teorema de mudança de base própria reduz a questão a demonstrar o lema seguinte (com $r=d-1$).
+
+\begin{statement}{Lema 8.2}
+Sejam $k$ um corpo separavelmente fechado, $r\ge1$ um inteiro e $P=\mathbb P_k^r$. Então:
+\begin{enumerate}[label=\alph*)]
+\item A aplicação canônica $A\to H^0(P,A)$ é uma bijeção;
+\item $H^1(P,A)=H^{2r-1}(P,A)=0$;
+\item Para $0\le p\le2r-2$, a multiplicação por $\xi=c_1(\mathcal O_P(1))\in H^2(P,\mu)$
+\[
+H^p(P,\mu_P^{\otimes -1})\to H^{p+2}(P,A)
+\]
+é um isomorfismo;
+\item o morfismo de traço
+\[
+H^{2r}(P,\mu_P^{\otimes -1})\to H^0(k,\mu_k^{\otimes -(r+1)})
+\]
+é uma bijeção.
+\end{enumerate}
+\end{statement}
+
+O lema é uma consequência imediata de 2.2.2.

@@ -1,0 +1,47 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 9566--9610 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+De fato, veremos a partir daqui, por indução ascendente sobre o inteiro $i$, que temos
+\[
+(\alpha_i)_*(\alpha_i)^*\Bigl(\prod_{j\le i}[p^*(\check L_j)\otimes\mathcal O_P(-1)]\Bigr)=0.
+\tag{3.6.5}
+\]
+No caso $i=r$, a afirmação (3.6.5) é escrita
+\[
+\prod_i[p^*(\check L_i)\otimes\mathcal O_P(-1)]=0,
+\]
+ou também
+\[
+\prod_i(\xi+c_1(p^*(\check L_i)))=0,
+\]
+de onde segue-se imediatamente (3.6). Para $i=1$, a afirmação (3.6.5) segue-se de (3.6.2). Vamos supor que é verdade para $i$ e demonstrar que é verdade para $i+1$. Vamos dizer, para simplificar,
+\[
+N=\prod_{j\le i}[p^*(\check L_j)\otimes\mathcal O_P(-1)].
+\]
+A igualdade (3.6.5) para $i$ é também escrita
+\[
+(\alpha_{i+1})_*(\alpha_{i+1,i})_*(\alpha_{i+1,i})^*(\alpha_{i+1})^*(N)=0,
+\]
+Isto é, tendo em conta a fórmula de projeção para $\alpha_{i+1,i}$,
+\[
+(\alpha_{i+1})_*\bigl[(\alpha_{i+1})^*(N)\cdot(\alpha_{i+1})^*(p^*(\check L_{i+1})\otimes\mathcal O_P(-1))\bigr]=0,
+\]
+de onde segue-se imediatamente o resultado desejado.
+
+\begin{statement}{Corolário 3.7}
+\begin{enumerate}[label=(\roman*)]
+\item Para tudo $\mathcal O_S$-módulo localmente livre $E$ e tudo inteiro $i$, temos
+\[
+c_i(\check E)=(-1)^i c_i(E).
+\]
+\item Se $E$ é um $\mathcal O_S$-módulo localmente livre de posto $r$, temos
+\[
+c_1(E)=c_1(\Lambda^rE).
+\]
+\item Em geral, as classes de Chern de um produto tensorial ou de uma potência externa são expressas pelos polinômios universais explicados em (SGA 6 V 6.1).
+\end{enumerate}
+\end{statement}
+
+\emph{Demonstração.} Demonstremos, por exemplo, (ii); as outras afirmações são vistas de forma analogo. Usando o esquema de bandeiras de $E$, reduz-se ao caso em que $E$ admita uma filtração com coeficientes inversos $L_i$. Então a afirmação segue-se do bem conhecido isomorfismo
+\[
+\Lambda^r(E)\simeq\bigotimes_i (L_i).
+\]

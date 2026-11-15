@@ -1,0 +1,62 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 8797--8856 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\subsubsection*{2.2. Imagens diretas superiores}
+
+Seja
+\[
+f:X\longrightarrow Y
+\]
+um morfismo separado de tipo finito de pré-esquemas localmente noetherianos. Recordemos o resultado seguinte de cohomologia étale (SGA 4 XVII; para o caso próprio, cf. SGA 4 XIV 1.1):
+
+\begin{statement}{Lema 2.2.1}
+Sejam \(A\) um anel comutativo anulado por um inteiro \(n\) não nulo e \(M\) um \((A,\Ab(X))\)-módulo construtível. Para todo inteiro \(i\), o feixe
+\[
+\R^i_!f(M)
+\]
+é um \((A,\Ab(Y))\)-módulo construtível.
+\end{statement}
+
+O lema seguinte deduz-se aplicando (V 5.3.1) após restringir aos abertos noetherianos de \(Y\):
+
+\begin{statement}{Lema 2.2.2}
+Para todo inteiro \(i\) e todo \((AR,\mathbb Z_\ell)\)-feixe construtível \(F\) sobre \(X\), o sistema projetivo
+\[
+\R^i_!f(F)
+\]
+é um \((AR,\mathbb Z_\ell)\)-feixe construtível.
+\end{statement}
+
+Dito isto, o \(\delta\)-funtor exato
+\[
+(\R^i_!f)_{i\in\mathbb Z}:\Ab(X)\longrightarrow \Ab(Y)
+\]
+se prolonga de maneira evidente a um \(\delta\)-funtor exato, denotado da mesma forma,
+\[
+\Hom(\mathbb N^\circ,\Ab(X))\longrightarrow \Hom(\mathbb N^\circ,\Ab(Y)),
+\]
+que fornece por restrição um \(\delta\)-funtor exato
+\[
+U(X)\longrightarrow U(Y).
+\tag{1}
+\]
+Por outro lado, os funtores \(\R^i_!f\) transformam um sistema projetivo localmente \(AR\)-nulo em um sistema projetivo localmente \(AR\)-nulo, de modo que, por passagem ao quociente, o \(\delta\)-funtor (1) fornece um \(\delta\)-funtor exato% CORRECCIÓN DE FUENTE n.º 60: notación «R^i_!f» (! bajo R) armonizada en seis apariciones de §2.1--2.2 (L8808--8849); el libro, pp. 274--275, pone R^i_! f (! bajo R) en todas partes, al igual que el resto del .tex (L8861+, todo XV); estas seis contenían «R^if_!» (! bajo f), en desacuerdo con el libro y con la convención dominante. Verificación a 200 dpi de pp. 274 y 275. 2026-07-03.
+\[
+(\R^i_!f)_{i\in\mathbb Z}:(AR,\mathbb Z_\ell)\text{-}\fc(X)
+\longrightarrow (AR,\mathbb Z_\ell)\text{-}\fc(Y).
+\]
+Usando agora a equivalência de categorias (1.5.5), este último \(\delta\)-funtor é interpretado como um \(\delta\)-funtor exato
+\[
+\mathbb Z_\ell\text{-}\fc(X)\longrightarrow \mathbb Z_\ell\text{-}\fc(Y).
+\]
+
+\begin{statement}{Definição 2.2.3}
+O funtor
+\[
+\R^i_!f:\mathbb Z_\ell\text{-}\fc(X)\longrightarrow \mathbb Z_\ell\text{-}\fc(Y)
+\]
+chama-se \(i\)-ésimo funtor de imagem direta com suportes próprios de \(f\).
+\end{statement}
+
+\begin{statement}{Observação}
+Supondo demonstrado o análogo do lema (2.2.1) para as imagens diretas superiores ordinárias quando \(X\) e \(Y\) são excelentes (o que está feito em característica zero (SGA 4 XIX 5.1)), definem-se do mesmo modo, neste caso, imagens diretas superiores em cohomologia \(\ell\)-ádica. Poder-se-ia desenvolver igualmente, neste quadro, o resultado do número seguinte.
+\end{statement}

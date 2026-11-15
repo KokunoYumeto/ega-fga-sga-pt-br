@@ -4,8 +4,8 @@ Traduções para o português brasileiro de obras de Alexander Grothendieck e de
 la géométrie algébrique* (FGA), completos; partes dos *Éléments de géométrie algébrique* (EGA, redigidos com a
 colaboração de Jean Dieudonné): EGA III, primeira parte, e EGA IV, terceira parte, completas, EGA II e o capítulo I
 de EGA I em fontes LaTeX, e seções isoladas de outras partes; e partes do *Séminaire de géométrie algébrique du Bois
-Marie* (SGA): SGA 4½ (*Cohomologie étale*, de Pierre Deligne) completo, as exposições VIII e IX de SGA 3 e as
-exposições III, III B, X e XV de SGA 5.
+Marie* (SGA): SGA 4½ (*Cohomologie étale*, de Pierre Deligne) completo, as exposições VIII e IX de SGA 3 e SGA 5
+completo.
 
 ## Como foi feito
 
@@ -104,8 +104,9 @@ A edição anterior, de 15 de outubro de 2026, está em [editions/FGA_current](e
   [PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-26-sga3.1/SGA3_TOMO_II_PTBR_ATUAL.pdf) ·
   [LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-10-26-sga3.1/SGA3_TOMO_II_PTBR_ATUAL.tex) ·
   [fontes](sources/SGA_3_Tome_II).
-- SGA 5, exposições III, III B, X e XV, com a matéria preliminar e os índices:
-  [PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-09-07-preview.1/SGA5_PTBR_R4_20260829.pdf) ·
+- SGA 5, completo (322 páginas), com as correções da verificação do texto francês com o impresso que um script
+  pôde situar (15 de novembro de 2026):
+  [PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-11-15-sga5/SGA5_PTBR_ATUAL.pdf) ·
   [fontes](sources/SGA_5).
 
 As versões anteriores estão nas [publicações do GitHub](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases).

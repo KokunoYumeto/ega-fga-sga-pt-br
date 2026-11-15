@@ -1,0 +1,42 @@
+% SOURCE_AUTHORITY: sga5_fr_workpass.tex, lines 6636--6675 (LF-normalized unit).
+% SOURCE_SHA256: 791F4EFFC5E02832D5D77ED03518C8156D6F07E4C8238B03545DB93D883FBB28
+\section*{Exposição V. Sistemas projetivos $J$-ádicos}
+\begin{center}por J.P. JOUANOLOU\end{center}
+
+Em toda a exposição, a letra $A$ designa um anel com unidade. A presente exposição destina-se a desenvolver um formalismo que será utilizado na exposição seguinte para o estudo da cohomologia $\ell$-ádica.
+
+\subsection*{1. Generalidades sobre as $A$-categorias abelianas}
+
+\begin{statement}{Definição 1.1}
+Chama-se $A$-categoria (resp. $A$-categoria abeliana) um par $(\cC,\rho)$ formado por uma categoria aditiva (resp. abeliana) $\cC$ e um homomorfismo de anéis
+\[
+\rho:A\longrightarrow \End(\id_{\cC})
+\]
+de $A$ no anel dos endomorfismos do funtor identidade de $\cC$ em $\cC$.
+\end{statement}
+
+Dadas duas $A$-categorias (resp. $A$-categorias abelianas) $(\cC,\rho)$ e $(\cC',\rho')$, chama-se morfismo de $A$-categorias (resp. de $A$-categorias abelianas) de $(\cC,\rho)$ em $(\cC',\rho')$ um funtor aditivo (resp. exato) $F:\cC\to\cC'$ tal que, para todo objeto $M$ de $\cC$ e todo elemento $a$ de $A$, se verifique a igualdade seguinte:
+\[
+F(\rho(a)_M)=\rho'(a)_{F(M)}.
+\]
+
+\subsubsection*{Exemplo 1.1.1}
+Seja $\cC$ uma categoria aditiva (resp. abeliana). Recordemos que se chama categoria dos $(A,\cC)$-módulos esquerdos, e se denota por $(A,\cC)$-mod, a categoria descrita do modo seguinte:
+\begin{enumerate}[label=(\roman*)]
+\item Seus objetos são os pares $(X,\alpha)$ formados por um objeto $X$ de $\cC$ e um morfismo de anéis
+\[
+\alpha:A\longrightarrow \Hom_{\cC}(X,X).
+\]
+\item Um morfismo $(X,\alpha)\to(Y,\beta)$ é um $\cC$-morfismo $u:X\to Y$ tal que, para todo elemento $a$ de $A$, o seguinte diagrama seja comutativo:
+\[
+\begin{tikzcd}
+X \arrow[r] \arrow[d,"\alpha(a)"'] & Y \arrow[d,"\beta(a)"]\\
+X \arrow[r] & Y .
+\end{tikzcd}
+\]
+\end{enumerate}
+A categoria $(A,\cC)$-mod é evidentemente uma $A^{\natural}$-categoria (resp. $A^{\natural}$-categoria abeliana), onde $A^{\natural}$ é o centro de $A$. Além disso, satisfaz as propriedades seguintes:
+\begin{enumerate}[label=(\alph*)]
+\item O funtor $(A,\cC)$-mod $\to\cC$ obtido esquecendo a estrutura de $A$-módulo comuta com os limites indutivos e projetivos.
+\item Seja $I$ uma categoria. Para que os $I$-limites indutivos (resp. projetivos) de $(A,\cC)$-mod sejam representáveis, basta que o sejam os $I$-limites indutivos (resp. projetivos) de $\cC$.
+\end{enumerate}
