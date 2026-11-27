@@ -1,0 +1,282 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./ptbr_original.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(./build_support.tex (<tex-resource>/book.cls
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+(<tex-resource>/bk11.clo))
+(<tex-resource>/fontenc.sty)
+(<tex-resource>/inputenc.sty)
+(<tex-resource>/lmodern.sty)
+(<tex-resource>/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(<tex-resource>/amstext.sty
+(<tex-resource>/amsgen.sty))
+(<tex-resource>/amsbsy.sty)
+(<tex-resource>/amsopn.sty))
+(<tex-resource>/amssymb.sty
+(<tex-resource>/amsfonts.sty))
+(<tex-resource>/amsthm.sty)
+(<tex-resource>/mathrsfs.sty)
+(<tex-resource>/mathtools.sty
+(<tex-resource>/keyval.sty)
+(<tex-resource>/calc.sty)
+(<tex-resource>/mhsetup.sty))
+(<tex-resource>/geometry.sty
+(<tex-resource>/ifvtex.sty
+(<tex-resource>/iftex.sty)))
+(<tex-resource>/microtype.sty
+(<tex-resource>/etoolbox.sty)
+(<tex-resource>/microtype-pdftex.def)
+(<tex-resource>/microtype.cfg))
+(<tex-resource>/array.sty)
+(<tex-resource>/longtable.sty)
+(<tex-resource>/enumitem.sty)
+(<tex-resource>/tikz-cd.sty
+(<tex-resource>/tikz.sty
+(<tex-resource>/pgf.sty
+(<tex-resource>/pgfrcs.sty
+(<tex-resource>/pgfutil-common.tex)
+(<tex-resource>/pgfutil-latex.def)
+(<tex-resource>/pgfrcs.code.tex
+(<tex-resource>/pgf.revision.tex)))
+(<tex-resource>/pgfcore.sty
+(<tex-resource>/graphicx.sty
+(<tex-resource>/graphics.sty
+(<tex-resource>/trig.sty)
+(<tex-resource>/graphics.cfg)
+(<tex-resource>/pdftex.def)))
+(<tex-resource>/pgfsys.sty
+(<tex-resource>/pgfsys.code.tex
+(<tex-resource>/pgfkeys.code.tex
+(<tex-resource>/pgfkeyslibraryfiltered
+.code.tex)) (<tex-resource>/pgf.cfg)
+(<tex-resource>/pgfsys-pdftex.def
+(<tex-resource>/pgfsys-common-pdf.de
+f)))
+(<tex-resource>/pgfsyssoftpath.code.
+tex)
+(<tex-resource>/pgfsysprotocol.code.
+tex)) (<tex-resource>/xcolor.sty
+(<tex-resource>/color.cfg)
+(<tex-resource>/mathcolor.ltx))
+(<tex-resource>/pgfcore.code.tex
+(<tex-resource>/pgfmath.code.tex
+(<tex-resource>/pgfmathutil.code.tex)
+(<tex-resource>/pgfmathparser.code.tex)
+(<tex-resource>/pgfmathfunctions.code.tex)
+(<tex-resource>/pgfmathfunctions.basic.code
+.tex)
+(<tex-resource>/pgfmathfunctions.trigonomet
+ric.code.tex)
+(<tex-resource>/pgfmathfunctions.random.cod
+e.tex)
+(<tex-resource>/pgfmathfunctions.comparison
+.code.tex)
+(<tex-resource>/pgfmathfunctions.base.code.
+tex)
+(<tex-resource>/pgfmathfunctions.round.code
+.tex)
+(<tex-resource>/pgfmathfunctions.misc.code.
+tex)
+(<tex-resource>/pgfmathfunctions.integerari
+thmetics.code.tex)
+(<tex-resource>/pgfmathcalc.code.tex)
+(<tex-resource>/pgfmathfloat.code.tex))
+(<tex-resource>/pgfint.code.tex)
+(<tex-resource>/pgfcorepoints.code.te
+x)
+(<tex-resource>/pgfcorepathconstruct.
+code.tex)
+(<tex-resource>/pgfcorepathusage.code
+.tex)
+(<tex-resource>/pgfcorescopes.code.te
+x)
+(<tex-resource>/pgfcoregraphicstate.c
+ode.tex)
+(<tex-resource>/pgfcoretransformation
+s.code.tex)
+(<tex-resource>/pgfcorequick.code.tex
+)
+(<tex-resource>/pgfcoreobjects.code.t
+ex)
+(<tex-resource>/pgfcorepathprocessing
+.code.tex)
+(<tex-resource>/pgfcorearrows.code.te
+x)
+(<tex-resource>/pgfcoreshade.code.tex
+)
+(<tex-resource>/pgfcoreimage.code.tex
+)
+(<tex-resource>/pgfcoreexternal.code.
+tex)
+(<tex-resource>/pgfcorelayers.code.te
+x)
+(<tex-resource>/pgfcoretransparency.c
+ode.tex)
+(<tex-resource>/pgfcorepatterns.code.
+tex)
+(<tex-resource>/pgfcorerdf.code.tex))
+)
+(<tex-resource>/pgfmoduleshapes.code.tex
+) (<tex-resource>/pgfmoduleplot.code.tex
+)
+(<tex-resource>/pgfcomp-version-0-65
+.sty)
+(<tex-resource>/pgfcomp-version-1-18
+.sty)) (<tex-resource>/pgffor.sty
+(<tex-resource>/pgfkeys.sty
+(<tex-resource>/pgfkeys.code.tex))
+(<tex-resource>/pgfmath.sty
+(<tex-resource>/pgfmath.code.tex))
+(<tex-resource>/pgffor.code.tex))
+(<tex-resource>/tikz.code.tex
+
+(<tex-resource>/pgflibraryplothandlers
+.code.tex)
+(<tex-resource>/pgfmodulematrix.code.tex
+)
+(<tex-resource>/tik
+zlibrarytopaths.code.tex)))
+(<tex-resource>/tikzlibrarycd.code.tex
+(<tex-resource>/tik
+zlibrarymatrix.code.tex)
+(<tex-resource>/tik
+zlibraryquotes.code.tex)
+(<tex-resource>/pgflibraryarrows.meta.
+code.tex)))
+(<tex-resource>/tik
+zlibraryarrows.code.tex
+(<tex-resource>/pgflibraryarrows.code.
+tex))
+(<tex-resource>/tik
+zlibrarypositioning.code.tex)
+(<tex-resource>/fancyhdr.sty)
+(<tex-resource>/hyperref.sty
+(<tex-resource>/kvsetkeys.sty)
+(<tex-resource>/kvdefinekeys.sty)
+(<tex-resource>/pdfescape.sty
+(<tex-resource>/ltxcmds.sty)
+(<tex-resource>/pdftexcmds.sty
+(<tex-resource>/infwarerr.sty)))
+(<tex-resource>/hycolor.sty)
+(<tex-resource>/nameref.sty
+(<tex-resource>/refcount.sty)
+(<tex-resource>/gettitlestring.sty
+(<tex-resource>/kvoptions.sty)))
+(<tex-resource>/stringenc.sty)
+(<tex-resource>/pd1enc.def)
+(<tex-resource>/intcalc.sty)
+(<tex-resource>/puenc.def)
+(<tex-resource>/url.sty)
+(<tex-resource>/bitset.sty
+(<tex-resource>/bigintcalc.sty))
+(<tex-resource>/atbegshi-ltx.sty))
+(<tex-resource>/hpdftex.def
+(<tex-resource>/atveryend-ltx.sty)
+(<tex-resource>/rerunfilecheck.sty
+(<tex-resource>/uniquecounter.sty)))
+(<tex-resource>/bookmark.sty
+(<tex-resource>/bkm-pdftex.def))
+(<tex-resource>/babel.sty
+(<tex-resource>/txtbabel.def)
+(<tex-resource>/nil.ldf))
+(<tex-resource>/babel-brazilian.tex)
+) (<tex-resource>/t1lmr.fd)
+(<tex-resource>/l3backend-pdftex.def)
+(./ptbr_original.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(<tex-resource>/mt-cmr.cfg)
+(<tex-resource>/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (<tex-resource>/epstopdf-base.sty
+(<tex-resource>/grfext.sty)
+(<tex-resource>/epstopdf-sys.cfg))
+(<tex-resource>/ts1lmr.fd)
+[1{tex-cache/maps/pdftex.map}{<tex-resource>/shar
+e/texmf/fonts/enc/dvips/lm/lm-ec.enc}{<tex-resource>/lm-ts
+1.enc}]
+[1]
+[2] (<tex-resource>/ot1lmr.fd)
+(<tex-resource>/omllmm.fd)
+(<tex-resource>/omslmsy.fd)
+(<tex-resource>/omxlmex.fd)
+(<tex-resource>/umsa.fd)
+(<tex-resource>/mt-msa.cfg)
+(<tex-resource>/umsb.fd)
+(<tex-resource>/mt-msb.cfg)
+(<tex-resource>/ursfs.fd)
+[4{<tex-resource>/lm-mathit.enc}{<tex-resource>/en
+c/dvips/lm/lm-mathex.enc}] (<tex-resource>/t1lmtt.fd)
+[5] (.<tex-resource>/body.tex
+(.<tex-resource>/01_apertura_hasta_corolario_1_3.tex
+[1{<tex-resource>/lm-rm.enc}{<tex-resource>/dv
+ips/lm/lm-mathsy.enc}]
+[2]) (.<tex-resource>/02_corolario_1_4_hasta_observacion_1_7_4.tex)
+(.<tex-resource>/03_seccion_2.tex
+[3]) (.<tex-resource>/04_seccion_3.tex
+[4]
+[5]) (.<tex-resource>/05_seccion_4_parte_1.tex
+[6]
+[7]) (.<tex-resource>/06_seccion_4_continuacion.tex)
+(.<tex-resource>/07_seccion_5.tex
+[8]
+[9]
+[10]) (.<tex-resource>/08_seccion_6_parte_1.tex
+[11]) (.<tex-resource>/09_seccion_6_parte_2.tex
+[12]
+[13]) (.<tex-resource>/10_seccion_7_parte_1.tex
+[14]
+[15] (<tex-resource>/ueuf.fd)
+(<tex-resource>/mt-euf.cfg)
+[16]) (.<tex-resource>/11_seccion_7_parte_2_y_bibliografia.tex
+[17]
+[18])) (.<tex-resource>/body.tex
+(.<tex-resource>/01_apertura_y_seccion_1.tex
+[19]
+[20]
+[21]) (.<tex-resource>/02_seccion_2.tex
+[22]
+[23]) (.<tex-resource>/03_seccion_3.tex
+[24]
+[25]) (.<tex-resource>/04_seccion_4_parte_1.tex
+[26]
+[27]) (.<tex-resource>/05_seccion_4_parte_2.tex
+[28]
+[29]) (.<tex-resource>/06_seccion_5.tex
+[30]
+[31]) (.<tex-resource>/07_seccion_6.tex
+[32]
+[33]
+[34]) (.<tex-resource>/08_seccion_7.tex
+[35]
+[36]) (.<tex-resource>/09_seccion_8_y_bibliografia.tex
+[37])) (.<tex-resource>/body.tex
+(.<tex-resource>/01_indice_de_notaciones.tex))
+[38] (./ptbr_original.aux) )<<tex-resource>/a
+msfonts/euler/eufm10.pfb><<tex-resource>/lmbx10.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmbx12.pfb><<tex-resource>/p
+ublic/lm/lmbx9.pfb><<tex-resource>/lmex10.pfb><<tex-resource>/sha
+re/texmf/fonts/type1/public/lm/lmmi10.pfb><<tex-resource>/public/
+lm/lmmi12.pfb><<tex-resource>/lmmi5.pfb><<tex-resource>/tex
+mf/fonts/type1/public/lm/lmmi6.pfb><<tex-resource>/lmmi
+7.pfb><<tex-resource>/lmmi8.pfb><<tex-resource>/fonts
+<tex-resource>/lmmi9.pfb><<tex-resource>/lmr10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmr12.pfb><<tex-resource>/p
+ublic/lm/lmr17.pfb><<tex-resource>/lmr6.pfb><<tex-resource>/share
+<tex-resource>/lmr7.pfb><<tex-resource>/l
+mr8.pfb><<tex-resource>/lmr9.pfb><<tex-resource>/font
+s/type1/public/lm/lmri10.pfb><<tex-resource>/lmri8.pfb>
+<<tex-resource>/lmsy10.pfb><<tex-resource>/type
+1/public/lm/lmsy5.pfb><<tex-resource>/lmsy6.pfb><<tex-resource>/s
+hare/texmf/fonts/type1/public/lm/lmsy7.pfb><<tex-resource>/public
+<tex-resource>/lmsy8.pfb><<tex-resource>/lmsy9.pfb><<tex-resource>/tex
+mf/fonts/type1/public/lm/lmtt10.pfb><<tex-resource>/type1/
+public/amsfonts/symbols/msam10.pfb><<tex-resource>/p
+ublic/amsfonts/symbols/msbm10.pfb><<tex-resource>/pu
+blic/rsfs/rsfs10.pfb>
+Output written on ptbr_original.pdf (43 pages, 703367 bytes).
+Transcript written on ptbr_original.log.

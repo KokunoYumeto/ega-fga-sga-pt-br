@@ -1,0 +1,898 @@
+{
+  "created_utc": "2026-11-27 18:47:26 UTC",
+  "mode": "final",
+  "checkpoint": null,
+  "base_attachment": "SGA3_PTBR_VIII_IX_1970.zip",
+  "expected_source_count": 26,
+  "expected_sources_omitted_from_this_package": [],
+  "included": [
+    {
+      "file": "CHECK_EVENTS.tsv",
+      "bytes": 36845,
+      "sha256": "feaa8904f886901fbac220670f31f71f22ccc95c1427def2d0a32c8f46acd529",
+      "sanitizations": 0
+    },
+    {
+      "file": "CHECK_RECORD.md",
+      "bytes": 62712,
+      "sha256": "08fd97e6903466fd47b46746ad436199283660f8f3ca66dbb0e3cb627931f98e",
+      "sanitizations": 0
+    },
+    {
+      "file": "CORRECTIONS.tsv",
+      "bytes": 512432,
+      "sha256": "9d64a07bd13e3ed2e094a60058259e9a359fb7e2a7b7c590c9fd4a1a0333a36d",
+      "sanitizations": 0
+    },
+    {
+      "file": "PDF_CHECK.md",
+      "bytes": 5551,
+      "sha256": "2d050ef314eab0401d194441ce4aaccea8284ab84463ca4d751a9936ddb27d0e",
+      "sanitizations": 0
+    },
+    {
+      "file": "README.md",
+      "bytes": 9776,
+      "sha256": "ad14cb5e1b4d0203faa89c4a6f747f7150f0e5b76229ce9c26af6c91a4990ec6",
+      "sanitizations": 0
+    },
+    {
+      "file": "pdf/BUILD_SUMMARY.json",
+      "bytes": 965,
+      "sha256": "30c999e1f207ee63c4cb50d1dd79384c71be4d394641c8b3ab265fa80f5e1b28",
+      "sanitizations": 0
+    },
+    {
+      "file": "pdf/ptbr_current.log",
+      "bytes": 36620,
+      "sha256": "ce5719781f40ad9199e77bae3b44bd3b8c089dca91f0c02ddd199db7dddd1f71",
+      "sanitizations": 0
+    },
+    {
+      "file": "pdf/ptbr_current.pass-1.txt",
+      "bytes": 8789,
+      "sha256": "35cdfe55f9e8448ebd7d11e67db7aad67458fa63ccaed94d580fc298f99e936d",
+      "sanitizations": 0
+    },
+    {
+      "file": "pdf/ptbr_current.pass-2.txt",
+      "bytes": 8789,
+      "sha256": "35cdfe55f9e8448ebd7d11e67db7aad67458fa63ccaed94d580fc298f99e936d",
+      "sanitizations": 0
+    },
+    {
+      "file": "pdf/ptbr_current.pdf",
+      "bytes": 703367,
+      "sha256": "645e240b7e2ddbce3a62bd4a980dcdd7ac376bb3aa83ed573b14b05b338ecc2b",
+      "sanitizations": 0
+    },
+    {
+      "file": "pdf/ptbr_original.log",
+      "bytes": 36626,
+      "sha256": "992e9c3582b54abf24cd338893f3e4781415c8d6df6baf9eaee749e8b17b6ecd",
+      "sanitizations": 0
+    },
+    {
+      "file": "pdf/ptbr_original.pass-1.txt",
+      "bytes": 8800,
+      "sha256": "68f99343a5177d1caad459009e3c79745356e442bb1e0b31b8819159dcfe3636",
+      "sanitizations": 0
+    },
+    {
+      "file": "pdf/ptbr_original.pass-2.txt",
+      "bytes": 8800,
+      "sha256": "68f99343a5177d1caad459009e3c79745356e442bb1e0b31b8819159dcfe3636",
+      "sanitizations": 0
+    },
+    {
+      "file": "pdf/ptbr_original.pdf",
+      "bytes": 703367,
+      "sha256": "2667b62fbbd2ad60ce239ab2b6494adc322f55ae700fb719527ea42343853c9a",
+      "sanitizations": 0
+    },
+    {
+      "file": "progress.log",
+      "bytes": 3255,
+      "sha256": "70ab593c64f36b3d164d58ba104eeef4202b39e4ba2b4f211d67810a9c28347f",
+      "sanitizations": 0
+    },
+    {
+      "file": "records/BUILD_SETUP.md",
+      "bytes": 10243,
+      "sha256": "2ec93f2ea000fc257bc26596cf79afd341d52e15d958244903c89a0bd9dd7b0a",
+      "sanitizations": 0
+    },
+    {
+      "file": "records/CHECKPOINTS.json",
+      "bytes": 890,
+      "sha256": "da1204acc7045b3711fd0d1e1d0b44b6dd10dadb3f47431c9054d332c438d9a6",
+      "sanitizations": 0
+    },
+    {
+      "file": "records/DELIVERY_AUDIT.md",
+      "bytes": 11064,
+      "sha256": "1e91f3068606a93a7c9922cfe85bfb8bd5af7f83018939312c12e35a31a52962",
+      "sanitizations": 0
+    },
+    {
+      "file": "records/HISTORY_REPLAY.json",
+      "bytes": 14438,
+      "sha256": "4c02d75a09404fe490ed8d3dea315bb3aae63f4c9f5be386510e2d0b3ed6aeb9",
+      "sanitizations": 0
+    },
+    {
+      "file": "records/LABEL_INVENTORY.json",
+      "bytes": 47919,
+      "sha256": "dedd535833db646606cf084f3f4719a58e452d476e92a05f5983487392af4712",
+      "sanitizations": 0
+    },
+    {
+      "file": "records/MANIFEST_VERIFICATION.json",
+      "bytes": 10879,
+      "sha256": "af649b2a1d593d160a09ff3490f7f8056204a5c109203f6d4fcdc57888034171",
+      "sanitizations": 0
+    },
+    {
+      "file": "records/PDF_PAGE_MAP.tsv",
+      "bytes": 15541,
+      "sha256": "b0f83202f09b541933f2122fad36ff032ae35f01569a9405fa1f65e457c84ab3",
+      "sanitizations": 0
+    },
+    {
+      "file": "records/PDF_RENDER_METADATA.json",
+      "bytes": 48333,
+      "sha256": "06b51845255a3f057adf97bb3a3a5ab7bcacdcf624b6aae4cb95655f7a7c27eb",
+      "sanitizations": 0
+    },
+    {
+      "file": "records/PDF_VISUAL_CHECK.json",
+      "bytes": 1144,
+      "sha256": "46118ba4d1b690ca3a78fb919c71850931ddf3d00dd598d2dcf53cc515ab4a58",
+      "sanitizations": 0
+    },
+    {
+      "file": "records/REFERENCE_LINK_CANDIDATES.md",
+      "bytes": 1894,
+      "sha256": "677825c8b3b779958fe5614831ba4fe51ab4acd5b5a22154530af82a4cce3af0",
+      "sanitizations": 0
+    },
+    {
+      "file": "records/REMOVAL_CATALOG.json",
+      "bytes": 12184,
+      "sha256": "48762f87a390beea02b680489f31459dc05f901a7fa26beacde5fbafec582f95",
+      "sanitizations": 0
+    },
+    {
+      "file": "records/TECHNICAL_VALIDATION.json",
+      "bytes": 8178,
+      "sha256": "0fa8653551fcc2acfcae661ae20e24d4db5f632ecd7445b58acbe63406968691",
+      "sanitizations": 0
+    },
+    {
+      "file": "records/pages.json",
+      "bytes": 36115,
+      "sha256": "9d283642ec103c3a7de84028895f1148c7d69895e112a9ca79492b470490803f",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/audit.py",
+      "bytes": 5597,
+      "sha256": "94a41fa8e503ea0d4990336cd142be3d96d889b3179ece66140f21a5fdf6107a",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/build.py",
+      "bytes": 9538,
+      "sha256": "af57ef49b158c7d1ae929ffa77cd8336b46322727ffd0200cdf3268c17d58dcd",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/complete_audit.py",
+      "bytes": 4882,
+      "sha256": "432701683d1e39a2e68c7e0b26071c18be75574575fdef76bab40677d6f92a0e",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/final_text_review.py",
+      "bytes": 2179,
+      "sha256": "06fd56f1dbdf2a37d2f22a7c0de10e2e967cc150469adc199bc288307e30031d",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/final_text_review_02.py",
+      "bytes": 6867,
+      "sha256": "212c1b9650a756d6edfab02947b4dcb8ee8475d02fe4a9740b59ace1d50b0ad1",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/final_text_review_03.py",
+      "bytes": 6110,
+      "sha256": "d4c36967086b5b96acb6f903ea659b99924ac38dd3ff7eced676ce3a2382bfdb",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/finalize_sources.py",
+      "bytes": 5532,
+      "sha256": "3816e8c111977b09d2fc4bee8fb4d91b1796e6437c4894ea3cdaf80d89d0c6a9",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/package.py",
+      "bytes": 14187,
+      "sha256": "3d78b188ba5ba7360c91f95a6c8a4ae5d392d3820b3a1d3b6b796a336dd256e6",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_001.py",
+      "bytes": 2652,
+      "sha256": "c5726279747ce96c4901c037da7b7728dc5dced0164d0a9bf908da5b8769a332",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_002.py",
+      "bytes": 2002,
+      "sha256": "b76b75d451a472ccd0f1a1ebb42d338135615741b32ae9e55fe68a84b74c35d5",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_003.py",
+      "bytes": 2427,
+      "sha256": "5e0fea3ecf44ea1cc7fb41b9eb86d4c3022014799130f36131517cec324a6e13",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_004.py",
+      "bytes": 1956,
+      "sha256": "2dea698dc9adbc54a339999ea88cc0bc4b6794b777838a976ca8a01086869658",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_005.py",
+      "bytes": 1979,
+      "sha256": "206b36ff66e048842d1585399edf7032222c86b400c1862bab1b37ffbec1a44e",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_006.py",
+      "bytes": 1962,
+      "sha256": "7d03e0e2736ac3d5d457864a95b314c2b66108ddb062946f4eb0fe10d9567461",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_007.py",
+      "bytes": 1017,
+      "sha256": "307fdb16f98558b36cce6c4010045a86eb32f7b23f7bea3a959ff63343f210d7",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_008.py",
+      "bytes": 1679,
+      "sha256": "f83d20090b2a707887551761173d1eb2a310b47eec4c57c0677d57d4a1af88d5",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_009.py",
+      "bytes": 1847,
+      "sha256": "60c7a0a32d108b1af726703941d8f30265fb4fe37598fe859d82078831d395f4",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_010.py",
+      "bytes": 2152,
+      "sha256": "bbe97a67a30346aa7639a60dd84618499ba7eec17ead029187841f865eedb8c7",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_011.py",
+      "bytes": 1804,
+      "sha256": "ac418bfd9c945a690641ef01ab2f520c11457efa379ddc6948afddbac24b8e34",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_012.py",
+      "bytes": 1120,
+      "sha256": "d31b975906e4eb97a13e9445ac4758a7ca59894254a70488d9cf7e457e6e4a2e",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_013.py",
+      "bytes": 1699,
+      "sha256": "e7c163e88ba72bb5f0111a61d0ce7c72353615bfb00b7206bd47098665a7738f",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_014.py",
+      "bytes": 2300,
+      "sha256": "eda7dcfa93896ea96178e15538bb035eadb2221051c1504531d237be02e0f59a",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_015.py",
+      "bytes": 943,
+      "sha256": "515c49609b97240a4d8ac12d8ecfc98165f5206abe2b512ddce438603de3d5e4",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_016.py",
+      "bytes": 1248,
+      "sha256": "8a98a0aa741ec322f154beec21162464ecc5e4f004556550f71c81d710b4b4a0",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_017.py",
+      "bytes": 1755,
+      "sha256": "fc6f9ea283d938a8fd71e0efb1f1c1c048f699c9ec0039d0539c01839483e0b2",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_018.py",
+      "bytes": 1180,
+      "sha256": "391d126e83923845842032151f0b7064bf463e9defd01770875bc83bea20c63e",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_019.py",
+      "bytes": 926,
+      "sha256": "d1d37c3bab78cc8d07ab6e8c579a8cefa16d52afda9b94f8da39099716ed51b0",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_020.py",
+      "bytes": 2175,
+      "sha256": "6344d589df474a5191a2f45ae1e45c2580052652fd0dc0a01b87cfadee080298",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_021.py",
+      "bytes": 3547,
+      "sha256": "2d068b1f02de4442ad751ac9a03c8f8eb790965de6cd3d1f12fc286e9284e673",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_022.py",
+      "bytes": 1620,
+      "sha256": "1394d6f885f402384cba5bc1646bba29df5ce7d9d0d1f00ec8c01c98ebb80415",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_023.py",
+      "bytes": 1306,
+      "sha256": "3a12cb6f3550d3470f71224a4934c705ed914db490eb0f4f4765758b0635fbbb",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_024.py",
+      "bytes": 2321,
+      "sha256": "fbd387d0c8f0c865e0aed7cf4f99ef8308d0c773e95e5f131a1c613c8d124c3d",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_025.py",
+      "bytes": 4357,
+      "sha256": "4360f0561eccf5d428945cb5245b1d0bedb521f2691e9024a6d4c33ab9a334b0",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_026.py",
+      "bytes": 3018,
+      "sha256": "2b5aa1ae60ffff9ea7953ffabe86ad284525d87aa39dfa0488059c1c4d894637",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_027.py",
+      "bytes": 2850,
+      "sha256": "7c42e8830512ee7188cd960159de66d3c8435a19ebe8ac8c568f708007914fba",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_028.py",
+      "bytes": 2279,
+      "sha256": "2a4d0e114d141101724d00d9db7dddd49af7211fc245b5bb7f1527a76930975a",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_029.py",
+      "bytes": 2662,
+      "sha256": "07eb76ea38a4dce5b749ed04aa191f0dd86eb3caac80d9da9a04ba42f8029f5e",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_030.py",
+      "bytes": 3490,
+      "sha256": "3d1250576956ab8be139736781157b3b90b111b24810af57983684c45c987cac",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_031.py",
+      "bytes": 3242,
+      "sha256": "80afbf0696dcead0e917154a2f185a5d7ba15bc48ff81ca61f3013c06aa3b70b",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_032.py",
+      "bytes": 2163,
+      "sha256": "d85e8074a48dc92acf6d3ba09b7a1bdb0a10a0aa5c3beffccba23ef064a9e5d3",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_033.py",
+      "bytes": 2111,
+      "sha256": "40f17677e69194780550eb6639992767b35ce526d729f8f62e374036d7316f2b",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_034.py",
+      "bytes": 2697,
+      "sha256": "ed074c9155c49a0945232ff2a88dfe1af9eb52ad947dcea17c02f008fc6842a3",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_035.py",
+      "bytes": 2352,
+      "sha256": "d8c26a38cbf5356b7bd75272373694a533a8922f712fdab707cfa227a79ee70a",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_036.py",
+      "bytes": 2525,
+      "sha256": "3713e89224c2f8766962d0ac0e8ad777f3eb1826f0ecb28112f5c5c69552a642",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_037.py",
+      "bytes": 3701,
+      "sha256": "b4e81e7fa56990c1f8f321ee8db719167e2d71eee513e4a512803d26a97a8d5f",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_038.py",
+      "bytes": 2560,
+      "sha256": "64f318a918fb393a8742a28de4be9cba32a333c4d9d754aad60f754f1e4bfb56",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_039.py",
+      "bytes": 4831,
+      "sha256": "396f39e3b649bfa160e273b178ea7099881d7300194130d57b284a61fe915f51",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_040.py",
+      "bytes": 4924,
+      "sha256": "2a90083b1fb5a72840f8a337954648c9ebcf1d60596e7f1810a7db9f00868543",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_041.py",
+      "bytes": 4102,
+      "sha256": "9879f93112fc914a4135a9c9b96761ab589d4294417830bf46281d455183c023",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_042.py",
+      "bytes": 2961,
+      "sha256": "3a4ce6a6c8f26c752da19f436235f905038c2c7cbbcfe16adb5ffaad54139bd2",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_043.py",
+      "bytes": 3092,
+      "sha256": "8bb5ee224f8aee21acc8a0f26dd3488ee6e50c25758a60d81271ea79456b35ed",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_044.py",
+      "bytes": 3911,
+      "sha256": "ff9c2f43829b82cf58e0d35c5ffda9d51034a63e100a40a0f073f4ac0a4600ab",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_045.py",
+      "bytes": 4227,
+      "sha256": "20f51386428d13f39ee28d9eb5eca5ecddedeb78e25126be80b8519d7ef1ef85",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_046.py",
+      "bytes": 3363,
+      "sha256": "82c35d599eb25a2b37422072ddef44e2a2facd8f44a3329ee94ccc41c80d1ce5",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_047.py",
+      "bytes": 3360,
+      "sha256": "346bb954670de037d222459ae19989e989f6b74ad5e2c2a2785c32b925e33942",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_048.py",
+      "bytes": 3176,
+      "sha256": "bd31c1f663406b989d0fd2a9a4e99da099796f96a369bde6a87f7622349dafd8",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_049.py",
+      "bytes": 4805,
+      "sha256": "68726ce649a9aff00981e5ba6ced34da6b1d354b84e2c3da131c40838d9daaa8",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_050.py",
+      "bytes": 4681,
+      "sha256": "1e138f5abdfea9645e76a2db6fab01f187df68b020abede9ead5f5eb4521acd2",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_051.py",
+      "bytes": 3455,
+      "sha256": "606521a832f8e143f524a8ac871b259fe6a5dc8fabcd584e293832f5c4211f0d",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_052.py",
+      "bytes": 3708,
+      "sha256": "067153cef1f22bf3b1b056c0fdbf5614881966344b386a71524a81367212fb47",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_053.py",
+      "bytes": 4098,
+      "sha256": "ba445aee1e869d5a92339375f816f59879482b82fdbc8606fc8fa9c0b9732dfc",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_054.py",
+      "bytes": 4930,
+      "sha256": "6d60aed5090ffae2700dc75df2d0922912f7da6d98f0e490ea5bb4ed78baff72",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_055.py",
+      "bytes": 3398,
+      "sha256": "f0d63c8baf450837835042ba2f8ef14b511f7ed2da127eb6a9a994d1fa2d5257",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_056.py",
+      "bytes": 3958,
+      "sha256": "c23ea89429e8fc3cddf3562ebfdc414acbc84088b184e1260b4e95a2cd69e091",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_057.py",
+      "bytes": 4122,
+      "sha256": "d3e55cf88edcff6ae3d8613c9962556d549a8570e94c4c7a4e2860166d218a67",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_058.py",
+      "bytes": 4106,
+      "sha256": "a1067c7691a67cdb8429a86ff301033c3b13f516a7336ecdc9e3e6716f49a343",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_059.py",
+      "bytes": 3771,
+      "sha256": "bcabf5bb7b16d5e070e93d11ffb201798a840d01338a09b594894b790fae46f9",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_060.py",
+      "bytes": 3951,
+      "sha256": "ee0cd293c720cf5fd47346ec3d3d70b9ba90437993f796906734579b6f94a3c6",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_061.py",
+      "bytes": 3819,
+      "sha256": "dd615098573f382d33ce9221b66faa2059a6c316f636b51a21f4535ec45484ee",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_062.py",
+      "bytes": 3523,
+      "sha256": "0514e33be4dc2caf38ed1942d838930c4ae77d67190134f5c4eca11636e2428b",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_063.py",
+      "bytes": 3969,
+      "sha256": "126d69c361d72c08945072f985ee23b9aba7b0dec9a3e14d4c5cd00234599195",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_064.py",
+      "bytes": 3529,
+      "sha256": "da6f7156b2ac9a1b6d8cc4bad13bde3c8edd3aba7fbd01411bf3c5abfadc5d18",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_065.py",
+      "bytes": 4072,
+      "sha256": "be03396281835debcba390d0be5a2da718eb53f4090770ab39619335f3afab4d",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_066.py",
+      "bytes": 3480,
+      "sha256": "9ce3f4923e2fa8be10bf2ce732a26ebc1b9cb0fb7b1e48be0549954a55c4d0d3",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_067.py",
+      "bytes": 3455,
+      "sha256": "21181d7fb481884e0d20e5e555a6f5128b0c00c6ea5c2519d23a0df2fab7b944",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_068.py",
+      "bytes": 3511,
+      "sha256": "27ef949f5819e590d7a9c19971bc625b4db73f76beb31301b5b4615b27cd8dbf",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_069.py",
+      "bytes": 2713,
+      "sha256": "6ba357b30b350c0d3c8deec19a8c4d46760428bc3740c916ee95420db3443949",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_070.py",
+      "bytes": 2876,
+      "sha256": "be92e606d6cfd1369054458f286e16cffd1598adf0f35bf8e782ac978dd72cb7",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_071.py",
+      "bytes": 2224,
+      "sha256": "11e2acc29a70d2a9ba43d6c5fa61095bd6eb262e9afc61a36ec0cb2754b26244",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_072.py",
+      "bytes": 3383,
+      "sha256": "2f23ed86aa433be04051a2fcc9d52a9114a5957afb9e66de41eb9c1f64ccac16",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_073.py",
+      "bytes": 3307,
+      "sha256": "88d1c0aa24398f804500de03e01277d22b169afeb2cdb7c80695cee2f910a085",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_074.py",
+      "bytes": 4206,
+      "sha256": "0f386753a215119568c69ae9b1174f635f31c59760d4f7c7687e626207354b91",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_075.py",
+      "bytes": 3883,
+      "sha256": "cd3bcc17c6d8d77de7caadfe27fa5e4b43f75bd7b013db42468cb5db86bfecce",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/page_076.py",
+      "bytes": 2134,
+      "sha256": "c8b1fbf39cb09f3585a9aa1b855a86d5f3c8b533def58a33357ae1faeffd94c5",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/refresh_pdf_renders.py",
+      "bytes": 9184,
+      "sha256": "8725cd9751725c8d12d754e4cee973e3e2f81881758d4fbb38803e411398d519",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/render_pdf.py",
+      "bytes": 5896,
+      "sha256": "68a404c3716fe315fe3b24d7e6c65103b9b96ceec711fbbcb7292e90dd29105f",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/repair_inline_math.py",
+      "bytes": 2064,
+      "sha256": "a7c933de88a62f34ab2ce885ae0d3b0fbcd3318799b94163d8b6300b9b76de6b",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/replay_corrections.py",
+      "bytes": 8486,
+      "sha256": "b3d3e9e943329e5fc5c1b8c930b990029bcdaa03e2e68713ee87ec28a8edcb4e",
+      "sanitizations": 0
+    },
+    {
+      "file": "scripts/validate.py",
+      "bytes": 24267,
+      "sha256": "7b8ff825b9c0045e2781b5893e2a21a748f3a0e99348d3ccef707f00a1cb23a2",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/08_expose_viii/body.tex",
+      "bytes": 770,
+      "sha256": "29ab4e58365e5831aea8520274ef5044a646ea0798ea35bf6aedf132e59af81c",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+      "bytes": 9038,
+      "sha256": "2ddc7f2500ed55c1a859284243756438dcc0b008ba6370dbbff4e48a32875dbc",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+      "bytes": 3020,
+      "sha256": "15f5d63df338b6ba4bdce880d550af023c730432def752b916af8b9b2c8ac28d",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/08_expose_viii/components/03_seccion_2.tex",
+      "bytes": 3601,
+      "sha256": "d466d9b9ef3ad5ebb1f9d508e73f80435996166591c0fb843050ef9956a8814c",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/08_expose_viii/components/04_seccion_3.tex",
+      "bytes": 8567,
+      "sha256": "7119132ba84130fce82d79307d7b35c730e49e4f3d52342298dfc47aa90e9bc4",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/08_expose_viii/components/05_seccion_4_parte_1.tex",
+      "bytes": 9017,
+      "sha256": "c1f6071c5fc3805c0638deb3358da9f5c9cc2307adda9a21ee06300f33acc1bf",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/08_expose_viii/components/06_seccion_4_continuacion.tex",
+      "bytes": 1440,
+      "sha256": "bfc348ce2476ccbea9138a03c75de5b66f1776501d024413a48fb86f98aa438c",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/08_expose_viii/components/07_seccion_5.tex",
+      "bytes": 8972,
+      "sha256": "ebbb7cfb500de27130fcfec9da4a1c405d507127371ea396bf318d82f787aa93",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/08_expose_viii/components/08_seccion_6_parte_1.tex",
+      "bytes": 7835,
+      "sha256": "7207b0961267d90d87e91a1cc6ba892cadf47de64dc7ec9c7ef3814784399183",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/08_expose_viii/components/09_seccion_6_parte_2.tex",
+      "bytes": 7662,
+      "sha256": "35c6cb60e033ce44956b008b45c9cc3d9d8cc98a2b23b46533c76d4cadf6e8e6",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/08_expose_viii/components/10_seccion_7_parte_1.tex",
+      "bytes": 13025,
+      "sha256": "4113b5c7b63f04611226ca2a12c285f89b91fc15be2714b7fdee57f1e9e28c7b",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+      "bytes": 13923,
+      "sha256": "6de157428f5bdf224a13085cc6b3be2c49a979458664cbabffb9cca30c0df49d",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/09_expose_ix/body.tex",
+      "bytes": 575,
+      "sha256": "2eac7505bd480a3c39068e8278112e3254eb8cb218ed73a30c7635b12b91694f",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/09_expose_ix/components/01_apertura_y_seccion_1.tex",
+      "bytes": 9391,
+      "sha256": "a850f71c5faef8c506ef18b886eee6fb51b82fb7c65d073f2fee6eb1ebfb6faa",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/09_expose_ix/components/02_seccion_2.tex",
+      "bytes": 15304,
+      "sha256": "2971028a3bad8e02599166a5ba4c41216ff794cf5b8b1a80d8f0547c6d992b72",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/09_expose_ix/components/03_seccion_3.tex",
+      "bytes": 11136,
+      "sha256": "025784056be648c7fd4a7d396f997dc80b9bd2a8c3ade68415019a0414cdc76d",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/09_expose_ix/components/04_seccion_4_parte_1.tex",
+      "bytes": 10717,
+      "sha256": "5a45e8ac81a0c5947f4988ff5f811c561bd2517e14eb67d0f968bd59d01d0cd4",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/09_expose_ix/components/05_seccion_4_parte_2.tex",
+      "bytes": 12267,
+      "sha256": "065641ec352aa55b2abac386926b11a89f1e016fb553a21b98cf0ee75a1c03b6",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/09_expose_ix/components/06_seccion_5.tex",
+      "bytes": 12759,
+      "sha256": "9713bd54417669cec7b0831725d35eea9b134ca938f7a8a47f96d2ba9b659e6d",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/09_expose_ix/components/07_seccion_6.tex",
+      "bytes": 12737,
+      "sha256": "71e709721c9e5e6bb9d57d49b0d28dda6728af7d5c034277ae9df0ea831556ff",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/09_expose_ix/components/08_seccion_7.tex",
+      "bytes": 12266,
+      "sha256": "38896e71a4e465ebdc6018a764f735b7552ed764e06bd71b6a98d42a260064dc",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+      "bytes": 5560,
+      "sha256": "97db6582bc0ebb9d252935a1ee81d92074c06286c407e2d48875dcd0515d1cef",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/99_notation_index/body.tex",
+      "bytes": 137,
+      "sha256": "fbfeaee57df11ca5da52304603e2f42e9d68b0fb25017c57b8e99d9cac502ecd",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/99_notation_index/components/01_indice_de_notaciones.tex",
+      "bytes": 193,
+      "sha256": "357095f3f0943b984800cb43ee5af1f3781018eeef23b978cf0e9d0af0089f64",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/build_support.tex",
+      "bytes": 3481,
+      "sha256": "236d32c1827dc4b4b17cdb8b1f1c72e9cf8467788f6c44fe586efe725afdf411",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/ptbr_current.tex",
+      "bytes": 5125,
+      "sha256": "35ccfd1dbee5a4b78863044e9af98c66c029008029e05be325700cfa98c90cbb",
+      "sanitizations": 0
+    },
+    {
+      "file": "sources/ptbr_original.tex",
+      "bytes": 5125,
+      "sha256": "35ccfd1dbee5a4b78863044e9af98c66c029008029e05be325700cfa98c90cbb",
+      "sanitizations": 0
+    }
+  ],
+  "unchanged_attachment_files_omitted": [],
+  "excluded_private_files": [
+    {
+      "file": "scripts/__pycache__/audit.cpython-312.pyc",
+      "reason": "private input, cache, or inspection directory"
+    },
+    {
+      "file": "scripts/__pycache__/build.cpython-312.pyc",
+      "reason": "private input, cache, or inspection directory"
+    },
+    {
+      "file": "scripts/__pycache__/package.cpython-312.pyc",
+      "reason": "private input, cache, or inspection directory"
+    },
+    {
+      "file": "scripts/__pycache__/render_pdf.cpython-312.pyc",
+      "reason": "private input, cache, or inspection directory"
+    },
+    {
+      "file": "scripts/__pycache__/validate.cpython-312.pyc",
+      "reason": "private input, cache, or inspection directory"
+    }
+  ],
+  "restoration": "Self-contained final sources; attachment not required to build."
+}

@@ -1,10 +1,5 @@
-% Tradução brasileira revista a partir do workpass espanhol congelado;
-% a fonte permanece em source_es.
 % SGA 3, Exposé VIII, tradução brasileira.
-% Escopo: abertura e §1 até a demonstração do Corolário 1.3.
-% Autoridade: Polo--Gille Exp8-8nov09.pdf; edição original: LNM 152, pp. 1--5.
-% O TeX inglês é usado somente para
-% alinhamento estrutural; o PDF francês controla texto, fórmulas e notas.
+% Autoridade: LNM 152 (1970), pp. 1--5.
 
 \SGARefTarget{sga3:viii:chapter:viii}\chapter*{Exposé VIII\\Grupos diagonalizáveis}
 \addcontentsline{toc}{chapter}{Exposé VIII. Grupos diagonalizáveis}
@@ -12,63 +7,49 @@
   {EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS}
 
 \begin{center}
-  \textit{A. Grothendieck}
+  \textit{por A. Grothendieck}
 \end{center}
 
 \SGARefTarget{sga3:viii:section:1}\section*{1. Bidualidade}
 \addcontentsline{toc}{section}{1. Bidualidade}
 
 Seja \(\mathscr C\) uma categoria, que identificamos, como de costume, com uma
-subcategoria plena de
-\[
-  \widehat{\mathscr C}
-  =\operatorname{Hom}(\mathscr C^{\circ},\mathbf{Set})
-\]
+subcategoria plena de \(\widehat{\mathscr C}
+=\underline{\operatorname{Hom}}(\mathscr C,(\mathrm{Ens}))\)
 (cf. Exposé~I). Seja \(I\) um funtor-grupo comutativo, isto é, um objeto de
 \(\widehat{\mathscr C}\) munido de uma estrutura de grupo comutativo
-(cf. I, \SGARefLink{sga3:i:subsection:2-1}{2.1}).\footnote{Nota do editor:
-o original foi desenvolvido no que segue.} Para todo
-\(X\in\operatorname{Ob}(\widehat{\mathscr C})\), o objeto
-\(\operatorname{Hom}(X,I)\) é munido da estrutura de grupo
-comutativo induzida pela de \(I\). Para todo grupo \(G\) em
-\(\widehat{\mathscr C}\), ponhamos
+(loc. cit.). Para todo grupo \(G\) em \(\widehat{\mathscr C}\), ponhamos
 \[
-  D(G)=\operatorname{Hom}_{\mathrm{gr}}(G,I),
+  D(G)=\underline{\operatorname{Hom}}_{\mathrm{gr}}(G,I);
 \]
-o subobjeto de \(\operatorname{Hom}(G,I)\) definido, para todo
-\(S\in\operatorname{Ob}(\mathscr C)\), por
+desse modo se obtém um funtor contravariante \(D\) da categoria dos
+\(\widehat{\mathscr C}\)-grupos para a categoria dos
+\(\widehat{\mathscr C}\)-grupos comutativos. Por definição, para um objeto
+variável \(S\) de \(\mathscr C\), tem-se um isomorfismo funtorial:
 \SGARefTarget{sga3:viii:eq:1:x}
 \begin{equation}
   \tag{x}
   D(G)(S)=\operatorname{Hom}_{S\text{-}\mathrm{gr}}(G_S,I_S),
 \end{equation}
 onde \(G_S=G\times S\) e \(I_S=I\times S\) são considerados como
-\(S\)-grupos, isto é, como grupos em \(\widehat{\mathscr C}_{/S}\). Assim,
-\(D(G)\) é um subgrupo em \(\widehat{\mathscr C}\) de
-\(\operatorname{Hom}(G,I)\). Desse modo se obtém um funtor
-contravariante \(D\) da categoria de grupos em
-\(\widehat{\mathscr C}\) para a categoria de grupos comutativos em
-\(\widehat{\mathscr C}\).
-
-O segundo membro de \(\SGARefLink{sga3:viii:eq:1:x}{(x)}\) também pode ser
-interpretado como o subconjunto de \(\operatorname{Hom}(G\times S,I)\)
-formado pelos morfismos \(G\times S\to I\) que são «multiplicativos em
-relação ao primeiro argumento \(G\)». Por outro lado, as fórmulas anteriores
-continuam válidas quando \(S\) é um objeto qualquer de
-\(\widehat{\mathscr C}\), não necessariamente proveniente de \(\mathscr C\).
-
-Tomemos agora como \(S\) um grupo em \(\widehat{\mathscr C}\), que
-denotaremos por \(G'\). No primeiro membro
-\(\operatorname{Hom}(G',D(G))\) de
-\(\SGARefLink{sga3:viii:eq:1:x}{(x)}\), tomemos o subconjunto
-\(\operatorname{Hom}_{\mathrm{gr}}(G',D(G))\) formado pelos morfismos que
-respeitam as estruturas de grupo de \(G'\) e \(D(G)\).
+\(S\)-grupos, isto é, como grupos em \(\widehat{\mathscr C}_{/S}\).
+O segundo membro do isomorfismo anterior também pode ser interpretado como
+o subconjunto de \(\operatorname{Hom}(G\times S,I)\) formado pelos morfismos
+\(G\times S\to I\) que são «\emph{multiplicativos em relação ao primeiro
+argumento} \(G\)». Aliás, as fórmulas anteriores valem mais geralmente
+quando \(S\) é um objeto qualquer de \(\widehat{\mathscr C}\), não
+necessariamente proveniente de \(\mathscr C\). Se agora se toma como
+\(S\) um grupo em \(\widehat{\mathscr C}\), que denotaremos por \(G'\),
+então, no primeiro membro \(\operatorname{Hom}(G',D(G))\) de
+\(\SGARefLink{sga3:viii:eq:1:x}{(x)}\), pode-se distinguir o subconjunto
+\(\operatorname{Hom}_{\mathrm{gr}}(G',D(G))\) formado pelos morfismos
+que respeitam as estruturas de grupo de \(G'\) e \(D(G)\).
 
 Este corresponde ao subconjunto de \(\operatorname{Hom}(G\times G',I)\)
-formado pelos morfismos que são multiplicativos em relação a cada um dos
-dois argumentos, que podemos chamar de \emph{morfismos bilineares de
-\(G\times G'\) em \(I\)}, ou \emph{acoplamentos de \(G\) e \(G'\) com
-valores em \(I\)}. Tem-se, portanto,
+formado pelos morfismos que são multiplicativos em relação ao primeiro
+\emph{e} em relação ao segundo argumento, que se poderão chamar de morfismos
+bilineares de \(G\times G'\) em \(I\), ou acoplamentos de \(G\) e \(G'\)
+com valores em \(I\). Tem-se, portanto,
 \SGARefTarget{sga3:viii:eq:1:xx}
 \begin{equation}
   \tag{xx}
@@ -76,7 +57,7 @@ valores em \(I\)}. Tem-se, portanto,
   \xrightarrow{\ \sim\ }
   \operatorname{Hom}_{\mathrm{bil}}(G\times G',I),
 \end{equation}
-funtorialmente no par \((G,G')\). Como o segundo membro é simétrico em
+que é um isomorfismo funtorial no par \((G,G')\). Como o segundo membro é simétrico em
 \(G\) e \(G'\), deduz-se uma bijeção funtorial
 \SGARefTarget{sga3:viii:eq:1:xxx}
 \begin{equation}
@@ -85,89 +66,73 @@ funtorialmente no par \((G,G')\). Como o segundo membro é simétrico em
   \xrightarrow{\ \sim\ }
   \operatorname{Hom}_{\mathrm{gr}}(G,D(G')).
 \end{equation}
-Em outras palavras, dar um homomorfismo de grupos
-\(G'\to D(G)\) é o mesmo que dar um homomorfismo de grupos \(G\to D(G')\):
-ambos equivalem a dar um acoplamento \(G\times G'\to I\).
+Em outras palavras, «é o mesmo» dar um homomorfismo de grupos
+\(G'\to D(G)\), ou um homomorfismo de grupos \(G\to D(G')\),
+ambos se reduzindo de fato ao dado de um acoplamento \(G\times G'\to I\).
 
 Apliquemos isso ao caso \(G'=D(G)\) e ao homomorfismo identidade
-\(G'\to D(G)\). Obtém-se então um homomorfismo canônico
+\(G'\to D(G)\). Obtém-se então um \emph{homomorfismo canônico}
 \SGARefTarget{sga3:viii:eq:1:xxxx}
 \begin{equation}
   \tag{xxxx}
   G\longrightarrow D(D(G)).
 \end{equation}
 
-\medskip
-\noindent\SGARefTarget{sga3:viii:definition:1:0}\textbf{Definição 1.0.}
-\textit{Diz-se que o grupo \(G\) é \emph{reflexivo} (em relação a \(I\))
-se \SGARefLink{sga3:viii:eq:1:xxxx}{o homomorfismo anterior} é um
-isomorfismo. Em particular, isso implica que \(G\) é comutativo.}
-
-Obtém-se então:
-
-\medskip
-\noindent\SGARefTarget{sga3:viii:proposition:1:0:1}\textbf{Proposição 1.0.1.}
-\textit{O funtor \(D\) induz uma antiequivalência da categoria dos grupos
-reflexivos em \(\widehat{\mathscr C}\) consigo mesma.}
-
-Em particular, se \(G\) e \(H\) são grupos reflexivos, \(D\) induz um
-isomorfismo
+\SGARefTarget{sga3:viii:definition:1:0}
+Diz-se que \(G\) é \emph{reflexivo} (relativamente a \(I\)) se o
+homomorfismo anterior é um isomorfismo. Observe-se que isso implica que
+\(G\) é comutativo. \SGARefTarget{sga3:viii:proposition:1:0:1}Vê-se assim
+que \emph{o funtor \(D\) induz uma antiequivalência da categoria dos
+\(\widehat{\mathscr C}\)-grupos reflexivos consigo mesma}; em particular,
+se \(G,H\) são dois grupos reflexivos, \(D\) induz um \emph{isomorfismo}
 \[
   \operatorname{Hom}_{\mathrm{gr}}(G,H)
   \xrightarrow{\ \sim\ }
-  \operatorname{Hom}_{\mathrm{gr}}(D(H),D(G)).
+  \operatorname{Hom}_{\mathrm{gr}}(D(H),D(G))
 \]
-De fato, basta que \(H\) seja reflexivo, como decorre de
-\(\SGARefLink{sga3:viii:eq:1:xxx}{(xxx)}\).
+(basta mesmo que \(H\) seja reflexivo, como se vê pela fórmula
+\(\SGARefLink{sga3:viii:eq:1:xxx}{(xxx)}\)).
 
-\medskip
-\noindent\SGARefTarget{sga3:viii:definition:1:0:2}\textbf{Definição 1.0.2.}
-\textit{Como de costume, diz-se que um \(\mathscr C\)-grupo \(G\) é
-\emph{reflexivo} se é reflexivo como grupo em
-\(\widehat{\mathscr C}\), independentemente de \(D(G)\) ser ou não
-representável.}
-
-Assim, \(D\) fornece uma antiequivalência da categoria dos
-\(\mathscr C\)-grupos reflexivos \(G\) para os quais \(D(G)\) é
+\SGARefTarget{sga3:viii:definition:1:0:2}
+Como de costume, diremos então que um \(\mathscr C\)-grupo \(G\) é
+\emph{reflexivo} se é reflexivo como \(\widehat{\mathscr C}\)-grupo
+(sem nos preocuparmos com o fato de \(D(G)\) ser ou não representável).
+Obtém-se assim, por \(D\), uma antiequivalência da categoria dos
+\(\mathscr C\)-grupos reflexivos \(G\) tais que \(D(G)\) seja
 representável consigo mesma.
 
-\medskip
-\noindent\SGARefTarget{sga3:viii:remark:1:0:3}\textbf{Observação 1.0.3.}
-Para concluir estas generalidades, observemos que a formação do dual
-\(D(G)\) comuta com a extensão da base, a qual transforma, portanto,
+\SGARefTarget{sga3:viii:remark:1:0:3}
+Assinalemos, para concluir estas generalidades, que a formação dos duais
+\(D(G)\) comuta com a extensão da base, que transforma, portanto,
 grupos reflexivos em grupos reflexivos.
 
-No que segue, interessar-nos-á o caso em que
-\(\mathscr C=(\mathbf{Sch})_{/S}\) é a categoria dos pré-esquemas sobre
-\(S\), e \(I=\mathbf G_{m,S}\) é o «grupo multiplicativo sobre \(S\)»
-(cf. Exposé~I). Para todo grupo ordinário \(M\), tomemos o
-\(S\)-grupo constante \(M_S\). Para todo pré-esquema em grupos \(J\) sobre
-\(S\), tem-se um isomorfismo canônico, funtorial em \(M\) e \(J\) e
-compatível com a extensão da base,
+No que segue, interessar-nos-emos pelo caso em que
+\(\mathscr C=(\mathrm{Sch})_{/S}\) é a categoria dos pré-esquemas sobre
+\(S\), e \(I=\mathbf G_{m,S}\) é o «grupo multiplicativo sobre \(S\)»,
+cf. Exposé~I. Para todo grupo ordinário \(M\), consideramos o
+\(S\)-grupo \(M_S\). Vê-se imediatamente que, para todo pré-esquema em
+grupos \(I\) sobre \(S\), tem-se um isomorfismo canônico
+(funtorial em \(M,I\) e compatível com a extensão da base):
 \[
-  \operatorname{Hom}_{S\text{-}\mathrm{gr}}(M_S,J)
-  =\operatorname{Hom}_{\mathrm{gr}}(M,J(S)).
+  \operatorname{Hom}_{S\text{-}\mathrm{gr}}(M_S,I)
+  =\operatorname{Hom}_{\mathrm{gr}}(M,I(S)).
 \]
-
-Aplicando-o a \(J=I=\mathbf G_{m,S}\) e a um \(S'\) variável sobre \(S\),
-obtém-se um isomorfismo funtorial
+Aplicando isso a um \(S'\) variável sobre \(S\), obtém-se um isomorfismo
+funtorial
 \SGARefTarget{sga3:viii:eq:1:0:4}
-\begin{equation}
-  \tag{1.0.4}
-  D(M_S)(S')
-  \xrightarrow{\ \sim\ }
+\[
+  D(M_S)(S')\xrightarrow{\ \sim\ }
   \operatorname{Hom}_{\mathrm{gr}}(M,\mathbf G_m(S')).
-\end{equation}
-Recupera-se assim o funtor já considerado em I,
-\SGARefLink{sga3:i:subsection:4-4}{4.4}, denotado também por \(D_S(M)\),
-que é representável quando \(M\) é comutativo, pois
+\]
+Recupera-se o funtor já considerado no Exposé~I, também denotado por
+\(D_S(M)\), que é representável para \(M\) comutativo, pois
 \[
   D_S(M)=D(M_S)=\operatorname{Spec}\mathscr O_S(M),
 \]
 onde \(\mathscr O_S(M)\) denota a álgebra do grupo \(M\) com
-coeficientes em \(\mathscr O_S\). Observe-se ainda que, em geral,
-\(D(M)\) não se altera se \(M\) for substituído por sua abelianização, de modo
-que nada se perde ao supor que \(M\) é comutativo.
+coeficientes em \(\mathscr O_S\). (Observemos, aliás, no caso geral,
+que \(D(M)\) não se altera se substituímos \(M\) por \(M\) tornado
+abeliano, de modo que nada se perde ao supor \(M\) comutativo.)
 
 \medskip
 \noindent\SGARefTarget{sga3:viii:definition:1:1}\textbf{Definição 1.1.}
@@ -175,7 +140,7 @@ que nada se perde ao supor que \(M\) é comutativo.
 \emph{diagonalizável} se é isomorfo a um esquema da forma}
 \[
   D_S(M)=D(M_S)
-  =\operatorname{Hom}_{S\text{-}\mathrm{gr}}(M_S,\mathbf G_m)
+  =\underline{\operatorname{Hom}}_{S\text{-}\mathrm{gr}}(M_S,\mathbf G_m)
 \]
 \textit{para algum grupo comutativo \(M\). Diz-se que \(G\) é
 \emph{localmente diagonalizável} se todo ponto de \(S\) admite uma vizinhança
@@ -190,13 +155,11 @@ forma \(M_S\), onde \(M\) é um grupo comutativo ordinário. Então
 \[
   \Gamma\longrightarrow D(D(\Gamma))
 \]
-\textit{é um isomorfismo.\footnote{Nota do editor: foi acrescentada a frase
-seguinte.} Por conseguinte, o grupo diagonalizável \(D(M_S)\) também é
-reflexivo.}
+\textit{é um isomorfismo.}
 
-Levando em conta as definições, isso decorre do
-\SGARefLink{sga3:viii:corollary:1:3}{enunciado seguinte}, aplicado a um
-pré-esquema \(S'\) sobre \(S\).
+Levando em conta as definições, isso equivale ao
+\SGARefLink{sga3:viii:corollary:1:3}{enunciado seguinte} (que aplicaremos
+a um pré-esquema \(S'\) sobre \(S\)):
 
 \medskip
 \noindent\SGARefTarget{sga3:viii:corollary:1:3}\textbf{Corolário 1.3.}
@@ -211,21 +174,16 @@ equivalentemente, por uma única aplicação localmente constante de \(S\) em
 \emph{Demonstração.}
 Por definição,
 \[
-  \mathbf G_{m,S}
-  =\operatorname{GL}(1)_S
-  =\operatorname{Aut}_{\mathscr O_S\text{-}\mathrm{mod}}(\mathscr O_S).
+  \mathbf G_m
+  =\operatorname{GL}(1)
+  =\underline{\operatorname{Aut}}_{\mathscr O_S\text{-}\text{Módulo}}(\mathscr O_S),
 \]
 Portanto, dar um homomorfismo de grupos \(G\to\mathbf G_{m,S}\)
 equivale a munir \(\mathscr O_S\) de uma estrutura de
 \(G\)-\(\mathscr O_S\)-módulo compatível com sua estrutura natural de
-\(\mathscr O_S\)-módulo (cf. I,
-\SGARefLink{sga3:i:subsection:4-7}{4.7}). Por I,
-\SGARefLink{sga3:i:proposition:4-7-3}{4.7.3}, isso também equivale a dar
-uma graduação de tipo \(M\) em \(\mathscr O_S\), isto é, uma
-decomposição em soma direta
-\[
-  \mathscr O_S=\bigoplus_{m\in M}\mathscr L_m.
-\]
+\(\mathscr O_S\)-módulo (cf. I). Por loc. cit., isso também equivale a dar
+uma \emph{graduação de tipo} \(M\) em \(\mathscr O_S\), isto é, uma decomposição de \(\mathscr O_S\) em soma direta de módulos
+\(\mathscr L_m\) (\(m\in M\)).
 É bem sabido que um somando direto de um módulo localmente livre de tipo
 finito é localmente livre de tipo finito. Por conseguinte, perto de cada
 ponto de \(S\), cada \(\mathscr L_m\) é ou nulo, ou livre de posto
@@ -239,4 +197,4 @@ Consequentemente, dar um homomorfismo de grupos
 união de abertos \(S_m\), \(m\in M\), dois a dois disjuntos e, portanto,
 a dar uma aplicação localmente constante de \(S\) em \(M\). Isso prova
 o \SGARefLink{sga3:viii:corollary:1:3}{Corolário~1.3} e, consequentemente,
-o \SGARefLink{sga3:viii:theorem:1:2}{Teorema~1.2}. \qed
+o \SGARefLink{sga3:viii:theorem:1:2}{Teorema~1.2}.

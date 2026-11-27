@@ -1,0 +1,24 @@
+[
+  {
+    "file": "SGA3_PTBR_VIII_IX_1970_checkpoint_01.zip",
+    "due_utc": "2026-11-27 17:54:08 UTC",
+    "created_utc": "2026-11-27 17:54:19 UTC",
+    "persisted_utc": "2026-11-27 17:55:05 UTC",
+    "library_file_id": "libfile_913c1afa955c8191b3dfe97cf772b6d2",
+    "bytes": 231375,
+    "sha256": "4278d6caeb9c3ef5f0d2d17bf7dac03517ea11c27ec546ddafef0cdc0075fdd0",
+    "complete_pages": 52,
+    "next_due_utc": "2026-11-27 18:39:08 UTC"
+  },
+  {
+    "file": "SGA3_PTBR_VIII_IX_1970_checkpoint_02.zip",
+    "due_utc": "2026-11-27 18:39:08 UTC",
+    "created_utc": "2026-11-27 18:39:10 UTC",
+    "persisted_utc": "2026-11-27 18:39:26 UTC",
+    "library_file_id": "libfile_a8a2c76cc76c8191996db9025fb4c1ad",
+    "bytes": 1815444,
+    "sha256": "fab2668fbc3087359d71da69a573b4e2644fa70a471bbd933353d505e7f6c60f",
+    "complete_pages": 76,
+    "next_due_utc": "2026-11-27 19:24:08 UTC"
+  }
+]

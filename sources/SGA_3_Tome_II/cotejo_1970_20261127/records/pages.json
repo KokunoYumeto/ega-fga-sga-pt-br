@@ -1,0 +1,675 @@
+[
+  {
+    "page": 1,
+    "scan_page": 8,
+    "scope": "VIII, título, §1; definição de D e fórmula (x).",
+    "findings": "Texto cotejado integralmente. Retirados o desenvolvimento sobre Hom(X,I) e a nota editorial; restauradas a ausência de C oposta, a notação Hom interna, loc. cit. e a ordem de 1970. Não há enunciado numerado nesta página.",
+    "utc": "2026-11-27 17:11:36 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:35:37 UTC",
+      "corrections": [
+        "C0384",
+        "C0385"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 2,
+    "scan_page": 9,
+    "scope": "VIII, §1: (xx), (xxx), (xxxx), reflexividade e antiequivalência.",
+    "findings": "As três fórmulas, os argumentos e os índices foram revistos ampliados. Restaurado o texto contínuo, sem numerações editoriais 1.0 e 1.0.1, e a ênfase de 1970. Nenhum enunciado numerado impresso nesta página.",
+    "utc": "2026-11-27 17:12:15 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:35:37 UTC",
+      "corrections": [
+        "C0386",
+        "C0387",
+        "C0388",
+        "C0389"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 3,
+    "scan_page": 10,
+    "scope": "VIII, reflexividade representável, extensão da base e dual de M_S.",
+    "findings": "Eliminadas as numerações editoriais 1.0.2–1.0.4; a notação I, as três fórmulas e as referências foram relidas no recorte ampliado. Nenhum enunciado numerado de 1970.",
+    "utc": "2026-11-27 17:12:48 UTC"
+  },
+  {
+    "page": 4,
+    "scan_page": 11,
+    "scope": "VIII, Definição 1.1, Teorema 1.2, Corolário 1.3 e início de sua prova.",
+    "findings": "Lidos todos os enunciados, relações e início da prova; restaurados Hom e Aut internos, referências de 1970 e equivalência entre 1.2 e 1.3. Retirada a consequência editorial ao fim de 1.2.",
+    "utc": "2026-11-27 17:13:15 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:35:37 UTC",
+      "corrections": [
+        "C0406"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 5,
+    "scan_page": 12,
+    "scope": "VIII, fim da prova de 1.3, Corolário 1.4 e passagem a 1.5.",
+    "findings": "Todos os parágrafos comparados; reduzido o desenvolvimento editorial a dois parágrafos e duas fórmulas não numeradas. Hom interno, setas e subscritos confirmados em recorte ampliado.",
+    "utc": "2026-11-27 17:13:58 UTC"
+  },
+  {
+    "page": 6,
+    "scan_page": 13,
+    "scope": "VIII, Corolários 1.5–1.6; §2 e Proposição 2.1(a)–(c).",
+    "findings": "Reposta a ordem e estrutura de 1.5. Eliminado todo §1.7, ausente entre 1.6 e §2. Enunciados, três isomorfismos e condições (a)–(c) cotejados e ampliados.",
+    "utc": "2026-11-27 17:14:30 UTC"
+  },
+  {
+    "page": 7,
+    "scan_page": 14,
+    "scope": "VIII, 2.1(c′)–(e), prova e início de §3/3.1.",
+    "findings": "Prova lida integralmente. Lisse traduzido por suave. Mantido o índice impresso mu_i(k), embora a identificação anterior tenha mu_{n_i}. Final cqfd. recuperado. Sequência que abre 3.1 conferida.",
+    "utc": "2026-11-27 17:15:02 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:35:37 UTC",
+      "corrections": [
+        "C0390",
+        "C0391",
+        "C0404"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 8,
+    "scan_page": 15,
+    "scope": "VIII, fim de 3.1, prova e 3.2(a)–(b).",
+    "findings": "Retirados o item editorial do quociente fpqc e sua prova. Restaurados os apóstrofos dos homomorfismos transpostos e o texto da demonstração. Sequências e condições de 3.2 relidas ampliadas.",
+    "utc": "2026-11-27 17:16:12 UTC"
+  },
+  {
+    "page": 9,
+    "scan_page": 16,
+    "scope": "VIII, prova de 3.2, Corolário 3.3 e início de 3.4.",
+    "findings": "Cotejo integral dos argumentos, dos núcleos e das sequências. Retirada a identificação adicional ao fim de 3.3 e a remissão detalhada a IV 3.4; reposta a definição de G′ no item (a).",
+    "utc": "2026-11-27 17:16:45 UTC"
+  },
+  {
+    "page": 10,
+    "scan_page": 17,
+    "scope": "VIII, fim e prova de 3.4; Observações; 3.5 e prova.",
+    "findings": "Restaurada a prova curta de 3.4, terminada pela aplicação de 3.3, retirando expansões e referências editoriais. Conferidas a fórmula do quociente H′, a hipótese S não vazio e a fórmula D_S(M/nM).",
+    "utc": "2026-11-27 17:17:30 UTC"
+  },
+  {
+    "page": 11,
+    "scan_page": 18,
+    "scope": "VIII, §4: torsores, álgebras graduadas e 4.1(a).",
+    "findings": "Definição de torsor e condição de homogeneidade lidas; remissões editoriais detalhadas retiradas. Confirmadas soma direta, inclusão dos graus e hipótese de invertibilidade.",
+    "utc": "2026-11-27 17:17:56 UTC"
+  },
+  {
+    "page": 12,
+    "scan_page": 19,
+    "scope": "VIII, 4.1(b), prova de 4.1 e Corolário 4.2.",
+    "findings": "Tensor, homomorfismo de álgebras e transformação de bigraus ampliados. Recuperada a frase omitida que afirma que a transformação de graus é um isomorfismo; corrigida a tradução affines.",
+    "utc": "2026-11-27 17:18:21 UTC"
+  },
+  {
+    "page": 13,
+    "scan_page": 20,
+    "scope": "VIII, aplicação a M=Z; Corolários 4.3–4.5 e comentário subsequente.",
+    "findings": "Equivalência de categorias, Pic e H^1 conferidos. Retirada a numeração 4.5.1 e toda prova editorial pela norma C/R; a menção ao teorema 90 voltou ao lugar impresso.",
+    "utc": "2026-11-27 17:18:49 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:35:37 UTC",
+      "corrections": [
+        "C0392",
+        "C0393",
+        "C0394",
+        "C0395"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 14,
+    "scan_page": 21,
+    "scope": "VIII, Proposição 4.6, Corolário 4.7 e provas completas.",
+    "findings": "Restaurados a remissão 4.1, a localização pelos f_i e invertível de A_1 tal como impressos, sem corrigir a impressão. Retiradas a marca (*) e a expansão editorial. Diagrama final, inversos e setas revistos em ampliação até a última linha.",
+    "utc": "2026-11-27 17:19:41 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:35:37 UTC",
+      "corrections": [
+        "C0396",
+        "C0397",
+        "C0398",
+        "C0399",
+        "C0400"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 15,
+    "scan_page": 22,
+    "scope": "VIII, §5 e Teorema 5.1 até a condição (x).",
+    "findings": "Enunciado e redução afim lidos por completo. Retirada a introdução editorial fpqc e reposta a definição de M no enunciado; conferidas A^G=A_0 e A_m A_{-m}=A_0.",
+    "utc": "2026-11-27 17:20:03 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:35:37 UTC",
+      "corrections": [
+        "C0401"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 16,
+    "scan_page": 23,
+    "scope": "VIII, prova de 5.1: relação R, diagonal e ideal J.",
+    "findings": "Todas as fórmulas e a descrição da diagonal cotejadas. Restaurados o nome J, a fórmula impressa R′=A(M×M)/J sem Spec e o texto sobre o núcleo. Retirados phi, bar-phi, K′ e comentário corretivo inexistentes em 1970.",
+    "utc": "2026-11-27 17:20:43 UTC"
+  },
+  {
+    "page": 17,
+    "scan_page": 24,
+    "scope": "VIII, prova de 5.1: (xx)–(xxxx), redução a um corpo e Lema 5.2.",
+    "findings": "Trigraduação, coeficientes e todos os índices ampliados. Restaurado J e o índice impresso r+s do somatório; retiradas explicações acrescentadas junto a (xx) e 5.2.",
+    "utc": "2026-11-27 17:21:15 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:35:37 UTC",
+      "corrections": [
+        "C0402",
+        "C0403"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 18,
+    "scan_page": 25,
+    "scope": "VIII, Corolários 5.3–5.4 e conclusão da prova de 5.1.",
+    "findings": "Todas as graduações e mudanças de grupo lidas. Restaurados P′ e J_p na descrição do conjunto dos m, exatamente como impressos. Removidas correções entre colchetes, índice adicional no somatório e espanhol residual.",
+    "utc": "2026-11-27 17:21:47 UTC"
+  },
+  {
+    "page": 19,
+    "scan_page": 26,
+    "scope": "VIII, corolários 5.5–5.8",
+    "findings": "Restituídos a primeira pessoa no período introdutório, a seção s e a notação g↦s.g, resp. e a referência V 9.1. Enunciados e demonstração conferidos integralmente.",
+    "utc": "2026-11-27 17:24:13 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:35:37 UTC",
+      "corrections": [
+        "C0405"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 20,
+    "scan_page": 27,
+    "scope": "VIII §6; definição 6.1, proposições 6.2–6.3 e início de 6.4",
+    "findings": "Nota original (*) preservada e traduzida corretamente; retirada a nota editorial que demonstrava a liberdade de módulos planos sobre anéis locais artinianos; retirada a referência acrescentada IX 1.1; terminologia de coberturas e quase-compacidade ajustada.",
+    "utc": "2026-11-27 17:25:02 UTC"
+  },
+  {
+    "page": 21,
+    "scan_page": 28,
+    "scope": "VIII, teorema 6.4 e início dos exemplos 6.5(a)",
+    "findings": "Restituídos o enunciado e a prova curta de 6.4, retirando a nota e a demonstração expandida. Conservadas as leituras impressas Z ao final do enunciado, interseção indexada por i com F_j e, em 6.5, Y/S e referência 6.1.",
+    "utc": "2026-11-27 17:25:48 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:35:37 UTC",
+      "corrections": [
+        "C0407",
+        "C0408",
+        "C0409"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 22,
+    "scan_page": 29,
+    "scope": "VIII, exemplos 6.5(a)–(b)",
+    "findings": "Conferidas as três fórmulas numeradas e a construção de X′; retirada a especificação de X ausente na conclusão de (a); restituída a posição original da definição de r, com a menção a q₁,q₂.",
+    "utc": "2026-11-27 17:26:23 UTC"
+  },
+  {
+    "page": 23,
+    "scan_page": 30,
+    "scope": "VIII, fim de 6.5(b), exemplos 6.5(c)–(d)",
+    "findings": "Fórmulas dos núcleos e invariantes conferidas, incluindo as barras de q e q′; restituído homomorfismo nos dois lugares assim impressos; ajustados o registro verbal e a indicação da autoridade.",
+    "utc": "2026-11-27 17:26:45 UTC"
+  },
+  {
+    "page": 24,
+    "scan_page": 31,
+    "scope": "VIII, exemplo 6.5(e): transportadores, normalizador e centralizador",
+    "findings": "Conferidas as ações e inclusões; preservado S_X tal como impresso; retiradas a notação adicional Norm_G e a hipótese reforçada de que H fosse um subpré-esquema em grupos. Restituída a conclusão contínua sobre o normalizador.",
+    "utc": "2026-11-27 17:27:26 UTC"
+  },
+  {
+    "page": 25,
+    "scan_page": 32,
+    "scope": "VIII, fim de 6.5(e), corolário 6.7, observação 6.8 e abertura do apêndice §7",
+    "findings": "Restituída a ordem e a forma contínua de 6.7. A observação 6.8 voltou ao único parágrafo impresso; retirados suas demonstrações ampliadas e o lema acrescentado 6.8.1. Preservadas as referências impressas 6.3 b), definição 1 e Exp. VI, e a ordem do produto tensorial com o dual.",
+    "utc": "2026-11-27 17:28:22 UTC"
+  },
+  {
+    "page": 26,
+    "scan_page": 33,
+    "scope": "VIII §7, exemplos preliminares e conjectura sobre monomorfismos",
+    "findings": "Conferidos os exemplos com G₁ e G₂ e a nota original de Raynaud, que foi preservada. Restituídos o produto sem índice na segunda ocorrência, G no exemplo de subgrupo aberto e a formulação conjectural no presente; adotados suave e valoração. Nenhum novo enunciado numerado nesta página.",
+    "utc": "2026-11-27 17:29:13 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:41:57 UTC",
+      "corrections": [
+        "C0410",
+        "C0418"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 27,
+    "scan_page": 34,
+    "scope": "VIII §7, redução ao anel de valoração discreta e início do lema 7.1",
+    "findings": "Restituída a ordem imersão / imersão fechada e a correspondência com propriedade local / global; corrigidas as referências para EGA II 7 e EGA IV 15.7.1. Conservado L′ na apresentação do fecho esquemático, embora a frase seguinte use L.",
+    "utc": "2026-11-27 17:30:16 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:35:37 UTC",
+      "corrections": [
+        "C0411"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 28,
+    "scan_page": 35,
+    "scope": "VIII, fim do lema 7.1 e reduções posteriores",
+    "findings": "Nota original (*) conferida; removida a nomeação antecipada de u′; restaurado fechado na frase que precede a conclusão de abertura. Corrigidos os destinos externos de SGA 1 I 5.7 e VI_B 4.3; restituída a redução parentética com suaves sobre k.",
+    "utc": "2026-11-27 17:31:07 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:41:57 UTC",
+      "corrections": [
+        "C0412",
+        "C0413",
+        "C0419",
+        "C0421"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 29,
+    "scan_page": 36,
+    "scope": "VIII, proposição 7.2 e construção dos quocientes Q_n",
+    "findings": "Restituídos k(s), a ressalva sobre provar uma imersão e a potência m-ésima; retirada a referência adicional VI_B 1.6.1. Conferidos S_n, os núcleos de potência, Q_n e a fórmula de mudança de base. O destino de VI_A 3.2 foi corrigido.",
+    "utc": "2026-11-27 17:32:02 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:35:37 UTC",
+      "corrections": [
+        "C0414"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 30,
+    "scan_page": 37,
+    "scope": "VIII, limite dos Q_n, lema 7.3 e observação 7.3.1",
+    "findings": "Restituída a hipótese de comutatividade e a fórmula n·id_Q=0 no lema 7.3. Recuperadas a ressalva não comutativa e a nota original (*) da observação 7.3.1, bem como a hipótese Q comutativo no caso de base reduzida. Conservado S sem índice na frase sobre os Q_n.",
+    "utc": "2026-11-27 17:32:51 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:41:57 UTC",
+      "corrections": [
+        "C0415",
+        "C0420",
+        "C0422"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 31,
+    "scan_page": 38,
+    "scope": "VIII, corolários 7.4–7.5 e início da observação subsequente",
+    "findings": "Diagrama de 7.5 conferido com ampliação. Restituídos o parêntese do enunciado, Je dis no singular e SGA IV 5.9. Retirada a nota do tradutor que corrigia os índices, mantendo Ker v_n = {}_{p^ν}H plano sobre S, como impresso.",
+    "utc": "2026-11-27 17:33:55 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:35:37 UTC",
+      "corrections": [
+        "C0416"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 32,
+    "scan_page": 39,
+    "scope": "VIII, observação após 7.5 e lema 7.6",
+    "findings": "Restituídos p·id_G sem índice 0, a observação N.B. e as aspas do homomorfismo de Frobenius iterado. Fórmulas (x), (xx), (xxx) verificadas; conservada a potência m^p, sem ν, na última frase da página.",
+    "utc": "2026-11-27 17:34:47 UTC"
+  },
+  {
+    "page": 33,
+    "scan_page": 40,
+    "scope": "VIII, fim da prova de 7.6, lema 7.7 e corolário 7.8",
+    "findings": "Conferidas as duas sequências exatas. Mantidos os índices omitidos no original: G no esclarecimento do núcleo de w_n e H na aplicação de 7.5; retirado o nome w acrescentado à seta de 7.8. Restituídos rang e os dois grupos na verificação final de planicidade.",
+    "utc": "2026-11-27 17:35:24 UTC"
+  },
+  {
+    "page": 34,
+    "scan_page": 41,
+    "scope": "VIII, proposição 7.9, observação 7.10 e transição para imersões fechadas",
+    "findings": "Restituídos a redação e os quantificadores de 7.9(c), a notação k(s), a fibra {}_pG′_0 na prova e a referência externa XVI 1.1 a), b). Conferida a conclusão por meio das fibras genéricas de 7.8.",
+    "utc": "2026-11-27 17:36:28 UTC"
+  },
+  {
+    "page": 35,
+    "scan_page": 42,
+    "scope": "VIII, lema 7.11, sua aplicação e início de 7.12",
+    "findings": "Restituídos o registro e a definição de n no lema 7.11. Recuperada a etapa intermediária sobre n·id_H; preservada a palavra simples para H₀⁰, distinta de suave. Conferidas as inclusões, fibras e conclusões de sobrejetividade.",
+    "utc": "2026-11-27 17:37:33 UTC"
+  },
+  {
+    "page": 36,
+    "scan_page": 43,
+    "scope": "VIII, fim da proposição 7.12 e observações 7.13(a)–(c); término do exposé",
+    "findings": "Restituídos S″ em 7.12 e o plural Observações; ajustados o registro e suave. Retiradas integralmente a bibliografia editorial, a nota e suas duas entradas, preservando destinos invisíveis. O impresso termina após VI_B 5.5, sem bibliografia.",
+    "utc": "2026-11-27 17:38:27 UTC"
+  },
+  {
+    "page": 37,
+    "scan_page": 44,
+    "scope": "IX, título, definição 1.1 e início dos comentários 1.2",
+    "findings": "Conferidos título e autoria. Retirados o I extra do cabeçalho e a remissão acrescentada VIII 1.1; restaurada a primeira seta S′→S e o parágrafo contínuo de 1.1, mantendo as setas posteriores para U. Terminologia e registro ajustados.",
+    "utc": "2026-11-27 17:39:30 UTC"
+  },
+  {
+    "page": 38,
+    "scan_page": 45,
+    "scope": "IX, comentários 1.2 e diagrama de implicações",
+    "findings": "Restaurados o registro impessoal e a abreviação t. m. geral do diagrama; retiradas as remissões X 4.5 e X 5.16 acrescentadas; recomposto o parágrafo contínuo sobre as aplicações, com os destaques do impresso.",
+    "utc": "2026-11-27 17:42:35 UTC"
+  },
+  {
+    "page": 39,
+    "scan_page": 46,
+    "scope": "IX, definições 1.3–1.4 e início do comentário sobre o tipo",
+    "findings": "Restaurados r>0, k(s), G_m sem subíndice k e as fórmulas no corpo do parágrafo; recomposta a continuidade de 1.4; retirada a numeração acrescentada 1.4.1(a), preservando os alvos invisíveis.",
+    "utc": "2026-11-27 17:43:22 UTC"
+  },
+  {
+    "page": 40,
+    "scan_page": 47,
+    "scope": "IX, fim do comentário de 1.4; observações 1.5; §2 e proposição 2.1(a)",
+    "findings": "Retirada a subdivisão em itens de 1.5 e a definição editorial 2.0 com sua nota; restaurados o parágrafo contínuo, as abreviações resp., a notação k(s) e o destaque de partição canônica.",
+    "utc": "2026-11-27 17:44:08 UTC"
+  },
+  {
+    "page": 41,
+    "scan_page": 48,
+    "scope": "IX, proposição 2.1(b–e), proposições 2.2–2.3 e início da prova de 2.3",
+    "findings": "Conferidas as equivalências, hipóteses e índices. Restauradas as setas de equivalência e k(s), as referências como impressas e a definição de M dentro de 2.3; retirados os itens editoriais a/b de 2.3.",
+    "utc": "2026-11-27 17:44:43 UTC"
+  },
+  {
+    "page": 42,
+    "scan_page": 49,
+    "scope": "IX, fim da prova de 2.3; corolários 2.4–2.5; observação 2.6",
+    "findings": "Restaurada a prova contínua e a remissão externa SGA 1 VIII 2.1; conferidos os dois morfismos de 2.4, a seção s e os enunciados e hipóteses de 2.5–2.6.",
+    "utc": "2026-11-27 17:45:09 UTC"
+  },
+  {
+    "page": 43,
+    "scan_page": 50,
+    "scope": "IX, proposição 2.7, corolário 2.8 e início de 2.9",
+    "findings": "Restauradas as variáveis G′ e H′, a definição de M e a fatoração no corpo de 2.7; retirada a subdivisão editorial de 2.8; conferidas as provas e as condições iniciais de 2.9.",
+    "utc": "2026-11-27 17:45:37 UTC"
+  },
+  {
+    "page": 44,
+    "scan_page": 51,
+    "scope": "IX, fim e prova de 2.9; corolário 2.10 e primeira parte da prova",
+    "findings": "Restaurada a remissão às considerações após 1.4; retirados os itens a/b de 2.10; conferidos índices, interseções e inclusões. Mantida a leitura impressa subobjetos de H e a expressão sobre igualdade dos conjuntos subjacentes, sem a explicação expandida da reedição.",
+    "utc": "2026-11-27 17:46:14 UTC"
+  },
+  {
+    "page": 45,
+    "scan_page": 52,
+    "scope": "IX, fim da prova de 2.10; proposição 2.11 e prova (i), início de (ii)",
+    "findings": "Restauradas as remissões VIII 3.2 (três ocorrências) e IV 4.7.5, o registro de Je dis e a formulação dos itens. A ampliação da prova revelou S maiúsculo em para todo S; essa gralha foi mantida e a primeira leitura foi emendada no registro.",
+    "utc": "2026-11-27 17:47:17 UTC"
+  },
+  {
+    "page": 46,
+    "scan_page": 53,
+    "scope": "IX, fim de 2.11; §3 e teorema 3.1 com prova",
+    "findings": "Retirada a remissão X 4.5 acrescentada no fim de §2. Restaurados o G do enunciado de 3.1, F e C°(H,F), a remissão a I 5.3 e os destaques; removido o comentário editorial sobre o uso de G.",
+    "utc": "2026-11-27 17:47:59 UTC"
+  },
+  {
+    "page": 47,
+    "scan_page": 54,
+    "scope": "IX, teorema 3.2; corolários 3.3–3.5 e provas",
+    "findings": "Conferidos todos os homomorfismos, reduções e expoentes nilpotentes. Restauradas as fórmulas no corpo de 3.2, a conjunção portuguesa, suave para lisse e as justaposições após int(g) em 3.3.",
+    "utc": "2026-11-27 17:48:40 UTC"
+  },
+  {
+    "page": 48,
+    "scan_page": 55,
+    "scope": "IX, teorema 3.6; variantes 3.2 bis, 3.3 bis e 3.4 bis",
+    "findings": "Restaurados os parênteses de 3.6 e da transição às variantes; corrigido o destino da referência III 2.3; conferidas as fórmulas de conjugação e retiradas apresentações em destaque não impressas.",
+    "utc": "2026-11-27 17:49:16 UTC"
+  },
+  {
+    "page": 49,
+    "scan_page": 56,
+    "scope": "IX, teorema 3.6 bis, prova das variantes e proposição 3.8",
+    "findings": "Retirados os itens a/b/c e a remissão acrescentada do enunciado de 3.6 bis; restauradas III 4.21–4.22 e a justificativa por 2.1 b. Eliminadas duas notas editoriais e a prova expandida da imersão. Restaurado S₀=V(J) em 3.8.",
+    "utc": "2026-11-27 17:50:03 UTC"
+  },
+  {
+    "page": 50,
+    "scan_page": 57,
+    "scope": "IX, fim de §3; início de §4; definição 4.1 e comentário inicial",
+    "findings": "Restaurada a prova impressa de 3.9 com X=G e a ação de H sobre G; recolocada a nota original no título de §4 e sua referência EGA IV 11.10. Restaurados Zⁱ e U′ em 4.1; retirados a referência e o critério de núcleos acrescentados.",
+    "utc": "2026-11-27 17:51:33 UTC"
+  },
+  {
+    "page": 51,
+    "scan_page": 58,
+    "scope": "IX, fim do comentário de 4.1; lema 4.2 e primeira parte da prova",
+    "findings": "Restauradas a seta X→Y×Y e a notação Zⁱ; retirada a igualdade de quociente e o título de prova acrescentados. Conferida a ordem das hipóteses e as duas fórmulas tensoriais. Ampliações de 5× e 8× confirmaram X′ na frase sobre aderência e emendaram a leitura inicial da referência para EGA I 9.5.",
+    "utc": "2026-11-27 17:53:16 UTC"
+  },
+  {
+    "page": 52,
+    "scan_page": 59,
+    "scope": "IX, fim de 4.2; corolário 4.3 e prova; lema 4.4 e início da prova",
+    "findings": "Restaurada a leitura Sⁱ₀ e a fórmula em linha no fim de 4.2. Retirada a prova expandida de 4.3, com sua nota e fórmulas adicionais; restaurado o enunciado breve de 4.4 sem a definição universal e a remissão acrescentadas.",
+    "utc": "2026-11-27 17:53:59 UTC"
+  },
+  {
+    "page": 53,
+    "scan_page": 60,
+    "scope": "IX, prova do lema 4.4: apresentações afins, diagrama e reduções",
+    "findings": "Conferidos os nove nós e doze setas do diagrama, sem os índices n alegados pelo comentário removido. Restaurados B″=B⊗A′ e g sem primo como impressos; retirada a justificação editorial com 4.5 e restaurada a condição sobre os pontos x′ acima de s′.",
+    "utc": "2026-11-27 17:56:22 UTC"
+  },
+  {
+    "page": 54,
+    "scan_page": 61,
+    "scope": "IX, fim da prova de 4.4 e lema 4.5",
+    "findings": "Restaurados os dois parágrafos do argumento original; eliminados a construção formal expandida, ideais, sequências exatas, notas corretivas e o lema acrescentado 4.5.0. Mantido Spec(Â). A extremidade da inequação Y/Z está parcialmente encoberta pela margem interna do escaneamento; a leitura contextual está explicitada na confiança da linha correspondente.",
+    "utc": "2026-11-27 17:58:19 UTC"
+  },
+  {
+    "page": 55,
+    "scan_page": 62,
+    "scope": "Lema 4.5: demonstração; Corolário 4.6: enunciado.",
+    "findings": "Restaurados os dois NB, as reduções originais, a aplicação canônica e a nota estrelada de EGA IV 11.10.6; retiradas a prova e notas ampliadas. Reposta a ordem das hipóteses de 4.6. Segunda leitura ampliada confirmou as alterações.",
+    "utc": "2026-11-27 18:02:05 UTC"
+  },
+  {
+    "page": 56,
+    "scan_page": 63,
+    "scope": "Demonstração de 4.6; Teorema 4.7 e início de sua prova.",
+    "findings": "Retirado o desenvolvimento editorial da prova de 4.6, restauradas referências e disposição originais, preservado o índice j em Ass O_Xjs. Suprimida a remissão ao lema acrescentado 4.5.0 no início de 4.7; segunda leitura confirmou o texto.",
+    "utc": "2026-11-27 18:02:52 UTC"
+  },
+  {
+    "page": 57,
+    "scan_page": 64,
+    "scope": "Conclusão de 4.7; Corolários 4.8 e 4.9.",
+    "findings": "Restaurado T em lugar de Gamma e o argumento breve de 4.7(b). Reposta a hipótese diagonalizável de 4.8(a), sem generalização para tipo multiplicativo. Fórmulas em linha e transição direta para 4.9 conferidas na segunda leitura.",
+    "utc": "2026-11-27 18:03:26 UTC"
+  },
+  {
+    "page": 58,
+    "scan_page": 65,
+    "scope": "Demonstração de 4.9; Observação 4.10; seção 5 e Teorema 5.1.",
+    "findings": "Reposto o parágrafo único de 4.10, preservados k(s) e o G_u impresso com u minúsculo. Retirados o lema 5.0 inteiro e referências acrescentadas. Segunda leitura ampliada confirmou a redação e reparou delimitadores TeX perdidos na escrita de 56–58.",
+    "utc": "2026-11-27 18:06:56 UTC"
+  },
+  {
+    "page": 59,
+    "scan_page": 66,
+    "scope": "Demonstração do Teorema 5.1; Corolário 5.2.",
+    "findings": "Restaurados os dois parágrafos da prova, inclusive K_u=H_u, a remissão 4.7 a) e a afirmação original sobre u_j central. Retirados os desenvolvimentos editoriais e a referência a 5.0. Ordem das hipóteses de 5.2 e índices relidos em ampliação.",
+    "utc": "2026-11-27 18:07:37 UTC",
+    "final_review": {
+      "utc": "2026-11-27 18:35:37 UTC",
+      "corrections": [
+        "C0417"
+      ],
+      "result": "Revisão dirigida posterior à sequência; segunda leitura concluída, com emendas e retiradas explícitas na coluna confidence."
+    }
+  },
+  {
+    "page": 60,
+    "scan_page": 67,
+    "scope": "Corolários 5.3 e 5.4, com início da prova de 5.4.",
+    "findings": "Restaurada a hipótese de cobertura fielmente plana quase-compacta de 5.4 e retiradas sua substituição por epimorfismo efetivo universal e as expansões associadas. Preservados H separado na prova de 5.3 e S-prime-grupos na conclusão de 5.4. Segunda leitura ampliada confirmou ambos.",
+    "utc": "2026-11-27 18:08:29 UTC"
+  },
+  {
+    "page": 61,
+    "scan_page": 68,
+    "scope": "Conclusão de 5.4; Corolário 5.5; Teorema 5.1 bis e Corolário 5.3 bis.",
+    "findings": "Restaurados G e a ausência da hipótese de tipo localmente finito em 5.5, sua prova breve e a referência externa VI_A2.4. Preservado o parêntese aberto não fechado no original. Notação das fibras e das restrições de 5.1bis/5.3bis conferida em ampliação.",
+    "utc": "2026-11-27 18:09:32 UTC"
+  },
+  {
+    "page": 62,
+    "scan_page": 69,
+    "scope": "Corolário 5.4 bis; Teorema 5.6 e início de sua demonstração.",
+    "findings": "Restaurado o H-prime impresso no parêntese de 5.4bis, sem as referências acrescentadas. Reposto o procedimento padrão comum a 5.6(a),(b), o índice n e a disposição original das fórmulas; retirado o desenvolvimento editorial. Segunda leitura confirmou.",
+    "utc": "2026-11-27 18:10:06 UTC"
+  },
+  {
+    "page": 63,
+    "scan_page": 70,
+    "scope": "Conclusão da demonstração de 5.6; seção 6; Lema 6.1.",
+    "findings": "Restaurado o argumento original com theta e a seção unidade, retirados construções locais, justificações adicionais e notas da reedição. Preservada a frase sobre S-prime como quociente artiniano. Reposto K no enunciado de 6.1 e conferidas as fórmulas em ampliação.",
+    "utc": "2026-11-27 18:10:48 UTC"
+  },
+  {
+    "page": 64,
+    "scan_page": 71,
+    "scope": "Demonstração de 6.1; enunciado do Lema 6.2.",
+    "findings": "Restaurados VII_B8.5, K, deg[K:k(s)], H^1(K,M) e a fórmula original de Hom; retirado o argumento substituto com funtor núcleo. A segunda leitura a 6x identificou e preservou o expoente n em A/m^n junto a K_{m-1}. Repostos X^i e a mudança de base S-prime de 6.2.",
+    "utc": "2026-11-27 18:11:50 UTC"
+  },
+  {
+    "page": 65,
+    "scan_page": 72,
+    "scope": "Demonstração de 6.2; Lema 6.3 e início de sua prova.",
+    "findings": "Restaurados parágrafo e NB originais, índices mistos X^i/X_i, U/S e U=X-{s}. Repostas as abreviações e a seção g de 6.3. A releitura a 8x confirmou e, e não s, na frase que designa a imagem de x; o lapso impresso foi preservado.",
+    "utc": "2026-11-27 18:13:15 UTC"
+  },
+  {
+    "page": 66,
+    "scan_page": 73,
+    "scope": "Conclusão de 6.3; Teorema 6.4; Corolários 6.5 e 6.6.",
+    "findings": "Restaurados cf.VI, as restrições em linha, a fortiori e as hipóteses na ordem impressa. A Observação 6.6.1 acrescentada voltou à frase final da prova de 6.6, sem cabeçalho nem itálico adicional; âncora preservada. Segunda leitura confirmou.",
+    "utc": "2026-11-27 18:13:52 UTC"
+  },
+  {
+    "page": 67,
+    "scan_page": 74,
+    "scope": "Corolário 6.7; Teorema 6.8 e início de sua prova.",
+    "findings": "Preservados seção unidade de G em 6.7 e v-prime induzido por G em 6.8. Repostas IV4.7.5 e k(s), removidos afim, remissão a 6.6.1 e estrutura editorial de prova. Diagrama e parágrafo relidos em ampliação.",
+    "utc": "2026-11-27 18:14:32 UTC"
+  },
+  {
+    "page": 68,
+    "scan_page": 75,
+    "scope": "Conclusão de 6.8; seção 7 e Teorema 7.1.",
+    "findings": "Restaurada a prova com apenas o diagrama impresso, cobertura e ênfase original. Retirado o nome theta da aplicação(x). A borda direita da definição de S_n está coberta pela dobra; n+1 mantido para cotejo com A_n na página seguinte, com limite de leitura registrado.",
+    "utc": "2026-11-27 18:15:15 UTC"
+  },
+  {
+    "page": 69,
+    "scan_page": 76,
+    "scope": "Demonstração de 7.1: caso diagonalizável até a composta Phi.",
+    "findings": "Restauradas a aplicação diagonal, a explicação de Delta_H/Delta_G, C=C tensor A_n e a injetividade direta de(x). Retirados o quadrado acrescentado, a nota e a correção entre colchetes. A_n=A/I^{n+1} foi relido e fundamenta contextualmente a passagem encoberta da página 68.",
+    "utc": "2026-11-27 18:16:07 UTC"
+  },
+  {
+    "page": 70,
+    "scan_page": 77,
+    "scope": "IX, continuação da prova 7.1; início de 7.2(i).",
+    "findings": "Restauradas a composição canônica e a redação contínua, os parênteses e a cadeia iniciada por C com flecha G; mantido Delta_H sem chapéu no quadrado. Retirada a explicação acrescentada das bases e da aplicação diagonal. Enunciado de 7.2 e (i) recompostos segundo o impresso.",
+    "utc": "2026-11-27 18:19:36 UTC"
+  },
+  {
+    "page": 71,
+    "scan_page": 78,
+    "scope": "IX, conclusão de 7.2 e início da descida na prova 7.1.",
+    "findings": "Reposta a notação de soma direta e a base com expoente m, a igualdade u.x=ax e o I isolado de u(A^{(I)}). Retirados título de prova, quadrado final e estrutura expandida; restituídos parênteses, ênfase e transição ao caso isotrivial.",
+    "utc": "2026-11-27 18:20:16 UTC"
+  },
+  {
+    "page": 72,
+    "scan_page": 79,
+    "scope": "IX, fim da prova 7.1; corolário 7.3 e início da prova.",
+    "findings": "Reposta a redação de descida, com fórmulas em linha, coberturas, parênteses e resp.; preservado J nos ideais JA e JA com dois primos. Diagrama conferido; restaurados NB e conclusão sem quadrado. Corolário 7.3 usa suave e a estrutura contínua original.",
+    "utc": "2026-11-27 18:20:57 UTC"
+  },
+  {
+    "page": 73,
+    "scan_page": 80,
+    "scope": "IX, conclusão de 7.3; observações 7.4.",
+    "findings": "Restauradas a construção de g em linha e a ênfase em injetividade. Observações no plural e em texto romano contínuo: assez exceptionnel, sem hipótese de propriedade e rigidez conforme as ênfases do impresso; exemplos aditivo e multiplicativo, parênteses e série formal conferidos.",
+    "utc": "2026-11-27 18:21:30 UTC"
+  },
+  {
+    "page": 74,
+    "scan_page": 81,
+    "scope": "IX, §8, nota original e proposição 8.1 até (8.1.4).",
+    "findings": "Eliminado o escólio 8.0 e sua nota editorial; repostos grupo algébrico, resp., somas sem índices e redação contínua. A segunda leitura ampliada restabeleceu IV_B 11.16 e a igualdade a_im=0. Nota de julho de 1969 preservada; seu último algarismo está encoberto, sendo 7 retido por contexto e assinalado como tal.",
+    "utc": "2026-11-27 18:22:55 UTC"
+  },
+  {
+    "page": 75,
+    "scan_page": 82,
+    "scope": "IX, fim de 8.1; proposição 8.2 e sua prova.",
+    "findings": "Relação de caracteres recolocada nesta página; mantidos subgrupo de G e cqfd. Removidos escansão (i)/(ii), sequência e hipóteses acrescentadas do enunciado. Prova de 8.2 reduzida à redação original com definição 1.1, VIII 3.1, fecho algébrico e torsores fpqc; eliminadas sequências numeradas, discussão de automorfismos, Galois/cohomologia e comentário editorial.",
+    "utc": "2026-11-27 18:23:40 UTC"
+  },
+  {
+    "page": 76,
+    "scan_page": 83,
+    "scope": "IX, fim da prova 8.2 e observações 8.3; fim do exposé.",
+    "findings": "Restabelecida a fórmula em linha H^1(k_fpqc,L_k)=Hom(Gal(kbar/k),L) isomorfo a 0. Observações 8.3 no plural, em um parágrafo romano, com generalização pela mesma demonstração e menos trivial referindo-se a 6.8. Removida a bibliografia acrescentada: a página original termina após 8.3.",
+    "utc": "2026-11-27 18:24:12 UTC"
+  }
+]

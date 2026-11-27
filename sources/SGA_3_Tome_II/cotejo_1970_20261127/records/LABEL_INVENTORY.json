@@ -1,0 +1,1952 @@
+{
+  "created_utc": "2026-11-27 18:46:38 UTC",
+  "original_target_count": 315,
+  "current_target_count": 315,
+  "original_targets": {
+    "sga3:viii:chapter:viii": [
+      {
+        "file": "08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+        "line": 9
+      }
+    ],
+    "sga3:viii:section:1": [
+      {
+        "file": "08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+        "line": 18
+      }
+    ],
+    "sga3:viii:eq:1:x": [
+      {
+        "file": "08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+        "line": 40
+      }
+    ],
+    "sga3:viii:eq:1:xx": [
+      {
+        "file": "08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+        "line": 72
+      }
+    ],
+    "sga3:viii:eq:1:xxx": [
+      {
+        "file": "08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+        "line": 81
+      }
+    ],
+    "sga3:viii:eq:1:xxxx": [
+      {
+        "file": "08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+        "line": 94
+      }
+    ],
+    "sga3:viii:definition:1:0": [
+      {
+        "file": "08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+        "line": 101
+      }
+    ],
+    "sga3:viii:proposition:1:0:1": [
+      {
+        "file": "08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+        "line": 109
+      }
+    ],
+    "sga3:viii:definition:1:0:2": [
+      {
+        "file": "08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+        "line": 124
+      }
+    ],
+    "sga3:viii:remark:1:0:3": [
+      {
+        "file": "08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+        "line": 135
+      }
+    ],
+    "sga3:viii:eq:1:0:4": [
+      {
+        "file": "08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+        "line": 154
+      }
+    ],
+    "sga3:viii:definition:1:1": [
+      {
+        "file": "08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+        "line": 173
+      }
+    ],
+    "sga3:viii:theorem:1:2": [
+      {
+        "file": "08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+        "line": 185
+      }
+    ],
+    "sga3:viii:corollary:1:3": [
+      {
+        "file": "08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+        "line": 202
+      }
+    ],
+    "sga3:viii:corollary:1:4": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 8
+      }
+    ],
+    "sga3:viii:corollary:1:4:display:natural-isomorphism:01": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 12
+      }
+    ],
+    "sga3:viii:corollary:1:4:discussion:01": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 20
+      }
+    ],
+    "sga3:viii:eq:1:4:1": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 24
+      }
+    ],
+    "sga3:viii:eq:1:4:2": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 44
+      }
+    ],
+    "sga3:viii:corollary:1:5": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 84
+      }
+    ],
+    "sga3:viii:corollary:1:5:item:a": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 86
+      }
+    ],
+    "sga3:viii:corollary:1:5:item:b": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 99
+      }
+    ],
+    "sga3:viii:corollary:1:6": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 109
+      }
+    ],
+    "sga3:viii:paragraph:1-7": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 125
+      }
+    ],
+    "sga3:viii:subsection:1:7": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 125
+      }
+    ],
+    "sga3:viii:scholium:1:7:1": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 136
+      }
+    ],
+    "sga3:viii:eq:1:7:1": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 142
+      }
+    ],
+    "sga3:viii:lemma:1:7:2": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 164
+      }
+    ],
+    "sga3:viii:lemma:1:7:2:item:i": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 167
+      }
+    ],
+    "sga3:viii:lemma:1:7:2:item:ii": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 173
+      }
+    ],
+    "sga3:viii:diagram:1:7:2:i": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 193
+      }
+    ],
+    "sga3:viii:eq:1:7:2:star": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 222
+      }
+    ],
+    "sga3:viii:diagram:1:7:2:ii": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 263
+      }
+    ],
+    "sga3:viii:eq:1:7:2:double-star": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 289
+      }
+    ],
+    "sga3:viii:corollary:1:7:3": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 319
+      }
+    ],
+    "sga3:viii:remark:1:7:4": [
+      {
+        "file": "08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+        "line": 337
+      }
+    ],
+    "sga3:viii:section:2": [
+      {
+        "file": "08_expose_viii/components/03_seccion_2.tex",
+        "line": 7
+      }
+    ],
+    "sga3:viii:proposition:2:1": [
+      {
+        "file": "08_expose_viii/components/03_seccion_2.tex",
+        "line": 14
+      }
+    ],
+    "sga3:viii:proposition:2:1:item:a:01": [
+      {
+        "file": "08_expose_viii/components/03_seccion_2.tex",
+        "line": 19
+      }
+    ],
+    "sga3:viii:proposition:2:1:item:b:01": [
+      {
+        "file": "08_expose_viii/components/03_seccion_2.tex",
+        "line": 23
+      }
+    ],
+    "sga3:viii:proposition:2:1:item:c:01": [
+      {
+        "file": "08_expose_viii/components/03_seccion_2.tex",
+        "line": 27
+      }
+    ],
+    "sga3:viii:proposition:2:1:item:cprime:01": [
+      {
+        "file": "08_expose_viii/components/03_seccion_2.tex",
+        "line": 35
+      }
+    ],
+    "sga3:viii:proposition:2:1:item:d:01": [
+      {
+        "file": "08_expose_viii/components/03_seccion_2.tex",
+        "line": 39
+      }
+    ],
+    "sga3:viii:proposition:2:1:item:e:01": [
+      {
+        "file": "08_expose_viii/components/03_seccion_2.tex",
+        "line": 42
+      }
+    ],
+    "sga3:viii:section:3": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 6
+      }
+    ],
+    "sga3:viii:theorem:3:1": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 12
+      }
+    ],
+    "sga3:viii:theorem:3:1:diagram:01": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 14
+      }
+    ],
+    "sga3:viii:theorem:3:1:diagram:02": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 23
+      }
+    ],
+    "sga3:viii:theorem:3:1:item:i:01": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 31
+      }
+    ],
+    "sga3:viii:theorem:3:1:item:ii:01": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 36
+      }
+    ],
+    "sga3:viii:theorem:3:1:diagram:03": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 63
+      }
+    ],
+    "sga3:viii:theorem:3:1:diagram:04": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 68
+      }
+    ],
+    "sga3:viii:corollary:3:2": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 84
+      }
+    ],
+    "sga3:viii:corollary:3:2:item:a:01": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 89
+      }
+    ],
+    "sga3:viii:corollary:3:2:item:b:01": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 92
+      }
+    ],
+    "sga3:viii:corollary:3:3": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 127
+      }
+    ],
+    "sga3:viii:corollary:3:3:diagram:00": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 129
+      }
+    ],
+    "sga3:viii:corollary:3:3:diagram:01": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 135
+      }
+    ],
+    "sga3:viii:corollary:3:4": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 147
+      }
+    ],
+    "sga3:viii:corollary:3:4:item:a:01": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 152
+      }
+    ],
+    "sga3:viii:corollary:3:4:item:b:01": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 156
+      }
+    ],
+    "sga3:viii:corollary:3:4:item:c:01": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 163
+      }
+    ],
+    "sga3:viii:corollary:3:4:diagram:01": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 165
+      }
+    ],
+    "sga3:viii:corollary:3:4:diagram:02": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 206
+      }
+    ],
+    "sga3:viii:remarks:3:4": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 221
+      }
+    ],
+    "sga3:viii:corollary:3:5": [
+      {
+        "file": "08_expose_viii/components/04_seccion_3.tex",
+        "line": 236
+      }
+    ],
+    "sga3:viii:section:4": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 7
+      }
+    ],
+    "sga3:viii:section:4:problem:01": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 10
+      }
+    ],
+    "sga3:viii:proposition:4:1": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 55
+      }
+    ],
+    "sga3:viii:proposition:4:1:item:a:01": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 61
+      }
+    ],
+    "sga3:viii:proposition:4:1:item:b:01": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 65
+      }
+    ],
+    "sga3:viii:proposition:4:1:diagram:01": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 83
+      }
+    ],
+    "sga3:viii:proposition:4:1:diagram:02": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 90
+      }
+    ],
+    "sga3:viii:corollary:4:2": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 117
+      }
+    ],
+    "sga3:viii:corollary:4:3": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 134
+      }
+    ],
+    "sga3:viii:corollary:4:4": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 149
+      }
+    ],
+    "sga3:viii:corollary:4:5": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 165
+      }
+    ],
+    "sga3:viii:remark:4:5:1": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 170
+      }
+    ],
+    "sga3:viii:remark:4:5:1:diagram:01": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 195
+      }
+    ],
+    "sga3:viii:remark:4:5:1:diagram:02": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 204
+      }
+    ],
+    "sga3:viii:proposition:4:6": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 241
+      }
+    ],
+    "sga3:viii:proposition:4:6:item:aprime:01": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 248
+      }
+    ],
+    "sga3:viii:proposition:4:6:item:bprime:01": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 252
+      }
+    ],
+    "sga3:viii:corollary:4:7": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 265
+      }
+    ],
+    "sga3:viii:corollary:4:7:eq:star:01": [
+      {
+        "file": "08_expose_viii/components/05_seccion_4_parte_1.tex",
+        "line": 282
+      }
+    ],
+    "sga3:viii:proposition:4:6:diagram:01": [
+      {
+        "file": "08_expose_viii/components/06_seccion_4_continuacion.tex",
+        "line": 38
+      }
+    ],
+    "sga3:viii:section:5": [
+      {
+        "file": "08_expose_viii/components/07_seccion_5.tex",
+        "line": 7
+      }
+    ],
+    "sga3:viii:theorem:5:1": [
+      {
+        "file": "08_expose_viii/components/07_seccion_5.tex",
+        "line": 16
+      }
+    ],
+    "sga3:viii:theorem:5:1:eq:x:01": [
+      {
+        "file": "08_expose_viii/components/07_seccion_5.tex",
+        "line": 54
+      }
+    ],
+    "sga3:viii:theorem:5:1:eq:xx:01": [
+      {
+        "file": "08_expose_viii/components/07_seccion_5.tex",
+        "line": 126
+      }
+    ],
+    "sga3:viii:theorem:5:1:eq:xxx:01": [
+      {
+        "file": "08_expose_viii/components/07_seccion_5.tex",
+        "line": 153
+      }
+    ],
+    "sga3:viii:theorem:5:1:eq:xxxx:01": [
+      {
+        "file": "08_expose_viii/components/07_seccion_5.tex",
+        "line": 160
+      }
+    ],
+    "sga3:viii:lemma:5:2": [
+      {
+        "file": "08_expose_viii/components/07_seccion_5.tex",
+        "line": 168
+      }
+    ],
+    "sga3:viii:corollary:5:3": [
+      {
+        "file": "08_expose_viii/components/07_seccion_5.tex",
+        "line": 177
+      }
+    ],
+    "sga3:viii:corollary:5:4": [
+      {
+        "file": "08_expose_viii/components/07_seccion_5.tex",
+        "line": 189
+      }
+    ],
+    "sga3:viii:corollary:5:5": [
+      {
+        "file": "08_expose_viii/components/07_seccion_5.tex",
+        "line": 234
+      }
+    ],
+    "sga3:viii:corollary:5:6": [
+      {
+        "file": "08_expose_viii/components/07_seccion_5.tex",
+        "line": 245
+      }
+    ],
+    "sga3:viii:corollary:5:7": [
+      {
+        "file": "08_expose_viii/components/07_seccion_5.tex",
+        "line": 251
+      }
+    ],
+    "sga3:viii:corollary:5:8": [
+      {
+        "file": "08_expose_viii/components/07_seccion_5.tex",
+        "line": 259
+      }
+    ],
+    "sga3:viii:section:6": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 6
+      }
+    ],
+    "sga3:viii:definition:6:1": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 16
+      }
+    ],
+    "sga3:viii:proposition:6:2": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 27
+      }
+    ],
+    "sga3:viii:proposition:6:2:item:a:01": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 29
+      }
+    ],
+    "sga3:viii:proposition:6:2:item:b:01": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 33
+      }
+    ],
+    "sga3:viii:proposition:6:2:item:c:01": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 37
+      }
+    ],
+    "sga3:viii:proposition:6:3": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 59
+      }
+    ],
+    "sga3:viii:theorem:6:4": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 74
+      }
+    ],
+    "sga3:viii:theorem:6:4:display:functor:01": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 78
+      }
+    ],
+    "sga3:viii:examples:6:5": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 140
+      }
+    ],
+    "sga3:viii:examples:6:5:item:a:01": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 148
+      }
+    ],
+    "sga3:viii:examples:6:5:eq:x:01": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 152
+      }
+    ],
+    "sga3:viii:examples:6:5:eq:xx:01": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 157
+      }
+    ],
+    "sga3:viii:examples:6:5:eq:xxx:01": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 178
+      }
+    ],
+    "sga3:viii:examples:6:5:item:b:01": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 185
+      }
+    ],
+    "sga3:viii:examples:6:5:item:c:01": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 7
+      }
+    ],
+    "sga3:viii:examples:6:5:item:c:display:q:01": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 9
+      }
+    ],
+    "sga3:viii:examples:6:5:item:d:01": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 26
+      }
+    ],
+    "sga3:viii:examples:6:5:item:e:01": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 47
+      }
+    ],
+    "sga3:viii:corollary:6:7": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 118
+      }
+    ],
+    "sga3:viii:corollary:6:7:item:1:01": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 121
+      }
+    ],
+    "sga3:viii:corollary:6:7:item:2:01": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 127
+      }
+    ],
+    "sga3:viii:corollary:6:7:item:3:01": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 132
+      }
+    ],
+    "sga3:viii:corollary:6:7:item:4:01": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 139
+      }
+    ],
+    "sga3:viii:remark:6:8": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 147
+      }
+    ],
+    "sga3:viii:remark:6:8:display:neighborhood:01": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 159
+      }
+    ],
+    "sga3:viii:remark:6:8:eq:star:01": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 187
+      }
+    ],
+    "sga3:viii:remark:6:8:display:base-change:01": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 222
+      }
+    ],
+    "sga3:viii:lemma:6:8:1": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 260
+      }
+    ],
+    "sga3:viii:lemma:6:8:1:display:representing:01": [
+      {
+        "file": "08_expose_viii/components/09_seccion_6_parte_2.tex",
+        "line": 270
+      }
+    ],
+    "sga3:viii:section:7": [
+      {
+        "file": "08_expose_viii/components/10_seccion_7_parte_1.tex",
+        "line": 6
+      }
+    ],
+    "sga3:viii:lemma:7:1": [
+      {
+        "file": "08_expose_viii/components/10_seccion_7_parte_1.tex",
+        "line": 103
+      }
+    ],
+    "sga3:viii:proposition:7:2": [
+      {
+        "file": "08_expose_viii/components/10_seccion_7_parte_1.tex",
+        "line": 172
+      }
+    ],
+    "sga3:viii:lemma:7:3": [
+      {
+        "file": "08_expose_viii/components/10_seccion_7_parte_1.tex",
+        "line": 232
+      }
+    ],
+    "sga3:viii:remark:7:3:1": [
+      {
+        "file": "08_expose_viii/components/10_seccion_7_parte_1.tex",
+        "line": 240
+      }
+    ],
+    "sga3:viii:corollary:7:4": [
+      {
+        "file": "08_expose_viii/components/10_seccion_7_parte_1.tex",
+        "line": 258
+      }
+    ],
+    "sga3:viii:corollary:7:5": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 8
+      }
+    ],
+    "sga3:viii:diagram:7:5": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 19
+      }
+    ],
+    "sga3:viii:remark:7:5:after:01": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 60
+      }
+    ],
+    "sga3:viii:lemma:7:6": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 68
+      }
+    ],
+    "sga3:viii:eq:7:6:x": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 82
+      }
+    ],
+    "sga3:viii:eq:7:6:xx": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 90
+      }
+    ],
+    "sga3:viii:eq:7:6:xxx": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 103
+      }
+    ],
+    "sga3:viii:lemma:7:7": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 120
+      }
+    ],
+    "sga3:viii:corollary:7:8": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 147
+      }
+    ],
+    "sga3:viii:corollary:7:8:display:exact-sequence:01": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 154
+      }
+    ],
+    "sga3:viii:proposition:7:9": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 180
+      }
+    ],
+    "sga3:viii:proposition:7:9:item:a": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 184
+      }
+    ],
+    "sga3:viii:proposition:7:9:item:b": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 186
+      }
+    ],
+    "sga3:viii:proposition:7:9:item:c": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 188
+      }
+    ],
+    "sga3:viii:remark:7:10": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 206
+      }
+    ],
+    "sga3:viii:lemma:7:11": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 224
+      }
+    ],
+    "sga3:viii:proposition:7:12": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 257
+      }
+    ],
+    "sga3:viii:remark:7:13": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 269
+      }
+    ],
+    "sga3:viii:remark:7-13:item:b": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 281
+      }
+    ],
+    "sga3:viii:bibliography": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 305
+      }
+    ],
+    "sga3:viii:bib:rg71": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 310
+      }
+    ],
+    "sga3:viii:bib:to70": [
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 314
+      }
+    ],
+    "sga3:ix:chapter:ix": [
+      {
+        "file": "09_expose_ix/components/01_apertura_y_seccion_1.tex",
+        "line": 7
+      }
+    ],
+    "sga3:ix:section:1": [
+      {
+        "file": "09_expose_ix/components/01_apertura_y_seccion_1.tex",
+        "line": 19
+      }
+    ],
+    "sga3:ix:definition:1:1": [
+      {
+        "file": "09_expose_ix/components/01_apertura_y_seccion_1.tex",
+        "line": 23
+      }
+    ],
+    "sga3:ix:comments:1:2": [
+      {
+        "file": "09_expose_ix/components/01_apertura_y_seccion_1.tex",
+        "line": 59
+      }
+    ],
+    "sga3:ix:diagram:1:2": [
+      {
+        "file": "09_expose_ix/components/01_apertura_y_seccion_1.tex",
+        "line": 74
+      }
+    ],
+    "sga3:ix:definition:1:3": [
+      {
+        "file": "09_expose_ix/components/01_apertura_y_seccion_1.tex",
+        "line": 114
+      }
+    ],
+    "sga3:ix:definition:1:4": [
+      {
+        "file": "09_expose_ix/components/01_apertura_y_seccion_1.tex",
+        "line": 132
+      }
+    ],
+    "sga3:ix:remark:1:4:1": [
+      {
+        "file": "09_expose_ix/components/01_apertura_y_seccion_1.tex",
+        "line": 163
+      }
+    ],
+    "sga3:ix:remark:1:4:1:item:a": [
+      {
+        "file": "09_expose_ix/components/01_apertura_y_seccion_1.tex",
+        "line": 164
+      }
+    ],
+    "sga3:ix:remark:1:4:1:item:b": [
+      {
+        "file": "09_expose_ix/components/01_apertura_y_seccion_1.tex",
+        "line": 176
+      }
+    ],
+    "sga3:ix:remark:1:5": [
+      {
+        "file": "09_expose_ix/components/01_apertura_y_seccion_1.tex",
+        "line": 184
+      }
+    ],
+    "sga3:ix:remark:1:5:item:a": [
+      {
+        "file": "09_expose_ix/components/01_apertura_y_seccion_1.tex",
+        "line": 185
+      }
+    ],
+    "sga3:ix:remark:1:5:item:b": [
+      {
+        "file": "09_expose_ix/components/01_apertura_y_seccion_1.tex",
+        "line": 194
+      }
+    ],
+    "sga3:ix:remark:1:5:item:c": [
+      {
+        "file": "09_expose_ix/components/01_apertura_y_seccion_1.tex",
+        "line": 201
+      }
+    ],
+    "sga3:ix:section:2": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 6
+      }
+    ],
+    "sga3:ix:definition:2:0": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 19
+      }
+    ],
+    "sga3:ix:proposition:2:1": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 27
+      }
+    ],
+    "sga3:ix:proposition:2:1:item:a:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 31
+      }
+    ],
+    "sga3:ix:proposition:2:1:item:b:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 35
+      }
+    ],
+    "sga3:ix:proposition:2:1:item:c:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 41
+      }
+    ],
+    "sga3:ix:proposition:2:1:item:cprime:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 47
+      }
+    ],
+    "sga3:ix:proposition:2:1:item:d:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 52
+      }
+    ],
+    "sga3:ix:proposition:2:1:item:e:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 56
+      }
+    ],
+    "sga3:ix:proposition:2:2": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 72
+      }
+    ],
+    "sga3:ix:proposition:2:3": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 79
+      }
+    ],
+    "sga3:ix:proposition:2:3:item:a:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 84
+      }
+    ],
+    "sga3:ix:proposition:2:3:item:b:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 90
+      }
+    ],
+    "sga3:ix:corollary:2:4": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 115
+      }
+    ],
+    "sga3:ix:corollary:2:4:diagram:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 118
+      }
+    ],
+    "sga3:ix:corollary:2:5": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 132
+      }
+    ],
+    "sga3:ix:remark:2:6": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 139
+      }
+    ],
+    "sga3:ix:proposition:2:7": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 148
+      }
+    ],
+    "sga3:ix:proposition:2:7:item:i:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 152
+      }
+    ],
+    "sga3:ix:proposition:2:7:diagram:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 157
+      }
+    ],
+    "sga3:ix:proposition:2:7:item:ii:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 166
+      }
+    ],
+    "sga3:ix:corollary:2:8": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 180
+      }
+    ],
+    "sga3:ix:corollary:2:8:item:a:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 182
+      }
+    ],
+    "sga3:ix:corollary:2:8:item:b:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 186
+      }
+    ],
+    "sga3:ix:corollary:2:9": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 201
+      }
+    ],
+    "sga3:ix:corollary:2:10": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 224
+      }
+    ],
+    "sga3:ix:corollary:2:10:item:a:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 228
+      }
+    ],
+    "sga3:ix:corollary:2:10:item:b:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 232
+      }
+    ],
+    "sga3:ix:proposition:2:11": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 269
+      }
+    ],
+    "sga3:ix:proposition:2:11:item:i:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 275
+      }
+    ],
+    "sga3:ix:proposition:2:11:item:ii:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 282
+      }
+    ],
+    "sga3:ix:proposition:2:11:item:iii:01": [
+      {
+        "file": "09_expose_ix/components/02_seccion_2.tex",
+        "line": 287
+      }
+    ],
+    "sga3:ix:section:3": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 5
+      }
+    ],
+    "sga3:ix:theorem:3:1": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 15
+      }
+    ],
+    "sga3:ix:theorem:3:2": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 50
+      }
+    ],
+    "sga3:ix:corollary:3:3": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 70
+      }
+    ],
+    "sga3:ix:corollary:3:4": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 86
+      }
+    ],
+    "sga3:ix:corollary:3:5": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 97
+      }
+    ],
+    "sga3:ix:theorem:3:6": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 105
+      }
+    ],
+    "sga3:ix:theorem:3:2:bis": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 129
+      }
+    ],
+    "sga3:ix:corollary:3:3:bis": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 142
+      }
+    ],
+    "sga3:ix:corollary:3:4:bis": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 151
+      }
+    ],
+    "sga3:ix:theorem:3:6:bis": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 158
+      }
+    ],
+    "sga3:ix:theorem:3:6:bis:item:a:01": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 164
+      }
+    ],
+    "sga3:ix:theorem:3:2:item:b": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 168
+      }
+    ],
+    "sga3:ix:theorem:3:6:bis:item:b:01": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 169
+      }
+    ],
+    "sga3:ix:theorem:3:6:bis:item:c:01": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 172
+      }
+    ],
+    "sga3:ix:proposition:3:8": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 242
+      }
+    ],
+    "sga3:ix:corollary:3:9": [
+      {
+        "file": "09_expose_ix/components/03_seccion_3.tex",
+        "line": 257
+      }
+    ],
+    "sga3:ix:section:4": [
+      {
+        "file": "09_expose_ix/components/04_seccion_4_parte_1.tex",
+        "line": 6
+      }
+    ],
+    "sga3:ix:definition:4:1": [
+      {
+        "file": "09_expose_ix/components/04_seccion_4_parte_1.tex",
+        "line": 26
+      }
+    ],
+    "sga3:ix:definition:4:1:display:01": [
+      {
+        "file": "09_expose_ix/components/04_seccion_4_parte_1.tex",
+        "line": 41
+      }
+    ],
+    "sga3:ix:lemma:4:2": [
+      {
+        "file": "09_expose_ix/components/04_seccion_4_parte_1.tex",
+        "line": 63
+      }
+    ],
+    "sga3:ix:lemma:4:2:display:01": [
+      {
+        "file": "09_expose_ix/components/04_seccion_4_parte_1.tex",
+        "line": 91
+      }
+    ],
+    "sga3:ix:lemma:4:2:display:02": [
+      {
+        "file": "09_expose_ix/components/04_seccion_4_parte_1.tex",
+        "line": 101
+      }
+    ],
+    "sga3:ix:corollary:4:3": [
+      {
+        "file": "09_expose_ix/components/04_seccion_4_parte_1.tex",
+        "line": 119
+      }
+    ],
+    "sga3:ix:lemma:4:4": [
+      {
+        "file": "09_expose_ix/components/04_seccion_4_parte_1.tex",
+        "line": 161
+      }
+    ],
+    "sga3:ix:lemma:4:4:display:01": [
+      {
+        "file": "09_expose_ix/components/04_seccion_4_parte_1.tex",
+        "line": 181
+      }
+    ],
+    "sga3:ix:lemma:4:4:diagram:01": [
+      {
+        "file": "09_expose_ix/components/04_seccion_4_parte_1.tex",
+        "line": 201
+      }
+    ],
+    "sga3:ix:lemma:4:4:display:02": [
+      {
+        "file": "09_expose_ix/components/04_seccion_4_parte_1.tex",
+        "line": 247
+      }
+    ],
+    "sga3:ix:lemma:4:4:display:03": [
+      {
+        "file": "09_expose_ix/components/04_seccion_4_parte_1.tex",
+        "line": 269
+      }
+    ],
+    "sga3:ix:lemma:4:4:display:04": [
+      {
+        "file": "09_expose_ix/components/04_seccion_4_parte_1.tex",
+        "line": 276
+      }
+    ],
+    "sga3:ix:lemma:4:4:diagram:02": [
+      {
+        "file": "09_expose_ix/components/05_seccion_4_parte_2.tex",
+        "line": 20
+      }
+    ],
+    "sga3:ix:lemma:4:5:0": [
+      {
+        "file": "09_expose_ix/components/05_seccion_4_parte_2.tex",
+        "line": 179
+      }
+    ],
+    "sga3:ix:lemma:4:5": [
+      {
+        "file": "09_expose_ix/components/05_seccion_4_parte_2.tex",
+        "line": 192
+      }
+    ],
+    "sga3:ix:corollary:4:6": [
+      {
+        "file": "09_expose_ix/components/05_seccion_4_parte_2.tex",
+        "line": 262
+      }
+    ],
+    "fnref:IX-24": [
+      {
+        "file": "09_expose_ix/components/05_seccion_4_parte_2.tex",
+        "line": 297
+      }
+    ],
+    "sga3:ix:theorem:4:7": [
+      {
+        "file": "09_expose_ix/components/05_seccion_4_parte_2.tex",
+        "line": 318
+      }
+    ],
+    "sga3:ix:theorem:4:7:proof:item:a": [
+      {
+        "file": "09_expose_ix/components/05_seccion_4_parte_2.tex",
+        "line": 330
+      }
+    ],
+    "sga3:ix:theorem:4:7:proof:item:b": [
+      {
+        "file": "09_expose_ix/components/05_seccion_4_parte_2.tex",
+        "line": 371
+      }
+    ],
+    "sga3:ix:corollary:4:8": [
+      {
+        "file": "09_expose_ix/components/05_seccion_4_parte_2.tex",
+        "line": 390
+      }
+    ],
+    "sga3:ix:corollary:4:8:item:a": [
+      {
+        "file": "09_expose_ix/components/05_seccion_4_parte_2.tex",
+        "line": 392
+      }
+    ],
+    "sga3:ix:corollary:4:8:item:b": [
+      {
+        "file": "09_expose_ix/components/05_seccion_4_parte_2.tex",
+        "line": 399
+      }
+    ],
+    "sga3:ix:corollary:4:9": [
+      {
+        "file": "09_expose_ix/components/05_seccion_4_parte_2.tex",
+        "line": 419
+      }
+    ],
+    "sga3:ix:remark:4:10": [
+      {
+        "file": "09_expose_ix/components/05_seccion_4_parte_2.tex",
+        "line": 432
+      }
+    ],
+    "sga3:ix:section:5": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 5
+      }
+    ],
+    "sga3:ix:lemma:5:0": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 11
+      }
+    ],
+    "sga3:ix:theorem:5:1": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 40
+      }
+    ],
+    "sga3:ix:theorem:5:1:proof:item:a": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 52
+      }
+    ],
+    "fnref:IX-30": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 54
+      }
+    ],
+    "sga3:ix:theorem:5:1:proof:item:b": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 97
+      }
+    ],
+    "sga3:ix:corollary:5:2": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 163
+      }
+    ],
+    "sga3:ix:corollary:5:3": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 172
+      }
+    ],
+    "sga3:ix:corollary:5:4": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 194
+      }
+    ],
+    "sga3:ix:corollary:5:5": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 251
+      }
+    ],
+    "sga3:ix:theorem:5:1:bis": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 284
+      }
+    ],
+    "sga3:ix:corollary:5:3:bis": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 293
+      }
+    ],
+    "sga3:ix:corollary:5:4:bis": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 300
+      }
+    ],
+    "sga3:ix:theorem:5:6": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 313
+      }
+    ],
+    "sga3:ix:theorem:5:6:item:a": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 318
+      }
+    ],
+    "sga3:ix:theorem:5:6:item:b": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 324
+      }
+    ],
+    "sga3:ix:theorem:5:6:display:01": [
+      {
+        "file": "09_expose_ix/components/06_seccion_5.tex",
+        "line": 352
+      }
+    ],
+    "sga3:ix:section:6": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 6
+      }
+    ],
+    "sga3:ix:lemma:6:1": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 13
+      }
+    ],
+    "sga3:ix:lemma:6:1:proof:item:a": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 40
+      }
+    ],
+    "sga3:ix:lemma:6:1:proof:item:b": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 53
+      }
+    ],
+    "sga3:ix:lemma:6:1:display:01": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 82
+      }
+    ],
+    "sga3:ix:lemma:6:2": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 104
+      }
+    ],
+    "sga3:ix:lemma:6:3": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 182
+      }
+    ],
+    "sga3:ix:theorem:6:4": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 217
+      }
+    ],
+    "sga3:ix:corollary:6:5": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 232
+      }
+    ],
+    "sga3:ix:corollary:6:6": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 238
+      }
+    ],
+    "sga3:ix:remark:6:6:1": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 267
+      }
+    ],
+    "sga3:ix:corollary:6:7": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 280
+      }
+    ],
+    "sga3:ix:theorem:6:8": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 299
+      }
+    ],
+    "sga3:ix:theorem:6:8:diagram:01": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 310
+      }
+    ],
+    "sga3:ix:theorem:6:8:diagram:02": [
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 367
+      }
+    ],
+    "sga3:ix:section:7": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 5
+      }
+    ],
+    "sga3:ix:theorem:7:1": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 11
+      }
+    ],
+    "sga3:ix:theorem:7:1:equation:x": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 21
+      }
+    ],
+    "sga3:ix:theorem:7:1:display:01": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 52
+      }
+    ],
+    "sga3:ix:theorem:7:1:display:02": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 74
+      }
+    ],
+    "sga3:ix:theorem:7:1:diagram:01": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 104
+      }
+    ],
+    "sga3:ix:theorem:7:1:display:phi:01": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 136
+      }
+    ],
+    "sga3:ix:theorem:7:1:display:03": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 151
+      }
+    ],
+    "sga3:ix:theorem:7:1:diagram:02": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 158
+      }
+    ],
+    "sga3:ix:theorem:7:1:display:04": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 173
+      }
+    ],
+    "sga3:ix:lemma:7:2": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 200
+      }
+    ],
+    "sga3:ix:lemma:7:2:item:i": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 206
+      }
+    ],
+    "sga3:ix:lemma:7:2:item:ii": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 210
+      }
+    ],
+    "sga3:ix:lemma:7:2:display:01": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 212
+      }
+    ],
+    "sga3:ix:theorem:7:1:diagram:03": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 305
+      }
+    ],
+    "sga3:ix:corollary:7:3": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 340
+      }
+    ],
+    "sga3:ix:remark:7:4": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 383
+      }
+    ],
+    "sga3:ix:remark:7:4:display:01": [
+      {
+        "file": "09_expose_ix/components/08_seccion_7.tex",
+        "line": 402
+      }
+    ],
+    "sga3:ix:section:8": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 5
+      }
+    ],
+    "sga3:ix:scholium:8:0": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 19
+      }
+    ],
+    "sga3:ix:proposition:8:1": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 33
+      }
+    ],
+    "sga3:ix:eq:8:1:1": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 48
+      }
+    ],
+    "sga3:ix:eq:8:1:2": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 56
+      }
+    ],
+    "sga3:ix:eq:8:1:3": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 63
+      }
+    ],
+    "sga3:ix:eq:8:1:4": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 70
+      }
+    ],
+    "sga3:ix:proposition:8:2": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 91
+      }
+    ],
+    "sga3:ix:eq:8:2:0": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 97
+      }
+    ],
+    "sga3:ix:proposition:8:2:item:i": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 103
+      }
+    ],
+    "sga3:ix:proposition:8:2:item:ii": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 106
+      }
+    ],
+    "sga3:ix:eq:8:2:1": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 136
+      }
+    ],
+    "sga3:ix:eq:8:2:2": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 145
+      }
+    ],
+    "sga3:ix:eq:8:2:3": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 154
+      }
+    ],
+    "sga3:ix:eq:8:2:4": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 181
+      }
+    ],
+    "sga3:ix:remark:8:3": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 196
+      }
+    ],
+    "sga3:ix:bibliography": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 212
+      }
+    ],
+    "sga3:ix:bib:bens": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 218
+      }
+    ],
+    "sga3:tome2:index:notaciones": [
+      {
+        "file": "99_notation_index/components/01_indice_de_notaciones.tex",
+        "line": 7
+      }
+    ]
+  },
+  "original_macro_definitions": {
+    "thefootnote": [
+      {
+        "file": "08_expose_viii/components/08_seccion_6_parte_1.tex",
+        "line": 10
+      },
+      {
+        "file": "08_expose_viii/components/10_seccion_7_parte_1.tex",
+        "line": 54
+      },
+      {
+        "file": "08_expose_viii/components/10_seccion_7_parte_1.tex",
+        "line": 82
+      },
+      {
+        "file": "08_expose_viii/components/10_seccion_7_parte_1.tex",
+        "line": 116
+      },
+      {
+        "file": "08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+        "line": 50
+      },
+      {
+        "file": "09_expose_ix/components/04_seccion_4_parte_1.tex",
+        "line": 11
+      },
+      {
+        "file": "09_expose_ix/components/07_seccion_6.tex",
+        "line": 190
+      },
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 7
+      }
+    ],
+    "theHfootnote": [
+      {
+        "file": "09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+        "line": 8
+      }
+    ],
+    "arraystretch": [
+      {
+        "file": "99_notation_index/components/01_indice_de_notaciones.tex",
+        "line": 11
+      }
+    ]
+  },
+  "preserved_original_target_count": 315,
+  "missing_original_targets": [],
+  "remaining_links_to_missing_original_targets": [],
+  "duplicate_current_targets": {},
+  "missing_original_macro_definition_names": [
+    "arraystretch"
+  ]
+}

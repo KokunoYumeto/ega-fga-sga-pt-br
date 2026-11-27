@@ -1,0 +1,81 @@
+% Infraestrutura tipográfica da edição portuguesa de SGA 3, VIII--IX.
+% Este arquivo define somente a composição; não é fonte do texto matemático.
+\documentclass[11pt,a4paper,oneside,openany]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs,mathtools}
+\usepackage[a4paper,margin=25mm,headheight=14pt,headsep=7mm,footskip=12mm]{geometry}
+\usepackage{microtype}
+\usepackage{array,longtable,enumitem}
+\usepackage{tikz-cd}
+\usetikzlibrary{arrows,arrows.meta,positioning}
+\usepackage{fancyhdr}
+\usepackage[unicode,hidelinks,hypertexnames=false]{hyperref}
+\usepackage{bookmark}
+\IfFileExists{brazilian.ldf}{\usepackage[brazilian]{babel}}{%
+  \usepackage[provide=*]{babel}
+  \babelprovide[import,main]{brazilian}}
+% Com brazilian.ldf, o babel torna " um caractere ativo; a biblioteca babel do TikZ
+% protege os rótulos "..." dos diagramas tikz-cd (27 nov. 2026).
+\usetikzlibrary{babel}
+\hypersetup{pdftitle={SGA 3, Exposições VIII e IX — texto de 1970},
+  pdfauthor={A. Grothendieck},pdfsubject={Tradução em português brasileiro}}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt plus .3pt}
+\setlength{\emergencystretch}{2em}
+\setlist{topsep=.5\baselineskip,itemsep=.25\baselineskip,parsep=0pt}
+\allowdisplaybreaks[1]
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\nouppercase{\leftmark}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}}
+\raggedbottom
+
+% As chamadas conservam os nomes e identificadores dos arquivos recebidos.
+% Remissões a exposições ausentes conservam o texto, sem destino fictício.
+\makeatletter
+\newcommand{\SGASetTarget}[1]{\phantomsection\label{#1}}
+\newcommand{\SGARefTarget}[1]{%
+  \@ifnextchar\chapter{\SGAChapterTarget{#1}}{\SGASetTarget{#1}}}
+\def\SGAChapterTarget#1\chapter*#2{\chapter*{#2}\SGASetTarget{#1}}
+\newcommand{\SGAInlineRefTarget}[1]{\SGASetTarget{#1}}
+\newcommand{\SGARefLink}[2]{\@ifundefined{r@#1}{#2}{\hyperref[#1]{#2}}}
+\makeatother
+
+\newcommand{\SGAFrontCover}[7]{%
+  \begin{titlepage}\centering
+  {\Large #1\par}\vspace{1em}{\large #2\par}\vspace{1em}
+  {#3\par}\vspace{2.5em}{\Huge #4\par}\vfill
+  {\LARGE\bfseries #5\par}\vfill
+  {\Large #6\par}\vspace{1em}{#7\par}
+  \end{titlepage}}
+\newcommand{\SGACopyrightPage}[1]{%
+  \clearpage\thispagestyle{empty}\vspace*{\fill}
+  {\small\noindent #1\par}\clearpage}
+\newcommand{\SGAInnerTitle}[5]{%
+  \clearpage\thispagestyle{empty}\begin{center}
+  {\Large #1\par}\vspace{1em}{\large #2\par}\vspace{2em}
+  {\LARGE\bfseries #3\par}\vspace{2em}{\large #4\par}\vfill
+  {\Large #5\par}\end{center}\clearpage}
+\newenvironment{SGAContentsPage}[1]{%
+  \clearpage\thispagestyle{plain}\begingroup\small
+  \setlength{\parindent}{0pt}\setlength{\parskip}{0pt}
+  \if\relax\detokenize{#1}\relax\else
+    \begin{center}\large\bfseries #1\end{center}\medskip\fi
+}{\par\endgroup\clearpage}
+\newcommand{\SGAContentsExpose}[3]{%
+  \par\addvspace{.8em}\noindent\textbf{#1}\par
+  \begingroup\raggedright\noindent #2\nobreak\hfill #3\par\endgroup\smallskip}
+\newcommand{\SGAContentsEntry}[3]{%
+  \par\begingroup\hangindent=2em\hangafter=1
+  \noindent\makebox[2em][l]{#1}#2\nobreak\hfill #3\par\endgroup}
+\newcommand{\SGAContentsSubentry}[3]{%
+  \par\begingroup\leftskip=2em\hangindent=2em\hangafter=1
+  \noindent\makebox[2em][l]{#1}#2\nobreak\hfill #3\par\endgroup}
+\newcommand{\SGAContentsAppendix}[3]{%
+  \par\addvspace{.8em}\noindent\textbf{#1} #2\nobreak\hfill #3\par\smallskip}
+\newcommand{\SGAContentsIndex}[2]{%
+  \par\addvspace{.8em}\noindent\textbf{#1}\nobreak\hfill #2\par}

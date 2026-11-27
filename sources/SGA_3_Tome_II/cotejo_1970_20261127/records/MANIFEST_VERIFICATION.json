@@ -1,0 +1,293 @@
+{
+  "verified_utc": "2026-11-27T17:09:26.409348+00:00",
+  "files": [
+    {
+      "file": "records/ptbr_alignment.json",
+      "bytes": 113156,
+      "sha256": "becad4de08cb7219bac746c1d6de6af63429e17fa006e59be194f2ed33f41245",
+      "status": "verified"
+    },
+    {
+      "file": "records/ptbr_decisions.json",
+      "bytes": 104970,
+      "sha256": "01ab156d333c2e04830b83246458caaa5ad0060993d7e5a03d674a1fd284e208",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_1970_scan/LNM152_pdf_pages_001-100.pdf",
+      "bytes": 10604758,
+      "sha256": "78b469473551ba306bf536ca3f4312508ce11835d3e717d8ba9d4177eb488c3f",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/IX/body.tex",
+      "bytes": 277,
+      "sha256": "d713744f2c6e2dc51486879a860254d1fb7f73b4d1ba4c9cef5a43271fb2bbe1",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/IX/tex/components/01_expose_IX_opening_and_section_1.tex",
+      "bytes": 9219,
+      "sha256": "94fba2115de3a3d98617c64cac7ed210b29aa384e2485c738c7088704eec42f0",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/IX/tex/components/02_expose_IX_sections_2_3.tex",
+      "bytes": 25435,
+      "sha256": "608e09abe21a334342a6e376edbe202d3e76cf2dc1a3ba53a82c997a3b2184fa",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/IX/tex/components/03_expose_IX_sections_4_5.tex",
+      "bytes": 34807,
+      "sha256": "9088d605bb80aa7e8c785f2f7ae69bfa9b3d989311e397b1ea065e05815e1b15",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/IX/tex/components/04_expose_IX_sections_6_7.tex",
+      "bytes": 25542,
+      "sha256": "8ff3edf00f4efba0b18294330c53c8f8e35242eb5d91d5f15e2d3c1994431c6b",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/IX/tex/components/05_expose_IX_section_8_and_bibliography.tex",
+      "bytes": 5102,
+      "sha256": "752a9c461080d0487ac4d185231de6b080b7a4b6e2e3afdcb65db9a3ece0796c",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/VIII/body.tex",
+      "bytes": 560,
+      "sha256": "3053d376b7c947f01f260696b87590d5f2350068a031532102c99c76b90d097b",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/VIII/tex/components/01_expose_VIII_opening_through_corollary_1_3.tex",
+      "bytes": 8466,
+      "sha256": "1b02d9413a38c0af6ee6df711561bf3b5403289683c543d8312e2dae5f4ce06b",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/VIII/tex/components/02_expose_VIII_corollary_1_4_through_remark_1_7_4.tex",
+      "bytes": 2183,
+      "sha256": "e79430251732d908b79d6f27207d115947f631f3e774f1d4b30802e79c41da1c",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/VIII/tex/components/03_expose_VIII_section4_continuation_p14.tex",
+      "bytes": 1446,
+      "sha256": "e934e1f42a4397aafd19212d6050b628bd689d115af626631dfb47e77e6f843d",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/VIII/tex/components/05_expose_VIII_section7_part1.tex",
+      "bytes": 12127,
+      "sha256": "c865483960541c2eb7fb35ac1cea88100381d437081dcc1f16b4b9d6b52afb42",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/VIII/tex/components/06_expose_VIII_section7_part2_and_bibliography.tex",
+      "bytes": 13479,
+      "sha256": "a73bef90178f8612809c664dafa12b48bfbcca02c8859abcf55ef84b74f7c92b",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/VIII/tex/components/delegated_sections2_4/01_expose_VIII_s2_s4_pp007_013.tex",
+      "bytes": 20584,
+      "sha256": "54ac62adbc49db6160c7e09e890e1bd548e90210be3d00bd1cf11fa65c9d75e2",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/VIII/tex/components/delegated_sections5_6/05_expose_VIII_section5_en.tex",
+      "bytes": 9035,
+      "sha256": "a3e975ae15ddb92dbe1e508fe930bccfd0a50885cb75d49591445a0634cddb02",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_EN_1970_VIII_IX/VIII/tex/components/delegated_sections5_6/06_expose_VIII_section6_en.tex",
+      "bytes": 14615,
+      "sha256": "1e83a74e35898adc14e731a5947df649f90a4c7ddeb21743fa9a1bfa98c37b50",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/08_expose_viii/body.tex",
+      "bytes": 926,
+      "sha256": "0dad35ab58ce57a8eb5271fe98b22573864103c91b9cec50495ac9d1155c19ae",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/08_expose_viii/components/01_apertura_hasta_corolario_1_3.tex",
+      "bytes": 10135,
+      "sha256": "6f2f6ac2154c09483e719deb2ef42e4c9c99b306c4633ef3bc32a5b0ba23c44e",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/08_expose_viii/components/02_corolario_1_4_hasta_observacion_1_7_4.tex",
+      "bytes": 13871,
+      "sha256": "dc9f8465ef7b1adb47eb81966762e5035692652db4a425741dfd1e183fff6f2f",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/08_expose_viii/components/03_seccion_2.tex",
+      "bytes": 4054,
+      "sha256": "b9ffcb4a6024aaf9362d9f7ff4b7ad7b68ed0fbccf657d56b39f7d67d705b006",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/08_expose_viii/components/04_seccion_3.tex",
+      "bytes": 10441,
+      "sha256": "16dc6175619eb48cb1aa90001559654570de1b63a39afb1c71e258a870b7964b",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/08_expose_viii/components/05_seccion_4_parte_1.tex",
+      "bytes": 11658,
+      "sha256": "6a3904db37374f12e1f86fe29384f2cacd98c1c6023e9e45504c3de34a4f3381",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/08_expose_viii/components/06_seccion_4_continuacion.tex",
+      "bytes": 1722,
+      "sha256": "6a8560f768a4cc55e00252d18b6e2da577459cca91a1772a0a14b997ec2dce23",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/08_expose_viii/components/07_seccion_5.tex",
+      "bytes": 10337,
+      "sha256": "ca9f4041c8bf194b6e3f59428c1aed38567cc181b74a0284083586b665155c3b",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/08_expose_viii/components/08_seccion_6_parte_1.tex",
+      "bytes": 9646,
+      "sha256": "aac0c8fd9e668f0e31b32a564b912380a593cbf3b8da1b8b669ad7e2a5c532c0",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/08_expose_viii/components/09_seccion_6_parte_2.tex",
+      "bytes": 12633,
+      "sha256": "c70a2a3cdda911863a7c804562ce01228cc77a4d324f00f1848360167f8712a1",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/08_expose_viii/components/10_seccion_7_parte_1.tex",
+      "bytes": 12496,
+      "sha256": "0d191fb04ce14110c6df78cf043c4ba6ac079209b6f8118070b3049868236a60",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/08_expose_viii/components/11_seccion_7_parte_2_y_bibliografia.tex",
+      "bytes": 14715,
+      "sha256": "c0a414f93b14fd12c6254d2e38fcfc8e4aa1515a9c7b9d682d5fc0a0c7506b0e",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/09_expose_ix/body.tex",
+      "bytes": 718,
+      "sha256": "fe2615b1ea40c9d3875ad7f7f9a72845eea53b9fb4f9e488e5c885eb450c7111",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/09_expose_ix/components/01_apertura_y_seccion_1.tex",
+      "bytes": 10099,
+      "sha256": "760b11274c637413e4bb07971afdfa1c84c3452f8849ef2927c1e864b45c8006",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/09_expose_ix/components/02_seccion_2.tex",
+      "bytes": 16157,
+      "sha256": "25a9c28967b784fd057d7976320830c21d8fb17a6dae435e5503b155e5b6e685",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/09_expose_ix/components/03_seccion_3.tex",
+      "bytes": 12485,
+      "sha256": "9c6cee190b5e9384c6b7989d6b8a397f112fd20d06397f86bd2f3b1c4c68eb81",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/09_expose_ix/components/04_seccion_4_parte_1.tex",
+      "bytes": 12822,
+      "sha256": "c20cdb5b173fb0290146700aebb3b7113be39da2cc5427eab0bd7205fea7fe7a",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/09_expose_ix/components/05_seccion_4_parte_2.tex",
+      "bytes": 17716,
+      "sha256": "d038dd288053b4d9ce8d9e2b2f237e027cecd0729b18d878b6c8f7dc188607ad",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/09_expose_ix/components/06_seccion_5.tex",
+      "bytes": 18013,
+      "sha256": "22de9191c1b7e60afc38cd3920952064f1088a41c4af5d2410aecaf2ff79e11c",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/09_expose_ix/components/07_seccion_6.tex",
+      "bytes": 14292,
+      "sha256": "29b23cf7b4773e3acbfc53245a099cf9e24e744237f45be3727e0e9a68f498b5",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/09_expose_ix/components/08_seccion_7.tex",
+      "bytes": 13326,
+      "sha256": "ee2d8edacc2c9307a4c150662617ed8bf21c3e4a5bff8db94a6e5616dff7fb22",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/09_expose_ix/components/09_seccion_8_y_bibliografia.tex",
+      "bytes": 8672,
+      "sha256": "54bf662b5d333d29104327d812ed7e501f45461639e46aac3c49ed1c90cd3d6e",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/99_notation_index/body.tex",
+      "bytes": 344,
+      "sha256": "6f41d96f995d6ce2dcf35a5833f9ac4a9e2952a233d3733f71cd9ff352085b25",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/99_notation_index/components/01_indice_de_notaciones.tex",
+      "bytes": 1981,
+      "sha256": "f7c6e87009c70f52a82406ccf632ca7ab944071aeed16e15364934a432e54519",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/ptbr_current.tex",
+      "bytes": 14541,
+      "sha256": "ccdb66ce4bc20a11564a86c87d8663684c3de992b63b33fe3614f375c2787f48",
+      "status": "verified"
+    },
+    {
+      "file": "SGA3_PTBR_sources/ptbr_original.tex",
+      "bytes": 14541,
+      "sha256": "ccdb66ce4bc20a11564a86c87d8663684c3de992b63b33fe3614f375c2787f48",
+      "status": "verified"
+    },
+    {
+      "file": "terms/DECISIONS_20261119b.tsv",
+      "bytes": 25461,
+      "sha256": "eebd28604b9809f892afb2b29ac7ab0651d2ff2bb8cfcd99fdbdcb4d9b0d3270",
+      "status": "verified"
+    },
+    {
+      "file": "terms/DOUBTS_pt-BR.tsv",
+      "bytes": 8062,
+      "sha256": "57f9f630a02887608701397577c0ca9e37147b6ca28e425c8b631662d9214180",
+      "status": "verified"
+    },
+    {
+      "file": "terms/GLOSSARY_pt-BR.tsv",
+      "bytes": 25558,
+      "sha256": "e2e4d1cae32ee58447cdce28add9b0a18378ec8ef107e6307eadf5fc2a3e8ce8",
+      "status": "verified"
+    },
+    {
+      "file": "terms/STANDARDS_20261119b.md",
+      "bytes": 18561,
+      "sha256": "b60502f11652653c8a7c68d60d5f1bb6a61b343b8f1f8e1c8fdd7ce39110690d",
+      "status": "verified"
+    }
+  ]
+}

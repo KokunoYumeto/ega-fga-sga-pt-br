@@ -1,0 +1,1053 @@
+{
+  "created_utc": "2026-11-27 18:44:59 UTC",
+  "pdf": "ptbr_current.pdf",
+  "pdf_sha256": "645e240b7e2ddbce3a62bd4a980dcdd7ac376bb3aa83ed573b14b05b338ecc2b",
+  "page_count": 43,
+  "render_scale": 1.4,
+  "dpi_equivalent": 100.8,
+  "contact_sheets": [
+    {
+      "image": "contact_01.png",
+      "first_pdf_page": 1,
+      "last_pdf_page": 12
+    },
+    {
+      "image": "contact_02.png",
+      "first_pdf_page": 13,
+      "last_pdf_page": 24
+    },
+    {
+      "image": "contact_03.png",
+      "first_pdf_page": 25,
+      "last_pdf_page": 36
+    },
+    {
+      "image": "contact_04.png",
+      "first_pdf_page": 37,
+      "last_pdf_page": 43
+    }
+  ],
+  "pages": [
+    {
+      "pdf_page": 1,
+      "page_label": "1",
+      "first_line": "Lecture Notes in Mathematics",
+      "first_body_line": "Lecture Notes in Mathematics",
+      "first_three_body_lines": "Lecture Notes in Mathematics | Uma coleção de relatórios e seminários informais | Editada por A. Dold, Heidelberg, e B. Eckmann, Zurique",
+      "headings_by_font_size": "Lecture Notes in Mathematics | 152 | Grupos de tipo multiplicativo | e estrutura dos | esquemas de grupos | em geral | Springer-Verlag",
+      "image": "page_001.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 2,
+      "page_label": "1",
+      "first_line": "Esta obra é protegida por direitos de autor. Reservam-se todos os direitos, tanto sobre a totalidade",
+      "first_body_line": "Esta obra é protegida por direitos de autor. Reservam-se todos os direitos, tanto sobre a totalidade",
+      "first_three_body_lines": "Esta obra é protegida por direitos de autor. Reservam-se todos os direitos, tanto sobre a totalidade | como sobre qualquer parte do material, em particular sobre a tradução, a reimpressão, a reutilização de | ilustrações, a radiodifusão, a reprodução por fotocopiadora ou meios similares e o armazenamento em",
+      "headings_by_font_size": "",
+      "image": "page_002.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 3,
+      "page_label": "2",
+      "first_line": "SEMINÁRIO DE GEOMETRIA ALGÉBRICA DO BOIS MARIE",
+      "first_body_line": "SEMINÁRIO DE GEOMETRIA ALGÉBRICA DO BOIS MARIE",
+      "first_three_body_lines": "SEMINÁRIO DE GEOMETRIA ALGÉBRICA DO BOIS MARIE | 1962/64 | ESQUEMAS DE GRUPOS",
+      "headings_by_font_size": "SEMINÁRIO DE GEOMETRIA ALGÉBRICA DO BOIS MARIE | ESQUEMAS DE GRUPOS | (SGA 3) | TOMO II",
+      "image": "page_003.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 4,
+      "page_label": "IV",
+      "first_line": "ÍNDICE GERAL",
+      "first_body_line": "ÍNDICE GERAL",
+      "first_three_body_lines": "ÍNDICE GERAL | EXPOSIÇÃO VIII | GRUPOS DIAGONALIZÁVEIS, por A. GROTHENDIECK.",
+      "headings_by_font_size": "",
+      "image": "page_004.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 5,
+      "page_label": "V",
+      "first_line": "Nota desta edição",
+      "first_body_line": "Nota desta edição",
+      "first_three_body_lines": "Nota desta edição | Esta edição das Exposições VIII e IX de SGA 3 segue o texto da impressão de 1970, Lecture | Notes in Mathematics 152, páginas 1–76. A tradução brasileira foi feita inicialmente em 2026 a",
+      "headings_by_font_size": "Nota desta edição",
+      "image": "page_005.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 6,
+      "page_label": "1",
+      "first_line": "Exposé VIII",
+      "first_body_line": "Exposé VIII",
+      "first_three_body_lines": "Exposé VIII | Grupos diagonalizáveis | por A. Grothendieck",
+      "headings_by_font_size": "Exposé VIII | Grupos diagonalizáveis | 1. Bidualidade",
+      "image": "page_006.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 7,
+      "page_label": "2",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "Diz-se que G é reflexivo (relativamente a I) se o homomorfismo anterior é um isomorfismo.",
+      "first_three_body_lines": "Diz-se que G é reflexivo (relativamente a I) se o homomorfismo anterior é um isomorfismo. | Observe-se que isso implica que G é comutativo. | Vê-se assim que o funtor D induz uma",
+      "headings_by_font_size": "",
+      "image": "page_007.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 8,
+      "page_label": "3",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "Demonstração. Por definição,",
+      "first_three_body_lines": "Demonstração. Por definição, | Gm = GL(1) = AutOS-Módulo(OS), | Portanto, dar um homomorfismo de grupos G →Gm,S equivale a munir OS de uma estrutura",
+      "headings_by_font_size": "2. Propriedades esquemáticas dos grupos diagonalizáveis",
+      "image": "page_008.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 9,
+      "page_label": "4",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "(b) M é de tipo finito se, e somente se, G é de tipo finito sobre S, se, e somente se, G é de",
+      "first_three_body_lines": "(b) M é de tipo finito se, e somente se, G é de tipo finito sobre S, se, e somente se, G é de | apresentação finita sobre S; | (c) M é finito se, e somente se, G é finito sobre S, se, e somente se, G é de tipo finito sobre",
+      "headings_by_font_size": "3. Propriedades de exatidão do funtor DS",
+      "image": "page_009.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 10,
+      "page_label": "5",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "(a) u é um monomorfismo se, e somente se, u′ é fielmente plano;",
+      "first_three_body_lines": "(a) u é um monomorfismo se, e somente se, u′ é fielmente plano; | (b) u é um epimorfismo se, e somente se, u′ é um monomorfismo; nesse caso, u′ é, de fato, | uma imersão fechada.",
+      "headings_by_font_size": "",
+      "image": "page_010.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 11,
+      "page_label": "6",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "Observações. O resultado da existência de quocientes de 3.4 será generalizado consideravelmente",
+      "first_three_body_lines": "Observações. O resultado da existência de quocientes de 3.4 será generalizado consideravelmente | no §5. | Observe-se que, na presente seção e na precedente, a hipótese S ̸= ∅foi utilizada apenas",
+      "headings_by_font_size": "4. Torsores sob um grupo diagonalizável",
+      "image": "page_011.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 12,
+      "page_label": "7",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "(b) para m, m′ ∈M, o homomorfismo",
+      "first_three_body_lines": "(b) para m, m′ ∈M, o homomorfismo | Am ⊗OS Am′ −→Am+m′ | induzido pela multiplicação em A é um isomorfismo.",
+      "headings_by_font_size": "",
+      "image": "page_012.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 13,
+      "page_label": "8",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "Gm. Por exemplo, a única forma torcida de Gm sobre o corpo R dos números reais tem primeiro",
+      "first_three_body_lines": "Gm. Por exemplo, a única forma torcida de Gm sobre o corpo R dos números reais tem primeiro | grupo de cohomologia igual a Z/2Z. | Precisaremos do resultado seguinte na seção seguinte.",
+      "headings_by_font_size": "5. Quociente de um esquema afim por um grupo diagonalizável | que atua livremente",
+      "image": "page_013.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 14,
+      "page_label": "9",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "Demonstração. Ponha-se X = Spec(A0). A inclusão A0 →A fornece um morfismo natural",
+      "first_three_body_lines": "Demonstração. Ponha-se X = Spec(A0). A inclusão A0 →A fornece um morfismo natural | P →X, invariante sob a ação de G. Assim, P torna-se um X-pré-esquema, afim sobre X, com | grupo de operadores GX = DX(M); a hipótese de que G atua livremente sobre P/S implica que",
+      "headings_by_font_size": "",
+      "image": "page_014.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 15,
+      "page_label": "10",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "Como o grau total de dm é m, basta utilizar termos que satisfaçam",
+      "first_three_body_lines": "Como o grau total de dm é m, basta utilizar termos que satisfaçam | r + s + p = m. | Assim, para todo m ∈M, deve existir uma expressão",
+      "headings_by_font_size": "",
+      "image": "page_015.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 16,
+      "page_label": "11",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "Corolário 5.6. Seja s uma seção de P sobre S. Então o morfismo g 7→s · g de G para P,",
+      "first_three_body_lines": "Corolário 5.6. Seja s uma seção de P sobre S. Então o morfismo g 7→s · g de G para P, | definido por s, é uma imersão fechada. | Corolário 5.7. Sejam G e H dois S-grupos, com G diagonalizável e H afim sobre S, e seja",
+      "headings_by_font_size": "6. Morfismos essencialmente livres e representabilidade de certos | Y/S Z/Y (*) | funtores da forma",
+      "image": "page_016.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 17,
+      "page_label": "12",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "S = S′",
+      "first_three_body_lines": "S = S′ | i. (Note-se que, em virtude de SGA 1 VIII, os morfismos fielmente planos e quase- | compactos são de descida efetiva para a categoria fibrada das setas de imersão fechada.) Seja",
+      "headings_by_font_size": "",
+      "image": "page_017.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 18,
+      "page_label": "13",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "Pode-se, portanto, escrevê-lo na forma (xxx), com P = X ×S Y e P ′ a imagem inversa da diagonal",
+      "first_three_body_lines": "Pode-se, portanto, escrevê-lo na forma (xxx), com P = X ×S Y e P ′ a imagem inversa da diagonal | por r : X ×S Y →Z ×S Z, deduzido de q1, q2, isto é, o núcleo de | r1",
+      "headings_by_font_size": "",
+      "image": "page_018.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 19,
+      "page_label": "14",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "Por fim, seja Z um subpré-esquema de G. Seu centralizador CentrG(Z) em G é o subfuntor",
+      "first_three_body_lines": "Por fim, seja Z um subpré-esquema de G. Seu centralizador CentrG(Z) em G é o subfuntor | em grupos de G definido pelo procedimento de (d), considerando que «Z atua sobre G» mediante | a ação induzida pela de G. Assim, se Z é essencialmente livre sobre S e G é separado sobre S,",
+      "headings_by_font_size": "7. Apêndice: sobre os monomorfismos de pré-esquemas em grupos",
+      "image": "page_019.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 20,
+      "page_label": "15",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "de curvas elípticas fornece outros exemplos desse fenômeno nos quais H é suave sobre S, de",
+      "first_three_body_lines": "de curvas elípticas fornece outros exemplos desse fenômeno nos quais H é suave sobre S, de | dimensão relativa um, e G tem fibras conexas. | É possível(∗), por outro lado, que, supondo G plano sobre S, e, digamos, G e H de apresentação",
+      "headings_by_font_size": "",
+      "image": "page_020.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 21,
+      "page_label": "16",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "Segue-se que Gs é aberto em Hs, e é, como conjunto, uma união de componentes conexas de Hs.",
+      "first_three_body_lines": "Segue-se que Gs é aberto em Hs, e é, como conjunto, uma união de componentes conexas de Hs. | (Reduz-se ao caso em que o corpo-base é algebricamente fechado, e G e H reduzidos, portanto | suaves sobre k, onde isso é imediato. . . )",
+      "headings_by_font_size": "",
+      "image": "page_021.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 22,
+      "page_label": "17",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "Lema 7.3. Seja K um corpo e seja Q um esquema em grupos finito comutativo sobre K, de",
+      "first_three_body_lines": "Lema 7.3. Seja K um corpo e seja Q um esquema em grupos finito comutativo sobre K, de | grau n. Então n · idQ = 0, isto é, o morfismo de potência n-ésima em Q é nulo. | Cf. VIIA, 8.5.",
+      "headings_by_font_size": "",
+      "image": "page_022.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 23,
+      "page_label": "18",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "onde m é o ideal de aumentação, equivalentemente o ideal maximal, de OH,e. De fato, pν idH se",
+      "first_three_body_lines": "onde m é o ideal de aumentação, equivalentemente o ideal maximal, de OH,e. De fato, pν idH se | anula sobre o núcleo do «homomorfismo de Frobenius iterado» F ν. O composto de (x) e (xx) é o | composto natural",
+      "headings_by_font_size": "",
+      "image": "page_023.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 24,
+      "page_label": "19",
+      "first_line": "EXPOSÉ VIII. GRUPOS DIAGONALIZÁVEIS",
+      "first_body_line": "Busquemos agora condições sob as quais u seja uma imersão fechada. Conservemos as hipóteses",
+      "first_three_body_lines": "Busquemos agora condições sob as quais u seja uma imersão fechada. Conservemos as hipóteses | que precedem a Proposição 7.9, mas deixemos de supor que u seja sobrejetivo; suponhamos | apenas que seja um isomorfismo nas fibras genéricas. Já sabemos que u : G →H é uma imersão",
+      "headings_by_font_size": "",
+      "image": "page_024.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 25,
+      "page_label": "20",
+      "first_line": "Exposé IX",
+      "first_body_line": "Exposé IX",
+      "first_three_body_lines": "Exposé IX | Grupos de tipo multiplicativo: | Homomorfismos em um esquema em",
+      "headings_by_font_size": "Exposé IX | Grupos de tipo multiplicativo: | Homomorfismos em um esquema em | grupos | 1. Definições",
+      "image": "page_025.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 26,
+      "page_label": "21",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "t. m. geral",
+      "first_three_body_lines": "t. m. geral | quase-isotrivial | localmente isotrivial",
+      "headings_by_font_size": "",
+      "image": "page_026.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 27,
+      "page_label": "22",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "Observações 1.5. É trivial, pelas definições 1.1 e 1.3, que estas são «compatíveis com a",
+      "first_three_body_lines": "Observações 1.5. É trivial, pelas definições 1.1 e 1.3, que estas são «compatíveis com a | extensão da base». Assim, se G é um pré-esquema em grupos sobre S, e S′ →S um morfismo de | mudança de base, então, se G é de tipo multiplicativo (resp. de tipo multiplicativo isotrivial,",
+      "headings_by_font_size": "2. Extensão de certas propriedades dos grupos diagonalizáveis | aos grupos de tipo multiplicativo",
+      "image": "page_027.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 28,
+      "page_label": "23",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "Corolário 2.4. Sob as hipóteses de 2.3, o morfismo gráfico",
+      "first_three_body_lines": "Corolário 2.4. Sob as hipóteses de 2.3, o morfismo gráfico | X ×S G −→X ×S X | é uma imersão fechada. Para toda seção s de X sobre S, o morfismo correspondente g 7→s.g:",
+      "headings_by_font_size": "",
+      "image": "page_028.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 29,
+      "page_label": "24",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "Seja U o conjunto dos s ∈S tais que Hs ⊂H′",
+      "first_three_body_lines": "Seja U o conjunto dos s ∈S tais que Hs ⊂H′ | s (resp. Hs = H′ | s). Então U é aberto e fechado, e",
+      "headings_by_font_size": "3. Propriedades infinitesimais: teoremas de levantamento e de | conjugação",
+      "image": "page_029.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 30,
+      "page_label": "25",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "quase-coerente sobre S, sobre o qual G atua (I 4.7). Então tem-se",
+      "first_three_body_lines": "quase-coerente sobre S, sobre o qual G atua (I 4.7). Então tem-se | Hi(H, F) = 0 | para i > 0,",
+      "headings_by_font_size": "",
+      "image": "page_030.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 31,
+      "page_label": "26",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "Corolário 3.3 bis. Sob as hipóteses preliminares de 3.2 bis, suponhamos ainda que G seja suave",
+      "first_three_body_lines": "Corolário 3.3 bis. Sob as hipóteses preliminares de 3.2 bis, suponhamos ainda que G seja suave | sobre S e que J seja nilpotente (não necessariamente de quadrado zero). Seja g0 ∈G0(S0) tal | 0 = int(g0)H0, então g0 se levanta a g ∈G(S) tal que H′ = int(g)H.",
+      "headings_by_font_size": "4. O teorema de densidade∗",
+      "image": "page_031.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 32,
+      "page_label": "27",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "pré-esquema S) que, para todo aberto U de X e todo par (u, v) de morfismos de U para um",
+      "first_three_body_lines": "pré-esquema S) que, para todo aberto U de X e todo par (u, v) de morfismos de U para um | S-pré-esquema Y separado sobre S, que coincidem sobre os Zi ∩U, tem-se u = v. (Com efeito, a | relação u = v equivale à relação U′ = U, onde U′ é a imagem inversa da diagonal de Y ×S Y",
+      "headings_by_font_size": "",
+      "image": "page_032.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 33,
+      "page_label": "28",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "pela mudança de base S′′ →S, donde o diagrama:",
+      "first_three_body_lines": "pela mudança de base S′′ →S, donde o diagrama: | Z′′i | Z′i",
+      "headings_by_font_size": "",
+      "image": "page_033.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 34,
+      "page_label": "29",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "no início da demonstração precedente, reduz-se facilmente ao caso em que k′ é uma extensão",
+      "first_three_body_lines": "no início da demonstração precedente, reduz-se facilmente ao caso em que k′ é uma extensão | de tipo finito de k. (NB toda seção f′′ de OX′′ tal que sua imagem inversa f′ ∈Γ(X′, OX′) | seja nula é nula). Então k′ é limite indutivo de suas subálgebras de tipo finito A sobre k, e",
+      "headings_by_font_size": "",
+      "image": "page_034.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 35,
+      "page_label": "30",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "Então isso resulta do fato de que o conjunto união dos nG (igual ao conjunto das raízes da",
+      "first_three_body_lines": "Então isso resulta do fato de que o conjunto união dos nG (igual ao conjunto das raízes da | unidade em k) é infinito. | b) Caso geral. Para todo ponto s de S, existe uma vizinhança aberta U de s e um morfismo",
+      "headings_by_font_size": "5. Homomorfismos centrais dos grupos de tipo multiplicativo",
+      "image": "page_035.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 36,
+      "page_label": "31",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "portanto também (mu)n = (mv)n. Sendo isso verdadeiro para todo n, e sendo mH finito sobre S",
+      "first_three_body_lines": "portanto também (mu)n = (mv)n. Sendo isso verdadeiro para todo n, e sendo mH finito sobre S | em virtude de 2.2, segue-se que se terá mu = mv. Sendo isso verdadeiro para todo m, ter-se-á | u = v em virtude de 4.7 a).",
+      "headings_by_font_size": "",
+      "image": "page_036.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 37,
+      "page_label": "32",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "do referido homomorfismo pela seção unidade de S′ = G sobre S é o homomorfismo identidade,",
+      "first_three_body_lines": "do referido homomorfismo pela seção unidade de S′ = G sobre S é o homomorfismo identidade, | logo por 5.4 o mesmo se dá com HG →HG, logo H é central em G. | Enunciemos as variantes dos resultados precedentes para subgrupos centrais de tipo",
+      "headings_by_font_size": "",
+      "image": "page_037.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 38,
+      "page_label": "33",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "6. Monomorfismos dos grupos de tipo multiplicativo, e fatoração",
+      "first_three_body_lines": "6. Monomorfismos dos grupos de tipo multiplicativo, e fatoração | canônica de um homomorfismo de um tal grupo | Lema 6.1. Sejam S um pré-esquema quase-compacto, K um pré-esquema em grupos comutativo",
+      "headings_by_font_size": "6. Monomorfismos dos grupos de tipo multiplicativo, e fatoração | canônica de um homomorfismo de um tal grupo",
+      "image": "page_038.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 39,
+      "page_label": "34",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "termos t ∈U implica que Kt é localmente quase-finito (resp. não ramificado) sobre k(t): com",
+      "first_three_body_lines": "termos t ∈U implica que Kt é localmente quase-finito (resp. não ramificado) sobre k(t): com | efeito, como Kt é um grupo localmente de tipo finito sobre k(t), isso resulta do fato de que é | quase-finito (resp. não ramificado) sobre k(t) no elemento neutro, cf. VI.",
+      "headings_by_font_size": "",
+      "image": "page_039.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 40,
+      "page_label": "35",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "v′|U : K′|U →G|U seja o homomorfismo unidade. Logo, substituindo S por U, pode-se supor v′",
+      "first_three_body_lines": "v′|U : K′|U →G|U seja o homomorfismo unidade. Logo, substituindo S por U, pode-se supor v′ | o homomorfismo unidade, logo que u se fatora em | u′",
+      "headings_by_font_size": "7. Algebricidade dos homomorfismos formais em um grupo afim",
+      "image": "page_040.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 41,
+      "page_label": "36",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "reduzindo-se segundo os φn, donde se conclui imediatamente que é compatível com as aplicações",
+      "first_three_body_lines": "reduzindo-se segundo os φn, donde se conclui imediatamente que é compatível com as aplicações | \\ | diagonais (pois os φn o são, e B ⊗A B →",
+      "headings_by_font_size": "",
+      "image": "page_041.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 42,
+      "page_label": "37",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "Provemos o caso geral em que se supõe somente H isotrivial, i.e. que existe um morfismo",
+      "first_three_body_lines": "Provemos o caso geral em que se supõe somente H isotrivial, i.e. que existe um morfismo | finito étale sobrejetivo | S′ −→S",
+      "headings_by_font_size": "",
+      "image": "page_042.png",
+      "width_px": 834,
+      "height_px": 1179
+    },
+    {
+      "pdf_page": 43,
+      "page_label": "38",
+      "first_line": "EXPOSÉ IX. GRUPOS DE TIPO MULTIPLICATIVO: HOMOMORFISMOS",
+      "first_body_line": "8. Subgrupos, grupos quociente e extensões de grupos de tipo",
+      "first_three_body_lines": "8. Subgrupos, grupos quociente e extensões de grupos de tipo | multiplicativo sobre um corpo* | Proposição 8.1. Sejam G um grupo algébrico diagonalizável (resp. de tipo multiplicativo).",
+      "headings_by_font_size": "8. Subgrupos, grupos quociente e extensões de grupos de tipo | multiplicativo sobre um corpo*",
+      "image": "page_043.png",
+      "width_px": 834,
+      "height_px": 1179
+    }
+  ],
+  "pixel_comparison": {
+    "method": "SHA-256 of raw RGB raster samples, with dimensions compared separately",
+    "other_pdf": "ptbr_original.pdf",
+    "other_pdf_sha256": "2667b62fbbd2ad60ce239ab2b6494adc322f55ae700fb719527ea42343853c9a",
+    "other_page_count": 43,
+    "all_pages_identical": true,
+    "different_master_pages": [],
+    "pages": [
+      {
+        "pdf_page": 1,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "31bd72683f1865bed693b920022c1a7786373b3d8f9f58aead06d90851be07b1",
+        "rgb_sha256_original": "31bd72683f1865bed693b920022c1a7786373b3d8f9f58aead06d90851be07b1",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "31bd72683f1865bed693b920022c1a7786373b3d8f9f58aead06d90851be07b1",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 2,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "242e4a6218514aff50430a8106664eb311e938bcd08aa1ba5db2680cb9c70145",
+        "rgb_sha256_original": "242e4a6218514aff50430a8106664eb311e938bcd08aa1ba5db2680cb9c70145",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "242e4a6218514aff50430a8106664eb311e938bcd08aa1ba5db2680cb9c70145",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 3,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "c3db4840da62f657028e6ff3595d1ec41fd53f2e325aa0e0dee63ce64a465239",
+        "rgb_sha256_original": "c3db4840da62f657028e6ff3595d1ec41fd53f2e325aa0e0dee63ce64a465239",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "c3db4840da62f657028e6ff3595d1ec41fd53f2e325aa0e0dee63ce64a465239",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 4,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "f6f322f314d0abe4bc63cd8b2e044c1effdb8b48d7bc7eb06c1c0bca9371a040",
+        "rgb_sha256_original": "f6f322f314d0abe4bc63cd8b2e044c1effdb8b48d7bc7eb06c1c0bca9371a040",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "f6f322f314d0abe4bc63cd8b2e044c1effdb8b48d7bc7eb06c1c0bca9371a040",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 5,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "5767baf58b08c5da5a66af88a967453a0289a242ff0d0b6e214f7408128f9726",
+        "rgb_sha256_original": "5767baf58b08c5da5a66af88a967453a0289a242ff0d0b6e214f7408128f9726",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "5767baf58b08c5da5a66af88a967453a0289a242ff0d0b6e214f7408128f9726",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 6,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "53a24fa4fd5f9c7571d93d224385ca77a2b1701cd8ebd8076693594693cfdd56",
+        "rgb_sha256_original": "53a24fa4fd5f9c7571d93d224385ca77a2b1701cd8ebd8076693594693cfdd56",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "53a24fa4fd5f9c7571d93d224385ca77a2b1701cd8ebd8076693594693cfdd56",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 7,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "dc9c892cfa5bf8005b40eada20582200e34dc10452b54118749b0930171d6dee",
+        "rgb_sha256_original": "dc9c892cfa5bf8005b40eada20582200e34dc10452b54118749b0930171d6dee",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "dc9c892cfa5bf8005b40eada20582200e34dc10452b54118749b0930171d6dee",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 8,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "ae7044c9a25b54d4541b6d708b845bbbe53480699227633da214cda8147a5f6c",
+        "rgb_sha256_original": "ae7044c9a25b54d4541b6d708b845bbbe53480699227633da214cda8147a5f6c",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "ae7044c9a25b54d4541b6d708b845bbbe53480699227633da214cda8147a5f6c",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 9,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "8b879ccaf89cb378f578d18bdce9541e6502f35854c1f71a71447b7743cd6ead",
+        "rgb_sha256_original": "8b879ccaf89cb378f578d18bdce9541e6502f35854c1f71a71447b7743cd6ead",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "8b879ccaf89cb378f578d18bdce9541e6502f35854c1f71a71447b7743cd6ead",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 10,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "d34790ad9abda9f74765763de35f7c2ead709a54757ce6797f94207cec2f897b",
+        "rgb_sha256_original": "d34790ad9abda9f74765763de35f7c2ead709a54757ce6797f94207cec2f897b",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "d34790ad9abda9f74765763de35f7c2ead709a54757ce6797f94207cec2f897b",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 11,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "3b09df3402cd65a3f90b009fc7b1691d8bf5a4358f8a21e464bdbac121be2944",
+        "rgb_sha256_original": "3b09df3402cd65a3f90b009fc7b1691d8bf5a4358f8a21e464bdbac121be2944",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "3b09df3402cd65a3f90b009fc7b1691d8bf5a4358f8a21e464bdbac121be2944",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 12,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "46e370533f6b299b8d6fcc0702e23d38d31bfc954d237a8c953631124768c0f6",
+        "rgb_sha256_original": "46e370533f6b299b8d6fcc0702e23d38d31bfc954d237a8c953631124768c0f6",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "46e370533f6b299b8d6fcc0702e23d38d31bfc954d237a8c953631124768c0f6",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 13,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "45335a00f4192beaef7d7be86a356301048a0dccf696c37ce09b0371ab17e282",
+        "rgb_sha256_original": "45335a00f4192beaef7d7be86a356301048a0dccf696c37ce09b0371ab17e282",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "45335a00f4192beaef7d7be86a356301048a0dccf696c37ce09b0371ab17e282",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 14,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "9cfd6333b376b0219b62b6bdb6b289b11fd0139d1b5c2fec5b96b0f3681e0544",
+        "rgb_sha256_original": "9cfd6333b376b0219b62b6bdb6b289b11fd0139d1b5c2fec5b96b0f3681e0544",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "9cfd6333b376b0219b62b6bdb6b289b11fd0139d1b5c2fec5b96b0f3681e0544",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 15,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "40a4f237e1d4bcbb2fad419c2bb7d143fc85620844c670b28e1cfdd6805753da",
+        "rgb_sha256_original": "40a4f237e1d4bcbb2fad419c2bb7d143fc85620844c670b28e1cfdd6805753da",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "40a4f237e1d4bcbb2fad419c2bb7d143fc85620844c670b28e1cfdd6805753da",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 16,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "40fd117a0f5ae2859bc1a1ebfe7912633da230d33bc73a81318be7990a31262b",
+        "rgb_sha256_original": "40fd117a0f5ae2859bc1a1ebfe7912633da230d33bc73a81318be7990a31262b",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "40fd117a0f5ae2859bc1a1ebfe7912633da230d33bc73a81318be7990a31262b",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 17,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "33b99e418a04ecfbf695cd2657ca8f2600fc041735e5c105690087e49816a845",
+        "rgb_sha256_original": "33b99e418a04ecfbf695cd2657ca8f2600fc041735e5c105690087e49816a845",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "33b99e418a04ecfbf695cd2657ca8f2600fc041735e5c105690087e49816a845",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 18,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "57da65937459f3b45d392e9a4bb54e0bbd18b12cf060bb65e577ad1800b3226a",
+        "rgb_sha256_original": "57da65937459f3b45d392e9a4bb54e0bbd18b12cf060bb65e577ad1800b3226a",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "57da65937459f3b45d392e9a4bb54e0bbd18b12cf060bb65e577ad1800b3226a",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 19,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "dd7becc786e98e588474335b3a92a02d77f392774a3285d61e06babea960c42d",
+        "rgb_sha256_original": "dd7becc786e98e588474335b3a92a02d77f392774a3285d61e06babea960c42d",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "dd7becc786e98e588474335b3a92a02d77f392774a3285d61e06babea960c42d",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 20,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "f13e43a9ed83a0539eca95c723e877618de40874f063c739ad2295509d45beb7",
+        "rgb_sha256_original": "f13e43a9ed83a0539eca95c723e877618de40874f063c739ad2295509d45beb7",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "258060727d552c1eab133ee22b8ac3915434ca317bb9010f9fe22d47fe9abea7",
+        "changed_from_previous_render": true
+      },
+      {
+        "pdf_page": 21,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "1bb99019184e1801eccf7d4327f80ac0d1d85385deb9c93165568aa4c04750ff",
+        "rgb_sha256_original": "1bb99019184e1801eccf7d4327f80ac0d1d85385deb9c93165568aa4c04750ff",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "1bb99019184e1801eccf7d4327f80ac0d1d85385deb9c93165568aa4c04750ff",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 22,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "4c1a4696348eb0d5d37651f7cb6bfe7a65e16d33e82f13ec70b04f644b5dafae",
+        "rgb_sha256_original": "4c1a4696348eb0d5d37651f7cb6bfe7a65e16d33e82f13ec70b04f644b5dafae",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "bcb79b41ef6d7673bd1e6a10b4b4de39cbea5a6ce7d0be1bba9dd5c6e47cd8ad",
+        "changed_from_previous_render": true
+      },
+      {
+        "pdf_page": 23,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "1ae67dd472876de97e0d709214e8b27e33e4a147c3cf8f99394e70820a219d67",
+        "rgb_sha256_original": "1ae67dd472876de97e0d709214e8b27e33e4a147c3cf8f99394e70820a219d67",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "1ae67dd472876de97e0d709214e8b27e33e4a147c3cf8f99394e70820a219d67",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 24,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "7439e272c33aaad4db78fec303d43a74cbae151474ff91d80a29812c01942795",
+        "rgb_sha256_original": "7439e272c33aaad4db78fec303d43a74cbae151474ff91d80a29812c01942795",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "7439e272c33aaad4db78fec303d43a74cbae151474ff91d80a29812c01942795",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 25,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "1d74e1bda3440f67e5a967ea57879c0a89a24b98bb049c69e78a35742e3a84d7",
+        "rgb_sha256_original": "1d74e1bda3440f67e5a967ea57879c0a89a24b98bb049c69e78a35742e3a84d7",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "1d74e1bda3440f67e5a967ea57879c0a89a24b98bb049c69e78a35742e3a84d7",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 26,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "67bddc5537a10c3b641c887b3ea715fe16132fa1ca64e122b25b9892498a0e47",
+        "rgb_sha256_original": "67bddc5537a10c3b641c887b3ea715fe16132fa1ca64e122b25b9892498a0e47",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "67bddc5537a10c3b641c887b3ea715fe16132fa1ca64e122b25b9892498a0e47",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 27,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "8d787f5305e5cc802a80a7fe645594bdb168aa03918272f0635b397139b4433b",
+        "rgb_sha256_original": "8d787f5305e5cc802a80a7fe645594bdb168aa03918272f0635b397139b4433b",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "8d787f5305e5cc802a80a7fe645594bdb168aa03918272f0635b397139b4433b",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 28,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "4c2697e7032e7d2f74c11bc95ba434bf947e49944a818799cd43d3fe84ac6ea9",
+        "rgb_sha256_original": "4c2697e7032e7d2f74c11bc95ba434bf947e49944a818799cd43d3fe84ac6ea9",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "4c2697e7032e7d2f74c11bc95ba434bf947e49944a818799cd43d3fe84ac6ea9",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 29,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "2047430b027b8a9052d08d733cad3972e68e022768152a3fd5e5c84604d262ab",
+        "rgb_sha256_original": "2047430b027b8a9052d08d733cad3972e68e022768152a3fd5e5c84604d262ab",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "2047430b027b8a9052d08d733cad3972e68e022768152a3fd5e5c84604d262ab",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 30,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "1cdfebce538c3f7e5ca3b6f9dcc25668f73fd914a6461e638c7543b7c8bdcdff",
+        "rgb_sha256_original": "1cdfebce538c3f7e5ca3b6f9dcc25668f73fd914a6461e638c7543b7c8bdcdff",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "1cdfebce538c3f7e5ca3b6f9dcc25668f73fd914a6461e638c7543b7c8bdcdff",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 31,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "6a498b91a02e53c0aff22b5c8d8e63e3a3eb0b0bcd27e9691f0a68ec29d21e5e",
+        "rgb_sha256_original": "6a498b91a02e53c0aff22b5c8d8e63e3a3eb0b0bcd27e9691f0a68ec29d21e5e",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "6a498b91a02e53c0aff22b5c8d8e63e3a3eb0b0bcd27e9691f0a68ec29d21e5e",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 32,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "cb65c9d3404ca40685bfaaa362660c0354a463a6c8f8e6cc4c34bad9ce2a8e1c",
+        "rgb_sha256_original": "cb65c9d3404ca40685bfaaa362660c0354a463a6c8f8e6cc4c34bad9ce2a8e1c",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "cb65c9d3404ca40685bfaaa362660c0354a463a6c8f8e6cc4c34bad9ce2a8e1c",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 33,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "396c6fb39a090dea5db432d4d9bd0226ba57bfdd58a30015148850d8a290de13",
+        "rgb_sha256_original": "396c6fb39a090dea5db432d4d9bd0226ba57bfdd58a30015148850d8a290de13",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "396c6fb39a090dea5db432d4d9bd0226ba57bfdd58a30015148850d8a290de13",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 34,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "cff73f4689ee1fe937546f353a5d90d872e0d324acb76827f18b514e763663b3",
+        "rgb_sha256_original": "cff73f4689ee1fe937546f353a5d90d872e0d324acb76827f18b514e763663b3",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "cff73f4689ee1fe937546f353a5d90d872e0d324acb76827f18b514e763663b3",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 35,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "9d540369e87d5d25d3c0715fd075f8bd80361786af7ce28fcefbd35d4c55e134",
+        "rgb_sha256_original": "9d540369e87d5d25d3c0715fd075f8bd80361786af7ce28fcefbd35d4c55e134",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "9d540369e87d5d25d3c0715fd075f8bd80361786af7ce28fcefbd35d4c55e134",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 36,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "2e4015ed0c89dd2d77570077917df555b1db15363a375d9f7cf1601cfd28e3b0",
+        "rgb_sha256_original": "2e4015ed0c89dd2d77570077917df555b1db15363a375d9f7cf1601cfd28e3b0",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "2e4015ed0c89dd2d77570077917df555b1db15363a375d9f7cf1601cfd28e3b0",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 37,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "4fe84592a4729b71a481b761088d2139f13c0f9add359c5714a44db3fedf8edd",
+        "rgb_sha256_original": "4fe84592a4729b71a481b761088d2139f13c0f9add359c5714a44db3fedf8edd",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "4fe84592a4729b71a481b761088d2139f13c0f9add359c5714a44db3fedf8edd",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 38,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "3a7e8f5367bce34de03f6a4c1490295174c74c4fd883d81f99daea4d196cad35",
+        "rgb_sha256_original": "3a7e8f5367bce34de03f6a4c1490295174c74c4fd883d81f99daea4d196cad35",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "3a7e8f5367bce34de03f6a4c1490295174c74c4fd883d81f99daea4d196cad35",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 39,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "c23699118105db91893bc12cb4223e268cada296f259618cfcdaa0c97d58ef08",
+        "rgb_sha256_original": "c23699118105db91893bc12cb4223e268cada296f259618cfcdaa0c97d58ef08",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "c23699118105db91893bc12cb4223e268cada296f259618cfcdaa0c97d58ef08",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 40,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "142733fa822cc2e9d1efc10c215cf8fdfe329802b1f86903aaad0b51dc358397",
+        "rgb_sha256_original": "142733fa822cc2e9d1efc10c215cf8fdfe329802b1f86903aaad0b51dc358397",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "142733fa822cc2e9d1efc10c215cf8fdfe329802b1f86903aaad0b51dc358397",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 41,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "5c4cfdf2893afcc384fe198b1b9e80fdaeb86abd2efa0c901470d06c24993297",
+        "rgb_sha256_original": "5c4cfdf2893afcc384fe198b1b9e80fdaeb86abd2efa0c901470d06c24993297",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "5c4cfdf2893afcc384fe198b1b9e80fdaeb86abd2efa0c901470d06c24993297",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 42,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "e2074ba29e10077ae16379b442617a829c1695fefe913ab0b05544b5048a6d9e",
+        "rgb_sha256_original": "e2074ba29e10077ae16379b442617a829c1695fefe913ab0b05544b5048a6d9e",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "e2074ba29e10077ae16379b442617a829c1695fefe913ab0b05544b5048a6d9e",
+        "changed_from_previous_render": false
+      },
+      {
+        "pdf_page": 43,
+        "size_px": [
+          834,
+          1179
+        ],
+        "rgb_sha256_current": "b29ee37caf124669dbf36023967d97ef3ed8e37884292bbe5f8101d5fd59ea9b",
+        "rgb_sha256_original": "b29ee37caf124669dbf36023967d97ef3ed8e37884292bbe5f8101d5fd59ea9b",
+        "masters_pixel_identical": true,
+        "previous_rgb_sha256": "b29ee37caf124669dbf36023967d97ef3ed8e37884292bbe5f8101d5fd59ea9b",
+        "changed_from_previous_render": false
+      }
+    ]
+  },
+  "transition_from_previous_render": {
+    "previous_pdf_sha256": "b103ae51515b004f1f7a97cf4cc96ebcbc77c2019e3129f39517155d9f0c8352",
+    "previous_page_count": 43,
+    "changed_pages": [
+      20,
+      22
+    ],
+    "removed_pages": [],
+    "refreshed_contact_sheets": [
+      2
+    ]
+  },
+  "inspection_status": "Rendered for inspection; no visual approval is asserted by this script.",
+  "baseline_toc": {
+    "pdf": "ptbr_current.pdf",
+    "scope": "isolated preliminary infrastructure baseline",
+    "pdf_sha256": "67eb45519d8e0fa4c29ceba97fcfaa89edd2db972e9a1fc9ebcc43c361136df6",
+    "pdf_page": 5,
+    "page_label": "V",
+    "image": "baseline_toc.png",
+    "render_scale": 1.4
+  }
+}

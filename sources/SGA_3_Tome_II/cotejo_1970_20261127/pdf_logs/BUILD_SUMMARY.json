@@ -1,0 +1,32 @@
+{
+  "setup": "Local pdfLaTeX format built from installed resources; Portuguese patterns unavailable: no Portuguese word hyphenation.",
+  "source_tree_sha256": "ee4e82aea989aa02812ece3f76aa190e94c9512f25da38f9dcf5bf774bcf11e6",
+  "builds": [
+    {
+      "master": "ptbr_current",
+      "passes": 2,
+      "references_settled": true,
+      "overfull_count": 0,
+      "overfull_over_2pt": 0,
+      "overfull_over_10pt": 0,
+      "maximum_overfull_pt": 0,
+      "undefined_reference_warnings": 0,
+      "missing_character_warnings": 0,
+      "destination_warnings": 0,
+      "wrapper_used": false
+    },
+    {
+      "master": "ptbr_original",
+      "passes": 2,
+      "references_settled": true,
+      "overfull_count": 0,
+      "overfull_over_2pt": 0,
+      "overfull_over_10pt": 0,
+      "maximum_overfull_pt": 0,
+      "undefined_reference_warnings": 0,
+      "missing_character_warnings": 0,
+      "destination_warnings": 0,
+      "wrapper_used": false
+    }
+  ]
+}

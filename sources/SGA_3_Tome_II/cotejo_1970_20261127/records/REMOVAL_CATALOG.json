@@ -1,0 +1,377 @@
+[
+  {
+    "correction_id": "C0003",
+    "printed_page": "1",
+    "description": "Definição adicional de Hom(X,I), explicação de subobjeto/subgrupo e nota editorial no início de VIII 1."
+  },
+  {
+    "correction_id": "C0014",
+    "printed_page": "5",
+    "description": "Fórmula destacada acrescentada à decomposição descrita em prosa em VIII 1."
+  },
+  {
+    "correction_id": "C0028",
+    "printed_page": "8",
+    "description": "Remissão a item (i), ausente na estrutura do Teorema VIII 3.1 de 1970."
+  },
+  {
+    "correction_id": "C0029",
+    "printed_page": "8",
+    "description": "Remissão à subdivisão editorial substituída por «última asserção de 3.1»."
+  },
+  {
+    "correction_id": "C0039",
+    "printed_page": "10",
+    "description": "Adjetivo «diagonalizáveis» acrescido à expressão esquemas em grupos nas observações VIII 3.5."
+  },
+  {
+    "correction_id": "C0058",
+    "printed_page": "14",
+    "description": "Nota corretiva e argumento ampliado pelos abertos auxiliares na prova de VIII 4.7."
+  },
+  {
+    "correction_id": "C0066",
+    "printed_page": "15",
+    "description": "Número 3.4 acrescido à referência ao Exposé IV no Teorema VIII 5.1."
+  },
+  {
+    "correction_id": "C0067",
+    "printed_page": "16",
+    "description": "Nome theta acrescentado à primeira seta da prova na p.16."
+  },
+  {
+    "correction_id": "C0068",
+    "printed_page": "16",
+    "description": "Notação phi, bar-phi e K′, discussão acrescida dos núcleos, nota de mudança de notação e comentário entre colchetes."
+  },
+  {
+    "correction_id": "C0071",
+    "printed_page": "17",
+    "description": "Chave agrupadora adicionada à fórmula (xxx) de VIII 5.1."
+  },
+  {
+    "correction_id": "C0075",
+    "printed_page": "18",
+    "description": "Correção de P′ para P e comentário corretivo na prova de VIII 5.4."
+  },
+  {
+    "correction_id": "C0078",
+    "printed_page": "18",
+    "description": "Comentário corretivo sobre o índice de J na prova de VIII 5.4."
+  },
+  {
+    "correction_id": "C0096",
+    "printed_page": "21",
+    "description": "Descrição acrescida por Γ e pelo singleton da identidade no enunciado de VIII 6.4."
+  },
+  {
+    "correction_id": "C0101",
+    "printed_page": "22",
+    "description": "Complemento «de X» acrescentado à conclusão de VIII 6.5(a)."
+  },
+  {
+    "correction_id": "C0111",
+    "printed_page": "24",
+    "description": "Complemento «sobre S» acrescentado à apresentação de G em VIII 6.5(e)."
+  },
+  {
+    "correction_id": "C0118",
+    "printed_page": "25",
+    "description": "Reformulação da identificação do centro como enunciado condicional separado."
+  },
+  {
+    "correction_id": "C0119",
+    "printed_page": "25",
+    "description": "Comentário corretivo entre colchetes junto da referência VIII 6.3 b)."
+  },
+  {
+    "correction_id": "C0120",
+    "printed_page": "25",
+    "description": "Divisão de VIII 6.7 em itens, ausente no enunciado contínuo de 1970."
+  },
+  {
+    "correction_id": "C0125",
+    "printed_page": "26",
+    "description": "Nome k acrescentado à primeira menção do corpo no início da p.26."
+  },
+  {
+    "correction_id": "C0131",
+    "printed_page": "26",
+    "description": "Cf. acrescido à remissão da nota original da p.26."
+  },
+  {
+    "correction_id": "C0140",
+    "printed_page": "27",
+    "description": "Subscrito de fascículo acrescentado à referência EGA IV 15.7.1."
+  },
+  {
+    "correction_id": "C0144",
+    "printed_page": "28",
+    "description": "Subscrito de fascículo acrescentado à referência EGA IV 2.8."
+  },
+  {
+    "correction_id": "C0145",
+    "printed_page": "28",
+    "description": "Nome u′ acrescentado à seta na primeira fatoração da p.28."
+  },
+  {
+    "correction_id": "C0146",
+    "printed_page": "28",
+    "description": "Nome u′ repetido na explicação da fatoração antes de sua introdução no impresso."
+  },
+  {
+    "correction_id": "C0167",
+    "printed_page": "30",
+    "description": "Parêntese acrescentado que identificava VIII 7.3 com VII_A 8.5."
+  },
+  {
+    "correction_id": "C0174",
+    "printed_page": "31",
+    "description": "Nota que corrigia os índices de H e S no final da prova de VIII 7.5."
+  },
+  {
+    "correction_id": "C0176",
+    "printed_page": "32",
+    "description": "Correção entre colchetes do índice de G na observação após VIII 7.5."
+  },
+  {
+    "correction_id": "C0181",
+    "printed_page": "32",
+    "description": "Índice ν e apresentação destacada acrescentados à interseção final da p.32."
+  },
+  {
+    "correction_id": "C0182",
+    "printed_page": "33",
+    "description": "Palavra «inteiro» acrescida à existência de ν_1 em VIII 7.7."
+  },
+  {
+    "correction_id": "C0196",
+    "printed_page": "35",
+    "description": "Adjetivo «esquemático» acrescentado à segunda menção do fecho da fibra genérica na p.35."
+  },
+  {
+    "correction_id": "C0201",
+    "printed_page": "36",
+    "description": "Palavra «diretamente» acrescida à aplicação de VIII 7.12."
+  },
+  {
+    "correction_id": "C0210",
+    "printed_page": "37",
+    "description": "Citação acrescida a VIII 1.1 e divisão em parágrafos/fórmulas destacadas de IX 1.1."
+  },
+  {
+    "correction_id": "C0218",
+    "printed_page": "39",
+    "description": "Travessão e apresentação destacada acrescidos ao enunciado de IX 1.3."
+  },
+  {
+    "correction_id": "C0219",
+    "printed_page": "39",
+    "description": "Índice k acrescido a Hom(G,G_m), subdivisões e ênfases internas de IX 1.4."
+  },
+  {
+    "correction_id": "C0227",
+    "printed_page": "41",
+    "description": "Expansões verbais das setas de equivalência nos itens de IX 2.1."
+  },
+  {
+    "correction_id": "C0228",
+    "printed_page": "41",
+    "description": "Subscrito de volume, símbolo de seção e VIII acrescentados às referências na prova de IX 2.1."
+  },
+  {
+    "correction_id": "C0229",
+    "printed_page": "41",
+    "description": "Igualdade adicional com ker(...) em IX 2.2."
+  },
+  {
+    "correction_id": "C0240",
+    "printed_page": "44",
+    "description": "Remissão à observação acrescentada 1.4.1(a), substituída pelas considerações após 1.4."
+  },
+  {
+    "correction_id": "C0242",
+    "printed_page": "44",
+    "description": "Alternativas resp. e linguagem adicional de subfuntores na prova de IX 2.10."
+  },
+  {
+    "correction_id": "C0248",
+    "printed_page": "45",
+    "description": "Remissões substitutas VIII 3.1, IX 8.1, VIII 1.5 e VIII 3.2(b) na prova de IX 2.11."
+  },
+  {
+    "correction_id": "C0254",
+    "printed_page": "46",
+    "description": "Comentário editorial sobre o erro de fonte e estrutura expandida na prova de IX 3.1."
+  },
+  {
+    "correction_id": "C0256",
+    "printed_page": "47",
+    "description": "Fórmula destacada adicional ao enunciado de IX 3.2."
+  },
+  {
+    "correction_id": "C0257",
+    "printed_page": "47",
+    "description": "Círculos de composição acrescentados às fórmulas de IX 3.3."
+  },
+  {
+    "correction_id": "C0261",
+    "printed_page": "48",
+    "description": "Fórmula destacada e parênteses adicionais em IX 3.2 bis."
+  },
+  {
+    "correction_id": "C0262",
+    "printed_page": "48",
+    "description": "Parênteses acrescentados às fórmulas de IX 3.3 bis."
+  },
+  {
+    "correction_id": "C0265",
+    "printed_page": "49",
+    "description": "Adjetivo «fechado» acrescido a S_0=V(J) em IX 3.8."
+  },
+  {
+    "correction_id": "C0270",
+    "printed_page": "50",
+    "description": "Subscrito 3 acrescentado à referência EGA IV 11.10 na nota do título da seção IX 4."
+  },
+  {
+    "correction_id": "C0275",
+    "printed_page": "51",
+    "description": "Título de prova, igualdade adicional O_X/J^nO_X e premissa de planura repetida em IX 4.2."
+  },
+  {
+    "correction_id": "C0282",
+    "printed_page": "53",
+    "description": "Frase adicional sobre A e B noetherianos e comentário contrário aos índices do diagrama de IX 4.3."
+  },
+  {
+    "correction_id": "C0284",
+    "printed_page": "53",
+    "description": "Identidade adicional de produto para Y′^i na prova de IX 4.3."
+  },
+  {
+    "correction_id": "C0285",
+    "printed_page": "53",
+    "description": "Definição repetida do ideal maximal e adjetivo «fechado» acrescido a S_n."
+  },
+  {
+    "correction_id": "C0295",
+    "printed_page": "57",
+    "description": "Apresentação ampliada por fórmulas destacadas na prova de IX 4.7."
+  },
+  {
+    "correction_id": "C0297",
+    "printed_page": "57",
+    "description": "Título de prova e apresentação destacada acrescidos à prova de IX 4.8."
+  },
+  {
+    "correction_id": "C0318",
+    "printed_page": "60",
+    "description": "Justificação adicional por VIII 6.3 e liberdade essencial, título de prova e quadrado final em IX 5.3."
+  },
+  {
+    "correction_id": "C0325",
+    "printed_page": "62",
+    "description": "Citações adicionais 1.1/2.1(b) e equações substitutas em IX 5.4 bis."
+  },
+  {
+    "correction_id": "C0333",
+    "printed_page": "64",
+    "description": "Construção por chave, notação S_{s,n} e equações tensoriais substitutas em IX 6.2."
+  },
+  {
+    "correction_id": "C0335",
+    "printed_page": "65",
+    "description": "Reestruturação em fórmulas destacadas da prova de IX 6.2."
+  },
+  {
+    "correction_id": "C0337",
+    "printed_page": "65",
+    "description": "Título de prova e condição de isolamento repetida/ampliada em IX 6.3."
+  },
+  {
+    "correction_id": "C0339",
+    "printed_page": "66",
+    "description": "Notação epsilon(t), citação VI_B 1.3 e quadrado final no encerramento de IX 6.3."
+  },
+  {
+    "correction_id": "C0341",
+    "printed_page": "67",
+    "description": "Redefinição adicional de K, título de prova e quadrado final em IX 6.7."
+  },
+  {
+    "correction_id": "C0343",
+    "printed_page": "67",
+    "description": "Citação à numeração acrescida 6.6.1 e título de prova em IX 6.8."
+  },
+  {
+    "correction_id": "C0344",
+    "printed_page": "68",
+    "description": "Fórmulas destacadas adicionais e quadrado final na prova de IX 6.8."
+  },
+  {
+    "correction_id": "C0348",
+    "printed_page": "70",
+    "description": "Parágrafo adicional da base e_m, identidade da álgebra de grupo e cálculo de sua diagonal na prova de IX 7.1."
+  },
+  {
+    "correction_id": "C0349",
+    "printed_page": "70",
+    "description": "Redação introdutória ampliada de IX 7.2."
+  },
+  {
+    "correction_id": "C0351",
+    "printed_page": "71",
+    "description": "Título de prova e quadrado final adicionais na prova de IX 7.2."
+  },
+  {
+    "correction_id": "C0354",
+    "printed_page": "72",
+    "description": "Quadrado final acrescentado à prova de IX 7.2."
+  },
+  {
+    "correction_id": "C0355",
+    "printed_page": "72",
+    "description": "Título de prova e explicitação adicional de S-homomorfismos em IX 7.3."
+  },
+  {
+    "correction_id": "C0356",
+    "printed_page": "73",
+    "description": "Fórmulas destacadas e quadrado final acrescentados ao encerramento de IX 7.3."
+  },
+  {
+    "correction_id": "C0361",
+    "printed_page": "74",
+    "description": "Hipótese separada sobre o corpo-base acrescentada à abertura de IX 8.1."
+  },
+  {
+    "correction_id": "C0363",
+    "printed_page": "74",
+    "description": "Palavra «precisamente» acrescida à condição sobre os pontos de IX 8.1."
+  },
+  {
+    "correction_id": "C0369",
+    "printed_page": "74",
+    "description": "Remissão eletrônica a um exposé diferente, incompatível com a referência impressa IV_B 11.16."
+  },
+  {
+    "correction_id": "C0374",
+    "printed_page": "76",
+    "description": "Fórmula substituta étale/Gamma/Hom topológico, retirada na restauração da prova iniciada na p.75."
+  },
+  {
+    "correction_id": "C0375",
+    "printed_page": "76",
+    "description": "Redação adicional sobre descida na observação IX 8.3."
+  },
+  {
+    "correction_id": "C0391",
+    "printed_page": "7",
+    "description": "Desdobramento da prova de VIII 2.1(e) em várias fórmulas destacadas; o impresso tem um parágrafo e uma fórmula destacada."
+  },
+  {
+    "correction_id": "C0396",
+    "printed_page": "14",
+    "description": "Redação independente acrescentada à transição entre VIII 4.6 e 4.7."
+  }
+]

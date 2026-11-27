@@ -1,191 +1,114 @@
 % SGA 3, Exposé IX, tradução brasileira-portuguesa.
 % Escopo: §6 integral.
-% Autoridade: Polo--Gille Exp9-8nov09.pdf; edição original: LNM 152, pp. 63--68.
+% Autoridade: SGA 3, LNM 152 (1970), páginas impressas 63--68.
 
 
 \SGARefTarget{sga3:ix:section:6}
-\section*{6. Monomorfismos de grupos de tipo multiplicativo e
-fatoração canônica de um homomorfismo de um desses grupos}
-\addcontentsline{toc}{section}{6. Monomorfismos de grupos de tipo
-multiplicativo e fatoração canônica}
+\section*{6. Monomorfismos dos grupos de tipo multiplicativo, e
+fatoração canônica de um homomorfismo de um tal grupo}
+\addcontentsline{toc}{section}{6. Monomorfismos dos grupos de tipo
+multiplicativo, e fatoração canônica de um homomorfismo de um tal grupo}
 
 \medskip
 \noindent\SGARefTarget{sga3:ix:lemma:6:1}\textbf{Lema 6.1.}
-\textit{Seja \(S\) um pré-esquema quase compacto e seja \(G\) um
-pré-esquema em \(S\)-grupos comutativo, de apresentação finita e
-quase finito sobre \(S\). Existe, então, um inteiro \(n>0\) tal que
-\[
-  n\cdot\operatorname{id}_G=0,
-  \qquad\text{isto é,}\qquad
-  G={}_nG.
-\]}
+\textit{Sejam \(S\) um pré-esquema quase-compacto, \(K\) um
+pré-esquema em grupos comutativo sobre \(S\), de apresentação
+finita e quase-finito sobre \(S\). Então existe um inteiro
+\(n>0\) tal que \(n\operatorname{id}_K=0\), i.e. \(K={}_nK\).}
 
-\emph{Demonstração.}
-Se \(S\) é o espectro de um corpo \(k\), então \(G\) é finito
-sobre \(k\), e, por VII\textsubscript{A}
-\SGARefLink{sga3:VIIA:8.5}{8.5}, basta tomar
-\[
-  n=\deg(G/k).
-\]
-Suponhamos agora que \(S=\operatorname{Spec}(A)\), onde \(A\) é local
-artiniano. Seja \(k\) o corpo residual de \(A\), ponhamos
-\[
-  G_0=G\otimes_A k,
-  \qquad
-  n_0=\deg(G_0/k),
-\]
-e distingamos dois casos.
-
-\smallskip
-\SGARefTarget{sga3:ix:lemma:6:1:proof:item:a}\noindent\textit{(a) \(k\)
-é de característica zero.}
-Então, \(G_0\) é separável sobre \(k\), e, portanto, \(G\) é não
-ramificado sobre \(S\). A seção unidade de \(G\) é, pois, uma imersão
-aberta, de modo que
-\[
-  {}_nG=\operatorname{Ker}(n\cdot\operatorname{id}_G)
-\]
-é um subesquema aberto de \(G\). Para que seja igual a \(G\), basta,
-por conseguinte, que o seja como conjunto; pode-se tomar, pois,
+Quando \(S\) é o espectro de um corpo \(k\), isso foi visto
+em VII\(_B\) 8.5, basta tomar \(n=\deg[K:k(s)]\).
+Suponhamos agora \(S\) local artiniano, seja
+\(n_0=\deg[K_0:k]\), onde \(k\) é o corpo residual e
+\(K_0=K\otimes_Ak\), \(S=\operatorname{Spec}(A)\), e
+distinguamos dois casos.
+\SGARefTarget{sga3:ix:lemma:6:1:proof:item:a}a) \(k\) é de
+car. nula, logo \(K_0\) é separável sobre \(k\), logo \(K\)
+é não ramificado sobre \(S\). Então a seção unidade de \(K\)
+é uma imersão aberta, logo
+\({}_nK=\operatorname{Ker}n.\operatorname{id}_K\) é um
+subesquema aberto de \(K\), logo para que seja igual a \(K\),
+basta que o seja como conjunto, pode-se portanto então tomar
 \(n=n_0\).
+\SGARefTarget{sga3:ix:lemma:6:1:proof:item:b}b) \(k\) é de
+car. \(p>0\), seja então \(m\) um inteiro tal que
+\(\mathfrak m^{m+1}=0\), onde \(\mathfrak m\) é o ideal
+maximal de \(A\), afirmo que se pode tomar \(n=p^mn_0\).
+Com efeito, procedendo por indução sobre \(m\), pode-se supor
+que, pondo \(n'=p^{m-1}n_0\), \(n'\operatorname{id}_K\)
+induz em \(K_{m-1}=K\otimes_A(A/\mathfrak m^n)\) o
+endomorfismo nulo. O conjunto dos endomorfismos \(u\) de
+\(K\) que têm essa propriedade está em correspondência
+biunívoca com \(H^1(K,M)\), onde \(M\) é o funtor em grupos
+sobre \(S\) definido por
+\SGARefTarget{sga3:ix:lemma:6:1:display:01}%
+\(T\mapsto\operatorname{Hom}_{\mathscr O_{T_0}}
+(g_0^*(\Omega^1_{K_0/S_0}),\mathfrak m^m\mathscr O_T)\),
+(\(g:T\to S\) denotando a projeção estrutural e
+\(g_0:T_0\to S_0\) a projeção deduzida pela mudança de base
+\(S_0\to S\)), (cf. III 2). Verifica-se que essa
+correspondência biunívoca respeita as leis de grupo, o que
+implica que os endomorfismos \(u\) considerados são tais
+que \(pu=0\). Logo tem-se \(pn'\operatorname{id}_K=0\),
+i.e. \(p^mn_0\operatorname{id}_K=0\).
 
-\smallskip
-\SGARefTarget{sga3:ix:lemma:6:1:proof:item:b}\noindent\textit{(b) \(k\)
-é de característica \(p>0\).}
-Seja \(\mathfrak m\) o ideal maximal de \(A\), e ponhamos
-\[
-  S_r=\operatorname{Spec}(A/\mathfrak m^{r+1})
-  \qquad (r\geq0).
-\]
-Escolhamos um inteiro \(m\) tal que \(\mathfrak m^{m+1}=0\). Afirmamos que
-se pode tomar \(n=p^mn_0\). Com efeito, raciocinando por indução sobre
-\(m\) e pondo \(n'=p^{m-1}n_0\), podemos supor que
-\(n'\cdot\operatorname{id}_G\) induz o endomorfismo nulo sobre
-\[
-  G_{m-1}=G\times_S S_{m-1}.
-\]
-\footnote{Nota do editor: o original foi desenvolvido no que segue,
-explicitando-se os resultados utilizados do Exposé~III.}
-Seja \(E\) o conjunto dos endomorfismos \(u\) de \(G\) que têm
-essa propriedade, e seja \(K\) o núcleo do morfismo de funtores em grupos
-\[
-  G\longrightarrow \prod_{S_{m-1}/S}G
-\]
-(cf.\ \SGARefLink{sga3:iii:remark:0-1-2}{III 0.1.2}). Então,
-\[
-  E=\operatorname{Hom}_{S\text{-}\mathrm{gr}}(G,K);
-\]
-em particular, a lei de grupo abeliano sobre \(E\) é induzida pela
-de \(K\). Por \SGARefLink{sga3:iii:corollary:0-9}{III 0.9}, \(K\) é o
-funtor em \(S\)-grupos que associa a todo \(g:T\to S\) o espaço
-vetorial sobre \(k\)
-\SGARefTarget{sga3:ix:lemma:6:1:display:01}
-\[
-  \operatorname{Hom}_{\mathscr O_{T_0}}
-  \bigl(
-    g_0^*(\Omega^1_{G_0/S_0}),
-    \mathfrak m^m\mathscr O_T
-  \bigr).
-\]
-Assim, \(pu=0\) para todo \(u\in E\). Segue-se que
-\[
-  pn'\cdot\operatorname{id}_G=0,
-  \qquad\text{isto é,}\qquad
-  p^mn_0\cdot\operatorname{id}_G=0.
-\]
-
-Suponhamos agora que \(S\) é noetheriano; esse é o caso ao qual se
-reduz a afirmação geral pela redução habitual ao caso
-noetheriano.
-Basta combinar o que precede com o
-\SGARefLink{sga3:ix:lemma:6:2}{lema seguinte}.
+Suponhamos agora \(S\) noetheriano (reduz-se a isso em
+\SGARefLink{sga3:ix:lemma:6:1}{6.1} pela redução habitual ao
+caso noetheriano). Basta então conjugar o que precede e o
 
 \medskip
 \noindent\SGARefTarget{sga3:ix:lemma:6:2}\textbf{Lema 6.2.}
-\textit{Seja \(X\) um pré-esquema quase finito sobre um pré-esquema
-noetheriano \(S\), e seja \((X_i)_{i\in I}\) uma família filtrante
-crescente de subpré-esquemas que possua a seguinte propriedade:
-\[
-\left\{
-\begin{aligned}
- &\text{para todo \(s\in S\) e todo \(n\geq0\), pondo}\\
- &S_{s,n}
-   =\operatorname{Spec}
-      \bigl(\mathscr O_{S,s}/\mathfrak m^{n+1}\bigr),
-   \text{ existe um \(i\in I\) tal que}\\
- &X_i\times_S S_{s,n}=X\times_S S_{s,n}.
-\end{aligned}
-\right.
-\]
-Então, existe um \(i\in I\) tal que \(X_i=X\).}
+\textit{Seja \(X\) um pré-esquema quase-finito acima de \(S\)
+noetheriano, e consideremos uma família filtrante crescente
+de subpré-esquemas \((X^i)_{i\in I}\), tendo a propriedade
+seguinte: para todo \(s\in S\) e todo inteiro \(n\geq0\),
+pondo \(S'=\operatorname{Spec}
+(\mathscr O_{S,s}/\mathfrak m^{n+1})\) e denotando por
+\(X',X'{}^i\) os pré-esquemas deduzidos de \(X,X^i\) pela
+mudança de base \(S'\to S\), existe um \(i\in I\) tal que
+\(X'{}^i=X'\). Sob essas condições, existe um \(i\in I\),
+tal que \(X^i=X\).}
 
-\emph{Demonstração.}
-Como \(S\) é noetheriano, existe um aberto maximal \(U\) sobre o qual
-\[
-  X|_U=X_i|_U
-\]
-para todo \(i\) suficientemente grande. Provaremos que \(U=S\). Dito de
-outro modo, se \(U\ne S\), encontraremos um aberto \(U'\) estritamente
-maior que \(U\), e um \(i\), tais que
-\[
-  X|_{U'}=X_i|_{U'}.
-\]
-Localizando em um ponto maximal \(s\) de \(S-U\), reduzimo-nos ao caso em
-que \(S\) é local com ponto fechado \(s\), e
-\[
-  U=S-\{s\}.
-\]
-Com efeito, ponhamos \(S'=\operatorname{Spec}(\mathscr O_{S,s})\). Se
-\[
-  X\times_S S'=X_i\times_S S'
-\]
-para algum \(i\),
-existe uma vizinhança aberta \(V\) de \(s\) tal que
-\[
-  X|_V=X_i|_V.
-\]
-Tomando \(i\) bastante grande para que \(X_i|_U=X|_U\), tem-se, então,
-\[
-  X|_W=X_i|_W,
-  \qquad W=U\cup V.
-\]
-
-Para todo \(i\) suficientemente grande, a igualdade \(X|_U=X_i|_U\)
-mostra que \(X_i\) é um subpré-esquema fechado de \(X\), definido por um
-ideal \(\mathscr I^{(i)}\) cujo suporte está contido em
-\[
-  X_s=X_0=X\times_S S_0,
-\]
-onde
-\[
-  S_n=\operatorname{Spec}(A/\mathfrak m^{n+1}),
-  \qquad S=\operatorname{Spec}(A).
-\]
-Como \(X_0\) é quase finito sobre \(S_0\), é um subconjunto fechado
-finito do pré-esquema noetheriano \(X\). Portanto,
-\(\mathscr I^{(i)}\) é um módulo de comprimento finito. Existe, pois, um
-inteiro \(n\geq0\) tal que
-\[
-  \mathscr I^{(i)}
-  \cap\mathfrak m^{n+1}\mathscr O_X=0.
-\]
-Por outro lado, pela hipótese do lema, aumentando \(i\), se
-necessário, podemos supor que a imagem de \(\mathscr I^{(i)}\) em
-\[
-  \mathscr O_{X_n}
-  =\mathscr O_X/\mathfrak m^{n+1}\mathscr O_X
-\]
-é nula. Segue-se que \(\mathscr I^{(i)}=0\), e, portanto, \(X_i=X\).
-\qed
+Como \(S\) é noetheriano, existe um aberto \(U\)
+\emph{maximal} tal que se tenha \(X|U=X^i|U\) para \(i\)
+grande, vai-se mostrar que \(U=S\). Em outros termos,
+vai-se mostrar que se \(U/S\), pode-se encontrar um \(U'\)
+estritamente maior que \(U\), e um \(i\) tal que
+\(X|U'=X^i|U'\). Localizando em um ponto \emph{maximal}
+\(s\) de \(S-U\), reduz-se ao caso em que \(S\) é local
+de ponto fechado \(s\), e \(U=X-\{s\}\). (NB se
+\(S'=\operatorname{Spec}(\mathscr O_{S,s})\) e se \(i\)
+é tal que \(X\times_SS'=X^i\times_SS'\), então existe
+uma vizinhança aberta \(V\) de \(s\) tal que \(X|V=X^i|V\),
+logo, com a condição de tomar \(i\) suficientemente grande,
+ter-se-á \(X|W=X^i|W\), onde \(W=U\cup V\)). Como
+\(X|U=X_i|U\) para \(i\) grande, vê-se que \(X_i\) é um
+subpré-esquema fechado de \(X\) definido por um Ideal
+\(\mathscr I^{(i)}\) de suporte contido em
+\(X_0=X\times_SS_0\) (onde
+\(S_n=\operatorname{Spec}(A/\mathfrak m^{n+1})\),
+\(S=\operatorname{Spec}(A)\)). Como \(X_0\) é quase-finito
+sobre \(S\), \(X_0\) é uma parte fechada finita de \(X\)
+noetheriano, logo \(\mathscr I^{(i)}\) é um Módulo
+\emph{de comprimento finito}. Segue-se que existe um inteiro
+\(n\geq0\) tal que
+\(\mathscr I^{(i)}\cap\mathfrak m^{n+1}\mathscr O_X=0\).
+Aliás, em virtude da hipótese em
+\SGARefLink{sga3:ix:lemma:6:2}{6.2}, pode-se supor (com a
+condição de aumentar \(i\)) que a imagem de
+\(\mathscr I^{(i)}\) em
+\(\mathscr O_{X_n}=\mathscr O_X/\mathfrak m^{n+1}\mathscr O_X\)
+é nula. Isso implica \(\mathscr I^{(i)}=0\), logo \(X^i=X\),
+cqfd.
 
 \medskip
 \noindent\SGARefTarget{sga3:ix:lemma:6:3}\textbf{Lema 6.3.}
-\textit{Seja \(S\) um pré-esquema, seja \(K\) um pré-esquema em grupos sobre
-\(S\), localmente de apresentação finita, e seja \(s\in S\). Suponhamos
-que \(K_s\) seja quase finito (respectivamente, não ramificado) sobre
-\(\kappa(s)\) no elemento unidade. Existe, então, uma vizinhança aberta
-\(U\) de \(s\) tal que \(K|_U\) seja localmente quase finito
-(respectivamente, não ramificado) sobre \(U\).}%
+\textit{Sejam \(S\) um pré-esquema, \(K\) um pré-esquema em
+grupos sobre \(S\), localmente de apresentação finita,
+\(s\in S\) tal que \(K_s\) seja quase-finito (resp. não
+ramificado) sobre \(k(s)\) no elemento unidade. Então existe
+uma vizinhança aberta \(U\) de \(s\) tal que \(K|U\) seja
+localmente quase-finito (resp. não ramificado) sobre \(U\).}%
 \begingroup
 \renewcommand{\thefootnote}{\(\ast\)}%
 \footnote{Cf.\ VI\textsubscript{B}
@@ -193,214 +116,161 @@ que \(K_s\) seja quase finito (respectivamente, não ramificado) sobre
 \addtocounter{footnote}{-1}%
 \endgroup
 
-\emph{Demonstração.}
-Seja \(V\) o conjunto dos pontos \(x\in K\) que têm a propriedade
-seguinte: se \(t\) é a imagem de \(x\) em \(S\), então \(K_t\) é
-quase finito (respectivamente, não ramificado) sobre \(\kappa(t)\) em
-\(x\); isto é, \(x\) está isolado em \(K_t\) (respectivamente, está
-isolado e seu anel local em \(K_t\) é uma extensão separável de
-\(\kappa(t)\)). O conjunto \(V\) é aberto porque \(K\) é localmente
-de apresentação finita sobre \(S\).
-Se \(\epsilon\) denota a seção unidade de \(K\), então
-\(\epsilon^{-1}(V)\) é aberto. Por hipótese, contém \(s\), e é, por
-conseguinte, uma vizinhança aberta \(U\) de \(s\). Esse \(U\) tem a propriedade
-requerida. Com efeito, se \(t\in U\), então \(K_t\), por ser um grupo
-localmente de tipo finito sobre \(\kappa(t)\), é localmente quase finito
-(respectivamente, não ramificado) sobre \(\kappa(t)\), porque tem essa
-propriedade em \(\epsilon(t)\); cf. VI\textsubscript{B}
-\SGARefLink{prop:sga3-VIB-1.3}{1.3}. \qed
+Seja com efeito \(V\) o conjunto dos pontos \(x\) de
+\(K\) tais que \(K_s\) seja quase-finito (resp. não
+ramificado) sobre \(k(s)\) em \(x\), i.e. tal que \(x\)
+seja isolado em \(K_s\) (resp. e seu anel local em \(K_s\)
+uma extensão separável de \(k(s)\)), --- onde \(e\) denota
+a imagem de \(x\) em \(S\). Sabe-se que \(V\) é aberto,
+pois \(K\) é localmente de apresentação finita sobre \(S\),
+logo se \(g\) denota a seção unidade de \(K\), \(g^{-1}(V)\)
+é aberto. Por hipótese contém \(s\), logo é uma vizinhança
+aberta \(U\) de \(s\). Esta serve, em outros termos \(t\in U\)
+implica que \(K_t\) é localmente quase-finito (resp. não
+ramificado) sobre \(k(t)\): com efeito, como \(K_t\) é um
+grupo localmente de tipo finito sobre
+\(k(t)\), isso resulta do fato de que é quase-finito
+(resp. não ramificado) sobre \(k(t)\) no elemento neutro,
+cf. VI.
 
 Combinando \SGARefLink{sga3:ix:lemma:6:1}{6.1} e
-\SGARefLink{sga3:ix:lemma:6:3}{6.3}, obtém-se:
+\SGARefLink{sga3:ix:lemma:6:3}{6.3}, encontra-se o
 
 \medskip
 \noindent\SGARefTarget{sga3:ix:theorem:6:4}\textbf{Teorema 6.4.}
-\textit{Seja \(S\) um pré-esquema, seja \(H\) um \(S\)-grupo de tipo
-multiplicativo e de tipo finito, e seja \(K\) um subpré-esquema fechado em
-grupos de \(H\), de apresentação finita sobre \(S\). Seja \(s\in S\) tal
-que \(K_s\) seja finito. Existem, então, uma vizinhança aberta \(U\) de
-\(s\) e um inteiro \(n>0\) tais que
-\[
-  K|_U\subset {}_nH|_U.
-\]
-Em particular, como \({}_nH\) é finito sobre \(S\), o grupo \(K|_U\)
-é finito sobre \(U\).}
+\textit{Sejam \(S\) um pré-esquema, \(H\) um \(S\)-grupo
+de tipo multiplicativo e de tipo finito, \(K\) um
+subpré-esquema em grupos fechado, de apresentação finita
+sobre \(S\). Seja \(s\in S\) tal que \(K_s\) seja finito,
+então existe uma vizinhança aberta \(U\) de \(s\) e um
+inteiro \(n>0\) tal que \(K|U\) esteja contido em
+\({}_nH|U\), e a fortiori (como \({}_nH\) é finito sobre
+\(S\)) tal que \(K|U\) seja finito sobre \(U\).}
 
-O lema de Nakayama agora diz:
+Utilizando o lema de Nakayama, deduz-se:
 
 \medskip
 \noindent\SGARefTarget{sga3:ix:corollary:6:5}\textbf{Corolário 6.5.}
-\textit{Com as notações precedentes, suponhamos que \(K_s\) seja o
-grupo unidade. Existe, então, uma vizinhança aberta \(U\) de \(s\) tal que
-\(K|_U\) seja o grupo unidade.}
+\textit{Com as notações precedentes, suponhamos mesmo que
+\(K_s\) seja o grupo unidade. Então existe uma vizinhança
+aberta \(U\) de \(s\) tal que \(K|U\) seja o grupo unidade.}
 
 \medskip
 \noindent\SGARefTarget{sga3:ix:corollary:6:6}\textbf{Corolário 6.6.}
-\textit{Seja \(u:H\to G\) um homomorfismo de pré-esquemas em \(S\)-grupos,
-onde \(H\) é de tipo multiplicativo e de tipo finito e \(G\) é
-separado sobre \(S\). Suponhamos, ademais, que, ou \(S\) seja localmente
-noetheriano, ou \(G\) seja localmente de apresentação finita sobre
-\(S\). Se \(s\in S\) e
-\[
-  u_s:H_s\longrightarrow G_s
-\]
-é um monomorfismo, existe uma vizinhança aberta \(U\) de \(s\) tal que \(u\)
-induz um monomorfismo
-\[
-  H|_U\longrightarrow G|_U.
-\]}
+\textit{Seja \(u:H\to G\) um homomorfismo de
+\(S\)-pré-esquemas em grupos, com \(H\) de tipo
+multiplicativo e de tipo finito, e \(G\) separado sobre
+\(S\). Supõe-se além disso \(S\) localmente noetheriano,
+ou \(G\) localmente de apresentação finita sobre \(S\).
+Seja \(s\in S\) tal que \(u_s:H_s\to G_s\) seja um
+monomorfismo, então existe uma vizinhança aberta \(U\) de
+\(s\) tal que \(u\) induza um monomorfismo \(H|U\to G|U\).}
 
-\emph{Demonstração.}
-Ponhamos \(K=\operatorname{Ker}(u)\). A hipótese sobre \(u_s\) diz que
-\(K_s\) é o grupo unidade, e a conclusão desejada diz que \(K|_U\) é
-o grupo unidade para um \(U\) adequado. Como \(G\) é separado sobre
-\(S\), o grupo \(K\) é um subgrupo fechado de \(H\). Se não se supõe
-que \(S\) seja localmente noetheriano, mas se supõe que \(G\) seja
-localmente de apresentação finita sobre \(S\), então \(K\) é
-localmente de apresentação finita sobre \(S\).
-É, portanto, de apresentação finita sobre \(S\), pois é separado
-sobre \(S\) (como \(H\)) e é quase compacto sobre \(S\) (por ser fechado
-em \(H\), que é quase compacto sobre \(S\)). Aplica-se agora o Corolário
-\SGARefLink{sga3:ix:corollary:6:5}{6.5}. \qed
-
-\medskip
-\noindent\SGARefTarget{sga3:ix:remark:6:6:1}\textbf{Observação 6.6.1.}%
-\textit{Sob as hipóteses de
-\SGARefLink{sga3:ix:corollary:6:6}{6.6}, observe-se que, se, ademais, \(G\)
-é afim sobre \(S\) (respectivamente, de apresentação finita sobre
-\(S\)), então,
-\[
-  H|_U\longrightarrow G|_U
-\]
-é mesmo uma imersão fechada, como observado em
-\SGARefLink{sga3:ix:corollary:2:5}{2.5} (respectivamente,
-\SGARefLink{sga3:ix:remark:2:6}{2.6}).}
+Seja com efeito \(K=\operatorname{Ker}u\), a hipótese
+sobre \(u_s\) significa que \(K_s\) é o grupo unidade,
+a conclusão que \(K|U\) é o grupo unidade, para \(U\)
+conveniente. Ora, sendo \(G\) separado sobre \(S\), \(K\)
+é um subgrupo \emph{fechado} de \(H\), e no caso em que
+não se supõe \(S\) loc. noeth. mas em compensação \(G\)
+localmente de apresentação finita sobre \(S\), \(K\) é
+localmente de apresentação finita sobre \(S\), logo de
+apresentação finita sobre \(S\), pois é separado sobre
+\(S\) (\(H\) o sendo) e quase-compacto sobre \(S\) (sendo
+fechado em \(H\), que é quase-compacto sobre \(S\)).
+Pode-se portanto aplicar
+\SGARefLink{sga3:ix:corollary:6:5}{6.5}, donde
+\SGARefLink{sga3:ix:corollary:6:6}{6.6}.
+\SGARefTarget{sga3:ix:remark:6:6:1}%
+Note-se que quando \(G\) é afim sobre \(S\) ou de
+apresentação finita sobre \(S\), \(H|U\to G|U\) é mesmo
+uma \emph{imersão fechada}, como se assinalou em
+\SGARefLink{sga3:ix:corollary:2:5}{2.5} e
+\SGARefLink{sga3:ix:remark:2:6}{2.6}.
 
 \medskip
 \noindent\SGARefTarget{sga3:ix:corollary:6:7}\textbf{Corolário 6.7.}
-\textit{Seja \(u:H\to G\) um homomorfismo de pré-esquemas em \(S\)-grupos,
-onde \(H\) é de tipo multiplicativo e de tipo finito. Suponhamos que, ou
-\(S\) seja localmente noetheriano, ou \(G\) seja localmente de
-apresentação finita sobre \(S\). Se todo homomorfismo sobre as fibras
-\[
-  u_s:H_s\longrightarrow G_s
-\]
-é um monomorfismo, então \(u\) é um monomorfismo.}
+\textit{Seja \(u:H\to G\) um homomorfismo de
+\(S\)-pré-esquemas em grupos, com \(H\) de tipo
+multiplicativo e de tipo finito; supõe-se \(S\) localmente
+noetheriano ou \(G\) localmente de apresentação finita
+sobre \(S\). Se todos os homomorfismos induzidos nas fibras
+\(u_s:H_s\to G_s\) são monomorfismos, então \(u\) é um
+monomorfismo.}
 
-\emph{Demonstração.}
-O argumento é o mesmo que em
-\SGARefLink{sga3:ix:corollary:6:6}{6.6}. Aqui não é necessária a hipótese
-de que \(G\) seja separado sobre \(S\) para assegurar que
-\(K=\operatorname{Ker}(u)\) seja fechado em \(H\), pois a suposição de
-que todos os \(u_s\) sejam monomorfismos implica que \(K\) se reduz
-como conjunto à seção unidade. \qed
+O raciocínio é o mesmo que em
+\SGARefLink{sga3:ix:corollary:6:6}{6.6}, sendo aqui inútil
+a hipótese de que \(G\) seja separado sobre \(S\) para
+assegurar que \(K\) é fechado em \(H\), pois a hipótese
+de que os \(u_s\) são monomorfismos implica que \(K\)
+é reduzido como conjunto à seção unidade de \(G\).
 
 \medskip
 \noindent\SGARefTarget{sga3:ix:theorem:6:8}\textbf{Teorema 6.8.}
 \begin{itshape}
-Seja \(u:H\to G\) um homomorfismo de pré-esquemas em \(S\)-grupos, onde
-\(H\) é de tipo multiplicativo e de tipo finito e \(G\) é separado
-sobre \(S\). Suponhamos, ademais, que, ou \(S\) seja localmente noetheriano,
-ou \(G\) seja de apresentação finita sobre \(S\). Então,
-\[
-  K=\operatorname{Ker}(u)
-\]
-é um subgrupo de \(H\) de tipo multiplicativo e de tipo finito, e \(u\)
-é factorizado como
+Seja \(u:H\to G\) um homomorfismo de \(S\)-pré-esquemas em
+grupos, com \(H\) de tipo multiplicativo e de tipo finito,
+e \(G\) separado sobre \(S\). Supõe-se além disso \(S\)
+localmente noetheriano ou \(G\) de apresentação finita
+sobre \(S\). Então \(K=\operatorname{Ker}u\) é um subgrupo
+de tipo multiplicativo e de tipo finito de \(H\), e \(u\)
+se fatora em
 \SGARefTarget{sga3:ix:theorem:6:8:diagram:01}
 \[
 \begin{tikzcd}[column sep=large]
-  H
-    \arrow[r,"u'"]
-  & H/K
-    \arrow[r,"u''"]
-  & G,
+  H \arrow[r,"u'"] & H/K \arrow[r,"u''"] & G,
 \end{tikzcd}
 \]
-onde \(H/K\) é de tipo multiplicativo e de tipo finito, \(u'\) é o
-homomorfismo canônico e é fielmente plano (e afim), e \(u''\) é um
-monomorfismo.
+onde \(H/K\) é de tipo multiplicativo e de tipo finito,
+\(u'\) é o homomorfismo canônico e é fielmente plano,
+enfim \(u''\) um monomorfismo.
 \end{itshape}
 
-\emph{N.B.}
-Como se observou em \SGARefLink{sga3:ix:remark:6:6:1}{6.6.1}, o
-homomorfismo \(u''\) é uma imersão fechada se \(G\) é afim sobre
-\(S\), ou se \(G\) é de apresentação finita sobre \(S\).
-
-\emph{Demonstração.}
-Basta provar que \(K\) é de tipo multiplicativo; o restante se segue,
-então, de \SGARefLink{sga3:ix:proposition:2:7}{2.7} e
+(N.B. De fato, \(u''\) é uma imersão fechada se \(G\)
+é afim sobre \(S\) ou de apresentação finita sobre \(S\)).
+Basta provar que \(K\) é de tipo multiplicativo, o resto
+da proposição resulta de
+\SGARefLink{sga3:ix:proposition:2:7}{2.7} e
 \SGARefLink{sga3:iv:remark:5:2:6}{IV 5.2.6}.
-
-Suponhamos primeiro que \(G\) é de apresentação finita sobre \(S\). Como
-essa hipótese é estável por mudança de base, ao provar que \(K\) é de
-tipo multiplicativo podemos reduzir-nos ao caso em que \(H\) é
-diagonalizável:
-\[
-  H=D_S(M),
-\]
-onde \(M\) é um grupo comutativo de tipo finito. Seja \(s\in S\). O
-grupo \(K_s\) é um subgrupo fechado de
-\[
-  H_s=D_{\kappa(s)}(M).
-\]
-Por \SGARefLink{sga3:ix:proposition:8:1}{8.1},
-é, portanto, da forma \(D_{\kappa(s)}(N)\), onde \(N\) é um
-quociente de \(M\). Ponhamos
-\[
-  K'=D_S(N).
-\]
-Então, \(K'\) é um subgrupo de \(H\) de tipo multiplicativo. Seja
-\[
-  v':K'\longrightarrow G
-\]
-o homomorfismo induzido por \(u\).
-Por construção, \(v'_s\) é o homomorfismo unidade. O Corolário
-\SGARefLink{sga3:ix:corollary:5:2}{5.2} dá, pois, uma vizinhança aberta
-\(U\) de \(s\) tal que
-\[
-  v'|_U:K'|_U\longrightarrow G|_U
-\]
-é o homomorfismo unidade. Substituindo \(S\) por \(U\), podemos supor
-que o próprio \(v'\) é o homomorfismo unidade e, portanto, que \(u\) se
-fatora como
+Suponhamos primeiro \(G\) de apresentação finita sobre
+\(S\). Sendo essa hipótese estável por mudança de base,
+reduz-se, para provar que \(K\) é de tipo multiplicativo,
+ao caso em que \(H\) é diagonalizável, i.e. \(H=D_S(M)\),
+onde \(M\) é um grupo comutativo de tipo finito. Seja
+\(s\in S\), então \(K_s\) é um subgrupo fechado de
+\(H_s=D_{k(s)}(M)\), logo em virtude de IV 4.7.5 é da
+forma \(D_{k(s)}(N)\), onde \(N\) é um grupo quociente
+de \(M\). Ponhamos \(K'=D_S(N)\), então \(K'\) é um
+subgrupo de tipo multiplicativo de \(H\), seja
+\(v':K'\to G\) induzido por \(G\).
+Então \(v'_s\) é o homomorfismo unidade por construção,
+logo em virtude de \SGARefLink{sga3:ix:corollary:5:2}{5.2}
+existe uma vizinhança aberta \(U\) de \(s\) tal que
+\(v'|U:K'|U\to G|U\) seja o homomorfismo unidade.
+Logo, substituindo \(S\) por \(U\), pode-se supor \(v'\)
+o homomorfismo unidade, logo que \(u\) se fatora em
 \SGARefTarget{sga3:ix:theorem:6:8:diagram:02}
 \[
 \begin{tikzcd}[column sep=large]
-  H
-    \arrow[r,"u'"]
-  & H/K'
-    \arrow[r,"u''"]
-  & G.
+  H \arrow[r,"u'"] & H/K' \arrow[r,"u''"] & G.
 \end{tikzcd}
 \]
-O homomorfismo \(u''_s\) é obtido de \(u_s\) fatorando por
-\[
-  H_s\longrightarrow H_s/\operatorname{Ker}(u_s),
-\]
-e é, portanto, um monomorfismo por
-\SGARefLink{sga3:iv:remark:5:2:6}{IV 5.2.6}. Por
-\SGARefLink{sga3:ix:corollary:6:6}{6.6}, depois de restringir a uma
-vizinhança aberta adequada \(U\) de \(s\), o homomorfismo
-\[
-  u''|_U:(H/K')|_U\longrightarrow G|_U
-\]
-é um monomorfismo. Portanto,
-\[
-  \operatorname{Ker}(u)
-  =\operatorname{Ker}(u')
-  =K',
-\]
-o que prova que \(\operatorname{Ker}(u)\) é de tipo multiplicativo.
+Ora, sendo \(u''_s\) deduzido de \(u_s\) fatorando através
+de \(H_s\to H_s/\operatorname{Ker}u_s\), \(u''_s\) é um
+monomorfismo (\SGARefLink{sga3:iv:remark:5:2:6}{IV 5.2.6}),
+logo em virtude de \SGARefLink{sga3:ix:corollary:6:6}{6.6}
+existe uma vizinhança aberta \(U\) de \(s\) tal que
+\(u''|U:(H/K')|U\to G|U\) seja um monomorfismo.
+Logo, restringindo \(S\), vê-se que \(u''\) é um
+monomorfismo, logo
+\(\operatorname{Ker}u=\operatorname{Ker}u'=K'\), o que
+prova que \(\operatorname{Ker}u\) é de tipo multiplicativo.
 
-Aplica-se a mesma demonstração se, em vez de supor que \(G\) é de
-apresentação finita sobre \(S\), supõe-se que \(S\) é localmente
-noetheriano, ao menos quando \(H\) é diagonalizável. Sem essa hipótese
-adicional sobre \(H\), é preciso mostrar que existe uma mudança de base de
-revestimento
-\[
-  S'\longrightarrow S,
-\]
-com \(S'\) localmente noetheriano, que trivializa \(H\). Isso será provado
-no próximo exposé,
-\SGARefLink{sga3:x:corollary:4-6}{X 4.6}. \qed
+A mesma demonstração é válida se, em vez de supor \(G\)
+de apresentação finita sobre \(S\), se supõe \(S\)
+localmente noetheriano, ao menos no caso em que \(H\) é
+diagonalizável. No caso em que não se faz essa hipótese
+sobre \(H\), é preciso mostrar que se pode encontrar uma
+mudança de base de cobertura \(S'\to S\), com \(S'\)
+\emph{localmente noetheriano}, que trivialize \(H\).
+É o que se verá com efeito no exposé seguinte
+(\SGARefLink{sga3:x:corollary:4-6}{X 4.6}).

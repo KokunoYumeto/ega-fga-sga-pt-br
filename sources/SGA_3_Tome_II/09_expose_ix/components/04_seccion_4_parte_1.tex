@@ -1,301 +1,212 @@
 % SGA 3, Exposé IX, tradução brasileira.
 % Escopo: §4 desde o início até a primeira metade do Lema 4.4.
-% Autoridade: Polo--Gille Exp9-8nov09.pdf; edição original: LNM 152, pp. 50--54.
+% Autoridade: SGA 3, LNM 152 (1970), pp. 50--54.
 
 
-\SGARefTarget{sga3:ix:section:4}\section*{4. O teorema de densidade}
+\SGARefTarget{sga3:ix:section:4}
+\begingroup
+\renewcommand{\thefootnote}{\(\ast\)}
+\section*{4. O teorema de densidade\protect\footnotemark}
+\footnotetext{Todos os resultados de
+\SGARefLink{sga3:ix:definition:4:1}{4.1} a
+\SGARefLink{sga3:ix:corollary:4:6}{4.6} estão contidos em EGA IV 11.10,
+ao qual remetemos o leitor para uma exposição em forma da noção de
+densidade esquemática.}
+\addtocounter{footnote}{-1}
+\endgroup
 \addcontentsline{toc}{section}{4. O teorema de densidade}
 
-Este teorema (cf. \SGARefLink{sga3:ix:theorem:4:7}{4.7 abaixo})%
-\begingroup
-\renewcommand{\thefootnote}{\(\ast\)}%
-\footnote{Todos os resultados desde
-\SGARefLink{sga3:ix:definition:4:1}{4.1} até
-\SGARefLink{sga3:ix:corollary:4:6}{4.6} estão contidos em EGA
-IV\(_3\), 11.10, ao qual remetemos o leitor para uma exposição sistemática
-da noção de densidade esquemática.}%
-\addtocounter{footnote}{-1}%
-\endgroup,
-juntamente com o teorema da
-\SGARefLink{sga3:ix:section:7}{Seção~7}, será a ferramenta essencial na
-presente Exposição e nas duas seguintes para passar das
-propriedades infinitesimais dos grupos de tipo multiplicativo
-desenvolvidas acima às suas propriedades «finitas».
+Este teorema (cf. \SGARefLink{sga3:ix:theorem:4:7}{4.7 abaixo}),
+juntamente com o teorema do
+\SGARefLink{sga3:ix:section:7}{n.º 7}, será a ferramenta essencial
+no presente exposé e nos dois seguintes, para passar das propriedades
+infinitesimais dos grupos de tipo multiplicativo, que se acaba de
+desenvolver, às propriedades «finitas».
 
 \medskip
 \noindent\SGARefTarget{sga3:ix:definition:4:1}\textbf{Definição 4.1.}
-\textit{Seja \(X\) um pré-esquema. Diz-se que uma família
-\((Z_i)_{i\in I}\) de subpré-esquemas de \(X\) é \emph{esquematicamente
-densa} se, para todo aberto \(U\) de \(X\) e todo subpré-esquema fechado
-\(U_0\) de \(U\) que contenha todos os \(Z_i\cap U\), tem-se
-\(U_0=U\).}
+\textit{Sejam \(X\) um pré-esquema, \((Z^i)_{i\in I}\) uma família
+de subpré-esquemas de \(X\). Diz-se que essa família é esquematicamente
+densa se, para todo aberto \(U\) de \(X\), e todo subpré-esquema
+fechado \(U'\) de \(U\) que majora os \(Z^i\cap U\), tem-se
+\(U'=U\). Diz-se que um subpré-esquema \(Z\) de \(X\) é
+esquematicamente denso em \(X\), se o mesmo vale para a família
+reduzida a \(Z\).}
 
-\textit{Diz-se que um subpré-esquema \(Z\) de \(X\) é
-\emph{esquematicamente denso em \(X\)} se a família de um só elemento
-formada por \(Z\) for esquematicamente densa.}
-
-É imediato (cf. EGA IV\(_3\), 11.10.1) que a definição equivale a
-dizer que, para todo aberto \(U\) de \(X\), toda seção \(f\) de
-\(\mathscr O_U\) que se anule sobre cada \(Z_i\cap U\) é nula. De maneira
-equivalente, a interseção dos núcleos dos homomorfismos canônicos
-\SGARefTarget{sga3:ix:definition:4:1:display:01}
-\[
-  u_i:\mathscr O_X\longrightarrow (v_i)_*(\mathscr O_{Z_i})
-\]
-é nula, onde \(v_i:Z_i\to X\) é a imersão canônica.%
-Quando \(X\) está sobre um pré-esquema \(S\), isso equivale também à
-afirmação seguinte: para todo aberto \(U\) de \(X\), todo
-\(S\)-pré-esquema \(Y\) separado sobre \(S\) e todo par de morfismos
-\(u,v:U\to Y\) que coincidam sobre os \(Z_i\cap U\), tem-se \(u=v\).
-Com efeito, \(u=v\) equivale a \(U_0=U\), onde \(U_0\) é a imagem
-inversa da diagonal em \(Y\times_S Y\) pelo \(S\)-morfismo
-\(U\to Y\times_S Y\) definido por \((u,v)\). A diagonal é um
-subpré-esquema fechado de \(Y\times_S Y\), de modo que \(U_0\) é um
-subpré-esquema fechado de \(U\) que contém todos os \(Z_i\cap U\). A
-densidade esquemática dá, pois, \(U_0=U\), e portanto \(u=v\). Para a
-recíproca, tome-se \(Y=\operatorname{Spec}\mathscr O_S[T]\).
-
-Na terminologia introduzida ao final de EGA I, 9.5, dizer que o
-subpré-esquema \(Z\) é esquematicamente denso em \(X\) significa também
-que \(X\) é o \emph{subpré-esquema aderência} de \(Z\) em \(X\).
+Vê-se imediatamente que a definição equivale também a dizer que,
+para todo aberto \(U\) de \(X\), toda seção \(f\) de
+\(\mathscr O_U\) que é nula sobre os \(Z^i\cap U\) é nula.
+\SGARefTarget{sga3:ix:definition:4:1:display:01}Ou ainda (quando
+\(X\) está sobre um pré-esquema \(S\)) que, para todo aberto \(U\)
+de \(X\) e todo par \((u,v)\) de morfismos de \(U\) para um
+\(S\)-pré-esquema \(Y\) \emph{separado} sobre \(S\), que
+coincidem sobre os \(Z^i\cap U\), tem-se \(u=v\).
+(Com efeito, a relação \(u=v\) equivale à relação \(U'=U\), onde
+\(U'\) é a imagem
+inversa da diagonal de \(Y\times_S Y\) pelo \(S\)-morfismo
+\(X\to Y\times_S Y\) definido por \((u,v)\); essa diagonal é um
+subpré-esquema \emph{fechado} de \(Y\times_S Y\), portanto \(U'\)
+é um subpré-esquema fechado de \(U\), que majora os \(Z^i\cap U\)
+pela hipótese sobre \((u,v)\), portanto, se a família \((Z^i)\)
+é esquematicamente densa, ter-se-á \(U'=U\), donde \(u=v\);
+vê-se a implicação inversa tomando simplesmente
+\(Y=\operatorname{Spec}\mathscr O_S[T]\)). Com a terminologia
+introduzida em EGA I, fim do n.º 9.5, dizer que o subpré-esquema
+\(Z\) de \(X^{\prime}\) é esquematicamente denso significa também que
+\(X\) é idêntico ao \emph{subpré-esquema aderência de \(Z\) em \(X\)}.
 
 \medskip
 \noindent\SGARefTarget{sga3:ix:lemma:4:2}\textbf{Lema 4.2.}
-\textit{Seja \(X\) um \(S\)-pré-esquema plano e seja \((Z_i)_{i\in I}\) uma
-família de subpré-esquemas de \(X\), planos sobre \(S\). Seja \(S_0\) um
-subpré-esquema de \(S\) definido por um ideal nilpotente \(\mathscr J\), e
-suponhamos que os módulos \(\mathscr J^n/\mathscr J^{n+1}\) sejam localmente
-livres sobre \(S_0\). Sejam \(X_0,Z_{i0}\) os obtidos de \(X,Z_i\) pela
-mudança de base \(S_0\to S\). Se \((Z_{i0})_{i\in I}\) for
-esquematicamente densa em \(X_0\), então \((Z_i)_{i\in I}\) será
-esquematicamente densa em \(X\).}
+\textit{Seja \(X\) um \(S\)-pré-esquema plano, \((Z^i)_{i\in I}\)
+uma família de subpré-esquemas de \(X\), planos sobre \(S\).
+Seja \(S_0\) um subpré-esquema de \(S\), definido por um ideal
+\(\mathscr J\) nilpotente, e sejam \(X_0,Z^i_0\) deduzidos por
+mudança de base \(S_0\to S\), suponhamos enfim os módulos
+\(\mathscr J^n/\mathscr J^{n+1}\) localmente livres sobre \(S_0\).
+Se a família \((Z^i_0)_{i\in I}\) é esquematicamente densa em
+\(X_0\), então a família \((Z^i)_{i\in I}\) o é em \(X\).}
 
-\emph{Demonstração.}
-Suponhamos \(\mathscr J^{n+1}=0\), onde \(n\geq0\), e raciocinemos por
-indução sobre \(n\); a afirmação é trivial para \(n=0\). Definamos
-\(S_m,X_m,Z_{im}\) por redução módulo \(\mathscr J^{m+1}\), como de
-costume. A hipótese de indução já implica que
-\((Z_{i,n-1})_{i\in I}\) é esquematicamente densa em \(X_{n-1}\).
-Após substituir \(X\) por um aberto induzido, basta provar que toda
-seção \(f\) de \(\mathscr O_X\) que se anule sobre todos os \(Z_i\) é
-nula.
-
-A seção \(f_{n-1}\) de
-\[
-  \mathscr O_{X_{n-1}}
-  =\mathscr O_X/\mathscr J^n\mathscr O_X
-\]
-definida por \(f\) anula-se sobre os \(Z_{i,n-1}\), logo é nula. Por
-conseguinte, \(f\) é uma seção de \(\mathscr J^n\mathscr O_X\). Como
-\(X\) é plano sobre \(S\), existe um isomorfismo
+Suponhamos \(\mathscr J^{n+1}=0\) (onde \(n\geq0\)), raciocinemos
+por indução sobre \(n\), sendo a afirmação trivial para \(n=0\).
+Definindo os \(S_m,X_m,Z^i_m\) por redução mod
+\(\mathscr J^{m+1}\), como de costume, a hipótese de indução já
+implica que \((Z^i_{n-1})_{i\in I}\) é esquematicamente densa em
+\(X_{n-1}\). Substituindo, se necessário, \(X\) por um aberto
+induzido, somos reduzidos a provar que toda seção \(f\) de
+\(\mathscr O_X\) que se anula sobre os \(Z^i\) é nula. Ora, a
+seção \(f_{n-1}\) de \(\mathscr O_{X_{n-1}}\) definida por \(f\)
+se anula sobre os \(Z^i_{n-1}\), portanto é nula, portanto \(f\)
+é uma seção de \(\mathscr J^n\mathscr O_X\). Como \(X\) é plano
+sobre \(S\), tem-se
 \SGARefTarget{sga3:ix:lemma:4:2:display:01}
 \[
-  \mathscr J^n\mathscr O_X
+  \mathscr J^n\cdot\mathscr O_X
   \xleftarrow{\ \sim\ }
   \mathscr E\otimes_{\mathscr O_{S_0}}\mathscr O_{X_0},
-  \qquad
-  \mathscr E=\mathscr J^n=\mathscr J^n/\mathscr J^{n+1}.
+  \qquad\text{onde }\mathscr E=\mathscr J^n/\mathscr J^{n+1}=\mathscr J^n.
 \]
-Do mesmo modo, como cada \(Z_i\) é plano sobre \(S\), a
-restrição \(f_i\) de \(f\) a \(Z_i\) pode ser vista como uma seção de
+Do mesmo modo, para todo \(i\in I\), a restrição \(f_i\) de
+\(f\) a \(Z^i\) pode ser considerada como uma seção de
 \SGARefTarget{sga3:ix:lemma:4:2:display:02}
 \[
-  \mathscr J^n\mathscr O_{Z_i}
+  \mathscr J^n\cdot\mathscr O_{Z^i}
   \xleftarrow{\ \sim\ }
-  \mathscr E\otimes_{\mathscr O_{S_0}}\mathscr O_{Z_{i0}}.
+  \mathscr E\otimes_{\mathscr O_{S_0}}\mathscr O_{Z^i_0}.
 \]
-Por hipótese, todos os \(f_i\) são nulos. O módulo \(\mathscr E\) é
-localmente livre por hipótese e, portanto, também o é
-\[
-  \mathscr F
-  =\mathscr E\otimes_{\mathscr O_{S_0}}\mathscr O_{X_0}.
-\]
-Assim, \(f\) é uma seção do módulo localmente livre \(\mathscr F\) sobre
-\(X_0\) cuja restrição a cada \(Z_{i0}\) é nula. Como a família
-\((Z_{i0})_{i\in I}\) é esquematicamente densa em \(X_0\), segue-se
-imediatamente que \(f=0\). \qed
+
+Por hipótese, os \(f_i\) são nulos. Aliás, \(\mathscr E\) é
+localmente livre por hipótese, portanto o mesmo vale para
+\(\mathscr F=\mathscr E\otimes_{\mathscr O_{S_0}}\mathscr O_{X_0}\).
+Portanto \(f\) é uma seção do módulo \emph{localmente livre}
+\(\mathscr F\) sobre \(X_0\), tal que, para todo \(i\), sua
+restrição a \(S^i_0\) seja nula. Como \((Z^i_0)_{i\in I}\) é
+esquematicamente densa em \(X_0\), segue-se imediatamente que
+\(f\) é nula, cqfd.
 
 \medskip
 \noindent\SGARefTarget{sga3:ix:corollary:4:3}\textbf{Corolário 4.3.}
-\textit{Seja \(X\) um \(S\)-pré-esquema localmente noetheriano, plano sobre
-\(S\), e seja \((Z_i)_{i\in I}\) uma família de subpré-esquemas de \(X\),
-planos sobre \(S\). Suponhamos que, para todo \(s\in S\), a família de
-fibras \((Z_{is})_{i\in I}\) seja esquematicamente densa em \(X_s\).
-Então \((Z_i)_{i\in I}\) é esquematicamente densa em \(X\).}
+\textit{Sejam \(X\) um \(S\)-pré-esquema plano, com \(X\)
+localmente noetheriano, \((Z^i)_{i\in I}\) uma família de
+subpré-esquemas de \(X\) planos sobre \(S\). Supõe-se que, para
+todo \(s\in S\), a família \((Z^i_s)_{i\in I}\) das fibras em
+\(s\) seja esquematicamente densa em \(X_s\). Então a família
+\((Z^i)_{i\in I}\) é esquematicamente densa em \(X\).}
 
-\emph{Demonstração.}
-Após substituir \(X\) por um aberto induzido, basta provar que toda
-seção \(f\) de \(\mathscr O_X\) cuja restrição a todos os \(Z_i\) é
-nula é ela própria nula.%
-\footnote{Nota do editor: desenvolveu-se o original no que segue.}
-Para isso, basta mostrar que a imagem de \(f\) em \(\mathscr O_{X,x}\)
-é nula para todo \(x\in X\). Seja \(\mathfrak m_x\) o ideal maximal de
-\(\mathscr O_{X,x}\), e seja \(\mathfrak m_s\) o de
-\(\mathscr O_{S,s}\), onde \(s\) é a imagem de \(x\) em \(S\). Como
-\(\mathscr O_{X,x}\) é noetheriano,
-\[
-  \bigcap_{n\in\mathbb N}\mathfrak m_x^n=0,
-  \qquad\text{y, con mayor razón,}\qquad
-  \bigcap_{n\in\mathbb N}\mathscr O_{X,x}\mathfrak m_s^n=0.
-\]
-Basta, pois, mostrar, para todo inteiro \(n\), que a seção induzida por
-\(f\) sobre
-\[
-  X\times_S
-  \operatorname{Spec}\bigl(\mathscr O_{S,s}/\mathfrak m_s^{n+1}\bigr)
-\]
-é nula. Por hipótese,
-\[
-  Z_{is}=Z_i\otimes_{\mathscr O_{S,s}}\kappa(s)
-\]
-é uma família esquematicamente densa em
-\[
-  X_s=X\otimes_{\mathscr O_{S,s}}\kappa(s).
-\]
-Reduzimo-nos, assim, ao caso em que \(S\) é o espectro de um anel local
-cujo ideal maximal \(\mathscr J\) é nilpotente,
-\(S_0=\operatorname{Spec}\kappa(s)\), e se cumprem as hipóteses do
-\SGARefLink{sga3:ix:lemma:4:2}{Lema~4.2}. Segue-se a conclusão. \qed
+Substituindo, se necessário, \(X\) por um aberto induzido, reduz-se
+a provar que toda seção \(f\) de \(\mathscr O_X\) cuja restrição
+aos \(Z^i\) é nula é nula. Para isso, basta provar que, para todo
+\(s\in S\) e todo inteiro \(n\), a seção induzida sobre
+\(X\times_S\operatorname{Spec}(\mathscr O_{S,s}/\mathfrak m_s^{n+1})\)
+é nula, onde \(\mathfrak m_s\) é o ideal maximal de
+\(\mathscr O_{S,s}\) (é aqui que serve a hipótese localmente
+noetheriana sobre \(X\)). Isso nos reduz, portanto, ao caso em que
+\(S\) é o espectro de um anel local cujo ideal maximal \(J\) é
+nilpotente. Está-se então sob as condições de aplicação de
+\SGARefLink{sga3:ix:lemma:4:2}{4.2}, donde a conclusão.
 
 \medskip
 \noindent\SGARefTarget{sga3:ix:lemma:4:4}\textbf{Lema 4.4.}
-\textit{Seja \(S\) um pré-esquema localmente noetheriano, seja \(X\) um
-\(S\)-pré-esquema localmente noetheriano, plano sobre \(S\), e seja
-\((Z_i)_{i\in I}\) uma família de subpré-esquemas de \(X\), planos sobre
-\(S\). Suponhamos que, para todo \(s\in S\), a família de fibras
-\((Z_{is})_{i\in I}\) seja esquematicamente densa em \(X_s\). Então,
-para toda mudança de base \(S'\to S\), sem exigir que \(S'\) seja localmente
-noetheriano, a família \((Z_i')_{i\in I}\) é esquematicamente densa em
-\(X'\). Dito de outro modo, \((Z_i)_{i\in I}\) é universalmente
-esquematicamente densa em \(X\) com respeito a \(S\) (cf. EGA IV\(_3\),
-Definição 11.10.8).}
+\textit{Sob as hipóteses de
+\SGARefLink{sga3:ix:corollary:4:3}{4.3} e supondo \(S\)
+localmente noetheriano, para toda mudança de base \(S'\to S\)
+(\(S'\) não necessariamente localmente noetheriano), a família
+\((Z'{}^i)_{i\in I}\) é esquematicamente densa em \(X'\).}
 
-\emph{Demonstração.}%
-Seja \(f'\) uma seção de \(\mathscr O_{X'}\) sobre um aberto \(U'\) de
-\(X'\), que se anule sobre os \(Z_i'\); devemos provar que \(f'=0\).
-Fixemos \(s'\in S'\). Basta provar que \(f'\) se anula em todo ponto de
-\(U'\) situado sobre \(s'\). Se \(s\) é a imagem de \(s'\) em \(S\),
-após substituir \(S,S'\) pelos espectros de seus anéis locais em
-\(s,s'\), podemos supor que \(S,S'\) são locais e que \(s,s'\) são seus
-pontos fechados. Podemos supor também que \(X\) é afim, de modo que
+É preciso mostrar que toda seção \(f'\) de \(\mathscr O_{X'}\)
+sobre um aberto \(U'\) de \(X'\), que se anula sobre os \(Z'{}^i\),
+é nula. Seja \(s'\in S'\), basta provar que \(f'\) \emph{é nula
+em todos os pontos de} \(U'\) \emph{sobre} \(s'\). Seja \(s\)
+a imagem de \(s'\) em \(S\), substituindo, se necessário,
+\(S,S'\) pelos espectros dos anéis locais em \(s,s'\), pode-se
+supor \(S,S'\) locais, e que \(s,s'\) são seus pontos fechados.
+Pode-se além disso supor \(X\) afim, portanto
 \SGARefTarget{sga3:ix:lemma:4:4:display:01}
-\[
-  \begin{gathered}
-    S=\operatorname{Spec}(A),\qquad
-    S'=\operatorname{Spec}(A'),\\
-    X=\operatorname{Spec}(B),\qquad
-    X'=\operatorname{Spec}(B'),\qquad
-    B'=B\otimes_A A',
-  \end{gathered}
-\]
-onde \(A,A'\) são locais, \(A\to A'\) é um homomorfismo local, e
-\(A,B\) são noetherianos. Podemos supor ainda que \(U'\) é afim, da
-forma \(X'_{g'}\), com \(g'\in B'\).
-
-Para toda \(A\)-subálgebra \(A''\) de \(A'\), ponhamos
-\[
-  S''=\operatorname{Spec}(A'')
-\]
-e sejam \(X'',Z_i''\) os obtidos de \(X,Z_i\) pela mudança de base
-\(S''\to S\). Obtém-se o diagrama
+\(S=\operatorname{Spec}(A)\), \(X=\operatorname{Spec}(B)\),
+\(S'=\operatorname{Spec}(A')\), \(X'=\operatorname{Spec}(B')\),
+onde \(B'=B\otimes_A A'\); \(A\to A'\) é um homomorfismo
+\emph{local}. Pode-se também supor \(U'\) afim, da forma
+\(X'_{g'}\), com \(g'\in B'\). Para toda sub-\(A\)-álgebra
+\(A''\) de \(A'\), considera-se \(S''=\operatorname{Spec}(A'')\)
+e \(X'',Z''{}^i\) deduzidos de \(X,Z^i\) pela mudança de base
+\(S''\to S\), donde o diagrama:
 \SGARefTarget{sga3:ix:lemma:4:4:diagram:01}
 \[
 \begin{tikzcd}[column sep=large,row sep=large]
-  % La fuente imprime visiblemente subíndices n en los nodos superiores
-  % central y derecho; se conservan pese a la prosa circundante.
-  Z^i \arrow[d] & Z_n^{i''} \arrow[l]\arrow[d]
-    & Z_n^{i'} \arrow[l]\arrow[d] \\
+  Z^i \arrow[d] & Z''{}^i \arrow[l]\arrow[d]
+    & Z'{}^i \arrow[l]\arrow[d] \\
   X \arrow[d] & X'' \arrow[l]\arrow[d] & X' \arrow[l]\arrow[d] \\
   S & S'' \arrow[l] & S' \arrow[l].
 \end{tikzcd}
 \]
 
-No que segue, limitamo-nos aos \(A''\) que são localizações de
-\(A\)-subálgebras \(A_1''\) de \(A'\), de tipo finito sobre \(A\), em
-\(\mathfrak m'\cap A_1''\), onde \(\mathfrak m'\) é o ideal maximal de
-\(A'\). Assim, os homomorfismos \(A\to A''\to A'\) são locais. Esses
-\(A''\) formam uma família filtrante crescente de subálgebras cuja união,
-e portanto cujo limite direto, é \(A'\). Do mesmo modo,
-\[
-  B'=\varinjlim_{A''}\bigl(B\otimes_A A''\bigr).
-\]
-Existem, pois, tal \(A''\) e um elemento
-\(g''\in B''=B\otimes_A A''\) cuja imagem em \(B'\) é \(g'\).
+No que segue, nos limitaremos aos \(A''\) que são localizações de
+sub-\(A\)-álgebras de tipo finito \(A''_1\) de \(A'\) em
+\(\mathfrak m'\cap A''_1\) (onde \(\mathfrak m'\) é o ideal
+maximal de \(A'\)), de modo que os homomorfismos
+\(A\to A''\to A'\) são locais. Notemos que esses \(A''\) formam
+uma família filtrante crescente de subálgebras cuja união é \(A'\),
+portanto seu limite indutivo é igualmente \(A'\). Tem-se, portanto,
+do mesmo modo \(B'=\varinjlim_{A''}B\otimes_A A''\). Portanto,
+existe um \(A''\) e um elemento \(g''\in B''=B\otimes_A A'\),
+cuja imagem em \(B'\) é \(g\). Substituindo, se necessário,
+\(S\) por \(S''\) (e \(X,Z^i\) por \(X'',Z''{}^i\)), pode-se,
+portanto, supor que \(g'\) provém de \(g\in B\). Substituindo,
+se necessário, \(X\) pelo aberto \(X_g=U\), pode-se, portanto,
+supor que \(U'=X'\). Vê-se do mesmo modo que se pode supor que
+\(f'\) provém de uma seção \(f\) de \(\mathscr O_X\) sobre \(X\).
 
-Pelo \SGARefLink{sga3:ix:lemma:4:5}{Lema~4.5 abaixo}, a propriedade de
-\((Z_{is})_{i\in I}\) ser esquematicamente densa em \(X_s\)
-conserva-se por toda mudança de base \(S''\to S\).%
-\footnote{Nota do editor: acrescentou-se a frase precedente e desenvolveu-se
-o original no que segue.}
-Por conseguinte, como cada \(S''\) é localmente noetheriano, substituir
-\(S\) por um \(S''\) adequado e \(X,Z_i\) por \(X'',Z_i''\) conserva as
-hipóteses do \SGARefLink{sga3:ix:lemma:4:4}{Lema~4.4}.
+Seja \(Y=V(f)\) o subesquema de \(X\) definido por \(f\), e
+\(Y^i=Z^i\times_X Y\) sua interseção com \(Z^i\), que é um
+subesquema fechado de \(Z^i\), igual a \(V(f^i)\), onde \(f^i\)
+é a seção de \(\mathscr O_{Z^i}\) induzida por \(f\). Denotando
+por \(Y',Y'{}^i\) os \(S'\)-esquemas deduzidos dos precedentes
+por mudança de base, ter-se-á ainda
+\SGARefTarget{sga3:ix:lemma:4:4:display:02}\(Y'=V(f')\),
+\(Y'{}^i=V(f'{}^i)\), e têm-se as relações análogas para
+\(Y'',Y''{}^i\). A hipótese sobre \(f'\) se exprime pelas
+relações \(Y'{}^i=Z'{}^i\) para todo \(i\), ao menos em todo ponto
+\(x'\) de \(X'\) sobre \(s'\).
 
-Podemos supor, portanto, que \(g'\) provém de um elemento \(g\in B\).
-Após substituir \(X\) pelo aberto \(X_g=U\), podemos supor que
-\(U'=X'\). Do mesmo modo, podemos supor que \(f'\) provém de uma
-seção \(f\) de \(\mathscr O_X\) sobre \(X\).
+Para todo inteiro \(n\geq0\), introduzamos o subesquema
+\(S_n=\operatorname{Spec}(A/\mathfrak m^{n+1})\) de \(S\), e os
+esquemas \(X_n,Y_n,Z_n^i,Y_n^i\) deduzidos de \(X,Y,Z^i,Y^i\)
+pela mudança de base \(S_n\to S\).
+De modo geral, para todo \(S\)-pré-esquema \(P\), pôr-se-á
+\(P_n=P\times_S S_n\). Em virtude de
+\SGARefLink{sga3:viii:theorem:6:4}{VIII 6.4}, tem-se isto: para todo
+\(n\), e \(i\in I\), existe um subpré-esquema \(T_n^i\) de
+\(S_n\), que representa o funtor
+\SGARefTarget{sga3:ix:lemma:4:4:display:03}\(F_n^i\) seguinte
+\((\mathrm{Sch})/S_n^\circ\to(\mathrm{Ens})\): para \(P\) sobre
+\(S_n\), \SGARefTarget{sga3:ix:lemma:4:4:display:04}\(F_n^i(P)\)
+é vazio se \((Z_n^i)_P\ne(Y_n^i)_P\) e é reduzido a um elemento
+no caso contrário. Posto isso, vê-se imediatamente que, para \(i\)
+fixo, e \(m\geq n\), tem-se \(T_n^i=T_m^i\times_{S_m}S_n\).
+Seja \(\widehat S=\operatorname{Spec}(\widehat A)\), \(\widehat A\)
+o anel completado de \(A\), segue-se imediatamente que existe um
+subesquema fechado \(T^i\) de \(\widehat S\) que se reduz aos
+\(T_n^i\). Seja \(T\) o subesquema fechado de \(\widehat S\)
+interseção dos \(T^i\). Como \(\widehat S\) é noetheriano, existe
+uma parte finita \(J\) de \(I\), tal que se tenha
+\(T=\bigcap_{i\in J}T^i\).
 
-Seja \(Y=V(f)\) o subesquema de \(X\) definido por \(f\), e ponhamos
-\[
-  Y_i=Z_i\times_XY.
-\]
-Assim, \(Y_i\) é o subesquema fechado \(V(f_i)\) de \(Z_i\), onde
-\(f_i\) é a seção de \(\mathscr O_{Z_i}\) induzida por \(f\).
-Denotando por \(Y',Y_i'\) os \(S'\)-esquemas obtidos por mudança de base,
-tem-se
-\SGARefTarget{sga3:ix:lemma:4:4:display:02}
-\[
-  Y'=V(f'),
-  \qquad
-  Y_i'=Z_i'\times_{X'}Y'=V(f_i'),
-\]
-e valem relações análogas para \(Y'',Y_i''\). A afirmação de que
-\(f'\) se anula sobre os \(Z_i'\) equivale a
-\[
-  Y_i'=Z_i'\qquad\text{para todo }i.
-\]
-
-Seja \(\mathfrak m\) o ideal maximal de \(A\). Para todo \(n\geq0\),
-introduzamos o subesquema fechado
-\[
-  S_n=\operatorname{Spec}(A/\mathfrak m^{n+1})
-\]
-de \(S\), e sejam \(X_n,Y_n,Z_n^i,Y_n^i\) os obtidos de
-\(X,Y,Z_i,Y_i\) pela mudança de base \(S_n\to S\). Mais geralmente,
-para todo \(S\)-pré-esquema \(P\), escrevamos \(P_n=P\times_SS_n\).
-
-Para todo \(n\) e \(i\in I\), consideremos o funtor
-\SGARefTarget{sga3:ix:lemma:4:4:display:03}
-\[
-  F_n^i
-  =\prod_{Z_n^i/S_n}Y_n^i/Z_n^i:
-  (\mathbf{Sch})_{/S_n}^{\circ}\longrightarrow\mathbf{Set},
-\]
-definido, para todo \(P\) sobre \(S_n\), por
-\SGARefTarget{sga3:ix:lemma:4:4:display:04}
-\[
-F_n^i(P)
-=\Gamma\bigl((Y_n^i)_P/(Z_n^i)_P\bigr)
-=
-\begin{cases}
-  \varnothing,&(Y_n^i)_P\ne(Z_n^i)_P,\\
-  \{\operatorname{id}\},&(Y_n^i)_P=(Z_n^i)_P.
-\end{cases}
-\]
-Como \(S_n\) é local artiniano e \(Z_n^i\) é plano, e portanto
-essencialmente livre, sobre \(S_n\),
-\SGARefLink{sga3:viii:theorem:6:4}{VIII, 6.4} mostra que cada \(F_n^i\)
-é representado por um subpré-esquema fechado \(T_n^i\) de \(S_n\).
-
-O completamento \(\widehat A\) do anel local \(A\) é noetheriano
-porque \(A\) o é, e é o limite projetivo dos anéis \(A_n\).%
-\footnote{Nota do editor: desenvolveu-se e corrigiu-se o original para
-mostrar que o limite projetivo dos anéis \(\mathscr O(T_n^i)\)
-define um subesquema formal fechado de \(\operatorname{Spf}(\widehat A)\).}
-Seja \(K_n^i\) o ideal de
-\[
-  A_n=A/\mathfrak m^{n+1}
-\]
-que define \(T_n^i\), e seja \(K^i=\varprojlim_nK_n^i\); este é um ideal
-de \(\widehat A\).
