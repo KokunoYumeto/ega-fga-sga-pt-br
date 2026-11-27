@@ -42,3 +42,10 @@ Duas páginas impressas foram comparadas com o escaneamento de 1970 (LNM 152):
 - p. 54: a segunda metade da demonstração de IX 4.4 e o enunciado do Lema 4.5. A tradução segue o impresso. A
   desigualdade junto à dobra, $(Z_n^i)_P\ne(Y_n^i)_P$, é a reconstrução assinalada em C0286. É compatível com o
   início visível e com a frase.
+
+## Aviso de direitos (27 de novembro de 2026, publicação v2026-11-27-sga3-1970.1)
+
+Sob o aviso de direitos da impressão de 1970, a nota que dizia que esse aviso não restringe esta edição nem sua
+publicação foi substituída pelo aviso de direitos desta edição (o mesmo da publicação de SGA 5 de 15 de novembro de
+2026). O texto matemático não mudou. Os dois mestres foram compilados de novo: 43 páginas, 0 erros, 0 caixas
+excedentes ou deficientes, 0 referências indefinidas; a página do aviso foi olhada.

@@ -104,8 +104,8 @@ A edição anterior, de 15 de outubro de 2026, está em [editions/FGA_current](e
 - SGA 3, tomo II, exposições VIII (grupos diagonalizáveis) e IX (grupos de tipo multiplicativo), no texto da
   impressão de 1970, cotejado frase por frase com ela (27 de novembro de 2026), com a matéria preliminar e o índice de
   notações do tomo:
-  [PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-11-27-sga3-1970/SGA3_TOMO_II_VIII_IX_PTBR_1970.pdf) ·
-  [LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-11-27-sga3-1970/SGA3_TOMO_II_VIII_IX_PTBR_1970_LaTeX.zip) ·
+  [PDF](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-11-27-sga3-1970.1/SGA3_TOMO_II_VIII_IX_PTBR_1970.pdf) ·
+  [LaTeX](https://github.com/KokunoYumeto/ega-fga-sga-pt-br/releases/download/v2026-11-27-sga3-1970.1/SGA3_TOMO_II_VIII_IX_PTBR_1970_LaTeX.zip) ·
   [fontes](sources/SGA_3_Tome_II) ·
   [registros do cotejo](sources/SGA_3_Tome_II/cotejo_1970_20261127).
 - SGA 5, completo (322 páginas), com as correções da verificação do texto francês com o impresso que um script
@@ -129,7 +129,7 @@ As versões anteriores estão nas [publicações do GitHub](https://github.com/K
 - SGA 3: dirigido por Michel Demazure e Alexander Grothendieck (Lecture Notes in Mathematics 152, Springer, 1970);
   esta edição segue o texto dessa impressão. A tradução foi feita inicialmente, em 2026, a partir dos rascunhos da
   reedição de Philippe Gille e Patrick Polo, e foi trazida ao texto de 1970 em novembro de 2026; nada da reedição
-  permanece. A «Nota do tradutor» é desta tradução.
+  permanece. O aviso de direitos da impressão de 1970 está traduzido, seguido do aviso de direitos desta edição.
 - SGA 4½: Pierre Deligne, *Cohomologie étale* (1977).
 - SGA 5: dirigido por Alexander Grothendieck, com a colaboração de Ion Bucur, Charles Houzel, Luc Illusie,
   Jean-Pierre Jouanolou e Jean-Pierre Serre; editado por Luc Illusie.
